@@ -8,14 +8,13 @@ permalink:        pretty
 title:            Marco Bacis
 tagline:          ''
 description:      ''
-url:              http://marcobacis.github.io/
+url:              http://marcobacis.github.io
 baseurl:          /
 
 #GEMS
 plugins: [jekyll-paginate, jekyll-gist]
 paginate: 20
 paginate_path: "/blog/page:num/"
-baseurl: /
 domain_name: 'http://marcobacis.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
@@ -48,4 +47,3 @@ defaults:
             layout: post
 
 # Custom vars
-version:          2.1.0
