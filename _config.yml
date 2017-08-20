@@ -9,7 +9,7 @@ title:            Marco Bacis
 tagline:          ''
 description:      ''
 url:              http://marcobacis.github.io
-baseurl:          /
+baseurl:          '/'
 
 #GEMS
 plugins: [jekyll-paginate, jekyll-gist]
