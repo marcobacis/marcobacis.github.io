@@ -1,0 +1,16 @@
+
+.devinfo div{
+    white-space: nowrap;
+    margin: auto;
+}
+
+.devinfo img{
+    /*background: white;*/
+    border-radius: 5px;
+    height: 2em;
+    display: inline-block;
+}
+
+.devinfo a{
+    text-decoration: none;
+}
