@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-source "https://rubygems.org"
-
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -11,11 +9,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# gem "github-pages", group: :jekyll_plugins
-
 # To upgrade, run `bundle update`.
 
-gem "jekyll-remote-theme"
+#gem "jekyll-text-theme"
 gem "github-pages", group: :jekyll_plugins
 
 # The following plugins are automatically loaded by the theme-gem:
@@ -26,6 +22,4 @@ gem "github-pages", group: :jekyll_plugins
 #   gem "jemoji"
 #   gem "jekyll-data"
 #
-# If you have any other plugins, put them here!
-group :jekyll_plugins do
-end
+

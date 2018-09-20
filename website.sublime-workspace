@@ -1,0 +1,840 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"MF",
+				"MachineFunction"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"rem",
+				"removeRegOperandFromUseList"
+			],
+			[
+				"ad",
+				"adjacent"
+			],
+			[
+				"out",
+				"out_vals"
+			],
+			[
+				"weight",
+				"weights"
+			],
+			[
+				"in_po",
+				"in_port_0_1"
+			],
+			[
+				"IN",
+				"IN_PORTS"
+			],
+			[
+				"o",
+				"out_streams"
+			],
+			[
+				"w",
+				"w_streams"
+			],
+			[
+				"data",
+				"data_type"
+			],
+			[
+				"out_",
+				"out_port0"
+			],
+			[
+				"weith",
+				"weights"
+			],
+			[
+				"rea",
+				"read"
+			],
+			[
+				"port",
+				"port_type"
+			],
+			[
+				"OUT_",
+				"OUT_PORTS"
+			],
+			[
+				"dsp_",
+				"dsp_out_type"
+			],
+			[
+				"weight_",
+				"weight_type"
+			],
+			[
+				"pack",
+				"package_pack"
+			],
+			[
+				"in",
+				"interfaces"
+			],
+			[
+				"mod",
+				"modules"
+			],
+			[
+				"de",
+				"design_name"
+			],
+			[
+				"inh",
+				"inherit_core"
+			],
+			[
+				"strean",
+				"streams_distinct"
+			],
+			[
+				"stream",
+				"stream_numbers"
+			],
+			[
+				"ports_",
+				"ports_header"
+			],
+			[
+				"demux",
+				"demux_layer"
+			],
+			[
+				"la",
+				"layer_parameters"
+			],
+			[
+				"demux_",
+				"demux_switch"
+			],
+			[
+				"ty",
+				"typeName"
+			],
+			[
+				"type",
+				"typename"
+			],
+			[
+				"new",
+				"newVectName"
+			],
+			[
+				"creaate",
+				"create_layer"
+			],
+			[
+				"daat",
+				"data_stream"
+			],
+			[
+				"da",
+				"data_port"
+			],
+			[
+				"generate",
+				"generate_layer_tcl"
+			],
+			[
+				"set",
+				"setelement"
+			],
+			[
+				"checl",
+				"checklist"
+			],
+			[
+				"check",
+				"checkLt"
+			],
+			[
+				"fpgaa",
+				"fpgaValidLeft"
+			],
+			[
+				"fpga",
+				"fpgaValidLeft"
+			],
+			[
+				"plac",
+				"placements"
+			],
+			[
+				"map",
+				"mapListM"
+			],
+			[
+				"lol",
+				"lol2stream"
+			],
+			[
+				"Lol",
+				"LolStream"
+			],
+			[
+				"lols",
+				"lol2lolstream"
+			],
+			[
+				"appl",
+				"applyAtLevel"
+			],
+			[
+				"take",
+				"takeLevels"
+			],
+			[
+				"list",
+				"list2Itree"
+			],
+			[
+				"no",
+				"noBlues"
+			],
+			[
+				"yello",
+				"yellowSubTrees"
+			],
+			[
+				"be",
+				"best_tree"
+			],
+			[
+				"pcfg",
+				"pcfg_pchart_parser"
+			],
+			[
+				"parse",
+				"parsed_sents"
+			],
+			[
+				"tban",
+				"tbank_prod_with_rep"
+			],
+			[
+				"tb",
+				"tbank_prod_with_rep"
+			],
+			[
+				"wo",
+				"words"
+			],
+			[
+				"esti",
+				"estimated_tags"
+			],
+			[
+				"end",
+				"end_idx"
+			],
+			[
+				"train",
+				"train_set"
+			],
+			[
+				"tags",
+				"tag_set"
+			],
+			[
+				"cle",
+				"clean_tagged_sentence"
+			],
+			[
+				"clean",
+				"clean_tagged_sentences"
+			],
+			[
+				"clen",
+				"clean_tagged_sentences"
+			],
+			[
+				"test",
+				"test_set"
+			],
+			[
+				"count",
+				"count_list"
+			],
+			[
+				"tor",
+				"torchvision"
+			],
+			[
+				"tras",
+				"transf"
+			],
+			[
+				"trans",
+				"transforms"
+			],
+			[
+				"linea",
+				"linear1b"
+			],
+			[
+				"line",
+				"linear1a"
+			],
+			[
+				"num_",
+				"num_output"
+			],
+			[
+				"num",
+				"num_input"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"idx",
+				"idx_reg"
+			],
+			[
+				"add",
+				"addLast"
+			],
+			[
+				"var",
+				"var_list"
+			],
+			[
+				"array",
+				"arraySize"
+			],
+			[
+				"get",
+				"getLength"
+			],
+			[
+				"va",
+				"values"
+			],
+			[
+				"gen_addi",
+				"gen_addi_instruction"
+			],
+			[
+				"gen_a",
+				"gen_move_immediate"
+			],
+			[
+				"nex",
+				"next"
+			],
+			[
+				"REG",
+				"REG_0"
+			],
+			[
+				"item",
+				"item_reg"
+			],
+			[
+				"assi",
+				"assignNewLabel"
+			],
+			[
+				"handle",
+				"handle_bin_numeric_op"
+			],
+			[
+				"handle_",
+				"handle_bin_numeric_op"
+			],
+			[
+				"t_ax",
+				"t_axe_expression"
+			],
+			[
+				"cond",
+				"condStack"
+			],
+			[
+				"next",
+				"next_label"
+			],
+			[
+				"case_",
+				"case_statement"
+			],
+			[
+				"cond_",
+				"cond_statement"
+			],
+			[
+				"create",
+				"create_expression"
+			],
+			[
+				"r",
+				"r_e2"
+			],
+			[
+				"r_e",
+				"r_e1"
+			],
+			[
+				"assign",
+				"assignLabel"
+			],
+			[
+				"ERRO",
+				"AXE_SYNTAX_ERROR"
+			],
+			[
+				"notif",
+				"notifyError"
+			],
+			[
+				"AXE",
+				"AXE_SYNTAX_ERROR"
+			],
+			[
+				"expre",
+				"expression_type"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"parallelprogramming (OSX)",
+					""
+				],
+				[
+					"parallelprogramming (OSX)",
+					"clean"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"rebuild_cache"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"main"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/gameio.o"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/gameio.i"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/gameio.s"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/main.o"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/main.i"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/main.s"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/utils.o"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/utils.i"
+				],
+				[
+					"parallelprogramming (OSX)",
+					"src/utils.s"
+				]
+			],
+			[
+				"parallelprogramming (OSX)",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"cmake",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"intel",
+				"Preferences: SublimeCodeIntel Settings – User"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublimecode",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax c",
+				"Set Syntax: C"
+			],
+			[
+				"syntax biso",
+				"Set Syntax: Bison"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 178.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/marco/github_pages"
+	],
+	"file_history":
+	[
+		"/Users/marco/mw_projects/mw_iot_person_detection/report/makefile",
+		"/Users/marco/mw_projects/mw_iot_person_detection/report/RASD.tex",
+		"/Users/marco/mw_projects/mw_iot_person_detection/.gitignore",
+		"/Users/marco/curriculum/acceptedPapers.bib",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/full-game.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/mw_parallel_programming/mw_parallel_programming.sublime-project",
+		"/Users/marco/mw_projects/mw_parallel_programming/parallelprogramming.sublime-project",
+		"/Users/marco/mw_projects/mw_parallel_programming/.gitignore",
+		"/Users/marco/mw_projects/mw_parallel_programming/mw_parallel_programming/src/main.cpp",
+		"/Users/marco/mw_projects/mw_parallel_programming/CMakeLists.txt",
+		"/Users/marco/mw_projects/mw_parallel_programming/src/main.cpp",
+		"/Users/marco/ACA-P4-Stack-Size/tests/example.s",
+		"/Users/marco/ACA-P4-Stack-Size/tests/example.ll",
+		"/Users/marco/ACA-P4-Stack-Size/tests/example.c",
+		"/Users/marco/ACA-P4-Stack-Size/tests/polybench/gemm.s",
+		"/Users/marco/llvm/lib/Target/ARM/ARMRegisterInfo.td",
+		"/Users/marco/ACA-P4-Stack-Size/tests/polybench/gemver.ll",
+		"/Users/marco/llvm/lib/Target/NVPTX/NVPTXRegisterInfo.td",
+		"/Users/marco/ACA-P4-Stack-Size/tests/polybench/gemver.s",
+		"/Users/marco/Documents/papers_tesi/Zynq7000AP_SoC_ZC702_pwr_monitor_Linux/sw/srcs/power_monitor.c",
+		"/Users/marco/Documents/papers_tesi/Zynq7000AP_SoC_ZC702_pwr_monitor_Linux/sw/srcs/i2c-dev.h",
+		"/Users/marco/Desktop/exampledag.txt",
+		"/Users/marco/Desktop/X86RegisterInfo.td",
+		"/Users/marco/llvm/lib/Target/ARM/ARM.td",
+		"/Users/marco/aca_project/llvm_example/example_alloca.c",
+		"/Users/marco/mw_projects/mw_parallel_programming/include/gameio.h",
+		"/Users/marco/mw_projects/mw_parallel_programming/src/gameio.cpp",
+		"/Users/marco/aca_project/llvm_example/example_alloca.ll",
+		"/Users/marco/aca_project/shoc/src/opencl/level1/fft/fft.cl",
+		"/Users/marco/llvm/lib/Target/NVPTX/NVPTXTargetTransformInfo.cpp",
+		"/Users/marco/llvm/lib/Target/NVPTX/NVPTXRegisterInfo.cpp",
+		"/Users/marco/llvm/lib/Target/NVPTX/NVPTX.td",
+		"/Users/marco/llvm/lib/Target/NVPTX/TargetInfo/NVPTXTargetInfo.cpp",
+		"/Users/marco/llvm/lib/Target/ARM/ARMRegisterBanks.td",
+		"/Users/marco/llvm/lib/Target/ARM/ARMInstrFormats.td",
+		"/Users/marco/llvm/lib/Target/AArch64/AArch64GenRegisterBankInfo.def",
+		"/Users/marco/boost_1_66_0/boost/ptr_container/detail/void_ptr_iterator.hpp",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/balls.csv",
+		"/Users/marco/aca_project/polybench/asms/estimates.txt",
+		"/Users/marco/aca_project/polybench/asms/fdtd-2d.s",
+		"/Users/marco/aca_project/polybench/asms/res3.txt",
+		"/Users/marco/aca_project/polybench/asms/res0.txt",
+		"/Users/marco/Documents/workspace/dispose/summary.md",
+		"/Users/marco/llvm/lib/Target/NVPTX/NVPTXRegisterInfo.h",
+		"/Users/marco/aca_project/llvm_example/example.reg",
+		"/Users/marco/ACA-P4-Stack-Size/testalloc.cpp",
+		"/Users/marco/Documents/workspace/dispose/src/dispose/net/node/checkpoint/Checkpoint.java",
+		"/Users/marco/aca_project/polybench/asms/simple.ll",
+		"/Users/marco/aca_project/polybench/asms/simple.s",
+		"/Users/marco/llvm/lib/Target/X86/X86RegisterBanks.td",
+		"/Users/marco/Documents/workspace/dispose/src/dispose/net/node/ComputeThread.java",
+		"/Users/marco/Desktop/SupervisorMain.java",
+		"/Users/marco/Desktop/1605.00928",
+		"/Users/marco/Documents/workspace/dispose/prova.ser",
+		"/Users/marco/Desktop/blescan.py",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/example.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/ball_possession/1stHalf/Ben_Müller.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/more_info.txt",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/players.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/interruptions/1stHalf.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/metadata.txt",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Ball Possession/1st Half/Ben Müller.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/goals/2ndHalf.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/goals/1stHalf.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/interruptions/2ndHalf.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Game Interruption/2nd Half.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Game Interruption/1st Half.csv",
+		"/Users/marco/spark-docker/scatola.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Shot on Goal/2nd Half.csv",
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Shot on Goal/1st Half.csv",
+		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/README.md",
+		"/Users/marco/llvm/lib/CodeGen/MachineInstr.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86AsmPrinter.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86TargetMachine.cpp",
+		"/Users/marco/aca_project/llvm_example/simple.ll",
+		"/Users/marco/aca_project/llvm_example/simple.c",
+		"/Users/marco/Desktop/ciao.cpp",
+		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/marco/llvm/include/llvm/CodeGen/MachineInstr.h",
+		"/Users/marco/llvm/lib/Target/X86/X86RegisterInfo.td",
+		"/Users/marco/aca_project/x86.cpp",
+		"/Users/marco/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86AsmPrinter.h",
+		"/Users/marco/llvm/include/llvm/CodeGen/AsmPrinter.h",
+		"/Users/marco/llvm/lib/Transforms/Scalar/ConstantProp.cpp",
+		"/Users/marco/llvm/include/llvm/Transforms/Scalar/Float2Int.h",
+		"/Users/marco/llvm/include/llvm/Transforms/Scalar/ConstantHoisting.h",
+		"/Users/marco/llvm/include/llvm/CodeGen/MachineFunction.h",
+		"/Users/marco/llvm/lib/CodeGen/MachineOperand.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86DomainReassignment.cpp",
+		"/Users/marco/llvm/lib/Target/X86/MCTargetDesc/CMakeLists.txt",
+		"/Users/marco/llvm/lib/Target/CMakeLists.txt",
+		"/Users/marco/llvm/lib/Support/Unix/Path.inc",
+		"/Users/marco/llvm/lib/TableGen/CMakeLists.txt",
+		"/Users/marco/llvm/lib/Target/X86/CMakeLists.txt",
+		"/Users/marco/llvm/lib/Target/AArch64/CMakeLists.txt",
+		"/Users/marco/llvm/lib/Target/AVR/AVRMCInstLower.h",
+		"/Users/marco/llvm/lib/Target/AVR/AVRMCInstLower.cpp",
+		"/Users/marco/llvm/lib/Target/AVR/AVRSubtarget.cpp",
+		"/Users/marco/llvm/lib/Target/AVR/AVRRelaxMemOperations.cpp",
+		"/Users/marco/llvm/lib/CodeGen/AllocationOrder.h",
+		"/Users/marco/llvm/lib/CodeGen/AggressiveAntiDepBreaker.h",
+		"/Users/marco/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp",
+		"/Users/marco/spark-docker/temperatures.csv",
+		"/Users/marco/llvm/lib/Target/Mips/MipsMachineFunction.cpp",
+		"/Users/marco/llvm/lib/Target/Mips/MipsRegisterInfo.td",
+		"/Users/marco/llvm/lib/Target/X86/X86MachineFunctionInfo.cpp",
+		"/Users/marco/llvm/lib/Target/Mips/MipsTargetMachine.cpp",
+		"/Users/marco/llvm/lib/Target/WebAssembly/WebAssembly.td",
+		"/Users/marco/llvm/lib/Target/X86/X86TargetObjectFile.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86MachineFunctionInfo.h",
+		"/Users/marco/llvm/lib/Target/X86/X86RegisterInfo.cpp",
+		"/Users/marco/llvm/lib/CodeGen/MachineFrameInfo.cpp",
+		"/Users/marco/llvm/lib/Target/X86/Disassembler/X86Disassembler.cpp",
+		"/Users/marco/llvm/lib/Target/X86/README-SSE.txt",
+		"/Users/marco/llvm/lib/Target/X86/README-UNIMPLEMENTED.txt",
+		"/Users/marco/llvm/lib/CodeGen/BranchFolding.cpp",
+		"/Users/marco/llvm/lib/AsmParser/Parser.cpp",
+		"/Users/marco/llvm/lib/Target/X86/X86.td",
+		"/Users/marco/llvm/lib/CodeGen/StackMaps.cpp",
+		"/Users/marco/llvm/lib/CodeGen/StackProtector.cpp",
+		"/Users/marco/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp",
+		"/Users/marco/llvm/lib/CodeGen/AllocationOrder.cpp",
+		"/Users/marco/llvm/tools/llc/llc.cpp",
+		"/Users/marco/aca_project/polybench/stencils/jacobi-1d/jacobi-1d.c",
+		"/Users/marco/aca_project/polybench/utilities/polybench.h",
+		"/Users/marco/aca_project/polybench/utilities/polybench.c"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 202.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 270.0
+	},
+	"output.files_to_be_deleted":
+	{
+		"height": 144.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "parallelprogramming (OSX)",
+	"project": "website.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/acaprj.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
