@@ -1,5 +1,7 @@
 header:
   - title: Home
     url: /index.html
+  - title: Projects
+    url: /projects/index.html
 #  - title: Blog
 #    url: /blog/index.html
