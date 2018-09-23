@@ -49,6 +49,14 @@
       </li>
     {%- endif -%}
 
+    {%- if _author.linkedin -%}
+      <li title="{{ __return | replace: '[NAME]', 'Linkedin' }}">
+        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/{{ _author.linkedin }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/linkedin.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+
     {%- if _author.github -%}
       <li title="{{ __return | replace: '[NAME]', 'Github' }}">
         <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/{{ _author.github }}" target="_blank">
@@ -57,10 +65,10 @@
       </li>
     {%- endif -%}
 
-    {%- if _author.linkedin -%}
-      <li title="{{ __return | replace: '[NAME]', 'Linkedin' }}">
-        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/{{ _author.linkedin }}" target="_blank">
-          <div class="icon">{%- include svg/icon/social/linkedin.svg -%}</div>
+    {%- if _author.bitbucket -%}
+      <li title="{{ __return | replace: '[NAME]', 'Bitbucket' }}">
+        <a class="button button--circle bitbucket-button" itemprop="sameAs" href="https://www.bitbucket.org/{{ _author.bitbucket }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/bitbucket.svg -%}</div>
         </a>
       </li>
     {%- endif -%}

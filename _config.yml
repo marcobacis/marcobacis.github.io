@@ -31,6 +31,7 @@ author:
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
   linkedin  : marco-bacis
   github    : marcobacis
+  bitbucket : # "user_name" the last part of your profile url, e.g. https://www.bitbucket.org/user_name/
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -126,7 +127,7 @@ analytics:
   ## Google Analytics
   google:
     tracking_id : UA-6125168-6 # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+    anonymize_ip: true # Anonymize IP tracking for Analytics
 
 
 ## => Build
