@@ -5,3 +5,12 @@ header:
     url: /projects/index.html
 #  - title: Blog
 #    url: /blog/index.html
+
+
+projects:
+  - title: BEye
+    url: /projects/beye.html
+  - title: CONDOR
+    url: /projects/condor.html
+  - title: DiSPosE
+    url: /projects/dispose.html
