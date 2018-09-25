@@ -3,6 +3,8 @@ header:
     url: /index.html
   - title: Projects
     url: /projects/index.html
+  - title: Publications
+    url: /publications.html
 #  - title: Blog
 #    url: /blog/index.html
 

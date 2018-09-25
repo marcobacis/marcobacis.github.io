@@ -83,3 +83,15 @@
     border-width:5px;
     border-color:rgba(50,50,50,0.5)
 }
+
+table {
+    border-collapse: collapse;
+}
+
+.bordered-table table, th, td {
+    border: 1px solid grey;
+}
+
+.bordered-table th, td {
+    padding: 1rem;
+}
