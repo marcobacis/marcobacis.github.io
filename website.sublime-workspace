@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"ba",
+				"background-image\tproperty"
+			],
+			[
 				"MF",
 				"MachineFunction"
 			],
@@ -411,6 +419,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "projects/condor.md",
+			"settings":
+			{
+				"buffer_size": 518,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects/beye.md",
+			"settings":
+			{
+				"buffer_size": 589,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -500,6 +526,10 @@
 		"selected_items":
 		[
 			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"packa",
 				"Package Control: Install Package"
 			],
@@ -572,10 +602,82 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/marco/github_pages"
+		"/Users/marco/github_pages",
+		"/Users/marco/github_pages/projects"
 	],
 	"file_history":
 	[
+		"/Users/marco/github_pages/_includes/author-links.html",
+		"/Users/marco/github_pages/projects/beye.md",
+		"/Users/marco/github_pages/_sass/common/classes/_flex.scss",
+		"/Users/marco/github_pages/_includes/head.html",
+		"/Users/marco/github_pages/_includes/markdown-enhancements/chart.html",
+		"/Users/marco/github_pages/projects/index.md",
+		"/Users/marco/github_pages/_config.yml",
+		"/Users/marco/github_pages/_includes/snippets/get-sources.html",
+		"/Users/marco/github_pages/_includes/markdown-enhancements/mathjax.html",
+		"/Users/marco/github_pages/_includes/markdown-enhancements.html",
+		"/Users/marco/github_pages/_includes/snippets/assign.html",
+		"/Users/marco/github_pages/_includes/footer.html",
+		"/Users/marco/github_pages/assets/css/main.scss",
+		"/Users/marco/github_pages/_data/navigation.yml",
+		"/Users/marco/github_pages/_includes/sidebar/toc.html",
+		"/Users/marco/github_pages/projects/dispose.md",
+		"/Users/marco/github_pages/projects/condor.md",
+		"/Users/marco/github_pages/index.html",
+		"/Users/marco/github_pages/_includes/header.html",
+		"/Users/marco/github_pages/publications.html",
+		"/Users/marco/github_pages/projects.html",
+		"/Users/marco/cash_examples/fir.hs",
+		"/Users/marco/github_pages/_layouts/articles.html",
+		"/Users/marco/github_pages/_includes/scripts/aside/toc.js",
+		"/Users/marco/github_pages/_includes/snippets/prepend-baseurl.html",
+		"/Users/marco/github_pages/_includes/pageview-providers/custom.html",
+		"/Users/marco/github_pages/_includes/pageview-providers/leancloud/leancloud.js",
+		"/Users/marco/github_pages/_includes/pageview-providers/custom/post.html",
+		"/Users/marco/github_pages/_includes/pageview-providers/custom/home.html",
+		"/Users/marco/github_pages/_includes/pageview.html",
+		"/Users/marco/github_pages/_includes/aside/toc.html",
+		"/Users/marco/github_pages/_posts/2018-07-01-welcome.md",
+		"/Users/marco/github_pages/_includes/article-header.html",
+		"/Users/marco/github_pages/_includes/snippets/locale-to-string.html",
+		"/Users/marco/github_pages/_sass/components/_author-links.scss",
+		"/Users/marco/github_pages/_sass/skins/_ocean.scss",
+		"/Users/marco/github_pages/_sass/skins/_orange.scss",
+		"/Users/marco/github_pages/_sass/skins/_chocolate.scss",
+		"/Users/marco/github_pages/_sass/skins/_dark.scss",
+		"/Users/marco/github_pages/_sass/skins/_default.scss",
+		"/Users/marco/github_pages/_sass/skins/_forest.scss",
+		"/Users/marco/github_pages/_sass/common/classes/_user-select.scss",
+		"/Users/marco/github_pages/_sass/common/classes/_clickable.scss",
+		"/Users/marco/github_pages/_sass/common/classes/_media.scss",
+		"/Users/marco/github_pages/_sass/common/_reset.scss",
+		"/Users/marco/github_pages/_sass/common/_variables.scss",
+		"/Users/marco/github_pages/_sass/common/_classes.scss",
+		"/Users/marco/github_pages/_sass/common/components/_button.scss",
+		"/Users/marco/github_pages/_data/locale.yml",
+		"/Users/marco/github_pages/_includes/snippets/get-lang.html",
+		"/Users/marco/github_pages/_layouts/article.html",
+		"/Users/marco/github_pages/_layouts/page.html",
+		"/Users/marco/github_pages/_layouts/landing.html",
+		"/Users/marco/github_pages/_sass/layout/_landing.scss",
+		"/Users/marco/github_pages/_sass/components/_header.scss",
+		"/Users/marco/github_pages/_sass/common/components/_hero.scss",
+		"/Users/marco/github_pages/assets/search.js",
+		"/Users/marco/github_pages/_sass/components/_main.scss",
+		"/Users/marco/github_pages/_sass/components/_article-list.scss",
+		"/Users/marco/github_pages/archive.html",
+		"/Users/marco/github_pages/blog/index.html",
+		"/Users/marco/github_pages/_layouts/base.html",
+		"/Users/marco/github_pages/_layouts/home.html",
+		"/Users/marco/github_pages/Gemfile",
+		"/Users/marco/github_pages/blog.html",
+		"/Users/marco/github_pages/about.md",
+		"/Users/marco/github_pages/blog.md",
+		"/Users/marco/github_pages/_data/variables.yml",
+		"/Users/marco/github_pages/_data/authors.yml",
+		"/Users/marco/github_pages/_data/licenses.yml",
+		"/Users/marco/github_pages/404.html",
 		"/Users/marco/mw_projects/mw_iot_person_detection/report/makefile",
 		"/Users/marco/mw_projects/mw_iot_person_detection/report/RASD.tex",
 		"/Users/marco/mw_projects/mw_iot_person_detection/.gitignore",
@@ -632,82 +734,11 @@
 		"/Users/marco/Documents/workspace/dispose/prova.ser",
 		"/Users/marco/Desktop/blescan.py",
 		"/Users/marco/mw_projects/mw_parallel_programming/data/example.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/ball_possession/1stHalf/Ben_Müller.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/more_info.txt",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/players.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/interruptions/1stHalf.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/metadata.txt",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Ball Possession/1st Half/Ben Müller.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/goals/2ndHalf.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/goals/1stHalf.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/interruptions/2ndHalf.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Game Interruption/2nd Half.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Game Interruption/1st Half.csv",
-		"/Users/marco/spark-docker/scatola.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Shot on Goal/2nd Half.csv",
-		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/Shot on Goal/1st Half.csv",
-		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/README.md",
-		"/Users/marco/llvm/lib/CodeGen/MachineInstr.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86AsmPrinter.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86TargetMachine.cpp",
-		"/Users/marco/aca_project/llvm_example/simple.ll",
-		"/Users/marco/aca_project/llvm_example/simple.c",
-		"/Users/marco/Desktop/ciao.cpp",
-		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/Users/marco/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/Users/marco/llvm/include/llvm/CodeGen/MachineInstr.h",
-		"/Users/marco/llvm/lib/Target/X86/X86RegisterInfo.td",
-		"/Users/marco/aca_project/x86.cpp",
-		"/Users/marco/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86AsmPrinter.h",
-		"/Users/marco/llvm/include/llvm/CodeGen/AsmPrinter.h",
-		"/Users/marco/llvm/lib/Transforms/Scalar/ConstantProp.cpp",
-		"/Users/marco/llvm/include/llvm/Transforms/Scalar/Float2Int.h",
-		"/Users/marco/llvm/include/llvm/Transforms/Scalar/ConstantHoisting.h",
-		"/Users/marco/llvm/include/llvm/CodeGen/MachineFunction.h",
-		"/Users/marco/llvm/lib/CodeGen/MachineOperand.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86DomainReassignment.cpp",
-		"/Users/marco/llvm/lib/Target/X86/MCTargetDesc/CMakeLists.txt",
-		"/Users/marco/llvm/lib/Target/CMakeLists.txt",
-		"/Users/marco/llvm/lib/Support/Unix/Path.inc",
-		"/Users/marco/llvm/lib/TableGen/CMakeLists.txt",
-		"/Users/marco/llvm/lib/Target/X86/CMakeLists.txt",
-		"/Users/marco/llvm/lib/Target/AArch64/CMakeLists.txt",
-		"/Users/marco/llvm/lib/Target/AVR/AVRMCInstLower.h",
-		"/Users/marco/llvm/lib/Target/AVR/AVRMCInstLower.cpp",
-		"/Users/marco/llvm/lib/Target/AVR/AVRSubtarget.cpp",
-		"/Users/marco/llvm/lib/Target/AVR/AVRRelaxMemOperations.cpp",
-		"/Users/marco/llvm/lib/CodeGen/AllocationOrder.h",
-		"/Users/marco/llvm/lib/CodeGen/AggressiveAntiDepBreaker.h",
-		"/Users/marco/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp",
-		"/Users/marco/spark-docker/temperatures.csv",
-		"/Users/marco/llvm/lib/Target/Mips/MipsMachineFunction.cpp",
-		"/Users/marco/llvm/lib/Target/Mips/MipsRegisterInfo.td",
-		"/Users/marco/llvm/lib/Target/X86/X86MachineFunctionInfo.cpp",
-		"/Users/marco/llvm/lib/Target/Mips/MipsTargetMachine.cpp",
-		"/Users/marco/llvm/lib/Target/WebAssembly/WebAssembly.td",
-		"/Users/marco/llvm/lib/Target/X86/X86TargetObjectFile.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86MachineFunctionInfo.h",
-		"/Users/marco/llvm/lib/Target/X86/X86RegisterInfo.cpp",
-		"/Users/marco/llvm/lib/CodeGen/MachineFrameInfo.cpp",
-		"/Users/marco/llvm/lib/Target/X86/Disassembler/X86Disassembler.cpp",
-		"/Users/marco/llvm/lib/Target/X86/README-SSE.txt",
-		"/Users/marco/llvm/lib/Target/X86/README-UNIMPLEMENTED.txt",
-		"/Users/marco/llvm/lib/CodeGen/BranchFolding.cpp",
-		"/Users/marco/llvm/lib/AsmParser/Parser.cpp",
-		"/Users/marco/llvm/lib/Target/X86/X86.td",
-		"/Users/marco/llvm/lib/CodeGen/StackMaps.cpp",
-		"/Users/marco/llvm/lib/CodeGen/StackProtector.cpp",
-		"/Users/marco/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp",
-		"/Users/marco/llvm/lib/CodeGen/AllocationOrder.cpp",
-		"/Users/marco/llvm/tools/llc/llc.cpp",
-		"/Users/marco/aca_project/polybench/stencils/jacobi-1d/jacobi-1d.c",
-		"/Users/marco/aca_project/polybench/utilities/polybench.h",
-		"/Users/marco/aca_project/polybench/utilities/polybench.c"
+		"/Users/marco/mw_projects/mw_parallel_programming/data/referee-events/ball_possession/1stHalf/Ben_Müller.csv"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -721,13 +752,41 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"href",
+			".",
+			",",
+			"\\n",
+			"actual.*",
+			".*real",
+			".",
+			"actual.*\\n",
+			"actual.*",
+			".*real",
+			"* real",
+			"toc",
+			"color",
+			"follow",
+			"toc",
+			"links",
+			"article",
+			"/article",
+			"description",
+			"articles",
+			"url"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"target=\"_blank\" href",
+			",",
+			"",
+			"+",
+			",",
+			"+",
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -738,8 +797,65 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "projects/condor.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								518,
+								518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "projects/beye.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589,
+								589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -790,7 +906,7 @@
 	"project": "website.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -1,6 +1,6 @@
 ---
-layout:page
-title: CONDOR
+layout : page
+title : CONDOR
 ---
 
 
