@@ -17,3 +17,8 @@
 .image--xs {
   width: map-get($image, width-xs);
 }
+.image--article {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
