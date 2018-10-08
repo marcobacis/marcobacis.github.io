@@ -40,15 +40,30 @@ Finally, the results are filtered for a last time with a 11x11 adaptive threshol
 ## Why FPGA?
 
 As explained in the preceding description, the algorithm is composed of a series of 2D-filtering steps.
-This means that, for each output pixel, the CPU would have to access the central and neighboring pixels each time.
+A standard CPU (a single core) executes and runs one instruction at a time, and can perform one access to memory on each cycle.
+This means that, for each output pixel, the CPU would have to access the central and neighboring pixels each time, and even with a cache, it will mean K x K instructins for a single output pixel for a single filter, for each image.
 
-An FPGA allows to arrange the on-chip fast memories (BRAMs) in order to create a hardware sliding window and avoid jumps into memory.
+An FPGA is instead like a blank canvas, in which instructions and *local* data accesses can be freely arranged (that's why it this kind of execution is called *spatial computation*).
+The main advantage of using a FPGA in this project was then that it allows to arrange the on-chip fast memories (BRAMs) in order to parallelize the reading and execution of most of the filter operations.
+In this way, *data locality* is exploited by using the local memory for the local elements (neighbors), whithout waiting for the external memory (DRAM) each time.
 
-Also, its reconfigurability means that the design can be changed when the algorithm is updated, which happens often for biomedical applications.
+The filters' implementation takes advantage of this by creating a *hardware sliding window* (multipliers interleaved by registers and FIFO queues) in order to have a linear memory access (each pixel is accessed just one time from the main memory) for all the filters that can fit on the chip.
 
-## Architecture
+Also, the FPGA reconfigurability means that the design can be changed when the algorithm is updated, which happens often for biomedical applications.
 
+## Results
 
+We created a prototype of the system by implementing the filters described in the algorithm section.
+We first implemented them in software (using python and the opencv libraries), then synthesized all of them for FPGA using Vivado HLS and Vivado IPI.
+
+Vivado HLS is a *high-level synthesis* software from Xilinx that translate C or C++ code into Verilog/VHDL and packages the resulting kernel into an IP core.
+Vivado IPI (IP integrator) is instead an EDA tool to connect, synthesize and place these IP blocks for a specified FPGA model (in our case the Xilinx Zynq-7020 included in [Zedboard](zedboard.org)).
+It can also acts as a standard FPGA tool by directly writing HDL code for the blocks and the connections.
+Finally, Xilinx SDK was used to run the management software on the on-board ARM processor, used to manage the pictures and to send and receive them from the programmable logic.
+
+In short, the FPGA implementation outperformed (by **6X**) the sofwtare implementation (running on a 2012 Intel core-i7), and was also more energy efficient.
+We compared the work also the other state of art implementations and ours was faster!
+This allowed us to arrive to the Xilinx Open Hardware competition finals, and to publish a paper in the EMBC 2017 conference (a high-ranked biomedical conference) in South Korea.
 
 ## Media and Contacts
 
@@ -58,6 +73,9 @@ Source Code, designs etc... - [Bitbucket](https://bitbucket.org/necst/beye-src)
 
 Some videos explaining the project - YouTube [playlist](https://www.youtube.com/playlist?list=PLewc2qlpcOueh9xMhoDR7G93k6ZZ3pDrO)
 
+Paper published at EMBC 2017 - <a target="_blank" href="/assets/beye/beye_paper.pdf">pdf</a>,
+ <a target="_blank" href="/assets/beye/poster.pdf">poster</a>,
+ <a target="_blank" href="https://ieeexplore.ieee.org/document/8037052/">ieee</a>
 
 <br/>
 
@@ -72,7 +90,7 @@ Marco D. Santambrogio - marco.santambrogio@polimi.it
 
 <br/>
 
-And here are a few slides showing the project (presented at the Stanford TTO office in May 2018):
+And here are a few slides showing the project (presented at the Stanford OTL office in May 2018):
 
 <div class="grid mt-5 mb-5">
   <div class="cell cell--2 cell--md-0 cell--sm-0"></div>

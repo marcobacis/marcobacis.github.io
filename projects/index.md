@@ -7,7 +7,7 @@ aside:
 
 In this page you can find a list of the projects (with a brief description) in which I am/was involved.
 
-## BEye
+## [BEye](/projects/beye)
 
 BEye is an application for retinal vessels segmentation running on FPGAs.
 The project has been carried out during my last year of bachelor, was a finalist in the [2016](http://www.openhw.eu/2016-finalists.html) Xilinx Open Harware Competition, and brought to a [publication](https://ieeexplore.ieee.org/document/8037052/) to the 2017 EMBC conference.
