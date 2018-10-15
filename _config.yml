@@ -8,7 +8,7 @@ url     : # the base hostname & protocol for your site e.g. https://www.someone.
 baseurl : # does not include hostname
 title   : "Marco Bacis"
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  Marco Bacis website. My projects, my CV and (in future) my thoughts...
 ## => Language and Timezone
 ##############################
 lang: # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
