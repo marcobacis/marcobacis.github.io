@@ -442,7 +442,7 @@
 			"file": "projects/beye.md",
 			"settings":
 			{
-				"buffer_size": 2874,
+				"buffer_size": 7186,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -451,7 +451,7 @@
 			"file": "projects/index.md",
 			"settings":
 			{
-				"buffer_size": 1494,
+				"buffer_size": 1512,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -461,15 +461,6 @@
 			"settings":
 			{
 				"buffer_size": 2620,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_data/navigation.yml",
-			"settings":
-			{
-				"buffer_size": 342,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -640,10 +631,12 @@
 	"expanded_folders":
 	[
 		"/Users/marco/github_pages",
+		"/Users/marco/github_pages/_data",
 		"/Users/marco/github_pages/_drafts"
 	],
 	"file_history":
 	[
+		"/Users/marco/github_pages/_data/navigation.yml",
 		"/Users/marco/github_pages/_sass/common/classes/_grid.scss",
 		"/Users/marco/github_pages/_sass/common/components/_hero.scss",
 		"/Users/marco/github_pages/_sass/common/components/_image.scss",
@@ -667,7 +660,6 @@
 		"/Users/marco/github_pages/_includes/markdown-enhancements.html",
 		"/Users/marco/github_pages/_includes/snippets/assign.html",
 		"/Users/marco/github_pages/_includes/footer.html",
-		"/Users/marco/github_pages/_data/navigation.yml",
 		"/Users/marco/github_pages/_includes/sidebar/toc.html",
 		"/Users/marco/github_pages/projects/dispose.md",
 		"/Users/marco/github_pages/projects/condor.md",
@@ -834,7 +826,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -900,15 +892,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2874,
+						"buffer_size": 7186,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1234,
-								1234
+								6338,
+								6338
 							]
 						],
 						"settings":
@@ -916,10 +908,10 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 350.0,
+						"translation.y": 1583.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -928,15 +920,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1494,
+						"buffer_size": 1512,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								643,
-								176
+								192,
+								192
 							]
 						],
 						"settings":
@@ -947,7 +939,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -963,8 +955,8 @@
 						"selection":
 						[
 							[
-								175,
-								175
+								2567,
+								2329
 							]
 						],
 						"settings":
@@ -978,36 +970,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_data/navigation.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								141,
-								141
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
