@@ -18,6 +18,11 @@
         @include clickable($text-color-1, $google-plus-color);
       }
       .github-button {
+        svg {
+          width: 1.4rem;
+          height: 1.4rem;
+          align: center;
+        }
         @include clickable($text-color-1, $github-color);
       }
       .linkedin-button {
@@ -31,6 +36,13 @@
       }
       .bitbucket-button{
         @include clickable($text-color-1, $linkedin-color);
+      }
+      .flickr-button{
+        svg {
+          width: 1.9rem;
+          height: 1.9rem;
+        }
+        @include clickable($text-color-1, #E4E7E7);
       }
     }
   }

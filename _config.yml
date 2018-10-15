@@ -33,7 +33,7 @@ author:
   github    : marcobacis
   bitbucket : # "user_name" the last part of your profile url, e.g. https://www.bitbucket.org/user_name/
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
-
+  flickr    : circu # "user_name" the last part of the photostream url e.g. https://www.flickr.com/photos/user_name/
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################

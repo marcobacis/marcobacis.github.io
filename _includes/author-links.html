@@ -88,5 +88,14 @@
         </a>
       </li>
     {%- endif -%}
+
+
+    {%- if _author.flickr -%}
+      <li title="{{ __return | replace: '[NAME]', 'Flickr' }}">
+        <a class="button button--circle flickr-button " itemprop="sameAs" href="https://www.flickr.com/photos/{{ _author.flickr }}/" target="_blank">
+          <div class="icon">{%- include svg/icon/social/flickr.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
   </ul>
 </div>
