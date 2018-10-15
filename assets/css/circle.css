@@ -36,9 +36,9 @@
 
 .c100 {
   position: relative;
-  font-size: 120px;
-  width: 1em;
-  height: 1em;
+  font-size: 7rem;
+  width: 7rem;
+  height: 7rem;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -49,6 +49,8 @@
   background-color: #cccccc;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+
 .c100 *, .c100 *:before, .c100 *:after {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
