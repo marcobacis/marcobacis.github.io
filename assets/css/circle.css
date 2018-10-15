@@ -73,7 +73,7 @@
   width: 5em;
   line-height: 5em;
   font-size: 0.2em;
-  color: #cccccc;
+  color: #307bbb /*#cccccc*/;
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -826,6 +826,7 @@
 .c100:hover {
   cursor: default;
 }
+/*
 .c100:hover > span {
   width: 3.33em;
   line-height: 3.33em;
@@ -837,7 +838,7 @@
   left: 0.04em;
   width: 0.92em;
   height: 0.92em;
-}
+}*/
 .c100.dark {
   background-color: #777777;
 }
