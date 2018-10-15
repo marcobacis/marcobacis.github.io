@@ -13,7 +13,7 @@ BEye is an application for retinal vessels segmentation running on FPGAs.
 The project has been carried out during my last year of bachelor, was a finalist in the [2016](http://www.openhw.eu/2016-finalists.html) Xilinx Open Harware Competition, and brought to a [publication](https://ieeexplore.ieee.org/document/8037052/) to the 2017 EMBC conference.
 The submitted source code and designs can be found on the [public repository](https://bitbucket.org/necst/beye-src).
 
-## CONDOR
+## [CONDOR](/projects/condor)
 
 CONDOR (Convolutional neural network Dataflow Optimization using Reconfigurable hardware) is a framework to automatically derive an FPGA-based hardware accelerator starting from a high-level description of a pre-trained CNN.
 The resulting accelerator exploits the dataflow computational pattern and inherent parallelism of convolutions and creates a pipeline between the layers of the CNN.
