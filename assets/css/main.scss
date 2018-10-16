@@ -68,6 +68,35 @@
 
 @import "/assets/css/circle.css";
 
+@font-face {
+    font-family:"architex";
+    src: url("/assets/architex.ttf");
+}
+
+@include media-breakpoint-down(lg) {
+    .notfound-lg{
+        font-family:"architex";
+        font-size: 4rem;
+    }
+
+    .notfound-sm{
+        font-family:"architex";
+        font-size: 2rem;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .notfound-lg{
+        font-family:"architex";
+        font-size: 2.5rem;
+    }
+
+    .notfound-sm{
+        font-family:"architex";
+        font-size: 1.5rem;
+    }
+}
+
 .my-photo {
     display:inline-block;
     -webkit-transition:transform 0.8s ease 0s;

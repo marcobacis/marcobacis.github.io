@@ -13,6 +13,7 @@ source "https://rubygems.org"
 
 #gem "jekyll-text-theme"
 gem "github-pages", group: :jekyll_plugins
+gem 'jekyll-admin', group: :jekyll_plugins
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
