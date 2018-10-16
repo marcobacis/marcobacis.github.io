@@ -73,16 +73,14 @@
     src: url("../architex.ttf");
 }
 
-@include media-breakpoint-down(lg) {
-    .notfound-lg{
-        font-family:"architex";
-        font-size: 4rem;
-    }
+.notfound-lg{
+    font-family:"architex";
+    font-size: 4rem;
+}
 
-    .notfound-sm{
-        font-family:"architex";
-        font-size: 2rem;
-    }
+.notfound-sm{
+    font-family:"architex";
+    font-size: 2rem;
 }
 
 @include media-breakpoint-down(md) {
