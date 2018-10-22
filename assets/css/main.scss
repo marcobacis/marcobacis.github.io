@@ -95,6 +95,16 @@
     }
 }
 
+.cell.img {
+    background-color:#555555;
+    position:absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
 .my-photo {
     display:inline-block;
     -webkit-transition:transform 0.8s ease 0s;
@@ -113,6 +123,14 @@
     border-color:rgba(50,50,50,0.5)
 }
 
+.my-photo-fixed img {
+    display:inline-block;
+    box-sizing:border-box;
+    height:14rem;
+    width:14rem;
+    border-radius:7rem;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -123,4 +141,24 @@ table {
 
 .bordered-table th, td {
     padding: 1rem;
+}
+
+.cell_img {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#languages {
+    display:table;
+}
+
+#languages div {
+    display:table-cell;
+    vertical-align:middle;
+    height:20px;
+}
+
+#languages div img {
+    max-height:150px;
+    max-width: 150px;
 }

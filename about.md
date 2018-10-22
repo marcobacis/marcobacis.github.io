@@ -1,34 +1,40 @@
 ---
+title: About me
 layout: page
-title: About
 show_title: false
-permalink: /about
+permalink: "/about"
 ---
 
-<div class="mt-5">
-
-Hi! I'm Marco, a 24 year master student from northern Italy.
-
+<div class="my-photo-fixed my-5" style="text-align: center">
+    <img src="{{ site.author.avatar }}"/>
 </div>
 
 
-## Skills
+### Who?
 
-<div class="grid mt-4 mb-4">
+Hi there! I'm Marco and this is my personal website, where I'm going to put informations about me and what I do (and some blog posts when I'll feel creative).
 
-<div class="cell cell--auto"></div>
+I started programming when I was 12 (just a tiny little bullied nerd in middle school) with the classic web stack known as LAMP (💡).
+High school and hobbies (guitar first, then photography) kicked in at 14 and I lost touch with web development (does VB.NET at high-school-level counts as programming?).
 
-<div class="cell cell--2 cell--md-4 cell--sm-6 my-2"><div class="center c100 p80"><span>C/C++</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div></div>
+To reconnect with my long-lost friend the PC, I entered university ([Politecnico di Milano](polimi.it)) to study CS & Engineering. After a love/hate relationship with my bachelor years, I'm still in the same university doing my master's 😜.
 
-<div class="cell cell--2 cell--md-4 cell--sm-6 my-2"><div class="center c100 p70"><span>Java</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div></div>
+### What?
 
-<div class="cell cell--2 cell--md-4 cell--sm-6 my-2"><div class="center c100 p50"><span>Python</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div></div>
+I'm currently doing research at [NECSTLab](necst.it) for my master's thesis.
+I've been "working" there since my bachelor, when I learned to program FPGAs using high level languages (C/C++ instead of HDL).
 
-<div class="cell cell--2 cell--md-4 cell--sm-6 my-2"><div class="center c100 p40"><span>PHP</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div></div>
+Now I'm trying to reach a even higher level, as my research involves managing FPGA boards inside the cloud environment.
+My aim is to prove that FPGAs can be provided "as-a-service" and orchestrated in order to guarantee their 100% usage.
+That's why I'll write something here about my thesis, talking about docker, kubernetes, FPGAs and wathever I find interesting.
 
-<div class="cell cell--2 cell--md-4 cell--sm-6 my-2"><div class="center c100 p30"><span>VB.NET</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div></div>
+### Why?
 
-<div class="cell cell--auto"></div>
-</div>
+I love programming and computers in general, as they allow to "create" without much effort and investment.
+Everyone can learn and create on the web, and currently also in the physical world (looking at you, 3D!), just by buying or even just renting a PC/laptop/raspberry/wathever!
 
-NB: these are not real percentages, they are just a way to sort my knowledge!
+Also, anyone can show their knowledge and opinions without restrictions in most of the world, and all this information is available to everyone with an internet connection.
+
+That's why I decided to learn programming and software engineering, and also why I'm opening a small window into my world (this website).
+
+Hope you'll enjoy it!
