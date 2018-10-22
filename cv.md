@@ -2,7 +2,7 @@
 title: Curriculum Vitae
 layout: page
 show_title: false
-permalink: "/cv"
+permalink: /cv
 ---
 
 For the long and boring version click [here](/assets/marcobacis_cv.pdf).

@@ -2,10 +2,10 @@
 title: About me
 layout: page
 show_title: false
-permalink: "/about"
+permalink: /about
 ---
 
-<div class="my-photo-fixed my-5" style="text-align: center">
+<div class="my-photo-fixed mt-5 mb-2" style="text-align: center">
     <img src="{{ site.author.avatar }}"/>
 </div>
 
