@@ -17,11 +17,11 @@ Hi there! I'm Marco and this is my personal website, where I'm going to put info
 I started programming when I was 12 (just a tiny little bullied nerd in middle school) with the classic web stack known as LAMP (💡).
 High school and hobbies (guitar first, then photography) kicked in at 14 and I lost touch with web development (does VB.NET at high-school-level counts as programming?).
 
-To reconnect with my long-lost friend the PC, I entered university ([Politecnico di Milano](polimi.it)) to study CS & Engineering. After a love/hate relationship with my bachelor years, I'm still in the same university doing my master's 😜.
+To reconnect with my long-lost friend the PC, I entered university ([Politecnico di Milano](https://www.polimi.it)) to study CS & Engineering. After a love/hate relationship with my bachelor years, I'm still in the same university doing my master's 😜.
 
 ### What?
 
-I'm currently doing research at [NECSTLab](necst.it) for my master's thesis.
+I'm currently doing research at [NECSTLab](https://www.necst.it) for my master's thesis.
 I've been "working" there since my bachelor, when I learned to program FPGAs using high level languages (C/C++ instead of HDL).
 
 Now I'm trying to reach a even higher level, as my research involves managing FPGA boards inside the cloud environment.
