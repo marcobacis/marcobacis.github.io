@@ -66,8 +66,6 @@
 ;
 
 
-@import "/assets/css/circle.css";
-
 @font-face {
     font-family:"architex";
     src: url("../architex.ttf");
@@ -93,16 +91,6 @@
         font-family:"architex";
         font-size: 1.5rem;
     }
-}
-
-.cell.img {
-    background-color:#555555;
-    position:absolute;
-    margin:auto;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
 }
 
 .my-photo {
@@ -143,22 +131,23 @@ table {
     padding: 1rem;
 }
 
-.cell_img {
-    display:table-cell;
-    vertical-align:middle;
-}
-
-#languages {
+.logos {
     display:table;
 }
 
-#languages div {
+.logos div {
     display:table-cell;
     vertical-align:middle;
     height:20px;
 }
 
-#languages div img {
+.logos div img {
     max-height:150px;
     max-width: 150px;
 }
+
+.experience img{
+    max-height:150px;
+    max-width:95%;
+}
+
