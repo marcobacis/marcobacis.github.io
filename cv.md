@@ -12,7 +12,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 <div class="grid my-2 experience">
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/necst.png" alt="NECSTLab"/>
+    <img src="/assets/images/work/necst.png" alt="NECSTLab" title="NECSTLab"/>
     <br/>Milan, Italy
     <br/><i>Jun. 2015 - ???</i>
 </div>
@@ -22,7 +22,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 </div>
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/maxeler.png" alt="Maxeler Technologies"/>
+    <img src="/assets/images/work/maxeler.png" alt="Maxeler Technologies" title="Maxeler Technologies" />
     <br/>London, UK
     <br/><i>Mar. 2017 - Sep. 2017</i>
 </div>
@@ -45,7 +45,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 <div class="grid my-2 experience">
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1">
-    <img src="/assets/images/work/poli.png" alt="Politecnico di Milano"/>
+    <img src="/assets/images/work/poli.png" alt="Politecnico di Milano" title="Politecnico di Milano"/>
     Milan, Italy<br/>
     <i>Oct. 2013 - Jul. 2016</i><br/>
     <i>Sep. 2016 - ??? </i>
@@ -71,19 +71,19 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 <div class="cell cell--auto"></div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/cpp.svg" alt="C/C++" width="80%"/>
+    <img src="/assets/images/languages/cpp.svg" alt="C/C++" title="C/C++" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/java.svg" alt="Java" width="80%"/>
+    <img src="/assets/images/languages/java.svg" alt="Java" title="Java" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/python.svg" alt="Python" width="80%"/>
+    <img src="/assets/images/languages/python.svg" alt="Python" title="Python" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/php.svg" alt="PHP" width="100%"/>
+    <img src="/assets/images/languages/php.svg" alt="PHP" title="PHP" width="100%"/>
 </div>
 
 <div class="cell cell-auto"></div>
@@ -97,19 +97,19 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 <div class="cell cell--auto"></div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/platforms/tux.svg" alt="Linux" width="80%"/>
+    <img src="/assets/images/platforms/tux.svg" alt="Linux" title="Linux" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/platforms/mac.svg" alt="Mac OS" width="80%"/>
+    <img src="/assets/images/platforms/mac.svg" alt="Mac OS" title="Mac OS" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/platforms/docker.png" alt="Docker" width="80%"/>
+    <img src="/assets/images/platforms/docker.png" alt="Docker" title="Docker" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/platforms/xilinx.svg" alt="Xilinx FPGAs" width="100%"/>
+    <img src="/assets/images/platforms/xilinx.svg" alt="Xilinx FPGAs" title="Xilinx FPGAs" width="100%"/>
 </div>
 
 <div class="cell cell--auto"></div>

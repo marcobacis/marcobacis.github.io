@@ -46,7 +46,7 @@ repository_tree: master
 paths:
   root    : # title link url, "/" (default)
   home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
+  archive : /archive/ # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
 
@@ -134,7 +134,7 @@ analytics:
 ##############################
 markdown    : kramdown
 highlighter : rouge
-permalink   : date
+permalink   : /blog/:title/
 
 exclude:
   - CHANGELOG.md
@@ -173,4 +173,5 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jemoji

@@ -38,6 +38,11 @@
 <meta name="theme-color" content="#ffffff">
 <!-- end favicon -->
 
+<!-- tells search engine bots that the content is only available at one URL -->
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+{% seo %}
+
 {%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
 <link rel="stylesheet" href="{{ __return }}">
 
