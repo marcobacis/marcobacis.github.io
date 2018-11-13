@@ -424,62 +424,37 @@
 	"buffers":
 	[
 		{
-			"file": "projects/dispose.md",
+			"file": "cv.md",
 			"settings":
 			{
-				"buffer_size": 637,
+				"buffer_size": 3537,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "about.md",
+			"file": "_includes/article-info.html",
 			"settings":
 			{
-				"buffer_size": 803,
+				"buffer_size": 3568,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_data/navigation.yml",
+			"settings":
+			{
+				"buffer_size": 402,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/css/main.scss",
+			"file": "_includes/head.html",
 			"settings":
 			{
-				"buffer_size": 2941,
+				"buffer_size": 2377,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/circle.css",
-			"settings":
-			{
-				"buffer_size": 26733,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/images/languages/python.svg",
-			"settings":
-			{
-				"buffer_size": 5501,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_sass/components/_author-links.scss",
-			"settings":
-			{
-				"buffer_size": 1228,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/pageview.html",
-			"settings":
-			{
-				"buffer_size": 940,
 				"line_ending": "Unix"
 			}
 		}
@@ -649,42 +624,50 @@
 	"expanded_folders":
 	[
 		"/Users/marco/github_pages",
-		"/Users/marco/github_pages/_site",
-		"/Users/marco/github_pages/assets",
-		"/Users/marco/github_pages/assets/css",
-		"/Users/marco/github_pages/assets/images",
-		"/Users/marco/github_pages/assets/images/languages",
-		"/Users/marco/github_pages/blog"
+		"/Users/marco/github_pages/_posts"
 	],
 	"file_history":
 	[
-		"/Users/marco/github_pages/_site/about.html",
+		"/Users/marco/github_pages/_posts/2018-07-01-welcome.md",
+		"/Users/marco/github_pages/_includes/article-header.html",
+		"/Users/marco/github_pages/assets/css/main.scss",
+		"/Users/marco/github_pages/_includes/comments.html",
+		"/Users/marco/github_pages/_includes/article-list.html",
+		"/Users/marco/github_pages/_includes/comments-providers/disqus.html",
+		"/Users/marco/github_pages/_config.yml",
+		"/Users/marco/github_pages/_includes/footer.html",
+		"/Users/marco/github_pages/_includes/head.html",
+		"/Users/marco/github_pages/_includes/header.html",
+		"/Users/marco/github_pages/Gemfile",
 		"/Users/marco/github_pages/about.md",
-		"/Users/marco/github_pages/assets/images/languages/php.svg",
+		"/Users/marco/github_pages/_sass/common/classes/_grid.scss",
+		"/Users/marco/github_pages/_sass/common/classes/_spacing.scss",
+		"/Users/marco/github_pages/projects/dispose.md",
+		"/Users/marco/github_pages/index.html",
+		"/Users/marco/github_pages/_sass/common/components/_hero.scss",
+		"/Users/marco/github_pages/_data/navigation.yml",
+		"/Users/marco/github_pages/_includes/pageview.html",
+		"/Users/marco/github_pages/_sass/components/_author-links.scss",
 		"/Users/marco/github_pages/assets/images/languages/python.svg",
+		"/Users/marco/github_pages/assets/css/circle.css",
+		"/Users/marco/github_pages/_site/about.html",
+		"/Users/marco/github_pages/assets/images/languages/php.svg",
 		"/Users/marco/github_pages/_sass/common/components/_button.scss",
 		"/Users/marco/github_pages/assets/images/languages/java.svg",
 		"/Users/marco/github_pages/_includes/svg/icon/social/flickr.svg",
 		"/Users/marco/github_pages/_includes/svg/languages/python.svg",
 		"/Users/marco/github_pages/_includes/author-links.html",
-		"/Users/marco/github_pages/assets/css/main.scss",
 		"/Users/marco/github_pages/projects/condor.md",
 		"/Users/marco/github_pages/projects/beye.md",
 		"/Users/marco/github_pages/_sass/common/_variables.scss",
-		"/Users/marco/github_pages/_sass/common/classes/_grid.scss",
 		"/Users/marco/github_pages/404.html",
-		"/Users/marco/github_pages/index.html",
-		"/Users/marco/github_pages/Gemfile",
 		"/Users/marco/github_pages/_includes/svg/icon/social/github.svg",
-		"/Users/marco/github_pages/_sass/components/_author-links.scss",
-		"/Users/marco/github_pages/_config.yml",
 		"/Users/marco/github_pages/_sass/layout/_base.scss",
 		"/Users/marco/github_pages/_sass/common/classes/_clickable.scss",
 		"/Users/marco/github_pages/_sass/components/_author-profile.scss",
 		"/Users/marco/github_pages/_sass/skins/_chocolate.scss",
 		"/Users/marco/github_pages/_includes/svg/icon/social/flicker.svg",
 		"/Users/marco/github_pages/projects/index.md",
-		"/Users/marco/github_pages/assets/css/circle.css",
 		"/Users/marco/github_pages/_sass/additional/circle.scss",
 		"/Users/marco/Desktop/css-circle/index.html",
 		"/Users/marco/github_pages/assets/css/circle.scss",
@@ -701,24 +684,17 @@
 		"/Users/marco/github_pages/_sass/additional/_cirle.scss",
 		"/Users/marco/github_pages/_sass/additional/cirle.scss",
 		"/Users/marco/github_pages/_sass/additional/_alert.scss",
-		"/Users/marco/github_pages/_data/navigation.yml",
-		"/Users/marco/github_pages/_sass/common/components/_hero.scss",
 		"/Users/marco/github_pages/_sass/common/components/_image.scss",
-		"/Users/marco/github_pages/_sass/common/classes/_spacing.scss",
 		"/Users/marco/github_pages/_sass/common/_classes.scss",
 		"/Users/marco/github_pages/_sass/common/classes/_display.scss",
 		"/Users/marco/github_pages/_sass/common/classes/_user-select.scss",
 		"/Users/marco/github_pages/_sass/common/classes/_flex.scss",
-		"/Users/marco/github_pages/_includes/head.html",
 		"/Users/marco/github_pages/_includes/markdown-enhancements/chart.html",
 		"/Users/marco/github_pages/_includes/snippets/get-sources.html",
 		"/Users/marco/github_pages/_includes/markdown-enhancements/mathjax.html",
 		"/Users/marco/github_pages/_includes/markdown-enhancements.html",
 		"/Users/marco/github_pages/_includes/snippets/assign.html",
-		"/Users/marco/github_pages/_includes/footer.html",
 		"/Users/marco/github_pages/_includes/sidebar/toc.html",
-		"/Users/marco/github_pages/projects/dispose.md",
-		"/Users/marco/github_pages/_includes/header.html",
 		"/Users/marco/github_pages/projects.html",
 		"/Users/marco/cash_examples/fir.hs",
 		"/Users/marco/github_pages/_layouts/articles.html",
@@ -728,10 +704,7 @@
 		"/Users/marco/github_pages/_includes/pageview-providers/leancloud/leancloud.js",
 		"/Users/marco/github_pages/_includes/pageview-providers/custom/post.html",
 		"/Users/marco/github_pages/_includes/pageview-providers/custom/home.html",
-		"/Users/marco/github_pages/_includes/pageview.html",
 		"/Users/marco/github_pages/_includes/aside/toc.html",
-		"/Users/marco/github_pages/_posts/2018-07-01-welcome.md",
-		"/Users/marco/github_pages/_includes/article-header.html",
 		"/Users/marco/github_pages/_includes/snippets/locale-to-string.html",
 		"/Users/marco/github_pages/_sass/skins/_ocean.scss",
 		"/Users/marco/github_pages/_sass/skins/_orange.scss",
@@ -782,10 +755,7 @@
 		"/Users/marco/Desktop/X86RegisterInfo.td",
 		"/Users/marco/llvm/lib/Target/ARM/ARM.td",
 		"/Users/marco/aca_project/llvm_example/example_alloca.c",
-		"/Users/marco/mw_projects/mw_parallel_programming/include/gameio.h",
-		"/Users/marco/mw_projects/mw_parallel_programming/src/gameio.cpp",
-		"/Users/marco/aca_project/llvm_example/example_alloca.ll",
-		"/Users/marco/aca_project/shoc/src/opencl/level1/fft/fft.cl"
+		"/Users/marco/mw_projects/mw_parallel_programming/include/gameio.h"
 	],
 	"find":
 	{
@@ -803,6 +773,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"\n    ",
 			"c100",
 			"circle-diame",
 			"rotate",
@@ -865,27 +836,33 @@
 			[
 				{
 					"buffer": 0,
-					"file": "projects/dispose.md",
+					"file": "cv.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 637,
+						"buffer_size": 3537,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								129,
-								129
+								340,
+								340
 							]
 						],
 						"settings":
 						{
+							"SL.13.region_keys":
+							[
+							],
+							"SL.24.region_keys":
+							[
+							],
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 182.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -893,169 +870,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "about.md",
+					"file": "_includes/article-info.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 803,
+						"buffer_size": 3568,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/css/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2941,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2890,
-								2890
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2489.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/css/circle.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 26733,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 433.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/images/languages/python.svg",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								951,
-								894
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2215.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_sass/components/_author-links.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								569,
-								569
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 100.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "_includes/pageview.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								1765,
+								1767
 							]
 						],
 						"settings":
@@ -1065,10 +892,68 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 461.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_data/navigation.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2000,
+								2000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 292.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1105,6 +990,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.exec":
 	{
 		"height": 270.0
