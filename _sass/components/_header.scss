@@ -45,6 +45,12 @@
       @include flexbox();
     }
   }
+
+  & > .menu-button {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
 }
 
 .header__brand {
@@ -81,6 +87,11 @@
     @include align-items(center);
     @include media-breakpoint-down(md) {
       height: auto;
+      @include menu-direction("vertical");
+      @include align-items(normal);
+      & > li {
+        margin-right: 0;
+      }
     }
     .search-button {
       @include media-breakpoint-down(md) {
@@ -88,6 +99,13 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.navigation_visible {
+  display: block;
 }
 
 .navigation__link {

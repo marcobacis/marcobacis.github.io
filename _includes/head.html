@@ -49,3 +49,15 @@
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
+
+<!-- shows menu or not -->
+<script>
+function displayMenu() {
+    var x = document.getElementById("main_menu");
+    if (x.className === "navigation") {
+        x.className += " navigation_visible";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
