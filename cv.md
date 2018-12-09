@@ -104,9 +104,9 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
     <img src="/assets/images/platforms/mac.svg" alt="Mac OS" title="Mac OS" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<!--<div class="cell cell--2 cell--md-3 my-2">
     <img src="/assets/images/platforms/docker.png" alt="Docker" title="Docker" width="80%"/>
-</div>
+</div>-->
 
 <div class="cell cell--2 cell--md-3 my-2">
     <img src="/assets/images/platforms/xilinx.svg" alt="Xilinx FPGAs" title="Xilinx FPGAs" width="100%"/>
