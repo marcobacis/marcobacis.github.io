@@ -1,6 +1,8 @@
 ---
 layout: page
 title: BEye Project
+aside:
+    toc: true
 ---
 
 BEye was a project developed during my last year of bachelor at Politecnico di Milano, together with Lara Cavinato and Irene Fidone.

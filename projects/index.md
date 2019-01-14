@@ -23,3 +23,7 @@ The framework aims to make FPGA more accessible to deep learning users offering 
 
 Dispose is a distributed stream processing engine, developed for the Distributed Systems course's project at Polimi.
 It supports count-based windows and numeric operations, along with a centralized checkpointing and recovery mechanism. ([github](https://github.com/marcobacis/dispose)).
+
+
+## [Others](/projects/misc)
+Other projects (mostly small university projects).
