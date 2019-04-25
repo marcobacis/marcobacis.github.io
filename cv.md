@@ -18,7 +18,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 </div>
 
 <div class="cell cell--9 cell--md-12 my-2 long">
-    Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Currently, I'm starting my master thesis concerning cloud architectures and FPGAs.
+    Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Currently, I'm working on my master thesis concerning cloud architectures and FPGAs (the keywords are Serverless and FPGA, stay tuned for updates!).
 </div>
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1 short">
@@ -114,4 +114,16 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 <div class="cell cell--auto"></div>
 
+</div>
+
+### Trivia
+
+Even if some of the languages I know are listed above as tiny little logos, the list is actually bigger based on what I'm learning at the moment. So, I decided to give you a small inside view of my programming life by embedding here the wakatime chart of my used languages in the past 30 days (should be updated every night at midnight!). It lists **every** language, so don't consider anything under 3/4%.
+
+<div class="grid mt-2 mb-1">
+    <div class="cell cell--auto"></div>
+    <div class="cell cell--12">
+        <figure><embed src="https://wakatime.com/share/@circu/b1f8ee64-44d6-4c93-8dcb-ad2d61ca9ee2.svg"></figure>
+    </div>
+    <div class="cell cell--auto"></div>
 </div>
