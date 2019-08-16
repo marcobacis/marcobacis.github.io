@@ -83,7 +83,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/php.svg" alt="PHP" title="PHP" width="100%"/>
+    <img src="/assets/images/languages/go.svg" alt="Golang" title="Golang" width="80%"/>
 </div>
 
 <div class="cell cell-auto"></div>
@@ -114,16 +114,4 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 <div class="cell cell--auto"></div>
 
-</div>
-
-### Trivia
-
-Even if some of the languages I know are listed above as tiny little logos, the list is actually bigger based on what I'm learning at the moment. So, I decided to give you a small inside view of my programming life by embedding here the wakatime chart of my used languages in the past 30 days (should be updated every night at midnight!). It lists **every** language, so don't consider anything under 3/4%.
-
-<div class="grid mt-2 mb-1">
-    <div class="cell cell--auto"></div>
-    <div class="cell cell--12">
-        <figure><embed src="https://wakatime.com/share/@circu/b1f8ee64-44d6-4c93-8dcb-ad2d61ca9ee2.svg"></figure>
-    </div>
-    <div class="cell cell--auto"></div>
 </div>
