@@ -11,15 +11,31 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 <div class="grid my-2 experience">
 
+<!-- E-Novia -->
+
 <div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/necst.png" alt="NECSTLab" title="NECSTLab"/>
+    <img src="/assets/images/work/e-novia.png" alt="e-Novia" title="e-Novia"/>
     <br/>Milan, Italy
-    <br/><i>Jun. 2015 - ???</i>
+    <br/><i>Sep. 2019 - ???</i>
 </div>
 
 <div class="cell cell--9 cell--md-12 my-2 long">
-    Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Currently, I'm working on my master thesis concerning cloud architectures and FPGAs (the keywords are Serverless and FPGA, stay tuned for updates!).
+    Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, AI etc...).
 </div>
+
+<!-- NECSTLab -->
+
+<div class="cell cell--3 cell--md-12 my-2 pr-1 short">
+    <img src="/assets/images/work/necst.png" alt="NECSTLab" title="NECSTLab"/>
+    <br/>Milan, Italy
+    <br/><i>Jun. 2015 - Sep. 2019</i>
+</div>
+
+<div class="cell cell--9 cell--md-12 my-2 long">
+    Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Later, worked on a master thesis concerning cloud architectures and FPGAs ("BlastFunction: an FPGA-as-a-Service system for accelerated serverless computing").
+</div>
+
+<!-- Maxeler -->
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1 short">
     <img src="/assets/images/work/maxeler.png" alt="Maxeler Technologies" title="Maxeler Technologies" />
