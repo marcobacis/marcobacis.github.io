@@ -91,11 +91,11 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/java.svg" alt="Java" title="Java" width="80%"/>
+    <img src="/assets/images/languages/python.svg" alt="Python" title="Python" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/languages/python.svg" alt="Python" title="Python" width="80%"/>
+    <img src="/assets/images/languages/java.svg" alt="Java" title="Java" width="80%"/>
 </div>
 
 <div class="cell cell--2 cell--md-3 my-2">

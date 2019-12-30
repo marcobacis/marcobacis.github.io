@@ -7,6 +7,15 @@ aside:
 
 In this page you can find a list of the projects (with a brief description) in which I am/was involved.
 
+## BlastFunction
+
+BlastFunction is the project I developed for my master thesis at Politecnico di Milano.
+Given the recent growing interest for heterogeneous computing and custom hardware accelerators, there have been a lot of work integrating FPGAs and cloud environments.
+However, these devices are still treated as separate entities in the current scenario, meaning that they are used in conjunction with Virtual Machines, but are kept out of container and serverless applications. 
+BlastFunction targets this opportunities, by offering a distributed FPGA sharing system for the acceleration of microservices and serverless applications in cloud environments.
+
+I will write more on this project when the corresponding paper (accepted at the [DATE2020](https://www.date-conference.com/) conference) and patent will be published!
+
 ## [CONDOR](/projects/condor)
 
 CONDOR (Convolutional neural network Dataflow Optimization using Reconfigurable hardware) is a framework to automatically derive an FPGA-based hardware accelerator starting from a high-level description of a pre-trained CNN.

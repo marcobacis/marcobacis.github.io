@@ -17,16 +17,17 @@ Hi there! I'm Marco and this is my personal website, where I'm going to put info
 I started programming when I was 12 (just a tiny little bullied nerd in middle school) with the classic web stack known as LAMP (💡).
 High school and hobbies (guitar first, then photography) kicked in at 14 and I lost touch with web development (does VB.NET at high-school-level counts as programming?).
 
-To reconnect with my long-lost friend the PC, I entered university ([Politecnico di Milano](https://www.polimi.it)) to study CS & Engineering. After a love/hate relationship with my bachelor years, I'm still in the same university doing my master's 😜.
+To reconnect with my long-lost friend the PC, I entered university ([Politecnico di Milano](https://www.polimi.it)) to study CS & Engineering. After getting my bachelor and master there, I now entered the workforce as a software engineer. 
 
 ### What?
 
-I'm currently doing research at [NECSTLab](https://www.necst.it) for my master's thesis.
-I've been "working" there since my bachelor, when I learned to program FPGAs using high level languages (C/C++ instead of HDL).
+While in university, i ended up doing research at [NECSTLab](https://www.necst.it).
+I mostly worked on FPGA-based projects for High Performance Computing, using high level languages (e.g. C++).
+My master thesis research involved managing FPGA boards inside the cloud environment.
+The aim was to prove that FPGAs can be provided "as-a-service" and orchestrated in order to guarantee their 100% usage.
 
-Now I'm trying to reach a even higher level, as my research involves managing FPGA boards inside the cloud environment.
-My aim is to prove that FPGAs can be provided "as-a-service" and orchestrated in order to guarantee their 100% usage.
-That's why I'll write something here about my thesis, talking about docker, kubernetes, FPGAs and wathever I find interesting.
+Right now, I'm working at [e-Novia](https://e-novia.it) as Software Engineer. The company likes to call itself "The Enterprises Factory" as it participates in reasearch projects and gathers intellectual property to create and accelerate technology startups. We mainly works in three "sectors": *collaborative mobility*, *humanized machines* and *augmented humans* (you can look at the list of startups on the company's website).
+My role is to support the startups in creating their products and to help improving their (technological) processes using my software development skills.
 
 ### Why?
 
