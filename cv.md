@@ -21,6 +21,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 <div class="cell cell--9 cell--md-12 my-2 long">
     Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, AI etc...).
+    I'm mainly using C# (ASP.NET Core, Unity), Python (single-board computers and backend) and C++ (Computer Vision and Robots) in Linux and Windows environments.
 </div>
 
 <!-- NECSTLab -->
@@ -64,7 +65,7 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
     <img src="/assets/images/work/poli.png" alt="Politecnico di Milano" title="Politecnico di Milano"/>
     Milan, Italy<br/>
     <i>Oct. 2013 - Jul. 2016</i><br/>
-    <i>Sep. 2016 - ??? </i>
+    <i>Sep. 2016 - Oct. 2019</i>
 </div>
 
 <div class="cell cell--9 cell--md-12 my-2 pl-1">
@@ -86,19 +87,23 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 <div class="cell cell--auto"></div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
+    <img src="/assets/images/languages/csharp.svg" alt="C#" title="C#" width="90%">
+</div>
+
+<div class="cell cell--auto">
     <img src="/assets/images/languages/cpp.svg" alt="C/C++" title="C/C++" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
     <img src="/assets/images/languages/python.svg" alt="Python" title="Python" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
     <img src="/assets/images/languages/java.svg" alt="Java" title="Java" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
     <img src="/assets/images/languages/go.svg" alt="Golang" title="Golang" width="80%"/>
 </div>
 
@@ -108,24 +113,24 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
 
 ### Platforms
 
-<div class="grid mt-2 mb-1 logos">
+<div class="grid mt-2 mb-1 mx-auto logos">
 
 <div class="cell cell--auto"></div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
+    <img src="/assets/images/platforms/azure.svg" alt="Microsoft Azure" title="Microsoft Azure" width="80%"/>
+</div>
+
+<div class="cell cell--auto">
     <img src="/assets/images/platforms/tux.svg" alt="Linux" title="Linux" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
     <img src="/assets/images/platforms/k8s.svg" alt="Kubernetes" title="Kubernetes" width="80%"/>
 </div>
 
-<div class="cell cell--2 cell--md-3 my-2">
+<div class="cell cell--auto">
     <img src="/assets/images/platforms/docker.png" alt="Docker" title="Docker" width="100%"/>
-</div>
-
-<div class="cell cell--2 cell--md-3 my-2">
-    <img src="/assets/images/platforms/xilinx.svg" alt="Xilinx FPGAs" title="Xilinx FPGAs" width="100%"/>
 </div>
 
 <div class="cell cell--auto"></div>
