@@ -103,10 +103,6 @@ For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
     <img src="/assets/images/languages/java.svg" alt="Java" title="Java" width="80%"/>
 </div>
 
-<div class="cell cell--auto">
-    <img src="/assets/images/languages/go.svg" alt="Golang" title="Golang" width="80%"/>
-</div>
-
 <div class="cell cell-auto"></div>
 
 </div>
