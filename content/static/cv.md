@@ -1,68 +1,27 @@
 ---
-title: Curriculum Vitae
-layout: page
-show_title: false
-permalink: /cv
+title: "Curriculum Vitae"
+author: "Marco Bacis"
+date: 2021-03-07T00:00:00.000Z
+lastmod: 2021-03-07T15:56:00.000Z
+
+description: "My experiences and interests"
+
+aliases:
+    - "/cv"
 ---
 
-For the boring and ugly pdf version click [here](/assets/marcobacis_cv.pdf).
+For the boring and ugly pdf version click [here](/marcobacis_cv.pdf).
 
 ### Experience
 
-<div class="grid my-2 experience">
-
-<!-- E-Novia -->
-
-<div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/e-novia.png" alt="e-Novia" title="e-Novia"/>
-    <br/>Milan, Italy
-    <br/><i>Sep. 2019 - ???</i>
-</div>
-
-<div class="cell cell--9 cell--md-12 my-2 long">
-    Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, AI etc...).
-    I'm mainly using C# (ASP.NET Core, Unity), Python (single-board computers and backend) and C++ (Computer Vision and Robots) in Linux and Windows environments.
-</div>
-
-<!-- NECSTLab -->
-
-<div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/necst.png" alt="NECSTLab" title="NECSTLab"/>
-    <br/>Milan, Italy
-    <br/><i>Jun. 2015 - Sep. 2019</i>
-</div>
-
-<div class="cell cell--9 cell--md-12 my-2 long">
-    Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Later, worked on a master thesis concerning cloud architectures and FPGAs ("BlastFunction: an FPGA-as-a-Service system for accelerated serverless computing").
-</div>
-
-<!-- Maxeler -->
-
-<div class="cell cell--3 cell--md-12 my-2 pr-1 short">
-    <img src="/assets/images/work/maxeler.png" alt="Maxeler Technologies" title="Maxeler Technologies" />
-    <br/>London, UK
-    <br/><i>Mar. 2017 - Sep. 2017</i>
-</div>
-
-<div class="cell cell--9 cell--md-12 my-2 long">
-    Internship in the Machine Learning team:
-    <ul class="pl-4">
-<li>Design and analysis of ML algorithms for DFE (Java / FPGA-based) acceleration</li>
-<li>Accelerator integration in a pipelined architecture for facial recognition</li>
-<li>Tuning of the accelerator to reach high performances</li>
-</ul>
-</div>
-
-</div>
-
-<br/>
+{{< cvExperience >}}
 
 ### Education
 
 <div class="grid my-2 experience">
 
 <div class="cell cell--3 cell--md-12 my-2 pr-1">
-    <img src="/assets/images/work/poli.png" alt="Politecnico di Milano" title="Politecnico di Milano"/>
+    <img src="/images/work/poli.png" alt="Politecnico di Milano" title="Politecnico di Milano"/>
     Milan, Italy<br/>
     <i>Oct. 2013 - Jul. 2016</i><br/>
     <i>Sep. 2016 - Oct. 2019</i>

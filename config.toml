@@ -3,3 +3,44 @@ languageCode = "en-us"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
 
+
+[params.index]
+  picture = "/images/marco.jpg"
+  title = "Hello!"
+  subtitle = "I'm Marco, an Italian software engineer based in Milan"
+  mdtext = ''''''
+  alertbar = true
+
+[params.author]
+  name = "Marco Bacis"
+  thumbnail = "/images/marco.jpg"
+  description = "<insert description here>"
+
+[params.social]
+  github = "marcobacis"
+  linkedin = "marcobacis"
+  medium = "marcobacis"
+  twitter = "marcbacis"
+
+
+## Main Menu
+[[menu.main]]
+    name = "🏠 Home"
+    weight = 50
+    identifier = ""
+    url = "/"
+[[menu.main]]
+    name = "📜 Publications"
+    weight = 150
+    identifier = "publications"
+    url = "/publications"
+[[menu.main]]
+    name = "💼 CV"
+    weight = 100
+    identifier = "curriculum"
+    url = "/cv"
+[[menu.main]]
+    name = "ℹ️ About"
+    identifier = "about"
+    weight = 300
+    url = "/about"
