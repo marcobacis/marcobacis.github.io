@@ -1,4 +1,24 @@
-_site/
-.sass-cache/
-.jekyll-metadata
-vendor
+# Hugo files
+public
+resources
+
+# Backup Files
+*.markdown~
+*.md~
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+package-lock.json
+
+# Mac File System File
+.DS_Store

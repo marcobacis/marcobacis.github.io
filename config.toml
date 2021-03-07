@@ -1,0 +1,5 @@
+baseURL = "http://marcobacis.com/"
+languageCode = "en-us"
+title = "Marco Bacis"
+theme = "mediumish-gohugo-theme"
+
