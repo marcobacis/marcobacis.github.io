@@ -1,5 +1,5 @@
 ---
-title: "About Marco Bacis"
+title: "About"
 author: "Marco Bacis"
 date: 2021-03-07T00:00:00.000Z
 lastmod: 2021-03-07T13:40:00.000Z
