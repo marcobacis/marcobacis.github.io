@@ -1,0 +1,33 @@
+{{ range .Site.Data.publications.entry }}
+    <i><b>{{ .title }}</b></i>
+    
+    <br/>
+    {{ $nAuthors := .authors | len }}
+    {{ range $idx, $author := .authors }}
+        {{ $author }}
+        {{ if lt $idx  (sub $nAuthors 1) }}
+            ,
+        {{ end }}
+    {{ end }}
+
+    <br/>
+
+    <!-- Links-->
+    <span style="float: right">
+        
+        {{ if isset . "poster" }}
+            <a taget="_blank" href="{{ .poster }}">poster</a>
+        {{ end }}
+        &nbsp;
+        {{ if isset . "pdf" }}
+            <a taget="_blank" href="{{ .pdf }}">pdf</a>
+        {{ end }}
+        &nbsp;
+        {{ if isset . "ieee" }}
+            <a taget="_blank" href="https://ieeexplore.ieee.org/document/{{ .ieee }}">ieee</a>
+        {{ end }}
+    </span>
+
+    <br/><br/>
+    
+{{ end }}
