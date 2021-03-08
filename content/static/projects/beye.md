@@ -1,8 +1,7 @@
 ---
-layout: page
-title: BEye Project
-aside:
-    toc: true
+title: "BEye Project"
+aliases:
+    - "/projects/beye"
 ---
 
 BEye was a project developed during my last year of bachelor at Politecnico di Milano, together with Lara Cavinato and Irene Fidone.
@@ -37,7 +36,7 @@ False positives are removed by employing a simple blob detection filter, impleme
 
 Finally, the results are filtered for a last time with a 11x11 adaptive threshold.
 
-![Algorithm flow](/assets/beye/algorithm.png){:.image.image--article}
+![Algorithm flow](/beye/algorithm.png)
 
 ## Why FPGA?
 
@@ -75,9 +74,7 @@ Source Code, designs etc... - [Bitbucket](https://bitbucket.org/necst/beye-src)
 
 Some videos explaining the project - YouTube [playlist](https://www.youtube.com/playlist?list=PLewc2qlpcOueh9xMhoDR7G93k6ZZ3pDrO)
 
-Paper published at EMBC 2017 - <a target="_blank" href="/assets/beye/beye_paper.pdf">pdf</a>,
- <a target="_blank" href="/assets/beye/poster.pdf">poster</a>,
- <a target="_blank" href="https://ieeexplore.ieee.org/document/8037052/">ieee</a>
+Paper published at EMBC 2017 - [pdf](/papers/beye_paper.pdf), [poster](/papers/poster.pdf), [ieee](https://ieeexplore.ieee.org/document/8037052/)
 
 <br/>
 
@@ -94,12 +91,4 @@ Marco D. Santambrogio - marco.santambrogio@polimi.it
 
 And here are a few slides showing the project (presented at the Stanford OTL office in May 2018):
 
-<div class="grid mt-5 mb-5">
-  <div class="cell cell--auto"></div>
-  <div class="cell cell--8 cell--sm-12">
-      <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 75.0019%; padding-top: 38px;">
-        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/DvdxmrKlkBa3U" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no"></iframe>
-        </div>
-  </div>
-  <div class="cell cell--auto"></div>
-</div>
+{{< slideshare DvdxmrKlkBa3U >}}

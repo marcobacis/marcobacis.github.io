@@ -1,6 +1,7 @@
 ---
-layout : page
-title : CONDOR
+title: "CONDOR"
+aliases:
+    - "/projects/condor"
 ---
 
 CONDOR (Convolutional neural network Dataflow Optimization using Reconfigurable hardware) is a project started in Novmber 2016 and that I left in May 2018, which aims at creating a scalable and easy-to-use framework to accelerate convolutional neural networks using FPGAs in the cloud.
@@ -36,11 +37,11 @@ As of now, the framework supports on-premise deployment (using SDAccel) or AWS F
 
 #### Papers
 
-IPDPS Workshop RAW 2018 - <a target="_blank" href="https://ieeexplore.ieee.org/document/8425400/">ieee</a>
+IPDPS Workshop RAW 2018 - [ieee](https://ieeexplore.ieee.org/document/8425400/)
 
-ISVLSI 2017 - <a target="_blank" href="https://ieeexplore.ieee.org/document/7987594/">ieee</a>
+ISVLSI 2017 - [ieee](https://ieeexplore.ieee.org/document/7987594/)
 
-IPDPS Workshop RAW 2017 - <a target="_blank" href="https://ieeexplore.ieee.org/document/7965030/">ieee</a>
+IPDPS Workshop RAW 2017 - [ieee](https://ieeexplore.ieee.org/document/7965030/)
 
 #### Contacts
 
@@ -56,12 +57,4 @@ Marco D. Santambrogio - marco.santambrogio@polimi.it
 
 Below, you can find a slide deck shown while traveling to Silicon Valley (this particular talk was given at Oracle Labs): 
 
-<div class="grid mt-4 mb-4">
-  <div class="cell cell--auto"></div>
-  <div class="cell cell--8 cell--sm-12">
-      <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 75.0019%; padding-top: 38px;">
-        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/JrA0Of0JIBmbwj" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no"></iframe>
-        </div>
-  </div>
-  <div class="cell cell--auto"></div>
-</div>
+{{< slideshare JrA0Of0JIBmbwj >}}

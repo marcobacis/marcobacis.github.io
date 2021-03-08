@@ -1,8 +1,8 @@
 ---
-layout: article
-title: Projects
-aside:
-    toc: true
+title: "Projects"
+author: "Marco Bacis"
+aliases:
+    - "/projects"
 ---
 
 In this page you can find a list of the projects (with a brief description) in which I am/was involved.
@@ -16,13 +16,13 @@ BlastFunction targets this opportunities, by offering a distributed FPGA sharing
 
 I will write more on this project when the corresponding paper (accepted at the [DATE2020](https://www.date-conference.com/) conference) and patent will be published!
 
-## [CONDOR](/projects/condor)
+## [CONDOR](/static/projects/condor)
 
 CONDOR (Convolutional neural network Dataflow Optimization using Reconfigurable hardware) is a framework to automatically derive an FPGA-based hardware accelerator starting from a high-level description of a pre-trained CNN.
 The resulting accelerator exploits the dataflow computational pattern and inherent parallelism of convolutions and creates a pipeline between the layers of the CNN.
 The framework aims to make FPGA more accessible to deep learning users offering a quick and automated way to deploy CNNs on reconfigurable hardware.
 
-## [BEye](/projects/beye)
+## [BEye](/static/projects/beye)
 
 BEye is an application for retinal vessels segmentation running on FPGAs.
 The project has been carried out during my last year of bachelor, was a finalist in the [2016](http://www.openhw.eu/2016-finalists.html) Xilinx Open Harware Competition, and brought to a [publication](https://ieeexplore.ieee.org/document/8037052/) to the 2017 EMBC conference.
@@ -34,5 +34,5 @@ Dispose is a distributed stream processing engine, developed for the Distributed
 It supports count-based windows and numeric operations, along with a centralized checkpointing and recovery mechanism. ([github](https://github.com/marcobacis/dispose)).
 
 
-## [Others](/projects/misc)
+## [Others](/static/projects/misc)
 Other projects (mostly small university projects).

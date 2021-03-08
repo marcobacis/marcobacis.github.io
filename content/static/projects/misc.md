@@ -1,6 +1,7 @@
 ---
-layout : page
-title : Misc Projects
+title : "Misc Projects"
+aliases:
+    - "/projects/misc"
 ---
 
 In this page I just give a list of other small projects that don't need an entire page to be explained. They are just small projects developed for university courses. In case you are interested, the source code for these projects is hosted on my github [profile](https://github.com/marcobacis). 

@@ -30,13 +30,18 @@ theme = "mediumish-gohugo-theme"
     identifier = ""
     url = "/"
 [[menu.main]]
+    name = "🛠 Projects"
+    weight = 100
+    identifier = "projects"
+    url = "/projects"
+[[menu.main]]
     name = "📜 Publications"
     weight = 150
     identifier = "publications"
     url = "/publications"
 [[menu.main]]
     name = "💼 CV"
-    weight = 100
+    weight = 200
     identifier = "curriculum"
     url = "/cv"
 [[menu.main]]
