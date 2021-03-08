@@ -5,7 +5,7 @@ theme = "mediumish-gohugo-theme"
 
 
 [params.index]
-  picture = "/images/marco.jpg"
+  picture = "/images/avatar.svg"
   title = "Hello!"
   subtitle = "I'm Marco, an Italian software engineer based in Milan"
   mdtext = ''''''
