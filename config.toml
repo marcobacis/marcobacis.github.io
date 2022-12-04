@@ -1,8 +1,8 @@
 baseURL = "http://marcobacis.com/"
-languageCode = "en-us"
+languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
-
+copyright = "Marco Bacis 2022"
 
 [params.index]
   picture = "/images/avatar.svg"
@@ -14,7 +14,7 @@ theme = "mediumish-gohugo-theme"
 [params.author]
   name = "Marco Bacis"
   thumbnail = "/images/marco.jpg"
-  description = "<insert description here>"
+  description = "Software Engineer / Tinkerer"
 
 [params.social]
   github = "marcobacis"
@@ -25,27 +25,32 @@ theme = "mediumish-gohugo-theme"
 
 ## Main Menu
 [[menu.main]]
-    name = "🏠 Home"
+    name = "Home"
     weight = 50
     identifier = ""
     url = "/"
 [[menu.main]]
-    name = "🛠 Projects"
+    name = "Blog"
+    weight = 70
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "Projects"
     weight = 100
     identifier = "projects"
     url = "/projects"
 [[menu.main]]
-    name = "📜 Publications"
+    name = "Publications"
     weight = 150
     identifier = "publications"
     url = "/publications"
 [[menu.main]]
-    name = "💼 CV"
+    name = "CV"
     weight = 200
     identifier = "curriculum"
     url = "/cv"
 [[menu.main]]
-    name = "ℹ️ About"
+    name = "About"
     identifier = "about"
     weight = 300
     url = "/about"
