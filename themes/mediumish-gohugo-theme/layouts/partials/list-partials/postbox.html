@@ -6,6 +6,9 @@
                 {{$images := .Resources.ByType "image"}}
                 {{with $images.GetMatch "*cover*" }}
                     <img class="img-fluid" src="{{ .Permalink }}" alt="A thumbnail image">
+                {{end}}
+                {{ if .Params.unsplash }}
+                    <img class="img-fluid" src="http://source.unsplash.com/{{ .Params.unsplash }}/300x200" alt="Photo by @{{ .Params.thumbnailby }} on Unsplash">
                 {{end}}                
             </a>
         </div>

@@ -44,8 +44,17 @@
                     <!-- Post Featured Image -->
                     {{$images := .Resources.ByType "image"}}
                     {{with $images.GetMatch "*cover*" }}
-                        <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="thumbnail for this post">
+                        <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="{{ .Params.thumbnaildesc }}">
                     {{end}}
+                    {{ if .Params.unsplash }}
+                    <div class="featured-image">
+                        <figure>
+                        <img class="img-fluid image" src="http://source.unsplash.com/{{ .Params.unsplash }}" alt="Photo by @{{ .Params.thumbnailby }} on Unsplash">
+                        <figcaption class="caption">Photo by <a target="_blank" href="http://unsplash.com/@{{ .Params.thumbnailby }}">@{{ .Params.thumbnailby }}</a> on Unsplash.</figcaption>
+                        </figure>
+                    </div>
+                    {{end}}
+
                     <!-- End Featured Image -->
 
                     <!-- Post Content -->
