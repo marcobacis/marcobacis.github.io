@@ -3,6 +3,8 @@ languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
 copyright = "Marco Bacis 2022"
+googleAnalytics = "UA-6125168-6"
+disqusShortname = "marcobacis-1"
 
 [params.index]
   picture = "/images/avatar.svg"
