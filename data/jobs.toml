@@ -4,8 +4,14 @@
         logo = "/images/work/e-novia.png"
         place = "Milan, Italy"
         startdate = "Sep. 2019"
-        description = '''Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, AI etc...).
-            I'm mainly using C# (ASP.NET Core, Unity), Python (single-board computers and backend) and C++ (Computer Vision and Robots) in Linux and Windows environments.'''
+        description = """ \
+            Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, web, etc...) along with some external corporate customers.
+
+Worked in different projects and technologies such as:
+* Web (React for frontend, .NET and Azure for backend)
+* Robotics and AI (C++, Python, Qt)
+* Augmented Reality/Gaming (Unity)
+            """
         
     [[entry]]
         company = "NECSTLab"
@@ -15,6 +21,14 @@
         enddate = "Sep. 2019"
         description = '''Student member of NECSTLab @ Politecnico di Milano. Started during my bachelor, working mainly on FPGA designs using HLS tools. Later, worked on a master thesis concerning cloud architectures and FPGAs ("BlastFunction: an FPGA-as-a-Service system for accelerated serverless computing").'''
 
+    [[entry]]
+        company = "Politecnico Milano"
+        logo = "/images/work/poli.png"
+        place = "Milan, Italy"
+        startdate = "May 2019"
+        enddate = "Jul. 2019"
+        description = "Tutor for the IEIM course (Computer Science for Biomedical Eng. students, C language) and 'Prova Finale' course (Software Engineering final project course, Java/OOP concepts etc..) at Politecnico di Milano during the second semester A.Y. 2018/2019."
+    
     [[entry]]
         company = "Maxeler Technologies"
         logo = "/images/work/maxeler.png"
