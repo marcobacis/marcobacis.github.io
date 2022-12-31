@@ -50,7 +50,7 @@ Other than that, we didn’t have any other issues (e.g. didn’t do any work on
 
 ### Hybrid work - Pros and Cons
 
-This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more [here](https://www.notion.so/Opinion-on-remote-work-cafa5bfc3eec43c4bd9e60b8efeb9cef)):
+This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more [here](/blog/remote-work-opinions)):
 
 - **Pro**: I was able to start exercising a bit on the work-from-home days
 - **Pro**: I got to enjoy my new house more (also, working with my cat close to me is purrfect!)
@@ -133,7 +133,7 @@ In addition to reading, I also participated in a couple of conferences and meetu
 - [XPUG Bergamo Meetups](https://www.meetup.com/it-IT/xpugbg/)
   - “Vent’anni dopo”… la prima volta che ho letto XP eXplained
   - eXtreme Programming linter: aggiusta XP quando si rompe
-  - Mars Rover Kata, un approccio outside-in (I wrote a [summary](https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/) of this)
+  - Mars Rover Kata, un approccio outside-in (I wrote a [summary](/blog/2022-dec-mars-rover-kata-meetup/) of this)
 
 There’s no learning without practice. In December I started learning the Rust programming language, by following the [book](https://doc.rust-lang.org/book/). To practice using it, I started solving the 2022 Advent of Code with it ([github](https://github.com/marcobacis/adventofcode)). I haven’t finished all the challenges yet (I’m stuck on the infamous 16th day 😅) but I think AoC is a great way to experiment and learn and I’ll continue with it even after the holidays.
 
