@@ -15,7 +15,7 @@ disqusShortname = "marcobacis-1"
 
 [params.author]
   name = "Marco Bacis"
-  thumbnail = "/images/marco.jpg"
+  thumbnail = "/images/avatar_real.png"
   description = "Software Engineer / Tinkerer"
 
 [params.social]
