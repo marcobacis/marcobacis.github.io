@@ -2,7 +2,7 @@ baseURL = "http://marcobacis.com/"
 languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
-copyright = "Marco Bacis 2022"
+copyright = "© Copyright Marco Bacis 2018-{year}"
 googleAnalytics = "UA-6125168-6"
 disqusShortname = "marcobacis-1"
 
