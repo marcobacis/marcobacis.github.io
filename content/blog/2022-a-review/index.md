@@ -129,7 +129,7 @@ As you have just seen from the latest section, I also love to read, so most of m
 In addition to reading, I also participated in a couple of conferences and meetups, mostly in the last months:
 
 - [Codemotion Milan 2022](https://extra.codemotion.com/conference-milan-2022/) (online, didn’t manage to buy the tickets for the live conference..)
-- [Italian Agile Day 2022](https://www.agileday.it/)
+- [Italian Agile Day 2022](https://www.agileday.it/) (my [summary](/blog/2022-italian-agile-days))
 - [XPUG Bergamo Meetups](https://www.meetup.com/it-IT/xpugbg/)
   - “Vent’anni dopo”… la prima volta che ho letto XP eXplained
   - eXtreme Programming linter: aggiusta XP quando si rompe
@@ -139,7 +139,7 @@ There’s no learning without practice. In December I started learning the Rust 
 
 ## New year resolutions
 
-2022 has been a great year. I wasn’t able to fulfil all my goals (for example, I definitely didn’t lost 10 kg of weight…) but it was a fun and nice adventure.
+2022 has been a great year. I wasn’t able to fulfil all my goals (for example, I definitely didn’t lose 10 kg of weight…) but it was a fun and nice adventure.
 
 I’m not used to making new year's resolutions, as I usually set a goal whenever it comes to my mind. This time I’ll try to list some main topics and goals for next year.
 
