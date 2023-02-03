@@ -45,7 +45,12 @@
                 <!-- Post Featured Image -->
                 {{$images := .Resources.ByType "image"}}
                 {{with $images.GetMatch "*cover*" }}
-                <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="{{ .Params.thumbnaildesc }}">
+                <div class="featured-image">
+                    <figure>
+                        <img class="img-fluid image" src="{{ .Permalink }}" alt="{{ .Params.thumbnaildesc }}">
+                        <figcaption class="caption">{{ .Params.thumbnaildesc }}</figcaption>
+                    </figure>
+                </div>
                 {{end}}
                 {{ if .Params.unsplash }}
                 <div class="featured-image">
