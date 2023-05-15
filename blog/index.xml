@@ -1,21 +1,605 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Marco Bacis</title><link>http://marcobacis.com/blog/</link><description>Recent content in Blogs on Marco Bacis</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-{year}</copyright><lastBuildDate>Sat, 01 Apr 2023 08:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>XPUGBg March Meetup: “The Actor Model (and why an XP programmer should know it)“</title><link>http://marcobacis.com/blog/2023-actor-model-meetup/</link><pubDate>Sat, 01 Apr 2023 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-actor-model-meetup/</guid><description>Hi 👋 welcome!
-This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.
-Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did here and here).
-This month&amp;rsquo;s talk was titled “The Actor Model and why an XP programmer should know it” by Emanuele DelBono.</description></item><item><title>Book Summary: Atomic Habits</title><link>http://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/atomic-habits-book/</guid><description>Hi 👋 and welcome to a new post!
-Today I’m publishing the (raw) notes I took while reading “Atomic Habits: An Easy and proven way to build good habits and break bad ones”, by James Clear.
-Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book.</description></item><item><title>My Experience at FOSDEM 2023</title><link>http://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
-Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
-As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>Hi 👋 welcome to a new post!
-Today I’m going to post a little summary of my experience at the XPUGBg meetup I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.
-What is a collaborative codebase? Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</description></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>Hi 👋 and welcome to a new post!
-In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (here) on January 24th.
-For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>http://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-italian-agile-days/</guid><description>Hi 👋
-Today’s post is about my experience at the Italian Agile Days 2022, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.
-The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</description></item><item><title>2022: A Review</title><link>http://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-a-review/</guid><description>Hi 👋 and welcome to a new post!
-Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.
-So, let’s start!
-Disclaimer: This recap is mostly written by me and for me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</description></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>Hi! 👋
-Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The XPUGBg is an association promoting and organizing events related to extreme programming in the Bergamo region.
-In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from Alcor Academy) performed a live mob programming session with the audience, to solve the mars rover kata. We learned how to do mob programming, and how the Outside-In TDD approach works.</description></item><item><title>Remote working?</title><link>http://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>http://marcobacis.com/blog/remote-work-opinions/</guid><description>Hi! Welcome to my first post on this blog, I hope there will be others soon!
-Today I felt inspired after reading an article from Bennet Garner (here). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.
-By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Marco Bacis</title><link>http://marcobacis.com/blog/</link><description>Recent content in Blogs on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sun, 14 May 2023 08:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>http://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/katurday/</guid><description>&lt;p>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the &lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUG Bergamo&lt;/a> group.&lt;/p>
+&lt;p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.&lt;/p>
+&lt;h2 id="what-is-a-kata">What is a kata?&lt;/h2>
+&lt;p>
+&lt;img class="img-fluid image" src="kata_dwight.png" alt="Typical developer performing a kata" />
+&lt;/p>
+&lt;p>Typical developer performing a kata&lt;/p>
+&lt;p>&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (&lt;a href="https://en.wikipedia.org/wiki/Kata">Wikipedia&lt;/a>).&lt;/p>
+&lt;p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.&lt;/p>
+&lt;p>In Katurday sessions, the focus is on practicing one or more katas with other people, usually by doing pair or mob programming. By practicing in a group, we step out of our comfort zone (programmers aren&amp;rsquo;t the best at socializing) and receive immediate feedback from more experienced developers, while also having fun together!&lt;/p>
+&lt;h1 id="sessions-journal">Sessions journal&lt;/h1>
+&lt;p>Here I&amp;rsquo;ll keep an updated list of the session in which I take part, so be sure to check this page every month for a new entry (and even if I&amp;rsquo;m the only one reading this, I&amp;rsquo;ll keep writing it as a journal 😛).&lt;/p>
+&lt;p>Enjoy!&lt;/p>
+&lt;h2 id="first-contact-mob-programming">First contact: Mob programming&lt;/h2>
+&lt;p>In the first meetup, the main goal was to get to know each other and practice together for the first time. And the perfect opportunity to learn with others in a psychologically safe way is mob programming!&lt;/p>
+&lt;p>In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.&lt;/p>
+&lt;p>We practiced the &lt;a href="https://codingdojo.org/kata/RomanNumerals/">Roman numerals&lt;/a> kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called &lt;em>fishbowl&lt;/em>, in which a small group is in the mob while the rest of the audience watches (already described in &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">this post&lt;/a> about another XPUG meetup).&lt;/p>
+&lt;p>The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅&lt;/p>
+&lt;p>This experience was interesting, showing that a group of software developers can come up with a high-quality and tested solution without fighting (too much).&lt;/p>
+&lt;h2 id="second-session-pairing-and-tdd">Second session: Pairing and TDD&lt;/h2>
+&lt;p>On the second meetup, we stepped out of our comfort zone. The goal this time was to practice pair programming and test-driven development. Why both practices together? Well, we had already practiced TDD in the latest session, but this time it was part of the pairing exercise itself.&lt;/p>
+&lt;p>How can TDD help make pair programming better? With &lt;strong>ping-pong&lt;/strong> programming! One developer writes a failing test (red phase of TDD). Then, the other developer makes the test pass (green phase) and can apply some refactoring while still passing tests. Finally, they create a new failing test and give it to the first developer. This “ping-pong” between the members keeps them concentrated on the task at hand and allows them to write code as if only one person wrote it.&lt;/p>
+&lt;p>We practiced the &lt;a href="https://www.codewars.com/kata/587e4b656c87d3e7f4000143">prime factors kata&lt;/a> in multiple sessions, erasing the code at the end and pairing up with another person we didn&amp;rsquo;t know. In this kind of exercise (as in any kata), the goal is not to finish it, but to try new ways to solve it and learn. Also, by changing partners every time, we are forced to get to know a new person (duh!), and sometimes even a new programming language/framework, tools, and in general a completely new environment (e.g. different keyboard layout and operating system). It&amp;rsquo;s obvious that changing this much on every rotation doesn&amp;rsquo;t always allow us to finish the kata, but that&amp;rsquo;s expected.&lt;/p>
+&lt;p>In the end, we did two pairing sessions and a final feedback session in which we shared our views on ping-pong pairing and TDD in general. It was useful to see that other people had the same ideas and concerns as me, and also different ideas about the exercise.&lt;/p>
+&lt;h2 id="third-session-refactoring">Third session: Refactoring&lt;/h2>
+&lt;p>In this session, we tackled a difficult task: refactoring a piece of code that was intentionally made unreadable, the &lt;a href="https://github.com/emilybache/Tennis-Refactoring-Kata">tennis refactoring kata&lt;/a> by Emily Bache. The repository contains the same kata implemented (with lots of code smells) in most of the mainstream programming languages. For each project, it also contains a comprehensive test suite, making it perfect for practicing refactoring without worrying about the tests.&lt;/p>
+&lt;p>As in every other Katurday session, we worked in pairs and had a set time to finish. We started by choosing a language and then identified code smells, solving them by refactoring the code. In reality, my partner and I just started saying &amp;ldquo;wow, that code sucks&amp;rdquo; for every piece of code in the project and tried to refactor it with our gut feeling. The result came out nicely, but we didn&amp;rsquo;t apply the rules to the letter. Nonetheless, it was still a learning experience, seeing how a comprehensive test suite helps to refactor without fear (which I cannot say about the projects I usually work on 😅).&lt;/p>
+&lt;p>One interesting technique we used was loop unrolling (example &lt;a href="https://www.youtube.com/watch?v=tQjUKQxFXuE">here&lt;/a>) to refactor a useless and complex loop. I had already encountered it in university to improve performance (and used it in unconventional ways for FPGA synthesis), but I never thought of it as a refactoring technique 😃.&lt;/p>
+&lt;p>After making our way through the refactoring, every pair shared their experience. It was useful to see many different approaches to the problem: top-down like ours (extracting and simplifying unrelated and big parts of the code) and bottom-up (refactoring a small but common part of the code at a time).&lt;/p>
+&lt;p>Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched &lt;a href="https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&amp;amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D">Gianni&lt;/a> refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.&lt;/p>
+&lt;h2 id="thats-all">That&amp;rsquo;s all!&lt;/h2>
+&lt;p>Keep checking this post for updates on the next sessions I&amp;rsquo;ll attend 🤩&lt;/p></description></item><item><title>XPUGBg March Meetup: “The Actor Model (and why an XP programmer should know it)“</title><link>http://marcobacis.com/blog/2023-actor-model-meetup/</link><pubDate>Sat, 01 Apr 2023 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-actor-model-meetup/</guid><description>&lt;p>Hi 👋 welcome!&lt;/p>
+&lt;p>This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.&lt;/p>
+&lt;p>Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did &lt;a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">here&lt;/a> and &lt;a href="http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/">here&lt;/a>).&lt;/p>
+&lt;p>This month&amp;rsquo;s talk was titled “&lt;em>The Actor Model and why an XP programmer should know it&lt;/em>” by Emanuele DelBono.&lt;/p>
+&lt;p>Emanuele is a Software Architect and Developer at &lt;a href="https://codiceplastico.com/">Codice Plastico&lt;/a>, a software house near Brescia. He has a lot of experience and he’s always interested in experimenting with new paradigms and technologies, and right now he’s working with Elixir (the language he used during the talk).&lt;/p>
+&lt;p>Let’s start!&lt;/p>
+&lt;h2 id="the-actor-model">The Actor Model&lt;/h2>
+&lt;p>The Actor Model is a programming paradigm for concurrent and parallel computations. In this model, all computation is divided into different components called Actors.&lt;/p>
+&lt;p>An &lt;strong>Actor&lt;/strong> is an individual unit of computation with its private state. A single actor by itself cannot do much but must work in a system of multiple, &lt;strong>independent&lt;/strong> actors.&lt;/p>
+&lt;p>Multiple actors together can be used to perform any computation, but only if they communicate! This is done by assigning a unique &lt;strong>address&lt;/strong> to each one and using messages. Each actor can receive and send messages from/to others.&lt;/p>
+&lt;p>One key difference between the Actor Model and any other event/message-based system is that an actor can process only &lt;strong>one message at a time&lt;/strong>. This is a big constraint imposed by the model, but it makes the actor’s computation model simple to reason about. By processing one message at a time, it basically eliminates any chance of data race inside the single unit. In addition, it makes the code easily testable (send a message and check the output message and created actors; that’s it!).&lt;/p>
+&lt;p>The final action that an actor can do, apart from receiving and sending messages, is to create other actors.&lt;/p>
+&lt;p>The model just described is really similar to standard OOP. In fact, it fits perfectly with the definition given by Alan Kay, which is of multiple independent objects communicating with messages.&lt;/p>
+&lt;h3 id="pros-cons-and-use-cases">Pros, Cons, and Use Cases&lt;/h3>
+&lt;p>So, how can this paradigm be useful to us developers?&lt;/p>
+&lt;p>The first advantage of the Actor Model is the strong &lt;strong>decoupling&lt;/strong> and &lt;strong>isolation&lt;/strong> of state between different Actors. The Actors can only communicate using messages, so no one can access an Actor’s individual state.&lt;/p>
+&lt;p>Another pro of Actors is their extreme scalability. Depending on the Actor’s granularity (the size of each actor), there might be hundreds or even thousands of Actors at the same time in the system. Being decoupled and isolated among themselves, it’s possible to distribute the computation and the state among multiple nodes easily. This is also helped by frameworks, which handle the redistribution of Actors in the cluster automatically.&lt;/p>
+&lt;p>Finally, the model helps in reducing the cognitive load of the developer. By processing only one message at a time and communicating only through messages, the developer doesn’t need to think about nasty side effects or multi-object state changes. There might be a steeper learning curve at the beginning, as always when creating distributed systems, but the model helps in making it easier in the long run.&lt;/p>
+&lt;h3 id="actor-model-implementations">Actor Model Implementations&lt;/h3>
+&lt;p>After describing the actor model in theory, Emanuele showed us different languages that implement this paradigm. Some of the technologies are Erlang, Elixir, Akka (a framework used in the JVM and .NET ecosystems), Swift, and Pony.&lt;/p>
+&lt;p>One of the first languages to use a similar paradigm to the Actor Model is Erlang. Erlang was created in the 90s at Ericsson, and at the beginning, it was used to manage their telecommunications infrastructure (telephone switches). The main requirements it served were to allow concurrent computation, allow hot-reloading of components, and robust failure management.&lt;/p>
+&lt;p>Erlang supports all these scenarios by implementing a paradigm very similar to the Actor Model. The only differences are in the messaging order (incoming messages are ordered, while the Actor Model doesn’t require it) and the absence of exception management.&lt;/p>
+&lt;p>This last characteristic is known as “let it fail”: when an actor has an error, we don’t throw an exception, but we just let it crash and create a new one. The mechanism is a precursor to the current cloud paradigm, in which small individual components can crash and be recreated immediately (think of k8s and docker containers).&lt;/p>
+&lt;p>Elixir is the successor of Erlang, as it runs on the same virtual machine (BEAM), implements the actor model in the Erlang way, and is also functional. Emanuele used it for the demo.&lt;/p>
+&lt;h3 id="demo-pizza-ordering-api-with-actors">Demo: Pizza ordering API with Actors&lt;/h3>
+&lt;p>Emanuele used Elixir to show us a small demo of an actor-based web service for a pizza delivery service.&lt;/p>
+&lt;p>The service was pretty simple, with a web API for managing the basket, time slots, and orders from the customer and the pizzeria sides.&lt;/p>
+&lt;p>Some considerations about the demo and the model in general:&lt;/p>
+&lt;ul>
+&lt;li>Elixir is functional, so the internal actor state is managed with immutable and pure functions (similar to reducers)&lt;/li>
+&lt;li>We can create a lot of actors!! The demo created an actor for each user (for the basket), for each time slot (and there can be thousands of them in a year) and for each created order. They almost felt as standard objects, but all kept at runtime&lt;/li>
+&lt;li>Some actors (like the ones managing the basket) didn’t save the state in persistent storage. This was an architectural choice made based on the use case (if a basket actor fails, we just lose the current basket, nothing special)&lt;/li>
+&lt;li>Elixir allows both synchronous and asynchronous sending of messages and to respond to messages (e.g., to return errors to clients in the http endpoints)&lt;/li>
+&lt;/ul>
+&lt;h3 id="conclusions">Conclusions&lt;/h3>
+&lt;p>The meetup was really interesting. I already knew about the Actor Model (I studied a bit of Scala while in university), but this talk was a refresher on the concepts and actually showed a production-like example of how working with Actors feels.&lt;/p>
+&lt;p>I think the Actor Model paved the way for current technologies (microservices and containers) and that its philosophy is hidden in many current languages, so it’s an important paradigm to study. Also, it’s a great way to learn to divide a system into decoupled components, which fits well with other architectural practices (Domain-Driven Design, Event Sourcing, CQRS, and many other buzzwords) and with good software in general.&lt;/p>
+&lt;p>That’s it for today. I hope my short summary of Emanuele’s talk intrigued you, and that right now you’ll go watch his other talk (link right below here) and start learning the Actor Model!&lt;/p>
+&lt;p>As always, thanks to the &lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUGBg&lt;/a> and to &lt;a href="https://www.linkedin.com/in/emanueledb/">Emanuele&lt;/a> for the great meetup (and the pub after that 😉).&lt;/p>
+&lt;p>See you next time!&lt;/p>
+&lt;h3 id="resources">Resources&lt;/h3>
+&lt;ul>
+&lt;li>Another &lt;a href="https://blog.codiceplastico.com/events/avanscoperta-introduzione-actor-model">talk&lt;/a> given by Emanuele&lt;/li>
+&lt;li>The &lt;a href="https://www.amazon.it/Cronache-Domain-Driven-esperienze-progetti-raccontati/dp/8894255697/">Cronache di Domain-Driven Design&lt;/a> book has a chapter by Emanuele on using DDD and Actors in a real-life scenario (which inspired the Talk and Demo 😛)&lt;/li>
+&lt;/ul></description></item><item><title>Book Summary: Atomic Habits</title><link>http://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/atomic-habits-book/</guid><description>&lt;p>Hi 👋  and welcome to a new post!&lt;/p>
+&lt;p>Today I’m publishing the (raw) notes I took while reading “Atomic Habits: &lt;em>An Easy and proven way to build good habits and break bad ones”,&lt;/em> by James Clear.&lt;/p>
+&lt;p>Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book. Still, I&amp;rsquo;ll keep this notes on the blog as a personal learning reference.&lt;/p>
+&lt;p>If you want to see how I personally understood the concepts explained in the book, keep reading, and enjoy!&lt;/p>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>In the introduction, James writes about his teen accident with baseball and his recovery. He then talks about his college years, in which he experimented with his habits to improve, learn and become a better person and how that brought to him writing his blog and the book.&lt;/p>
+&lt;h2 id="fundamentals">Fundamentals&lt;/h2>
+&lt;p>The first thing to learn about habits is that the are the &lt;strong>compound&lt;/strong> &lt;strong>interest of personal improvement&lt;/strong>. By harnessing small habits and improving by 1% every day, one can make exponential progress in the long term.&lt;/p>
+&lt;p>I don&amp;rsquo;t agree entirely with the expression &amp;ldquo;1% better every day&amp;rdquo; because in the long run i think that improvement decreases as one become better at something. We first start by improving a lot, but with time progress becomes exponentially more difficult. Still, the advice to improve by a bit every day it’s still valid.&lt;/p>
+&lt;p>Another reminder of this chapter is that also bad habits follow the same principle: getting a little bit worse everyday means getting &lt;strong>a lot worse&lt;/strong> in the long run.&lt;/p>
+&lt;p>To close the first chapter, the author recommends to think about &lt;strong>systems&lt;/strong> instead of &lt;strong>goals&lt;/strong>, because goals are not sustainable in the long period. Also, a system is more methodic and doesn&amp;rsquo;t change once you reach a goal.&lt;/p>
+&lt;p>The second chapter talks about reverting the way in which we set habits, from &lt;strong>outcome-based&lt;/strong> to &lt;strong>identity-based&lt;/strong>.&lt;/p>
+&lt;p>When thinking through outcomes, each habit serves a single goal, and after that is reached we face a sense of void and don&amp;rsquo;t continue with the habit anymore. This happened to me while at university, as I made the habit of studying just for the exams and not for the long term goal of remembering the concepts studied.&lt;/p>
+&lt;p>James advocates instead for an internal change to drive habit-forming (identity → process → outcomes). By &lt;em>&lt;strong>identifying&lt;/strong>&lt;/em> with the new person one wants to become, it&amp;rsquo;s easier to create and stick to habits. For example, I made the choice to &lt;em>become&lt;/em> a healthier person, so I decided to start working out during the week and eating better. If the only goal was only to lose a certain amount of weight, I don&amp;rsquo;t think I would have stuck to it for a long time.&lt;/p>
+&lt;p>The third chapter finally gives an high level overview on how to build better habits. Each habit (good or bad) follows the &lt;strong>cue → craving → response → reward&lt;/strong> step. Following this steps it&amp;rsquo;s possible to create good habits and eliminate bad ones. James then lists the four laws of behavioural change, which he will explain throughout the book. To create a good habit, you should:&lt;/p>
+&lt;ol>
+&lt;li>Make it obvious&lt;/li>
+&lt;li>Make it attractive&lt;/li>
+&lt;li>Make it easy&lt;/li>
+&lt;li>Make it satisfying&lt;/li>
+&lt;/ol>
+&lt;p>To remove bad habit, you should follow the same steps, but reversed, so:&lt;/p>
+&lt;ol>
+&lt;li>Make it invisible&lt;/li>
+&lt;li>Make it unattractive&lt;/li>
+&lt;li>Make if difficult&lt;/li>
+&lt;li>Make it unsatisfying&lt;/li>
+&lt;/ol>
+&lt;h2 id="first-law-make-it-obvious">First Law: Make it obvious&lt;/h2>
+&lt;p>The first law is about creating the right environment and the right &lt;strong>clues&lt;/strong> to attach to the habits you want to make. In particular, the first thing to do is to increase your &lt;strong>awareness&lt;/strong> and list the different habits that you have (both good and bad ones) → Habits Scorecard. The scorecard allows you to be more aware of your behaviours, in order to keep or change them after.&lt;/p>
+&lt;p>After rising the awareness on the behaviours to change or add, it&amp;rsquo;s time to make a plan! Without a simple direction on the new habit, it&amp;rsquo;s way more difficult to stick to it. The second technique discussed related to the first law is &lt;strong>implementation intentions&lt;/strong> → &amp;ldquo;I will [behaviour] at [time] in [location]&amp;rdquo;. In addition to this, you can use &lt;strong>habit stacking&lt;/strong>, which means identifying an existing habit you already have and attach the new habit to that (&amp;ldquo;After I [current habit], I will [new habit]). These two methods create obvious &lt;strong>cues&lt;/strong> for the new habit, and design a clear plan for when and where to take action.&lt;/p>
+&lt;p>After taking care of which habits to create/keep and how to plan them, it&amp;rsquo;s time to make the cues &lt;strong>obvious&lt;/strong>. For this, the most important factor is the environment. The author says &amp;ldquo;Behaviour is a function of the Person in their environment&amp;rdquo;, and this means that motivation is not enough, and most of the times is irrelevant. Architecting the right environment is then the best way to boost our habit progress. The book shows some examples, I&amp;rsquo;ll show some which I personally use:&lt;/p>
+&lt;ul>
+&lt;li>I put a book right next to my bed to read before sleeping&lt;/li>
+&lt;li>I have my pills in the kitchen, so that I remember to take them at breakfast and dinner every day&lt;/li>
+&lt;li>I create a new journal page (on notion) for the next day in the evening and keep it open in the app, so that whenever I open it I remember to journal&lt;/li>
+&lt;/ul>
+&lt;p>The same thing can be applied to our digital environment. For example, moving some apps on the first screen, and apps we still need to keep but don&amp;rsquo;t want to use in other screens. In this way, we encourage useful apps for our habits (e.g. I keep podcasts, medium and notion on my home screen, and hide all video and social apps in a subfolder in the other screen on my phone). This also work with notifications (disabling unwanted notifications and so on).&lt;/p>
+&lt;p>The final summary of this law is explained in chapter 7. We&amp;rsquo;ve all been said that we lack self control and need more discipline, but the fact is, we need to &lt;strong>design&lt;/strong> our environment and behaviour to not need self-control! &lt;strong>Resisting temptations is an ineffective strategy&lt;/strong> in the long term. To remove bad habits we need then to reduce exposure to the cue that cause them (good habit → make it obvious, bad habit → &lt;strong>make it invisible&lt;/strong>).&lt;/p>
+&lt;h2 id="second-law-make-it-attractive">Second Law: Make it attractive&lt;/h2>
+&lt;p>The second law of behaviour change is &lt;em>make it attractive&lt;/em>. We should make our good habits tempting, &amp;ldquo;inviting&amp;rdquo; with different strategies. Habits are a &lt;em>dopamine-driven feedback loop&lt;/em>, meaning that we usually have different dopamine levels (dopamine isn&amp;rsquo;t the only factor, but it&amp;rsquo;s used to give an idea) in different habit phases (remember cue, craving, response and reward).&lt;/p>
+&lt;p>At first, dopamine is high only after the reward. While creating a habit (and always after that) dopamine tends to rise in &lt;em>anticipation&lt;/em> of the reward (craving), then becomes lower during the response phase (if we don&amp;rsquo;t receive the reward later) and it should rise at the reward phase.&lt;/p>
+&lt;p>We can use this insight to make a habit attractive, by using &lt;em>&lt;strong>temptation bundling&lt;/strong>&lt;/em> (basically, stacking a habit together with another more attractive habit/activity used as a reward). It can also be used with habit stacking to make a powerful strategy:&lt;/p>
+&lt;ol>
+&lt;li>After [current habit], I will [habit I need] → stacking&lt;/li>
+&lt;li>After [habit I need], I will [habit I want] → temptation bundling&lt;/li>
+&lt;/ol>
+&lt;p>it relies on transitiveness to associate the habit I need with what I want to do after, and relates it to the initial cue/habit.&lt;/p>
+&lt;p>Another way to make a habit more attractive is to use social pressure and imitation, which are innate in our instincts. We tend to imitate 3 groups:&lt;/p>
+&lt;ol>
+&lt;li>The &lt;strong>close&lt;/strong> → Surround yourself with people/culture where the behaviour you desire is the normal behaviour, and with which you already have something in common&lt;/li>
+&lt;li>The &lt;strong>many&lt;/strong> → We tend to follow the herd, so when changing habits means going against the group, the habit will be unattractive, while it will be attractive if it means fitting in the group&lt;/li>
+&lt;li>The &lt;strong>powerful&lt;/strong> → We imitate people we envy and see as powerful/better, so try to get approval and praise for your habit and it will be more attractive&lt;/li>
+&lt;/ol>
+&lt;p>Finally, we associate emotions and feeling to our habits. They are the way in which our brain processes cues, and we can leverage them to control our habits. In particular, we can associate good feelings and emotions, or reduce bad emotions, associated with a good habit we want to continue, or associate bad emotions and drawbacks to bad habits we want to stop. The book does the example of changing &amp;ldquo;have to&amp;rdquo; with &amp;ldquo;get to&amp;rdquo; to make a positive impact on habits we want to take. Some personal examples:&lt;/p>
+&lt;ul>
+&lt;li>I &lt;em>get to&lt;/em> walk and listen to programming podcasts&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> practice guitar&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> write about what I read and learn&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> journal about my day&lt;/li>
+&lt;/ul>
+&lt;p>In the same way, I could say &amp;ldquo;I walk in the morning to get healthier and get more energy for the day&amp;rdquo;, &amp;ldquo;I get to write about what I read so that I can learn and grow&amp;rdquo; etc..&lt;/p>
+&lt;h2 id="third-law-make-it-easy">Third Law: Make it easy&lt;/h2>
+&lt;p>The third law is &lt;em>make it easy&lt;/em>. It means to reduce friction, imagine the minimum action needed to start the habit, and automate optimising choices to make the habit really easy to follow (or really difficult if that&amp;rsquo;s the case).&lt;/p>
+&lt;p>The first concept to understand is that of “&lt;em>preparation&lt;/em> vs &lt;em>action”&lt;/em>: preparing is useful, but can become just another form of procrastination. It feels like progress but it isn&amp;rsquo;t. So, preparation needs to be kept at a minimum. The important thing is to act and repeat the habit, as getting the reps is the only way to make it stick (habits form based on &lt;strong>frequency&lt;/strong>, not time!) → How many, not how long&lt;/p>
+&lt;p>Another thing to consider is the &lt;em>effort&lt;/em>, the energy spent on the habit. Humans act based on the &lt;em>law of least effort. W&lt;/em>e will naturally follow the option which leads to the least amount of effort required. This can be used to our advantage in our habit making process, as we can change the environment to reduce the friction associated with a habit:&lt;/p>
+&lt;ul>
+&lt;li>Putting workout clothes in the most visible or the most useful place&lt;/li>
+&lt;li>Preparing healthy food ahead of time to have it ready when needed&lt;/li>
+&lt;li>Placing the object required to perform the habit on the table/desk, readily accessible&lt;/li>
+&lt;/ul>
+&lt;p>I do the last thing (placing a book near my bed) to give my brain the right clue, and to make it easy to do (just grab the book and read it!).&lt;/p>
+&lt;p>Another technique is the &lt;strong>two-minutes rule&lt;/strong>. There are a handful of &lt;em>decisive moments&lt;/em> which decide what impact we&amp;rsquo;ll deliver in a given day. In these moments we take decisions on what to do next, and we can leverage these to improve in our habit process. The two-minute rule says&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;When you start a new habit, it should take less than two minutes&amp;rdquo;.&lt;/p>
+&lt;/blockquote>
+&lt;p>If the habits takes more, reduce the effort to the minimum viable action (e.g. exercise → put on workout clothes, writing → write one paragraph/sentence). This allows to master the act of &lt;strong>showing up&lt;/strong>. After doing the first action, we can decide to continue or not, and it&amp;rsquo;s difficult that we&amp;rsquo;ll stop there&amp;hellip;&lt;/p>
+&lt;p>Finally, we have &lt;strong>automation&lt;/strong>. I&amp;rsquo;m a big fan of automation, because that&amp;rsquo;s what I do for a living as a software engineer. Automation is an example of &lt;em>commitment device&lt;/em>, which is a choice made in the present which controls our actions in the future. There are a lot of one time actions which will lock in new habits (detailed in the book, e.g. buying a good mattress, reducing mails and notifications, changing environment, reduce some automatic expenses and so on). Finally, technology can come to our aid in automating stuff (e.g. automatic telematic prescriptions, automatic wage reduction for retirement, meal-delivery services, website blockers).&lt;/p>
+&lt;p>In a nutshell, the 3rd law can be summarised as:&lt;/p>
+&lt;ul>
+&lt;li>Reduce friction by defining the least-effort action for each habit&lt;/li>
+&lt;li>Tune the environment to make future actions easier&lt;/li>
+&lt;li>Automate and make good one-time decisions to boost or block habits&lt;/li>
+&lt;/ul>
+&lt;h2 id="fourth-law-make-it-satisfying">Fourth Law: Make it satisfying&lt;/h2>
+&lt;p>The fourth rule is &lt;em>make it satisfying&lt;/em>.&lt;/p>
+&lt;p>Humans have developed a lot of stuff in the last millennia. Think about breeding, farming, machines and the latest technology. Most of this developments brought a us new concept, unknown to our primate brain: that of &lt;em>delayed reward&lt;/em>. We experience delayed reward while waiting for crops to harvest to animals growing, and in the latest 500 years we added a lot of delayed rewards of any kind.&lt;/p>
+&lt;p>However, our brain still rely on &lt;em>instant gratification&lt;/em> to work, and we need to leverage that hardwired path in our brain, or we won&amp;rsquo;t stick to a habit. We evaluate rewards differently through time (&lt;em>&lt;strong>now&lt;/strong>&lt;/em> is better than later).&lt;/p>
+&lt;blockquote>
+&lt;p>What is immediately rewarded gets repeated, and what is immediately punished is avoided.&lt;/p>
+&lt;/blockquote>
+&lt;p>The final step to stick to a habit is then to &lt;em>feel successful&lt;/em> after doing it. In fact, the first three laws (obvious, attractive and easy) allow us to start the new habit, while this last law allows us to repeat and stick to it!&lt;/p>
+&lt;p>In a nutshell, these are the tactics to use to obey the 4th law:&lt;/p>
+&lt;ul>
+&lt;li>Reward or punish the habit &lt;strong>immediately after&lt;/strong> the behaviour&lt;/li>
+&lt;li>&lt;strong>Track&lt;/strong> the habit (it&amp;rsquo;s obvious, satisfying and attractive, and can be used together with habit stacking and automation!). Also, &lt;strong>never miss twice&lt;/strong>&lt;/li>
+&lt;li>Create a &lt;strong>habit contract&lt;/strong> and find an &lt;strong>accountability partner&lt;/strong> (make it &lt;em>&lt;strong>unsatisfying&lt;/strong>&lt;/em>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="advanced-tactics">Advanced tactics&lt;/h2>
+&lt;p>Also called &amp;ldquo;three random chapters which did not fit in the rest of the book&amp;rdquo;.&lt;/p>
+&lt;h3 id="exploration-vs-exploitation">Exploration vs Exploitation&lt;/h3>
+&lt;p>The first &amp;ldquo;secret&amp;rdquo; to maximise your chances of success is to choose the right field of competition, to find a game in which the odds are in your favour. Everyone keeps saying that genetics don&amp;rsquo;t matter, and they are right. However, they define your &lt;em>areas of opportunity&lt;/em>.&lt;/p>
+&lt;p>In short, you should create habits aligned with your ambition and your personality, as in this way it will be easier to reach a state of &lt;em>flow&lt;/em>.&lt;/p>
+&lt;p>Another thing to consider is that even when you don&amp;rsquo;t have mastery over a single thing, you can &lt;em>specialise&lt;/em> in multiple contexts and overcome the &amp;ldquo;accident&amp;rdquo; of bad genetics.&lt;/p>
+&lt;p>Questions to ask yourself to find a niche in which you can gain much more with a habit:&lt;/p>
+&lt;ul>
+&lt;li>What feels like fun to me, but work to others? → not passion, but handling the &lt;strong>pain&lt;/strong> of a task/habit&lt;/li>
+&lt;li>What makes me lose track of time? → &lt;strong>Flow state&lt;/strong>&lt;/li>
+&lt;li>Where do I get greater returns than the average person?&lt;/li>
+&lt;li>What comes naturally to me?&lt;/li>
+&lt;/ul>
+&lt;p>TL;DR; Work hard on things that come easy (&lt;em>&lt;strong>exploit&lt;/strong>)&lt;/em>, and &lt;em>&lt;strong>explore&lt;/strong>&lt;/em> new opportunities sometimes.&lt;/p>
+&lt;h3 id="flow">Flow&lt;/h3>
+&lt;p>Regarding flow, the author explains what is called the &amp;ldquo;Goldilocks Rule&amp;rdquo;:&lt;/p>
+&lt;blockquote>
+&lt;p>Humans experience peak motivation when they work on tasks that are right on the edge of their current abilities.&lt;/p>
+&lt;/blockquote>
+&lt;p>Neither too difficult (otherwise you&amp;rsquo;ll quit) nor too easy (or you end up in boredom and quit too).&lt;/p>
+&lt;p>The road to mastery is full of boring moments, but you can try to create manageable challenges to grow without complacency, without making life too difficult to quit the habit. Keeping the repetition even when bored is the difference between amateur and professional!&lt;/p>
+&lt;p>I actually experience this rule in my life: when I play guitar (amateur level) I usually get bored and stop playing for long periods of time. Instead, I keep pushing while programming for work because it is my profession, and this gives me an edge over others who just try to do it without enduring it.&lt;/p>
+&lt;h3 id="review-and-feedback">Review and Feedback&lt;/h3>
+&lt;p>The last &amp;ldquo;advanced tactics&amp;rdquo; chapter is about review and feedback about your habits. The entire book covered creating, starting and keeping a habit. However, once a habit is fully formed our performance might decrease (a bit or much more) as we reach a plateau and don&amp;rsquo;t improve upon it, letting small errors appear. This is ok for trivial habits, but not so much for important stuff (think getting healthy, learning and in general mastering a field).&lt;/p>
+&lt;p>We need to &lt;strong>reflect&lt;/strong> and &lt;strong>review&lt;/strong> to enable long-term improvements of our habits. Some techniques include &lt;em>decision journals&lt;/em> and &lt;em>annual review + integrity report.&lt;/em>&lt;/p>
+&lt;p>A final bit of advice is to avoid making any single aspect of your identity an overwhelming portion of who you are, and not identifying in the particular habits and things you do. A better way is to redefine yourself in a way which keeps important aspects of your identity even if your role and actions change, e.g:&lt;/p>
+&lt;ul>
+&lt;li>I&amp;rsquo;m an athlete → I&amp;rsquo;m the type of person who&amp;rsquo;s mentally tough and loves a physical challenge&lt;/li>
+&lt;li>I&amp;rsquo;m the CEO → I&amp;rsquo;m the type of person who builds and creates things&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&amp;ldquo;The hard and stiff will be broken, the soft and supple will prevail&amp;rdquo; cit. Lao Tzu&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>&lt;strong>&lt;strong>Atomic Habits&lt;/strong>&lt;/strong> does a great job in explaining how to create and keep small habits, and why it is so important to do this. The secret to obtain results is to never stop making improvements.&lt;/p>
+&lt;p>The book was a great inspiration in how to improve through the power of habits. I really liked the part about changing the environment and automating decisions to reduce my reliance on discipline alone. I also try to make use of the book’s advice to create good habits, while I’m definitely less successful when it comes to removing bad habits 😅.&lt;/p>
+&lt;p>Hope you enjoyed this summary/notes post 🎉, see you next time!&lt;/p></description></item><item><title>My Experience at FOSDEM 2023</title><link>http://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>&lt;p>Hi 👋 welcome to a new post.&lt;/p>
+&lt;p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.&lt;/p>
+&lt;p>As I already said in my &lt;a href="https://marcobacis.com/blog/2022-a-review/">2022 review&lt;/a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.&lt;/p>
+&lt;p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!&lt;/p>
+&lt;p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the &lt;a href="https://www.ulb.be/en">Université Libre de Bruxelles&lt;/a>, and is &lt;a href="https://fosdem.org/2023/about/sponsors/">sponsored&lt;/a> by the main open-source projects and companies.&lt;/p>
+&lt;p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:&lt;/p>
+&lt;ul>
+&lt;li>Freedom to run it&lt;/li>
+&lt;li>Freedom to access his source code, study it and change it to fit our own necessities&lt;/li>
+&lt;li>Freedom to share/spread the software (original or modified) to help others&lt;/li>
+&lt;/ul>
+&lt;p>Working and using open source software means collaborating with other developers, sharing our programming and product ideas, and together improving the world. And that’s exactly the spirit I saw at FOSDEM!&lt;/p>
+&lt;h2 id="community-and-inspiration">Community and Inspiration&lt;/h2>
+&lt;p>I think that being part of a community is great. It gives me a chance to see developers like me, but also completely diverse people.&lt;/p>
+&lt;p>While at FOSDEM, I experienced this sense of community and diversity firsthand. It felt like being in a sort of “tribe” of nerds/developers gathering for what they love.&lt;/p>
+&lt;p>The halls of Brussels university were full for both days of the conference. The city itself was conquered by nerds for the entire weekend! During the conference everyone was chatting about their latest projects and ideas.&lt;/p>
+&lt;p>Also, many open source projects and companies I know (think of the major Linux distros and software companies) were there with their stands, gadgets (Debian was giving away beer!) and stickers!&lt;/p>
+&lt;p>Being there reminded me of my days at university (not so long ago), hacking silly stuff on my laptop. But in this case, the people speaking and attending the conference were anything but amateurs like me 😅. Open Source can be a way to express ourselves, to find inspiration and to be part of something bigger, and FOSDEM showed me the way many people are doing it.&lt;/p>
+&lt;h2 id="list-of-talks-i-attended">List of Talks I attended&lt;/h2>
+&lt;p>Below you can find the list of talks I personally attended while there. I didn’t attend all the events I wanted (some rooms were full all the time!) and ended up going around the different rooms in search of inspiration.&lt;/p>
+&lt;p>If you have the time, give them a look!&lt;/p>
+&lt;p>&lt;strong>Saturday&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gostateofgo/">The State of Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goreducecognitive/">Recipes for reducing cognitive load (in go)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/">Developing Bluetooth Mesh Networks with Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/">5 errors when building embedded systems&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/">Making Continuous Delivery Accessible to All&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/">How to automate documentation workflow for developers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/">Our Mad Journey of Building a Vector Database in Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gowatermill/">Building a basic event-driven application in go in 20 minutes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goisoo/">Is Go object-oriented? A case of public opinion&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Sunday&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_coreutils/">Reimplementing the Coreutils in a modern language (Rust)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/">Zero-Knowledge Cryptography and anonymous engineering&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/">How to build an event-driven application in python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/mutation_testing/">Fear the Mutants, love the Mutants&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sth_to_hide/">Having something to hide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_ebpf/">Rust in the Kernel (via eBPF)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/">The 7 key ingredients of a great SBOM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gb_arm/">I made a GameBoy emulator to learn about computers. And now I work with them…&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>&lt;p>Hi 👋 welcome to a new post!&lt;/p>
+&lt;p>Today I’m going to post a little summary of my experience at the &lt;a href="https://www.meetup.com/xpugbg/events/290690004/">XPUGBg meetup&lt;/a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.&lt;/p>
+&lt;h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?&lt;/h2>
+&lt;p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?&lt;/p>
+&lt;p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.&lt;/p>
+&lt;p>
+&lt;img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" alt="XP feedback cycles" />
+&lt;/p>
+&lt;p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?&lt;/p>
+&lt;p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with higher quality.&lt;/p>
+&lt;h2 id="what-is-trunk-based-development">What is trunk-based development?&lt;/h2>
+&lt;p>Trunk-based development is a practice in which developers collaborate on the codebase in a single branch (the main/master/trunk). Instead of opening a feature branch and then do a pull/merge request to master (with the corresponding code review I hope), the developer commits directly to the main branch.&lt;/p>
+&lt;p>Trunk-based development goes hand in hand with &lt;a href="https://martinfowler.com/articles/continuousIntegration.html">continuous integration&lt;/a> and &lt;a href="https://martinfowler.com/bliki/ContinuousDelivery.html">continuous delivery&lt;/a>. In fact, by committing to the main branch and keeping it always &lt;strong>releasable&lt;/strong>, it’s possible to deliver value to the business continuously.&lt;/p>
+&lt;p>There are variations to trunk-based development. A notable one is &lt;strong>scaled&lt;/strong> trunk-based, used when the team size increases. In scaled trunk-based development, the developers work with &lt;strong>short-lived&lt;/strong> (less than 1 day) feature branches. The same practices (pair programming, TDD and XP in general) are still valid, together with the constraint to keep the main branch always releasable and deployable at any time.&lt;/p>
+&lt;h2 id="advantages-of-trunk-based-development">Advantages of trunk-based development&lt;/h2>
+&lt;p>In the talk, Alessio highlighted the &lt;strong>impact&lt;/strong> that trunk-based development has on the codebase and on the team/business itself.&lt;/p>
+&lt;p>The first “advantage” is that it allows to have &lt;strong>frequent integration&lt;/strong> (better yet, &lt;strong>continuous&lt;/strong>) of all the changes in the codebase. In this way, conflicts that arise during development are immediately identified (and corrected), without waiting until the code is reviewed in a pull request.&lt;/p>
+&lt;p>By making all changes on the same branch (main), there is a unique source of truth. As every change is immediately integrated and tested, the codebase is always updated, and there’s no conflict over which version of the code is the correct one (the answer is: the one on the main branch!).&lt;/p>
+&lt;p>Given that the team is working on the same branch, everyone can see all the current work in progress. In addition, by not using long feature branches, and being forced to integrate with main frequently, it’s more difficult to keep multiple features in progress.&lt;/p>
+&lt;p>The possibility to make small, deliverable changes forces us to &lt;strong>refactor&lt;/strong> into small steps, and not create too many changes and conflicts. Also, by doing this with a continuous review (e.g. by pairing), we have the freedom to refactor into small steps with confidence.&lt;/p>
+&lt;p>Finally, trunk-based increase the &lt;strong>collaboration&lt;/strong> between team members. If what I’m working on at the moment conflicts with another developer, I’m more eager to work together to merge it, and this is done (again) immediately, and not at merge time.&lt;/p>
+&lt;h2 id="a-change-of-mentality">A change of mentality&lt;/h2>
+&lt;p>To work with trunk-based development properly, we need to embrace a (sometimes radical) change of mentality. The change reflects both in social and technical practices.&lt;/p>
+&lt;p>From the social side, trunk-based development requires:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Teamwork&lt;/strong>, as everyone is working on the same codebase at the same time&lt;/li>
+&lt;li>Constructive and frequent &lt;strong>feedback&lt;/strong>, and being open to it&lt;/li>
+&lt;li>&lt;strong>Trust&lt;/strong>, in the team members and in the code itself. This can be helped with XP practices such as TDD and pairing&lt;/li>
+&lt;/ul>
+&lt;p>From a technical standpoint, the most important practices are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Small&lt;/strong>, incremental changes (in contrast to big, breaking changes and long parallel branches)&lt;/li>
+&lt;li>Attention to &lt;strong>quality&lt;/strong> (because the main branch must always be releasable, and every commit we push could be directly deployed in production!)&lt;/li>
+&lt;li>Separation between &lt;strong>build, deploy and release&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>A strong rule is that the code should always be deployable! This is the basis for frequent releases, which allows getting faster feedback from the business and the customers.&lt;/p>
+&lt;h4 id="how-to-deploy-while-the-work-is-in-progress">How to deploy while the work is in progress?&lt;/h4>
+&lt;p>While talking about technical practices and their impact, Alessio explained how keeping build, release and deploy separate is fundamental to a collaborative codebase. But how do we keep the code “deployable” even while we are currently implementing new features?&lt;/p>
+&lt;p>The first way is to do &lt;strong>dark launching:&lt;/strong> release the new feature, but without exposing the new/changed API (or expose it only to a subset of users, e.g. developers and internal users).&lt;/p>
+&lt;p>A second way is to use &lt;strong>branch by abstraction&lt;/strong>: put the current api under an abstraction layer, then start to implement the new functionality in another compatible class/module. While implementing the new feature, migrate the old feature clients to the new (compatible, remember!) one, and finally remove the old module. All of this should keep the system working even when the feature is not finished yet.&lt;/p>
+&lt;p>The last way to not release in-progress work is to put the new feature behind feature toggles/flags. The toggles can be static or dynamic, but they should be short-lived (if used while developing and not for mere configuration) and removed when the feature has been released and is stable. Feature flags are also a way to decouple deploy and release of the features. In addition, they make WIP evident (as any feature toggle of that type represents a work-in-progress feature).&lt;/p>
+&lt;h2 id="considerationsdiscussions">Considerations/Discussions&lt;/h2>
+&lt;p>The characteristic I like the most in meetups is the discussion with all the participants. Alessio encouraged the audience to ask questions and express their opinions, and here are some considerations of what came out of the discussion after the talk.&lt;/p>
+&lt;p>The first thing to take care of before and while doing trunk-based development is that of &lt;strong>ownership&lt;/strong>: who is the owner of the code? Trunk-based development works best with &lt;strong>cohesive&lt;/strong> teams working on a &lt;strong>product&lt;/strong>, as the code is owned by the entire team (which makes the decisions). If the code is not owned by the developer, as in some consultancy projects or in open source, then it might be better to work with other branching models (such as feature-based, git flow or github flow).&lt;/p>
+&lt;p>Another consideration is that of software &lt;strong>versioning&lt;/strong>. Trunk-based development expects a continuous integration of the code, and this means that there is only one version of the code (the current one). If the product needs multiple versions, and separate maintenance of the versions (e.g. because some customers don’t want to pay for the newer version, but still expect bugfixes on the version they own), then there should be release branches in addition to the main branch.&lt;/p>
+&lt;p>During the discussion, someone complained that with trunk based development changes are not evident. I agree in part with this, as using a separate branch would show the entire diff, while splitting the change in multiple commits would not show the entire feature at once. However, the point of trunk-based development is to make small changes, so the features should be separated in small stories, each with its own commit (or short lived branch). This improves the reliability of the team, allowing it to ship faster and estimate better.&lt;/p>
+&lt;p>A final consideration is about &lt;strong>conflicts&lt;/strong>. While in feature branching conflicts are identified only when merging, in trunk-based all the conflicts arise during development. To keep the build releasable and stable the conflict needs to be fixed immediately, and this might seem to slow down the development of new features.&lt;/p>
+&lt;p>To avoid integration headaches, it’s important to communicate with the team and avoid conflicts in the first place. Also, it&amp;rsquo;s better to catch conflicts and fix them immediately than to wait for a big bang merge. In my opinion, if there is a lot of churn/conflicts in some modules, it means that the architecture should be improved (by splitting the functionality into smaller modules with clear responsibilities).&lt;/p>
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>The conclusion of the talk was “&lt;em>embrace change&lt;/em>”, which is the fundamental principle of eXtreme Programming. I agree with this quote, as change is inevitable in software development (and in life in general).&lt;/p>
+&lt;p>I never had a collaborative codebase in the way described by Alessio (with trunk based, tdd, pairing and all the other practices), but I think that every team should strive to follow the same principles and practices.&lt;/p>
+&lt;p>That’s it for today! I hope you liked this short summary. If you want to go deeper into the topic, I left down here some resources (will be updated while I discover more of them). Also, reach out &lt;a href="https://www.linkedin.com/in/alessiocoser">Alessio&lt;/a> and the &lt;a href="https://meetu.ps/c/4s0GZ/zWszn/a">XPUGBG&lt;/a>!&lt;/p>
+&lt;h2 id="other-resources">Other Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://trunkbaseddevelopment.com/">Trunk-based development&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@mattia.battiston/why-i-love-trunk-based-development-641fcf0b94a0">Why I love trunk-based development&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://martinfowler.com/articles/feature-toggles.html">Feature Toggles&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
+&lt;p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (&lt;a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877">here&lt;/a>) on January 24th.&lt;/p>
+&lt;p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.&lt;/p>
+&lt;p>You may already have heard of “Outside-In Design” on this blog &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">before&lt;/a>. Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.&lt;/p>
+&lt;p>&lt;em>Disclaimer: I will share some notes/brief recap of the talk given by Sandro. It’s by no means a complete transcription and may contain my own interpretation of what was said. Go watch his past talks (e.g. &lt;a href="https://www.youtube.com/watch?v=VSkDu5YgAh4">here&lt;/a>) for the real deal!&lt;/em>&lt;/p>
+&lt;h3 id="developer-biases-and-the-insideoutside-perspective">Developer Biases and The Inside/Outside perspective&lt;/h3>
+&lt;p>The talk started with a list of biases (most of the time we call them “practices”) that affect software developers. They include:&lt;/p>
+&lt;ul>
+&lt;li>Structural biases (procedural, oop, functional, services, event-based)&lt;/li>
+&lt;li>Design biases (all architectural design patterns such as SOA, Actor model, Hexagonal arch, Microservices and so on..)&lt;/li>
+&lt;li>Design Direction biases (starting from the persistence, domain, UI, and lastly &lt;strong>incremental outside-in&lt;/strong>, the topic of this talk)&lt;/li>
+&lt;/ul>
+&lt;p>Most of the time we tend to work led by our biases: a backend developer will start working on the domain model and then implement the details (infrastructure, application); frontend will start working from the design of the UI down to the actual implementation. However, in this way, we end up with a discrepancy between the systems, and this leads to ugly adapter layers to adapt the API exposed by the backend and the data the frontend needs to work.&lt;/p>
+&lt;p>This behaviour extends also at a higher level, that of business and product design. Technology and product work in parallel tracks, and then need to somewhat meet at the intersection: the top of the backlog. At that moment, it’s more difficult to align the product decisions needed to create value for the company and the system design.&lt;/p>
+&lt;p>Software design should &lt;strong>serve&lt;/strong> the business, and its value should be measured by how much it impacts the business value. Thus, we need to align the two perspectives, inside (technology) and outside (business).&lt;/p>
+&lt;p>To solve this issue, Sandro proposes a different approach, in which we start from the product and then define lower and lower level abstractions of the system, contrary to the standard inside-out design approach.&lt;/p>
+&lt;h3 id="outside-in-design">Outside-In Design&lt;/h3>
+&lt;p>The first thing to do when designing a new system or a set of features for the business is to create a birds-eye view (&lt;strong>product box&lt;/strong>) in which we put the main features that bring value, and the main functional areas involved.&lt;/p>
+&lt;p>Then, we proceed to do &lt;strong>Impact Mapping&lt;/strong>, in which we identify the high-level bounded contexts and architecture. Starting from the main goals of the system, we identify its actors and the different impacts they have, on the deliverables (features). Sandro showed an example using mind maps, refining the different levels (actor → impact → feature) on every iteration.&lt;/p>
+&lt;p>After impact mapping, with &lt;strong>Functional Mapping,&lt;/strong> we identify the business flows, the external (and internal) users and systems and connect them, in a way similar to sequence diagrams but using bounded contexts instead of classes. It allows to decide which systems are external and which are internal, and which should become public APIs or internal services. Sandro gave some examples, one in which only one service (the catalogue) was public-facing, and another (checkout) in which all services were public and called by the frontend.&lt;/p>
+&lt;p>&lt;strong>User Interaction via Mockups&lt;/strong> is the step in which we see some UI (finally!!). Sandro does the mockups with Balsamiq, as it allows the creation of dynamic wireframes. It’s better to do them with UX experts, in order to have a basic wireframe both for the UX/UI team and the development team (by designing the APIs and the data needed by the frontend).&lt;/p>
+&lt;p>Finally, we get into the actual software design and implementation with the method we prefer (Inside-Out or Outside-In TDD for example 😏).&lt;/p>
+&lt;p>All these steps might seem long, but Sandro explained that they are actually short (e.g. product box can be done in an afternoon!) and need to be performed at different intervals (6/12 months for the highest level, then 3/4 months, monthly, 1/2 weeks and finally daily for the actual coding practices).&lt;/p>
+&lt;h3 id="thats-it">That’s it!&lt;/h3>
+&lt;p>As you can see, I just wrote a quick summary of Sandro’s talk. The meetup also included a panel with Sandro and three people from eDreams ODIGEO (the CTO Carsten Bernhard, Milan’s Hub Director Luca Pivotto and Agile Director Brett Ansley), in which they continued the argument brought by the talk and expanded with other content (e.g. how to tackle and measure technical debt, what is value and much more). I didn’t include it in this post as I didn’t take notes 😅.&lt;/p>
+&lt;p>Overall, the meetup was really interesting. The outside-in perspective is (as in the last meetup I attended) a great way to meet the tech side of the business (working on the nitty-gritty details and implementation) and the product side (concerned with value, customers and overall functionality of the system).&lt;/p>
+&lt;p>I think that this could be really useful in both big companies (to iterate on new features) and in startups (to design the first system in an extensible and “growable” way). During the talk, Sandro mentioned a book that is on my “to read” bookshelf, “&lt;a href="https://teamtopologies.com/book">Team Topologies&lt;/a>”. Employing an outside-in perspective allows in the end to define these topologies in advance, allowing the system to grow organically and without breaking everything on each iteration.&lt;/p>
+&lt;p>That’s all for today’s post! Thank you for reading (if anyone is reading this 🤔) and see you next time!&lt;/p>
+&lt;h3 id="additional-resources">Additional Resources&lt;/h3>
+&lt;p>Some other places to find Sandro’s talk:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.codurance.com/publications/2017/10/23/outside-in-design">Blog Post&lt;/a>&lt;/li>
+&lt;li>2019 &lt;a href="https://www.youtube.com/watch?v=bvie9vl7X6A">Talk&lt;/a>&lt;/li>
+&lt;li>2018 &lt;a href="https://www.youtube.com/watch?v=rbSDGr-_UwY">Talk&lt;/a> and &lt;a href="https://www.slideshare.net/sandromancuso/a-case-for-outsidein-design">Slides&lt;/a> (don’t know if they are the same exact version)&lt;/li>
+&lt;/ul></description></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>http://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-italian-agile-days/</guid><description>&lt;p>Hi 👋&lt;/p>
+&lt;p>Today’s post is about my experience at the &lt;a href="https://www.agileday.it/">Italian Agile Days 2022&lt;/a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.&lt;/p>
+&lt;p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.&lt;/p>
+&lt;p>This year, the conference was held on the Brescia University campus. It was my first in-person conference in 3 years, and seeing live talks and talking with people with the same interests was refreshing and inspiring!&lt;/p>
+&lt;p>I mostly watched technical talks about programming, but some of the ones you’ll find below drift from pure programming into the realm of philosophy (and psychology), and they were the most interesting.&lt;/p>
+&lt;p>Enjoy!&lt;/p>
+&lt;h2 id="talks">Talks&lt;/h2>
+&lt;p>&lt;em>Disclaimer: most talks were in Italian. The videos are available &lt;a href="https://vimeo.com/showcase/9957525">online&lt;/a>, here I’ll just post a brief summary and my opinions on the talks.&lt;/em>&lt;/p>
+&lt;h3 id="keynote-myth-busting-in-agile-scaling-en---nigel-thurlow">Keynote: Myth busting in agile Scaling (en) - Nigel Thurlow&lt;/h3>
+&lt;p>&lt;a href="https://vimeo.com/767786361">Video&lt;/a>&lt;/p>
+&lt;p>Nigel has been the first ever Chief of Agile at Toyota, and while there he created “The Flow System”, a flow-based approach to delivering value built on the Toyota system.&lt;/p>
+&lt;p>In his keynote, he debunks myths and tries to solve the “format war” between agile practices. The talk is packed full of considerations and stories about agile…so full that I cannot summarise it here without writing everything Nigel says. Please go check it out!&lt;/p>
+&lt;h3 id="event-sourcing--cqrs-a-light-introduction-en---paolo-banfi">Event Sourcing + CQRS: a light introduction (en) - Paolo Banfi&lt;/h3>
+&lt;p>&lt;a href="https://vimeo.com/768885882">Video&lt;/a>&lt;/p>
+&lt;p>In this talk, the speaker introduces two important concepts that allow to easily change and add functionalities to our systems: event sourcing and CQRS.&lt;/p>
+&lt;p>To explain them, he presents an example based on a shopping cart, showing that by just saving the current state of the system (as we usually do with databases) we lose information that could be useful to the business. By using event sourcing and CQRS strategies, we employ a more generic model that allows using these pieces of information without making the system much more complex than before.&lt;/p>
+&lt;p>Paolo does a great introduction to both arguments. Even if I never used event sourcing and CQRS before, I now feel like I should use them in all my future projects!&lt;/p>
+&lt;h3 id="diamo-una-chance-a-una-codebase-legacy-it---nicola-mincuzzi">Diamo una chance a una codebase legacy? (it) - Nicola Mincuzzi&lt;/h3>
+&lt;p>“Let’s give a legacy codebase a chance”&lt;/p>
+&lt;p>&lt;a href="https://vimeo.com/768879474">Video&lt;/a>&lt;/p>
+&lt;p>Working with legacy codebases is a dread. Legacy systems are unstable, and every change to their code or structure leads to bugs and unknown issues, given their lack of tests.&lt;/p>
+&lt;p>In his talk, Nicola shows a project on which he worked, and describes how he “attacked” the legacy monster by using harnesses and a lot of testing. He basically followed the advice in Michael Feather’s “Working Effectively With Legacy Code&amp;quot; which was effective for real!&lt;/p>
+&lt;p>Given that this was his first talk, it was great. I’m also working on a nasty legacy project, and seeing other people&amp;rsquo;s (successful) experiences is inspiring and comforting at the same time.&lt;/p>
+&lt;h3 id="ive-done-tdd-wrong-all-the-time-it---luca-giuberti">I’ve done TDD wrong all the time (it) - Luca Giuberti&lt;/h3>
+&lt;p>&lt;a href="https://vimeo.com/768875860">Video&lt;/a>&lt;/p>
+&lt;p>In this talk, Luca expresses a common concern that we all think about while writing tests - Am I testing too much the implementation? Do the tests reflect the &lt;strong>what&lt;/strong> (the business need), or do they represent the &lt;strong>how&lt;/strong> (implementation)?&lt;/p>
+&lt;p>Luca shows a more sustainable way to test, in a &lt;strong>coarse-grained&lt;/strong> fashion. I find this more in line with how I usually test, by testing the behaviour of multiple/larger modules and not of the single classes and methods (with a lot of mocking).&lt;/p>
+&lt;p>The definition of “unit” is quite confusing. Some of us end up testing single classes or methods in isolation, by mocking every external dependency. Luca’s talk advocates for a coarser grain, like testing multiple (cohesive) classes for their external behaviour. It might seem like integration testing, but it’s not, and I think is a more sound approach.&lt;/p>
+&lt;h3 id="larte-dello-sviluppatore-it---marco-fracassi">L’arte dello sviluppatore (it) - Marco Fracassi&lt;/h3>
+&lt;p>“The software developer art”&lt;/p>
+&lt;p>&lt;a href="https://vimeo.com/768873513">Video&lt;/a>&lt;/p>
+&lt;p>In this philosophical (and humorous) talk, Marco talks about the role of creativity (and how to get creative) in software development.&lt;/p>
+&lt;p>Software developers are a creative species, despite the stereotypes that others associate with the role (and we get a huge list in the talk). Practices such as pair programming, TDD and DDD are indeed quite creative and, at the time of their definition, were revolutionary.&lt;/p>
+&lt;p>Software development is a social activity in addition to technical practices, and in this regard, creativity can help us solve problems better. Marco presents a lot of ways to increase creativity personally and in the workplace (by increasing psychological safety) and what tends to stop it (ignorance, hyper-specialization, fear, vanity etc..).&lt;/p>
+&lt;p>In the end, the talk was very inspiring and showed that there’s a lot of “art” in our practice as software developers.&lt;/p>
+&lt;h3 id="dal-carbone-al-software-i-sistemi-socio-tecnici-it---ferdinando-santacroce">Dal carbone al software: i sistemi socio-tecnici (it) - Ferdinando Santacroce&lt;/h3>
+&lt;p>“From coal to software: socio-technical systems”&lt;/p>
+&lt;p>&lt;a href="https://vimeo.com/768881541">Video&lt;/a>&lt;/p>
+&lt;p>Agile is not just for programmers, and Ferdinando shows us why in his talk. He tells a story set in post-war England, when a technological innovation (the “longwall”) was introduced but didn’t improve productivity, all because of social issues.&lt;/p>
+&lt;p>The researchers found out that this innovation disrupted (in a bad way) the current social organisation of the mines. From autonomous, cross-functional and trusted teams, the longwall brought hyper-specialisation, control and loss of autonomy and ownership, leading to lower productivity.&lt;/p>
+&lt;p>This story serves as a reminder that all techniques and practices we see today in agile (such as lean, kanban, XP etc..) didn’t start with programming, but are way older. In addition, we cannot only think about the technical aspects of the organisation, because the social ones are way more important!&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>I really enjoyed attending this conference!&lt;/p>
+&lt;p>Each talk explored an argument which I didn’t know and wanted to know more about. I also got to meet new people in a community near me (Brescia is right next to Bergamo and Milan) and I also got gadgets 🤩. In addition, I bought two books from Avanscoperta: “Cronache di Domain-Driven Design” (DDD Chronicles) and “Decision-Making for Software Development Teams”. I hope to read them soon!&lt;/p>
+&lt;p>That’s all for today. I hope you enjoyed this short summary of my experience at IAD2022, and I hope to attend and write about next year’s conference (and some workshops? 😇).&lt;/p></description></item><item><title>2022: A Review</title><link>http://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-a-review/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
+&lt;p>Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.&lt;/p>
+&lt;p>So, let’s start!&lt;/p>
+&lt;p>&lt;em>Disclaimer: This recap is mostly written by me and &lt;strong>for&lt;/strong> me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.&lt;/em>&lt;/p>
+&lt;h2 id="work">Work&lt;/h2>
+&lt;p>I didn’t do anything exceptional this year.&lt;/p>
+&lt;p>What do I mean? Anyone writing on the internet brags about changing companies, getting promoted, creating new businesses and so on.&lt;/p>
+&lt;p>I just… worked 😅.&lt;/p>
+&lt;p>By this, I don’t mean my job has been boring, indeed! I learned a lot during this year. A few arguments I dabbled myself with include:&lt;/p>
+&lt;ul>
+&lt;li>REST API development with .NET 6&lt;/li>
+&lt;li>A bit of frontend with React&lt;/li>
+&lt;li>CI/CD pipelines for .NET and React on Bitbucket (and deploying on Azure services)&lt;/li>
+&lt;li>How to manage BLE and ANT+ devices from a Unity application&lt;/li>
+&lt;li>IoT C++ development on a yocto board (and how to use the CANOpen protocol to communicate with devices)&lt;/li>
+&lt;/ul>
+&lt;p>As you can see it’s quite diverse stuff. I didn’t do all at the same time, but given the variety of startups we support, I always need to wear many hats (even while staying an individual contributor).&lt;/p>
+&lt;p>The thing I’m most proud of has been introducing CI/CD pipelines in a greenfield project. I was able to enforce testing and pull requests/review in the backend team (even without being team lead or even senior) and I hope that this will increase the project quality and stability over time.&lt;/p>
+&lt;p>Also, working both on backend systems and IoT boards is very fun, as I get to see the entire system and all its components working together.&lt;/p>
+&lt;h2 id="personal">Personal&lt;/h2>
+&lt;h3 id="home-sweet-home">Home sweet home&lt;/h3>
+&lt;p>This year I managed to buy a house and move in with my girlfriend 🏠.&lt;/p>
+&lt;p>It has been quite an adventure, all because of some bureaucratic issues. The old owners didn’t actually own part of the house, so we ended up doing a three-way act… it was like living a real-life merge conflict in git 😂.&lt;/p>
+&lt;p>Other than that, we didn’t have any other issues (e.g. didn’t do any work on the house itself, and already had a furnished bathroom and kitchen). We still need to buy lamps (we are living with lightbulbs hanging from the walls and ceiling) but otherwise, it’s perfect.&lt;/p>
+&lt;h3 id="hybrid-work---pros-and-cons">Hybrid work - Pros and Cons&lt;/h3>
+&lt;p>This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more &lt;a href="http://marcobacis.com/blog/remote-work-opinions">here&lt;/a>):&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Pro&lt;/strong>: I was able to start exercising a bit on the work-from-home days&lt;/li>
+&lt;li>&lt;strong>Pro&lt;/strong>: I got to enjoy my new house more (also, working with my cat close to me is purrfect!)&lt;/li>
+&lt;li>&lt;strong>Con&lt;/strong>: As in past years, I read fewer books (as I was mostly reading them while commuting by train)&lt;/li>
+&lt;/ul>
+&lt;p>Overall I’m pretty satisfied with working remotely, and wish there could be more flexibility from my company. Otherwise, working in the same place as my colleagues is great most of the time. If it wasn’t for the time and cost (and distance!) of commuting, I’d be eager to work in the office most of the time.&lt;/p>
+&lt;h3 id="blogging-reading-and-learning">Blogging, Reading and Learning&lt;/h3>
+&lt;h3 id="blog">Blog&lt;/h3>
+&lt;p>I finally managed to start blogging! Even if I just wrote two articles (and this one) on the blog and started in December, it’s still an achievement.&lt;/p>
+&lt;p>I’ve always looked up to writers and creators, as they are able to channel their thoughts and creativity into something that can be enjoyed by others.&lt;/p>
+&lt;p>I hope to keep writing on this blog. Right now I have no idea on how to evolve it (personal articles, book summaries, programming-related stuff etc..), but I’m sure I will find inspiration to write somewhat regularly.&lt;/p>
+&lt;h3 id="reading">Reading&lt;/h3>
+&lt;p>I love reading. I usually read while commuting (one of the only perks of not working remotely all the time, I just cannot concentrate the same at home) and sometimes in the evening instead of watching TV.&lt;/p>
+&lt;p>Reading is a great way to disconnect from the outside world and enter new dimensions. Fiction allows living new experiences (that I could never do myself, as in fantasy stories), while non-fiction allows absorbing an entire life of work and study of the author in our brain. I usually read non-fiction and programming-related books for this reason, but also like to disconnect completely and read fiction sometimes.&lt;/p>
+&lt;p>Unfortunately, I’m not used to taking notes and making summaries, so for now I’ll post the list. I hope to write some summaries next year!&lt;/p>
+&lt;p>This year I read 32 books, here’s the complete list (in chronological order):&lt;/p>
+&lt;ul>
+&lt;li>“&lt;em>Designing Data-Intensive Applications&lt;/em>” by Martin Kleppmann&lt;/li>
+&lt;li>“&lt;em>Nudge: Improving Decisions about Health, Wealth, and Happiness&lt;/em>” by Richard H. Thaler and Cass R. Sunstein&lt;/li>
+&lt;li>“&lt;em>Find Your Why&lt;/em>” by Simon Sinek, David Mead and Peter Docker&lt;/li>
+&lt;li>“&lt;em>A Wild Sheep Chase&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>ReWork&lt;/em>” by Jason Fried and David Heinemeier Hansson&lt;/li>
+&lt;li>“&lt;em>How to avoid a climate disaster&lt;/em>” by Bill Gates&lt;/li>
+&lt;li>“&lt;em>The Manager’s Path&lt;/em>” by Camille Fournier&lt;/li>
+&lt;li>“&lt;em>Peopleware&lt;/em>” by Tom DeMarco, Timothy Lister&lt;/li>
+&lt;li>“&lt;em>The Bells of Old Tokyo&lt;/em>” by Anna Sherman&lt;/li>
+&lt;li>“&lt;em>The Block&lt;/em>” by Ben Oliver&lt;/li>
+&lt;li>“&lt;em>Clean Craftsmanship&lt;/em>” by Robert C. Martin&lt;/li>
+&lt;li>“&lt;em>The Omnivore’s Dilemma&lt;/em>” by Michael Pollan&lt;/li>
+&lt;li>“&lt;em>Accelerate&lt;/em>” by Nicole Forsgren, Jez Humble and Gene Kim&lt;/li>
+&lt;li>“&lt;em>Positive Intelligence&lt;/em>” by Shirzad Chamine&lt;/li>
+&lt;li>“&lt;em>Hear the wind sing&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>Pinball&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>No Longer Human&lt;/em>” by Osamu Dazai&lt;/li>
+&lt;li>“&lt;em>Everything is f*cked: A book about hope&lt;/em>” by Mark Manson&lt;/li>
+&lt;li>“&lt;em>Le Città Invisibili&lt;/em>” by Italo Calvino&lt;/li>
+&lt;li>“&lt;em>School Blues&lt;/em>” by Daniel Pennac&lt;/li>
+&lt;li>“&lt;em>Riconquista il tuo tempo&lt;/em>” by Andrea Giuliodori&lt;/li>
+&lt;li>“&lt;em>Guns, Germs and Steel&lt;/em>” by Jared Diamond&lt;/li>
+&lt;li>“&lt;em>The Courage to be Disliked&lt;/em>” by Ichiro Kishimi and Fumitake Koga&lt;/li>
+&lt;li>“&lt;em>&lt;strong>Entangled Life&lt;/strong>&lt;/em>” by Merlin Sheldrake&lt;/li>
+&lt;li>“&lt;em>How not to be Wrong&lt;/em>” by Jordan Ellenberg&lt;/li>
+&lt;li>“&lt;em>Lessons in Stoicism&lt;/em>” by John Sellars&lt;/li>
+&lt;li>“&lt;em>The Clean Coder&lt;/em>” by Robert C. Martin&lt;/li>
+&lt;li>“&lt;em>Voice of the Fire&lt;/em>” by Alan Moore&lt;/li>
+&lt;li>“&lt;em>Extreme Programming Explained&lt;/em>” by Kent Beck&lt;/li>
+&lt;li>“&lt;em>After Dark&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>Immune - A Journey in the Mysterious System That Keeps You Alive&lt;/em>” by Philipp Dettmer&lt;/li>
+&lt;li>“&lt;em>A Philosophy of Software Design&lt;/em>” by John Ousterhout&lt;/li>
+&lt;/ul>
+&lt;p>Here are instead some books I &lt;em>didn’t&lt;/em> finish, either because I was bored reading them or I didn’t think it was the moment to read them. I might try to read them again though:&lt;/p>
+&lt;ul>
+&lt;li>“&lt;em>On the Road&lt;/em>” by Jack Kerouac&lt;/li>
+&lt;li>“&lt;em>Invent &amp;amp; Wander&lt;/em>” by Jeff Bezos&lt;/li>
+&lt;li>“&lt;em>The Obstacle is The Way&lt;/em>” by Ryan Holiday&lt;/li>
+&lt;li>“&lt;em>Underground&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>The 5AM Club&lt;/em>” by Robin Sharma&lt;/li>
+&lt;li>“&lt;em>The Courage to be Happy&lt;/em>” by Ichiro Kishimi&lt;/li>
+&lt;/ul>
+&lt;h3 id="learning">Learning&lt;/h3>
+&lt;p>Learning is one of my core values. I think that keeping my brain sharp and filling it with (good) stuff is the best way to improve myself and live a fuller life.&lt;/p>
+&lt;p>As you have just seen from the latest section, I also love to read, so most of my learning is done through the written medium.&lt;/p>
+&lt;p>In addition to reading, I also participated in a couple of conferences and meetups, mostly in the last months:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://extra.codemotion.com/conference-milan-2022/">Codemotion Milan 2022&lt;/a> (online, didn’t manage to buy the tickets for the live conference..)&lt;/li>
+&lt;li>&lt;a href="https://www.agileday.it/">Italian Agile Day 2022&lt;/a> (my &lt;a href="http://marcobacis.com/blog/2022-italian-agile-days">summary&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUG Bergamo Meetups&lt;/a>
+&lt;ul>
+&lt;li>“Vent’anni dopo”… la prima volta che ho letto XP eXplained&lt;/li>
+&lt;li>eXtreme Programming linter: aggiusta XP quando si rompe&lt;/li>
+&lt;li>Mars Rover Kata, un approccio outside-in (I wrote a &lt;a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">summary&lt;/a> of this)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>There’s no learning without practice. In December I started learning the Rust programming language, by following the &lt;a href="https://doc.rust-lang.org/book/">book&lt;/a>. To practice using it, I started solving the 2022 Advent of Code with it (&lt;a href="https://github.com/marcobacis/adventofcode">github&lt;/a>). I haven’t finished all the challenges yet (I’m stuck on the infamous 16th day 😅) but I think AoC is a great way to experiment and learn and I’ll continue with it even after the holidays.&lt;/p>
+&lt;h2 id="new-year-resolutions">New year resolutions&lt;/h2>
+&lt;p>2022 has been a great year. I wasn’t able to fulfil all my goals (for example, I definitely didn’t lose 10 kg of weight…) but it was a fun and nice adventure.&lt;/p>
+&lt;p>I’m not used to making new year&amp;rsquo;s resolutions, as I usually set a goal whenever it comes to my mind. This time I’ll try to list some main topics and goals for next year.&lt;/p>
+&lt;h3 id="1-learn-in-public">1. Learn in public&lt;/h3>
+&lt;p>I think that “learn in public” summarizes quite well my main goal for next year.&lt;/p>
+&lt;p>The term has been created by swix (&lt;a href="https://www.swyx.io/learn-in-public/">here&lt;/a>) and it basically means to create a habit of learning and creating content out of it. For example, while learning a new programming language, you might write a blog post or tutorial explaining the language features you are learning, or create videos and podcasts about new concepts you just read about. It also means reaching other people interested in the same thing you are learning (making courses, speaking at conferences, reaching people with questions.. and so on).&lt;/p>
+&lt;p>So, in 2023 my main goal will be to share what I learn. I might do it by writing here, creating github repos (as I already did with Advent Of Code, but I might do it even with basic Rust stuff) or on other channels. Mostly programming-related stuff, but I may also write some book summaries or conference recaps.&lt;/p>
+&lt;h3 id="2-improve-as-a-backend-developer">2. Improve as a Backend developer&lt;/h3>
+&lt;p>I’ve been working as a Software Engineer for more than 3 years today. I’m still at the beginning of my career but have tried different technologies and domains (e.g. Industrial Robotics and Computer Vision, IoT platforms, Cloud Services, Desktop applications, Games and so on).&lt;/p>
+&lt;p>I now think it’s time to concentrate on a single aspect of software engineering, which is backend and systems programming (with a bit of DevOps).&lt;/p>
+&lt;p>Since university I’ve been fascinated by distributed systems and large-scale applications, so 2023 will be dedicated to improving my knowledge and practice on backend technologies and architectures.&lt;/p>
+&lt;p>Obviously being a “T-shaped” developer is my final goal, so I won’t disregard other fields (such as frontend, in which I definitely suck).&lt;/p>
+&lt;h3 id="3-attend-more-meetups-and-conferences">3. Attend more Meetups and Conferences&lt;/h3>
+&lt;p>In the last months, I was able to participate in a couple of conferences and meetups, and I really liked it 😁. It allows me to get an updated overview of entire fields/domains and to meet new people.&lt;/p>
+&lt;p>Next year the goal is quite simple: participate in more (live) conferences! I already accepted to go to an “un-conference” in march with some XPUGBg people. As for other conferences, I’ll see which ones are programmed at the beginning of the year (next week) and plan accordingly.&lt;/p>
+&lt;p>I don’t plan to propose any talk anywhere as I feel I’m still not experienced enough, but just attending will be ok, it’s still an adventure.&lt;/p>
+&lt;h3 id="4-take-care-of-my-body-and-mind">4. Take care of my Body and Mind&lt;/h3>
+&lt;p>Even if I put this goal at the end of the list, it surrounds the other three and is actually the basis to improve in all the rest. My goal for this year is to take care of my health and my mind.&lt;/p>
+&lt;p>I already started doing a bit of exercise at home, and next year I will continue to do so. In addition, I’ll think more about nutrition and what I put inside my body.&lt;/p>
+&lt;p>Finally, improving my “mental” nutrition is essential (and is also covered by the previous goals). Learning new stuff (not only programming-related) is the best way to keep my brain exercised and healthy. Also, I hope to improve my concentration by removing bad habits (such as too much youtube surfing) and introducing new good ones (meditation and deep work).&lt;/p>
+&lt;h2 id="see-you-next-year">See you next year!&lt;/h2>
+&lt;p>This was a brief recap of what I think about 2022. See you in 2023!! 🎉&lt;/p></description></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>&lt;p>Hi! 👋&lt;/p>
+&lt;p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The &lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUGBg&lt;/a> is an association promoting and organizing events related to extreme programming in the Bergamo region.&lt;/p>
+&lt;p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from &lt;a href="https://alcor.academy/">Alcor Academy&lt;/a>) performed a live mob programming session with the audience, to solve the &lt;a href="https://github.com/makomweb/mars-rover">mars rover kata&lt;/a>. We learned how to do mob programming, and how the Outside-In TDD approach works.&lt;/p>
+&lt;h2 id="what-is-extreme-programming">What is Extreme Programming?&lt;/h2>
+&lt;p>Extreme programming (XP) is a set of values, principles and practices introduced by Kent Beck at the end of the 1990s. Its goals are to improve the software quality and the team&amp;rsquo;s responsiveness to requirements changing during development. I might write my opinions on this methodology in a new blog post, but for now, I’ll redirect you to the &lt;a href="https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">book&lt;/a>, which definitely explains it better than I do 😉.&lt;/p>
+&lt;p>I discovered extreme programming later this year while attending the XPUG meetups. I also read Kent Beck’s book and I’m actively trying to introduce some practices (like TDD and pair programming) into my current team, but I’m still far from a full XP practitioner. Still, the argument is really interesting.&lt;/p>
+&lt;p>How does it apply to this meetup? We followed a practice called &lt;strong>mob programming&lt;/strong>, in which there are:&lt;/p>
+&lt;ul>
+&lt;li>a &lt;strong>driver&lt;/strong> (Alessandro), the developer actually writing code on the editor&lt;/li>
+&lt;li>the &lt;strong>navigator&lt;/strong>, which instructs the driver on what to write (and sometimes also how)&lt;/li>
+&lt;li>the &lt;strong>mob&lt;/strong>, other members of the team which can discuss with the navigator to improve the code, find possible issues and so on&lt;/li>
+&lt;/ul>
+&lt;p>during the meetup, Marco and Alessandro proposed an extended approach (called &lt;strong>fish bowl&lt;/strong>), in which the mob is composed of 5 members of the audience, which rotate after some time. So, in addition to the standard mob, we have:&lt;/p>
+&lt;ul>
+&lt;li>the &lt;strong>facilitator&lt;/strong> (Marco) guiding the mob and the navigator and deciding when to rotate roles and members&lt;/li>
+&lt;li>the &lt;strong>audience&lt;/strong>, watching it all. Anyone can then enter the fish bowl when he thinks he can give something to the discussion&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-is-a-kata">What is a Kata?&lt;/h2>
+&lt;p>“Kata” is a term borrowed from martial arts. It is “a detailed choreographed
+ pattern of movements made to be practised alone. It can also be reviewed within groups and in unison when training” (&lt;a href="https://en.wikipedia.org/wiki/Kata">Wikipedia&lt;/a>).
+Developers have taken this term and applied it to their set of movements, which are coding, testing and designing. A kata is a short problem/exercise meant to be practised a lot of times. The same kata can be practised with different languages, approaches and methodologies, giving each time a new perspective.&lt;/p>
+&lt;p>In our case, in this meetup, we practised the mars rover kata, and the twists were to practice it with &lt;strong>mob programming&lt;/strong> and &lt;strong>outside-in TDD&lt;/strong>. Double trouble!&lt;/p>
+&lt;p>In the mars rover kata, you have to implement a rover moving on the surface of mars. You are given the initial coordinates of the rover (x, y) and the initial orientation (N, S, E, W). Then, you are given the commands:&lt;/p>
+&lt;ul>
+&lt;li>L → rotate left by 90°&lt;/li>
+&lt;li>R → rotate right by 90°&lt;/li>
+&lt;li>M → move forward one grid point, maintaining the same position&lt;/li>
+&lt;/ul>
+&lt;p>Your program should output the position of the rover after applying the commands (X, Y coordinates and direction).&lt;/p>
+&lt;p>During the meetup (because of lack of time and a lot of discussions) we were able to implement only the simplest version, with the rotate left and move forward commands, and without the I/O translation code (from a text file to actual commands and positions). This doesn&amp;rsquo;t mean that the kata was a failure. On the contrary, it was very useful to see different opinions and approaches to the problem at hand.&lt;/p>
+&lt;h2 id="outside-in-approach">Outside-In approach&lt;/h2>
+&lt;p>&lt;strong>Outside-in&lt;/strong> is an approach to develop software in tandem with TDD. It works by starting from the outer layer (”outside”) and, guided by tests, creating the underlying layers (”in”) of the software.&lt;/p>
+&lt;p>In practice, the mob started (guided by marco) with the acceptance tests, the outermost layer of testing. These tests should be in a language understandable by the business, as they indicate whether the problem is solved from the business perspective. The first consideration is that the acceptance tests used the actual input and output strings to test the behaviour of the system (see &lt;a href="https://github.com/makomweb/mars-rover">here&lt;/a> for the example). This meant that the code needed a sort of “translator” to translate the inputs to domain objects, and the domain objects to outputs.&lt;/p>
+&lt;p>The outside-in approach turned out to be difficult to assimilate because it turned my perception of the design upside-down. Starting from the acceptance tests, it was difficult to turn the tests green, and we had to dive deeper and create a lot of code (first the rover controller, then the rover, then the position with coordinates and direction, and so on) before passing our first test.&lt;/p>
+&lt;p>In addition, we had to use mocks immediately to avoid writing the translator. Marco presented this to us as a challenge: most of the business value and complexity actually resides in the rover code, not the I/O, so it was a good way to concentrate on the core features of the kata.&lt;/p>
+&lt;p>In the end, we were able to turn our first test green, and it was already time to head to the pub, so… the rest was left as an exercise for the viewers 😇.&lt;/p>
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>The meetup was really interesting, and it helped me learn new concepts. Even if I didn’t participate in the mob but just watched, I exercised my “design muscles” during the session and my brain was always comparing alternatives and thinking about the code.&lt;/p>
+&lt;p>Marco and Alessandro are great teachers: Marco was a great facilitator and guided the mob to the right solution, while Alessandro was a thoughtful driver with opinions, also helping the mob to cooperate.&lt;/p>
+&lt;p>The outside-in approach was new for most of the audience, and even experienced developers discussed how to design the solution and how to proceed. They created a lot of classes seemingly “doing nothing” at the moment, but later it all made sense. This is quite different from standard TDD, in which you just write the code needed to pass the tests and then refactor. Outside-In helps to reduce the refactoring stage, which always leads to rewriting big chunks of the code.&lt;/p>
+&lt;p>Finally, I never tried practising a kata. I think it is a really useful technique to learn new concepts with a known problem, and I’ll use it more in the future.&lt;/p>
+&lt;p>That&amp;rsquo;s all for now 🎉. Thank you for reading and see you next time!.&lt;/p></description></item><item><title>Remote working?</title><link>http://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>http://marcobacis.com/blog/remote-work-opinions/</guid><description>&lt;p>Hi! Welcome to my first post on this blog, I hope there will be others soon!&lt;/p>
+&lt;p>Today I felt inspired after reading an article from Bennet Garner (&lt;a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5">here&lt;/a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.&lt;/p>
+&lt;p>By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society. Take a look at it!&lt;/p>
+&lt;p>In this short post, I’d like to give my take on the argument.&lt;/p>
+&lt;p>Disclaimer: all these are my opinions (as a software engineer) and may not apply to other professions.&lt;/p>
+&lt;h2 id="what-is-remote-for-you">What is remote (for you)?&lt;/h2>
+&lt;p>Remote working comes in different sizes and formats. Every company likes to adapt its definition to its culture and means of working. Also, when we talk about remote working, we might intend it in widely different ways.&lt;/p>
+&lt;p>I currently distinguish between these forms:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Full remote: work from anywhere, without constraints on where, when and how. Work is asynchronous and based not on “productivity” (ass-on-chair) but on goals.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hybrid: work from anywhere but can come to the office at any time to have in-person meetings, team building days, or to use devices you don’t have at home.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“Hybrid” (the Italian way, also called “smart working”): you can work from anywhere, but it must be a private place (for privacy reasons), must be reachable (by phone or chat) in predefined hours, have a maximum number of remote days a week and at any moment you might be requested to come to the office. You should be measured based on value but instead are still measured by the number of hours you are “visible”&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Guess which kind of remote work I’m doing right now? 😅&lt;/p>
+&lt;p>I’m currently working from home 2 out of 5 days a week and coming into the office for the rest. Given that I’m on a “forced hybrid” approach, I think I can list both the advantages and disadvantages I see with remote working (spoiler: I’d be in favour of the office if commute time is almost absent, but otherwise give me remote please!).&lt;/p>
+&lt;h2 id="advantages">Advantages&lt;/h2>
+&lt;h3 id="no-commute-time">No commute time&lt;/h3>
+&lt;p>Working from anywhere means, most of the time, leaving the office behind. Apart from physical tasks that need the office (like embedded software with difficult-to-move objects, tests at the client site, and happy hours with coworkers 😛) the rest of the work can be done from home or from other places (coffee shops, coworking spaces etc..).&lt;/p>
+&lt;p>In most cases, this means working near or at home, which means not doing any commute!&lt;/p>
+&lt;p>When I commute, it usually takes 3/4 hours of my life away from me every day (as we say at work: “time given to the road” or “time wasted to the rails”). I can still take advantage of the situation by reading and sleeping on the train, but it also adds a lot of useless stress (traffic, delays and so on).&lt;/p>
+&lt;p>With remote work, I can regain this time. Time to sleep, exercise, read, learn and care about myself.&lt;/p>
+&lt;h3 id="time-flexibility">Time flexibility&lt;/h3>
+&lt;p>By removing the office, you also remove the need to work simultaneously with all your colleagues. Most of the time companies institute “core hours” in which you should be available for meetings and knowledge sharing, but otherwise you can work whenever is better for you.&lt;/p>
+&lt;p>For example, I sometimes take some time off during the day to clean my house, walk or read/watch something interesting, without the fear of “wasting time”.&lt;/p>
+&lt;p>In addition, having time flexibility means working when you are most productive. I tend to work a lot better in the morning (8-12 AM) and late afternoon (4-7 PM), while in the in-between hours I feel less productive. When I’m in the office, my second productive slot of time is wasted because I worry about taking the train (at 5.30 PM), while when I’m working from home I can keep going and finish my task more efficiently. This means I can also do lighter tasks (or nothing at all!) in my “unproductive” time.&lt;/p>
+&lt;h3 id="more-privacy-sometimes">More privacy (sometimes)&lt;/h3>
+&lt;p>Unless you work from a cafè or a coworking, most of the time “remote” = “home” or another personal place. Not being in an office, I don’t have to worry about someone staying over my shoulder to check my progress or complain that I’m not working enough. It also means less noise (if you want) and fewer distractions from co-workers.&lt;/p>
+&lt;p>Obviously, this doesn’t apply to all people. For example, parents have kids running in the house, and pets can also be very noisy and distracting, Finally, the sofa or the bed might be the worst distraction of them all: “why don’t I just rest a little on the sofa? 5 minutes and I’ll back”.&lt;/p>
+&lt;p>All said, remote wins here.&lt;/p>
+&lt;h2 id="why-would-you-want-to-go-to-the-office">Why would you want to go to the office?&lt;/h2>
+&lt;p>Given all the benefits given by remote working, why should someone still want to work in an office?&lt;/p>
+&lt;p>I can give some perspective about this, as I’m currently working more from the office than remotely (3 out of 5 days a week). By the way (spoiler) I’m still torn between the two options, mostly because of the following reasons.&lt;/p>
+&lt;h3 id="socialization">Socialization&lt;/h3>
+&lt;p>“You can socialise remotely”. Yes, but I think meeting in person is still better (even as an introvert).&lt;/p>
+&lt;p>Staying in the same room together helps to “glue” people together and allows them to read the room in an instant.&lt;/p>
+&lt;p>Some of this can be done remotely, but would you keep the camera and/or audio on for the entire day when working from home (or worse, from outside)? You can still call your colleagues for a quick chat, but this is far from walking to them, tapping their shoulders and chatting in real life. Yes, it’s distracting and “unproductive”, and sometimes can be daunting (and toxic) but, in the right environment, it can also be fun.&lt;/p>
+&lt;h3 id="commuting-reprise">Commuting (reprise)&lt;/h3>
+&lt;p>Yes, I have a 4-hour commute, but when I commute I’m detached from the world outside and can do stuff I wouldn’t do that much at home. This applies to me as I commute by train and underground, so I can read, write and sleep on them.&lt;/p>
+&lt;p>Commuting also makes me aware of the time passing while working (I have to stop working or I won’t come home in time for dinner 😂) and helps to detach from work and arrive less worried/stressed by it at home.&lt;/p>
+&lt;p>Finally, commuting helped me cultivate friendships I wouldn’t have found by staying at home (I call them my “train friends”).&lt;/p>
+&lt;h2 id="so-what-is-the-verdict">So, what is the verdict?&lt;/h2>
+&lt;p>Given all these pros/cons, what do I think about remote working?&lt;/p>
+&lt;p>As Bennet writes in his article, I think it’s here to stay for a long time. For some situations and tasks the office needs to stay (and to really socialise with colleagues), but otherwise just let me work remotely:&lt;/p>
+&lt;ul>
+&lt;li>More productive (less distraction and I can work when I am more productive)&lt;/li>
+&lt;li>Work based on real goals and not on “time on chair” metrics&lt;/li>
+&lt;li>More time to improve, relax and learn (and enjoy my life in a less stressful way)&lt;/li>
+&lt;/ul>
+&lt;p>I think many companies still need to fully understand remote and asynchronous work, and hope most of them will embrace it and take advantage of all the benefits in the near future.&lt;/p></description></item></channel></rss>

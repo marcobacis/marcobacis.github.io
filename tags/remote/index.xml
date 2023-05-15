@@ -1,6 +1,177 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>remote on Marco Bacis</title><link>http://marcobacis.com/tags/remote/</link><description>Recent content in remote on Marco Bacis</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-{year}</copyright><lastBuildDate>Sat, 31 Dec 2022 18:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/remote/index.xml" rel="self" type="application/rss+xml"/><item><title>2022: A Review</title><link>http://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-a-review/</guid><description>Hi 👋 and welcome to a new post!
-Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.
-So, let’s start!
-Disclaimer: This recap is mostly written by me and for me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</description></item><item><title>Remote working?</title><link>http://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>http://marcobacis.com/blog/remote-work-opinions/</guid><description>Hi! Welcome to my first post on this blog, I hope there will be others soon!
-Today I felt inspired after reading an article from Bennet Garner (here). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.
-By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>remote on Marco Bacis</title><link>http://marcobacis.com/tags/remote/</link><description>Recent content in remote on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sat, 31 Dec 2022 18:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/remote/index.xml" rel="self" type="application/rss+xml"/><item><title>2022: A Review</title><link>http://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2022-a-review/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
+&lt;p>Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.&lt;/p>
+&lt;p>So, let’s start!&lt;/p>
+&lt;p>&lt;em>Disclaimer: This recap is mostly written by me and &lt;strong>for&lt;/strong> me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.&lt;/em>&lt;/p>
+&lt;h2 id="work">Work&lt;/h2>
+&lt;p>I didn’t do anything exceptional this year.&lt;/p>
+&lt;p>What do I mean? Anyone writing on the internet brags about changing companies, getting promoted, creating new businesses and so on.&lt;/p>
+&lt;p>I just… worked 😅.&lt;/p>
+&lt;p>By this, I don’t mean my job has been boring, indeed! I learned a lot during this year. A few arguments I dabbled myself with include:&lt;/p>
+&lt;ul>
+&lt;li>REST API development with .NET 6&lt;/li>
+&lt;li>A bit of frontend with React&lt;/li>
+&lt;li>CI/CD pipelines for .NET and React on Bitbucket (and deploying on Azure services)&lt;/li>
+&lt;li>How to manage BLE and ANT+ devices from a Unity application&lt;/li>
+&lt;li>IoT C++ development on a yocto board (and how to use the CANOpen protocol to communicate with devices)&lt;/li>
+&lt;/ul>
+&lt;p>As you can see it’s quite diverse stuff. I didn’t do all at the same time, but given the variety of startups we support, I always need to wear many hats (even while staying an individual contributor).&lt;/p>
+&lt;p>The thing I’m most proud of has been introducing CI/CD pipelines in a greenfield project. I was able to enforce testing and pull requests/review in the backend team (even without being team lead or even senior) and I hope that this will increase the project quality and stability over time.&lt;/p>
+&lt;p>Also, working both on backend systems and IoT boards is very fun, as I get to see the entire system and all its components working together.&lt;/p>
+&lt;h2 id="personal">Personal&lt;/h2>
+&lt;h3 id="home-sweet-home">Home sweet home&lt;/h3>
+&lt;p>This year I managed to buy a house and move in with my girlfriend 🏠.&lt;/p>
+&lt;p>It has been quite an adventure, all because of some bureaucratic issues. The old owners didn’t actually own part of the house, so we ended up doing a three-way act… it was like living a real-life merge conflict in git 😂.&lt;/p>
+&lt;p>Other than that, we didn’t have any other issues (e.g. didn’t do any work on the house itself, and already had a furnished bathroom and kitchen). We still need to buy lamps (we are living with lightbulbs hanging from the walls and ceiling) but otherwise, it’s perfect.&lt;/p>
+&lt;h3 id="hybrid-work---pros-and-cons">Hybrid work - Pros and Cons&lt;/h3>
+&lt;p>This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more &lt;a href="http://marcobacis.com/blog/remote-work-opinions">here&lt;/a>):&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Pro&lt;/strong>: I was able to start exercising a bit on the work-from-home days&lt;/li>
+&lt;li>&lt;strong>Pro&lt;/strong>: I got to enjoy my new house more (also, working with my cat close to me is purrfect!)&lt;/li>
+&lt;li>&lt;strong>Con&lt;/strong>: As in past years, I read fewer books (as I was mostly reading them while commuting by train)&lt;/li>
+&lt;/ul>
+&lt;p>Overall I’m pretty satisfied with working remotely, and wish there could be more flexibility from my company. Otherwise, working in the same place as my colleagues is great most of the time. If it wasn’t for the time and cost (and distance!) of commuting, I’d be eager to work in the office most of the time.&lt;/p>
+&lt;h3 id="blogging-reading-and-learning">Blogging, Reading and Learning&lt;/h3>
+&lt;h3 id="blog">Blog&lt;/h3>
+&lt;p>I finally managed to start blogging! Even if I just wrote two articles (and this one) on the blog and started in December, it’s still an achievement.&lt;/p>
+&lt;p>I’ve always looked up to writers and creators, as they are able to channel their thoughts and creativity into something that can be enjoyed by others.&lt;/p>
+&lt;p>I hope to keep writing on this blog. Right now I have no idea on how to evolve it (personal articles, book summaries, programming-related stuff etc..), but I’m sure I will find inspiration to write somewhat regularly.&lt;/p>
+&lt;h3 id="reading">Reading&lt;/h3>
+&lt;p>I love reading. I usually read while commuting (one of the only perks of not working remotely all the time, I just cannot concentrate the same at home) and sometimes in the evening instead of watching TV.&lt;/p>
+&lt;p>Reading is a great way to disconnect from the outside world and enter new dimensions. Fiction allows living new experiences (that I could never do myself, as in fantasy stories), while non-fiction allows absorbing an entire life of work and study of the author in our brain. I usually read non-fiction and programming-related books for this reason, but also like to disconnect completely and read fiction sometimes.&lt;/p>
+&lt;p>Unfortunately, I’m not used to taking notes and making summaries, so for now I’ll post the list. I hope to write some summaries next year!&lt;/p>
+&lt;p>This year I read 32 books, here’s the complete list (in chronological order):&lt;/p>
+&lt;ul>
+&lt;li>“&lt;em>Designing Data-Intensive Applications&lt;/em>” by Martin Kleppmann&lt;/li>
+&lt;li>“&lt;em>Nudge: Improving Decisions about Health, Wealth, and Happiness&lt;/em>” by Richard H. Thaler and Cass R. Sunstein&lt;/li>
+&lt;li>“&lt;em>Find Your Why&lt;/em>” by Simon Sinek, David Mead and Peter Docker&lt;/li>
+&lt;li>“&lt;em>A Wild Sheep Chase&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>ReWork&lt;/em>” by Jason Fried and David Heinemeier Hansson&lt;/li>
+&lt;li>“&lt;em>How to avoid a climate disaster&lt;/em>” by Bill Gates&lt;/li>
+&lt;li>“&lt;em>The Manager’s Path&lt;/em>” by Camille Fournier&lt;/li>
+&lt;li>“&lt;em>Peopleware&lt;/em>” by Tom DeMarco, Timothy Lister&lt;/li>
+&lt;li>“&lt;em>The Bells of Old Tokyo&lt;/em>” by Anna Sherman&lt;/li>
+&lt;li>“&lt;em>The Block&lt;/em>” by Ben Oliver&lt;/li>
+&lt;li>“&lt;em>Clean Craftsmanship&lt;/em>” by Robert C. Martin&lt;/li>
+&lt;li>“&lt;em>The Omnivore’s Dilemma&lt;/em>” by Michael Pollan&lt;/li>
+&lt;li>“&lt;em>Accelerate&lt;/em>” by Nicole Forsgren, Jez Humble and Gene Kim&lt;/li>
+&lt;li>“&lt;em>Positive Intelligence&lt;/em>” by Shirzad Chamine&lt;/li>
+&lt;li>“&lt;em>Hear the wind sing&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>Pinball&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>No Longer Human&lt;/em>” by Osamu Dazai&lt;/li>
+&lt;li>“&lt;em>Everything is f*cked: A book about hope&lt;/em>” by Mark Manson&lt;/li>
+&lt;li>“&lt;em>Le Città Invisibili&lt;/em>” by Italo Calvino&lt;/li>
+&lt;li>“&lt;em>School Blues&lt;/em>” by Daniel Pennac&lt;/li>
+&lt;li>“&lt;em>Riconquista il tuo tempo&lt;/em>” by Andrea Giuliodori&lt;/li>
+&lt;li>“&lt;em>Guns, Germs and Steel&lt;/em>” by Jared Diamond&lt;/li>
+&lt;li>“&lt;em>The Courage to be Disliked&lt;/em>” by Ichiro Kishimi and Fumitake Koga&lt;/li>
+&lt;li>“&lt;em>&lt;strong>Entangled Life&lt;/strong>&lt;/em>” by Merlin Sheldrake&lt;/li>
+&lt;li>“&lt;em>How not to be Wrong&lt;/em>” by Jordan Ellenberg&lt;/li>
+&lt;li>“&lt;em>Lessons in Stoicism&lt;/em>” by John Sellars&lt;/li>
+&lt;li>“&lt;em>The Clean Coder&lt;/em>” by Robert C. Martin&lt;/li>
+&lt;li>“&lt;em>Voice of the Fire&lt;/em>” by Alan Moore&lt;/li>
+&lt;li>“&lt;em>Extreme Programming Explained&lt;/em>” by Kent Beck&lt;/li>
+&lt;li>“&lt;em>After Dark&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>Immune - A Journey in the Mysterious System That Keeps You Alive&lt;/em>” by Philipp Dettmer&lt;/li>
+&lt;li>“&lt;em>A Philosophy of Software Design&lt;/em>” by John Ousterhout&lt;/li>
+&lt;/ul>
+&lt;p>Here are instead some books I &lt;em>didn’t&lt;/em> finish, either because I was bored reading them or I didn’t think it was the moment to read them. I might try to read them again though:&lt;/p>
+&lt;ul>
+&lt;li>“&lt;em>On the Road&lt;/em>” by Jack Kerouac&lt;/li>
+&lt;li>“&lt;em>Invent &amp;amp; Wander&lt;/em>” by Jeff Bezos&lt;/li>
+&lt;li>“&lt;em>The Obstacle is The Way&lt;/em>” by Ryan Holiday&lt;/li>
+&lt;li>“&lt;em>Underground&lt;/em>” by Haruki Murakami&lt;/li>
+&lt;li>“&lt;em>The 5AM Club&lt;/em>” by Robin Sharma&lt;/li>
+&lt;li>“&lt;em>The Courage to be Happy&lt;/em>” by Ichiro Kishimi&lt;/li>
+&lt;/ul>
+&lt;h3 id="learning">Learning&lt;/h3>
+&lt;p>Learning is one of my core values. I think that keeping my brain sharp and filling it with (good) stuff is the best way to improve myself and live a fuller life.&lt;/p>
+&lt;p>As you have just seen from the latest section, I also love to read, so most of my learning is done through the written medium.&lt;/p>
+&lt;p>In addition to reading, I also participated in a couple of conferences and meetups, mostly in the last months:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://extra.codemotion.com/conference-milan-2022/">Codemotion Milan 2022&lt;/a> (online, didn’t manage to buy the tickets for the live conference..)&lt;/li>
+&lt;li>&lt;a href="https://www.agileday.it/">Italian Agile Day 2022&lt;/a> (my &lt;a href="http://marcobacis.com/blog/2022-italian-agile-days">summary&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUG Bergamo Meetups&lt;/a>
+&lt;ul>
+&lt;li>“Vent’anni dopo”… la prima volta che ho letto XP eXplained&lt;/li>
+&lt;li>eXtreme Programming linter: aggiusta XP quando si rompe&lt;/li>
+&lt;li>Mars Rover Kata, un approccio outside-in (I wrote a &lt;a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">summary&lt;/a> of this)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>There’s no learning without practice. In December I started learning the Rust programming language, by following the &lt;a href="https://doc.rust-lang.org/book/">book&lt;/a>. To practice using it, I started solving the 2022 Advent of Code with it (&lt;a href="https://github.com/marcobacis/adventofcode">github&lt;/a>). I haven’t finished all the challenges yet (I’m stuck on the infamous 16th day 😅) but I think AoC is a great way to experiment and learn and I’ll continue with it even after the holidays.&lt;/p>
+&lt;h2 id="new-year-resolutions">New year resolutions&lt;/h2>
+&lt;p>2022 has been a great year. I wasn’t able to fulfil all my goals (for example, I definitely didn’t lose 10 kg of weight…) but it was a fun and nice adventure.&lt;/p>
+&lt;p>I’m not used to making new year&amp;rsquo;s resolutions, as I usually set a goal whenever it comes to my mind. This time I’ll try to list some main topics and goals for next year.&lt;/p>
+&lt;h3 id="1-learn-in-public">1. Learn in public&lt;/h3>
+&lt;p>I think that “learn in public” summarizes quite well my main goal for next year.&lt;/p>
+&lt;p>The term has been created by swix (&lt;a href="https://www.swyx.io/learn-in-public/">here&lt;/a>) and it basically means to create a habit of learning and creating content out of it. For example, while learning a new programming language, you might write a blog post or tutorial explaining the language features you are learning, or create videos and podcasts about new concepts you just read about. It also means reaching other people interested in the same thing you are learning (making courses, speaking at conferences, reaching people with questions.. and so on).&lt;/p>
+&lt;p>So, in 2023 my main goal will be to share what I learn. I might do it by writing here, creating github repos (as I already did with Advent Of Code, but I might do it even with basic Rust stuff) or on other channels. Mostly programming-related stuff, but I may also write some book summaries or conference recaps.&lt;/p>
+&lt;h3 id="2-improve-as-a-backend-developer">2. Improve as a Backend developer&lt;/h3>
+&lt;p>I’ve been working as a Software Engineer for more than 3 years today. I’m still at the beginning of my career but have tried different technologies and domains (e.g. Industrial Robotics and Computer Vision, IoT platforms, Cloud Services, Desktop applications, Games and so on).&lt;/p>
+&lt;p>I now think it’s time to concentrate on a single aspect of software engineering, which is backend and systems programming (with a bit of DevOps).&lt;/p>
+&lt;p>Since university I’ve been fascinated by distributed systems and large-scale applications, so 2023 will be dedicated to improving my knowledge and practice on backend technologies and architectures.&lt;/p>
+&lt;p>Obviously being a “T-shaped” developer is my final goal, so I won’t disregard other fields (such as frontend, in which I definitely suck).&lt;/p>
+&lt;h3 id="3-attend-more-meetups-and-conferences">3. Attend more Meetups and Conferences&lt;/h3>
+&lt;p>In the last months, I was able to participate in a couple of conferences and meetups, and I really liked it 😁. It allows me to get an updated overview of entire fields/domains and to meet new people.&lt;/p>
+&lt;p>Next year the goal is quite simple: participate in more (live) conferences! I already accepted to go to an “un-conference” in march with some XPUGBg people. As for other conferences, I’ll see which ones are programmed at the beginning of the year (next week) and plan accordingly.&lt;/p>
+&lt;p>I don’t plan to propose any talk anywhere as I feel I’m still not experienced enough, but just attending will be ok, it’s still an adventure.&lt;/p>
+&lt;h3 id="4-take-care-of-my-body-and-mind">4. Take care of my Body and Mind&lt;/h3>
+&lt;p>Even if I put this goal at the end of the list, it surrounds the other three and is actually the basis to improve in all the rest. My goal for this year is to take care of my health and my mind.&lt;/p>
+&lt;p>I already started doing a bit of exercise at home, and next year I will continue to do so. In addition, I’ll think more about nutrition and what I put inside my body.&lt;/p>
+&lt;p>Finally, improving my “mental” nutrition is essential (and is also covered by the previous goals). Learning new stuff (not only programming-related) is the best way to keep my brain exercised and healthy. Also, I hope to improve my concentration by removing bad habits (such as too much youtube surfing) and introducing new good ones (meditation and deep work).&lt;/p>
+&lt;h2 id="see-you-next-year">See you next year!&lt;/h2>
+&lt;p>This was a brief recap of what I think about 2022. See you in 2023!! 🎉&lt;/p></description></item><item><title>Remote working?</title><link>http://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>http://marcobacis.com/blog/remote-work-opinions/</guid><description>&lt;p>Hi! Welcome to my first post on this blog, I hope there will be others soon!&lt;/p>
+&lt;p>Today I felt inspired after reading an article from Bennet Garner (&lt;a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5">here&lt;/a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.&lt;/p>
+&lt;p>By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society. Take a look at it!&lt;/p>
+&lt;p>In this short post, I’d like to give my take on the argument.&lt;/p>
+&lt;p>Disclaimer: all these are my opinions (as a software engineer) and may not apply to other professions.&lt;/p>
+&lt;h2 id="what-is-remote-for-you">What is remote (for you)?&lt;/h2>
+&lt;p>Remote working comes in different sizes and formats. Every company likes to adapt its definition to its culture and means of working. Also, when we talk about remote working, we might intend it in widely different ways.&lt;/p>
+&lt;p>I currently distinguish between these forms:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Full remote: work from anywhere, without constraints on where, when and how. Work is asynchronous and based not on “productivity” (ass-on-chair) but on goals.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hybrid: work from anywhere but can come to the office at any time to have in-person meetings, team building days, or to use devices you don’t have at home.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“Hybrid” (the Italian way, also called “smart working”): you can work from anywhere, but it must be a private place (for privacy reasons), must be reachable (by phone or chat) in predefined hours, have a maximum number of remote days a week and at any moment you might be requested to come to the office. You should be measured based on value but instead are still measured by the number of hours you are “visible”&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Guess which kind of remote work I’m doing right now? 😅&lt;/p>
+&lt;p>I’m currently working from home 2 out of 5 days a week and coming into the office for the rest. Given that I’m on a “forced hybrid” approach, I think I can list both the advantages and disadvantages I see with remote working (spoiler: I’d be in favour of the office if commute time is almost absent, but otherwise give me remote please!).&lt;/p>
+&lt;h2 id="advantages">Advantages&lt;/h2>
+&lt;h3 id="no-commute-time">No commute time&lt;/h3>
+&lt;p>Working from anywhere means, most of the time, leaving the office behind. Apart from physical tasks that need the office (like embedded software with difficult-to-move objects, tests at the client site, and happy hours with coworkers 😛) the rest of the work can be done from home or from other places (coffee shops, coworking spaces etc..).&lt;/p>
+&lt;p>In most cases, this means working near or at home, which means not doing any commute!&lt;/p>
+&lt;p>When I commute, it usually takes 3/4 hours of my life away from me every day (as we say at work: “time given to the road” or “time wasted to the rails”). I can still take advantage of the situation by reading and sleeping on the train, but it also adds a lot of useless stress (traffic, delays and so on).&lt;/p>
+&lt;p>With remote work, I can regain this time. Time to sleep, exercise, read, learn and care about myself.&lt;/p>
+&lt;h3 id="time-flexibility">Time flexibility&lt;/h3>
+&lt;p>By removing the office, you also remove the need to work simultaneously with all your colleagues. Most of the time companies institute “core hours” in which you should be available for meetings and knowledge sharing, but otherwise you can work whenever is better for you.&lt;/p>
+&lt;p>For example, I sometimes take some time off during the day to clean my house, walk or read/watch something interesting, without the fear of “wasting time”.&lt;/p>
+&lt;p>In addition, having time flexibility means working when you are most productive. I tend to work a lot better in the morning (8-12 AM) and late afternoon (4-7 PM), while in the in-between hours I feel less productive. When I’m in the office, my second productive slot of time is wasted because I worry about taking the train (at 5.30 PM), while when I’m working from home I can keep going and finish my task more efficiently. This means I can also do lighter tasks (or nothing at all!) in my “unproductive” time.&lt;/p>
+&lt;h3 id="more-privacy-sometimes">More privacy (sometimes)&lt;/h3>
+&lt;p>Unless you work from a cafè or a coworking, most of the time “remote” = “home” or another personal place. Not being in an office, I don’t have to worry about someone staying over my shoulder to check my progress or complain that I’m not working enough. It also means less noise (if you want) and fewer distractions from co-workers.&lt;/p>
+&lt;p>Obviously, this doesn’t apply to all people. For example, parents have kids running in the house, and pets can also be very noisy and distracting, Finally, the sofa or the bed might be the worst distraction of them all: “why don’t I just rest a little on the sofa? 5 minutes and I’ll back”.&lt;/p>
+&lt;p>All said, remote wins here.&lt;/p>
+&lt;h2 id="why-would-you-want-to-go-to-the-office">Why would you want to go to the office?&lt;/h2>
+&lt;p>Given all the benefits given by remote working, why should someone still want to work in an office?&lt;/p>
+&lt;p>I can give some perspective about this, as I’m currently working more from the office than remotely (3 out of 5 days a week). By the way (spoiler) I’m still torn between the two options, mostly because of the following reasons.&lt;/p>
+&lt;h3 id="socialization">Socialization&lt;/h3>
+&lt;p>“You can socialise remotely”. Yes, but I think meeting in person is still better (even as an introvert).&lt;/p>
+&lt;p>Staying in the same room together helps to “glue” people together and allows them to read the room in an instant.&lt;/p>
+&lt;p>Some of this can be done remotely, but would you keep the camera and/or audio on for the entire day when working from home (or worse, from outside)? You can still call your colleagues for a quick chat, but this is far from walking to them, tapping their shoulders and chatting in real life. Yes, it’s distracting and “unproductive”, and sometimes can be daunting (and toxic) but, in the right environment, it can also be fun.&lt;/p>
+&lt;h3 id="commuting-reprise">Commuting (reprise)&lt;/h3>
+&lt;p>Yes, I have a 4-hour commute, but when I commute I’m detached from the world outside and can do stuff I wouldn’t do that much at home. This applies to me as I commute by train and underground, so I can read, write and sleep on them.&lt;/p>
+&lt;p>Commuting also makes me aware of the time passing while working (I have to stop working or I won’t come home in time for dinner 😂) and helps to detach from work and arrive less worried/stressed by it at home.&lt;/p>
+&lt;p>Finally, commuting helped me cultivate friendships I wouldn’t have found by staying at home (I call them my “train friends”).&lt;/p>
+&lt;h2 id="so-what-is-the-verdict">So, what is the verdict?&lt;/h2>
+&lt;p>Given all these pros/cons, what do I think about remote working?&lt;/p>
+&lt;p>As Bennet writes in his article, I think it’s here to stay for a long time. For some situations and tasks the office needs to stay (and to really socialise with colleagues), but otherwise just let me work remotely:&lt;/p>
+&lt;ul>
+&lt;li>More productive (less distraction and I can work when I am more productive)&lt;/li>
+&lt;li>Work based on real goals and not on “time on chair” metrics&lt;/li>
+&lt;li>More time to improve, relax and learn (and enjoy my life in a less stressful way)&lt;/li>
+&lt;/ul>
+&lt;p>I think many companies still need to fully understand remote and asynchronous work, and hope most of them will embrace it and take advantage of all the benefits in the near future.&lt;/p></description></item></channel></rss>

@@ -1,5 +1,169 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>notes on Marco Bacis</title><link>http://marcobacis.com/tags/notes/</link><description>Recent content in notes on Marco Bacis</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-{year}</copyright><lastBuildDate>Tue, 14 Mar 2023 18:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Book Summary: Atomic Habits</title><link>http://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/atomic-habits-book/</guid><description>Hi 👋 and welcome to a new post!
-Today I’m publishing the (raw) notes I took while reading “Atomic Habits: An Easy and proven way to build good habits and break bad ones”, by James Clear.
-Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book.</description></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>Hi 👋 and welcome to a new post!
-In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (here) on January 24th.
-For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>notes on Marco Bacis</title><link>http://marcobacis.com/tags/notes/</link><description>Recent content in notes on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Tue, 14 Mar 2023 18:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Book Summary: Atomic Habits</title><link>http://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/atomic-habits-book/</guid><description>&lt;p>Hi 👋  and welcome to a new post!&lt;/p>
+&lt;p>Today I’m publishing the (raw) notes I took while reading “Atomic Habits: &lt;em>An Easy and proven way to build good habits and break bad ones”,&lt;/em> by James Clear.&lt;/p>
+&lt;p>Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book. Still, I&amp;rsquo;ll keep this notes on the blog as a personal learning reference.&lt;/p>
+&lt;p>If you want to see how I personally understood the concepts explained in the book, keep reading, and enjoy!&lt;/p>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>In the introduction, James writes about his teen accident with baseball and his recovery. He then talks about his college years, in which he experimented with his habits to improve, learn and become a better person and how that brought to him writing his blog and the book.&lt;/p>
+&lt;h2 id="fundamentals">Fundamentals&lt;/h2>
+&lt;p>The first thing to learn about habits is that the are the &lt;strong>compound&lt;/strong> &lt;strong>interest of personal improvement&lt;/strong>. By harnessing small habits and improving by 1% every day, one can make exponential progress in the long term.&lt;/p>
+&lt;p>I don&amp;rsquo;t agree entirely with the expression &amp;ldquo;1% better every day&amp;rdquo; because in the long run i think that improvement decreases as one become better at something. We first start by improving a lot, but with time progress becomes exponentially more difficult. Still, the advice to improve by a bit every day it’s still valid.&lt;/p>
+&lt;p>Another reminder of this chapter is that also bad habits follow the same principle: getting a little bit worse everyday means getting &lt;strong>a lot worse&lt;/strong> in the long run.&lt;/p>
+&lt;p>To close the first chapter, the author recommends to think about &lt;strong>systems&lt;/strong> instead of &lt;strong>goals&lt;/strong>, because goals are not sustainable in the long period. Also, a system is more methodic and doesn&amp;rsquo;t change once you reach a goal.&lt;/p>
+&lt;p>The second chapter talks about reverting the way in which we set habits, from &lt;strong>outcome-based&lt;/strong> to &lt;strong>identity-based&lt;/strong>.&lt;/p>
+&lt;p>When thinking through outcomes, each habit serves a single goal, and after that is reached we face a sense of void and don&amp;rsquo;t continue with the habit anymore. This happened to me while at university, as I made the habit of studying just for the exams and not for the long term goal of remembering the concepts studied.&lt;/p>
+&lt;p>James advocates instead for an internal change to drive habit-forming (identity → process → outcomes). By &lt;em>&lt;strong>identifying&lt;/strong>&lt;/em> with the new person one wants to become, it&amp;rsquo;s easier to create and stick to habits. For example, I made the choice to &lt;em>become&lt;/em> a healthier person, so I decided to start working out during the week and eating better. If the only goal was only to lose a certain amount of weight, I don&amp;rsquo;t think I would have stuck to it for a long time.&lt;/p>
+&lt;p>The third chapter finally gives an high level overview on how to build better habits. Each habit (good or bad) follows the &lt;strong>cue → craving → response → reward&lt;/strong> step. Following this steps it&amp;rsquo;s possible to create good habits and eliminate bad ones. James then lists the four laws of behavioural change, which he will explain throughout the book. To create a good habit, you should:&lt;/p>
+&lt;ol>
+&lt;li>Make it obvious&lt;/li>
+&lt;li>Make it attractive&lt;/li>
+&lt;li>Make it easy&lt;/li>
+&lt;li>Make it satisfying&lt;/li>
+&lt;/ol>
+&lt;p>To remove bad habit, you should follow the same steps, but reversed, so:&lt;/p>
+&lt;ol>
+&lt;li>Make it invisible&lt;/li>
+&lt;li>Make it unattractive&lt;/li>
+&lt;li>Make if difficult&lt;/li>
+&lt;li>Make it unsatisfying&lt;/li>
+&lt;/ol>
+&lt;h2 id="first-law-make-it-obvious">First Law: Make it obvious&lt;/h2>
+&lt;p>The first law is about creating the right environment and the right &lt;strong>clues&lt;/strong> to attach to the habits you want to make. In particular, the first thing to do is to increase your &lt;strong>awareness&lt;/strong> and list the different habits that you have (both good and bad ones) → Habits Scorecard. The scorecard allows you to be more aware of your behaviours, in order to keep or change them after.&lt;/p>
+&lt;p>After rising the awareness on the behaviours to change or add, it&amp;rsquo;s time to make a plan! Without a simple direction on the new habit, it&amp;rsquo;s way more difficult to stick to it. The second technique discussed related to the first law is &lt;strong>implementation intentions&lt;/strong> → &amp;ldquo;I will [behaviour] at [time] in [location]&amp;rdquo;. In addition to this, you can use &lt;strong>habit stacking&lt;/strong>, which means identifying an existing habit you already have and attach the new habit to that (&amp;ldquo;After I [current habit], I will [new habit]). These two methods create obvious &lt;strong>cues&lt;/strong> for the new habit, and design a clear plan for when and where to take action.&lt;/p>
+&lt;p>After taking care of which habits to create/keep and how to plan them, it&amp;rsquo;s time to make the cues &lt;strong>obvious&lt;/strong>. For this, the most important factor is the environment. The author says &amp;ldquo;Behaviour is a function of the Person in their environment&amp;rdquo;, and this means that motivation is not enough, and most of the times is irrelevant. Architecting the right environment is then the best way to boost our habit progress. The book shows some examples, I&amp;rsquo;ll show some which I personally use:&lt;/p>
+&lt;ul>
+&lt;li>I put a book right next to my bed to read before sleeping&lt;/li>
+&lt;li>I have my pills in the kitchen, so that I remember to take them at breakfast and dinner every day&lt;/li>
+&lt;li>I create a new journal page (on notion) for the next day in the evening and keep it open in the app, so that whenever I open it I remember to journal&lt;/li>
+&lt;/ul>
+&lt;p>The same thing can be applied to our digital environment. For example, moving some apps on the first screen, and apps we still need to keep but don&amp;rsquo;t want to use in other screens. In this way, we encourage useful apps for our habits (e.g. I keep podcasts, medium and notion on my home screen, and hide all video and social apps in a subfolder in the other screen on my phone). This also work with notifications (disabling unwanted notifications and so on).&lt;/p>
+&lt;p>The final summary of this law is explained in chapter 7. We&amp;rsquo;ve all been said that we lack self control and need more discipline, but the fact is, we need to &lt;strong>design&lt;/strong> our environment and behaviour to not need self-control! &lt;strong>Resisting temptations is an ineffective strategy&lt;/strong> in the long term. To remove bad habits we need then to reduce exposure to the cue that cause them (good habit → make it obvious, bad habit → &lt;strong>make it invisible&lt;/strong>).&lt;/p>
+&lt;h2 id="second-law-make-it-attractive">Second Law: Make it attractive&lt;/h2>
+&lt;p>The second law of behaviour change is &lt;em>make it attractive&lt;/em>. We should make our good habits tempting, &amp;ldquo;inviting&amp;rdquo; with different strategies. Habits are a &lt;em>dopamine-driven feedback loop&lt;/em>, meaning that we usually have different dopamine levels (dopamine isn&amp;rsquo;t the only factor, but it&amp;rsquo;s used to give an idea) in different habit phases (remember cue, craving, response and reward).&lt;/p>
+&lt;p>At first, dopamine is high only after the reward. While creating a habit (and always after that) dopamine tends to rise in &lt;em>anticipation&lt;/em> of the reward (craving), then becomes lower during the response phase (if we don&amp;rsquo;t receive the reward later) and it should rise at the reward phase.&lt;/p>
+&lt;p>We can use this insight to make a habit attractive, by using &lt;em>&lt;strong>temptation bundling&lt;/strong>&lt;/em> (basically, stacking a habit together with another more attractive habit/activity used as a reward). It can also be used with habit stacking to make a powerful strategy:&lt;/p>
+&lt;ol>
+&lt;li>After [current habit], I will [habit I need] → stacking&lt;/li>
+&lt;li>After [habit I need], I will [habit I want] → temptation bundling&lt;/li>
+&lt;/ol>
+&lt;p>it relies on transitiveness to associate the habit I need with what I want to do after, and relates it to the initial cue/habit.&lt;/p>
+&lt;p>Another way to make a habit more attractive is to use social pressure and imitation, which are innate in our instincts. We tend to imitate 3 groups:&lt;/p>
+&lt;ol>
+&lt;li>The &lt;strong>close&lt;/strong> → Surround yourself with people/culture where the behaviour you desire is the normal behaviour, and with which you already have something in common&lt;/li>
+&lt;li>The &lt;strong>many&lt;/strong> → We tend to follow the herd, so when changing habits means going against the group, the habit will be unattractive, while it will be attractive if it means fitting in the group&lt;/li>
+&lt;li>The &lt;strong>powerful&lt;/strong> → We imitate people we envy and see as powerful/better, so try to get approval and praise for your habit and it will be more attractive&lt;/li>
+&lt;/ol>
+&lt;p>Finally, we associate emotions and feeling to our habits. They are the way in which our brain processes cues, and we can leverage them to control our habits. In particular, we can associate good feelings and emotions, or reduce bad emotions, associated with a good habit we want to continue, or associate bad emotions and drawbacks to bad habits we want to stop. The book does the example of changing &amp;ldquo;have to&amp;rdquo; with &amp;ldquo;get to&amp;rdquo; to make a positive impact on habits we want to take. Some personal examples:&lt;/p>
+&lt;ul>
+&lt;li>I &lt;em>get to&lt;/em> walk and listen to programming podcasts&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> practice guitar&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> write about what I read and learn&lt;/li>
+&lt;li>I &lt;em>get to&lt;/em> journal about my day&lt;/li>
+&lt;/ul>
+&lt;p>In the same way, I could say &amp;ldquo;I walk in the morning to get healthier and get more energy for the day&amp;rdquo;, &amp;ldquo;I get to write about what I read so that I can learn and grow&amp;rdquo; etc..&lt;/p>
+&lt;h2 id="third-law-make-it-easy">Third Law: Make it easy&lt;/h2>
+&lt;p>The third law is &lt;em>make it easy&lt;/em>. It means to reduce friction, imagine the minimum action needed to start the habit, and automate optimising choices to make the habit really easy to follow (or really difficult if that&amp;rsquo;s the case).&lt;/p>
+&lt;p>The first concept to understand is that of “&lt;em>preparation&lt;/em> vs &lt;em>action”&lt;/em>: preparing is useful, but can become just another form of procrastination. It feels like progress but it isn&amp;rsquo;t. So, preparation needs to be kept at a minimum. The important thing is to act and repeat the habit, as getting the reps is the only way to make it stick (habits form based on &lt;strong>frequency&lt;/strong>, not time!) → How many, not how long&lt;/p>
+&lt;p>Another thing to consider is the &lt;em>effort&lt;/em>, the energy spent on the habit. Humans act based on the &lt;em>law of least effort. W&lt;/em>e will naturally follow the option which leads to the least amount of effort required. This can be used to our advantage in our habit making process, as we can change the environment to reduce the friction associated with a habit:&lt;/p>
+&lt;ul>
+&lt;li>Putting workout clothes in the most visible or the most useful place&lt;/li>
+&lt;li>Preparing healthy food ahead of time to have it ready when needed&lt;/li>
+&lt;li>Placing the object required to perform the habit on the table/desk, readily accessible&lt;/li>
+&lt;/ul>
+&lt;p>I do the last thing (placing a book near my bed) to give my brain the right clue, and to make it easy to do (just grab the book and read it!).&lt;/p>
+&lt;p>Another technique is the &lt;strong>two-minutes rule&lt;/strong>. There are a handful of &lt;em>decisive moments&lt;/em> which decide what impact we&amp;rsquo;ll deliver in a given day. In these moments we take decisions on what to do next, and we can leverage these to improve in our habit process. The two-minute rule says&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;When you start a new habit, it should take less than two minutes&amp;rdquo;.&lt;/p>
+&lt;/blockquote>
+&lt;p>If the habits takes more, reduce the effort to the minimum viable action (e.g. exercise → put on workout clothes, writing → write one paragraph/sentence). This allows to master the act of &lt;strong>showing up&lt;/strong>. After doing the first action, we can decide to continue or not, and it&amp;rsquo;s difficult that we&amp;rsquo;ll stop there&amp;hellip;&lt;/p>
+&lt;p>Finally, we have &lt;strong>automation&lt;/strong>. I&amp;rsquo;m a big fan of automation, because that&amp;rsquo;s what I do for a living as a software engineer. Automation is an example of &lt;em>commitment device&lt;/em>, which is a choice made in the present which controls our actions in the future. There are a lot of one time actions which will lock in new habits (detailed in the book, e.g. buying a good mattress, reducing mails and notifications, changing environment, reduce some automatic expenses and so on). Finally, technology can come to our aid in automating stuff (e.g. automatic telematic prescriptions, automatic wage reduction for retirement, meal-delivery services, website blockers).&lt;/p>
+&lt;p>In a nutshell, the 3rd law can be summarised as:&lt;/p>
+&lt;ul>
+&lt;li>Reduce friction by defining the least-effort action for each habit&lt;/li>
+&lt;li>Tune the environment to make future actions easier&lt;/li>
+&lt;li>Automate and make good one-time decisions to boost or block habits&lt;/li>
+&lt;/ul>
+&lt;h2 id="fourth-law-make-it-satisfying">Fourth Law: Make it satisfying&lt;/h2>
+&lt;p>The fourth rule is &lt;em>make it satisfying&lt;/em>.&lt;/p>
+&lt;p>Humans have developed a lot of stuff in the last millennia. Think about breeding, farming, machines and the latest technology. Most of this developments brought a us new concept, unknown to our primate brain: that of &lt;em>delayed reward&lt;/em>. We experience delayed reward while waiting for crops to harvest to animals growing, and in the latest 500 years we added a lot of delayed rewards of any kind.&lt;/p>
+&lt;p>However, our brain still rely on &lt;em>instant gratification&lt;/em> to work, and we need to leverage that hardwired path in our brain, or we won&amp;rsquo;t stick to a habit. We evaluate rewards differently through time (&lt;em>&lt;strong>now&lt;/strong>&lt;/em> is better than later).&lt;/p>
+&lt;blockquote>
+&lt;p>What is immediately rewarded gets repeated, and what is immediately punished is avoided.&lt;/p>
+&lt;/blockquote>
+&lt;p>The final step to stick to a habit is then to &lt;em>feel successful&lt;/em> after doing it. In fact, the first three laws (obvious, attractive and easy) allow us to start the new habit, while this last law allows us to repeat and stick to it!&lt;/p>
+&lt;p>In a nutshell, these are the tactics to use to obey the 4th law:&lt;/p>
+&lt;ul>
+&lt;li>Reward or punish the habit &lt;strong>immediately after&lt;/strong> the behaviour&lt;/li>
+&lt;li>&lt;strong>Track&lt;/strong> the habit (it&amp;rsquo;s obvious, satisfying and attractive, and can be used together with habit stacking and automation!). Also, &lt;strong>never miss twice&lt;/strong>&lt;/li>
+&lt;li>Create a &lt;strong>habit contract&lt;/strong> and find an &lt;strong>accountability partner&lt;/strong> (make it &lt;em>&lt;strong>unsatisfying&lt;/strong>&lt;/em>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="advanced-tactics">Advanced tactics&lt;/h2>
+&lt;p>Also called &amp;ldquo;three random chapters which did not fit in the rest of the book&amp;rdquo;.&lt;/p>
+&lt;h3 id="exploration-vs-exploitation">Exploration vs Exploitation&lt;/h3>
+&lt;p>The first &amp;ldquo;secret&amp;rdquo; to maximise your chances of success is to choose the right field of competition, to find a game in which the odds are in your favour. Everyone keeps saying that genetics don&amp;rsquo;t matter, and they are right. However, they define your &lt;em>areas of opportunity&lt;/em>.&lt;/p>
+&lt;p>In short, you should create habits aligned with your ambition and your personality, as in this way it will be easier to reach a state of &lt;em>flow&lt;/em>.&lt;/p>
+&lt;p>Another thing to consider is that even when you don&amp;rsquo;t have mastery over a single thing, you can &lt;em>specialise&lt;/em> in multiple contexts and overcome the &amp;ldquo;accident&amp;rdquo; of bad genetics.&lt;/p>
+&lt;p>Questions to ask yourself to find a niche in which you can gain much more with a habit:&lt;/p>
+&lt;ul>
+&lt;li>What feels like fun to me, but work to others? → not passion, but handling the &lt;strong>pain&lt;/strong> of a task/habit&lt;/li>
+&lt;li>What makes me lose track of time? → &lt;strong>Flow state&lt;/strong>&lt;/li>
+&lt;li>Where do I get greater returns than the average person?&lt;/li>
+&lt;li>What comes naturally to me?&lt;/li>
+&lt;/ul>
+&lt;p>TL;DR; Work hard on things that come easy (&lt;em>&lt;strong>exploit&lt;/strong>)&lt;/em>, and &lt;em>&lt;strong>explore&lt;/strong>&lt;/em> new opportunities sometimes.&lt;/p>
+&lt;h3 id="flow">Flow&lt;/h3>
+&lt;p>Regarding flow, the author explains what is called the &amp;ldquo;Goldilocks Rule&amp;rdquo;:&lt;/p>
+&lt;blockquote>
+&lt;p>Humans experience peak motivation when they work on tasks that are right on the edge of their current abilities.&lt;/p>
+&lt;/blockquote>
+&lt;p>Neither too difficult (otherwise you&amp;rsquo;ll quit) nor too easy (or you end up in boredom and quit too).&lt;/p>
+&lt;p>The road to mastery is full of boring moments, but you can try to create manageable challenges to grow without complacency, without making life too difficult to quit the habit. Keeping the repetition even when bored is the difference between amateur and professional!&lt;/p>
+&lt;p>I actually experience this rule in my life: when I play guitar (amateur level) I usually get bored and stop playing for long periods of time. Instead, I keep pushing while programming for work because it is my profession, and this gives me an edge over others who just try to do it without enduring it.&lt;/p>
+&lt;h3 id="review-and-feedback">Review and Feedback&lt;/h3>
+&lt;p>The last &amp;ldquo;advanced tactics&amp;rdquo; chapter is about review and feedback about your habits. The entire book covered creating, starting and keeping a habit. However, once a habit is fully formed our performance might decrease (a bit or much more) as we reach a plateau and don&amp;rsquo;t improve upon it, letting small errors appear. This is ok for trivial habits, but not so much for important stuff (think getting healthy, learning and in general mastering a field).&lt;/p>
+&lt;p>We need to &lt;strong>reflect&lt;/strong> and &lt;strong>review&lt;/strong> to enable long-term improvements of our habits. Some techniques include &lt;em>decision journals&lt;/em> and &lt;em>annual review + integrity report.&lt;/em>&lt;/p>
+&lt;p>A final bit of advice is to avoid making any single aspect of your identity an overwhelming portion of who you are, and not identifying in the particular habits and things you do. A better way is to redefine yourself in a way which keeps important aspects of your identity even if your role and actions change, e.g:&lt;/p>
+&lt;ul>
+&lt;li>I&amp;rsquo;m an athlete → I&amp;rsquo;m the type of person who&amp;rsquo;s mentally tough and loves a physical challenge&lt;/li>
+&lt;li>I&amp;rsquo;m the CEO → I&amp;rsquo;m the type of person who builds and creates things&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&amp;ldquo;The hard and stiff will be broken, the soft and supple will prevail&amp;rdquo; cit. Lao Tzu&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>&lt;strong>&lt;strong>Atomic Habits&lt;/strong>&lt;/strong> does a great job in explaining how to create and keep small habits, and why it is so important to do this. The secret to obtain results is to never stop making improvements.&lt;/p>
+&lt;p>The book was a great inspiration in how to improve through the power of habits. I really liked the part about changing the environment and automating decisions to reduce my reliance on discipline alone. I also try to make use of the book’s advice to create good habits, while I’m definitely less successful when it comes to removing bad habits 😅.&lt;/p>
+&lt;p>Hope you enjoyed this summary/notes post 🎉, see you next time!&lt;/p></description></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
+&lt;p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (&lt;a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877">here&lt;/a>) on January 24th.&lt;/p>
+&lt;p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.&lt;/p>
+&lt;p>You may already have heard of “Outside-In Design” on this blog &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">before&lt;/a>. Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.&lt;/p>
+&lt;p>&lt;em>Disclaimer: I will share some notes/brief recap of the talk given by Sandro. It’s by no means a complete transcription and may contain my own interpretation of what was said. Go watch his past talks (e.g. &lt;a href="https://www.youtube.com/watch?v=VSkDu5YgAh4">here&lt;/a>) for the real deal!&lt;/em>&lt;/p>
+&lt;h3 id="developer-biases-and-the-insideoutside-perspective">Developer Biases and The Inside/Outside perspective&lt;/h3>
+&lt;p>The talk started with a list of biases (most of the time we call them “practices”) that affect software developers. They include:&lt;/p>
+&lt;ul>
+&lt;li>Structural biases (procedural, oop, functional, services, event-based)&lt;/li>
+&lt;li>Design biases (all architectural design patterns such as SOA, Actor model, Hexagonal arch, Microservices and so on..)&lt;/li>
+&lt;li>Design Direction biases (starting from the persistence, domain, UI, and lastly &lt;strong>incremental outside-in&lt;/strong>, the topic of this talk)&lt;/li>
+&lt;/ul>
+&lt;p>Most of the time we tend to work led by our biases: a backend developer will start working on the domain model and then implement the details (infrastructure, application); frontend will start working from the design of the UI down to the actual implementation. However, in this way, we end up with a discrepancy between the systems, and this leads to ugly adapter layers to adapt the API exposed by the backend and the data the frontend needs to work.&lt;/p>
+&lt;p>This behaviour extends also at a higher level, that of business and product design. Technology and product work in parallel tracks, and then need to somewhat meet at the intersection: the top of the backlog. At that moment, it’s more difficult to align the product decisions needed to create value for the company and the system design.&lt;/p>
+&lt;p>Software design should &lt;strong>serve&lt;/strong> the business, and its value should be measured by how much it impacts the business value. Thus, we need to align the two perspectives, inside (technology) and outside (business).&lt;/p>
+&lt;p>To solve this issue, Sandro proposes a different approach, in which we start from the product and then define lower and lower level abstractions of the system, contrary to the standard inside-out design approach.&lt;/p>
+&lt;h3 id="outside-in-design">Outside-In Design&lt;/h3>
+&lt;p>The first thing to do when designing a new system or a set of features for the business is to create a birds-eye view (&lt;strong>product box&lt;/strong>) in which we put the main features that bring value, and the main functional areas involved.&lt;/p>
+&lt;p>Then, we proceed to do &lt;strong>Impact Mapping&lt;/strong>, in which we identify the high-level bounded contexts and architecture. Starting from the main goals of the system, we identify its actors and the different impacts they have, on the deliverables (features). Sandro showed an example using mind maps, refining the different levels (actor → impact → feature) on every iteration.&lt;/p>
+&lt;p>After impact mapping, with &lt;strong>Functional Mapping,&lt;/strong> we identify the business flows, the external (and internal) users and systems and connect them, in a way similar to sequence diagrams but using bounded contexts instead of classes. It allows to decide which systems are external and which are internal, and which should become public APIs or internal services. Sandro gave some examples, one in which only one service (the catalogue) was public-facing, and another (checkout) in which all services were public and called by the frontend.&lt;/p>
+&lt;p>&lt;strong>User Interaction via Mockups&lt;/strong> is the step in which we see some UI (finally!!). Sandro does the mockups with Balsamiq, as it allows the creation of dynamic wireframes. It’s better to do them with UX experts, in order to have a basic wireframe both for the UX/UI team and the development team (by designing the APIs and the data needed by the frontend).&lt;/p>
+&lt;p>Finally, we get into the actual software design and implementation with the method we prefer (Inside-Out or Outside-In TDD for example 😏).&lt;/p>
+&lt;p>All these steps might seem long, but Sandro explained that they are actually short (e.g. product box can be done in an afternoon!) and need to be performed at different intervals (6/12 months for the highest level, then 3/4 months, monthly, 1/2 weeks and finally daily for the actual coding practices).&lt;/p>
+&lt;h3 id="thats-it">That’s it!&lt;/h3>
+&lt;p>As you can see, I just wrote a quick summary of Sandro’s talk. The meetup also included a panel with Sandro and three people from eDreams ODIGEO (the CTO Carsten Bernhard, Milan’s Hub Director Luca Pivotto and Agile Director Brett Ansley), in which they continued the argument brought by the talk and expanded with other content (e.g. how to tackle and measure technical debt, what is value and much more). I didn’t include it in this post as I didn’t take notes 😅.&lt;/p>
+&lt;p>Overall, the meetup was really interesting. The outside-in perspective is (as in the last meetup I attended) a great way to meet the tech side of the business (working on the nitty-gritty details and implementation) and the product side (concerned with value, customers and overall functionality of the system).&lt;/p>
+&lt;p>I think that this could be really useful in both big companies (to iterate on new features) and in startups (to design the first system in an extensible and “growable” way). During the talk, Sandro mentioned a book that is on my “to read” bookshelf, “&lt;a href="https://teamtopologies.com/book">Team Topologies&lt;/a>”. Employing an outside-in perspective allows in the end to define these topologies in advance, allowing the system to grow organically and without breaking everything on each iteration.&lt;/p>
+&lt;p>That’s all for today’s post! Thank you for reading (if anyone is reading this 🤔) and see you next time!&lt;/p>
+&lt;h3 id="additional-resources">Additional Resources&lt;/h3>
+&lt;p>Some other places to find Sandro’s talk:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.codurance.com/publications/2017/10/23/outside-in-design">Blog Post&lt;/a>&lt;/li>
+&lt;li>2019 &lt;a href="https://www.youtube.com/watch?v=bvie9vl7X6A">Talk&lt;/a>&lt;/li>
+&lt;li>2018 &lt;a href="https://www.youtube.com/watch?v=rbSDGr-_UwY">Talk&lt;/a> and &lt;a href="https://www.slideshare.net/sandromancuso/a-case-for-outsidein-design">Slides&lt;/a> (don’t know if they are the same exact version)&lt;/li>
+&lt;/ul></description></item></channel></rss>
