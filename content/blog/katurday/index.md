@@ -62,6 +62,35 @@ After making our way through the refactoring, every pair shared their experience
 
 Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched [Gianni](https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D) refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.
 
+## Fourth session: Object Calisthenics
+
+After learning about TDD, pairing and refactoring, it was time to put it all together, by practicing *Object Calisthenics*.
+
+Object Calisthenics is a set of (very strict) rules designed to "exercise" our code muscle. In particular, the rules are the following:
+
+1. Only one level of indentation per method
+1. Don't use the ELSE keyword
+1. Wrap all primitives and strings (wrap primitive types in classes)
+1. First-class collections (wrap collections in classes)
+1. One dot per line
+1. Don't abbreviate
+1. Keep all entities small
+1. No classes with more than two instance variables
+1. No getters/setters/properties
+1. All classes must have state
+
+These rules help to effectively design code in a clean way, the same way real calisthenics helps to improve our strength without strange techniques and machines.
+
+To practice Object Calisthenics we performed the [bowling kata](https://codingdojo.org/kata/Bowling/), in which you have to compute the score of a bowling game given the throws results.
+The kata seems simple at a first view, but has a nasty responsibility separation issue, as the bonus points of a frame depends on the next throws!
+
+The rules were pretty frustrating when I started applying them! For example, not being able to nest the code too much meant I had to continually extract methods.
+Another challenge was to always give state  to objects (so avoiding value objects).
+
+Fortunately we started applying TDD from the beginning, so it was pretty easy to refactor the code while we added test cases. A challenge I always face when doing TDD is the level at which to begin: from the outside (big comprehensive tests that stay red for some time) or from the inside (smaller components and tests which are integrated later). I tend to create big tests but I also try to solve them immediately, which brings to not follow the "little steps" rule of TDD 😅.
+
+In general, this katurday was really interesting, showing some "strict" rules that we should instead always apply to our code to make it clean and properly designed.
+
 ## That's all!
 
 Keep checking this post for updates on the next sessions I'll attend 🤩
