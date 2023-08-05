@@ -6,6 +6,8 @@ copyright = "© Copyright Marco Bacis 2018-{year}"
 googleAnalytics = "UA-6125168-6"
 disqusShortname = "marcobacis-1"
 
+enableGitInfo = true
+
 [params.index]
   picture = "/images/avatar.svg"
   title = "Hello!"
@@ -31,6 +33,11 @@ disqusShortname = "marcobacis-1"
     weight = 50
     identifier = ""
     url = "/"
+[[menu.main]]
+    name = "Now"
+    weight = 60
+    identifier = "now"
+    url = "/now"
 [[menu.main]]
     name = "Blog"
     weight = 70
