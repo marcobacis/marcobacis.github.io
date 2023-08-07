@@ -36,6 +36,9 @@ So, what am I doing right now?
 <br/>
 
 * Writing on my [blog](/blog)
+    * Latest post {{% lastpostlink %}}
+
+<br/>
 
 * Reading:
     * "Working Effectively with Legacy Code" by Michel C. Feathers
