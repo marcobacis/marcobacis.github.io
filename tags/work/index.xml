@@ -23,7 +23,7 @@
 &lt;p>It has been quite an adventure, all because of some bureaucratic issues. The old owners didn’t actually own part of the house, so we ended up doing a three-way act… it was like living a real-life merge conflict in git 😂.&lt;/p>
 &lt;p>Other than that, we didn’t have any other issues (e.g. didn’t do any work on the house itself, and already had a furnished bathroom and kitchen). We still need to buy lamps (we are living with lightbulbs hanging from the walls and ceiling) but otherwise, it’s perfect.&lt;/p>
 &lt;h3 id="hybrid-work---pros-and-cons">Hybrid work - Pros and Cons&lt;/h3>
-&lt;p>This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more &lt;a href="http://marcobacis.com/blog/remote-work-opinions">here&lt;/a>):&lt;/p>
+&lt;p>This year marked the 3rd year in a row in which I’ve been working remotely (for 2/3 days out of 5 a week). Some considerations (read more &lt;a href="http://marcobacis.com/blog/remote-work-opinions" >here&lt;/a>):&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Pro&lt;/strong>: I was able to start exercising a bit on the work-from-home days&lt;/li>
 &lt;li>&lt;strong>Pro&lt;/strong>: I got to enjoy my new house more (also, working with my cat close to me is purrfect!)&lt;/li>
@@ -88,23 +88,23 @@
 &lt;p>As you have just seen from the latest section, I also love to read, so most of my learning is done through the written medium.&lt;/p>
 &lt;p>In addition to reading, I also participated in a couple of conferences and meetups, mostly in the last months:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://extra.codemotion.com/conference-milan-2022/">Codemotion Milan 2022&lt;/a> (online, didn’t manage to buy the tickets for the live conference..)&lt;/li>
-&lt;li>&lt;a href="https://www.agileday.it/">Italian Agile Day 2022&lt;/a> (my &lt;a href="http://marcobacis.com/blog/2022-italian-agile-days">summary&lt;/a>)&lt;/li>
-&lt;li>&lt;a href="https://www.meetup.com/it-IT/xpugbg/">XPUG Bergamo Meetups&lt;/a>
+&lt;li>&lt;a href="https://extra.codemotion.com/conference-milan-2022/" target="_blank" >Codemotion Milan 2022&lt;/a> (online, didn’t manage to buy the tickets for the live conference..)&lt;/li>
+&lt;li>&lt;a href="https://www.agileday.it/" target="_blank" >Italian Agile Day 2022&lt;/a> (my &lt;a href="http://marcobacis.com/blog/2022-italian-agile-days" >summary&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" >XPUG Bergamo Meetups&lt;/a>
 &lt;ul>
 &lt;li>“Vent’anni dopo”… la prima volta che ho letto XP eXplained&lt;/li>
 &lt;li>eXtreme Programming linter: aggiusta XP quando si rompe&lt;/li>
-&lt;li>Mars Rover Kata, un approccio outside-in (I wrote a &lt;a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/">summary&lt;/a> of this)&lt;/li>
+&lt;li>Mars Rover Kata, un approccio outside-in (I wrote a &lt;a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/" >summary&lt;/a> of this)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>There’s no learning without practice. In December I started learning the Rust programming language, by following the &lt;a href="https://doc.rust-lang.org/book/">book&lt;/a>. To practice using it, I started solving the 2022 Advent of Code with it (&lt;a href="https://github.com/marcobacis/adventofcode">github&lt;/a>). I haven’t finished all the challenges yet (I’m stuck on the infamous 16th day 😅) but I think AoC is a great way to experiment and learn and I’ll continue with it even after the holidays.&lt;/p>
+&lt;p>There’s no learning without practice. In December I started learning the Rust programming language, by following the &lt;a href="https://doc.rust-lang.org/book/" target="_blank" >book&lt;/a>. To practice using it, I started solving the 2022 Advent of Code with it (&lt;a href="https://github.com/marcobacis/adventofcode" target="_blank" >github&lt;/a>). I haven’t finished all the challenges yet (I’m stuck on the infamous 16th day 😅) but I think AoC is a great way to experiment and learn and I’ll continue with it even after the holidays.&lt;/p>
 &lt;h2 id="new-year-resolutions">New year resolutions&lt;/h2>
 &lt;p>2022 has been a great year. I wasn’t able to fulfil all my goals (for example, I definitely didn’t lose 10 kg of weight…) but it was a fun and nice adventure.&lt;/p>
 &lt;p>I’m not used to making new year&amp;rsquo;s resolutions, as I usually set a goal whenever it comes to my mind. This time I’ll try to list some main topics and goals for next year.&lt;/p>
 &lt;h3 id="1-learn-in-public">1. Learn in public&lt;/h3>
 &lt;p>I think that “learn in public” summarizes quite well my main goal for next year.&lt;/p>
-&lt;p>The term has been created by swix (&lt;a href="https://www.swyx.io/learn-in-public/">here&lt;/a>) and it basically means to create a habit of learning and creating content out of it. For example, while learning a new programming language, you might write a blog post or tutorial explaining the language features you are learning, or create videos and podcasts about new concepts you just read about. It also means reaching other people interested in the same thing you are learning (making courses, speaking at conferences, reaching people with questions.. and so on).&lt;/p>
+&lt;p>The term has been created by swix (&lt;a href="https://www.swyx.io/learn-in-public/" target="_blank" >here&lt;/a>) and it basically means to create a habit of learning and creating content out of it. For example, while learning a new programming language, you might write a blog post or tutorial explaining the language features you are learning, or create videos and podcasts about new concepts you just read about. It also means reaching other people interested in the same thing you are learning (making courses, speaking at conferences, reaching people with questions.. and so on).&lt;/p>
 &lt;p>So, in 2023 my main goal will be to share what I learn. I might do it by writing here, creating github repos (as I already did with Advent Of Code, but I might do it even with basic Rust stuff) or on other channels. Mostly programming-related stuff, but I may also write some book summaries or conference recaps.&lt;/p>
 &lt;h3 id="2-improve-as-a-backend-developer">2. Improve as a Backend developer&lt;/h3>
 &lt;p>I’ve been working as a Software Engineer for more than 3 years today. I’m still at the beginning of my career but have tried different technologies and domains (e.g. Industrial Robotics and Computer Vision, IoT platforms, Cloud Services, Desktop applications, Games and so on).&lt;/p>
@@ -121,7 +121,7 @@
 &lt;p>Finally, improving my “mental” nutrition is essential (and is also covered by the previous goals). Learning new stuff (not only programming-related) is the best way to keep my brain exercised and healthy. Also, I hope to improve my concentration by removing bad habits (such as too much youtube surfing) and introducing new good ones (meditation and deep work).&lt;/p>
 &lt;h2 id="see-you-next-year">See you next year!&lt;/h2>
 &lt;p>This was a brief recap of what I think about 2022. See you in 2023!! 🎉&lt;/p></description></item><item><title>Remote working?</title><link>http://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>http://marcobacis.com/blog/remote-work-opinions/</guid><description>&lt;p>Hi! Welcome to my first post on this blog, I hope there will be others soon!&lt;/p>
-&lt;p>Today I felt inspired after reading an article from Bennet Garner (&lt;a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5">here&lt;/a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.&lt;/p>
+&lt;p>Today I felt inspired after reading an article from Bennet Garner (&lt;a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5" target="_blank" >here&lt;/a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.&lt;/p>
 &lt;p>By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society. Take a look at it!&lt;/p>
 &lt;p>In this short post, I’d like to give my take on the argument.&lt;/p>
 &lt;p>Disclaimer: all these are my opinions (as a software engineer) and may not apply to other professions.&lt;/p>

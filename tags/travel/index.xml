@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>travel on Marco Bacis</title><link>http://marcobacis.com/tags/travel/</link><description>Recent content in travel on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Tue, 14 Feb 2023 18:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/travel/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at FOSDEM 2023</title><link>http://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>&lt;p>Hi 👋 welcome to a new post.&lt;/p>
 &lt;p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.&lt;/p>
-&lt;p>As I already said in my &lt;a href="https://marcobacis.com/blog/2022-a-review/">2022 review&lt;/a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.&lt;/p>
+&lt;p>As I already said in my &lt;a href="https://marcobacis.com/blog/2022-a-review/" target="_blank" >2022 review&lt;/a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.&lt;/p>
 &lt;p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!&lt;/p>
-&lt;p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the &lt;a href="https://www.ulb.be/en">Université Libre de Bruxelles&lt;/a>, and is &lt;a href="https://fosdem.org/2023/about/sponsors/">sponsored&lt;/a> by the main open-source projects and companies.&lt;/p>
+&lt;p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the &lt;a href="https://www.ulb.be/en" target="_blank" >Université Libre de Bruxelles&lt;/a>, and is &lt;a href="https://fosdem.org/2023/about/sponsors/" target="_blank" >sponsored&lt;/a> by the main open-source projects and companies.&lt;/p>
 &lt;p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:&lt;/p>
 &lt;ul>
 &lt;li>Freedom to run it&lt;/li>
@@ -21,24 +21,24 @@
 &lt;p>If you have the time, give them a look!&lt;/p>
 &lt;p>&lt;strong>Saturday&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gostateofgo/">The State of Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goreducecognitive/">Recipes for reducing cognitive load (in go)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/">Developing Bluetooth Mesh Networks with Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/">5 errors when building embedded systems&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/">Making Continuous Delivery Accessible to All&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/">How to automate documentation workflow for developers&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/">Our Mad Journey of Building a Vector Database in Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gowatermill/">Building a basic event-driven application in go in 20 minutes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goisoo/">Is Go object-oriented? A case of public opinion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gostateofgo/" target="_blank" >The State of Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goreducecognitive/" target="_blank" >Recipes for reducing cognitive load (in go)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/" target="_blank" >Developing Bluetooth Mesh Networks with Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/" target="_blank" >5 errors when building embedded systems&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/" target="_blank" >Making Continuous Delivery Accessible to All&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/" target="_blank" >How to automate documentation workflow for developers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/" target="_blank" >Our Mad Journey of Building a Vector Database in Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gowatermill/" target="_blank" >Building a basic event-driven application in go in 20 minutes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goisoo/" target="_blank" >Is Go object-oriented? A case of public opinion&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Sunday&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_coreutils/">Reimplementing the Coreutils in a modern language (Rust)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/">Zero-Knowledge Cryptography and anonymous engineering&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/">How to build an event-driven application in python&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/mutation_testing/">Fear the Mutants, love the Mutants&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sth_to_hide/">Having something to hide&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_ebpf/">Rust in the Kernel (via eBPF)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/">The 7 key ingredients of a great SBOM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gb_arm/">I made a GameBoy emulator to learn about computers. And now I work with them…&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_coreutils/" target="_blank" >Reimplementing the Coreutils in a modern language (Rust)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/" target="_blank" >Zero-Knowledge Cryptography and anonymous engineering&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/" target="_blank" >How to build an event-driven application in python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/mutation_testing/" target="_blank" >Fear the Mutants, love the Mutants&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sth_to_hide/" target="_blank" >Having something to hide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_ebpf/" target="_blank" >Rust in the Kernel (via eBPF)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/" target="_blank" >The 7 key ingredients of a great SBOM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gb_arm/" target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
