@@ -43,4 +43,4 @@ So, what am I doing right now?
 * Reading:
     * "Working Effectively with Legacy Code" by Michel C. Feathers
     * "Web Development with React, Typescript and NextJS" by Simone Gentili
-    * "The Elegant Universe" by Brian Greene
+    * "Upheaval: How Nations Cope with Crisis and Change" by Jared Diamond
