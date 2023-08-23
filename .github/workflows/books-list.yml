@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.CUSTOM_TOKEN }}
 
       - name: Update books list json file
         env:
