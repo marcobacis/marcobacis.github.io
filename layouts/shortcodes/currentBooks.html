@@ -1,0 +1,5 @@
+<ul>
+    {{ range $.Site.Data.books }}
+    <li><i>"{{ .title }}"</i> by {{ .author }}</li>
+    {{ end }}
+</ul>

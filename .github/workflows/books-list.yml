@@ -1,0 +1,27 @@
+name: Books list workflow
+on:
+  schedule: # Run workflow automatically
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+permissions:
+  contents: write # To write the generated contents
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Update books list json file
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          BOOKS_DATABASE_ID: ${{ vars.BOOKS_DATABASE_ID }}
+        run: ./updatebooks.sh
+
+      - name: Commit README back to the repo
+        shell: bash
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "notion bot"
+          git diff --quiet || (git add data/books.json && git commit -m "Updated books list from notion")
+          git push
