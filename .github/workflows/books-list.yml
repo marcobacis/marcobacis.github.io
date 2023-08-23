@@ -20,6 +20,8 @@ jobs:
 
       - name: Commit README back to the repo
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.CUSTOM_TOKEN }}
         run: |
           git config --global user.email "actions@users.noreply.github.com"
           git config --global user.name "notion bot"
