@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>frontend on Marco Bacis</title><link>http://marcobacis.com/tags/frontend/</link><description>Recent content in frontend on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sun, 03 Sep 2023 08:00:00 +0100</lastBuildDate><atom:link href="http://marcobacis.com/tags/frontend/index.xml" rel="self" type="application/rss+xml"/><item><title>Documentation-as-Code with Doxygen (Awesome)</title><link>http://marcobacis.com/blog/docs-as-code-doxygen-awesome/</link><pubDate>Sun, 03 Sep 2023 08:00:00 +0100</pubDate><guid>http://marcobacis.com/blog/docs-as-code-doxygen-awesome/</guid><description>&lt;p>Hi 👋 and welcome to a new post.&lt;/p>
+&lt;p>I recently had to improve the documentation for a project, and collected some ideas and tools along the way, so I&amp;rsquo;ll share here what I learned 😃.&lt;/p>
+&lt;h2 id="we-dont-talk-enough-about-documentation">We don’t talk enough about documentation&lt;/h2>
+&lt;p>Documentation is one of the most important elements of software. It allows to collect all the tribal knowledge about a product/project into a shared space. It also avoids the creation of “knowledge silos”, of “tribal knowledge” and in general allows to share the knowledge among the team members, avoiding the so called “bus factor” of a team (if a team member leaves or cannot work on the project anymore, who are going to remember all the nooks and crannies?).&lt;/p>
+&lt;p>Unfortunately, documentation is also the most dreaded task for us developers…. we hate writing it! For many developers the code should be “self-documenting”, meaning that clean abstractions and names should allow to understand the code and the product at a glance. Unfortunately, the reality is quite different: architectural choices and business decisions cannot be embedded easily in the code, and it&amp;rsquo;s necessary to keep a separate place to document them.&lt;/p>
+&lt;p>In addition, we must not forget about &lt;em>external&lt;/em> documentation for the interfaces that our product serves, both in terms of UI and features, and in terms of external API. In general, we owe the documentation to our team and to our users.&lt;/p>
+&lt;p>In the last months, I worked for a startup in which the product was in need of documentation. The product includes a central application, and some related SDKs to communicate with the application and a hardware device. With an incoming release date, the last thing needed was the software documentation, which until now was kept in word documents…. so I started researching for alternatives. I wanted an easy to use technology that would allow us to ship the documentation easily and without messing up with tools (word, latex, slides 🤢 or other stuff like this..). I remembered watching a talk at &lt;a href="https://fosdem.org/" target="_blank" >FOSDEM&lt;/a> about documentation-as-code, and delved deeper into the topic. Here is what I found.&lt;/p>
+&lt;p>&lt;em>Disclaimer: all the opinions expressed in this post are mine and not of my employer, and this post is not a tutorial or a guide… just me listing some tools and describing what I chose for the project!&lt;/em>&lt;/p>
+&lt;h2 id="documentation-as-code">Documentation-as-Code&lt;/h2>
+&lt;p>Documentation-as-Code is a simple concept, which can be summarised as “keep and manage your documentation like your code”.&lt;/p>
+&lt;p>Basically, documentation should be treated like code, and as such should be kept near it, ideally in the same repository. This brings multiple advantages:&lt;/p>
+&lt;ul>
+&lt;li>Makes it easier to keep the documentation updated while the software evolves&lt;/li>
+&lt;li>Provides a centralised space to keep the documentation, without the fragmentation given by other solutions (e.g. word documents on dropbox 😏)&lt;/li>
+&lt;li>Allows to automate the documentation release along with the software (CI/CD for docs 😍)&lt;/li>
+&lt;/ul>
+&lt;p>These are just some of the advantages of treating documentation as code. This methodology is also a better fit with modern software development, as it employs the same versioning and release tools we usually use to develop software.&lt;/p>
+&lt;p>Another advantage of docs-as-code is that, by keeping the documentation alongside the code, we can improve the documentation itself by generating parts of it directly from the code! This is the approach we took with the SDKs for example.&lt;/p>
+&lt;h2 id="documentation-as-code-tools">Documentation-as-Code Tools&lt;/h2>
+&lt;p>When choosing a tool to manage and generate the documentation for our project, I looked for 3 main characteristics:&lt;/p>
+&lt;ul>
+&lt;li>Is it a SaaS (Software-as-a-Service) or a SSG (Static Site Generator) tool?&lt;/li>
+&lt;li>Can it generate the documentation from code comments? In particular, for our project we were targeting a C# and C++ codebase, so the tool should have supported both&lt;/li>
+&lt;li>Does it allow to export the documentation (e.g. as pdf?). This might be useful for offline browsing&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s a short list of the tools I considered. First, the SaaS products:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.gitbook.com/" target="_blank" >GitBook&lt;/a> - Allows to manage your documentation online, with support for authorisation, public and private pages and custom domains&lt;/li>
+&lt;li>&lt;a href="https://about.readthedocs.com/" target="_blank" >ReadTheDocs&lt;/a> - Based on sphinx, allows to host projects documentation (free for open source projects)&lt;/li>
+&lt;/ul>
+&lt;p>Then, some static site generators:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://retype.com/" target="_blank" >ReType&lt;/a> - Fast and easy to use, with export to pdf features, but with paid license over a certain number of pages&lt;/li>
+&lt;li>&lt;a href="https://docusaurus.io/" target="_blank" >Docusaurus&lt;/a> - Generates a website using MDX and React components. Beautiful, but without generation from code comments and native export to pdf features&lt;/li>
+&lt;li>&lt;a href="https://www.sphinx-doc.org/en/master/" target="_blank" >Sphinx&lt;/a> - Great tool with export features (html, latex, pdf and so on), extensible with community plugins and themes&lt;/li>
+&lt;li>&lt;a href="https://dotnet.github.io/docfx/" target="_blank" >DocFx&lt;/a> - Generates a documentation websites from .NET Code, assemblies and XML comments. Supports only .NET/C#&lt;/li>
+&lt;li>&lt;a href="https://www.doxygen.nl/" target="_blank" >Doxygen&lt;/a> - Old but gold! Generate documentation from code comments and markdown files. Support for a lot of languages&lt;/li>
+&lt;/ul>
+&lt;p>Most of the tools I looked for can be used create or host a website for the documentation, but only two of them (doxygen and docfx) allowed to generate most of the documentation from the code itself. Maybe this feature has gone out of fashion (code should be self-describing!! no comments!!), but I find it quite relevant, and more so if I need to document a public library distributed to customers.&lt;/p>
+&lt;h2 id="solution-with-doxygen--markdown">Solution with Doxygen + Markdown&lt;/h2>
+&lt;p>In the end, given the requirements I listed above, I chose to generate the documentation using doxygen, and to integrate it with markdown files and a nice css template.&lt;/p>
+&lt;p>Doxygen is an open source tool to generate a (pretty ugly) static website entirely from the project code, using special annotations and comments. In addition to that, it allows to add markdown pages for more prosaic documentation. I used this last feature for the user manual of the application, while the SDK documentation was mainly generated directly from the comments in the code.&lt;/p>
+&lt;p>The only disadvantage of doxygen is its “old-style” output, for which I found a great solution called “Doxygen Awesome”.&lt;/p>
+&lt;p>&lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >Doxygen Awesome&lt;/a> is a custom css and javascript template which gives doxygen a more “modern” look. It has some nice features, like light/dark theme, mobile usability, code blocks with a copy button and many others. You can refer to the &lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >website&lt;/a> to see it in action, and the &lt;a href="https://github.com/jothepro/doxygen-awesome-css" target="_blank" >github repo&lt;/a> for the code.&lt;/p>
+&lt;p>The basic theme and repo was almost perfect for the project. I started adding code comments and markdown files to it and tweaking the Doxyfile for my purposes.&lt;/p>
+&lt;p>In the end I even tweaked the template code a bit. Here you can find some of the changes I made to the template (I might publish them somewhere to be reused some day…).&lt;/p>
+&lt;h3 id="video-embedding-and-dark-mode">Video embedding and dark mode&lt;/h3>
+&lt;p>The first change I made was to add a class to embed videos, as the basic template inverted all colours whenever the dark theme was toggled. This basically rendered the embedded videos in negative!&lt;/p>
+&lt;p>Very cool, but not very effective when reading documentation.&lt;/p>
+&lt;p>To fix this issue, I added this class to the doxygen-awesome css:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-css" data-lang="css">&lt;span style="color:#75715e">/* Manage responsive video */&lt;/span>
+.&lt;span style="color:#a6e22e">rwd-video&lt;/span> {
+&lt;span style="color:#66d9ef">filter&lt;/span>: &lt;span style="color:#66d9ef">none&lt;/span>; &lt;span style="color:#75715e">/* Remove dark mode issues */&lt;/span>
+&lt;span style="color:#66d9ef">overflow&lt;/span>: &lt;span style="color:#66d9ef">hidden&lt;/span>;
+&lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+&lt;span style="color:#66d9ef">margin&lt;/span>: &lt;span style="color:#66d9ef">auto&lt;/span>;
+aspect-ratio: &lt;span style="color:#ae81ff">16&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>;
+}
+.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">iframe&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">object&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">embed&lt;/span> {
+&lt;span style="color:#66d9ef">height&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+&lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>While adding a video to a markdown file can be done with this snippet (which can also be added as alias to the doxyfile):&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">\htmlonly
+&amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rwd-video&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">iframe&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://www.youtube.com/embed/aqz-KE-bpKQ&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">title&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Big Buck Bunny&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">frameborder&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;0&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">allow&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">allowfullscreen&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">iframe&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+\endhtmlonly
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are still issues with this approach. For example, videos can only be shown in the html output and not in others (e.g. latex/pdf). In the future I might create a command/alias to show the video or an alternate picture/thumbnail for non-interactive outputs.&lt;/p>
+&lt;h3 id="lightdark-mode-logo">Light/Dark mode logo&lt;/h3>
+&lt;p>Doxygen allows to set a logo for the project, which will be shown in the top-left/right corner of the page. This presented an issue with doxygen awesome: while the standard css shipped with doxygen-awesome inverts every component’s hue when dark mode is toggled, we wanted the logo to look good in both modes (and not just to look as a negative of the original). To do it, I just changed the content of the logo image based on the dark/light mode class:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-css" data-lang="css">&lt;span style="color:#75715e">/* Manage logo in dark and light mode */&lt;/span>
+&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">dark-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
+&lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_light.png&amp;#34;&lt;/span>)
+}
+&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">light-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
+&lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_dark.png&amp;#34;&lt;/span>)
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Both logo pictures are added in the &lt;em>&lt;strong>img&lt;/strong>&lt;/em> directory and to the Doxyfile.&lt;/p>
+&lt;h3 id="content-pictures-zoom-on-click">Content Pictures zoom on click&lt;/h3>
+&lt;p>The final touch I gave to the documentation website was a modal to zoom on images when they are clicked. This allows to keep the pictures small when inside the documentation, but also to show them at full resolution when the user needs it.&lt;/p>
+&lt;p>I won’t show here the code (I basically copied code from stack overflow 😅 not a clean solution). In short: after loading the page, a js snippet looks for all pictures and adds a &lt;em>onClick&lt;/em> to each, which shows the clicked picture in a modal window.&lt;/p>
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>That’s all!&lt;/p>
+&lt;p>In this post I showed how writing and managing documentation as code leads to a better documentation and improved processes. I also described the latest Docs-as-Code solution I found for a project and small tweaks and improvements I made to make it more effective.&lt;/p>
+&lt;p>Even if I didn’t show any of the results (you can watch a sample directly on &lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >doxygen awesome documentation&lt;/a>, no need to see my project code 😛), I hope this post inspired you to get into the world of documentation-as-code (you can find some links in the “Resources” section below and scattered inside the post).&lt;/p>
+&lt;p>Thanks, and see you next time! 👋&lt;/p>
+&lt;p>PS. If you want to see the final results, &lt;a href="https://weart.it/docs/sdkcpp/" target="_blank" >here&lt;/a> is the documentation for the startup&amp;rsquo;s C++ SDK, while &lt;a href="https://weart.it/developer-guide/" target="_blank" >here&lt;/a> are all the other resources and documentation outputs&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.doxygen.nl/" target="_blank" >Doxygen&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >Doxygen Awesome documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.docslikecode.com/about/" target="_blank" >Docs like Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/" target="_blank" >How To Automate Documentation Workflow For Developers&lt;/a> - Talk by Portia Burton @ FOSDEM 2023&lt;/li>
+&lt;li>&lt;a href="https://members.vadimkravcenko.com/proper-documentation/?ref=cto-newsletter" target="_blank" >Proper Documentation&lt;/a> - Vadim Kravcenko&lt;/li>
+&lt;/ul></description></item></channel></rss>
