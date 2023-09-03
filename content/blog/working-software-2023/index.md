@@ -13,6 +13,8 @@ Last Friday I attended the 2023 [Working Software Conference](https://www.agilem
 > *Working software over comprehensive documentation*
 > 
 
+<!--more-->
+
 The meaning of this principle is that we should focus on delivering value (the working software) to the user instead of writing extensive specification documents (a.k.a. “wasting time”, as all the requirements and documentation will need to be adapted to change in a very short time).
 
 The conference contained a mixture of front sessions and workshops.

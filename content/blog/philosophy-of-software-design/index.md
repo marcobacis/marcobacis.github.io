@@ -12,6 +12,8 @@ Today I’ll post a summary of a book I read at the beginning of 2023, titled �
 
 In the book he distills a career worth of advice, taken from his personal experience and the issues and solutions emerged while teaching his software design course.
 
+<!--more-->
+
 I wrote this summary mainly for myself, to remember the concepts expressed in the book. There might be missing information and inconsistent levels of detail 😅 just a disclaimer.
 
 Let’s start!
