@@ -17,7 +17,7 @@ enableGitInfo = true
 
 [params.author]
   name = "Marco Bacis"
-  thumbnail = "/images/avatar_real.png"
+  thumbnail = "/images/avatar_real.webp"
   description = "Software Engineer / Tinkerer"
 
 [params.social]

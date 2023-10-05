@@ -12,7 +12,7 @@ The events are called Katurday because we perform a kata on one Saturday morning
 
 ## What is a kata?
 
-![Typical developer performing a kata](kata_dwight.png)
+![Typical developer performing a kata](kata_dwight.webp)
 
 Typical developer performing a kata
 
