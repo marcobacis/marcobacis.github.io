@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xpug on Marco Bacis</title><link>https://marcobacis.com/tags/xpug/</link><description>Recent content in xpug on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sun, 14 May 2023 08:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/xpug/index.xml" rel="self" type="application/rss+xml"/><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>&lt;p>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the &lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" >XPUG Bergamo&lt;/a> group.&lt;/p>
 &lt;p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.&lt;/p>
 &lt;h2 id="what-is-a-kata">What is a kata?&lt;/h2>
-&lt;p>
+&lt;p>&lt;div class="image">
+&lt;figure>
 &lt;img class="img-fluid image" src="kata_dwight.webp" alt="Typical developer performing a kata" />
-&lt;/p>
+&lt;/figure>
+&lt;/div>&lt;/p>
 &lt;p>Typical developer performing a kata&lt;/p>
 &lt;p>&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (&lt;a href="https://en.wikipedia.org/wiki/Kata" target="_blank" >Wikipedia&lt;/a>).&lt;/p>
 &lt;p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.&lt;/p>
@@ -100,9 +102,11 @@ Another challenge was to always give state to objects (so avoiding value objects
 &lt;h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?&lt;/h2>
 &lt;p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?&lt;/p>
 &lt;p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.&lt;/p>
-&lt;p>
+&lt;p>&lt;div class="image">
+&lt;figure>
 &lt;img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" alt="XP feedback cycles" />
-&lt;/p>
+&lt;/figure>
+&lt;/div>&lt;/p>
 &lt;p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?&lt;/p>
 &lt;p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with higher quality.&lt;/p>
 &lt;h2 id="what-is-trunk-based-development">What is trunk-based development?&lt;/h2>
