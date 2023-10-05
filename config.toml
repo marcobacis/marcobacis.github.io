@@ -3,7 +3,7 @@ languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
 copyright = "© Copyright Marco Bacis 2018-{year}"
-googleAnalytics = "UA-6125168-6"
+googleAnalytics = "G-WJJS43TXKN"
 disqusShortname = "marcobacis-1"
 
 enableGitInfo = true
