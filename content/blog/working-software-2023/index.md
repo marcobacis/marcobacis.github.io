@@ -94,9 +94,3 @@ Gianni was a great instructor. He let us bang our heads against the code, and on
 The Working Software Conference was a great event to meet new people and learn new technologies and ways to work as a software developer. I only attended two workshops, but I would have wanted it to go on for way more than a single day! All the instructors were prepared and engaging, and I learned a lot during the day. I hope to attend other events like this in the near future!
 
 That's all for today. Thanks, and see you next time! 👋
-
-
-
-PS.  At the end of the conference there were some prizes, and I won a curved monitor… a great ending for an already great day 😄. Thanks to [Intrè](https://www.intre.it) for the monitor, and all the other sponsors, organizers and participants for the great conference!
-
-![My new setup after the conference](new_setup.png)
