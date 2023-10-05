@@ -48,39 +48,40 @@
 &lt;p>The first change I made was to add a class to embed videos, as the basic template inverted all colours whenever the dark theme was toggled. This basically rendered the embedded videos in negative!&lt;/p>
 &lt;p>Very cool, but not very effective when reading documentation.&lt;/p>
 &lt;p>To fix this issue, I added this class to the doxygen-awesome css:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-css" data-lang="css">&lt;span style="color:#75715e">/* Manage responsive video */&lt;/span>
-.&lt;span style="color:#a6e22e">rwd-video&lt;/span> {
-&lt;span style="color:#66d9ef">filter&lt;/span>: &lt;span style="color:#66d9ef">none&lt;/span>; &lt;span style="color:#75715e">/* Remove dark mode issues */&lt;/span>
-&lt;span style="color:#66d9ef">overflow&lt;/span>: &lt;span style="color:#66d9ef">hidden&lt;/span>;
-&lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-&lt;span style="color:#66d9ef">margin&lt;/span>: &lt;span style="color:#66d9ef">auto&lt;/span>;
-aspect-ratio: &lt;span style="color:#ae81ff">16&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>;
-}
-.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">iframe&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
-.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">object&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
-.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">embed&lt;/span> {
-&lt;span style="color:#66d9ef">height&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-&lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>While adding a video to a markdown file can be done with this snippet (which can also be added as alias to the doxyfile):&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">\htmlonly
-&amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rwd-video&amp;#34;&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#f92672">iframe&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://www.youtube.com/embed/aqz-KE-bpKQ&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">title&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Big Buck Bunny&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">frameborder&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;0&amp;#34;&lt;/span>
-&lt;span style="color:#a6e22e">allow&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&amp;#34;&lt;/span>
-&lt;span style="color:#a6e22e">allowfullscreen&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">iframe&lt;/span>&amp;gt;
-&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
-\endhtmlonly
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are still issues with this approach. For example, videos can only be shown in the html output and not in others (e.g. latex/pdf). In the future I might create a command/alias to show the video or an alternate picture/thumbnail for non-interactive outputs.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">/* Manage responsive video */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">filter&lt;/span>: &lt;span style="color:#66d9ef">none&lt;/span>; &lt;span style="color:#75715e">/* Remove dark mode issues */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">overflow&lt;/span>: &lt;span style="color:#66d9ef">hidden&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">margin&lt;/span>: &lt;span style="color:#66d9ef">auto&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> aspect-ratio: &lt;span style="color:#ae81ff">16&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">iframe&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">object&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">embed&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">height&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>While adding a video to a markdown file can be done with this snippet (which can also be added as alias to the doxyfile):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>\htmlonly
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rwd-video&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">iframe&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://www.youtube.com/embed/aqz-KE-bpKQ&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">title&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Big Buck Bunny&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">frameborder&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">allow&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">allowfullscreen&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">iframe&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>\endhtmlonly
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are still issues with this approach. For example, videos can only be shown in the html output and not in others (e.g. latex/pdf). In the future I might create a command/alias to show the video or an alternate picture/thumbnail for non-interactive outputs.&lt;/p>
 &lt;h3 id="lightdark-mode-logo">Light/Dark mode logo&lt;/h3>
 &lt;p>Doxygen allows to set a logo for the project, which will be shown in the top-left/right corner of the page. This presented an issue with doxygen awesome: while the standard css shipped with doxygen-awesome inverts every component’s hue when dark mode is toggled, we wanted the logo to look good in both modes (and not just to look as a negative of the original). To do it, I just changed the content of the logo image based on the dark/light mode class:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-css" data-lang="css">&lt;span style="color:#75715e">/* Manage logo in dark and light mode */&lt;/span>
-&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">dark-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
-&lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_light.png&amp;#34;&lt;/span>)
-}
-&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">light-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
-&lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_dark.png&amp;#34;&lt;/span>)
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Both logo pictures are added in the &lt;em>&lt;strong>img&lt;/strong>&lt;/em> directory and to the Doxyfile.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">/* Manage logo in dark and light mode */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">dark-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_light.png&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">light-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_dark.png&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Both logo pictures are added in the &lt;em>&lt;strong>img&lt;/strong>&lt;/em> directory and to the Doxyfile.&lt;/p>
 &lt;h3 id="content-pictures-zoom-on-click">Content Pictures zoom on click&lt;/h3>
 &lt;p>The final touch I gave to the documentation website was a modal to zoom on images when they are clicked. This allows to keep the pictures small when inside the documentation, but also to show them at full resolution when the user needs it.&lt;/p>
 &lt;p>I won’t show here the code (I basically copied code from stack overflow 😅 not a clean solution). In short: after loading the page, a js snippet looks for all pictures and adds a &lt;em>onClick&lt;/em> to each, which shows the clicked picture in a modal window.&lt;/p>
