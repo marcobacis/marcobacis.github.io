@@ -26,6 +26,8 @@ enableGitInfo = true
   medium = "marcobacis"
   twitter = "marcbacis"
 
+[params]
+  description= "The personal website of Marco Bacis, a passionate Software Engineer from Italy" 
 
 ## Main Menu
 [[menu.main]]
