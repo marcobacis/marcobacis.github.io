@@ -5,9 +5,10 @@
             <div class="col-md-4">
                 <a href="{{ .Permalink }}">
                     {{$images := .Resources.ByType "image"}}
+                    {{$postTitle := .Title}}
                     {{with $images.GetMatch "*cover*" }}
                     {{with .Resize "400x webp 70q"}}
-                    <img class="img-fluid" src="{{ .RelPermalink }}" alt="A thumbnail image">
+                    <img class="img-fluid" src="{{ .RelPermalink }}" alt="Cover Image of the post '{{ $postTitle }}'">
                     {{end}}
                     {{end}}
                     {{ if .Params.unsplash }}

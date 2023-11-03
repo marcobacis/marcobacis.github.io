@@ -43,12 +43,15 @@
                 </div>
 
                 <!-- Post Featured Image -->
+                {{$caption := .Params.thumbnaildesc }}
                 {{$images := .Resources.ByType "image"}}
                 {{with $images.GetMatch "*cover*" }}
                 <div class="featured-image">
                     <figure>
                         <img class="img-fluid image" src="{{ .Permalink }}" alt="{{ .Params.thumbnaildesc }}">
-                        <figcaption class="caption">{{ .Params.thumbnaildesc }}</figcaption>
+                        {{ if $caption }}
+                        <figcaption class="caption">{{ $caption | markdownify }}</figcaption>
+                        {{end}}
                     </figure>
                 </div>
                 {{end}}
