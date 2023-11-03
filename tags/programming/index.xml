@@ -1,405 +1,436 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>programming on Marco Bacis</title><link>https://marcobacis.com/tags/programming/</link><description>Recent content in programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Fri, 03 Nov 2023 21:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at SoCraTes 2023</title><link>https://marcobacis.com/blog/socrates-2023/</link><pubDate>Fri, 03 Nov 2023 21:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/socrates-2023/</guid><description>&lt;p>Hi! 👋 Welcome to a new post.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>programming on Marco Bacis</title><link>https://marcobacis.com/tags/programming/</link><description>Recent content in programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Fri, 03 Nov 2023 21:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at SoCraTes 2023</title><link>https://marcobacis.com/blog/socrates-2023/</link><pubDate>Fri, 03 Nov 2023 21:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/socrates-2023/</guid><description>&lt;p>Hi! 👋 Welcome to a new post.&lt;/p>
 &lt;p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.&lt;/p>
 &lt;p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!&lt;/p>
-&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h2 id="what-is-an-open-space">What is an Open Space?&lt;/h2>
-&lt;p>SoCraTes is a unique event because of its interesting format, called Open Space (or Unconference).&lt;/p>
-&lt;p>In a standard conference, everything is decided up-front: there is a call-for-papers, speakers and the agenda are decided beforehand, there are frontal sessions and workshops, etc. Basically, the attendees just need to come and watch what&amp;rsquo;s offered by the conference organizing committee.&lt;/p>
-&lt;p>On the contrary, in an Open Space, the format, agenda, and topics discussed are decided by the participants during the event itself. This choice comes from the observation that, during a conference, the most inspiring and interesting stuff happens during coffee breaks and in the common areas. So why don&amp;rsquo;t we transform the entire event into a big coffee break?&lt;/p>
-&lt;p>On every day of the Open Space, the participants gather to propose and decide the daily agenda: everyone can propose a talk, workshop, discussion, or any other type of activity (even a walking discussion on the beach 😎 or a party game). After the proposals, it&amp;rsquo;s time for the &lt;strong>marketplace&lt;/strong>: everyone can ask the session organizer to move the session (to a different time and location) or to change/expand the topic. The important thing is that only the one who proposed the session can change it!&lt;/p>
-&lt;p>After the marketplace has ended and the agenda is ready, the unconference can start. During the event, there is only one rule to follow, called the &amp;ldquo;rule of two feet&amp;rdquo;:&lt;/p>
-&lt;blockquote>
-&lt;p>If you are not contributing or adding value to the session, you can move elsewhere freely.&lt;/p>
-&lt;/blockquote>
-&lt;p>This rule is not confined to the pre-defined sessions. Participants can move between sessions, stay in common areas, or look for other people to start impromptu activities! That&amp;rsquo;s the beauty of the open space format.&lt;/p>
-&lt;p>Given that they can freely move during the event, participants usually divide into two categories:&lt;/p>
-&lt;ul>
-&lt;li>Butterflies: they like to move a lot and cross-pollinate the discussions.&lt;/li>
-&lt;li>Bumblebees: they stay in the same room for the entire duration of the session, bringing stability and continuity to the discussions.&lt;/li>
-&lt;/ul>
-&lt;p>Also, the rule of two feet generates four principles:&lt;/p>
-&lt;ul>
-&lt;li>Whoever comes is the right people.&lt;/li>
-&lt;li>Whenever it starts is the right time.&lt;/li>
-&lt;li>Whatever happens is the only thing that could happen.&lt;/li>
-&lt;li>When it&amp;rsquo;s over, it&amp;rsquo;s over.&lt;/li>
-&lt;/ul>
-&lt;p>The rule of two feet and the four principles above allow the participants to express themselves in many ways and encourage collaboration and open discussions throughout the event. That&amp;rsquo;s what brought me to attend it!&lt;/p>
-&lt;h2 id="my-experience-at-socrates-it-2023">My experience at SoCraTes-IT 2023&lt;/h2>
-&lt;p>Here&amp;rsquo;s a brief summary of my experience at SoCraTes 2023. I didn&amp;rsquo;t take many notes and pictures, so most of the descriptions below might be incomplete or plain wrong. This is more of a journaling exercise for me.&lt;/p>
-&lt;p>Given this disclaimer, if you find any errors, don&amp;rsquo;t hesitate to contact me (or open an issue/PR on my website &lt;a href="https://github.com/marcobacis/marcobacis.github.io" target="_blank" >repository&lt;/a> on GitHub 😛).&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h3 id="thursday">Thursday&lt;/h3>
-&lt;p>The first day was just for networking and getting to know the other participants. I arrived at the hotel in the afternoon, and then we had a happy hour, dinner, and a brief &amp;ldquo;ice-breaker&amp;rdquo; game.&lt;/p>
-&lt;p>We divided into groups, and each group had to introduce itself with a given description. My group had to decide if &amp;ldquo;casual Friday&amp;rdquo; was still a thing in the 2020s. We named our group &amp;ldquo;Eat My Shorts&amp;rdquo; and gave a short presentation on it. However, there was no interaction or any &amp;ldquo;theatrical&amp;rdquo; performance, and only one of us spoke, while other groups put on a show and moved around a lot. A reminder for next time: have more interaction between group members (try to talk 😅) and make the presentation funnier!!&lt;/p>
-&lt;p>After the ice breaker, I went to my room early because I hadn&amp;rsquo;t been feeling well since the morning and needed to recharge for the next days.&lt;/p>
-&lt;h3 id="friday">Friday&lt;/h3>
-&lt;p>Friday was the first day of the Unconference!&lt;/p>
-&lt;p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 1" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 1" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):&lt;/p>
-&lt;p>&lt;strong>Game AI and Montecarlo Tree Search - &lt;a href="https://www.linkedin.com/in/matteovaccari/" target="_blank" >Matteo Vaccari&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Matteo taught us what a Monte Carlo search is and how it is useful for searching in very large decision trees. A perfect example of this was the game &amp;ldquo;Commands&amp;amp;Colors&amp;rdquo; with some parts of the game having a million branch factor!&lt;/p>
-&lt;p>This was a preliminary test for his talk, which he gave a few days later at Codemotion. I wasn&amp;rsquo;t able to see his entire session at SoCraTes, but I watched his talk at Codemotion and it was great!&lt;/p>
-&lt;p>For more information (and slides/code), visit &lt;a href="https://matteo.vaccari.name/" target="_blank" >Matteo&amp;rsquo;s website&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>The Programmer’s Brain - &lt;a href="https://www.linkedin.com/in/mrctst/" target="_blank" >Marco Testa&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Marco presented what he learned reading the book “&lt;a href="https://www.manning.com/books/the-programmers-brain" target="_blank" >The Programmer’s Brain&lt;/a>” by Felienne Hermans.&lt;/p>
-&lt;p>The main concept we discussed was &lt;strong>cognitive load&lt;/strong> and ways in which it affects software developers. The book provides many concepts and ways to reduce this cognitive load and make the code we develop easier to understand and remember. Many of the techniques have already been discussed in other books (e.g. clean code), but here they were related to cognitive load and all of its aspects.&lt;/p>
-&lt;p>The session was really interesting. Having attended a course on memory techniques some years ago I already knew some of the concepts presented, although not applied to software development.&lt;/p>
-&lt;p>&lt;strong>Stop fighting useless battles: automate code style, architecture compliance and refactoring - &lt;a href="https://www.linkedin.com/in/robfrank/" target="_blank" >Roberto Franchini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Roberto gave this talk at the &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" >Working Software Conference&lt;/a> in June. I didn&amp;rsquo;t see it at that time, but fortunately, he gave it again at SoCraTes! His talk was about ways to automate boring tasks that are quite important to keep a codebase clean among team members.&lt;/p>
-&lt;p>In particular, he presented:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://pre-commit.com/" target="_blank" >pre-commit&lt;/a>: a tool to boost commit hooks and CI pipelines, with various tasks and plugins from the community. He uses it to check certain rules, such as passwords and keys, fixing line endings, and more.&lt;/li>
-&lt;li>&lt;a href="https://www.archunit.org/" target="_blank" >ArchUnit&lt;/a>: a tool to unit-test your architecture. It can be used to enforce separation between modules, check that the code doesn&amp;rsquo;t import certain packages, and generally standardize and test the code architecture.&lt;/li>
-&lt;li>&lt;a href="https://docs.openrewrite.org/" target="_blank" >OpenRewrite&lt;/a>: allows for large-scale code refactoring, such as framework/API migrations, code cleanup, and other community-driven code transformations.&lt;/li>
-&lt;/ul>
-&lt;p>I didn&amp;rsquo;t know about any of these tools, so it was a very inspiring talk!&lt;/p>
-&lt;p>&lt;strong>Discussion on Trunk-Based Development - &lt;a href="https://www.linkedin.com/in/fabio-fortini/" target="_blank" >Fabio Fortini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>After lunch, while everyone was feeling sleepy, Fabio ignited our fighting spirit by presenting a controversial argument: should we use trunk-based development in our projects?&lt;/p>
-&lt;p>He showed us a presentation he had given to his team in 2021 to convince them of the pros (without having used it before), and then gave his opinion after having done it for a few months.&lt;/p>
-&lt;p>The discussion was filled with arguments from both parties, and essentially Fabio stopped talking and (unintentionally) handed the stage over to the group.&lt;/p>
-&lt;p>It was an interesting discussion nonetheless: in the end, trunk-based development can be used as a teaching tool to help the team learn to work with small releases and continuously integrate into the main branch. Afterward, or if the team is already mature enough, small, frequently integrated branches can also be used (and are actually compatible with the trunk-based definition!).&lt;/p>
-&lt;p>&lt;strong>The Training Crafter - To read or not to read? - &lt;a href="https://www.linkedin.com/in/chiarabarbagianni/" target="_blank" >Chiara Barbagianni&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>The topic of the session was learning. Should we learn by reading or by doing, and can the two worlds work together?&lt;/p>
-&lt;p>Chiara gave a free-flowing presentation to our small group, starting with a survey and then writing on a whiteboard (and a lot of post-it notes) to decide how to merge the two opposing views.&lt;/p>
-&lt;p>She divided the board into 4 quadrants along 2 axes:&lt;/p>
-&lt;ul>
-&lt;li>Practice (doing something practical, or reading about it?)&lt;/li>
-&lt;li>Taste (developing a taste for what you are learning, or doing it just for the money?)&lt;/li>
-&lt;/ul>
-&lt;p>At the end, Chiara presented how she&amp;rsquo;s doing it in the &lt;a href="https://handbook.agilelab.it/BookClub.html" target="_blank" >Agile Lab Book Club&lt;/a>: instead of mandating all members to read a given chapter every time, the format is more generic. Every two weeks, the club curators propose a topic: members can explore it in any way (the recommended book, videos, blogs, anything) and post their learnings on a shared board. At the end of the two-week period, they share what they learned in a short training session.&lt;/p>
-&lt;p>I loved this session! The way it was kept was fantastic, and we were immersed in Chiara&amp;rsquo;s mind throughout the entire duration of the discussion. That&amp;rsquo;s exactly what I expected from an unconference.&lt;/p>
-&lt;p>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="chiara_barbagianni_session.jpeg" alt="The output of the session" />
-&lt;figcaption class="caption">The output of the session&lt;/figcaption>
-&lt;/figure>
-&lt;/div>&lt;/p>
-&lt;p>&lt;strong>Monads for the Rest of us (in C#) - &lt;a href="https://www.linkedin.com/in/arialdomartini/" target="_blank" >Arialdo Martini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Even after studying it at the university, I still find it difficult to understand most functional programming concepts. But thanks to Arialdo, now I can understand it a bit more.&lt;/p>
-&lt;p>In his session, he started to implement monads (the most difficult concept in FP to me) in plain C#. Starting from function composition, passing through functors and implementing the IO monad, he tried to explain to the folks that we are how functional programming concepts map to an object oriented language.&lt;/p>
-&lt;p>His session was based on a series of posts &lt;a href="https://arialdomartini.github.io/monads-for-the-rest-of-us" target="_blank" >on his website&lt;/a>, that I will definitely try to follow to learn all there is about monads!&lt;/p>
-&lt;p>&lt;strong>Friday evening special: Oggetti a Teatro” (Objects on Stage) - &lt;a href="https://www.linkedin.com/in/mrctst/" target="_blank" >Marco Testa&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Unlike many conferences, the party didn’t finish after dinner. Instead, there were 2 parallel sessions. One was a NIX installation party at the pub, while the other was a high-class evening at the theatre.&lt;/p>
-&lt;p>Marco wrote and gave life to a set of characters (I still remember the &lt;em>Duke of Client&lt;/em>, the &lt;em>Count of Receiver&lt;/em>, and &lt;em>Invoker the spy&lt;/em>!) that together and with their actions formed the perfect description of the Command Pattern. He basically wrote the script of a design pattern, highlighting the behaviour of the different component and their scope. Also, the story was pretty engaging!&lt;/p>
-&lt;p>Even if short, the &lt;em>opera&lt;/em> was well received by the public, and I think it would be a great way to explain design patterns in a memorable way.&lt;/p>
-&lt;h3 id="saturday">Saturday&lt;/h3>
-&lt;p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 2" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 2" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>&lt;del>Coping&lt;/del>/Coding with Product - &lt;a href="https://www.linkedin.com/in/brando/" target="_blank" >Alberto Brandolini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.&lt;/p>
-&lt;p>He started by re-defining technical debt (which he deemed a wrong analogy) with its opposite, &lt;strong>Design Integrity&lt;/strong>: “how much the current codebase fits its purpose” or how much the code is ready for the next change.&lt;/p>
-&lt;p>He went on explaining how product side is based on “experiments”, as the roadmap is not as clearly defined as we developers would like the code to be. How can we make the two ends meet? Our work as technical people is to work on “safe bets” from a good design to another good design, without reducing the design integrity.&lt;/p>
-&lt;p>The group went on a discussion on changes of which I didn’t take note, so writing it here would be useless.&lt;/p>
-&lt;p>In the end, the core idea is that developers should work together with product to define different “purposes” (either core or not to the business) and isolate these choices in distinct bounded contexts and components, to reduce the possible damage given by continuous product experiments.&lt;/p>
-&lt;p>This is not a set process, but can evolve based on the product (e.g. a context might get split in multiple services, or multiple services merged because they follow the same purpose…).&lt;/p>
-&lt;p>Fortunately for us, Alberto wrote a &lt;a href="https://medium.com/@ziobrando/from-technical-debt-to-design-integrity-48e7056b6776" target="_blank" >post&lt;/a> in which he explains these concepts in a much cleaner way than me 😅&lt;/p>
-&lt;p>&lt;strong>Refactoring with CQRS (without events) - &lt;a href="https://www.linkedin.com/in/lucagiovenzana/" target="_blank" >Luca Giovenzana&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Luca showed how they refactored the backend for their startup (&lt;a href="https://golee.it/" target="_blank" >golee&lt;/a>) using CQRS, but without using event sourcing as everyone doing CQRS is doing right now. Basically, the team at golee migrated some functionality to the new, greenfield codebase which was used as &lt;em>write model&lt;/em>, while keeping the old (legacy) code as &lt;em>read model&lt;/em> and as a backup, by writing to it using a hook.&lt;/p>
-&lt;p>By keeping the system simple (no events and event sourcing) they were able to keep both systems running, without impacting on their ability to extend it and improving performances.&lt;/p>
-&lt;p>His session was a nice look at how to take tradeoffs, which are essential when running a startup!&lt;/p>
-&lt;p>&lt;strong>Create a Macropad for fun!! - &lt;a href="https://www.linkedin.com/in/gianni-bombelli/" target="_blank" >Gianni Bombelli&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>During the breaks and dinners on thursday and friday I was introduced to the world of custom keyboards. It’s a world full of crazy people talking about layouts, layers and keys. When Gianni put a post-it named “Create a macropad for FUN!” I couldn’t resist.&lt;/p>
-&lt;p>In his session, he showed us his “hobby” project, a custom mechanical macropad to help him during training sessions, in which he uses a graphics tablet and might need some ready-to-use shortcuts (e.g. to delete the latest line drawn, to open an application, to use git).&lt;/p>
-&lt;p>His session was a deep-dive in how to build a custom keyboard, from the PCB up to the customisation with QMK and a bit of C programming. Now I really want a custom macropad!! I’ll wait for the “BomboPad” to enter the market 😛&lt;/p>
-&lt;p>&lt;strong>Orthogonality of TDD, SOLID, FP - &lt;a href="https://www.linkedin.com/in/matteobaglini/" target="_blank" >Matteo Baglini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In his session, Matteo showed us how TDD, SOLID principles and Functional Programming are related. He implemented the password validator kata, doing small steps by following TDD and doing it in a functional way.&lt;/p>
-&lt;p>I came into the session while it was already started so I lost most of the context. Fortunately, Matteo shared the &lt;a href="https://github.com/matteobaglini/orthogonality-socrates-it-2023" target="_blank" >repo&lt;/a> containing the kata implementation, with every small step of the red-green-refactor process explained in separate commits! A great way to visualize TDD in action.&lt;/p>
-&lt;p>&lt;strong>PKMS/Note Taking - &lt;a href="https://www.linkedin.com/in/jagasantagostino/" target="_blank" >Jaga Santagostino&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>The final session I attended was an open discussion about Obsidian and Personal Knowledge Management Systems (PKMS) in general.&lt;/p>
-&lt;p>Jaga showed us the many features in Obsidian and tried to compare it with another famous PKMS application, Notion.&lt;/p>
-&lt;p>While presenting, other participants asked questions and gave their opinions. For example I learned about another tool, called logseq, which is quite similar to obsidian.&lt;/p>
-&lt;p>In the end I gave obsidian a try. I actually used it to take notes during the unconference, and to take notes at the Codemotion conference the week later. I now found out how to share my notes with git, so from now on I’ll try to use it instead of Notion! It’s local-first paradigm is very useful when working offline, and the backlinks and graph view are really interesting and allow to link ideas together. Also, is definitely faster than notion 😅.&lt;/p>
-&lt;p>Thanks Jaga for this discovery!&lt;/p>
-&lt;h2 id="the-end">The End!&lt;/h2>
-&lt;p>SoCraTes was a great event! I met new people, learned a lot and had fun, the perfect combination for a conference.&lt;/p>
-&lt;p>I came home with a lot of new concepts, tools and inspiration, and I cannot wait for the next event like this (which will be the &lt;a href="https://www.agileday.it/" target="_blank" >2023 Agile Day&lt;/a> Unconference, on Nov. 17 😛).&lt;/p>
-&lt;p>As always, thanks for all the participants, to the sponsors, organizer and everyone involved. The most meaningful connections happen in a free and creative environment, and that’s exactly what SoCraTes is.&lt;/p>
-&lt;p>Thanks for reading this long and boring summary, I hope to have shown (even a bit) all I saw and felt during the event. If you find anything to correct (e.g. about your session, about my grammar, or if I forgot something) just contact me via mail or linkedin, or open an issue on this website repository on github.&lt;/p>
-&lt;p>As always, see you next time!&lt;/p></description></item><item><title>Documentation-as-Code with Doxygen (Awesome)</title><link>https://marcobacis.com/blog/docs-as-code-doxygen-awesome/</link><pubDate>Sun, 03 Sep 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/docs-as-code-doxygen-awesome/</guid><description>&lt;p>Hi 👋 and welcome to a new post.&lt;/p>
-&lt;p>I recently had to improve the documentation for a project, and collected some ideas and tools along the way, so I&amp;rsquo;ll share here what I learned 😃.&lt;/p>
-&lt;h2 id="we-dont-talk-enough-about-documentation">We don’t talk enough about documentation&lt;/h2>
-&lt;p>Documentation is one of the most important elements of software. It allows to collect all the tribal knowledge about a product/project into a shared space. It also avoids the creation of “knowledge silos”, of “tribal knowledge” and in general allows to share the knowledge among the team members, avoiding the so called “bus factor” of a team (if a team member leaves or cannot work on the project anymore, who are going to remember all the nooks and crannies?).&lt;/p>
-&lt;p>Unfortunately, documentation is also the most dreaded task for us developers…. we hate writing it! For many developers the code should be “self-documenting”, meaning that clean abstractions and names should allow to understand the code and the product at a glance. Unfortunately, the reality is quite different: architectural choices and business decisions cannot be embedded easily in the code, and it&amp;rsquo;s necessary to keep a separate place to document them.&lt;/p>
-&lt;p>In addition, we must not forget about &lt;em>external&lt;/em> documentation for the interfaces that our product serves, both in terms of UI and features, and in terms of external API. In general, we owe the documentation to our team and to our users.&lt;/p>
-&lt;p>In the last months, I worked for a startup in which the product was in need of documentation. The product includes a central application, and some related SDKs to communicate with the application and a hardware device. With an incoming release date, the last thing needed was the software documentation, which until now was kept in word documents…. so I started researching for alternatives. I wanted an easy to use technology that would allow us to ship the documentation easily and without messing up with tools (word, latex, slides 🤢 or other stuff like this..). I remembered watching a talk at &lt;a href="https://fosdem.org/" target="_blank" >FOSDEM&lt;/a> about documentation-as-code, and delved deeper into the topic. Here is what I found.&lt;/p>
-&lt;p>&lt;em>Disclaimer: all the opinions expressed in this post are mine and not of my employer, and this post is not a tutorial or a guide… just me listing some tools and describing what I chose for the project!&lt;/em>&lt;/p>
-&lt;h2 id="documentation-as-code">Documentation-as-Code&lt;/h2>
-&lt;p>Documentation-as-Code is a simple concept, which can be summarised as “keep and manage your documentation like your code”.&lt;/p>
-&lt;p>Basically, documentation should be treated like code, and as such should be kept near it, ideally in the same repository. This brings multiple advantages:&lt;/p>
-&lt;ul>
-&lt;li>Makes it easier to keep the documentation updated while the software evolves&lt;/li>
-&lt;li>Provides a centralised space to keep the documentation, without the fragmentation given by other solutions (e.g. word documents on dropbox 😏)&lt;/li>
-&lt;li>Allows to automate the documentation release along with the software (CI/CD for docs 😍)&lt;/li>
-&lt;/ul>
-&lt;p>These are just some of the advantages of treating documentation as code. This methodology is also a better fit with modern software development, as it employs the same versioning and release tools we usually use to develop software.&lt;/p>
-&lt;p>Another advantage of docs-as-code is that, by keeping the documentation alongside the code, we can improve the documentation itself by generating parts of it directly from the code! This is the approach we took with the SDKs for example.&lt;/p>
-&lt;h2 id="documentation-as-code-tools">Documentation-as-Code Tools&lt;/h2>
-&lt;p>When choosing a tool to manage and generate the documentation for our project, I looked for 3 main characteristics:&lt;/p>
-&lt;ul>
-&lt;li>Is it a SaaS (Software-as-a-Service) or a SSG (Static Site Generator) tool?&lt;/li>
-&lt;li>Can it generate the documentation from code comments? In particular, for our project we were targeting a C# and C++ codebase, so the tool should have supported both&lt;/li>
-&lt;li>Does it allow to export the documentation (e.g. as pdf?). This might be useful for offline browsing&lt;/li>
-&lt;/ul>
-&lt;p>Here&amp;rsquo;s a short list of the tools I considered. First, the SaaS products:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.gitbook.com/" target="_blank" >GitBook&lt;/a> - Allows to manage your documentation online, with support for authorisation, public and private pages and custom domains&lt;/li>
-&lt;li>&lt;a href="https://about.readthedocs.com/" target="_blank" >ReadTheDocs&lt;/a> - Based on sphinx, allows to host projects documentation (free for open source projects)&lt;/li>
-&lt;/ul>
-&lt;p>Then, some static site generators:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://retype.com/" target="_blank" >ReType&lt;/a> - Fast and easy to use, with export to pdf features, but with paid license over a certain number of pages&lt;/li>
-&lt;li>&lt;a href="https://docusaurus.io/" target="_blank" >Docusaurus&lt;/a> - Generates a website using MDX and React components. Beautiful, but without generation from code comments and native export to pdf features&lt;/li>
-&lt;li>&lt;a href="https://www.sphinx-doc.org/en/master/" target="_blank" >Sphinx&lt;/a> - Great tool with export features (html, latex, pdf and so on), extensible with community plugins and themes&lt;/li>
-&lt;li>&lt;a href="https://dotnet.github.io/docfx/" target="_blank" >DocFx&lt;/a> - Generates a documentation websites from .NET Code, assemblies and XML comments. Supports only .NET/C#&lt;/li>
-&lt;li>&lt;a href="https://www.doxygen.nl/" target="_blank" >Doxygen&lt;/a> - Old but gold! Generate documentation from code comments and markdown files. Support for a lot of languages&lt;/li>
-&lt;/ul>
-&lt;p>Most of the tools I looked for can be used create or host a website for the documentation, but only two of them (doxygen and docfx) allowed to generate most of the documentation from the code itself. Maybe this feature has gone out of fashion (code should be self-describing!! no comments!!), but I find it quite relevant, and more so if I need to document a public library distributed to customers.&lt;/p>
-&lt;h2 id="solution-with-doxygen--markdown">Solution with Doxygen + Markdown&lt;/h2>
-&lt;p>In the end, given the requirements I listed above, I chose to generate the documentation using doxygen, and to integrate it with markdown files and a nice css template.&lt;/p>
-&lt;p>Doxygen is an open source tool to generate a (pretty ugly) static website entirely from the project code, using special annotations and comments. In addition to that, it allows to add markdown pages for more prosaic documentation. I used this last feature for the user manual of the application, while the SDK documentation was mainly generated directly from the comments in the code.&lt;/p>
-&lt;p>The only disadvantage of doxygen is its “old-style” output, for which I found a great solution called “Doxygen Awesome”.&lt;/p>
-&lt;p>&lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >Doxygen Awesome&lt;/a> is a custom css and javascript template which gives doxygen a more “modern” look. It has some nice features, like light/dark theme, mobile usability, code blocks with a copy button and many others. You can refer to the &lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >website&lt;/a> to see it in action, and the &lt;a href="https://github.com/jothepro/doxygen-awesome-css" target="_blank" >github repo&lt;/a> for the code.&lt;/p>
-&lt;p>The basic theme and repo was almost perfect for the project. I started adding code comments and markdown files to it and tweaking the Doxyfile for my purposes.&lt;/p>
-&lt;p>In the end I even tweaked the template code a bit. Here you can find some of the changes I made to the template (I might publish them somewhere to be reused some day…).&lt;/p>
-&lt;h3 id="video-embedding-and-dark-mode">Video embedding and dark mode&lt;/h3>
-&lt;p>The first change I made was to add a class to embed videos, as the basic template inverted all colours whenever the dark theme was toggled. This basically rendered the embedded videos in negative!&lt;/p>
-&lt;p>Very cool, but not very effective when reading documentation.&lt;/p>
-&lt;p>To fix this issue, I added this class to the doxygen-awesome css:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">/* Manage responsive video */&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">filter&lt;/span>: &lt;span style="color:#66d9ef">none&lt;/span>; &lt;span style="color:#75715e">/* Remove dark mode issues */&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">overflow&lt;/span>: &lt;span style="color:#66d9ef">hidden&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">margin&lt;/span>: &lt;span style="color:#66d9ef">auto&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> aspect-ratio: &lt;span style="color:#ae81ff">16&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">9&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">iframe&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">object&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#a6e22e">rwd-video&lt;/span> &lt;span style="color:#f92672">embed&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">height&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">width&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>&lt;span style="color:#66d9ef">%&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>While adding a video to a markdown file can be done with this snippet (which can also be added as alias to the doxyfile):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>\htmlonly
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rwd-video&amp;#34;&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">iframe&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://www.youtube.com/embed/aqz-KE-bpKQ&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">title&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Big Buck Bunny&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">frameborder&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;0&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">allow&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">allowfullscreen&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">iframe&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>\endhtmlonly
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are still issues with this approach. For example, videos can only be shown in the html output and not in others (e.g. latex/pdf). In the future I might create a command/alias to show the video or an alternate picture/thumbnail for non-interactive outputs.&lt;/p>
-&lt;h3 id="lightdark-mode-logo">Light/Dark mode logo&lt;/h3>
-&lt;p>Doxygen allows to set a logo for the project, which will be shown in the top-left/right corner of the page. This presented an issue with doxygen awesome: while the standard css shipped with doxygen-awesome inverts every component’s hue when dark mode is toggled, we wanted the logo to look good in both modes (and not just to look as a negative of the original). To do it, I just changed the content of the logo image based on the dark/light mode class:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">/* Manage logo in dark and light mode */&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">dark-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_light.png&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">html&lt;/span>.&lt;span style="color:#a6e22e">light-mode&lt;/span> #projectlogo &lt;span style="color:#f92672">img&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">content&lt;/span>: url(&lt;span style="color:#e6db74">&amp;#34;./logo_dark.png&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Both logo pictures are added in the &lt;em>&lt;strong>img&lt;/strong>&lt;/em> directory and to the Doxyfile.&lt;/p>
-&lt;h3 id="content-pictures-zoom-on-click">Content Pictures zoom on click&lt;/h3>
-&lt;p>The final touch I gave to the documentation website was a modal to zoom on images when they are clicked. This allows to keep the pictures small when inside the documentation, but also to show them at full resolution when the user needs it.&lt;/p>
-&lt;p>I won’t show here the code (I basically copied code from stack overflow 😅 not a clean solution). In short: after loading the page, a js snippet looks for all pictures and adds a &lt;em>onClick&lt;/em> to each, which shows the clicked picture in a modal window.&lt;/p>
-&lt;h2 id="conclusions">Conclusions&lt;/h2>
-&lt;p>That’s all!&lt;/p>
-&lt;p>In this post I showed how writing and managing documentation as code leads to a better documentation and improved processes. I also described the latest Docs-as-Code solution I found for a project and small tweaks and improvements I made to make it more effective.&lt;/p>
-&lt;p>Even if I didn’t show any of the results (you can watch a sample directly on &lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >doxygen awesome documentation&lt;/a>, no need to see my project code 😛), I hope this post inspired you to get into the world of documentation-as-code (you can find some links in the “Resources” section below and scattered inside the post).&lt;/p>
-&lt;p>Thanks, and see you next time! 👋&lt;/p>
-&lt;p>PS. If you want to see the final results, &lt;a href="https://weart.it/docs/sdkcpp/" target="_blank" >here&lt;/a> is the documentation for the startup&amp;rsquo;s C++ SDK, while &lt;a href="https://weart.it/developer-guide/" target="_blank" >here&lt;/a> are all the other resources and documentation outputs&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://www.doxygen.nl/" target="_blank" >Doxygen&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://jothepro.github.io/doxygen-awesome-css/" target="_blank" >Doxygen Awesome documentation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.docslikecode.com/about/" target="_blank" >Docs like Code&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/" target="_blank" >How To Automate Documentation Workflow For Developers&lt;/a> - Talk by Portia Burton @ FOSDEM 2023&lt;/li>
-&lt;li>&lt;a href="https://members.vadimkravcenko.com/proper-documentation/?ref=cto-newsletter" target="_blank" >Proper Documentation&lt;/a> - Vadim Kravcenko&lt;/li>
-&lt;/ul></description></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>&lt;p>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the &lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" >XPUG Bergamo&lt;/a> group.&lt;/p>
-&lt;p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.&lt;/p>
-&lt;h2 id="what-is-a-kata">What is a kata?&lt;/h2>
-&lt;p>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="kata_dwight.webp" alt="Typical developer performing a kata" />
-&lt;/figure>
-&lt;/div>&lt;/p>
-&lt;p>Typical developer performing a kata&lt;/p>
-&lt;p>&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (&lt;a href="https://en.wikipedia.org/wiki/Kata" target="_blank" >Wikipedia&lt;/a>).&lt;/p>
-&lt;p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.&lt;/p>
-&lt;p>In Katurday sessions, the focus is on practicing one or more katas with other people, usually by doing pair or mob programming. By practicing in a group, we step out of our comfort zone (programmers aren&amp;rsquo;t the best at socializing) and receive immediate feedback from more experienced developers, while also having fun together!&lt;/p>
-&lt;h1 id="sessions-journal">Sessions journal&lt;/h1>
-&lt;p>Here I&amp;rsquo;ll keep an updated list of the session in which I take part, so be sure to check this page every month for a new entry (and even if I&amp;rsquo;m the only one reading this, I&amp;rsquo;ll keep writing it as a journal 😛).&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h2 id="first-contact-mob-programming">First contact: Mob programming&lt;/h2>
-&lt;p>In the first meetup, the main goal was to get to know each other and practice together for the first time. And the perfect opportunity to learn with others in a psychologically safe way is mob programming!&lt;/p>
-&lt;p>In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.&lt;/p>
-&lt;p>We practiced the &lt;a href="https://codingdojo.org/kata/RomanNumerals/" target="_blank" >Roman numerals&lt;/a> kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called &lt;em>fishbowl&lt;/em>, in which a small group is in the mob while the rest of the audience watches (already described in &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/" target="_blank" >this post&lt;/a> about another XPUG meetup).&lt;/p>
-&lt;p>The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅&lt;/p>
-&lt;p>This experience was interesting, showing that a group of software developers can come up with a high-quality and tested solution without fighting (too much).&lt;/p>
-&lt;h2 id="second-session-pairing-and-tdd">Second session: Pairing and TDD&lt;/h2>
-&lt;p>On the second meetup, we stepped out of our comfort zone. The goal this time was to practice pair programming and test-driven development. Why both practices together? Well, we had already practiced TDD in the latest session, but this time it was part of the pairing exercise itself.&lt;/p>
-&lt;p>How can TDD help make pair programming better? With &lt;strong>ping-pong&lt;/strong> programming! One developer writes a failing test (red phase of TDD). Then, the other developer makes the test pass (green phase) and can apply some refactoring while still passing tests. Finally, they create a new failing test and give it to the first developer. This “ping-pong” between the members keeps them concentrated on the task at hand and allows them to write code as if only one person wrote it.&lt;/p>
-&lt;p>We practiced the &lt;a href="https://www.codewars.com/kata/587e4b656c87d3e7f4000143" target="_blank" >prime factors kata&lt;/a> in multiple sessions, erasing the code at the end and pairing up with another person we didn&amp;rsquo;t know. In this kind of exercise (as in any kata), the goal is not to finish it, but to try new ways to solve it and learn. Also, by changing partners every time, we are forced to get to know a new person (duh!), and sometimes even a new programming language/framework, tools, and in general a completely new environment (e.g. different keyboard layout and operating system). It&amp;rsquo;s obvious that changing this much on every rotation doesn&amp;rsquo;t always allow us to finish the kata, but that&amp;rsquo;s expected.&lt;/p>
-&lt;p>In the end, we did two pairing sessions and a final feedback session in which we shared our views on ping-pong pairing and TDD in general. It was useful to see that other people had the same ideas and concerns as me, and also different ideas about the exercise.&lt;/p>
-&lt;h2 id="third-session-refactoring">Third session: Refactoring&lt;/h2>
-&lt;p>In this session, we tackled a difficult task: refactoring a piece of code that was intentionally made unreadable, the &lt;a href="https://github.com/emilybache/Tennis-Refactoring-Kata" target="_blank" >tennis refactoring kata&lt;/a> by Emily Bache. The repository contains the same kata implemented (with lots of code smells) in most of the mainstream programming languages. For each project, it also contains a comprehensive test suite, making it perfect for practicing refactoring without worrying about the tests.&lt;/p>
-&lt;p>As in every other Katurday session, we worked in pairs and had a set time to finish. We started by choosing a language and then identified code smells, solving them by refactoring the code. In reality, my partner and I just started saying &amp;ldquo;wow, that code sucks&amp;rdquo; for every piece of code in the project and tried to refactor it with our gut feeling. The result came out nicely, but we didn&amp;rsquo;t apply the rules to the letter. Nonetheless, it was still a learning experience, seeing how a comprehensive test suite helps to refactor without fear (which I cannot say about the projects I usually work on 😅).&lt;/p>
-&lt;p>One interesting technique we used was loop unrolling (example &lt;a href="https://www.youtube.com/watch?v=tQjUKQxFXuE" target="_blank" >here&lt;/a>) to refactor a useless and complex loop. I had already encountered it in university to improve performance (and used it in unconventional ways for FPGA synthesis), but I never thought of it as a refactoring technique 😃.&lt;/p>
-&lt;p>After making our way through the refactoring, every pair shared their experience. It was useful to see many different approaches to the problem: top-down like ours (extracting and simplifying unrelated and big parts of the code) and bottom-up (refactoring a small but common part of the code at a time).&lt;/p>
-&lt;p>Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched &lt;a href="https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&amp;amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D" target="_blank" >Gianni&lt;/a> refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.&lt;/p>
-&lt;h2 id="fourth-session-object-calisthenics">Fourth session: Object Calisthenics&lt;/h2>
-&lt;p>After learning about TDD, pairing and refactoring, it was time to put it all together, by practicing &lt;em>Object Calisthenics&lt;/em>.&lt;/p>
-&lt;p>Object Calisthenics is a set of (very strict) rules designed to &amp;ldquo;exercise&amp;rdquo; our code muscle. In particular, the rules are the following:&lt;/p>
-&lt;ol>
-&lt;li>Only one level of indentation per method&lt;/li>
-&lt;li>Don&amp;rsquo;t use the ELSE keyword&lt;/li>
-&lt;li>Wrap all primitives and strings (wrap primitive types in classes)&lt;/li>
-&lt;li>First-class collections (wrap collections in classes)&lt;/li>
-&lt;li>One dot per line&lt;/li>
-&lt;li>Don&amp;rsquo;t abbreviate&lt;/li>
-&lt;li>Keep all entities small&lt;/li>
-&lt;li>No classes with more than two instance variables&lt;/li>
-&lt;li>No getters/setters/properties&lt;/li>
-&lt;li>All classes must have state&lt;/li>
-&lt;/ol>
-&lt;p>These rules help to effectively design code in a clean way, the same way real calisthenics helps to improve our strength without strange techniques and machines.&lt;/p>
-&lt;p>To practice Object Calisthenics we performed the &lt;a href="https://codingdojo.org/kata/Bowling/" target="_blank" >bowling kata&lt;/a>, in which you have to compute the score of a bowling game given the throws results.
-The kata seems simple at a first view, but has a nasty responsibility separation issue, as the bonus points of a frame depends on the next throws!&lt;/p>
-&lt;p>The rules were pretty frustrating when I started applying them! For example, not being able to nest the code too much meant I had to continually extract methods.
-Another challenge was to always give state to objects (so avoiding value objects).&lt;/p>
-&lt;p>Fortunately we started applying TDD from the beginning, so it was pretty easy to refactor the code while we added test cases. A challenge I always face when doing TDD is the level at which to begin: from the outside (big comprehensive tests that stay red for some time) or from the inside (smaller components and tests which are integrated later). I tend to create big tests but I also try to solve them immediately, which brings to not follow the &amp;ldquo;little steps&amp;rdquo; rule of TDD 😅.&lt;/p>
-&lt;p>In general, this katurday was really interesting, showing some &amp;ldquo;strict&amp;rdquo; rules that we should instead always apply to our code to make it clean and properly designed.&lt;/p>
-&lt;h2 id="thats-all">That&amp;rsquo;s all!&lt;/h2>
-&lt;p>Keep checking this post for updates on the next sessions I&amp;rsquo;ll attend 🤩&lt;/p></description></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>&lt;p>Hi 👋 welcome to a new post.&lt;/p>
-&lt;p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.&lt;/p>
-&lt;p>As I already said in my &lt;a href="https://marcobacis.com/blog/2022-a-review/" target="_blank" >2022 review&lt;/a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.&lt;/p>
-&lt;p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!&lt;/p>
-&lt;p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the &lt;a href="https://www.ulb.be/en" target="_blank" >Université Libre de Bruxelles&lt;/a>, and is &lt;a href="https://fosdem.org/2023/about/sponsors/" target="_blank" >sponsored&lt;/a> by the main open-source projects and companies.&lt;/p>
-&lt;p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:&lt;/p>
-&lt;ul>
-&lt;li>Freedom to run it&lt;/li>
-&lt;li>Freedom to access his source code, study it and change it to fit our own necessities&lt;/li>
-&lt;li>Freedom to share/spread the software (original or modified) to help others&lt;/li>
-&lt;/ul>
-&lt;p>Working and using open source software means collaborating with other developers, sharing our programming and product ideas, and together improving the world. And that’s exactly the spirit I saw at FOSDEM!&lt;/p>
-&lt;h2 id="community-and-inspiration">Community and Inspiration&lt;/h2>
-&lt;p>I think that being part of a community is great. It gives me a chance to see developers like me, but also completely diverse people.&lt;/p>
-&lt;p>While at FOSDEM, I experienced this sense of community and diversity firsthand. It felt like being in a sort of “tribe” of nerds/developers gathering for what they love.&lt;/p>
-&lt;p>The halls of Brussels university were full for both days of the conference. The city itself was conquered by nerds for the entire weekend! During the conference everyone was chatting about their latest projects and ideas.&lt;/p>
-&lt;p>Also, many open source projects and companies I know (think of the major Linux distros and software companies) were there with their stands, gadgets (Debian was giving away beer!) and stickers!&lt;/p>
-&lt;p>Being there reminded me of my days at university (not so long ago), hacking silly stuff on my laptop. But in this case, the people speaking and attending the conference were anything but amateurs like me 😅. Open Source can be a way to express ourselves, to find inspiration and to be part of something bigger, and FOSDEM showed me the way many people are doing it.&lt;/p>
-&lt;h2 id="list-of-talks-i-attended">List of Talks I attended&lt;/h2>
-&lt;p>Below you can find the list of talks I personally attended while there. I didn’t attend all the events I wanted (some rooms were full all the time!) and ended up going around the different rooms in search of inspiration.&lt;/p>
-&lt;p>If you have the time, give them a look!&lt;/p>
-&lt;p>&lt;strong>Saturday&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gostateofgo/" target="_blank" >The State of Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goreducecognitive/" target="_blank" >Recipes for reducing cognitive load (in go)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/" target="_blank" >Developing Bluetooth Mesh Networks with Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/" target="_blank" >5 errors when building embedded systems&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/" target="_blank" >Making Continuous Delivery Accessible to All&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/" target="_blank" >How to automate documentation workflow for developers&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/" target="_blank" >Our Mad Journey of Building a Vector Database in Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gowatermill/" target="_blank" >Building a basic event-driven application in go in 20 minutes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goisoo/" target="_blank" >Is Go object-oriented? A case of public opinion&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Sunday&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_coreutils/" target="_blank" >Reimplementing the Coreutils in a modern language (Rust)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/" target="_blank" >Zero-Knowledge Cryptography and anonymous engineering&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/" target="_blank" >How to build an event-driven application in python&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/mutation_testing/" target="_blank" >Fear the Mutants, love the Mutants&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sth_to_hide/" target="_blank" >Having something to hide&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_ebpf/" target="_blank" >Rust in the Kernel (via eBPF)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/" target="_blank" >The 7 key ingredients of a great SBOM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gb_arm/" target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description>&lt;p>Hi 👋&lt;/p>
-&lt;p>Today’s post is about my experience at the &lt;a href="https://www.agileday.it/" target="_blank" >Italian Agile Days 2022&lt;/a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.&lt;/p>
-&lt;p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.&lt;/p>
-&lt;p>This year, the conference was held on the Brescia University campus. It was my first in-person conference in 3 years, and seeing live talks and talking with people with the same interests was refreshing and inspiring!&lt;/p>
-&lt;p>I mostly watched technical talks about programming, but some of the ones you’ll find below drift from pure programming into the realm of philosophy (and psychology), and they were the most interesting.&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h2 id="talks">Talks&lt;/h2>
-&lt;p>&lt;em>Disclaimer: most talks were in Italian. The videos are available &lt;a href="https://vimeo.com/showcase/9957525" target="_blank" >online&lt;/a>, here I’ll just post a brief summary and my opinions on the talks.&lt;/em>&lt;/p>
-&lt;h3 id="keynote-myth-busting-in-agile-scaling-en---nigel-thurlow">Keynote: Myth busting in agile Scaling (en) - Nigel Thurlow&lt;/h3>
-&lt;p>&lt;a href="https://vimeo.com/767786361" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>Nigel has been the first ever Chief of Agile at Toyota, and while there he created “The Flow System”, a flow-based approach to delivering value built on the Toyota system.&lt;/p>
-&lt;p>In his keynote, he debunks myths and tries to solve the “format war” between agile practices. The talk is packed full of considerations and stories about agile…so full that I cannot summarise it here without writing everything Nigel says. Please go check it out!&lt;/p>
-&lt;h3 id="event-sourcing--cqrs-a-light-introduction-en---paolo-banfi">Event Sourcing + CQRS: a light introduction (en) - Paolo Banfi&lt;/h3>
-&lt;p>&lt;a href="https://vimeo.com/768885882" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>In this talk, the speaker introduces two important concepts that allow to easily change and add functionalities to our systems: event sourcing and CQRS.&lt;/p>
-&lt;p>To explain them, he presents an example based on a shopping cart, showing that by just saving the current state of the system (as we usually do with databases) we lose information that could be useful to the business. By using event sourcing and CQRS strategies, we employ a more generic model that allows using these pieces of information without making the system much more complex than before.&lt;/p>
-&lt;p>Paolo does a great introduction to both arguments. Even if I never used event sourcing and CQRS before, I now feel like I should use them in all my future projects!&lt;/p>
-&lt;h3 id="diamo-una-chance-a-una-codebase-legacy-it---nicola-mincuzzi">Diamo una chance a una codebase legacy? (it) - Nicola Mincuzzi&lt;/h3>
-&lt;p>“Let’s give a legacy codebase a chance”&lt;/p>
-&lt;p>&lt;a href="https://vimeo.com/768879474" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>Working with legacy codebases is a dread. Legacy systems are unstable, and every change to their code or structure leads to bugs and unknown issues, given their lack of tests.&lt;/p>
-&lt;p>In his talk, Nicola shows a project on which he worked, and describes how he “attacked” the legacy monster by using harnesses and a lot of testing. He basically followed the advice in Michael Feather’s “Working Effectively With Legacy Code&amp;quot; which was effective for real!&lt;/p>
-&lt;p>Given that this was his first talk, it was great. I’m also working on a nasty legacy project, and seeing other people&amp;rsquo;s (successful) experiences is inspiring and comforting at the same time.&lt;/p>
-&lt;h3 id="ive-done-tdd-wrong-all-the-time-it---luca-giuberti">I’ve done TDD wrong all the time (it) - Luca Giuberti&lt;/h3>
-&lt;p>&lt;a href="https://vimeo.com/768875860" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>In this talk, Luca expresses a common concern that we all think about while writing tests - Am I testing too much the implementation? Do the tests reflect the &lt;strong>what&lt;/strong> (the business need), or do they represent the &lt;strong>how&lt;/strong> (implementation)?&lt;/p>
-&lt;p>Luca shows a more sustainable way to test, in a &lt;strong>coarse-grained&lt;/strong> fashion. I find this more in line with how I usually test, by testing the behaviour of multiple/larger modules and not of the single classes and methods (with a lot of mocking).&lt;/p>
-&lt;p>The definition of “unit” is quite confusing. Some of us end up testing single classes or methods in isolation, by mocking every external dependency. Luca’s talk advocates for a coarser grain, like testing multiple (cohesive) classes for their external behaviour. It might seem like integration testing, but it’s not, and I think is a more sound approach.&lt;/p>
-&lt;h3 id="larte-dello-sviluppatore-it---marco-fracassi">L’arte dello sviluppatore (it) - Marco Fracassi&lt;/h3>
-&lt;p>“The software developer art”&lt;/p>
-&lt;p>&lt;a href="https://vimeo.com/768873513" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>In this philosophical (and humorous) talk, Marco talks about the role of creativity (and how to get creative) in software development.&lt;/p>
-&lt;p>Software developers are a creative species, despite the stereotypes that others associate with the role (and we get a huge list in the talk). Practices such as pair programming, TDD and DDD are indeed quite creative and, at the time of their definition, were revolutionary.&lt;/p>
-&lt;p>Software development is a social activity in addition to technical practices, and in this regard, creativity can help us solve problems better. Marco presents a lot of ways to increase creativity personally and in the workplace (by increasing psychological safety) and what tends to stop it (ignorance, hyper-specialization, fear, vanity etc..).&lt;/p>
-&lt;p>In the end, the talk was very inspiring and showed that there’s a lot of “art” in our practice as software developers.&lt;/p>
-&lt;h3 id="dal-carbone-al-software-i-sistemi-socio-tecnici-it---ferdinando-santacroce">Dal carbone al software: i sistemi socio-tecnici (it) - Ferdinando Santacroce&lt;/h3>
-&lt;p>“From coal to software: socio-technical systems”&lt;/p>
-&lt;p>&lt;a href="https://vimeo.com/768881541" target="_blank" >Video&lt;/a>&lt;/p>
-&lt;p>Agile is not just for programmers, and Ferdinando shows us why in his talk. He tells a story set in post-war England, when a technological innovation (the “longwall”) was introduced but didn’t improve productivity, all because of social issues.&lt;/p>
-&lt;p>The researchers found out that this innovation disrupted (in a bad way) the current social organisation of the mines. From autonomous, cross-functional and trusted teams, the longwall brought hyper-specialisation, control and loss of autonomy and ownership, leading to lower productivity.&lt;/p>
-&lt;p>This story serves as a reminder that all techniques and practices we see today in agile (such as lean, kanban, XP etc..) didn’t start with programming, but are way older. In addition, we cannot only think about the technical aspects of the organisation, because the social ones are way more important!&lt;/p>
-&lt;h2 id="conclusion">Conclusion&lt;/h2>
-&lt;p>I really enjoyed attending this conference!&lt;/p>
-&lt;p>Each talk explored an argument which I didn’t know and wanted to know more about. I also got to meet new people in a community near me (Brescia is right next to Bergamo and Milan) and I also got gadgets 🤩. In addition, I bought two books from Avanscoperta: “Cronache di Domain-Driven Design” (DDD Chronicles) and “Decision-Making for Software Development Teams”. I hope to read them soon!&lt;/p>
-&lt;p>That’s all for today. I hope you enjoyed this short summary of my experience at IAD2022, and I hope to attend and write about next year’s conference (and some workshops? 😇).&lt;/p></description></item></channel></rss>
+&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p></description><content><![CDATA[
+        <p>Hi! 👋 Welcome to a new post.</p>
+<p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.</p>
+<p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!</p>
+<p>In this post, I&rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.</p>
+<p>Enjoy!</p>
+<h2 id="what-is-an-open-space">What is an Open Space?</h2>
+<p>SoCraTes is a unique event because of its interesting format, called Open Space (or Unconference).</p>
+<p>In a standard conference, everything is decided up-front: there is a call-for-papers, speakers and the agenda are decided beforehand, there are frontal sessions and workshops, etc. Basically, the attendees just need to come and watch what&rsquo;s offered by the conference organizing committee.</p>
+<p>On the contrary, in an Open Space, the format, agenda, and topics discussed are decided by the participants during the event itself. This choice comes from the observation that, during a conference, the most inspiring and interesting stuff happens during coffee breaks and in the common areas. So why don&rsquo;t we transform the entire event into a big coffee break?</p>
+<p>On every day of the Open Space, the participants gather to propose and decide the daily agenda: everyone can propose a talk, workshop, discussion, or any other type of activity (even a walking discussion on the beach 😎 or a party game). After the proposals, it&rsquo;s time for the <strong>marketplace</strong>: everyone can ask the session organizer to move the session (to a different time and location) or to change/expand the topic. The important thing is that only the one who proposed the session can change it!</p>
+<p>After the marketplace has ended and the agenda is ready, the unconference can start. During the event, there is only one rule to follow, called the &ldquo;rule of two feet&rdquo;:</p>
+<blockquote>
+<p>If you are not contributing or adding value to the session, you can move elsewhere freely.</p>
+</blockquote>
+<p>This rule is not confined to the pre-defined sessions. Participants can move between sessions, stay in common areas, or look for other people to start impromptu activities! That&rsquo;s the beauty of the open space format.</p>
+<p>Given that they can freely move during the event, participants usually divide into two categories:</p>
+<ul>
+<li>Butterflies: they like to move a lot and cross-pollinate the discussions.</li>
+<li>Bumblebees: they stay in the same room for the entire duration of the session, bringing stability and continuity to the discussions.</li>
+</ul>
+<p>Also, the rule of two feet generates four principles:</p>
+<ul>
+<li>Whoever comes is the right people.</li>
+<li>Whenever it starts is the right time.</li>
+<li>Whatever happens is the only thing that could happen.</li>
+<li>When it&rsquo;s over, it&rsquo;s over.</li>
+</ul>
+<p>The rule of two feet and the four principles above allow the participants to express themselves in many ways and encourage collaboration and open discussions throughout the event. That&rsquo;s what brought me to attend it!</p>
+<h2 id="my-experience-at-socrates-it-2023">My experience at SoCraTes-IT 2023</h2>
+<p>Here&rsquo;s a brief summary of my experience at SoCraTes 2023. I didn&rsquo;t take many notes and pictures, so most of the descriptions below might be incomplete or plain wrong. This is more of a journaling exercise for me.</p>
+<p>Given this disclaimer, if you find any errors, don&rsquo;t hesitate to contact me (or open an issue/PR on my website <a href="https://github.com/marcobacis/marcobacis.github.io"  target="_blank" >repository</a> on GitHub 😛).</p>
+<p>Enjoy!</p>
+<h3 id="thursday">Thursday</h3>
+<p>The first day was just for networking and getting to know the other participants. I arrived at the hotel in the afternoon, and then we had a happy hour, dinner, and a brief &ldquo;ice-breaker&rdquo; game.</p>
+<p>We divided into groups, and each group had to introduce itself with a given description. My group had to decide if &ldquo;casual Friday&rdquo; was still a thing in the 2020s. We named our group &ldquo;Eat My Shorts&rdquo; and gave a short presentation on it. However, there was no interaction or any &ldquo;theatrical&rdquo; performance, and only one of us spoke, while other groups put on a show and moved around a lot. A reminder for next time: have more interaction between group members (try to talk 😅) and make the presentation funnier!!</p>
+<p>After the ice breaker, I went to my room early because I hadn&rsquo;t been feeling well since the morning and needed to recharge for the next days.</p>
+<h3 id="friday">Friday</h3>
+<p>Friday was the first day of the Unconference!</p>
+<p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 1" />
+    
+  </figure>
+</div></td>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 1" />
+    
+  </figure>
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):</p>
+<p><strong>Game AI and Montecarlo Tree Search - <a href="https://www.linkedin.com/in/matteovaccari/"  target="_blank" >Matteo Vaccari</a></strong></p>
+<p>In this session, Matteo taught us what a Monte Carlo search is and how it is useful for searching in very large decision trees. A perfect example of this was the game &ldquo;Commands&amp;Colors&rdquo; with some parts of the game having a million branch factor!</p>
+<p>This was a preliminary test for his talk, which he gave a few days later at Codemotion. I wasn&rsquo;t able to see his entire session at SoCraTes, but I watched his talk at Codemotion and it was great!</p>
+<p>For more information (and slides/code), visit <a href="https://matteo.vaccari.name/"  target="_blank" >Matteo&rsquo;s website</a>.</p>
+<p><strong>The Programmer’s Brain - <a href="https://www.linkedin.com/in/mrctst/"  target="_blank" >Marco Testa</a></strong></p>
+<p>In this session, Marco presented what he learned reading the book “<a href="https://www.manning.com/books/the-programmers-brain"  target="_blank" >The Programmer’s Brain</a>” by Felienne Hermans.</p>
+<p>The main concept we discussed was <strong>cognitive load</strong> and ways in which it affects software developers. The book provides many concepts and ways to reduce this cognitive load and make the code we develop easier to understand and remember. Many of the techniques have already been discussed in other books (e.g. clean code), but here they were related to cognitive load and all of its aspects.</p>
+<p>The session was really interesting. Having attended a course on memory techniques some years ago I already knew some of the concepts presented, although not applied to software development.</p>
+<p><strong>Stop fighting useless battles: automate code style, architecture compliance and refactoring - <a href="https://www.linkedin.com/in/robfrank/"  target="_blank" >Roberto Franchini</a></strong></p>
+<p>Roberto gave this talk at the <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in June. I didn&rsquo;t see it at that time, but fortunately, he gave it again at SoCraTes! His talk was about ways to automate boring tasks that are quite important to keep a codebase clean among team members.</p>
+<p>In particular, he presented:</p>
+<ul>
+<li><a href="https://pre-commit.com/"  target="_blank" >pre-commit</a>: a tool to boost commit hooks and CI pipelines, with various tasks and plugins from the community. He uses it to check certain rules, such as passwords and keys, fixing line endings, and more.</li>
+<li><a href="https://www.archunit.org/"  target="_blank" >ArchUnit</a>: a tool to unit-test your architecture. It can be used to enforce separation between modules, check that the code doesn&rsquo;t import certain packages, and generally standardize and test the code architecture.</li>
+<li><a href="https://docs.openrewrite.org/"  target="_blank" >OpenRewrite</a>: allows for large-scale code refactoring, such as framework/API migrations, code cleanup, and other community-driven code transformations.</li>
+</ul>
+<p>I didn&rsquo;t know about any of these tools, so it was a very inspiring talk!</p>
+<p><strong>Discussion on Trunk-Based Development - <a href="https://www.linkedin.com/in/fabio-fortini/"  target="_blank" >Fabio Fortini</a></strong></p>
+<p>After lunch, while everyone was feeling sleepy, Fabio ignited our fighting spirit by presenting a controversial argument: should we use trunk-based development in our projects?</p>
+<p>He showed us a presentation he had given to his team in 2021 to convince them of the pros (without having used it before), and then gave his opinion after having done it for a few months.</p>
+<p>The discussion was filled with arguments from both parties, and essentially Fabio stopped talking and (unintentionally) handed the stage over to the group.</p>
+<p>It was an interesting discussion nonetheless: in the end, trunk-based development can be used as a teaching tool to help the team learn to work with small releases and continuously integrate into the main branch. Afterward, or if the team is already mature enough, small, frequently integrated branches can also be used (and are actually compatible with the trunk-based definition!).</p>
+<p><strong>The Training Crafter - To read or not to read? - <a href="https://www.linkedin.com/in/chiarabarbagianni/"  target="_blank" >Chiara Barbagianni</a></strong></p>
+<p>The topic of the session was learning. Should we learn by reading or by doing, and can the two worlds work together?</p>
+<p>Chiara gave a free-flowing presentation to our small group, starting with a survey and then writing on a whiteboard (and a lot of post-it notes) to decide how to merge the two opposing views.</p>
+<p>She divided the board into 4 quadrants along 2 axes:</p>
+<ul>
+<li>Practice (doing something practical, or reading about it?)</li>
+<li>Taste (developing a taste for what you are learning, or doing it just for the money?)</li>
+</ul>
+<p>At the end, Chiara presented how she&rsquo;s doing it in the <a href="https://handbook.agilelab.it/BookClub.html"  target="_blank" >Agile Lab Book Club</a>: instead of mandating all members to read a given chapter every time, the format is more generic. Every two weeks, the club curators propose a topic: members can explore it in any way (the recommended book, videos, blogs, anything) and post their learnings on a shared board. At the end of the two-week period, they share what they learned in a short training session.</p>
+<p>I loved this session! The way it was kept was fantastic, and we were immersed in Chiara&rsquo;s mind throughout the entire duration of the discussion. That&rsquo;s exactly what I expected from an unconference.</p>
+<p><div class="image">
+  <figure>
+    <img class="img-fluid image" src="chiara_barbagianni_session.jpeg" alt="The output of the session" />
+    
+    <figcaption class="caption">The output of the session</figcaption>
+    
+  </figure>
+</div></p>
+<p><strong>Monads for the Rest of us (in C#)  - <a href="https://www.linkedin.com/in/arialdomartini/"  target="_blank" >Arialdo Martini</a></strong></p>
+<p>Even after studying it at the university, I still find it difficult to understand most functional programming concepts. But thanks to Arialdo, now I can understand it a bit more.</p>
+<p>In his session, he started to implement monads (the most difficult concept in FP to me) in plain C#. Starting from function composition, passing through functors and implementing the IO monad, he tried to explain to the folks that we are how functional programming concepts map to an object oriented language.</p>
+<p>His session was based on a series of posts <a href="https://arialdomartini.github.io/monads-for-the-rest-of-us"  target="_blank" >on his website</a>, that I will definitely try to follow to learn all there is about monads!</p>
+<p><strong>Friday evening special: Oggetti a Teatro” (Objects on Stage) - <a href="https://www.linkedin.com/in/mrctst/"  target="_blank" >Marco Testa</a></strong></p>
+<p>Unlike many conferences, the party didn’t finish after dinner. Instead, there were 2 parallel sessions. One was a NIX installation party at the pub, while the other was a high-class evening at the theatre.</p>
+<p>Marco wrote and gave life to a set of characters (I still remember the <em>Duke of Client</em>, the <em>Count of Receiver</em>, and <em>Invoker the spy</em>!) that together and with their actions formed the perfect description of the Command Pattern. He basically wrote the script of a design pattern, highlighting the behaviour of the different component and their scope. Also, the story was pretty engaging!</p>
+<p>Even if short, the <em>opera</em> was well received by the public, and I think it would be a great way to explain design patterns in a memorable way.</p>
+<h3 id="saturday">Saturday</h3>
+<p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 2" />
+    
+  </figure>
+</div></td>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 2" />
+    
+  </figure>
+</div></td>
+</tr>
+</tbody>
+</table>
+<p><strong><del>Coping</del>/Coding with Product - <a href="https://www.linkedin.com/in/brando/"  target="_blank" >Alberto Brandolini</a></strong></p>
+<p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.</p>
+<p>He started by re-defining technical debt (which he deemed a wrong analogy) with its opposite, <strong>Design Integrity</strong>: “how much the current codebase fits its purpose” or how much the code is ready for the next change.</p>
+<p>He went on explaining how product side is based on “experiments”, as the roadmap is not as clearly defined as we developers would like the code to be. How can we make the two ends meet? Our work as technical people is to work on “safe bets” from a good design to another good design, without reducing the design integrity.</p>
+<p>The group went on a discussion on changes of which I didn’t take note, so writing it here would be useless.</p>
+<p>In the end, the core idea is that developers should work together with product to define different “purposes” (either core or not to the business) and isolate these choices in distinct bounded contexts and components, to reduce the possible damage given by continuous product experiments.</p>
+<p>This is not a set process, but can evolve based on the product (e.g. a context might get split in multiple services, or multiple services merged because they follow the same purpose…).</p>
+<p>Fortunately for us, Alberto wrote a <a href="https://medium.com/@ziobrando/from-technical-debt-to-design-integrity-48e7056b6776"  target="_blank" >post</a> in which he explains these concepts in a much cleaner way than me 😅</p>
+<p><strong>Refactoring with CQRS (without events) - <a href="https://www.linkedin.com/in/lucagiovenzana/"  target="_blank" >Luca Giovenzana</a></strong></p>
+<p>Luca showed how they refactored the backend for their startup (<a href="https://golee.it/"  target="_blank" >golee</a>) using CQRS, but without using event sourcing as everyone doing CQRS is doing right now. Basically, the team at golee migrated some functionality to the new, greenfield codebase which was used as <em>write model</em>, while keeping the old (legacy) code as <em>read model</em> and as a backup, by writing to it using a hook.</p>
+<p>By keeping the system simple (no events and event sourcing) they were able to keep both systems running, without impacting on their ability to extend it and improving performances.</p>
+<p>His session was a nice look at how to take tradeoffs, which are essential when running a startup!</p>
+<p><strong>Create a Macropad for fun!! - <a href="https://www.linkedin.com/in/gianni-bombelli/"  target="_blank" >Gianni Bombelli</a></strong></p>
+<p>During the breaks and dinners on thursday and friday I was introduced to the world of custom keyboards. It’s a world full of crazy people talking about layouts, layers and keys. When Gianni put a post-it named “Create a macropad for FUN!” I couldn’t resist.</p>
+<p>In his session, he showed us his “hobby” project, a custom mechanical macropad to help him during training sessions, in which he uses a graphics tablet and might need some ready-to-use shortcuts (e.g. to delete the latest line drawn, to open an application, to use git).</p>
+<p>His session was a deep-dive in how to build a custom keyboard, from the PCB up to the customisation with QMK and a bit of C programming. Now I really want a custom macropad!! I’ll wait for the “BomboPad” to enter the market 😛</p>
+<p><strong>Orthogonality of TDD, SOLID, FP - <a href="https://www.linkedin.com/in/matteobaglini/"  target="_blank" >Matteo Baglini</a></strong></p>
+<p>In his session, Matteo showed us how TDD, SOLID principles and Functional Programming are related. He implemented the password validator kata, doing small steps by following TDD and doing it in a functional way.</p>
+<p>I came into the session while it was already started so I lost most of the context. Fortunately, Matteo shared the <a href="https://github.com/matteobaglini/orthogonality-socrates-it-2023"  target="_blank" >repo</a> containing the kata implementation, with every small step of the red-green-refactor process explained in separate commits! A great way to visualize TDD in action.</p>
+<p><strong>PKMS/Note Taking - <a href="https://www.linkedin.com/in/jagasantagostino/"  target="_blank" >Jaga Santagostino</a></strong></p>
+<p>The final session I attended was an open discussion about Obsidian and Personal Knowledge Management Systems (PKMS) in general.</p>
+<p>Jaga showed us the many features in Obsidian and tried to compare it with another famous PKMS application, Notion.</p>
+<p>While presenting, other participants asked questions and gave their opinions. For example I learned about another tool, called logseq, which is quite similar to obsidian.</p>
+<p>In the end I gave obsidian a try. I actually used it to take notes during the unconference, and to take notes at the Codemotion conference the week later. I now found out how to share my notes with git, so from now on I’ll try to use it instead of Notion! It’s local-first paradigm is very useful when working offline, and the backlinks and graph view are really interesting and allow to link ideas together. Also, is definitely faster than notion 😅.</p>
+<p>Thanks Jaga for this discovery!</p>
+<h2 id="the-end">The End!</h2>
+<p>SoCraTes was a great event! I met new people, learned a lot and had fun, the perfect combination    for a conference.</p>
+<p>I came home with a lot of new concepts, tools and inspiration, and I cannot wait for the next event like this (which will be the <a href="https://www.agileday.it/"  target="_blank" >2023 Agile Day</a> Unconference, on Nov. 17 😛).</p>
+<p>As always, thanks for all the participants, to the sponsors, organizer and everyone involved. The most meaningful connections happen in a free and creative environment, and that’s exactly what SoCraTes is.</p>
+<p>Thanks for reading this long and boring summary, I hope to have shown (even a bit) all I saw and felt during the event. If you find anything to correct (e.g. about your session, about my grammar, or if I forgot something) just contact me via mail or linkedin, or open an issue on this website repository on github.</p>
+<p>As always, see you next time!</p>
+      ]]></content:encoded></item><item><title>Documentation-as-Code with Doxygen (Awesome)</title><link>https://marcobacis.com/blog/docs-as-code-doxygen-awesome/</link><pubDate>Sun, 03 Sep 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/docs-as-code-doxygen-awesome/</guid><description>&lt;p>Hi 👋 and welcome to a new post.&lt;/p>
+&lt;p>I recently had to improve the documentation for a project, and collected some ideas and tools along the way, so I&amp;rsquo;ll share here what I learned 😃.&lt;/p></description><content><![CDATA[
+        <p>Hi 👋 and welcome to a new post.</p>
+<p>I recently had to improve the documentation for a project, and collected some ideas and tools along the way, so I&rsquo;ll share here what I learned 😃.</p>
+<h2 id="we-dont-talk-enough-about-documentation">We don’t talk enough about documentation</h2>
+<p>Documentation is one of the most important elements of software. It allows to collect all the tribal knowledge about a product/project into a shared space. It also avoids the creation of “knowledge silos”, of “tribal knowledge” and in general allows to share the knowledge among the team members, avoiding the so called “bus factor” of a team (if a team member leaves or cannot work on the project anymore, who are going to remember all the nooks and crannies?).</p>
+<p>Unfortunately, documentation is also the most dreaded task for us developers…. we hate writing it! For many developers the code should be “self-documenting”, meaning that clean abstractions and names should allow to understand the code and the product at a glance. Unfortunately, the reality is quite different: architectural choices and business decisions cannot be embedded easily in the code, and it&rsquo;s necessary to keep a separate place to document them.</p>
+<p>In addition, we must not forget about <em>external</em> documentation for the interfaces that our product serves, both in terms of UI and features, and in terms of external API. In general, we owe the documentation to our team and to our users.</p>
+<p>In the last months, I worked for a startup in which the product was in need of documentation. The product includes a central application, and some related SDKs to communicate with the application and a hardware device. With an incoming release date, the last thing needed was the software documentation, which until now was kept in word documents…. so I started researching for alternatives. I wanted an easy to use technology that would allow us to ship the documentation easily and without messing up with tools (word, latex, slides 🤢 or other stuff like this..). I remembered watching a talk at <a href="https://fosdem.org/"  target="_blank" >FOSDEM</a> about documentation-as-code, and delved deeper into the topic. Here is what I found.</p>
+<p><em>Disclaimer: all the opinions expressed in this post are mine and not of my employer, and this post is not a tutorial or a guide… just me listing some tools and describing what I chose for the project!</em></p>
+<h2 id="documentation-as-code">Documentation-as-Code</h2>
+<p>Documentation-as-Code is a simple concept, which can be summarised as “keep and manage your documentation like your code”.</p>
+<p>Basically, documentation should be treated like code, and as such should be kept near it, ideally in the same repository. This brings multiple advantages:</p>
+<ul>
+<li>Makes it easier to keep the documentation updated while the software evolves</li>
+<li>Provides a centralised space to keep the documentation, without the fragmentation given by other solutions (e.g. word documents on dropbox 😏)</li>
+<li>Allows to automate the documentation release along with the software (CI/CD for docs 😍)</li>
+</ul>
+<p>These are just some of the advantages of treating documentation as code. This methodology is also a better fit with modern software development, as it employs the same versioning and release tools we usually use to develop software.</p>
+<p>Another advantage of docs-as-code is that, by keeping the documentation alongside the code, we can improve the documentation itself by generating parts of it directly from the code! This is the approach we took with the SDKs for example.</p>
+<h2 id="documentation-as-code-tools">Documentation-as-Code Tools</h2>
+<p>When choosing a tool to manage and generate the documentation for our project, I looked for 3 main characteristics:</p>
+<ul>
+<li>Is it a SaaS (Software-as-a-Service) or a SSG (Static Site Generator) tool?</li>
+<li>Can it generate the documentation from code comments? In particular, for our project we were targeting a C# and C++ codebase, so the tool should have supported both</li>
+<li>Does it allow to export the documentation (e.g. as pdf?). This might be useful for offline browsing</li>
+</ul>
+<p>Here&rsquo;s a short list of the tools I considered. First, the SaaS products:</p>
+<ul>
+<li><a href="https://www.gitbook.com/"  target="_blank" >GitBook</a> - Allows to manage your documentation online, with support for authorisation, public and private pages and custom domains</li>
+<li><a href="https://about.readthedocs.com/"  target="_blank" >ReadTheDocs</a> - Based on sphinx, allows to host projects documentation (free for open source projects)</li>
+</ul>
+<p>Then, some static site generators:</p>
+<ul>
+<li><a href="https://retype.com/"  target="_blank" >ReType</a> - Fast and easy to use, with export to pdf features, but with paid license over a certain number of pages</li>
+<li><a href="https://docusaurus.io/"  target="_blank" >Docusaurus</a> - Generates a website using MDX and React components. Beautiful, but without generation from code comments and native export to pdf features</li>
+<li><a href="https://www.sphinx-doc.org/en/master/"  target="_blank" >Sphinx</a> - Great tool with export features (html, latex, pdf and so on), extensible with community plugins and themes</li>
+<li><a href="https://dotnet.github.io/docfx/"  target="_blank" >DocFx</a> - Generates a documentation websites from .NET Code, assemblies and XML comments. Supports only .NET/C#</li>
+<li><a href="https://www.doxygen.nl/"  target="_blank" >Doxygen</a> - Old but gold! Generate documentation from code comments and markdown files. Support for a lot of languages</li>
+</ul>
+<p>Most of the tools I looked for can be used create or host a website for the documentation, but only two of them (doxygen and docfx) allowed to generate most of the documentation from the code itself. Maybe this feature has gone out of fashion (code should be self-describing!! no comments!!), but I find it quite relevant, and more so if I need to document a public library distributed to customers.</p>
+<h2 id="solution-with-doxygen--markdown">Solution with Doxygen + Markdown</h2>
+<p>In the end, given the requirements I listed above, I chose to generate the documentation using doxygen, and to integrate it with markdown files and a nice css template.</p>
+<p>Doxygen is an open source tool to generate a (pretty ugly) static website entirely from the project code, using special annotations and comments. In addition to that, it allows to add markdown pages for more prosaic documentation. I used this last feature for the user manual of the application, while the SDK documentation was mainly generated directly from the comments in the code.</p>
+<p>The only disadvantage of doxygen is its “old-style” output, for which I found a great solution called “Doxygen Awesome”.</p>
+<p><a href="https://jothepro.github.io/doxygen-awesome-css/"  target="_blank" >Doxygen Awesome</a> is a custom css and javascript template which gives doxygen a more “modern” look. It has some nice features, like light/dark theme, mobile usability, code blocks with a copy button and many others. You can refer to the <a href="https://jothepro.github.io/doxygen-awesome-css/"  target="_blank" >website</a> to see it in action, and the <a href="https://github.com/jothepro/doxygen-awesome-css"  target="_blank" >github repo</a> for the code.</p>
+<p>The basic theme and repo was almost perfect for the project. I started adding code comments and markdown files to it and tweaking the Doxyfile for my purposes.</p>
+<p>In the end I even tweaked the template code a bit. Here you can find some of the changes I made to the template (I might publish them somewhere to be reused some day…).</p>
+<h3 id="video-embedding-and-dark-mode">Video embedding and dark mode</h3>
+<p>The first change I made was to add a class to embed videos, as the basic template inverted all colours whenever the dark theme was toggled. This basically rendered the embedded videos in negative!</p>
+<p>Very cool, but not very effective when reading documentation.</p>
+<p>To fix this issue, I added this class to the doxygen-awesome css:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Manage responsive video */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">filter</span>: <span style="color:#66d9ef">none</span>; <span style="color:#75715e">/* Remove dark mode issues */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>    aspect-ratio: <span style="color:#ae81ff">16</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">9</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> <span style="color:#f92672">iframe</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> <span style="color:#f92672">object</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> <span style="color:#f92672">embed</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>While adding a video to a markdown file can be done with this snippet (which can also be added as alias to the doxyfile):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>\htmlonly
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rwd-video&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/aqz-KE-bpKQ&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Big Buck Bunny&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>\endhtmlonly
+</span></span></code></pre></div><p>There are still issues with this approach. For example, videos can only be shown in the html output and not in others (e.g. latex/pdf). In the future I might create a command/alias to show the video or an alternate picture/thumbnail for non-interactive outputs.</p>
+<h3 id="lightdark-mode-logo">Light/Dark mode logo</h3>
+<p>Doxygen allows to set a logo for the project, which will be shown in the top-left/right corner of the page. This presented an issue with doxygen awesome: while the standard css shipped with doxygen-awesome inverts every component’s hue when dark mode is toggled, we wanted the logo to look good in both modes (and not just to look as a negative of the original). To do it, I just changed the content of the logo image based on the dark/light mode class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Manage logo in dark and light mode */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">html</span>.<span style="color:#a6e22e">dark-mode</span> #projectlogo <span style="color:#f92672">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">content</span>: url(<span style="color:#e6db74">&#34;./logo_light.png&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">html</span>.<span style="color:#a6e22e">light-mode</span> #projectlogo <span style="color:#f92672">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">content</span>: url(<span style="color:#e6db74">&#34;./logo_dark.png&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Both logo pictures are added in the <em><strong>img</strong></em> directory and to the Doxyfile.</p>
+<h3 id="content-pictures-zoom-on-click">Content Pictures zoom on click</h3>
+<p>The final touch I gave to the documentation website was a modal to zoom on images when they are clicked. This allows to keep the pictures small when inside the documentation, but also to show them at full resolution when the user needs it.</p>
+<p>I won’t show here the code (I basically copied code from stack overflow 😅 not a clean solution). In short: after loading the page, a js snippet looks for all pictures and adds a <em>onClick</em> to each, which shows the clicked picture in a modal window.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>That’s all!</p>
+<p>In this post I showed how writing and managing documentation as code leads to a better documentation and improved processes. I also described the latest Docs-as-Code solution I found for a project and small tweaks and improvements I made to make it more effective.</p>
+<p>Even if I didn’t show any of the results (you can watch a sample directly on <a href="https://jothepro.github.io/doxygen-awesome-css/"  target="_blank" >doxygen awesome documentation</a>, no need to see my project code 😛), I hope this post inspired you to get into the world of documentation-as-code (you can find some links in the “Resources” section below and scattered inside the post).</p>
+<p>Thanks, and see you next time! 👋</p>
+<p>PS. If you want to see the final results, <a href="https://weart.it/docs/sdkcpp/"  target="_blank" >here</a> is the documentation for the startup&rsquo;s C++ SDK, while <a href="https://weart.it/developer-guide/"  target="_blank" >here</a> are all the other resources and documentation outputs</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.doxygen.nl/"  target="_blank" >Doxygen</a></li>
+<li><a href="https://jothepro.github.io/doxygen-awesome-css/"  target="_blank" >Doxygen Awesome documentation</a></li>
+<li><a href="https://www.docslikecode.com/about/"  target="_blank" >Docs like Code</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/"  target="_blank" >How To Automate Documentation Workflow For Developers</a> - Talk by Portia Burton @ FOSDEM 2023</li>
+<li><a href="https://members.vadimkravcenko.com/proper-documentation/?ref=cto-newsletter"  target="_blank" >Proper Documentation</a> - Vadim Kravcenko</li>
+</ul>
+      ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
+The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.
+What is a kata? Typical developer performing a kata
+&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (Wikipedia).</description><content><![CDATA[
+        <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
+<p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
+<h2 id="what-is-a-kata">What is a kata?</h2>
+<p><div class="image">
+  <figure>
+    <img class="img-fluid image" src="kata_dwight.webp" alt="Typical developer performing a kata" />
+    
+  </figure>
+</div></p>
+<p>Typical developer performing a kata</p>
+<p>&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (<a href="https://en.wikipedia.org/wiki/Kata"  target="_blank" >Wikipedia</a>).</p>
+<p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.</p>
+<p>In Katurday sessions, the focus is on practicing one or more katas with other people, usually by doing pair or mob programming. By practicing in a group, we step out of our comfort zone (programmers aren&rsquo;t the best at socializing) and receive immediate feedback from more experienced developers, while also having fun together!</p>
+<h1 id="sessions-journal">Sessions journal</h1>
+<p>Here I&rsquo;ll keep an updated list of the session in which I take part, so be sure to check this page every month for a new entry (and even if I&rsquo;m the only one reading this, I&rsquo;ll keep writing it as a journal 😛).</p>
+<p>Enjoy!</p>
+<h2 id="first-contact-mob-programming">First contact: Mob programming</h2>
+<p>In the first meetup, the main goal was to get to know each other and practice together for the first time. And the perfect opportunity to learn with others in a psychologically safe way is mob programming!</p>
+<p>In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.</p>
+<p>We practiced the <a href="https://codingdojo.org/kata/RomanNumerals/"  target="_blank" >Roman numerals</a> kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called <em>fishbowl</em>, in which a small group is in the mob while the rest of the audience watches (already described in <a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/"  target="_blank" >this post</a> about another XPUG meetup).</p>
+<p>The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅</p>
+<p>This experience was interesting, showing that a group of software developers can come up with a high-quality and tested solution without fighting (too much).</p>
+<h2 id="second-session-pairing-and-tdd">Second session: Pairing and TDD</h2>
+<p>On the second meetup, we stepped out of our comfort zone. The goal this time was to practice pair programming and test-driven development. Why both practices together? Well, we had already practiced TDD in the latest session, but this time it was part of the pairing exercise itself.</p>
+<p>How can TDD help make pair programming better? With <strong>ping-pong</strong> programming! One developer writes a failing test (red phase of TDD). Then, the other developer makes the test pass (green phase) and can apply some refactoring while still passing tests. Finally, they create a new failing test and give it to the first developer. This “ping-pong” between the members keeps them concentrated on the task at hand and allows them to write code as if only one person wrote it.</p>
+<p>We practiced the <a href="https://www.codewars.com/kata/587e4b656c87d3e7f4000143"  target="_blank" >prime factors kata</a> in multiple sessions, erasing the code at the end and pairing up with another person we didn&rsquo;t know. In this kind of exercise (as in any kata), the goal is not to finish it, but to try new ways to solve it and learn. Also, by changing partners every time, we are forced to get to know a new person (duh!), and sometimes even a new programming language/framework, tools, and in general a completely new environment (e.g. different keyboard layout and operating system). It&rsquo;s obvious that changing this much on every rotation doesn&rsquo;t always allow us to finish the kata, but that&rsquo;s expected.</p>
+<p>In the end, we did two pairing sessions and a final feedback session in which we shared our views on ping-pong pairing and TDD in general. It was useful to see that other people had the same ideas and concerns as me, and also different ideas about the exercise.</p>
+<h2 id="third-session-refactoring">Third session: Refactoring</h2>
+<p>In this session, we tackled a difficult task: refactoring a piece of code that was intentionally made unreadable, the <a href="https://github.com/emilybache/Tennis-Refactoring-Kata"  target="_blank" >tennis refactoring kata</a> by Emily Bache. The repository contains the same kata implemented (with lots of code smells) in most of the mainstream programming languages. For each project, it also contains a comprehensive test suite, making it perfect for practicing refactoring without worrying about the tests.</p>
+<p>As in every other Katurday session, we worked in pairs and had a set time to finish. We started by choosing a language and then identified code smells, solving them by refactoring the code. In reality, my partner and I just started saying &ldquo;wow, that code sucks&rdquo; for every piece of code in the project and tried to refactor it with our gut feeling. The result came out nicely, but we didn&rsquo;t apply the rules to the letter. Nonetheless, it was still a learning experience, seeing how a comprehensive test suite helps to refactor without fear (which I cannot say about the projects I usually work on 😅).</p>
+<p>One interesting technique we used was loop unrolling (example <a href="https://www.youtube.com/watch?v=tQjUKQxFXuE"  target="_blank" >here</a>) to refactor a useless and complex loop. I had already encountered it in university to improve performance (and used it in unconventional ways for FPGA synthesis), but I never thought of it as a refactoring technique 😃.</p>
+<p>After making our way through the refactoring, every pair shared their experience. It was useful to see many different approaches to the problem: top-down like ours (extracting and simplifying unrelated and big parts of the code) and bottom-up (refactoring a small but common part of the code at a time).</p>
+<p>Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched <a href="https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D"  target="_blank" >Gianni</a> refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.</p>
+<h2 id="fourth-session-object-calisthenics">Fourth session: Object Calisthenics</h2>
+<p>After learning about TDD, pairing and refactoring, it was time to put it all together, by practicing <em>Object Calisthenics</em>.</p>
+<p>Object Calisthenics is a set of (very strict) rules designed to &ldquo;exercise&rdquo; our code muscle. In particular, the rules are the following:</p>
+<ol>
+<li>Only one level of indentation per method</li>
+<li>Don&rsquo;t use the ELSE keyword</li>
+<li>Wrap all primitives and strings (wrap primitive types in classes)</li>
+<li>First-class collections (wrap collections in classes)</li>
+<li>One dot per line</li>
+<li>Don&rsquo;t abbreviate</li>
+<li>Keep all entities small</li>
+<li>No classes with more than two instance variables</li>
+<li>No getters/setters/properties</li>
+<li>All classes must have state</li>
+</ol>
+<p>These rules help to effectively design code in a clean way, the same way real calisthenics helps to improve our strength without strange techniques and machines.</p>
+<p>To practice Object Calisthenics we performed the <a href="https://codingdojo.org/kata/Bowling/"  target="_blank" >bowling kata</a>, in which you have to compute the score of a bowling game given the throws results.
+The kata seems simple at a first view, but has a nasty responsibility separation issue, as the bonus points of a frame depends on the next throws!</p>
+<p>The rules were pretty frustrating when I started applying them! For example, not being able to nest the code too much meant I had to continually extract methods.
+Another challenge was to always give state  to objects (so avoiding value objects).</p>
+<p>Fortunately we started applying TDD from the beginning, so it was pretty easy to refactor the code while we added test cases. A challenge I always face when doing TDD is the level at which to begin: from the outside (big comprehensive tests that stay red for some time) or from the inside (smaller components and tests which are integrated later). I tend to create big tests but I also try to solve them immediately, which brings to not follow the &ldquo;little steps&rdquo; rule of TDD 😅.</p>
+<p>In general, this katurday was really interesting, showing some &ldquo;strict&rdquo; rules that we should instead always apply to our code to make it clean and properly designed.</p>
+<h2 id="thats-all">That&rsquo;s all!</h2>
+<p>Keep checking this post for updates on the next sessions I&rsquo;ll attend 🤩</p>
+
+      ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
+Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
+As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><content><![CDATA[
+        <p>Hi 👋 welcome to a new post.</p>
+<p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p>
+<p>As I already said in my <a href="https://marcobacis.com/blog/2022-a-review/"  target="_blank" >2022 review</a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.</p>
+<p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!</p>
+<p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the <a href="https://www.ulb.be/en"  target="_blank" >Université Libre de Bruxelles</a>, and is <a href="https://fosdem.org/2023/about/sponsors/"  target="_blank" >sponsored</a> by the main open-source projects and companies.</p>
+<p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:</p>
+<ul>
+<li>Freedom to run it</li>
+<li>Freedom to access his source code, study it and change it to fit our own necessities</li>
+<li>Freedom to share/spread the software (original or modified) to help others</li>
+</ul>
+<p>Working and using open source software means collaborating with other developers, sharing our programming and product ideas, and together improving the world. And that’s exactly the spirit I saw at FOSDEM!</p>
+<h2 id="community-and-inspiration">Community and Inspiration</h2>
+<p>I think that being part of a community is great. It gives me a chance to see developers like me, but also completely diverse people.</p>
+<p>While at FOSDEM, I experienced this sense of community and diversity firsthand. It felt like being in a sort of “tribe” of nerds/developers gathering for what they love.</p>
+<p>The halls of Brussels university were full for both days of the conference. The city itself was conquered by nerds for the entire weekend! During the conference everyone was chatting about their latest projects and ideas.</p>
+<p>Also, many open source projects and companies I know (think of the major Linux distros and software companies) were there with their stands, gadgets (Debian was giving away beer!) and stickers!</p>
+<p>Being there reminded me of my days at university (not so long ago), hacking silly stuff on my laptop. But in this case, the people speaking and attending the conference were anything but amateurs like me 😅. Open Source can be a way to express ourselves,  to find inspiration and to be part of something bigger, and FOSDEM showed me the way many people are doing it.</p>
+<h2 id="list-of-talks-i-attended">List of Talks I attended</h2>
+<p>Below you can find the list of talks I personally attended while there. I didn’t attend all the events I wanted (some rooms were full all the time!) and ended up going around the different rooms in search of inspiration.</p>
+<p>If you have the time, give them a look!</p>
+<p><strong>Saturday</strong></p>
+<ul>
+<li><a href="https://fosdem.org/2023/schedule/event/gostateofgo/"  target="_blank" >The State of Go</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/goreducecognitive/"  target="_blank" >Recipes for reducing cognitive load (in go)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/"  target="_blank" >Developing Bluetooth Mesh Networks with Rust</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/"  target="_blank" >5 errors when building embedded systems</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/"  target="_blank" >Making Continuous Delivery Accessible to All</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/"  target="_blank" >How to automate documentation workflow for developers</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/"  target="_blank" >Our Mad Journey of Building a Vector Database in Go</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gowatermill/"  target="_blank" >Building a basic event-driven application in go in 20 minutes</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/goisoo/"  target="_blank" >Is Go object-oriented? A case of public opinion</a></li>
+</ul>
+<p><strong>Sunday</strong></p>
+<ul>
+<li><a href="https://fosdem.org/2023/schedule/event/rust_coreutils/"  target="_blank" >Reimplementing the Coreutils in a modern language (Rust)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/"  target="_blank" >Zero-Knowledge Cryptography and anonymous engineering</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/"  target="_blank" >How to build an event-driven application in python</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/mutation_testing/"  target="_blank" >Fear the Mutants, love the Mutants</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/sth_to_hide/"  target="_blank" >Having something to hide</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/rust_ebpf/"  target="_blank" >Rust in the Kernel (via eBPF)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/"  target="_blank" >The 7 key ingredients of a great SBOM</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gb_arm/"  target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…</a></li>
+</ul>
+
+      ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description>Hi 👋
+Today’s post is about my experience at the Italian Agile Days 2022, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.
+The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</description><content><![CDATA[
+        <p>Hi 👋</p>
+<p>Today’s post is about my experience at the <a href="https://www.agileday.it/"  target="_blank" >Italian Agile Days 2022</a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.</p>
+<p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</p>
+<p>This year, the conference was held on the Brescia University campus. It was my first in-person conference in 3 years, and seeing live talks and talking with people with the same interests was refreshing and inspiring!</p>
+<p>I mostly watched technical talks about programming, but some of the ones you’ll find below drift from pure programming into the realm of philosophy (and psychology), and they were the most interesting.</p>
+<p>Enjoy!</p>
+<h2 id="talks">Talks</h2>
+<p><em>Disclaimer: most talks were in Italian. The videos are available <a href="https://vimeo.com/showcase/9957525"  target="_blank" >online</a>, here I’ll just post a brief summary and my opinions on the talks.</em></p>
+<h3 id="keynote-myth-busting-in-agile-scaling-en---nigel-thurlow">Keynote: Myth busting in agile Scaling (en) - Nigel Thurlow</h3>
+<p><a href="https://vimeo.com/767786361"  target="_blank" >Video</a></p>
+<p>Nigel has been the first ever Chief of Agile at Toyota, and while there he created “The Flow System”, a flow-based approach to delivering value built on the Toyota system.</p>
+<p>In his keynote, he debunks myths and tries to solve the “format war” between agile practices. The talk is packed full of considerations and stories about agile…so full that I cannot summarise it here without writing everything Nigel says. Please go check it out!</p>
+<h3 id="event-sourcing--cqrs-a-light-introduction-en---paolo-banfi">Event Sourcing + CQRS: a light introduction (en) - Paolo Banfi</h3>
+<p><a href="https://vimeo.com/768885882"  target="_blank" >Video</a></p>
+<p>In this talk, the speaker introduces two important concepts that allow to easily change and add functionalities to our systems: event sourcing and CQRS.</p>
+<p>To explain them, he presents an example based on a shopping cart, showing that by just saving the current state of the system (as we usually do with databases) we lose information that could be useful to the business. By using event sourcing and CQRS strategies, we employ a more generic model that allows using these pieces of information without making the system much more complex than before.</p>
+<p>Paolo does a great introduction to both arguments. Even if I never used event sourcing and CQRS before, I now feel like I should use them in all my future projects!</p>
+<h3 id="diamo-una-chance-a-una-codebase-legacy-it---nicola-mincuzzi">Diamo una chance a una codebase legacy? (it) - Nicola Mincuzzi</h3>
+<p>“Let’s give a legacy codebase a chance”</p>
+<p><a href="https://vimeo.com/768879474"  target="_blank" >Video</a></p>
+<p>Working with legacy codebases is a dread. Legacy systems are unstable, and every change to their code or structure leads to bugs and unknown issues, given their lack of tests.</p>
+<p>In his talk, Nicola shows a project on which he worked, and describes how he “attacked” the legacy monster by using harnesses and a lot of testing. He basically followed the advice in Michael Feather’s “Working Effectively With Legacy Code&quot; which was effective for real!</p>
+<p>Given that this was his first talk, it was great. I’m also working on a nasty legacy project, and seeing other people&rsquo;s (successful) experiences is inspiring and comforting at the same time.</p>
+<h3 id="ive-done-tdd-wrong-all-the-time-it---luca-giuberti">I’ve done TDD wrong all the time (it) - Luca Giuberti</h3>
+<p><a href="https://vimeo.com/768875860"  target="_blank" >Video</a></p>
+<p>In this talk, Luca expresses a common concern that we all think about while writing tests - Am I testing too much the implementation? Do the tests reflect the <strong>what</strong> (the business need), or do they represent the <strong>how</strong> (implementation)?</p>
+<p>Luca shows a more sustainable way to test, in a <strong>coarse-grained</strong> fashion. I find this more in line with how I usually test, by testing the behaviour of multiple/larger modules and not of the single classes and methods (with a lot of mocking).</p>
+<p>The definition of “unit” is quite confusing. Some of us end up testing single classes or methods in isolation, by mocking every external dependency. Luca’s talk advocates for a coarser grain, like testing multiple (cohesive) classes for their external behaviour. It might seem like integration testing, but it’s not, and I think is a more sound approach.</p>
+<h3 id="larte-dello-sviluppatore-it---marco-fracassi">L’arte dello sviluppatore (it) - Marco Fracassi</h3>
+<p>“The software developer art”</p>
+<p><a href="https://vimeo.com/768873513"  target="_blank" >Video</a></p>
+<p>In this philosophical (and humorous) talk, Marco talks about the role of creativity (and how to get creative) in software development.</p>
+<p>Software developers are a creative species, despite the stereotypes that others associate with the role (and we get a huge list in the talk). Practices such as pair programming, TDD and DDD are indeed quite creative and, at the time of their definition, were revolutionary.</p>
+<p>Software development is a social activity in addition to technical practices, and in this regard, creativity can help us solve problems better. Marco presents a lot of ways to increase creativity personally and in the workplace (by increasing psychological safety) and what tends to stop it (ignorance, hyper-specialization, fear, vanity etc..).</p>
+<p>In the end, the talk was very inspiring and showed that there’s a lot of “art” in our practice as software developers.</p>
+<h3 id="dal-carbone-al-software-i-sistemi-socio-tecnici-it---ferdinando-santacroce">Dal carbone al software: i sistemi socio-tecnici (it) - Ferdinando Santacroce</h3>
+<p>“From coal to software: socio-technical systems”</p>
+<p><a href="https://vimeo.com/768881541"  target="_blank" >Video</a></p>
+<p>Agile is not just for programmers, and Ferdinando shows us why in his talk. He tells a story set in post-war England, when a technological innovation (the “longwall”) was introduced but didn’t improve productivity, all because of social issues.</p>
+<p>The researchers found out that this innovation disrupted (in a bad way) the current social organisation of the mines. From autonomous, cross-functional and trusted teams, the longwall brought hyper-specialisation, control and loss of autonomy and ownership, leading to lower productivity.</p>
+<p>This story serves as a reminder that all techniques and practices we see today in agile (such as lean, kanban, XP etc..) didn’t start with programming, but are way older. In addition, we cannot only think about the technical aspects of the organisation, because the social ones are way more important!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I really enjoyed attending this conference!</p>
+<p>Each talk explored an argument which I didn’t know and wanted to know more about. I also got to meet new people in a community near me (Brescia is right next to Bergamo and Milan) and I also got gadgets 🤩. In addition, I bought two books from Avanscoperta: “Cronache di Domain-Driven Design” (DDD Chronicles) and “Decision-Making for Software Development Teams”. I hope to read them soon!</p>
+<p>That’s all for today. I hope you enjoyed this short summary of my experience at IAD2022, and I hope to attend and write about next year’s conference (and some workshops? 😇).</p>
+
+      ]]></content:encoded></item></channel></rss>

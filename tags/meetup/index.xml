@@ -1,190 +1,213 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sun, 14 May 2023 08:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>&lt;p>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the &lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" >XPUG Bergamo&lt;/a> group.&lt;/p>
-&lt;p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.&lt;/p>
-&lt;h2 id="what-is-a-kata">What is a kata?&lt;/h2>
-&lt;p>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="kata_dwight.webp" alt="Typical developer performing a kata" />
-&lt;/figure>
-&lt;/div>&lt;/p>
-&lt;p>Typical developer performing a kata&lt;/p>
-&lt;p>&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (&lt;a href="https://en.wikipedia.org/wiki/Kata" target="_blank" >Wikipedia&lt;/a>).&lt;/p>
-&lt;p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.&lt;/p>
-&lt;p>In Katurday sessions, the focus is on practicing one or more katas with other people, usually by doing pair or mob programming. By practicing in a group, we step out of our comfort zone (programmers aren&amp;rsquo;t the best at socializing) and receive immediate feedback from more experienced developers, while also having fun together!&lt;/p>
-&lt;h1 id="sessions-journal">Sessions journal&lt;/h1>
-&lt;p>Here I&amp;rsquo;ll keep an updated list of the session in which I take part, so be sure to check this page every month for a new entry (and even if I&amp;rsquo;m the only one reading this, I&amp;rsquo;ll keep writing it as a journal 😛).&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h2 id="first-contact-mob-programming">First contact: Mob programming&lt;/h2>
-&lt;p>In the first meetup, the main goal was to get to know each other and practice together for the first time. And the perfect opportunity to learn with others in a psychologically safe way is mob programming!&lt;/p>
-&lt;p>In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.&lt;/p>
-&lt;p>We practiced the &lt;a href="https://codingdojo.org/kata/RomanNumerals/" target="_blank" >Roman numerals&lt;/a> kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called &lt;em>fishbowl&lt;/em>, in which a small group is in the mob while the rest of the audience watches (already described in &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/" target="_blank" >this post&lt;/a> about another XPUG meetup).&lt;/p>
-&lt;p>The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅&lt;/p>
-&lt;p>This experience was interesting, showing that a group of software developers can come up with a high-quality and tested solution without fighting (too much).&lt;/p>
-&lt;h2 id="second-session-pairing-and-tdd">Second session: Pairing and TDD&lt;/h2>
-&lt;p>On the second meetup, we stepped out of our comfort zone. The goal this time was to practice pair programming and test-driven development. Why both practices together? Well, we had already practiced TDD in the latest session, but this time it was part of the pairing exercise itself.&lt;/p>
-&lt;p>How can TDD help make pair programming better? With &lt;strong>ping-pong&lt;/strong> programming! One developer writes a failing test (red phase of TDD). Then, the other developer makes the test pass (green phase) and can apply some refactoring while still passing tests. Finally, they create a new failing test and give it to the first developer. This “ping-pong” between the members keeps them concentrated on the task at hand and allows them to write code as if only one person wrote it.&lt;/p>
-&lt;p>We practiced the &lt;a href="https://www.codewars.com/kata/587e4b656c87d3e7f4000143" target="_blank" >prime factors kata&lt;/a> in multiple sessions, erasing the code at the end and pairing up with another person we didn&amp;rsquo;t know. In this kind of exercise (as in any kata), the goal is not to finish it, but to try new ways to solve it and learn. Also, by changing partners every time, we are forced to get to know a new person (duh!), and sometimes even a new programming language/framework, tools, and in general a completely new environment (e.g. different keyboard layout and operating system). It&amp;rsquo;s obvious that changing this much on every rotation doesn&amp;rsquo;t always allow us to finish the kata, but that&amp;rsquo;s expected.&lt;/p>
-&lt;p>In the end, we did two pairing sessions and a final feedback session in which we shared our views on ping-pong pairing and TDD in general. It was useful to see that other people had the same ideas and concerns as me, and also different ideas about the exercise.&lt;/p>
-&lt;h2 id="third-session-refactoring">Third session: Refactoring&lt;/h2>
-&lt;p>In this session, we tackled a difficult task: refactoring a piece of code that was intentionally made unreadable, the &lt;a href="https://github.com/emilybache/Tennis-Refactoring-Kata" target="_blank" >tennis refactoring kata&lt;/a> by Emily Bache. The repository contains the same kata implemented (with lots of code smells) in most of the mainstream programming languages. For each project, it also contains a comprehensive test suite, making it perfect for practicing refactoring without worrying about the tests.&lt;/p>
-&lt;p>As in every other Katurday session, we worked in pairs and had a set time to finish. We started by choosing a language and then identified code smells, solving them by refactoring the code. In reality, my partner and I just started saying &amp;ldquo;wow, that code sucks&amp;rdquo; for every piece of code in the project and tried to refactor it with our gut feeling. The result came out nicely, but we didn&amp;rsquo;t apply the rules to the letter. Nonetheless, it was still a learning experience, seeing how a comprehensive test suite helps to refactor without fear (which I cannot say about the projects I usually work on 😅).&lt;/p>
-&lt;p>One interesting technique we used was loop unrolling (example &lt;a href="https://www.youtube.com/watch?v=tQjUKQxFXuE" target="_blank" >here&lt;/a>) to refactor a useless and complex loop. I had already encountered it in university to improve performance (and used it in unconventional ways for FPGA synthesis), but I never thought of it as a refactoring technique 😃.&lt;/p>
-&lt;p>After making our way through the refactoring, every pair shared their experience. It was useful to see many different approaches to the problem: top-down like ours (extracting and simplifying unrelated and big parts of the code) and bottom-up (refactoring a small but common part of the code at a time).&lt;/p>
-&lt;p>Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched &lt;a href="https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&amp;amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D" target="_blank" >Gianni&lt;/a> refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.&lt;/p>
-&lt;h2 id="fourth-session-object-calisthenics">Fourth session: Object Calisthenics&lt;/h2>
-&lt;p>After learning about TDD, pairing and refactoring, it was time to put it all together, by practicing &lt;em>Object Calisthenics&lt;/em>.&lt;/p>
-&lt;p>Object Calisthenics is a set of (very strict) rules designed to &amp;ldquo;exercise&amp;rdquo; our code muscle. In particular, the rules are the following:&lt;/p>
-&lt;ol>
-&lt;li>Only one level of indentation per method&lt;/li>
-&lt;li>Don&amp;rsquo;t use the ELSE keyword&lt;/li>
-&lt;li>Wrap all primitives and strings (wrap primitive types in classes)&lt;/li>
-&lt;li>First-class collections (wrap collections in classes)&lt;/li>
-&lt;li>One dot per line&lt;/li>
-&lt;li>Don&amp;rsquo;t abbreviate&lt;/li>
-&lt;li>Keep all entities small&lt;/li>
-&lt;li>No classes with more than two instance variables&lt;/li>
-&lt;li>No getters/setters/properties&lt;/li>
-&lt;li>All classes must have state&lt;/li>
-&lt;/ol>
-&lt;p>These rules help to effectively design code in a clean way, the same way real calisthenics helps to improve our strength without strange techniques and machines.&lt;/p>
-&lt;p>To practice Object Calisthenics we performed the &lt;a href="https://codingdojo.org/kata/Bowling/" target="_blank" >bowling kata&lt;/a>, in which you have to compute the score of a bowling game given the throws results.
-The kata seems simple at a first view, but has a nasty responsibility separation issue, as the bonus points of a frame depends on the next throws!&lt;/p>
-&lt;p>The rules were pretty frustrating when I started applying them! For example, not being able to nest the code too much meant I had to continually extract methods.
-Another challenge was to always give state to objects (so avoiding value objects).&lt;/p>
-&lt;p>Fortunately we started applying TDD from the beginning, so it was pretty easy to refactor the code while we added test cases. A challenge I always face when doing TDD is the level at which to begin: from the outside (big comprehensive tests that stay red for some time) or from the inside (smaller components and tests which are integrated later). I tend to create big tests but I also try to solve them immediately, which brings to not follow the &amp;ldquo;little steps&amp;rdquo; rule of TDD 😅.&lt;/p>
-&lt;p>In general, this katurday was really interesting, showing some &amp;ldquo;strict&amp;rdquo; rules that we should instead always apply to our code to make it clean and properly designed.&lt;/p>
-&lt;h2 id="thats-all">That&amp;rsquo;s all!&lt;/h2>
-&lt;p>Keep checking this post for updates on the next sessions I&amp;rsquo;ll attend 🤩&lt;/p></description></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>&lt;p>Hi 👋 welcome to a new post!&lt;/p>
-&lt;p>Today I’m going to post a little summary of my experience at the &lt;a href="https://www.meetup.com/xpugbg/events/290690004/" target="_blank" >XPUGBg meetup&lt;/a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.&lt;/p>
-&lt;h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?&lt;/h2>
-&lt;p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?&lt;/p>
-&lt;p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.&lt;/p>
-&lt;p>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" alt="XP feedback cycles" />
-&lt;/figure>
-&lt;/div>&lt;/p>
-&lt;p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?&lt;/p>
-&lt;p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with higher quality.&lt;/p>
-&lt;h2 id="what-is-trunk-based-development">What is trunk-based development?&lt;/h2>
-&lt;p>Trunk-based development is a practice in which developers collaborate on the codebase in a single branch (the main/master/trunk). Instead of opening a feature branch and then do a pull/merge request to master (with the corresponding code review I hope), the developer commits directly to the main branch.&lt;/p>
-&lt;p>Trunk-based development goes hand in hand with &lt;a href="https://martinfowler.com/articles/continuousIntegration.html" target="_blank" >continuous integration&lt;/a> and &lt;a href="https://martinfowler.com/bliki/ContinuousDelivery.html" target="_blank" >continuous delivery&lt;/a>. In fact, by committing to the main branch and keeping it always &lt;strong>releasable&lt;/strong>, it’s possible to deliver value to the business continuously.&lt;/p>
-&lt;p>There are variations to trunk-based development. A notable one is &lt;strong>scaled&lt;/strong> trunk-based, used when the team size increases. In scaled trunk-based development, the developers work with &lt;strong>short-lived&lt;/strong> (less than 1 day) feature branches. The same practices (pair programming, TDD and XP in general) are still valid, together with the constraint to keep the main branch always releasable and deployable at any time.&lt;/p>
-&lt;h2 id="advantages-of-trunk-based-development">Advantages of trunk-based development&lt;/h2>
-&lt;p>In the talk, Alessio highlighted the &lt;strong>impact&lt;/strong> that trunk-based development has on the codebase and on the team/business itself.&lt;/p>
-&lt;p>The first “advantage” is that it allows to have &lt;strong>frequent integration&lt;/strong> (better yet, &lt;strong>continuous&lt;/strong>) of all the changes in the codebase. In this way, conflicts that arise during development are immediately identified (and corrected), without waiting until the code is reviewed in a pull request.&lt;/p>
-&lt;p>By making all changes on the same branch (main), there is a unique source of truth. As every change is immediately integrated and tested, the codebase is always updated, and there’s no conflict over which version of the code is the correct one (the answer is: the one on the main branch!).&lt;/p>
-&lt;p>Given that the team is working on the same branch, everyone can see all the current work in progress. In addition, by not using long feature branches, and being forced to integrate with main frequently, it’s more difficult to keep multiple features in progress.&lt;/p>
-&lt;p>The possibility to make small, deliverable changes forces us to &lt;strong>refactor&lt;/strong> into small steps, and not create too many changes and conflicts. Also, by doing this with a continuous review (e.g. by pairing), we have the freedom to refactor into small steps with confidence.&lt;/p>
-&lt;p>Finally, trunk-based increase the &lt;strong>collaboration&lt;/strong> between team members. If what I’m working on at the moment conflicts with another developer, I’m more eager to work together to merge it, and this is done (again) immediately, and not at merge time.&lt;/p>
-&lt;h2 id="a-change-of-mentality">A change of mentality&lt;/h2>
-&lt;p>To work with trunk-based development properly, we need to embrace a (sometimes radical) change of mentality. The change reflects both in social and technical practices.&lt;/p>
-&lt;p>From the social side, trunk-based development requires:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Teamwork&lt;/strong>, as everyone is working on the same codebase at the same time&lt;/li>
-&lt;li>Constructive and frequent &lt;strong>feedback&lt;/strong>, and being open to it&lt;/li>
-&lt;li>&lt;strong>Trust&lt;/strong>, in the team members and in the code itself. This can be helped with XP practices such as TDD and pairing&lt;/li>
-&lt;/ul>
-&lt;p>From a technical standpoint, the most important practices are:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Small&lt;/strong>, incremental changes (in contrast to big, breaking changes and long parallel branches)&lt;/li>
-&lt;li>Attention to &lt;strong>quality&lt;/strong> (because the main branch must always be releasable, and every commit we push could be directly deployed in production!)&lt;/li>
-&lt;li>Separation between &lt;strong>build, deploy and release&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>A strong rule is that the code should always be deployable! This is the basis for frequent releases, which allows getting faster feedback from the business and the customers.&lt;/p>
-&lt;h4 id="how-to-deploy-while-the-work-is-in-progress">How to deploy while the work is in progress?&lt;/h4>
-&lt;p>While talking about technical practices and their impact, Alessio explained how keeping build, release and deploy separate is fundamental to a collaborative codebase. But how do we keep the code “deployable” even while we are currently implementing new features?&lt;/p>
-&lt;p>The first way is to do &lt;strong>dark launching:&lt;/strong> release the new feature, but without exposing the new/changed API (or expose it only to a subset of users, e.g. developers and internal users).&lt;/p>
-&lt;p>A second way is to use &lt;strong>branch by abstraction&lt;/strong>: put the current api under an abstraction layer, then start to implement the new functionality in another compatible class/module. While implementing the new feature, migrate the old feature clients to the new (compatible, remember!) one, and finally remove the old module. All of this should keep the system working even when the feature is not finished yet.&lt;/p>
-&lt;p>The last way to not release in-progress work is to put the new feature behind feature toggles/flags. The toggles can be static or dynamic, but they should be short-lived (if used while developing and not for mere configuration) and removed when the feature has been released and is stable. Feature flags are also a way to decouple deploy and release of the features. In addition, they make WIP evident (as any feature toggle of that type represents a work-in-progress feature).&lt;/p>
-&lt;h2 id="considerationsdiscussions">Considerations/Discussions&lt;/h2>
-&lt;p>The characteristic I like the most in meetups is the discussion with all the participants. Alessio encouraged the audience to ask questions and express their opinions, and here are some considerations of what came out of the discussion after the talk.&lt;/p>
-&lt;p>The first thing to take care of before and while doing trunk-based development is that of &lt;strong>ownership&lt;/strong>: who is the owner of the code? Trunk-based development works best with &lt;strong>cohesive&lt;/strong> teams working on a &lt;strong>product&lt;/strong>, as the code is owned by the entire team (which makes the decisions). If the code is not owned by the developer, as in some consultancy projects or in open source, then it might be better to work with other branching models (such as feature-based, git flow or github flow).&lt;/p>
-&lt;p>Another consideration is that of software &lt;strong>versioning&lt;/strong>. Trunk-based development expects a continuous integration of the code, and this means that there is only one version of the code (the current one). If the product needs multiple versions, and separate maintenance of the versions (e.g. because some customers don’t want to pay for the newer version, but still expect bugfixes on the version they own), then there should be release branches in addition to the main branch.&lt;/p>
-&lt;p>During the discussion, someone complained that with trunk based development changes are not evident. I agree in part with this, as using a separate branch would show the entire diff, while splitting the change in multiple commits would not show the entire feature at once. However, the point of trunk-based development is to make small changes, so the features should be separated in small stories, each with its own commit (or short lived branch). This improves the reliability of the team, allowing it to ship faster and estimate better.&lt;/p>
-&lt;p>A final consideration is about &lt;strong>conflicts&lt;/strong>. While in feature branching conflicts are identified only when merging, in trunk-based all the conflicts arise during development. To keep the build releasable and stable the conflict needs to be fixed immediately, and this might seem to slow down the development of new features.&lt;/p>
-&lt;p>To avoid integration headaches, it’s important to communicate with the team and avoid conflicts in the first place. Also, it&amp;rsquo;s better to catch conflicts and fix them immediately than to wait for a big bang merge. In my opinion, if there is a lot of churn/conflicts in some modules, it means that the architecture should be improved (by splitting the functionality into smaller modules with clear responsibilities).&lt;/p>
-&lt;h2 id="conclusions">Conclusions&lt;/h2>
-&lt;p>The conclusion of the talk was “&lt;em>embrace change&lt;/em>”, which is the fundamental principle of eXtreme Programming. I agree with this quote, as change is inevitable in software development (and in life in general).&lt;/p>
-&lt;p>I never had a collaborative codebase in the way described by Alessio (with trunk based, tdd, pairing and all the other practices), but I think that every team should strive to follow the same principles and practices.&lt;/p>
-&lt;p>That’s it for today! I hope you liked this short summary. If you want to go deeper into the topic, I left down here some resources (will be updated while I discover more of them). Also, reach out &lt;a href="https://www.linkedin.com/in/alessiocoser" target="_blank" >Alessio&lt;/a> and the &lt;a href="https://meetu.ps/c/4s0GZ/zWszn/a" target="_blank" >XPUGBG&lt;/a>!&lt;/p>
-&lt;h2 id="other-resources">Other Resources&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://trunkbaseddevelopment.com/" target="_blank" >Trunk-based development&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://medium.com/@mattia.battiston/why-i-love-trunk-based-development-641fcf0b94a0" target="_blank" >Why I love trunk-based development&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://martinfowler.com/articles/feature-toggles.html" target="_blank" >Feature Toggles&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
-&lt;p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (&lt;a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877" target="_blank" >here&lt;/a>) on January 24th.&lt;/p>
-&lt;p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.&lt;/p>
-&lt;p>You may already have heard of “Outside-In Design” on this blog &lt;a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/" target="_blank" >before&lt;/a>. Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.&lt;/p>
-&lt;p>&lt;em>Disclaimer: I will share some notes/brief recap of the talk given by Sandro. It’s by no means a complete transcription and may contain my own interpretation of what was said. Go watch his past talks (e.g. &lt;a href="https://www.youtube.com/watch?v=VSkDu5YgAh4" target="_blank" >here&lt;/a>) for the real deal!&lt;/em>&lt;/p>
-&lt;h3 id="developer-biases-and-the-insideoutside-perspective">Developer Biases and The Inside/Outside perspective&lt;/h3>
-&lt;p>The talk started with a list of biases (most of the time we call them “practices”) that affect software developers. They include:&lt;/p>
-&lt;ul>
-&lt;li>Structural biases (procedural, oop, functional, services, event-based)&lt;/li>
-&lt;li>Design biases (all architectural design patterns such as SOA, Actor model, Hexagonal arch, Microservices and so on..)&lt;/li>
-&lt;li>Design Direction biases (starting from the persistence, domain, UI, and lastly &lt;strong>incremental outside-in&lt;/strong>, the topic of this talk)&lt;/li>
-&lt;/ul>
-&lt;p>Most of the time we tend to work led by our biases: a backend developer will start working on the domain model and then implement the details (infrastructure, application); frontend will start working from the design of the UI down to the actual implementation. However, in this way, we end up with a discrepancy between the systems, and this leads to ugly adapter layers to adapt the API exposed by the backend and the data the frontend needs to work.&lt;/p>
-&lt;p>This behaviour extends also at a higher level, that of business and product design. Technology and product work in parallel tracks, and then need to somewhat meet at the intersection: the top of the backlog. At that moment, it’s more difficult to align the product decisions needed to create value for the company and the system design.&lt;/p>
-&lt;p>Software design should &lt;strong>serve&lt;/strong> the business, and its value should be measured by how much it impacts the business value. Thus, we need to align the two perspectives, inside (technology) and outside (business).&lt;/p>
-&lt;p>To solve this issue, Sandro proposes a different approach, in which we start from the product and then define lower and lower level abstractions of the system, contrary to the standard inside-out design approach.&lt;/p>
-&lt;h3 id="outside-in-design">Outside-In Design&lt;/h3>
-&lt;p>The first thing to do when designing a new system or a set of features for the business is to create a birds-eye view (&lt;strong>product box&lt;/strong>) in which we put the main features that bring value, and the main functional areas involved.&lt;/p>
-&lt;p>Then, we proceed to do &lt;strong>Impact Mapping&lt;/strong>, in which we identify the high-level bounded contexts and architecture. Starting from the main goals of the system, we identify its actors and the different impacts they have, on the deliverables (features). Sandro showed an example using mind maps, refining the different levels (actor → impact → feature) on every iteration.&lt;/p>
-&lt;p>After impact mapping, with &lt;strong>Functional Mapping,&lt;/strong> we identify the business flows, the external (and internal) users and systems and connect them, in a way similar to sequence diagrams but using bounded contexts instead of classes. It allows to decide which systems are external and which are internal, and which should become public APIs or internal services. Sandro gave some examples, one in which only one service (the catalogue) was public-facing, and another (checkout) in which all services were public and called by the frontend.&lt;/p>
-&lt;p>&lt;strong>User Interaction via Mockups&lt;/strong> is the step in which we see some UI (finally!!). Sandro does the mockups with Balsamiq, as it allows the creation of dynamic wireframes. It’s better to do them with UX experts, in order to have a basic wireframe both for the UX/UI team and the development team (by designing the APIs and the data needed by the frontend).&lt;/p>
-&lt;p>Finally, we get into the actual software design and implementation with the method we prefer (Inside-Out or Outside-In TDD for example 😏).&lt;/p>
-&lt;p>All these steps might seem long, but Sandro explained that they are actually short (e.g. product box can be done in an afternoon!) and need to be performed at different intervals (6/12 months for the highest level, then 3/4 months, monthly, 1/2 weeks and finally daily for the actual coding practices).&lt;/p>
-&lt;h3 id="thats-it">That’s it!&lt;/h3>
-&lt;p>As you can see, I just wrote a quick summary of Sandro’s talk. The meetup also included a panel with Sandro and three people from eDreams ODIGEO (the CTO Carsten Bernhard, Milan’s Hub Director Luca Pivotto and Agile Director Brett Ansley), in which they continued the argument brought by the talk and expanded with other content (e.g. how to tackle and measure technical debt, what is value and much more). I didn’t include it in this post as I didn’t take notes 😅.&lt;/p>
-&lt;p>Overall, the meetup was really interesting. The outside-in perspective is (as in the last meetup I attended) a great way to meet the tech side of the business (working on the nitty-gritty details and implementation) and the product side (concerned with value, customers and overall functionality of the system).&lt;/p>
-&lt;p>I think that this could be really useful in both big companies (to iterate on new features) and in startups (to design the first system in an extensible and “growable” way). During the talk, Sandro mentioned a book that is on my “to read” bookshelf, “&lt;a href="https://teamtopologies.com/book" target="_blank" >Team Topologies&lt;/a>”. Employing an outside-in perspective allows in the end to define these topologies in advance, allowing the system to grow organically and without breaking everything on each iteration.&lt;/p>
-&lt;p>That’s all for today’s post! Thank you for reading (if anyone is reading this 🤔) and see you next time!&lt;/p>
-&lt;h3 id="additional-resources">Additional Resources&lt;/h3>
-&lt;p>Some other places to find Sandro’s talk:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.codurance.com/publications/2017/10/23/outside-in-design" target="_blank" >Blog Post&lt;/a>&lt;/li>
-&lt;li>2019 &lt;a href="https://www.youtube.com/watch?v=bvie9vl7X6A" target="_blank" >Talk&lt;/a>&lt;/li>
-&lt;li>2018 &lt;a href="https://www.youtube.com/watch?v=rbSDGr-_UwY" target="_blank" >Talk&lt;/a> and &lt;a href="https://www.slideshare.net/sandromancuso/a-case-for-outsidein-design" target="_blank" >Slides&lt;/a> (don’t know if they are the same exact version)&lt;/li>
-&lt;/ul></description></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>&lt;p>Hi! 👋&lt;/p>
-&lt;p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The &lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" >XPUGBg&lt;/a> is an association promoting and organizing events related to extreme programming in the Bergamo region.&lt;/p>
-&lt;p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from &lt;a href="https://alcor.academy/" target="_blank" >Alcor Academy&lt;/a>) performed a live mob programming session with the audience, to solve the &lt;a href="https://github.com/makomweb/mars-rover" target="_blank" >mars rover kata&lt;/a>. We learned how to do mob programming, and how the Outside-In TDD approach works.&lt;/p>
-&lt;h2 id="what-is-extreme-programming">What is Extreme Programming?&lt;/h2>
-&lt;p>Extreme programming (XP) is a set of values, principles and practices introduced by Kent Beck at the end of the 1990s. Its goals are to improve the software quality and the team&amp;rsquo;s responsiveness to requirements changing during development. I might write my opinions on this methodology in a new blog post, but for now, I’ll redirect you to the &lt;a href="https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658" target="_blank" >book&lt;/a>, which definitely explains it better than I do 😉.&lt;/p>
-&lt;p>I discovered extreme programming later this year while attending the XPUG meetups. I also read Kent Beck’s book and I’m actively trying to introduce some practices (like TDD and pair programming) into my current team, but I’m still far from a full XP practitioner. Still, the argument is really interesting.&lt;/p>
-&lt;p>How does it apply to this meetup? We followed a practice called &lt;strong>mob programming&lt;/strong>, in which there are:&lt;/p>
-&lt;ul>
-&lt;li>a &lt;strong>driver&lt;/strong> (Alessandro), the developer actually writing code on the editor&lt;/li>
-&lt;li>the &lt;strong>navigator&lt;/strong>, which instructs the driver on what to write (and sometimes also how)&lt;/li>
-&lt;li>the &lt;strong>mob&lt;/strong>, other members of the team which can discuss with the navigator to improve the code, find possible issues and so on&lt;/li>
-&lt;/ul>
-&lt;p>during the meetup, Marco and Alessandro proposed an extended approach (called &lt;strong>fish bowl&lt;/strong>), in which the mob is composed of 5 members of the audience, which rotate after some time. So, in addition to the standard mob, we have:&lt;/p>
-&lt;ul>
-&lt;li>the &lt;strong>facilitator&lt;/strong> (Marco) guiding the mob and the navigator and deciding when to rotate roles and members&lt;/li>
-&lt;li>the &lt;strong>audience&lt;/strong>, watching it all. Anyone can then enter the fish bowl when he thinks he can give something to the discussion&lt;/li>
-&lt;/ul>
-&lt;h2 id="what-is-a-kata">What is a Kata?&lt;/h2>
-&lt;p>“Kata” is a term borrowed from martial arts. It is “a detailed choreographed
- pattern of movements made to be practised alone. It can also be reviewed within groups and in unison when training” (&lt;a href="https://en.wikipedia.org/wiki/Kata" target="_blank" >Wikipedia&lt;/a>).
-Developers have taken this term and applied it to their set of movements, which are coding, testing and designing. A kata is a short problem/exercise meant to be practised a lot of times. The same kata can be practised with different languages, approaches and methodologies, giving each time a new perspective.&lt;/p>
-&lt;p>In our case, in this meetup, we practised the mars rover kata, and the twists were to practice it with &lt;strong>mob programming&lt;/strong> and &lt;strong>outside-in TDD&lt;/strong>. Double trouble!&lt;/p>
-&lt;p>In the mars rover kata, you have to implement a rover moving on the surface of mars. You are given the initial coordinates of the rover (x, y) and the initial orientation (N, S, E, W). Then, you are given the commands:&lt;/p>
-&lt;ul>
-&lt;li>L → rotate left by 90°&lt;/li>
-&lt;li>R → rotate right by 90°&lt;/li>
-&lt;li>M → move forward one grid point, maintaining the same position&lt;/li>
-&lt;/ul>
-&lt;p>Your program should output the position of the rover after applying the commands (X, Y coordinates and direction).&lt;/p>
-&lt;p>During the meetup (because of lack of time and a lot of discussions) we were able to implement only the simplest version, with the rotate left and move forward commands, and without the I/O translation code (from a text file to actual commands and positions). This doesn&amp;rsquo;t mean that the kata was a failure. On the contrary, it was very useful to see different opinions and approaches to the problem at hand.&lt;/p>
-&lt;h2 id="outside-in-approach">Outside-In approach&lt;/h2>
-&lt;p>&lt;strong>Outside-in&lt;/strong> is an approach to develop software in tandem with TDD. It works by starting from the outer layer (”outside”) and, guided by tests, creating the underlying layers (”in”) of the software.&lt;/p>
-&lt;p>In practice, the mob started (guided by marco) with the acceptance tests, the outermost layer of testing. These tests should be in a language understandable by the business, as they indicate whether the problem is solved from the business perspective. The first consideration is that the acceptance tests used the actual input and output strings to test the behaviour of the system (see &lt;a href="https://github.com/makomweb/mars-rover" target="_blank" >here&lt;/a> for the example). This meant that the code needed a sort of “translator” to translate the inputs to domain objects, and the domain objects to outputs.&lt;/p>
-&lt;p>The outside-in approach turned out to be difficult to assimilate because it turned my perception of the design upside-down. Starting from the acceptance tests, it was difficult to turn the tests green, and we had to dive deeper and create a lot of code (first the rover controller, then the rover, then the position with coordinates and direction, and so on) before passing our first test.&lt;/p>
-&lt;p>In addition, we had to use mocks immediately to avoid writing the translator. Marco presented this to us as a challenge: most of the business value and complexity actually resides in the rover code, not the I/O, so it was a good way to concentrate on the core features of the kata.&lt;/p>
-&lt;p>In the end, we were able to turn our first test green, and it was already time to head to the pub, so… the rest was left as an exercise for the viewers 😇.&lt;/p>
-&lt;h2 id="conclusions">Conclusions&lt;/h2>
-&lt;p>The meetup was really interesting, and it helped me learn new concepts. Even if I didn’t participate in the mob but just watched, I exercised my “design muscles” during the session and my brain was always comparing alternatives and thinking about the code.&lt;/p>
-&lt;p>Marco and Alessandro are great teachers: Marco was a great facilitator and guided the mob to the right solution, while Alessandro was a thoughtful driver with opinions, also helping the mob to cooperate.&lt;/p>
-&lt;p>The outside-in approach was new for most of the audience, and even experienced developers discussed how to design the solution and how to proceed. They created a lot of classes seemingly “doing nothing” at the moment, but later it all made sense. This is quite different from standard TDD, in which you just write the code needed to pass the tests and then refactor. Outside-In helps to reduce the refactoring stage, which always leads to rewriting big chunks of the code.&lt;/p>
-&lt;p>Finally, I never tried practising a kata. I think it is a really useful technique to learn new concepts with a known problem, and I’ll use it more in the future.&lt;/p>
-&lt;p>That&amp;rsquo;s all for now 🎉. Thank you for reading and see you next time!.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Sun, 14 May 2023 08:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
+The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.
+What is a kata? Typical developer performing a kata
+&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (Wikipedia).</description><content><![CDATA[
+        <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
+<p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
+<h2 id="what-is-a-kata">What is a kata?</h2>
+<p><div class="image">
+  <figure>
+    <img class="img-fluid image" src="kata_dwight.webp" alt="Typical developer performing a kata" />
+    
+  </figure>
+</div></p>
+<p>Typical developer performing a kata</p>
+<p>&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (<a href="https://en.wikipedia.org/wiki/Kata"  target="_blank" >Wikipedia</a>).</p>
+<p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.</p>
+<p>In Katurday sessions, the focus is on practicing one or more katas with other people, usually by doing pair or mob programming. By practicing in a group, we step out of our comfort zone (programmers aren&rsquo;t the best at socializing) and receive immediate feedback from more experienced developers, while also having fun together!</p>
+<h1 id="sessions-journal">Sessions journal</h1>
+<p>Here I&rsquo;ll keep an updated list of the session in which I take part, so be sure to check this page every month for a new entry (and even if I&rsquo;m the only one reading this, I&rsquo;ll keep writing it as a journal 😛).</p>
+<p>Enjoy!</p>
+<h2 id="first-contact-mob-programming">First contact: Mob programming</h2>
+<p>In the first meetup, the main goal was to get to know each other and practice together for the first time. And the perfect opportunity to learn with others in a psychologically safe way is mob programming!</p>
+<p>In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.</p>
+<p>We practiced the <a href="https://codingdojo.org/kata/RomanNumerals/"  target="_blank" >Roman numerals</a> kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called <em>fishbowl</em>, in which a small group is in the mob while the rest of the audience watches (already described in <a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/"  target="_blank" >this post</a> about another XPUG meetup).</p>
+<p>The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅</p>
+<p>This experience was interesting, showing that a group of software developers can come up with a high-quality and tested solution without fighting (too much).</p>
+<h2 id="second-session-pairing-and-tdd">Second session: Pairing and TDD</h2>
+<p>On the second meetup, we stepped out of our comfort zone. The goal this time was to practice pair programming and test-driven development. Why both practices together? Well, we had already practiced TDD in the latest session, but this time it was part of the pairing exercise itself.</p>
+<p>How can TDD help make pair programming better? With <strong>ping-pong</strong> programming! One developer writes a failing test (red phase of TDD). Then, the other developer makes the test pass (green phase) and can apply some refactoring while still passing tests. Finally, they create a new failing test and give it to the first developer. This “ping-pong” between the members keeps them concentrated on the task at hand and allows them to write code as if only one person wrote it.</p>
+<p>We practiced the <a href="https://www.codewars.com/kata/587e4b656c87d3e7f4000143"  target="_blank" >prime factors kata</a> in multiple sessions, erasing the code at the end and pairing up with another person we didn&rsquo;t know. In this kind of exercise (as in any kata), the goal is not to finish it, but to try new ways to solve it and learn. Also, by changing partners every time, we are forced to get to know a new person (duh!), and sometimes even a new programming language/framework, tools, and in general a completely new environment (e.g. different keyboard layout and operating system). It&rsquo;s obvious that changing this much on every rotation doesn&rsquo;t always allow us to finish the kata, but that&rsquo;s expected.</p>
+<p>In the end, we did two pairing sessions and a final feedback session in which we shared our views on ping-pong pairing and TDD in general. It was useful to see that other people had the same ideas and concerns as me, and also different ideas about the exercise.</p>
+<h2 id="third-session-refactoring">Third session: Refactoring</h2>
+<p>In this session, we tackled a difficult task: refactoring a piece of code that was intentionally made unreadable, the <a href="https://github.com/emilybache/Tennis-Refactoring-Kata"  target="_blank" >tennis refactoring kata</a> by Emily Bache. The repository contains the same kata implemented (with lots of code smells) in most of the mainstream programming languages. For each project, it also contains a comprehensive test suite, making it perfect for practicing refactoring without worrying about the tests.</p>
+<p>As in every other Katurday session, we worked in pairs and had a set time to finish. We started by choosing a language and then identified code smells, solving them by refactoring the code. In reality, my partner and I just started saying &ldquo;wow, that code sucks&rdquo; for every piece of code in the project and tried to refactor it with our gut feeling. The result came out nicely, but we didn&rsquo;t apply the rules to the letter. Nonetheless, it was still a learning experience, seeing how a comprehensive test suite helps to refactor without fear (which I cannot say about the projects I usually work on 😅).</p>
+<p>One interesting technique we used was loop unrolling (example <a href="https://www.youtube.com/watch?v=tQjUKQxFXuE"  target="_blank" >here</a>) to refactor a useless and complex loop. I had already encountered it in university to improve performance (and used it in unconventional ways for FPGA synthesis), but I never thought of it as a refactoring technique 😃.</p>
+<p>After making our way through the refactoring, every pair shared their experience. It was useful to see many different approaches to the problem: top-down like ours (extracting and simplifying unrelated and big parts of the code) and bottom-up (refactoring a small but common part of the code at a time).</p>
+<p>Finally, given the small amount of time remaining, we decided not to proceed with another pair/mob session, but instead watched <a href="https://www.linkedin.com/in/gianni-bombelli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAfrrkABbUvjAiZv3U8jyjDXz1fq-gu6jBA&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwlZNIMK2RViUFptWfbZVKA%3D%3D"  target="_blank" >Gianni</a> refactor a fizzbuzz exercise in Kotlin to make it more generic and expandable 🤩 a great live refactoring lesson.</p>
+<h2 id="fourth-session-object-calisthenics">Fourth session: Object Calisthenics</h2>
+<p>After learning about TDD, pairing and refactoring, it was time to put it all together, by practicing <em>Object Calisthenics</em>.</p>
+<p>Object Calisthenics is a set of (very strict) rules designed to &ldquo;exercise&rdquo; our code muscle. In particular, the rules are the following:</p>
+<ol>
+<li>Only one level of indentation per method</li>
+<li>Don&rsquo;t use the ELSE keyword</li>
+<li>Wrap all primitives and strings (wrap primitive types in classes)</li>
+<li>First-class collections (wrap collections in classes)</li>
+<li>One dot per line</li>
+<li>Don&rsquo;t abbreviate</li>
+<li>Keep all entities small</li>
+<li>No classes with more than two instance variables</li>
+<li>No getters/setters/properties</li>
+<li>All classes must have state</li>
+</ol>
+<p>These rules help to effectively design code in a clean way, the same way real calisthenics helps to improve our strength without strange techniques and machines.</p>
+<p>To practice Object Calisthenics we performed the <a href="https://codingdojo.org/kata/Bowling/"  target="_blank" >bowling kata</a>, in which you have to compute the score of a bowling game given the throws results.
+The kata seems simple at a first view, but has a nasty responsibility separation issue, as the bonus points of a frame depends on the next throws!</p>
+<p>The rules were pretty frustrating when I started applying them! For example, not being able to nest the code too much meant I had to continually extract methods.
+Another challenge was to always give state  to objects (so avoiding value objects).</p>
+<p>Fortunately we started applying TDD from the beginning, so it was pretty easy to refactor the code while we added test cases. A challenge I always face when doing TDD is the level at which to begin: from the outside (big comprehensive tests that stay red for some time) or from the inside (smaller components and tests which are integrated later). I tend to create big tests but I also try to solve them immediately, which brings to not follow the &ldquo;little steps&rdquo; rule of TDD 😅.</p>
+<p>In general, this katurday was really interesting, showing some &ldquo;strict&rdquo; rules that we should instead always apply to our code to make it clean and properly designed.</p>
+<h2 id="thats-all">That&rsquo;s all!</h2>
+<p>Keep checking this post for updates on the next sessions I&rsquo;ll attend 🤩</p>
+
+      ]]></content:encoded></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>Hi 👋 welcome to a new post!
+Today I’m going to post a little summary of my experience at the XPUGBg meetup I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.
+What is a collaborative codebase? Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</description><content><![CDATA[
+        <p>Hi 👋 welcome to a new post!</p>
+<p>Today I’m going to post a little summary of my experience at the <a href="https://www.meetup.com/xpugbg/events/290690004/"  target="_blank" >XPUGBg meetup</a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.</p>
+<h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2>
+<p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</p>
+<p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.</p>
+<p><div class="image">
+  <figure>
+    <img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" alt="XP feedback cycles" />
+    
+  </figure>
+</div></p>
+<p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?</p>
+<p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with  higher quality.</p>
+<h2 id="what-is-trunk-based-development">What is trunk-based development?</h2>
+<p>Trunk-based development is a practice in which developers collaborate on the codebase in a single branch (the main/master/trunk). Instead of opening a feature branch and then do a pull/merge request to master (with the corresponding code review I hope), the developer commits directly to the main branch.</p>
+<p>Trunk-based development goes hand in hand with <a href="https://martinfowler.com/articles/continuousIntegration.html"  target="_blank" >continuous integration</a> and <a href="https://martinfowler.com/bliki/ContinuousDelivery.html"  target="_blank" >continuous delivery</a>. In fact, by committing to the main branch and keeping it always <strong>releasable</strong>, it’s possible to deliver value to the business continuously.</p>
+<p>There are variations to trunk-based development. A notable one is <strong>scaled</strong> trunk-based, used when the team size increases. In scaled trunk-based development, the developers work with <strong>short-lived</strong> (less than 1 day) feature branches. The same practices (pair programming, TDD and XP in general) are still valid, together with the constraint to keep the main branch always releasable and deployable at any time.</p>
+<h2 id="advantages-of-trunk-based-development">Advantages of trunk-based development</h2>
+<p>In the talk, Alessio highlighted the <strong>impact</strong> that trunk-based development has on the codebase and on the team/business itself.</p>
+<p>The first “advantage” is that it allows to have <strong>frequent integration</strong> (better yet, <strong>continuous</strong>) of all the changes in the codebase. In this way, conflicts that arise during development are immediately identified (and corrected), without waiting until the code is reviewed in a pull request.</p>
+<p>By making all changes on the same branch (main), there is a unique source of truth. As every change is immediately integrated and tested, the codebase is always updated, and there’s no conflict over which version of the code is the correct one (the answer is: the one on the main branch!).</p>
+<p>Given that the team is working on the same branch, everyone can see all the current work in progress. In addition, by not using long feature branches, and being forced to integrate with main frequently, it’s more difficult to keep multiple features in progress.</p>
+<p>The possibility to make small, deliverable changes forces us to <strong>refactor</strong> into small steps, and not create too many changes and conflicts. Also, by doing this with a continuous review (e.g. by pairing), we have the freedom to refactor into small steps with confidence.</p>
+<p>Finally, trunk-based increase the <strong>collaboration</strong> between team members. If what I’m working on at the moment conflicts with another developer, I’m more eager to work together to merge it, and this is done (again) immediately, and not at merge time.</p>
+<h2 id="a-change-of-mentality">A change of mentality</h2>
+<p>To work with trunk-based development properly, we need to embrace a (sometimes radical) change of mentality. The change reflects both in social and technical practices.</p>
+<p>From the social side, trunk-based development requires:</p>
+<ul>
+<li><strong>Teamwork</strong>, as everyone is working on the same codebase at the same time</li>
+<li>Constructive and frequent <strong>feedback</strong>, and being open to it</li>
+<li><strong>Trust</strong>, in the team members and in the code itself. This can be helped with XP practices such as TDD and pairing</li>
+</ul>
+<p>From a technical standpoint, the most important practices are:</p>
+<ul>
+<li><strong>Small</strong>, incremental changes (in contrast to big, breaking changes and long parallel branches)</li>
+<li>Attention to <strong>quality</strong> (because the main branch must always be releasable, and every commit we push could be directly deployed in production!)</li>
+<li>Separation between <strong>build, deploy and release</strong></li>
+</ul>
+<p>A strong rule is that the code should always be deployable! This is the basis for frequent releases, which allows getting faster feedback from the business and the customers.</p>
+<h4 id="how-to-deploy-while-the-work-is-in-progress">How to deploy while the work is in progress?</h4>
+<p>While talking about technical practices and their impact, Alessio explained how keeping build, release and deploy separate is fundamental to a collaborative codebase. But how do we keep the code “deployable” even while we are currently implementing new features?</p>
+<p>The first way is to do <strong>dark launching:</strong> release the new feature, but without exposing the new/changed API (or expose it only to a subset of users, e.g. developers and internal users).</p>
+<p>A second way is to use <strong>branch by abstraction</strong>: put the current api under an abstraction layer, then start to implement the new functionality in another compatible class/module. While implementing the new feature, migrate the old feature clients to the new (compatible, remember!) one, and finally remove the old module. All of this should keep the system working even when the feature is not finished yet.</p>
+<p>The last way to not release in-progress work is to put the new feature behind feature toggles/flags. The toggles can be static or dynamic, but they should be short-lived (if used while developing and not for mere configuration) and removed when the feature has been released and is stable. Feature flags are also a way to decouple deploy and release of the features. In addition, they make WIP evident (as any feature toggle of that type represents a work-in-progress feature).</p>
+<h2 id="considerationsdiscussions">Considerations/Discussions</h2>
+<p>The characteristic I like the most in meetups is the discussion with all the participants. Alessio encouraged the audience to ask questions and express their opinions, and here are some considerations of what came out of the discussion after the talk.</p>
+<p>The first thing to take care of before and while doing trunk-based development is that of <strong>ownership</strong>: who is the owner of the code? Trunk-based development works best with <strong>cohesive</strong> teams working on a <strong>product</strong>, as the code is owned by the entire team (which makes the decisions). If the code is not owned by the developer, as in some consultancy projects or in open source, then it might be better to work with other branching models (such as feature-based, git flow or github flow).</p>
+<p>Another consideration is that of software <strong>versioning</strong>. Trunk-based development expects a continuous integration of the code, and this means that there is only one version of the code (the current one). If the product needs multiple versions, and separate maintenance of the versions (e.g. because some customers don’t want to pay for the newer version, but still expect bugfixes on the version they own), then there should be release branches in addition to the main branch.</p>
+<p>During the discussion, someone complained that with trunk based development changes are not evident. I agree in part with this, as using a separate branch would show the entire diff, while splitting the change in multiple commits would not show the entire feature at once. However, the point of trunk-based development is to make small changes, so the features should be separated in small stories, each with its own commit (or short lived branch). This improves the reliability of the team, allowing it to ship faster and estimate better.</p>
+<p>A final consideration is about <strong>conflicts</strong>. While in feature branching conflicts are identified only when merging, in trunk-based all the conflicts arise during development. To keep the build releasable and stable the conflict needs to be fixed immediately, and this might seem to slow down the development of new features.</p>
+<p>To avoid integration headaches, it’s important to communicate with the team and avoid conflicts in the first place. Also, it&rsquo;s better to catch conflicts and fix them immediately than to wait for a big bang merge. In my opinion, if there is a lot of churn/conflicts in some modules, it means that the architecture should be improved (by splitting the functionality into smaller modules with clear responsibilities).</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>The conclusion of the talk was “<em>embrace change</em>”, which is the fundamental principle of eXtreme Programming. I agree with this quote, as change is inevitable in software development (and in life in general).</p>
+<p>I never had a collaborative codebase in the way described by Alessio (with trunk based, tdd, pairing and all the other practices), but I think that every team should strive to follow the same principles and practices.</p>
+<p>That’s it for today! I hope you liked this short summary. If you want to go deeper into the topic, I left down here some resources (will be updated while I discover more of them). Also, reach out <a href="https://www.linkedin.com/in/alessiocoser"  target="_blank" >Alessio</a> and the <a href="https://meetu.ps/c/4s0GZ/zWszn/a"  target="_blank" >XPUGBG</a>!</p>
+<h2 id="other-resources">Other Resources</h2>
+<ul>
+<li><a href="https://trunkbaseddevelopment.com/"  target="_blank" >Trunk-based development</a></li>
+<li><a href="https://medium.com/@mattia.battiston/why-i-love-trunk-based-development-641fcf0b94a0"  target="_blank" >Why I love trunk-based development</a></li>
+<li><a href="https://martinfowler.com/articles/feature-toggles.html"  target="_blank" >Feature Toggles</a></li>
+</ul>
+
+      ]]></content:encoded></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>Hi 👋 and welcome to a new post!
+In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (here) on January 24th.
+For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description><content><![CDATA[
+        <p>Hi 👋 and welcome to a new post!</p>
+<p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (<a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877"  target="_blank" >here</a>) on January 24th.</p>
+<p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</p>
+<p>You may already have heard of “Outside-In Design” on this blog <a href="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/"  target="_blank" >before</a>. Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.</p>
+<p><em>Disclaimer: I will share some notes/brief recap of the talk given by Sandro. It’s by no means a complete transcription and may contain my own interpretation of what was said. Go watch his past talks (e.g. <a href="https://www.youtube.com/watch?v=VSkDu5YgAh4"  target="_blank" >here</a>) for the real deal!</em></p>
+<h3 id="developer-biases-and-the-insideoutside-perspective">Developer Biases and The Inside/Outside perspective</h3>
+<p>The talk started with a list of biases (most of the time we call them “practices”) that affect software developers. They include:</p>
+<ul>
+<li>Structural biases (procedural, oop, functional, services, event-based)</li>
+<li>Design biases (all architectural design patterns such as SOA, Actor model, Hexagonal arch, Microservices and so on..)</li>
+<li>Design Direction biases (starting from the persistence, domain, UI, and lastly <strong>incremental outside-in</strong>, the topic of this talk)</li>
+</ul>
+<p>Most of the time we tend to work led by our biases: a backend developer will start working on the domain model and then implement the details (infrastructure, application); frontend will start working from the design of the UI down to the actual implementation. However, in this way, we end up with a discrepancy between the systems, and this leads to ugly adapter layers to adapt the API exposed by the backend and the data the frontend needs to work.</p>
+<p>This behaviour extends also at a higher level, that of business and product design. Technology and product work in parallel tracks, and then need to somewhat meet at the intersection: the top of the backlog. At that moment, it’s more difficult to align the product decisions needed to create value for the company and the system design.</p>
+<p>Software design should <strong>serve</strong> the business, and its value should be measured by how much it impacts the business value. Thus, we need to align the two perspectives, inside (technology) and outside (business).</p>
+<p>To solve this issue, Sandro proposes a different approach, in which we start from the product and then define lower and lower level abstractions of the system, contrary to the standard inside-out design approach.</p>
+<h3 id="outside-in-design">Outside-In Design</h3>
+<p>The first thing to do when designing a new system or a set of features for the business is to create a birds-eye view (<strong>product box</strong>) in which we put the main features that bring value, and the main functional areas involved.</p>
+<p>Then, we proceed to do <strong>Impact Mapping</strong>, in which we identify the high-level bounded contexts and architecture. Starting from the main goals of the system, we identify its actors and the different impacts they have, on the deliverables (features). Sandro showed an example using mind maps, refining the different levels (actor → impact → feature) on every iteration.</p>
+<p>After impact mapping, with <strong>Functional Mapping,</strong> we identify the business flows, the external (and internal) users and systems and connect them, in a way similar to sequence diagrams but using bounded contexts instead of classes. It allows to decide which systems are external and which are internal, and which should become public APIs or internal services. Sandro gave some examples, one in which only one service (the catalogue) was public-facing, and another (checkout) in which all services were public and called by the frontend.</p>
+<p><strong>User Interaction via Mockups</strong> is the step in which we see some UI (finally!!). Sandro does the mockups with Balsamiq, as it allows the creation of dynamic wireframes. It’s better to do them with UX experts, in order to have a basic wireframe both for the UX/UI team and the development team (by designing the APIs and the data needed by the frontend).</p>
+<p>Finally, we get into the actual software design and implementation with the method we prefer (Inside-Out or Outside-In TDD for example 😏).</p>
+<p>All these steps might seem long, but Sandro explained that they are actually short (e.g. product box can be done in an afternoon!) and need to be performed at different intervals (6/12 months for the highest level, then 3/4 months, monthly, 1/2 weeks and finally daily for the actual coding practices).</p>
+<h3 id="thats-it">That’s it!</h3>
+<p>As you can see, I just wrote a quick summary of Sandro’s talk. The meetup also included a panel with Sandro and three people from eDreams ODIGEO (the CTO Carsten Bernhard, Milan’s Hub Director Luca Pivotto and Agile Director Brett Ansley), in which they continued the argument brought by the talk and expanded with other content (e.g. how to tackle and measure technical debt, what is value and much more). I didn’t include it in this post as I didn’t take notes 😅.</p>
+<p>Overall, the meetup was really interesting. The outside-in perspective is (as in the last meetup I attended) a great way to meet the tech side of the business (working on the nitty-gritty details and implementation) and the product side (concerned with value, customers and overall functionality of the system).</p>
+<p>I think that this could be really useful in both big companies (to iterate on new features) and in startups (to design the first system in an extensible and “growable” way). During the talk, Sandro mentioned a book that is on my “to read” bookshelf, “<a href="https://teamtopologies.com/book"  target="_blank" >Team Topologies</a>”. Employing an outside-in perspective allows in the end to define these topologies in advance, allowing the system to grow organically and without breaking everything on each iteration.</p>
+<p>That’s all for today’s post! Thank you for reading (if anyone is reading this 🤔) and see you next time!</p>
+<h3 id="additional-resources">Additional Resources</h3>
+<p>Some other places to find Sandro’s talk:</p>
+<ul>
+<li><a href="https://www.codurance.com/publications/2017/10/23/outside-in-design"  target="_blank" >Blog Post</a></li>
+<li>2019 <a href="https://www.youtube.com/watch?v=bvie9vl7X6A"  target="_blank" >Talk</a></li>
+<li>2018 <a href="https://www.youtube.com/watch?v=rbSDGr-_UwY"  target="_blank" >Talk</a> and <a href="https://www.slideshare.net/sandromancuso/a-case-for-outsidein-design"  target="_blank" >Slides</a> (don’t know if they are the same exact version)</li>
+</ul>
+
+      ]]></content:encoded></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>Hi! 👋
+Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The XPUGBg is an association promoting and organizing events related to extreme programming in the Bergamo region.
+In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from Alcor Academy) performed a live mob programming session with the audience, to solve the mars rover kata. We learned how to do mob programming, and how the Outside-In TDD approach works.</description><content><![CDATA[
+        <p>Hi! 👋</p>
+<p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUGBg</a> is an association promoting and organizing events related to extreme programming in the Bergamo region.</p>
+<p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from <a href="https://alcor.academy/"  target="_blank" >Alcor Academy</a>) performed a live mob programming session with the audience, to solve the <a href="https://github.com/makomweb/mars-rover"  target="_blank" >mars rover kata</a>. We learned how to do mob programming, and how the Outside-In TDD approach works.</p>
+<h2 id="what-is-extreme-programming">What is Extreme Programming?</h2>
+<p>Extreme programming (XP) is a set of values, principles and practices introduced by Kent Beck at the end of the 1990s. Its goals are to improve the software quality and the team&rsquo;s responsiveness to requirements changing during development. I might write my opinions on this methodology in a new blog post, but for now, I’ll redirect you to the <a href="https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658"  target="_blank" >book</a>, which definitely explains it better than I do 😉.</p>
+<p>I discovered extreme programming later this year while attending the XPUG meetups. I also read Kent Beck’s book and I’m actively trying to introduce some practices (like TDD and pair programming) into my current team, but I’m still far from a full XP practitioner. Still, the argument is really interesting.</p>
+<p>How does it apply to this meetup? We followed a practice called <strong>mob programming</strong>, in which there are:</p>
+<ul>
+<li>a <strong>driver</strong> (Alessandro), the developer actually writing code on the editor</li>
+<li>the <strong>navigator</strong>, which instructs the driver on what to write (and sometimes also how)</li>
+<li>the <strong>mob</strong>, other members of the team which can discuss with the navigator to improve the code, find possible issues and so on</li>
+</ul>
+<p>during the meetup, Marco and Alessandro proposed an extended approach (called <strong>fish bowl</strong>), in which the mob is composed of 5 members of the audience, which rotate after some time. So, in addition to the standard mob, we have:</p>
+<ul>
+<li>the <strong>facilitator</strong> (Marco) guiding the mob and the navigator and deciding when to rotate roles and members</li>
+<li>the <strong>audience</strong>, watching it all. Anyone can then enter the fish bowl when he thinks he can give something to the discussion</li>
+</ul>
+<h2 id="what-is-a-kata">What is a Kata?</h2>
+<p>“Kata” is a term borrowed from martial arts. It is “a detailed choreographed
+ pattern of movements made to be practised alone. It can also be reviewed within groups and in unison when training” (<a href="https://en.wikipedia.org/wiki/Kata"  target="_blank" >Wikipedia</a>).
+Developers have taken this term and applied it to their set of movements, which are coding, testing and designing. A kata is a short problem/exercise meant to be practised a lot of times. The same kata can be practised with different languages, approaches and methodologies, giving each time a new perspective.</p>
+<p>In our case, in this meetup, we practised the mars rover kata, and the twists were to practice it with <strong>mob programming</strong> and <strong>outside-in TDD</strong>. Double trouble!</p>
+<p>In the mars rover kata, you have to implement a rover moving on the surface of mars. You are given the initial coordinates of the rover (x, y) and the initial orientation (N, S, E, W). Then, you are given the commands:</p>
+<ul>
+<li>L → rotate left by 90°</li>
+<li>R → rotate right by 90°</li>
+<li>M → move forward one grid point, maintaining the same position</li>
+</ul>
+<p>Your program should output the position of the rover after applying the commands (X, Y coordinates and direction).</p>
+<p>During the meetup (because of lack of time and a lot of discussions) we were able to implement only the simplest version, with the rotate left and move forward commands, and without the I/O translation code (from a text file to actual commands and positions). This doesn&rsquo;t mean that the kata was a failure. On the contrary, it was very useful to see different opinions and approaches to the problem at hand.</p>
+<h2 id="outside-in-approach">Outside-In approach</h2>
+<p><strong>Outside-in</strong> is an approach to develop software in tandem with TDD. It works by starting from the outer layer (”outside”) and, guided by tests, creating the underlying layers (”in”) of the software.</p>
+<p>In practice, the mob started (guided by marco) with the acceptance tests, the outermost layer of testing. These tests should be in a language understandable by the business, as they indicate whether the problem is solved from the business perspective. The first consideration is that the acceptance tests used the actual input and output strings to test the behaviour of the system (see <a href="https://github.com/makomweb/mars-rover"  target="_blank" >here</a> for the example). This meant that the code needed a sort of “translator” to translate the inputs to domain objects, and the domain objects to outputs.</p>
+<p>The outside-in approach turned out to be difficult to assimilate because it turned my perception of the design upside-down. Starting from the acceptance tests, it was difficult to turn the tests green, and we had to dive deeper and create a lot of code (first the rover controller, then the rover, then the position with coordinates and direction, and so on) before passing our first test.</p>
+<p>In addition, we had to use mocks immediately to avoid writing the translator. Marco presented this to us as a challenge: most of the business value and complexity actually resides in the rover code, not the I/O, so it was a good way to concentrate on the core features of the kata.</p>
+<p>In the end, we were able to turn our first test green, and it was already time to head to the pub, so… the rest was left as an exercise for the viewers 😇.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>The meetup was really interesting, and it helped me learn new concepts. Even if I didn’t participate in the mob but just watched, I exercised my “design muscles” during the session and my brain was always comparing alternatives and thinking about the code.</p>
+<p>Marco and Alessandro are great teachers: Marco was a great facilitator and guided the mob to the right solution, while Alessandro was a thoughtful driver with opinions, also helping the mob to cooperate.</p>
+<p>The outside-in approach was new for most of the audience, and even experienced developers discussed how to design the solution and how to proceed. They created a lot of classes seemingly “doing nothing” at the moment, but later it all made sense. This is quite different from standard TDD, in which you just write the code needed to pass the tests and then refactor. Outside-In helps to reduce the refactoring stage, which always leads to rewriting big chunks of the code.</p>
+<p>Finally, I never tried practising a kata. I think it is a really useful technique to learn new concepts with a known problem, and I’ll use it more in the future.</p>
+<p>That&rsquo;s all for now 🎉. Thank you for reading and see you next time!.</p>
+
+      ]]></content:encoded></item></channel></rss>

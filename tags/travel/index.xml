@@ -1,206 +1,222 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>travel on Marco Bacis</title><link>https://marcobacis.com/tags/travel/</link><description>Recent content in travel on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Fri, 03 Nov 2023 21:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/travel/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at SoCraTes 2023</title><link>https://marcobacis.com/blog/socrates-2023/</link><pubDate>Fri, 03 Nov 2023 21:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/socrates-2023/</guid><description>&lt;p>Hi! 👋 Welcome to a new post.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>travel on Marco Bacis</title><link>https://marcobacis.com/tags/travel/</link><description>Recent content in travel on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2023</copyright><lastBuildDate>Fri, 03 Nov 2023 21:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/travel/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at SoCraTes 2023</title><link>https://marcobacis.com/blog/socrates-2023/</link><pubDate>Fri, 03 Nov 2023 21:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/socrates-2023/</guid><description>&lt;p>Hi! 👋 Welcome to a new post.&lt;/p>
 &lt;p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.&lt;/p>
 &lt;p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!&lt;/p>
-&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h2 id="what-is-an-open-space">What is an Open Space?&lt;/h2>
-&lt;p>SoCraTes is a unique event because of its interesting format, called Open Space (or Unconference).&lt;/p>
-&lt;p>In a standard conference, everything is decided up-front: there is a call-for-papers, speakers and the agenda are decided beforehand, there are frontal sessions and workshops, etc. Basically, the attendees just need to come and watch what&amp;rsquo;s offered by the conference organizing committee.&lt;/p>
-&lt;p>On the contrary, in an Open Space, the format, agenda, and topics discussed are decided by the participants during the event itself. This choice comes from the observation that, during a conference, the most inspiring and interesting stuff happens during coffee breaks and in the common areas. So why don&amp;rsquo;t we transform the entire event into a big coffee break?&lt;/p>
-&lt;p>On every day of the Open Space, the participants gather to propose and decide the daily agenda: everyone can propose a talk, workshop, discussion, or any other type of activity (even a walking discussion on the beach 😎 or a party game). After the proposals, it&amp;rsquo;s time for the &lt;strong>marketplace&lt;/strong>: everyone can ask the session organizer to move the session (to a different time and location) or to change/expand the topic. The important thing is that only the one who proposed the session can change it!&lt;/p>
-&lt;p>After the marketplace has ended and the agenda is ready, the unconference can start. During the event, there is only one rule to follow, called the &amp;ldquo;rule of two feet&amp;rdquo;:&lt;/p>
-&lt;blockquote>
-&lt;p>If you are not contributing or adding value to the session, you can move elsewhere freely.&lt;/p>
-&lt;/blockquote>
-&lt;p>This rule is not confined to the pre-defined sessions. Participants can move between sessions, stay in common areas, or look for other people to start impromptu activities! That&amp;rsquo;s the beauty of the open space format.&lt;/p>
-&lt;p>Given that they can freely move during the event, participants usually divide into two categories:&lt;/p>
-&lt;ul>
-&lt;li>Butterflies: they like to move a lot and cross-pollinate the discussions.&lt;/li>
-&lt;li>Bumblebees: they stay in the same room for the entire duration of the session, bringing stability and continuity to the discussions.&lt;/li>
-&lt;/ul>
-&lt;p>Also, the rule of two feet generates four principles:&lt;/p>
-&lt;ul>
-&lt;li>Whoever comes is the right people.&lt;/li>
-&lt;li>Whenever it starts is the right time.&lt;/li>
-&lt;li>Whatever happens is the only thing that could happen.&lt;/li>
-&lt;li>When it&amp;rsquo;s over, it&amp;rsquo;s over.&lt;/li>
-&lt;/ul>
-&lt;p>The rule of two feet and the four principles above allow the participants to express themselves in many ways and encourage collaboration and open discussions throughout the event. That&amp;rsquo;s what brought me to attend it!&lt;/p>
-&lt;h2 id="my-experience-at-socrates-it-2023">My experience at SoCraTes-IT 2023&lt;/h2>
-&lt;p>Here&amp;rsquo;s a brief summary of my experience at SoCraTes 2023. I didn&amp;rsquo;t take many notes and pictures, so most of the descriptions below might be incomplete or plain wrong. This is more of a journaling exercise for me.&lt;/p>
-&lt;p>Given this disclaimer, if you find any errors, don&amp;rsquo;t hesitate to contact me (or open an issue/PR on my website &lt;a href="https://github.com/marcobacis/marcobacis.github.io" target="_blank" >repository&lt;/a> on GitHub 😛).&lt;/p>
-&lt;p>Enjoy!&lt;/p>
-&lt;h3 id="thursday">Thursday&lt;/h3>
-&lt;p>The first day was just for networking and getting to know the other participants. I arrived at the hotel in the afternoon, and then we had a happy hour, dinner, and a brief &amp;ldquo;ice-breaker&amp;rdquo; game.&lt;/p>
-&lt;p>We divided into groups, and each group had to introduce itself with a given description. My group had to decide if &amp;ldquo;casual Friday&amp;rdquo; was still a thing in the 2020s. We named our group &amp;ldquo;Eat My Shorts&amp;rdquo; and gave a short presentation on it. However, there was no interaction or any &amp;ldquo;theatrical&amp;rdquo; performance, and only one of us spoke, while other groups put on a show and moved around a lot. A reminder for next time: have more interaction between group members (try to talk 😅) and make the presentation funnier!!&lt;/p>
-&lt;p>After the ice breaker, I went to my room early because I hadn&amp;rsquo;t been feeling well since the morning and needed to recharge for the next days.&lt;/p>
-&lt;h3 id="friday">Friday&lt;/h3>
-&lt;p>Friday was the first day of the Unconference!&lt;/p>
-&lt;p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 1" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 1" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):&lt;/p>
-&lt;p>&lt;strong>Game AI and Montecarlo Tree Search - &lt;a href="https://www.linkedin.com/in/matteovaccari/" target="_blank" >Matteo Vaccari&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Matteo taught us what a Monte Carlo search is and how it is useful for searching in very large decision trees. A perfect example of this was the game &amp;ldquo;Commands&amp;amp;Colors&amp;rdquo; with some parts of the game having a million branch factor!&lt;/p>
-&lt;p>This was a preliminary test for his talk, which he gave a few days later at Codemotion. I wasn&amp;rsquo;t able to see his entire session at SoCraTes, but I watched his talk at Codemotion and it was great!&lt;/p>
-&lt;p>For more information (and slides/code), visit &lt;a href="https://matteo.vaccari.name/" target="_blank" >Matteo&amp;rsquo;s website&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>The Programmer’s Brain - &lt;a href="https://www.linkedin.com/in/mrctst/" target="_blank" >Marco Testa&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Marco presented what he learned reading the book “&lt;a href="https://www.manning.com/books/the-programmers-brain" target="_blank" >The Programmer’s Brain&lt;/a>” by Felienne Hermans.&lt;/p>
-&lt;p>The main concept we discussed was &lt;strong>cognitive load&lt;/strong> and ways in which it affects software developers. The book provides many concepts and ways to reduce this cognitive load and make the code we develop easier to understand and remember. Many of the techniques have already been discussed in other books (e.g. clean code), but here they were related to cognitive load and all of its aspects.&lt;/p>
-&lt;p>The session was really interesting. Having attended a course on memory techniques some years ago I already knew some of the concepts presented, although not applied to software development.&lt;/p>
-&lt;p>&lt;strong>Stop fighting useless battles: automate code style, architecture compliance and refactoring - &lt;a href="https://www.linkedin.com/in/robfrank/" target="_blank" >Roberto Franchini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Roberto gave this talk at the &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" >Working Software Conference&lt;/a> in June. I didn&amp;rsquo;t see it at that time, but fortunately, he gave it again at SoCraTes! His talk was about ways to automate boring tasks that are quite important to keep a codebase clean among team members.&lt;/p>
-&lt;p>In particular, he presented:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://pre-commit.com/" target="_blank" >pre-commit&lt;/a>: a tool to boost commit hooks and CI pipelines, with various tasks and plugins from the community. He uses it to check certain rules, such as passwords and keys, fixing line endings, and more.&lt;/li>
-&lt;li>&lt;a href="https://www.archunit.org/" target="_blank" >ArchUnit&lt;/a>: a tool to unit-test your architecture. It can be used to enforce separation between modules, check that the code doesn&amp;rsquo;t import certain packages, and generally standardize and test the code architecture.&lt;/li>
-&lt;li>&lt;a href="https://docs.openrewrite.org/" target="_blank" >OpenRewrite&lt;/a>: allows for large-scale code refactoring, such as framework/API migrations, code cleanup, and other community-driven code transformations.&lt;/li>
-&lt;/ul>
-&lt;p>I didn&amp;rsquo;t know about any of these tools, so it was a very inspiring talk!&lt;/p>
-&lt;p>&lt;strong>Discussion on Trunk-Based Development - &lt;a href="https://www.linkedin.com/in/fabio-fortini/" target="_blank" >Fabio Fortini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>After lunch, while everyone was feeling sleepy, Fabio ignited our fighting spirit by presenting a controversial argument: should we use trunk-based development in our projects?&lt;/p>
-&lt;p>He showed us a presentation he had given to his team in 2021 to convince them of the pros (without having used it before), and then gave his opinion after having done it for a few months.&lt;/p>
-&lt;p>The discussion was filled with arguments from both parties, and essentially Fabio stopped talking and (unintentionally) handed the stage over to the group.&lt;/p>
-&lt;p>It was an interesting discussion nonetheless: in the end, trunk-based development can be used as a teaching tool to help the team learn to work with small releases and continuously integrate into the main branch. Afterward, or if the team is already mature enough, small, frequently integrated branches can also be used (and are actually compatible with the trunk-based definition!).&lt;/p>
-&lt;p>&lt;strong>The Training Crafter - To read or not to read? - &lt;a href="https://www.linkedin.com/in/chiarabarbagianni/" target="_blank" >Chiara Barbagianni&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>The topic of the session was learning. Should we learn by reading or by doing, and can the two worlds work together?&lt;/p>
-&lt;p>Chiara gave a free-flowing presentation to our small group, starting with a survey and then writing on a whiteboard (and a lot of post-it notes) to decide how to merge the two opposing views.&lt;/p>
-&lt;p>She divided the board into 4 quadrants along 2 axes:&lt;/p>
-&lt;ul>
-&lt;li>Practice (doing something practical, or reading about it?)&lt;/li>
-&lt;li>Taste (developing a taste for what you are learning, or doing it just for the money?)&lt;/li>
-&lt;/ul>
-&lt;p>At the end, Chiara presented how she&amp;rsquo;s doing it in the &lt;a href="https://handbook.agilelab.it/BookClub.html" target="_blank" >Agile Lab Book Club&lt;/a>: instead of mandating all members to read a given chapter every time, the format is more generic. Every two weeks, the club curators propose a topic: members can explore it in any way (the recommended book, videos, blogs, anything) and post their learnings on a shared board. At the end of the two-week period, they share what they learned in a short training session.&lt;/p>
-&lt;p>I loved this session! The way it was kept was fantastic, and we were immersed in Chiara&amp;rsquo;s mind throughout the entire duration of the discussion. That&amp;rsquo;s exactly what I expected from an unconference.&lt;/p>
-&lt;p>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="chiara_barbagianni_session.jpeg" alt="The output of the session" />
-&lt;figcaption class="caption">The output of the session&lt;/figcaption>
-&lt;/figure>
-&lt;/div>&lt;/p>
-&lt;p>&lt;strong>Monads for the Rest of us (in C#) - &lt;a href="https://www.linkedin.com/in/arialdomartini/" target="_blank" >Arialdo Martini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Even after studying it at the university, I still find it difficult to understand most functional programming concepts. But thanks to Arialdo, now I can understand it a bit more.&lt;/p>
-&lt;p>In his session, he started to implement monads (the most difficult concept in FP to me) in plain C#. Starting from function composition, passing through functors and implementing the IO monad, he tried to explain to the folks that we are how functional programming concepts map to an object oriented language.&lt;/p>
-&lt;p>His session was based on a series of posts &lt;a href="https://arialdomartini.github.io/monads-for-the-rest-of-us" target="_blank" >on his website&lt;/a>, that I will definitely try to follow to learn all there is about monads!&lt;/p>
-&lt;p>&lt;strong>Friday evening special: Oggetti a Teatro” (Objects on Stage) - &lt;a href="https://www.linkedin.com/in/mrctst/" target="_blank" >Marco Testa&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Unlike many conferences, the party didn’t finish after dinner. Instead, there were 2 parallel sessions. One was a NIX installation party at the pub, while the other was a high-class evening at the theatre.&lt;/p>
-&lt;p>Marco wrote and gave life to a set of characters (I still remember the &lt;em>Duke of Client&lt;/em>, the &lt;em>Count of Receiver&lt;/em>, and &lt;em>Invoker the spy&lt;/em>!) that together and with their actions formed the perfect description of the Command Pattern. He basically wrote the script of a design pattern, highlighting the behaviour of the different component and their scope. Also, the story was pretty engaging!&lt;/p>
-&lt;p>Even if short, the &lt;em>opera&lt;/em> was well received by the public, and I think it would be a great way to explain design patterns in a memorable way.&lt;/p>
-&lt;h3 id="saturday">Saturday&lt;/h3>
-&lt;p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 2" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;td>&lt;div class="image">
-&lt;figure>
-&lt;img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 2" />
-&lt;/figure>
-&lt;/div>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>&lt;del>Coping&lt;/del>/Coding with Product - &lt;a href="https://www.linkedin.com/in/brando/" target="_blank" >Alberto Brandolini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.&lt;/p>
-&lt;p>He started by re-defining technical debt (which he deemed a wrong analogy) with its opposite, &lt;strong>Design Integrity&lt;/strong>: “how much the current codebase fits its purpose” or how much the code is ready for the next change.&lt;/p>
-&lt;p>He went on explaining how product side is based on “experiments”, as the roadmap is not as clearly defined as we developers would like the code to be. How can we make the two ends meet? Our work as technical people is to work on “safe bets” from a good design to another good design, without reducing the design integrity.&lt;/p>
-&lt;p>The group went on a discussion on changes of which I didn’t take note, so writing it here would be useless.&lt;/p>
-&lt;p>In the end, the core idea is that developers should work together with product to define different “purposes” (either core or not to the business) and isolate these choices in distinct bounded contexts and components, to reduce the possible damage given by continuous product experiments.&lt;/p>
-&lt;p>This is not a set process, but can evolve based on the product (e.g. a context might get split in multiple services, or multiple services merged because they follow the same purpose…).&lt;/p>
-&lt;p>Fortunately for us, Alberto wrote a &lt;a href="https://medium.com/@ziobrando/from-technical-debt-to-design-integrity-48e7056b6776" target="_blank" >post&lt;/a> in which he explains these concepts in a much cleaner way than me 😅&lt;/p>
-&lt;p>&lt;strong>Refactoring with CQRS (without events) - &lt;a href="https://www.linkedin.com/in/lucagiovenzana/" target="_blank" >Luca Giovenzana&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>Luca showed how they refactored the backend for their startup (&lt;a href="https://golee.it/" target="_blank" >golee&lt;/a>) using CQRS, but without using event sourcing as everyone doing CQRS is doing right now. Basically, the team at golee migrated some functionality to the new, greenfield codebase which was used as &lt;em>write model&lt;/em>, while keeping the old (legacy) code as &lt;em>read model&lt;/em> and as a backup, by writing to it using a hook.&lt;/p>
-&lt;p>By keeping the system simple (no events and event sourcing) they were able to keep both systems running, without impacting on their ability to extend it and improving performances.&lt;/p>
-&lt;p>His session was a nice look at how to take tradeoffs, which are essential when running a startup!&lt;/p>
-&lt;p>&lt;strong>Create a Macropad for fun!! - &lt;a href="https://www.linkedin.com/in/gianni-bombelli/" target="_blank" >Gianni Bombelli&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>During the breaks and dinners on thursday and friday I was introduced to the world of custom keyboards. It’s a world full of crazy people talking about layouts, layers and keys. When Gianni put a post-it named “Create a macropad for FUN!” I couldn’t resist.&lt;/p>
-&lt;p>In his session, he showed us his “hobby” project, a custom mechanical macropad to help him during training sessions, in which he uses a graphics tablet and might need some ready-to-use shortcuts (e.g. to delete the latest line drawn, to open an application, to use git).&lt;/p>
-&lt;p>His session was a deep-dive in how to build a custom keyboard, from the PCB up to the customisation with QMK and a bit of C programming. Now I really want a custom macropad!! I’ll wait for the “BomboPad” to enter the market 😛&lt;/p>
-&lt;p>&lt;strong>Orthogonality of TDD, SOLID, FP - &lt;a href="https://www.linkedin.com/in/matteobaglini/" target="_blank" >Matteo Baglini&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>In his session, Matteo showed us how TDD, SOLID principles and Functional Programming are related. He implemented the password validator kata, doing small steps by following TDD and doing it in a functional way.&lt;/p>
-&lt;p>I came into the session while it was already started so I lost most of the context. Fortunately, Matteo shared the &lt;a href="https://github.com/matteobaglini/orthogonality-socrates-it-2023" target="_blank" >repo&lt;/a> containing the kata implementation, with every small step of the red-green-refactor process explained in separate commits! A great way to visualize TDD in action.&lt;/p>
-&lt;p>&lt;strong>PKMS/Note Taking - &lt;a href="https://www.linkedin.com/in/jagasantagostino/" target="_blank" >Jaga Santagostino&lt;/a>&lt;/strong>&lt;/p>
-&lt;p>The final session I attended was an open discussion about Obsidian and Personal Knowledge Management Systems (PKMS) in general.&lt;/p>
-&lt;p>Jaga showed us the many features in Obsidian and tried to compare it with another famous PKMS application, Notion.&lt;/p>
-&lt;p>While presenting, other participants asked questions and gave their opinions. For example I learned about another tool, called logseq, which is quite similar to obsidian.&lt;/p>
-&lt;p>In the end I gave obsidian a try. I actually used it to take notes during the unconference, and to take notes at the Codemotion conference the week later. I now found out how to share my notes with git, so from now on I’ll try to use it instead of Notion! It’s local-first paradigm is very useful when working offline, and the backlinks and graph view are really interesting and allow to link ideas together. Also, is definitely faster than notion 😅.&lt;/p>
-&lt;p>Thanks Jaga for this discovery!&lt;/p>
-&lt;h2 id="the-end">The End!&lt;/h2>
-&lt;p>SoCraTes was a great event! I met new people, learned a lot and had fun, the perfect combination for a conference.&lt;/p>
-&lt;p>I came home with a lot of new concepts, tools and inspiration, and I cannot wait for the next event like this (which will be the &lt;a href="https://www.agileday.it/" target="_blank" >2023 Agile Day&lt;/a> Unconference, on Nov. 17 😛).&lt;/p>
-&lt;p>As always, thanks for all the participants, to the sponsors, organizer and everyone involved. The most meaningful connections happen in a free and creative environment, and that’s exactly what SoCraTes is.&lt;/p>
-&lt;p>Thanks for reading this long and boring summary, I hope to have shown (even a bit) all I saw and felt during the event. If you find anything to correct (e.g. about your session, about my grammar, or if I forgot something) just contact me via mail or linkedin, or open an issue on this website repository on github.&lt;/p>
-&lt;p>As always, see you next time!&lt;/p></description></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>&lt;p>Hi 👋 welcome to a new post.&lt;/p>
-&lt;p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.&lt;/p>
-&lt;p>As I already said in my &lt;a href="https://marcobacis.com/blog/2022-a-review/" target="_blank" >2022 review&lt;/a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.&lt;/p>
-&lt;p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!&lt;/p>
-&lt;p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the &lt;a href="https://www.ulb.be/en" target="_blank" >Université Libre de Bruxelles&lt;/a>, and is &lt;a href="https://fosdem.org/2023/about/sponsors/" target="_blank" >sponsored&lt;/a> by the main open-source projects and companies.&lt;/p>
-&lt;p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:&lt;/p>
-&lt;ul>
-&lt;li>Freedom to run it&lt;/li>
-&lt;li>Freedom to access his source code, study it and change it to fit our own necessities&lt;/li>
-&lt;li>Freedom to share/spread the software (original or modified) to help others&lt;/li>
-&lt;/ul>
-&lt;p>Working and using open source software means collaborating with other developers, sharing our programming and product ideas, and together improving the world. And that’s exactly the spirit I saw at FOSDEM!&lt;/p>
-&lt;h2 id="community-and-inspiration">Community and Inspiration&lt;/h2>
-&lt;p>I think that being part of a community is great. It gives me a chance to see developers like me, but also completely diverse people.&lt;/p>
-&lt;p>While at FOSDEM, I experienced this sense of community and diversity firsthand. It felt like being in a sort of “tribe” of nerds/developers gathering for what they love.&lt;/p>
-&lt;p>The halls of Brussels university were full for both days of the conference. The city itself was conquered by nerds for the entire weekend! During the conference everyone was chatting about their latest projects and ideas.&lt;/p>
-&lt;p>Also, many open source projects and companies I know (think of the major Linux distros and software companies) were there with their stands, gadgets (Debian was giving away beer!) and stickers!&lt;/p>
-&lt;p>Being there reminded me of my days at university (not so long ago), hacking silly stuff on my laptop. But in this case, the people speaking and attending the conference were anything but amateurs like me 😅. Open Source can be a way to express ourselves, to find inspiration and to be part of something bigger, and FOSDEM showed me the way many people are doing it.&lt;/p>
-&lt;h2 id="list-of-talks-i-attended">List of Talks I attended&lt;/h2>
-&lt;p>Below you can find the list of talks I personally attended while there. I didn’t attend all the events I wanted (some rooms were full all the time!) and ended up going around the different rooms in search of inspiration.&lt;/p>
-&lt;p>If you have the time, give them a look!&lt;/p>
-&lt;p>&lt;strong>Saturday&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gostateofgo/" target="_blank" >The State of Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goreducecognitive/" target="_blank" >Recipes for reducing cognitive load (in go)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/" target="_blank" >Developing Bluetooth Mesh Networks with Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/" target="_blank" >5 errors when building embedded systems&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/" target="_blank" >Making Continuous Delivery Accessible to All&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/" target="_blank" >How to automate documentation workflow for developers&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/" target="_blank" >Our Mad Journey of Building a Vector Database in Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gowatermill/" target="_blank" >Building a basic event-driven application in go in 20 minutes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/goisoo/" target="_blank" >Is Go object-oriented? A case of public opinion&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Sunday&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_coreutils/" target="_blank" >Reimplementing the Coreutils in a modern language (Rust)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/" target="_blank" >Zero-Knowledge Cryptography and anonymous engineering&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/" target="_blank" >How to build an event-driven application in python&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/mutation_testing/" target="_blank" >Fear the Mutants, love the Mutants&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sth_to_hide/" target="_blank" >Having something to hide&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/rust_ebpf/" target="_blank" >Rust in the Kernel (via eBPF)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/" target="_blank" >The 7 key ingredients of a great SBOM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fosdem.org/2023/schedule/event/gb_arm/" target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p></description><content><![CDATA[
+        <p>Hi! 👋 Welcome to a new post.</p>
+<p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.</p>
+<p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!</p>
+<p>In this post, I&rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.</p>
+<p>Enjoy!</p>
+<h2 id="what-is-an-open-space">What is an Open Space?</h2>
+<p>SoCraTes is a unique event because of its interesting format, called Open Space (or Unconference).</p>
+<p>In a standard conference, everything is decided up-front: there is a call-for-papers, speakers and the agenda are decided beforehand, there are frontal sessions and workshops, etc. Basically, the attendees just need to come and watch what&rsquo;s offered by the conference organizing committee.</p>
+<p>On the contrary, in an Open Space, the format, agenda, and topics discussed are decided by the participants during the event itself. This choice comes from the observation that, during a conference, the most inspiring and interesting stuff happens during coffee breaks and in the common areas. So why don&rsquo;t we transform the entire event into a big coffee break?</p>
+<p>On every day of the Open Space, the participants gather to propose and decide the daily agenda: everyone can propose a talk, workshop, discussion, or any other type of activity (even a walking discussion on the beach 😎 or a party game). After the proposals, it&rsquo;s time for the <strong>marketplace</strong>: everyone can ask the session organizer to move the session (to a different time and location) or to change/expand the topic. The important thing is that only the one who proposed the session can change it!</p>
+<p>After the marketplace has ended and the agenda is ready, the unconference can start. During the event, there is only one rule to follow, called the &ldquo;rule of two feet&rdquo;:</p>
+<blockquote>
+<p>If you are not contributing or adding value to the session, you can move elsewhere freely.</p>
+</blockquote>
+<p>This rule is not confined to the pre-defined sessions. Participants can move between sessions, stay in common areas, or look for other people to start impromptu activities! That&rsquo;s the beauty of the open space format.</p>
+<p>Given that they can freely move during the event, participants usually divide into two categories:</p>
+<ul>
+<li>Butterflies: they like to move a lot and cross-pollinate the discussions.</li>
+<li>Bumblebees: they stay in the same room for the entire duration of the session, bringing stability and continuity to the discussions.</li>
+</ul>
+<p>Also, the rule of two feet generates four principles:</p>
+<ul>
+<li>Whoever comes is the right people.</li>
+<li>Whenever it starts is the right time.</li>
+<li>Whatever happens is the only thing that could happen.</li>
+<li>When it&rsquo;s over, it&rsquo;s over.</li>
+</ul>
+<p>The rule of two feet and the four principles above allow the participants to express themselves in many ways and encourage collaboration and open discussions throughout the event. That&rsquo;s what brought me to attend it!</p>
+<h2 id="my-experience-at-socrates-it-2023">My experience at SoCraTes-IT 2023</h2>
+<p>Here&rsquo;s a brief summary of my experience at SoCraTes 2023. I didn&rsquo;t take many notes and pictures, so most of the descriptions below might be incomplete or plain wrong. This is more of a journaling exercise for me.</p>
+<p>Given this disclaimer, if you find any errors, don&rsquo;t hesitate to contact me (or open an issue/PR on my website <a href="https://github.com/marcobacis/marcobacis.github.io"  target="_blank" >repository</a> on GitHub 😛).</p>
+<p>Enjoy!</p>
+<h3 id="thursday">Thursday</h3>
+<p>The first day was just for networking and getting to know the other participants. I arrived at the hotel in the afternoon, and then we had a happy hour, dinner, and a brief &ldquo;ice-breaker&rdquo; game.</p>
+<p>We divided into groups, and each group had to introduce itself with a given description. My group had to decide if &ldquo;casual Friday&rdquo; was still a thing in the 2020s. We named our group &ldquo;Eat My Shorts&rdquo; and gave a short presentation on it. However, there was no interaction or any &ldquo;theatrical&rdquo; performance, and only one of us spoke, while other groups put on a show and moved around a lot. A reminder for next time: have more interaction between group members (try to talk 😅) and make the presentation funnier!!</p>
+<p>After the ice breaker, I went to my room early because I hadn&rsquo;t been feeling well since the morning and needed to recharge for the next days.</p>
+<h3 id="friday">Friday</h3>
+<p>Friday was the first day of the Unconference!</p>
+<p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 1" />
+    
+  </figure>
+</div></td>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 1" />
+    
+  </figure>
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):</p>
+<p><strong>Game AI and Montecarlo Tree Search - <a href="https://www.linkedin.com/in/matteovaccari/"  target="_blank" >Matteo Vaccari</a></strong></p>
+<p>In this session, Matteo taught us what a Monte Carlo search is and how it is useful for searching in very large decision trees. A perfect example of this was the game &ldquo;Commands&amp;Colors&rdquo; with some parts of the game having a million branch factor!</p>
+<p>This was a preliminary test for his talk, which he gave a few days later at Codemotion. I wasn&rsquo;t able to see his entire session at SoCraTes, but I watched his talk at Codemotion and it was great!</p>
+<p>For more information (and slides/code), visit <a href="https://matteo.vaccari.name/"  target="_blank" >Matteo&rsquo;s website</a>.</p>
+<p><strong>The Programmer’s Brain - <a href="https://www.linkedin.com/in/mrctst/"  target="_blank" >Marco Testa</a></strong></p>
+<p>In this session, Marco presented what he learned reading the book “<a href="https://www.manning.com/books/the-programmers-brain"  target="_blank" >The Programmer’s Brain</a>” by Felienne Hermans.</p>
+<p>The main concept we discussed was <strong>cognitive load</strong> and ways in which it affects software developers. The book provides many concepts and ways to reduce this cognitive load and make the code we develop easier to understand and remember. Many of the techniques have already been discussed in other books (e.g. clean code), but here they were related to cognitive load and all of its aspects.</p>
+<p>The session was really interesting. Having attended a course on memory techniques some years ago I already knew some of the concepts presented, although not applied to software development.</p>
+<p><strong>Stop fighting useless battles: automate code style, architecture compliance and refactoring - <a href="https://www.linkedin.com/in/robfrank/"  target="_blank" >Roberto Franchini</a></strong></p>
+<p>Roberto gave this talk at the <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in June. I didn&rsquo;t see it at that time, but fortunately, he gave it again at SoCraTes! His talk was about ways to automate boring tasks that are quite important to keep a codebase clean among team members.</p>
+<p>In particular, he presented:</p>
+<ul>
+<li><a href="https://pre-commit.com/"  target="_blank" >pre-commit</a>: a tool to boost commit hooks and CI pipelines, with various tasks and plugins from the community. He uses it to check certain rules, such as passwords and keys, fixing line endings, and more.</li>
+<li><a href="https://www.archunit.org/"  target="_blank" >ArchUnit</a>: a tool to unit-test your architecture. It can be used to enforce separation between modules, check that the code doesn&rsquo;t import certain packages, and generally standardize and test the code architecture.</li>
+<li><a href="https://docs.openrewrite.org/"  target="_blank" >OpenRewrite</a>: allows for large-scale code refactoring, such as framework/API migrations, code cleanup, and other community-driven code transformations.</li>
+</ul>
+<p>I didn&rsquo;t know about any of these tools, so it was a very inspiring talk!</p>
+<p><strong>Discussion on Trunk-Based Development - <a href="https://www.linkedin.com/in/fabio-fortini/"  target="_blank" >Fabio Fortini</a></strong></p>
+<p>After lunch, while everyone was feeling sleepy, Fabio ignited our fighting spirit by presenting a controversial argument: should we use trunk-based development in our projects?</p>
+<p>He showed us a presentation he had given to his team in 2021 to convince them of the pros (without having used it before), and then gave his opinion after having done it for a few months.</p>
+<p>The discussion was filled with arguments from both parties, and essentially Fabio stopped talking and (unintentionally) handed the stage over to the group.</p>
+<p>It was an interesting discussion nonetheless: in the end, trunk-based development can be used as a teaching tool to help the team learn to work with small releases and continuously integrate into the main branch. Afterward, or if the team is already mature enough, small, frequently integrated branches can also be used (and are actually compatible with the trunk-based definition!).</p>
+<p><strong>The Training Crafter - To read or not to read? - <a href="https://www.linkedin.com/in/chiarabarbagianni/"  target="_blank" >Chiara Barbagianni</a></strong></p>
+<p>The topic of the session was learning. Should we learn by reading or by doing, and can the two worlds work together?</p>
+<p>Chiara gave a free-flowing presentation to our small group, starting with a survey and then writing on a whiteboard (and a lot of post-it notes) to decide how to merge the two opposing views.</p>
+<p>She divided the board into 4 quadrants along 2 axes:</p>
+<ul>
+<li>Practice (doing something practical, or reading about it?)</li>
+<li>Taste (developing a taste for what you are learning, or doing it just for the money?)</li>
+</ul>
+<p>At the end, Chiara presented how she&rsquo;s doing it in the <a href="https://handbook.agilelab.it/BookClub.html"  target="_blank" >Agile Lab Book Club</a>: instead of mandating all members to read a given chapter every time, the format is more generic. Every two weeks, the club curators propose a topic: members can explore it in any way (the recommended book, videos, blogs, anything) and post their learnings on a shared board. At the end of the two-week period, they share what they learned in a short training session.</p>
+<p>I loved this session! The way it was kept was fantastic, and we were immersed in Chiara&rsquo;s mind throughout the entire duration of the discussion. That&rsquo;s exactly what I expected from an unconference.</p>
+<p><div class="image">
+  <figure>
+    <img class="img-fluid image" src="chiara_barbagianni_session.jpeg" alt="The output of the session" />
+    
+    <figcaption class="caption">The output of the session</figcaption>
+    
+  </figure>
+</div></p>
+<p><strong>Monads for the Rest of us (in C#)  - <a href="https://www.linkedin.com/in/arialdomartini/"  target="_blank" >Arialdo Martini</a></strong></p>
+<p>Even after studying it at the university, I still find it difficult to understand most functional programming concepts. But thanks to Arialdo, now I can understand it a bit more.</p>
+<p>In his session, he started to implement monads (the most difficult concept in FP to me) in plain C#. Starting from function composition, passing through functors and implementing the IO monad, he tried to explain to the folks that we are how functional programming concepts map to an object oriented language.</p>
+<p>His session was based on a series of posts <a href="https://arialdomartini.github.io/monads-for-the-rest-of-us"  target="_blank" >on his website</a>, that I will definitely try to follow to learn all there is about monads!</p>
+<p><strong>Friday evening special: Oggetti a Teatro” (Objects on Stage) - <a href="https://www.linkedin.com/in/mrctst/"  target="_blank" >Marco Testa</a></strong></p>
+<p>Unlike many conferences, the party didn’t finish after dinner. Instead, there were 2 parallel sessions. One was a NIX installation party at the pub, while the other was a high-class evening at the theatre.</p>
+<p>Marco wrote and gave life to a set of characters (I still remember the <em>Duke of Client</em>, the <em>Count of Receiver</em>, and <em>Invoker the spy</em>!) that together and with their actions formed the perfect description of the Command Pattern. He basically wrote the script of a design pattern, highlighting the behaviour of the different component and their scope. Also, the story was pretty engaging!</p>
+<p>Even if short, the <em>opera</em> was well received by the public, and I think it would be a great way to explain design patterns in a memorable way.</p>
+<h3 id="saturday">Saturday</h3>
+<p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel1.jpeg" alt="SoCraTes Day 2" />
+    
+  </figure>
+</div></td>
+<td><div class="image">
+  <figure>
+    <img class="img-fluid image" src="day1panel2.jpeg" alt="SoCraTes Day 2" />
+    
+  </figure>
+</div></td>
+</tr>
+</tbody>
+</table>
+<p><strong><del>Coping</del>/Coding with Product - <a href="https://www.linkedin.com/in/brando/"  target="_blank" >Alberto Brandolini</a></strong></p>
+<p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.</p>
+<p>He started by re-defining technical debt (which he deemed a wrong analogy) with its opposite, <strong>Design Integrity</strong>: “how much the current codebase fits its purpose” or how much the code is ready for the next change.</p>
+<p>He went on explaining how product side is based on “experiments”, as the roadmap is not as clearly defined as we developers would like the code to be. How can we make the two ends meet? Our work as technical people is to work on “safe bets” from a good design to another good design, without reducing the design integrity.</p>
+<p>The group went on a discussion on changes of which I didn’t take note, so writing it here would be useless.</p>
+<p>In the end, the core idea is that developers should work together with product to define different “purposes” (either core or not to the business) and isolate these choices in distinct bounded contexts and components, to reduce the possible damage given by continuous product experiments.</p>
+<p>This is not a set process, but can evolve based on the product (e.g. a context might get split in multiple services, or multiple services merged because they follow the same purpose…).</p>
+<p>Fortunately for us, Alberto wrote a <a href="https://medium.com/@ziobrando/from-technical-debt-to-design-integrity-48e7056b6776"  target="_blank" >post</a> in which he explains these concepts in a much cleaner way than me 😅</p>
+<p><strong>Refactoring with CQRS (without events) - <a href="https://www.linkedin.com/in/lucagiovenzana/"  target="_blank" >Luca Giovenzana</a></strong></p>
+<p>Luca showed how they refactored the backend for their startup (<a href="https://golee.it/"  target="_blank" >golee</a>) using CQRS, but without using event sourcing as everyone doing CQRS is doing right now. Basically, the team at golee migrated some functionality to the new, greenfield codebase which was used as <em>write model</em>, while keeping the old (legacy) code as <em>read model</em> and as a backup, by writing to it using a hook.</p>
+<p>By keeping the system simple (no events and event sourcing) they were able to keep both systems running, without impacting on their ability to extend it and improving performances.</p>
+<p>His session was a nice look at how to take tradeoffs, which are essential when running a startup!</p>
+<p><strong>Create a Macropad for fun!! - <a href="https://www.linkedin.com/in/gianni-bombelli/"  target="_blank" >Gianni Bombelli</a></strong></p>
+<p>During the breaks and dinners on thursday and friday I was introduced to the world of custom keyboards. It’s a world full of crazy people talking about layouts, layers and keys. When Gianni put a post-it named “Create a macropad for FUN!” I couldn’t resist.</p>
+<p>In his session, he showed us his “hobby” project, a custom mechanical macropad to help him during training sessions, in which he uses a graphics tablet and might need some ready-to-use shortcuts (e.g. to delete the latest line drawn, to open an application, to use git).</p>
+<p>His session was a deep-dive in how to build a custom keyboard, from the PCB up to the customisation with QMK and a bit of C programming. Now I really want a custom macropad!! I’ll wait for the “BomboPad” to enter the market 😛</p>
+<p><strong>Orthogonality of TDD, SOLID, FP - <a href="https://www.linkedin.com/in/matteobaglini/"  target="_blank" >Matteo Baglini</a></strong></p>
+<p>In his session, Matteo showed us how TDD, SOLID principles and Functional Programming are related. He implemented the password validator kata, doing small steps by following TDD and doing it in a functional way.</p>
+<p>I came into the session while it was already started so I lost most of the context. Fortunately, Matteo shared the <a href="https://github.com/matteobaglini/orthogonality-socrates-it-2023"  target="_blank" >repo</a> containing the kata implementation, with every small step of the red-green-refactor process explained in separate commits! A great way to visualize TDD in action.</p>
+<p><strong>PKMS/Note Taking - <a href="https://www.linkedin.com/in/jagasantagostino/"  target="_blank" >Jaga Santagostino</a></strong></p>
+<p>The final session I attended was an open discussion about Obsidian and Personal Knowledge Management Systems (PKMS) in general.</p>
+<p>Jaga showed us the many features in Obsidian and tried to compare it with another famous PKMS application, Notion.</p>
+<p>While presenting, other participants asked questions and gave their opinions. For example I learned about another tool, called logseq, which is quite similar to obsidian.</p>
+<p>In the end I gave obsidian a try. I actually used it to take notes during the unconference, and to take notes at the Codemotion conference the week later. I now found out how to share my notes with git, so from now on I’ll try to use it instead of Notion! It’s local-first paradigm is very useful when working offline, and the backlinks and graph view are really interesting and allow to link ideas together. Also, is definitely faster than notion 😅.</p>
+<p>Thanks Jaga for this discovery!</p>
+<h2 id="the-end">The End!</h2>
+<p>SoCraTes was a great event! I met new people, learned a lot and had fun, the perfect combination    for a conference.</p>
+<p>I came home with a lot of new concepts, tools and inspiration, and I cannot wait for the next event like this (which will be the <a href="https://www.agileday.it/"  target="_blank" >2023 Agile Day</a> Unconference, on Nov. 17 😛).</p>
+<p>As always, thanks for all the participants, to the sponsors, organizer and everyone involved. The most meaningful connections happen in a free and creative environment, and that’s exactly what SoCraTes is.</p>
+<p>Thanks for reading this long and boring summary, I hope to have shown (even a bit) all I saw and felt during the event. If you find anything to correct (e.g. about your session, about my grammar, or if I forgot something) just contact me via mail or linkedin, or open an issue on this website repository on github.</p>
+<p>As always, see you next time!</p>
+      ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
+Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
+As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><content><![CDATA[
+        <p>Hi 👋 welcome to a new post.</p>
+<p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p>
+<p>As I already said in my <a href="https://marcobacis.com/blog/2022-a-review/"  target="_blank" >2022 review</a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.</p>
+<p>I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!</p>
+<p>What is FOSDEM? It’s a free event where developers meet to share ideas and collaborate on open-source software. The event is held every year at the <a href="https://www.ulb.be/en"  target="_blank" >Université Libre de Bruxelles</a>, and is <a href="https://fosdem.org/2023/about/sponsors/"  target="_blank" >sponsored</a> by the main open-source projects and companies.</p>
+<p>FOSS stands for “Free and Open Source Software”: free as in both “free beer” and “free speech”. For software to be FOSS, it should give:</p>
+<ul>
+<li>Freedom to run it</li>
+<li>Freedom to access his source code, study it and change it to fit our own necessities</li>
+<li>Freedom to share/spread the software (original or modified) to help others</li>
+</ul>
+<p>Working and using open source software means collaborating with other developers, sharing our programming and product ideas, and together improving the world. And that’s exactly the spirit I saw at FOSDEM!</p>
+<h2 id="community-and-inspiration">Community and Inspiration</h2>
+<p>I think that being part of a community is great. It gives me a chance to see developers like me, but also completely diverse people.</p>
+<p>While at FOSDEM, I experienced this sense of community and diversity firsthand. It felt like being in a sort of “tribe” of nerds/developers gathering for what they love.</p>
+<p>The halls of Brussels university were full for both days of the conference. The city itself was conquered by nerds for the entire weekend! During the conference everyone was chatting about their latest projects and ideas.</p>
+<p>Also, many open source projects and companies I know (think of the major Linux distros and software companies) were there with their stands, gadgets (Debian was giving away beer!) and stickers!</p>
+<p>Being there reminded me of my days at university (not so long ago), hacking silly stuff on my laptop. But in this case, the people speaking and attending the conference were anything but amateurs like me 😅. Open Source can be a way to express ourselves,  to find inspiration and to be part of something bigger, and FOSDEM showed me the way many people are doing it.</p>
+<h2 id="list-of-talks-i-attended">List of Talks I attended</h2>
+<p>Below you can find the list of talks I personally attended while there. I didn’t attend all the events I wanted (some rooms were full all the time!) and ended up going around the different rooms in search of inspiration.</p>
+<p>If you have the time, give them a look!</p>
+<p><strong>Saturday</strong></p>
+<ul>
+<li><a href="https://fosdem.org/2023/schedule/event/gostateofgo/"  target="_blank" >The State of Go</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/goreducecognitive/"  target="_blank" >Recipes for reducing cognitive load (in go)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/bt_mesh_rust/"  target="_blank" >Developing Bluetooth Mesh Networks with Rust</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/5_errors_when_building/"  target="_blank" >5 errors when building embedded systems</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/making_continuous_delivery_accessible_to_all/"  target="_blank" >Making Continuous Delivery Accessible to All</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/"  target="_blank" >How to automate documentation workflow for developers</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gobuildingdatabase/"  target="_blank" >Our Mad Journey of Building a Vector Database in Go</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gowatermill/"  target="_blank" >Building a basic event-driven application in go in 20 minutes</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/goisoo/"  target="_blank" >Is Go object-oriented? A case of public opinion</a></li>
+</ul>
+<p><strong>Sunday</strong></p>
+<ul>
+<li><a href="https://fosdem.org/2023/schedule/event/rust_coreutils/"  target="_blank" >Reimplementing the Coreutils in a modern language (Rust)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/zero_knowledge_crypto/"  target="_blank" >Zero-Knowledge Cryptography and anonymous engineering</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/python_build_event_driven_application/"  target="_blank" >How to build an event-driven application in python</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/mutation_testing/"  target="_blank" >Fear the Mutants, love the Mutants</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/sth_to_hide/"  target="_blank" >Having something to hide</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/rust_ebpf/"  target="_blank" >Rust in the Kernel (via eBPF)</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/sbom_key_ingredients/"  target="_blank" >The 7 key ingredients of a great SBOM</a></li>
+<li><a href="https://fosdem.org/2023/schedule/event/gb_arm/"  target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…</a></li>
+</ul>
+
+      ]]></content:encoded></item></channel></rss>
