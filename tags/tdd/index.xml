@@ -2,7 +2,7 @@
 &lt;p>Last Friday I attended the 2023 &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" >Working Software Conference&lt;/a> in Milan. The Working Software Conference is an event organised by the &lt;a href="https://agilemovement.it" target="_blank" >Italian Agile Movement&lt;/a>, focused on the second principle of the &lt;a href="https://agilemanifesto.org" target="_blank" >agile manifesto&lt;/a>:&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>Working software over comprehensive documentation&lt;/em>&lt;/p>
-&lt;/blockquote></description><content><![CDATA[
+&lt;/blockquote></description><content:encoded><![CDATA[
         <p>Hi 👋 and welcome to a new post!</p>
 <p>Last Friday I attended the 2023 <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in Milan. The Working Software Conference is an event organised by the <a href="https://agilemovement.it"  target="_blank" >Italian Agile Movement</a>, focused on the second principle of the <a href="https://agilemanifesto.org"  target="_blank" >agile manifesto</a>:</p>
 <blockquote>
@@ -60,7 +60,7 @@ In particular, I attended two workshops, one in the morning and one in the after
       ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
 The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.
 What is a kata? Typical developer performing a kata
-&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (Wikipedia).</description><content><![CDATA[
+&amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (Wikipedia).</description><content:encoded><![CDATA[
         <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
 <h2 id="what-is-a-kata">What is a kata?</h2>
@@ -121,7 +121,7 @@ Another challenge was to always give state  to objects (so avoiding value object
 
       ]]></content:encoded></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>Hi 👋 welcome to a new post!
 Today I’m going to post a little summary of my experience at the XPUGBg meetup I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.
-What is a collaborative codebase? Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</description><content><![CDATA[
+What is a collaborative codebase? Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</description><content:encoded><![CDATA[
         <p>Hi 👋 welcome to a new post!</p>
 <p>Today I’m going to post a little summary of my experience at the <a href="https://www.meetup.com/xpugbg/events/290690004/"  target="_blank" >XPUGBg meetup</a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.</p>
 <h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2>
@@ -186,7 +186,7 @@ What is a collaborative codebase? Alessio started his talk with a question: what
 
       ]]></content:encoded></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>Hi 👋 and welcome to a new post!
 In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (here) on January 24th.
-For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description><content><![CDATA[
+For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description><content:encoded><![CDATA[
         <p>Hi 👋 and welcome to a new post!</p>
 <p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (<a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877"  target="_blank" >here</a>) on January 24th.</p>
 <p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</p>
@@ -225,7 +225,7 @@ For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his t
 
       ]]></content:encoded></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>Hi! 👋
 Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The XPUGBg is an association promoting and organizing events related to extreme programming in the Bergamo region.
-In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from Alcor Academy) performed a live mob programming session with the audience, to solve the mars rover kata. We learned how to do mob programming, and how the Outside-In TDD approach works.</description><content><![CDATA[
+In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from Alcor Academy) performed a live mob programming session with the audience, to solve the mars rover kata. We learned how to do mob programming, and how the Outside-In TDD approach works.</description><content:encoded><![CDATA[
         <p>Hi! 👋</p>
 <p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUGBg</a> is an association promoting and organizing events related to extreme programming in the Bergamo region.</p>
 <p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from <a href="https://alcor.academy/"  target="_blank" >Alcor Academy</a>) performed a live mob programming session with the audience, to solve the <a href="https://github.com/makomweb/mars-rover"  target="_blank" >mars rover kata</a>. We learned how to do mob programming, and how the Outside-In TDD approach works.</p>
