@@ -1,5 +1,5 @@
 ---
-title: "SoCraTes 2023"
+title: "My Experience at SoCraTes 2023"
 date: 2023-11-03T21:00:00+01:00
 publishdate: 2023-11-03T21:00:00+01:00
 tags: ["architecture", "conference", "learning", "programming", "retrospective", "travel"]
