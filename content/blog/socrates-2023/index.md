@@ -155,7 +155,7 @@ Second day of Unconference. We started immediately with the session proposals an
 
 | | |
 | ----------- | ----------- |
-| ![SoCraTes Day 2](day1panel1.jpeg) | ![SoCraTes Day 2](day1panel2.jpeg) |
+| ![SoCraTes Day 2](day2panel1.jpeg) | ![SoCraTes Day 2](day2panel2.jpeg) |
 
 **~~Coping~~/Coding with Product - [Alberto Brandolini](https://www.linkedin.com/in/brando/)**
 
