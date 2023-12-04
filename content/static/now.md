@@ -30,8 +30,11 @@ In addition to showing off what I'm up to, it also helps in focusing on less stu
 
 So, what am I doing right now?
 
-* Working at [e-Novia](https://e-novia.it) as a Software Engineer
-    * In particular, working with [Weart](https://weart.it) on their Middleware and SDKs for their haptic glove
+* Working at [Zupit](https://zupit.it) as Full-Stack Software Engineer
+
+* Solving [Advent of Code](adventofcode.com) puzzles ([here](https://github.com/marcobacis/adventofcode/tree/main) my solutions) in Rust
+
+* Learning Angular 
 
 <br/>
 

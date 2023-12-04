@@ -11,7 +11,7 @@ enableGitInfo = true
 [params.index]
   picture = "/images/avatar.svg"
   title = "Hello!"
-  subtitle = "I'm Marco, an Italian software engineer based in Milan"
+  subtitle = "I'm Marco, an Italian software engineer"
   mdtext = ''''''
   alertbar = true
 
