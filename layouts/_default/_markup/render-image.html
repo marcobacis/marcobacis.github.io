@@ -2,7 +2,7 @@
   <figure>
     <img class="img-fluid image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
     {{ if .Title }}
-    <figcaption class="caption">{{ .Title }}</figcaption>
+    <figcaption class="caption">{{ .Title | safeHTML }}</figcaption>
     {{ end }}
   </figure>
 </div>
