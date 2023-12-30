@@ -1,11 +1,22 @@
 [job]
     [[entry]]
+        company = "Zupit"
+        logo = "/images/work/zupit.png"
+        place = "Trento, Italy (full remote)"
+        startdate = "Dec. 2023"
+        description = """ \
+Working as a Full-Stack Software Developer in Zupit, an agile software house focused on delivering quality software, without compromising on learning and work-life balance.
+
+Currently in the Neon team, developing Full-Stack applications in .NET and Angular
+"""
+    [[entry]]
         company = "e-Novia"
         logo = "/images/work/e-novia.webp"
         place = "Milan, Italy"
         startdate = "Sep. 2019"
+        enddate = "Nov. 2023"
         description = """ \
-            Working in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, web, etc...) along with some external corporate customers.
+            Worked in the Software Engineering team of e-Novia (the "Enterprises Factory"), supporting the company controlled startups in different areas (robotics, mechanics, web, etc...) along with some external corporate customers.
 
 Worked in different projects and technologies such as:
 * Web (React for frontend, .NET and Azure for backend)
