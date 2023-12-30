@@ -32,8 +32,13 @@ I mostly worked on FPGA-based projects for High Performance Computing, using hig
 My master thesis research involved managing FPGA boards inside the cloud environment.
 The aim was to prove that FPGAs can be provided "as-a-service" and orchestrated in order to guarantee their 100% usage.
 
-Right now, I'm working at [e-Novia](https://e-novia.it) as Software Engineer. The company likes to call itself "The Enterprises Factory" as it participates in reasearch projects and gathers intellectual property to create and accelerate technology startups. We mainly works in three "sectors": _collaborative mobility_, _humanized machines_ and _augmented humans_ (you can look at the list of startups on the company's website).
-My role is to support the startups in creating their products and to help improving their (technological) processes using my software development skills.
+From 2019 to the end of 2023, I worked at [e-Novia](https://e-novia.it) as Software Engineer. The company acts both as a consultancy company (mostly in the automotive sector) and as a "startup factory".
+My role as a Software Engineer was to support startups and corporate customers in creating and maintaining their products (mostly MVPs, with few live products).
+In e-Novia I worked on quite different technologies, from low (C++) to high (Web and Desktop GUIs) levels and in different sectors, such as IoT, automotive, robotics, VR/AR and many others!
+
+I definitely learned a lot, but after 4 years it was time to change and focus on specific aspects of software development.
+
+Right now, I'm working at [Zupit](https://zupit.it) as Full-Stack developer (currently with .NET + Angular). Zupit is a small software house in Trento (Italy) focused on providing custom and quality software to its customers. The company values work-life balance and continuous learning. In fact, I work for 6 hours a day, and have more time for learning and relaxing! However, less time doesn't mean less work: the focus is on improving developer productivity and on shipping value faster, without compromising on quality. 
 
 ### Why?
 
