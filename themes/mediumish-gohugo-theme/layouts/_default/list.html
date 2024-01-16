@@ -4,9 +4,12 @@
   <!-- Posts Index
         ================================================== -->
   <section class="recent-posts">
+
+    {{ if eq .Section "tags" }}
     <div class="section-title">
-      <h2><span>All Posts</span></h2>
+      <h2><span>Pages tagged "{{ .Title }}"</span></h2>
     </div>
+    {{ end}}
     <div class="listrecent">
       {{ $post_paginator := .Paginate (.Pages) 6 }} {{ range
       $post_paginator.Pages }} {{- partial "list-partials/postbox.html" . -}}

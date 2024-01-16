@@ -4,7 +4,6 @@ title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
 copyright = "© Copyright Marco Bacis 2018-{year}"
 googleAnalytics = "G-WJJS43TXKN"
-disqusShortname = "marcobacis-1"
 
 enableGitInfo = true
 
