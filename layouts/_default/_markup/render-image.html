@@ -1,6 +1,12 @@
 <div class="image">
   <figure>
-    <img class="img-fluid image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+    {{ $url := urls.Parse .Destination }}
+    {{ if or (eq $url.IsAbs true) (hasPrefix .Destination "/") }}
+        <img class="img-fluid image" src="{{ .Destination | safeURL }}" title="{{ .Title }}" alt="{{ .Title }}"/>
+    {{ else }}
+        <img class="img-fluid image" src="{{ .Page.Permalink }}{{ .Destination }}" title="{{ .Title }}" alt="{{ .Title }}"/>
+    {{ end }}
+
     {{ if .Title }}
     <figcaption class="caption">{{ .Title | safeHTML }}</figcaption>
     {{ end }}
