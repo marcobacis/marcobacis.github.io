@@ -5,16 +5,20 @@ What is a kata? Typical developer performing a kata
         <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
 <h2 id="what-is-a-kata">What is a kata?</h2>
-<p><div class="image">
+<p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/katurday/kata_dwight.webp" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_1280x0_resize_q75_h2_box_2.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_1280x0_resize_q75_bgffffff_box_2.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_bgffffff_box_2.jpg" width="1280"
+        height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></p>
+
+
+
+</figure></p>
 <p>Typical developer performing a kata</p>
 <p>&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (<a href="https://en.wikipedia.org/wiki/Kata"  target="_blank" >Wikipedia</a>).</p>
 <p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.</p>
@@ -122,16 +126,7 @@ What is a collaborative codebase? Alessio started his talk with a question: what
 <h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2>
 <p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</p>
 <p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.</p>
-<p><div class="image">
-  <figure>
-    
-    
-        <img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" title="" alt=""/>
-    
-
-    
-  </figure>
-</div></p>
+<!-- raw HTML omitted -->
 <p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?</p>
 <p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with  higher quality.</p>
 <h2 id="what-is-trunk-based-development">What is trunk-based development?</h2>

@@ -6,16 +6,7 @@ What is a collaborative codebase? Alessio started his talk with a question: what
 <h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2>
 <p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</p>
 <p>For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.</p>
-<p><div class="image">
-  <figure>
-    
-    
-        <img class="img-fluid image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png" title="" alt=""/>
-    
-
-    
-  </figure>
-</div></p>
+<!-- raw HTML omitted -->
 <p>Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?</p>
 <p>In the talk, Alessio explains why doing trunk-based devlopment brings the best collaboration on the codebase, by improving the feedback loop, making WIP evident and allowing to ship faster and with  higher quality.</p>
 <h2 id="what-is-trunk-based-development">What is trunk-based development?</h2>

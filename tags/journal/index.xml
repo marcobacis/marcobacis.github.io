@@ -4,7 +4,7 @@ I usually spend the last days of the year eating and laying on the couch (christ
 Let’s begin!
 2023 Goals Review First, a short check on the goals I wrote in my 2022 review:
 ❓Learn in public
-I definitely tried to expose myself a little more and share what I learned in public.</description><enclosure url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" length="24599" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+I definitely tried to expose myself a little more and share what I learned in public.</description><enclosure url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" length="15854" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <p>Hi 👋 and welcome to the last post of 2023!</p>
 <p>As already done <a href="https://marcobacis.com/blog/2022-a-review/"  target="_blank" >last year</a>, it’s time for a end-of-year recap!</p>
 <p>I usually spend the last days of the year eating and laying on the couch (christmas is strong in italy) so don’t expect a long post.</p>
@@ -24,32 +24,40 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <h2 id="work">Work</h2>
 <p>Let’s deep dive into some aspects of this year, starting with my job as a software engineer/developer/whatever.</p>
 <p>The year started with a long-running project finally coming to an end. We finished it by testing with the customer for a last time…..in japan! I went to Okinawa for the tests, and mainland Japan for the final review of the project. In the end, the customer was satisfied by our work and I managed to visit a small japanese town (even if it was just for a day)! I also managed to see sakura trees blooming even if it was march.</p>
-<p><div class="image">
+<p><div class="image imgB-82c737163d946ad93188de0de7580114-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/sakura.jpeg" title="Too many pictures to share..." alt="Too many pictures to share..."/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_bgffffff_box_2.jpg" width="4032"
+        height="3024" alt="Sakura Trees Blooming" title="Sakura Trees Blooming" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">Too many pictures to share...</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">Too many pictures to share...</figcaption>
+
+</figure></p>
 <p>From April to October I worked for <a href="https://weart.it/"  target="_blank" >WeArt</a>, a small startup inside e-Novia focusing on haptics for Virtual/Augmented reality. In particular, I worked on their low-level SDK (e.g. <a href="https://marcobacis.com/blog/docs-as-code-doxygen-awesome/"  target="_blank" >improving the documentation</a>) and their Middleware software (a WinUI/UWP app to communicate with their device).</p>
 <p>In WeArt I learned to be more proactive in my work. Being in a small, product-oriented startup shifted my actions from just doing what I was told (common in consulting firms) to actively thinking on how to improve the product itself (in my case, the SDK and Middleware).</p>
-<p><div class="image">
+<p><div class="image imgB-31568efab1dc746f1ff91bc7a6d94966-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/touchdiver.jpeg" title="TouchDIVER ©Weart S.r.l. (weart.it)" alt="TouchDIVER ©Weart S.r.l. (weart.it)"/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_bgffffff_box_2.jpg" width="2355"
+        height="1344" alt="WeArt TouchDIVER" title="WeArt TouchDIVER" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">TouchDIVER ©Weart S.r.l. (weart.it)</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">TouchDIVER ©Weart S.r.l. (weart.it)</figcaption>
+
+</figure></p>
 <p>Finally, in December I started a new journey in <a href="https://www.zupit.it/"  target="_blank" >Zupit</a>!</p>
 <p>Zupit is a small software house in Trento (Italy) which focuses on agility, code quality, learning and work-life balance. The most interesting aspect of my new job is that I’m working only 6 hours per day (part-time) without compromising on productivity.</p>
 <p>The work is fast but already rewarding, even after just 1 month since I started: working less hours has led to improved productivity (we still have to ship the same amount!) and to more focus during working hours. In addition to that, I have time to learn, exercise and relax in the afternoon.</p>
@@ -128,18 +136,22 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <p>Last year I bought and moved to my home with my girlfriend and her cat. The only notable thing I did this year was to finally attach lamps to the walls (instead of letting the lightbulbs dangling 😅). I also bought some furniture and improved my home office (thanks Zupit for that 😛).</p>
 <p>A sad note before thinking about my goals for next year: in July, our cat Lucky passed away 😢. He had been with my girlfriend for 8 years and with me for the last year and half. We discovered he had heart issues during the christmas holidays in 2022, and even though he got better during the winter and spring, in the summer he got worse and we had to let him go.</p>
 <p>See you Lucky 😢</p>
-<p><div class="image">
+<p><div class="image imgB-65be6bcd9a29427c7dab6cc08430286e-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/lucky.jpeg" title="Such a cute boy..." alt="Such a cute boy..."/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_bgffffff_box_2.jpg" width="4032"
+        height="3024" alt="Lucky The Cat" title="Lucky The Cat" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">Such a cute boy...</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">Such a cute boy...</figcaption>
+
+</figure></p>
 <h2 id="new-years-resolutions">New Year’s resolutions</h2>
 <p>I don’t like setting goals at the end of the year. Christmas Holidays allow me to relax and dream of impossible goals and futures in which everything is perfect and goes according to plans, but reality is never like this.</p>
 <p>Still…. let’s make some new year’s resolutions for 2024 😅</p>
@@ -164,16 +176,20 @@ What is a kata? Typical developer performing a kata
         <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
 <h2 id="what-is-a-kata">What is a kata?</h2>
-<p><div class="image">
+<p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/katurday/kata_dwight.webp" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_1280x0_resize_q75_h2_box_2.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_1280x0_resize_q75_bgffffff_box_2.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu4e057dfe98c4a02badef56e6fc1254c6_57284_640x0_resize_q75_bgffffff_box_2.jpg" width="1280"
+        height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></p>
+
+
+
+</figure></p>
 <p>Typical developer performing a kata</p>
 <p>&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (<a href="https://en.wikipedia.org/wiki/Kata"  target="_blank" >Wikipedia</a>).</p>
 <p>Developers have adopted this term and applied it to their set of movements, which include coding, testing, and designing. A kata is a short problem/exercise meant to be practiced many times. The same kata can be practiced with different languages, approaches, and methodologies, providing a new perspective each time to learn.</p>

@@ -4,7 +4,7 @@ I usually spend the last days of the year eating and laying on the couch (christ
 Let’s begin!
 2023 Goals Review First, a short check on the goals I wrote in my 2022 review:
 ❓Learn in public
-I definitely tried to expose myself a little more and share what I learned in public.</description><enclosure url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" length="24599" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/lucky_hu67fb2abd383f25c25763e7bb68476da8_1616636_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+I definitely tried to expose myself a little more and share what I learned in public.</description><enclosure url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" length="15854" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/cover_hu8fee9e9e742717870000e95fcd0ea453_80746_480x480_fit_q75_bgffffff_box.jpeg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <p>Hi 👋 and welcome to the last post of 2023!</p>
 <p>As already done <a href="https://marcobacis.com/blog/2022-a-review/"  target="_blank" >last year</a>, it’s time for a end-of-year recap!</p>
 <p>I usually spend the last days of the year eating and laying on the couch (christmas is strong in italy) so don’t expect a long post.</p>
@@ -24,32 +24,40 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <h2 id="work">Work</h2>
 <p>Let’s deep dive into some aspects of this year, starting with my job as a software engineer/developer/whatever.</p>
 <p>The year started with a long-running project finally coming to an end. We finished it by testing with the customer for a last time…..in japan! I went to Okinawa for the tests, and mainland Japan for the final review of the project. In the end, the customer was satisfied by our work and I managed to visit a small japanese town (even if it was just for a day)! I also managed to see sakura trees blooming even if it was march.</p>
-<p><div class="image">
+<p><div class="image imgB-82c737163d946ad93188de0de7580114-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/sakura.jpeg" title="Too many pictures to share..." alt="Too many pictures to share..."/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/sakura_hu9f83d736fcd1ec324051e145b3d30979_1766392_640x0_resize_q75_bgffffff_box_2.jpg" width="4032"
+        height="3024" alt="Sakura Trees Blooming" title="Sakura Trees Blooming" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">Too many pictures to share...</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">Too many pictures to share...</figcaption>
+
+</figure></p>
 <p>From April to October I worked for <a href="https://weart.it/"  target="_blank" >WeArt</a>, a small startup inside e-Novia focusing on haptics for Virtual/Augmented reality. In particular, I worked on their low-level SDK (e.g. <a href="https://marcobacis.com/blog/docs-as-code-doxygen-awesome/"  target="_blank" >improving the documentation</a>) and their Middleware software (a WinUI/UWP app to communicate with their device).</p>
 <p>In WeArt I learned to be more proactive in my work. Being in a small, product-oriented startup shifted my actions from just doing what I was told (common in consulting firms) to actively thinking on how to improve the product itself (in my case, the SDK and Middleware).</p>
-<p><div class="image">
+<p><div class="image imgB-31568efab1dc746f1ff91bc7a6d94966-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/touchdiver.jpeg" title="TouchDIVER ©Weart S.r.l. (weart.it)" alt="TouchDIVER ©Weart S.r.l. (weart.it)"/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/touchdiver_hua7ebdf289df51d92c7e8499fa4fb2872_121230_640x0_resize_q75_bgffffff_box_2.jpg" width="2355"
+        height="1344" alt="WeArt TouchDIVER" title="WeArt TouchDIVER" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">TouchDIVER ©Weart S.r.l. (weart.it)</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">TouchDIVER ©Weart S.r.l. (weart.it)</figcaption>
+
+</figure></p>
 <p>Finally, in December I started a new journey in <a href="https://www.zupit.it/"  target="_blank" >Zupit</a>!</p>
 <p>Zupit is a small software house in Trento (Italy) which focuses on agility, code quality, learning and work-life balance. The most interesting aspect of my new job is that I’m working only 6 hours per day (part-time) without compromising on productivity.</p>
 <p>The work is fast but already rewarding, even after just 1 month since I started: working less hours has led to improved productivity (we still have to ship the same amount!) and to more focus during working hours. In addition to that, I have time to learn, exercise and relax in the afternoon.</p>
@@ -128,18 +136,22 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <p>Last year I bought and moved to my home with my girlfriend and her cat. The only notable thing I did this year was to finally attach lamps to the walls (instead of letting the lightbulbs dangling 😅). I also bought some furniture and improved my home office (thanks Zupit for that 😛).</p>
 <p>A sad note before thinking about my goals for next year: in July, our cat Lucky passed away 😢. He had been with my girlfriend for 8 years and with me for the last year and half. We discovered he had heart issues during the christmas holidays in 2022, and even though he got better during the winter and spring, in the summer he got worse and we had to let him go.</p>
 <p>See you Lucky 😢</p>
-<p><div class="image">
+<p><div class="image imgB-65be6bcd9a29427c7dab6cc08430286e-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/2023-review/lucky.jpeg" title="Such a cute boy..." alt="Such a cute boy..."/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/2023-review/lucky_hu7869ae5d2cddfcf33304f62f50113753_305342_640x0_resize_q75_bgffffff_box_2.jpg" width="4032"
+        height="3024" alt="Lucky The Cat" title="Lucky The Cat" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">Such a cute boy...</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">Such a cute boy...</figcaption>
+
+</figure></p>
 <h2 id="new-years-resolutions">New Year’s resolutions</h2>
 <p>I don’t like setting goals at the end of the year. Christmas Holidays allow me to relax and dream of impossible goals and futures in which everything is perfect and goes according to plans, but reality is never like this.</p>
 <p>Still…. let’s make some new year’s resolutions for 2024 😅</p>
@@ -160,7 +172,7 @@ I definitely tried to expose myself a little more and share what I learned in pu
       ]]></content:encoded></item><item><title>My Experience at SoCraTes 2023</title><link>https://marcobacis.com/blog/socrates-2023/</link><pubDate>Fri, 03 Nov 2023 21:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/socrates-2023/</guid><description>&lt;p>Hi! 👋 Welcome to a new post.&lt;/p>
 &lt;p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.&lt;/p>
 &lt;p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!&lt;/p>
-&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p></description><enclosure url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hube17f1ed59bd558c780429d37ae77d65_50982_480x480_fit_q75_bgffffff_box.jpeg" length="25658" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hube17f1ed59bd558c780429d37ae77d65_50982_480x480_fit_q75_bgffffff_box.jpeg" width="361" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hube17f1ed59bd558c780429d37ae77d65_50982_480x480_fit_q75_bgffffff_box.jpeg" width="361" height="480"/></media:content><content:encoded><![CDATA[
+&lt;p>In this post, I&amp;rsquo;m going to give a brief summary of what an unconference is and the sessions I attended during the event.&lt;/p></description><enclosure url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_480x480_fit_q75_bgffffff_box_2.jpg" length="22985" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_480x480_fit_q75_bgffffff_box_2.jpg" width="361" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_480x480_fit_q75_bgffffff_box_2.jpg" width="361" height="480"/></media:content><content:encoded><![CDATA[
         <p>Hi! 👋 Welcome to a new post.</p>
 <p>On October 19-21, I attended the SoCraTes (un)conference in Rimini. With over 90 people, we gathered to talk about software crafting, testing, and all related (and unrelated) stuff 😛.</p>
 <p>The event was fantastic! I met a lot of new people, gained insights into my current and future learning, and had some interesting (and crazy) discussions (such as discovering the niche of custom keyboards and firmware 🤩)!!!</p>
@@ -209,26 +221,34 @@ I definitely tried to expose myself a little more and share what I learned in pu
 </thead>
 <tbody>
 <tr>
-<td><div class="image">
+<td><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/socrates-2023/day1panel1.jpeg" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/socrates-2023/day1panel1_hu32254362b518cc8745bb5e1fb5421d3c_955608_640x0_resize_q75_bgffffff_box_2.jpg" width="3024"
+        height="4032" alt="SoCraTes Day 1" title="SoCraTes Day 1" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></td>
-<td><div class="image">
+
+
+
+</figure></td>
+<td><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/socrates-2023/day1panel2.jpeg" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/socrates-2023/day1panel2_hub5a2d824a7a0aa22e75158ce4f42f6ea_811900_640x0_resize_q75_bgffffff_box_2.jpg" width="3024"
+        height="4032" alt="SoCraTes Day 1" title="SoCraTes Day 1" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></td>
+
+
+
+</figure></td>
 </tr>
 </tbody>
 </table>
@@ -265,18 +285,22 @@ I definitely tried to expose myself a little more and share what I learned in pu
 </ul>
 <p>At the end, Chiara presented how she&rsquo;s doing it in the <a href="https://handbook.agilelab.it/BookClub.html"  target="_blank" >Agile Lab Book Club</a>: instead of mandating all members to read a given chapter every time, the format is more generic. Every two weeks, the club curators propose a topic: members can explore it in any way (the recommended book, videos, blogs, anything) and post their learnings on a shared board. At the end of the two-week period, they share what they learned in a short training session.</p>
 <p>I loved this session! The way it was kept was fantastic, and we were immersed in Chiara&rsquo;s mind throughout the entire duration of the discussion. That&rsquo;s exactly what I expected from an unconference.</p>
-<p><div class="image">
+<p><div class="image imgB-c9a647c8de673d1d332dd1be22138622-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session.jpeg" title="The output of the session" alt="The output of the session"/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_320x0_resize_q75_h2_box_2.webp 320w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_320x0_resize_q75_bgffffff_box_2.jpg 320w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/socrates-2023/chiara_barbagianni_session_hu91557a84d0d266e2977a22ecf0289e43_19456_640x0_resize_q75_bgffffff_box_2.jpg" width="385"
+        height="512" alt="The output of the session" title="The output of the session" loading="lazy" />
+    </picture>
+</div>
 
-    
-    <figcaption class="caption">The output of the session</figcaption>
-    
-  </figure>
-</div></p>
+
+
+
+<figcaption class="caption">The output of the session</figcaption>
+
+</figure></p>
 <p><strong>Monads for the Rest of us (in C#)  - <a href="https://www.linkedin.com/in/arialdomartini/"  target="_blank" >Arialdo Martini</a></strong></p>
 <p>Even after studying it at the university, I still find it difficult to understand most functional programming concepts. But thanks to Arialdo, now I can understand it a bit more.</p>
 <p>In his session, he started to implement monads (the most difficult concept in FP to me) in plain C#. Starting from function composition, passing through functors and implementing the IO monad, he tried to explain to the folks that we are how functional programming concepts map to an object oriented language.</p>
@@ -296,26 +320,34 @@ I definitely tried to expose myself a little more and share what I learned in pu
 </thead>
 <tbody>
 <tr>
-<td><div class="image">
+<td><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/socrates-2023/day2panel1.jpeg" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/socrates-2023/day2panel1_hu0b6819dbd01a615d00adc93fd0c46973_868572_640x0_resize_q75_bgffffff_box_2.jpg" width="3024"
+        height="4032" alt="SoCraTes Day 2" title="SoCraTes Day 2" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></td>
-<td><div class="image">
+
+
+
+</figure></td>
+<td><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
   <figure>
-    
-    
-        <img class="img-fluid image" src="https://marcobacis.com/blog/socrates-2023/day2panel2.jpeg" title="" alt=""/>
-    
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_320x0_resize_q75_h2_box_2.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_640x0_resize_q75_h2_box_2.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_960x0_resize_q75_h2_box_2.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1280x0_resize_q75_h2_box_2.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1600x0_resize_q75_h2_box_2.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1920x0_resize_q75_h2_box_2.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_320x0_resize_q75_bgffffff_box_2.jpg 320w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_640x0_resize_q75_bgffffff_box_2.jpg 640w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_960x0_resize_q75_bgffffff_box_2.jpg 960w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1280x0_resize_q75_bgffffff_box_2.jpg 1280w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1600x0_resize_q75_bgffffff_box_2.jpg 1600w, https://marcobacis.com/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_1920x0_resize_q75_bgffffff_box_2.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/socrates-2023/day2panel2_huee8bf8e3c9704b8bc0756244d899b9ee_1030478_640x0_resize_q75_bgffffff_box_2.jpg" width="3024"
+        height="4032" alt="SoCraTes Day 2" title="SoCraTes Day 2" loading="lazy" />
+    </picture>
+</div>
 
-    
-  </figure>
-</div></td>
+
+
+
+</figure></td>
 </tr>
 </tbody>
 </table>
@@ -353,7 +385,7 @@ I definitely tried to expose myself a little more and share what I learned in pu
       ]]></content:encoded></item><item><title>2022: A Review</title><link>https://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-a-review/</guid><description>Hi 👋 and welcome to a new post!
 Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.
 So, let’s start!
-Disclaimer: This recap is mostly written by me and for me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</description><content:encoded><![CDATA[
+Disclaimer: This recap is mostly written by me and for me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</description><enclosure url="https://marcobacis.com/blog/2022-a-review/cover_hu4a53d27e0b8c14f465fa216e161099a4_35216_480x480_fit_q75_bgffffff_box_2.jpg" length="14616" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2022-a-review/cover_hu4a53d27e0b8c14f465fa216e161099a4_35216_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2022-a-review/cover_hu4a53d27e0b8c14f465fa216e161099a4_35216_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <p>Hi 👋 and welcome to a new post!</p>
 <p>Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.</p>
 <p>So, let’s start!</p>
