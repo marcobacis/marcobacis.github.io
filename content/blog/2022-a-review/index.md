@@ -4,8 +4,7 @@ date: 2022-12-31T18:00:00+01:00
 publishdate: 2022-12-31T18:00:00+01:00
 tags: ["books", "productivity", "remote", "retrospective", "self", "work"]
 comments: true
-unsplash: "DYWD8FIqtd4"
-thumbnailby: "kronemberger"
+thumbnaildesc: 'Cover by [@kronemberger](http://unsplash.com/kronemberger) on Unsplash.'
 ---
 
 Hi 👋 and welcome to a new post!

@@ -5,6 +5,8 @@ theme = "mediumish-gohugo-theme"
 copyright = "© Copyright Marco Bacis 2018-{year}"
 googleAnalytics = "G-WJJS43TXKN"
 
+timeout = "120s"
+
 enableGitInfo = true
 
 [params.index]

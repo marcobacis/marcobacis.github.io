@@ -11,10 +11,6 @@
                     <img class="img-fluid" src="{{ .RelPermalink }}" alt="Cover Image of the post '{{ $postTitle }}'">
                     {{end}}
                     {{end}}
-                    {{ if .Params.unsplash }}
-                    <img class="img-fluid" src="https://source.unsplash.com/{{ .Params.unsplash }}/400x300"
-                        alt="Cover by @{{ .Params.thumbnailby }} on Unsplash">
-                    {{end}}
                 </a>
             </div>
             <div class="col-md-8">

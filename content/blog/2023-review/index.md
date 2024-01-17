@@ -3,8 +3,7 @@ title: "2023: A Review"
 date: 2023-12-30T08:00:00+01:00
 publishdate: 2023-12-30T08:00:00+01:00
 tags: ["journal", "learning", "retrospective", "self", "summary"]
-unsplash: 287SK3kxCHg
-thumbnailby: timmossholder
+thumbnaildesc: 'Cover by [@timmossholder](http://unsplash.com/timmossholder) on Unsplash.'
 comments: true
 ---
 
@@ -46,13 +45,13 @@ Let’s deep dive into some aspects of this year, starting with my job as a soft
 
 The year started with a long-running project finally coming to an end. We finished it by testing with the customer for a last time…..in japan! I went to Okinawa for the tests, and mainland Japan for the final review of the project. In the end, the customer was satisfied by our work and I managed to visit a small japanese town (even if it was just for a day)! I also managed to see sakura trees blooming even if it was march.
 
-![Sakura Trees Blooming](sakura.jpeg "Too many pictures to share...")
+![Sakura Trees Blooming](sakura.webp "Too many pictures to share...")
 
 From April to October I worked for [WeArt](https://weart.it/), a small startup inside e-Novia focusing on haptics for Virtual/Augmented reality. In particular, I worked on their low-level SDK (e.g. [improving the documentation](https://marcobacis.com/blog/docs-as-code-doxygen-awesome/)) and their Middleware software (a WinUI/UWP app to communicate with their device). 
 
 In WeArt I learned to be more proactive in my work. Being in a small, product-oriented startup shifted my actions from just doing what I was told (common in consulting firms) to actively thinking on how to improve the product itself (in my case, the SDK and Middleware).
 
-![WeArt TouchDIVER](touchdiver.jpeg "TouchDIVER ©Weart S.r.l. (weart.it)")
+![WeArt TouchDIVER](touchdiver.webp "TouchDIVER ©Weart S.r.l. (weart.it)")
 
 
 Finally, in December I started a new journey in [Zupit](https://www.zupit.it/)!
@@ -155,7 +154,7 @@ A sad note before thinking about my goals for next year: in July, our cat Lucky 
 
 See you Lucky 😢
 
-![Lucky The Cat](lucky.jpeg "Such a cute boy...")
+![Lucky The Cat](lucky.webp "Such a cute boy...")
 
 ## New Year’s resolutions
 

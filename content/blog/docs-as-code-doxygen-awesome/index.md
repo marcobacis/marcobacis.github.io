@@ -4,8 +4,7 @@ date: 2023-09-03T08:00:00+01:00
 publishdate: 2023-09-03T08:00:00+01:00
 tags: [".net", "cpp", "css", "documentation", "frontend", "programming"]
 comments: true
-unsplash: "Oaqk7qqNh_c"
-thumbnailby: "impatrickt"
+thumbnaildesc: 'Cover by [@impatrickt](http://unsplash.com/impatrickt) on Unsplash.'
 ---
 
 Hi 👋 and welcome to a new post.

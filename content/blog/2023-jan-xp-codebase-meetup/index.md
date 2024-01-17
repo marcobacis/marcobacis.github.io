@@ -16,7 +16,7 @@ Alessio started his talk with a question: what does it mean to collaborate in a 
 
 For him, it all comes down to optimising the work flow by accepting continuous change. In order to be more productive it’s important to reduce the work in progress, make small changes and reduce the feedback loop.
 
-![XP feedback cycles](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png)
+<!--![XP feedback cycles](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Extreme_Programming.svg/500px-Extreme_Programming.svg.png)-->
 
 Regarding feedback, agile practices tend to work at the highest levels, that of release, iteration, acceptance and so on (as in the above picture). But what about the lower levels of feedback, down to the codebase itself? How do you “accelerate” the feedback loop on all levels, from code to release?
 

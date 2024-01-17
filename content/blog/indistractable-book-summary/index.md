@@ -28,7 +28,7 @@ So, being **indistractable** can be considered a superpower, which allows us to 
 
 Our actions can be pulled by two forces: distraction (moving away from what we want) and traction (moving towards our goals). To become indistractable means to follow traction! Traction and distraction are the **outcomes**, while at the input of we have **triggers**, either internal or external. Let's see how to control these four elements.
 
-![The “indistractable”  model](indistractable_model.png "The “indistractable”  model, ©Nir Eyal")
+![The “indistractable”  model](indistractable_model.webp "The “indistractable”  model, ©Nir Eyal")
 
 ### 1. Master internal triggers
 

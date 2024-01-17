@@ -22,7 +22,7 @@ The first day was dedicated to the unconference. An unconference (also called op
 
 This was the second unconference I ever attended (after SoCraTes, which I described [here](https://marcobacis.com/blog/socrates-2023/)), and I must admit that I’m starting to get addicted! They are a great way to get inspired and they cover a lot of themes and topics (less $$$ spent attending distinct conferences 😜).
 
-![](./iad_unconference_marketplace.png "Friday’s unconference agenda")
+![](iad_unconference_marketplace.webp "Friday’s unconference agenda")
 
 Here is a summary of the sessions I was able to attend. 
 

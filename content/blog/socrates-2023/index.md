@@ -74,7 +74,7 @@ We met in the hotel hall to have the first “marketplace”. Everyone intereste
 
 | | |
 | ----------- | ----------- |
-| ![SoCraTes Day 1](day1panel1.jpeg) | ![SoCraTes Day 1](day1panel2.jpeg) |
+| ![SoCraTes Day 1](day1panel1.webp) | ![SoCraTes Day 1](day1panel2.webp) |
 
 Here’s a brief description on the sessions I was able to participate (even for a few minutes):
 
@@ -131,7 +131,7 @@ At the end, Chiara presented how she's doing it in the [Agile Lab Book Club](htt
 
 I loved this session! The way it was kept was fantastic, and we were immersed in Chiara's mind throughout the entire duration of the discussion. That's exactly what I expected from an unconference.
 
-![The output of the session](chiara_barbagianni_session.jpeg "The output of the session")
+![The output of the session](chiara_barbagianni_session.webp "The output of the session")
 
 **Monads for the Rest of us (in C#)  - [Arialdo Martini](https://www.linkedin.com/in/arialdomartini/)** 
 
@@ -155,7 +155,7 @@ Second day of Unconference. We started immediately with the session proposals an
 
 | | |
 | ----------- | ----------- |
-| ![SoCraTes Day 2](day2panel1.jpeg) | ![SoCraTes Day 2](day2panel2.jpeg) |
+| ![SoCraTes Day 2](day2panel1.webp) | ![SoCraTes Day 2](day2panel2.webp) |
 
 **~~Coping~~/Coding with Product - [Alberto Brandolini](https://www.linkedin.com/in/brando/)**
 

@@ -4,8 +4,7 @@ date: 2022-12-04T18:36:50+01:00
 publishdate: 2022-12-04T18:36:50+01:00
 tags: ["work", "remote"]
 comments: true
-unsplash: "cckf4TsHAuw"
-thumbnailby: "andrewtneel"
+thumbnaildesc: 'Cover by [@andrewtneel](http://unsplash.com/andrewtneel) on Unsplash.'
 ---
 
 Hi! Welcome to my first post on this blog, I hope there will be others soon!

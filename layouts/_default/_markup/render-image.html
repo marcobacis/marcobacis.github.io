@@ -1,14 +1,51 @@
-<div class="image">
-  <figure>
-    {{ $url := urls.Parse .Destination }}
-    {{ if or (eq $url.IsAbs true) (hasPrefix .Destination "/") }}
-        <img class="img-fluid image" src="{{ .Destination | safeURL }}" title="{{ .Title }}" alt="{{ .Title }}"/>
-    {{ else }}
-        <img class="img-fluid image" src="{{ .Page.Permalink }}{{ .Destination }}" title="{{ .Title }}" alt="{{ .Title }}"/>
-    {{ end }}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $src := .Page.Resources.GetMatch (.Destination) -}}
+{{ if $src }}
 
-    {{ if .Title }}
-    <figcaption class="caption">{{ .Title | safeHTML }}</figcaption>
-    {{ end }}
-  </figure>
+{{- $alt := .Text -}}
+{{- $caption := .Title -}}
+{{- $holder := "GIP" -}}
+{{- $hint := "photo" -}}
+{{- $filter := "box" -}}
+{{- $imgBd5 := md5 $src -}}
+{{- $divClass := print "image imgB-" $imgBd5 "-" $holder -}}
+{{- $imgClass := "w-full h-auto animate-fade" -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $actualImg := $src.Resize (print "640x jpg " $filter) -}}
+<div class="{{ $divClass }}">
+  <figure>
+    <picture>
+      <source type="image/webp" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $hint " " $filter) ).Permalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+      <source type="image/jpeg" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x jpg " $filter) ).Permalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+      <img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}"
+        height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+    </picture>
 </div>
+
+{{ else }}
+{{ $url := urls.Parse .Destination }}
+{{ if or (eq $url.IsAbs true) (hasPrefix .Destination "/") }}
+<img class="img-fluid image" src="{{ .Destination | safeURL }}" title="{{ .Title }}" alt="{{ .Title }}" />
+{{ else }}
+<img class="img-fluid image" src="{{ .Page.Permalink }}{{ .Destination }}" title="{{ .Title }}" alt="{{ .Title }}" />
+{{ end }}
+{{ end }}
+
+{{ if .Title }}
+<figcaption class="caption">{{ .Title | safeHTML }}</figcaption>
+{{ end }}
+</figure>
