@@ -50,7 +50,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
       
-      {{ range first 1 (.Resources.ByType "image") }}{{ $original := . }}{{ $.Scratch.Set "image" ($original.Fit "480x480 #ffffff q75 jpeg") }}{{ $image := $.Scratch.Get "image" }}
+      {{ with ((.Resources.ByType "image").GetMatch "cover.*" ) }}{{ $original := . }}{{ $.Scratch.Set "image" ($original.Fit "480x480 #ffffff q75 jpeg") }}{{ $image := $.Scratch.Get "image" }}
       <enclosure url="{{ $image.Permalink }}" length="{{len $image.Content}}" type="{{$image.MediaType}}" />
       <media:content   url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}" medium="{{$image.MediaType.MainType}}" type="{{$image.MediaType}}" >    
         <media:thumbnail url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}"  />       
