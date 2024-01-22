@@ -1,4 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Sun, 14 May 2023 08:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Milan XPUG January Meetup: My Advice on Microservices Architecture, by Gabriele Lana</title><link>https://marcobacis.com/blog/xpug-milan-meetup-microservices/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/xpug-milan-meetup-microservices/</guid><description>&lt;p>Hi  👋 and welcome to a new post!&lt;/p>
+&lt;p>Today I want to share with you a summary on the last meetup I attended, organized by the &lt;a href="https://www.meetup.com/it-IT/xpugmi/" target="_blank" >Milan eXtreme Programming Group&lt;/a>.&lt;/p>
+&lt;p>This time , &lt;a href="https://github.com/gabrielelana" target="_blank" >Gabriele Lana&lt;/a> gave his advice on the pros and cons of microservices, and the problems (and solutions) that he found in his experience.&lt;/p></description><enclosure url="https://marcobacis.com/blog/xpug-milan-meetup-microservices/cover_hu31d1723f075c76d5e02ad52b392e4df7_22474_480x480_fit_q75_bgffffff_box_2.jpg" length="18150" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/xpug-milan-meetup-microservices/cover_hu31d1723f075c76d5e02ad52b392e4df7_22474_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="461" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/xpug-milan-meetup-microservices/cover_hu31d1723f075c76d5e02ad52b392e4df7_22474_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="461"/></media:content><content:encoded><![CDATA[
+        <p>Hi  👋 and welcome to a new post!</p>
+<p>Today I want to share with you a summary on the last meetup I attended, organized by the <a href="https://www.meetup.com/it-IT/xpugmi/"  target="_blank" >Milan eXtreme Programming Group</a>.</p>
+<p>This time , <a href="https://github.com/gabrielelana"  target="_blank" >Gabriele Lana</a> gave his advice on the pros and cons of microservices, and the problems (and solutions) that he found in his experience.</p>
+<p>Gabriele is a consultant with over 20 years of experience, founder of the Milan XPUG and a nerd at heart (he still likes to play with cabinets and has contributed to a <a href="https://github.com/gabrielelana/emacs-nes"  target="_blank" >NES simulator in emacs</a>, among other stuff!!).</p>
+<p>Let&rsquo;s begin!</p>
+<h2 id="microservices-architecture-definition">Microservices Architecture Definition</h2>
+<p>Gabriele started with a premise: Microservices are currently (and have been for  years) still in their &ldquo;hype&rdquo; phase. Hype is a double-edged sword: it means that it&rsquo;s easier to get buy-in for using them, but (as all engineers know) there&rsquo;s the risk to <em>fit the problem to the solution</em>, instead of finding the right solution for the job.
+In fact, microservices are most of the times used without proper reasons, and that&rsquo;s the main source of issues.</p>
+<p>Then, he gave a simple definition of microservices (which can be used to describe anything really, as he admitted): &ldquo;<em>Microservices are small, autonomous services that work together</em>&rdquo;.</p>
+<p>But how big should a microservices be in reality? Given the &ldquo;micro&rdquo; prefix, we might think that their size matters. Some schools of thought say they should be as big as a small team can implement in a month, others will talk in terms of number of lines (hundreds? thousands?). The advent of serverless computing has made thei size even more relevant.</p>
+<p>Gabriele gave the usual answer: <em>it depends</em>!</p>
+<p>But what does it depends from? For Gabriele, the size of a microservice should be intended as the size perceived from outside, such as the API surface.
+A microservice might have millions of lines (e.g. doing video encoding and processing) but still be &ldquo;micro&rdquo; because it does just one thing!! On the other hand, a small CRUD service might have a large surface area and handle a lot of entities, and thus be too complex to make a single microservice. In the end, the size depends on the domain of the system we are going to develop for.</p>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<p><div class="image imgB-0190f847a304ba81c0fcd9a89e308bb1-GIP">
+  <figure>
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_320x0_resize_q75_h2_box.webp 320w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_640x0_resize_q75_h2_box.webp 640w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_960x0_resize_q75_h2_box.webp 960w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1280x0_resize_q75_h2_box.webp 1280w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1600x0_resize_q75_h2_box.webp 1600w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1920x0_resize_q75_h2_box.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_320x0_resize_q75_box.jpeg 320w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_640x0_resize_q75_box.jpeg 640w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_960x0_resize_q75_box.jpeg 960w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1280x0_resize_q75_box.jpeg 1280w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1600x0_resize_q75_box.jpeg 1600w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_1920x0_resize_q75_box.jpeg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/xpug-milan-meetup-microservices/microservices_pros_cons_hua2cc598100e3d41464220e0373af784f_431195_640x0_resize_q75_box.jpeg" width="3648"
+        height="2736" alt="Microservices Pros and Cons, thanks to Stefano Martinelli for the photo!" title="Microservices Pros and Cons, thanks to Stefano Martinelli for the photo!" loading="lazy" />
+    </picture>
+</div>
+
+
+
+
+<figcaption class="caption">Microservices Pros and Cons, thanks to Stefano Martinelli for the photo!</figcaption>
+
+</figure></p>
+<p>After giving a mandatory definition of microservices and their &ldquo;micro&rdquo;-ness, Gabriele gave an overview of the pros and cons of employing a microservices architecture in our systems.</p>
+<h3 id="pros">Pros</h3>
+<p>Let&rsquo;s start with the pros of microservice architectures:</p>
+<p><strong>Diversity</strong></p>
+<p>With microservices, the company can diversify their technology: each microservice can in fact be implemented with the most suitable language or framework for the problem.
+In addition to this, diversity allows to integrate new technologies in a system without rewriting everything from scratch! It also allows to be more appealing to engineers who want to learn new languages, and to follow the trends (still being cautious of using too much new technology - stick to the old, good stuff!).
+One con of diversity is that it can bring more complexity (see below) and requires more standards and a better culture.</p>
+<p><strong>Resiliency</strong></p>
+<p>If you partition well the responsibilities inside the system, splitting it in multiple microservices helps increase its availability.
+Even when some services are down, the others stays up, and that increases the resiliency of the application as a whole.</p>
+<p><strong>Scalability</strong></p>
+<p>By splitting an architecture in services, each functionality can scale differently from the others. For example, a central feature of the system might need more resources to run and be used by many users, while other parts of the system might need less resources.
+This scalability pro is even more useful when using serverless architectures, which in some cases can help cut costs considerably.</p>
+<p><strong>Independence</strong></p>
+<p>Independence here is related to the possibility to independently deploy different parts of the system at different times and frequency. By deploying services independently, we can keep the availability of the system high and allow developers to develop features without the fear of &ldquo;big bad deployments&rdquo; (the one you don&rsquo;t want to do on a friday).</p>
+<p><strong>Organizational Alignment</strong></p>
+<p>Conway&rsquo;s law states that</p>
+<blockquote>
+<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p>
+</blockquote>
+<p>Following this law, using microservices helps in aligning the technical side of the system to the topology of the organization (e.g. assigning a microservice to each team separately).</p>
+<p>However, microservices can also lead the opposite to happen, called <em>Inverse conway&rsquo;s law</em>: given an existing system, the organization is forced to organise in the same way as the system&rsquo;s components! This is usually difficult to perform, and leads to issues down the line.</p>
+<p><strong>Composability</strong></p>
+<p>Here Gabriele just said &ldquo;ah&hellip;classic&rdquo; 🥲 so I have nothing to write.</p>
+<p>If I have to add two lines on the argument, I can cite something Gabriele said later, which is that microservices are just a deployment method, and all the rest is standard software architecture and design. So, composability is not a pro by itself, but it&rsquo;s a requirement for doing microservices 😜.</p>
+<p><strong>Replaceability</strong></p>
+<p>Finally, microservices are easily replaceable. I can implement a service, then experiment with it. The usual examples are canaries (used in deployments) and A/B tests. By being independent and resilient, microservices allows to experiment much more than a monolith, without impacting on the entire product at once.</p>
+<h3 id="cons">Cons</h3>
+<p>After listing all the (somewhat) pros of microservices, Gabriele started explaining the cons. They are less than the pros, but of way higher magnitude, and can impact much more the business and the developers if encountered.</p>
+<p><strong>Complexity</strong></p>
+<p>Microservices introduce complexity on multiple levels. The main one is the communication.  Calling a method in a monolith is a straightforward thing to do: just call the method and, if no cosmic rays are involved, you will know the answer right away.</p>
+<p>Distributed systems are a different thing altogether. When you send a message to another component, you cannot know if you will receive a response, and cannot know why (did the other component receive the message but didn&rsquo;t complete? did it complete the request but I wasn&rsquo;t able to receive the response? is the other component malicious?).</p>
+<p>In addition to the inherent complexity of the network, splitting a system into multiple services introduces complexity in the communication patterns (I need other services to other data) which can be worsened if the system isn&rsquo;t partitioned properly.</p>
+<p><strong>Testing</strong></p>
+<p>Microservices can make unit testing easy and fast (the service is small afterall). It&rsquo;s the integration testing which becomes more difficult.</p>
+<p>How can we test microservices?</p>
+<p>Some techniques (such as using mocks and contract testing to check the connection with other services) are useful, but they allow to test a part of the system. Testing the whole system becomes more difficult, and testing it while maintaining independence of development and deployment is even more complex.</p>
+<p><strong>Infrastructure</strong></p>
+<p>Deploying a microservices architecture requires more automation on the infrastructure, and more so if the number of services increases. The business must have a strong DevOps culture to manage this kind of system effectively.</p>
+<p><strong>Consistency</strong></p>
+<p>Forget strong consistency and ACID properties! With microservices comes the burden of eventual consistency and asynchronous communication (at least to make the most out of it).</p>
+<p><strong>Cost</strong></p>
+<p>This is not a con per se, but a factor that must be considered. For simple application a microservices architecture might be too expensive, while it could bring the costs down for a complex system (more so if using serverless).</p>
+<p><strong>(Plus) Debugging</strong></p>
+<p>In the same way testing is more complex, debugging also becomes more difficult while dealing with microservices, especially if an issue is caused by multiple services. It&rsquo;s essential to setup observability (tracing and logging) as first thing when using microservices, and even with these tools tracking an error can be difficult.</p>
+<h2 id="3-of-the-worst-problems">3 of the Worst Problems</h2>
+<p>The first part of this summary covers just 30 minutes of the talk. What is the rest of the meetup about (one hour and half)?</p>
+<p>In the main part of his talk, Gabriele highlighted the 3 worst issues affecting microservices architectures, their causes, symptoms, cure and prevention!</p>
+<p>I didn&rsquo;t take much notes on this part, so this summary will be shorter than the pros/cons. To learn more, you can watch the <a href="https://www.youtube.com/watch?v=1quMproQ5Hk"  target="_blank" >video</a>.</p>
+<h3 id="1-wrong-responsability">1. Wrong Responsability</h3>
+<p><div class="image imgB-5d9c9bdef263bbee7f1fac02311ee06e-GIP">
+  <figure>
+    <picture>
+      <source type="image/webp" srcset="https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_320x0_resize_q75_h2_box.webp 320w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_640x0_resize_q75_h2_box.webp 640w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_960x0_resize_q75_h2_box.webp 960w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1280x0_resize_q75_h2_box.webp 1280w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1600x0_resize_q75_h2_box.webp 1600w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1920x0_resize_q75_h2_box.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_320x0_resize_q75_box.jpeg 320w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_640x0_resize_q75_box.jpeg 640w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_960x0_resize_q75_box.jpeg 960w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1280x0_resize_q75_box.jpeg 1280w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1600x0_resize_q75_box.jpeg 1600w, https://marcobacis.com/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_1920x0_resize_q75_box.jpeg 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/xpug-milan-meetup-microservices/wrong_responsibility_hu4f6b82619ca5354471f5990670edc0a4_330441_640x0_resize_q75_box.jpeg" width="2576"
+        height="1860" alt="Wrong Responsibility, thanks to Stefano Martinelli again" title="Wrong Responsibility, thanks to Stefano Martinelli again" loading="lazy" />
+    </picture>
+</div>
+
+
+
+
+<figcaption class="caption">Wrong Responsibility, thanks to Stefano Martinelli again</figcaption>
+
+</figure></p>
+<p>The first (and worst) risk with microservices architecture is to partition the system wrong!</p>
+<blockquote>
+<p>If you design the system the wrong way, using microservices will only worsen the issue.</p>
+</blockquote>
+<p>Gabriele sees microservices only as a deploy model, in the sense that they aren&rsquo;t a solution to bad software design, but just a tool.</p>
+<p>When the system is badly designed (with <strong>high coupling</strong> and <strong>low cohesion</strong>) making changes becomes exponentially more difficult. When a component needs some data which is not in the right spot, it needs to communicate with another service to get it. If this happens too many times, it means the component suffers of a pattern called <em>feature envy</em>. The envious component keeps asking for data (or actions) to the other component.</p>
+<p>The issue is made worse by the network: when a component is envious in a monolith, all is solved with a method call. In a microservice architecture this involves the network instead, with all its related issues (latency, availability, byzantine faults and so on)!</p>
+<p>In the 90s/2000s vendors tried to sell similar stuff, with CORBA and RMI. This didn&rsquo;t end well&hellip;instead, it&rsquo;s important to reduce the communication to a minimum and employ the Single Responsibility Principle, in the same way we employ it in a standard OOP monolith. As already said above, a bad system design will just get worse with microservices.</p>
+<p>What can we do if we have a big ball of mud monolith and need to split it? The first thing is to refactor the monolith in order to fix the mess, and only then to split it in microservices! It&rsquo;s important to disentangle and uncouple all the components while it&rsquo;s still easy.</p>
+<p>&ldquo;And what if everything is strongly connected because of our domain?&rdquo; Gabriele provoked us with a questioner a customer may give. The solution is simple&hellip;.keep the monolith! Using microservices is not mandatory, and should be done only if there is the need (and the skill) to do it. Splitting a strongly coupled system wrong instead would only lead to pain.</p>
+<h3 id="2-shared-database">2. Shared Database</h3>
+<p>This is an issue I&rsquo;ve been guilty multiple times: using a shared database between microservices!</p>
+<blockquote>
+<p>First rule of microservices: each microservice must have a separate database.</p>
+</blockquote>
+<p>If multiple services share the same db (access and schema altogether), then the database becomes the same as a central, global variable that everyone has access to. With a central database there is no independent deploy (how can I run migration and change the schema if others depend on it?) and making changes becomes difficult.</p>
+<p>But what causes the presence of a shared database? Gabriele gave a few culprits:</p>
+<ul>
+<li>When the DB is used to configure/customise the system</li>
+<li>Data Driven Design (when we first design the tables and then the rest)</li>
+<li>Database Normalization (how we are tipically taught to design a DB schema&hellip;)</li>
+<li>False need of strong consistency from the business side</li>
+<li>Database containing business logic as the central part of the system (e.g. using triggers and stored procedures)</li>
+</ul>
+<p>How can we prevent this from happening?
+The first thing to do it to not fear denormalization and to stop doing data-driven design. Instead, we should base our design on the behaviour and actions of the users (so DDD, BDD and so on) and learn that it&rsquo;s ok to split the data related to an entity among multiple databases!</p>
+<p>Gabriele gave the example of the humble <strong>Order</strong> entity. An order can be represented differently by each distinct department inside the company. Each can add tens of fields into it&hellip; Sometimes the order might even be created before the user is logged or even if the goods are not available yet!</p>
+<p>What should we do in this case? Create a single table with hundreds of (mostly unrelated) fields and used by all services? Nope!</p>
+<p>Instead, we should have a shared id for the same entity, but store it in every microservice only with the data pertaining to that service, of which the service is responsible. It might be the Shipping Address for the logistics service, the credit card details for the Finance service, and the id and position of the goods for the warehouse service.</p>
+<h3 id="3-distributed-monolith">3. Distributed Monolith</h3>
+<p>The last issue Gabriele mentioned is the infamous &ldquo;Distributed Monolith&rdquo;. It happens when we use too much synchronous communication when building our microservices, coupling the system and making it harder to change and deploy independently.</p>
+<p>Synchronous communication creates more coupling than asynchronous, because when sending a synchronous request, we wait for the response&hellip;. what could go wrong? As already seen with the other 2 issues, everything!!</p>
+<p>The solution for this issue is to embrace asynchronous communication between services (not caring if the response arrives and when) and eventual consistency. Many system can work just fine with eventual consistency, even if we don&rsquo;t realise it.</p>
+<p>Gabriele also mentioned some concepts of <em>distributed system design</em> that can help create a reliable distributed system, such as the use of circuit breakers. In the end, we must understand the distributed nature of microservice and not to go against it.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>Gabriele&rsquo;s talk was a long and detailed list of reasons why not to use microservices 😂.  I really liked his style of presentation (without filters and talking about real systems and issues).</p>
+<p>I recently read the book &ldquo;Building Microservices&rdquo; by Sam Newman, and most of the advice given in the book resonated with Gabriele&rsquo;s talk, most of all in the issues that microservices can cause if not implemented properly. This discussion also remembered me that microservices are a tool, and that it all start with a good software design first (and second, third, fourth and so on 😅).</p>
+<p>Be it an existing system or a greenfield project, it&rsquo;s important to decouple and separate the system properly before splitting it, and focusing on distributed systems&rsquo; issues and solutions (such as denormalization, async communication, event-based systems and so on) can make the difference.</p>
+<p>That&rsquo;s it for this time! I hope you liked my short summary of a long talk. You can find the meetup video <a href="https://www.youtube.com/watch?v=1quMproQ5Hk"  target="_blank" >here</a>.</p>
+<p>See you next time!</p>
+      ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&amp;rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
 The events are called Katurday because we perform a kata on one Saturday morning every month. It&amp;rsquo;s a great way to code and learn with other people 😃.
 What is a kata? Typical developer performing a kata
 &amp;ldquo;Kata&amp;rdquo; is a term borrowed from martial arts. It refers to &amp;ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&amp;rdquo; (Wikipedia).</description><enclosure url="https://marcobacis.com/blog/katurday/cover_hu981b45453a61a0a17b53b378501e8c0c_13452_480x480_fit_q75_bgffffff_box_2.jpg" length="18399" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/katurday/cover_hu981b45453a61a0a17b53b378501e8c0c_13452_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/katurday/cover_hu981b45453a61a0a17b53b378501e8c0c_13452_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
