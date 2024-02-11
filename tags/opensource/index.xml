@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>opensource on Marco Bacis</title><link>https://marcobacis.com/tags/opensource/</link><description>Recent content in opensource on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Tue, 14 Feb 2023 18:00:00 +0100</lastBuildDate><atom:link href="https://marcobacis.com/tags/opensource/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>opensource on Marco Bacis</title><link>https://marcobacis.com/tags/opensource/</link><description>Recent content in opensource on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/opensource/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Open Source contribution ever @ Open Source Saturday Milan</title><link>https://marcobacis.com/blog/2024-feb-open-source-saturday/</link><pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2024-feb-open-source-saturday/</guid><description>&lt;p>Hi 👋 welcome to a new post!&lt;/p>
+&lt;p>Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first &lt;a href="https://www.meetup.com/open-source-saturday-milano/" target="_blank" >Open Source Saturday Milan&lt;/a>!&lt;/p></description><enclosure url="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" length="16147" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        <p>Hi 👋 welcome to a new post!</p>
+<p>Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first <a href="https://www.meetup.com/open-source-saturday-milano/"  target="_blank" >Open Source Saturday Milan</a>!</p>
+<p>Open Source Saturday is an event held once a month, organised by <a href="https://github.com/gabrielelana"  target="_blank" >Gabriele</a>, <a href="https://github.com/fusillicode"  target="_blank" >Gianluca</a> and <a href="https://github.com/danielemegna"  target="_blank" >Daniele</a>. The format is simple: some nerds gather for the entire day in a specific place, and the goal is to contribute to open source!</p>
+<p>At the beginning of the day, everyone presents himself and gives a short pitch of what he wants to do for the day. The possibilities are endless:</p>
+<ul>
+<li>ask for help on a personal project</li>
+<li>propose a new project to develop alone or with others</li>
+<li>look for projects in a specific technology/framework/paradigm</li>
+<li>gather along and find out what to do and get inspired (my case)</li>
+</ul>
+<p><em>Disclaimer</em>: I have never contributed to an open source project before. Yes, I have some repos online, but they are just exercises or university projects. Also, this was my first time participating in this kind of event, so I was both excited and worried at the same time.</p>
+<p>I arrived at the location with the idea of learning Rust. In fact, in the last two weeks I was reading the online rust <a href="https://rust-book.cs.brown.edu/"  target="_blank" >book</a> (again) to get a better idea about ownership and lifetimes. So, my pitch was</p>
+<blockquote>
+<p>Hi! I&rsquo;m Marco and I know nothing of rust, so I&rsquo;m looking for a rust project to contribute to!</p>
+</blockquote>
+<p>As always, things turn out differently form what we expect. In fact, I didn&rsquo;t even see a single line of rust!</p>
+<p>As I listened to the others presenting their projects, one project in particular caught my attention: <a href="https://github.com/giacomocavalieri"  target="_blank" >Giacomo</a> is a main contributor to a functional programming language called <a href="https://gleam.run/"  target="_blank" >gleam</a>, which had a compiler written in Rust.</p>
+<p>This was my chance! I approached giacomo after the &ldquo;standup&rdquo; and started learning about Gleam and its environment. First I followed the gleam <a href="https://tour.gleam.run/"  target="_blank" >tour</a> to get a glimpse of what the language was all about.</p>
+<p>
+
+
+<img class="img-fluid image" src="https://marcobacis.com/blog/2024-feb-open-source-saturday/./gleam_mascot.png" title="Gleam and its mascot, Lucy the star" alt="Gleam and its mascot, Lucy the star" />
+
+
+
+
+<figcaption class="caption">Gleam and its mascot, Lucy the star</figcaption>
+
+</figure></p>
+<p>Gleam is a functional programming language focused on type safety, expressiveness and reliability. It&rsquo;s not a pure functional language like haskell in that it allows to write sequential instruction&hellip;but the rest is all functional and immutable 👍.</p>
+<p>Gleam can be transpiled for two runtimes: the BEAM virtual machine of erlang, and javascript (both node and browser versions). This might be an unusual choice, but I think it can help the language spread more. After all, erlang is a <strong>very</strong> reliable language for large scale applications, and javascript is the ubiquitous language for the web. Targeting both worlds allows to cover the full stack, and using a FP language with a strong type system allows to get the best of both worlds (reliability and safeness, even when using a brittle language like javascript 🔥).</p>
+<p>Instead of directly starting with the compiler (after all, a compiler is a dangerous beast, and I don&rsquo;t know enough about both rust and compilers to do something useful in a single day 🥲), Giacomo showed me his pretty printing library written in gleam, called <a href="https://github.com/giacomocavalieri/glam"  target="_blank" >glam</a>.  He then started giving a primer on how pretty printing works. I never thought about it, but printing and formatting text is not an easy task, and Giacomo&rsquo;s library does a great job in defining custom formatting specs.</p>
+<p>We tried defining a pretty-printing format for json together as an exercise. It wasn&rsquo;t so trivial after all, and helped me get an idea of how the library worked.</p>
+<p>After all this preparation (we already had lunch, and the end of the day was approaching fast), it was time for my first PR! I had to add a small functionality, the possibility to add &ldquo;zero width strings&rdquo; to the formatting specification. A zero width string is a string which doesn&rsquo;t impact the total line length of the formatted document. This length is used by the formatting algorithm to decide when to break a piece of output in multiple lines, so it&rsquo;s pretty important. An example of zero width strings are <a href="https://en.wikipedia.org/wiki/ANSI_escape_code"  target="_blank" >ANSI escape codes</a>, used in the console to do crazy stuff (change colorus, set the cursor position and so on). These characters do not impact the line width usually, so they are the perfect candidate for this feature.</p>
+<p>In the end, the functionality itself was a 1-line method. I added an example and a couple of tests for the method and sent my first PR! Fortunately for me I had Giacomo side-by-side, so I didn&rsquo;t experience the usual async review of open source projects. Even if he later did some modifications to my PR (changing the way my test worked and other stuff) I had <a href="https://github.com/giacomocavalieri/glam/pull/12"  target="_blank" >my first PR ever</a> merged!</p>
+<p>
+
+
+<img class="img-fluid image" src="https://marcobacis.com/blog/2024-feb-open-source-saturday/./first_pr_github.png" title="The right kind of dopamine hit" alt="The right kind of dopamine hit" />
+
+
+
+
+<figcaption class="caption">The right kind of dopamine hit</figcaption>
+
+</figure></p>
+<p>After merging my PR, we worked together on another issue he had for his project: creating a <code>debug</code> method to pretty-print a document specification itself. I basically watched him do all the work, but it was interesting to see some gleam features (such as pipelines, string concatenation and so on) and in the end we had a nice result.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>Time for some considerations.</p>
+<p>I had a lot of fun! This was my first Open Source Saturday, and I managed to do way more than I expected. I thought I wasn&rsquo;t prepared, that I needed a brilliant idea to bring, that I&rsquo;d make a fool of myself&hellip; but none of this was true! The important thing is to participate with an open mind and simply enjoy it.</p>
+<p>Giacomo was a perfect mentor. He showed me the basics of gleam, brought me a project and even an issue on which to work, and in the end helped me with the review and PR process. I was basically hand-held through the process, and I think it&rsquo;s the perfect way to start contributing without all the fear and the bias the open source world has (for some of us at least)!</p>
+<p>Finally, this event reminded me that there is a lot to learn, and that outside of the main languages and frameworks there&rsquo;s an entire world of alternative paradigms and technologies. I didn&rsquo;t even know gleam existed until today, or that pretty-printing algorithms were a thing 😅.</p>
+<p>In the end&hellip;.did I write this entire self-celebrating post for a 1-line method? Yes, and I&rsquo;m very proud of it!</p>
+<p>See you next time! 😜</p>
+      ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
 Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
 As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><enclosure url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu658ae681b53dd544d29fe225fc36e295_39152_480x480_fit_q75_bgffffff_box_2.jpg" length="24454" type="image/jpeg"/><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu658ae681b53dd544d29fe225fc36e295_39152_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu658ae681b53dd544d29fe225fc36e295_39152_480x480_fit_q75_bgffffff_box_2.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <p>Hi 👋 welcome to a new post.</p>
