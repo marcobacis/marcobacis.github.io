@@ -20,22 +20,17 @@
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    
     {{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}
-    
     {{ with .Site.Author.email }}
     <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>
     {{end}}
-
     {{ with .Site.Author.email }}
     <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>
     {{end}}
-    
     {{ with .Site.Copyright }}
     <copyright>{{ replace . "{year}" now.Year }}</copyright>
     {{end}}
-    
     {{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" -}}
@@ -48,20 +43,29 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | html }}</description>
+      <description>{{ .Summary | safeHTML }}</description>
       
-      {{ with ((.Resources.ByType "image").GetMatch "cover.*" ) }}{{ $original := . }}{{ $.Scratch.Set "image" ($original.Fit "480x480 #ffffff q75 jpeg") }}{{ $image := $.Scratch.Get "image" }}
-      <enclosure url="{{ $image.Permalink }}" length="{{len $image.Content}}" type="{{$image.MediaType}}" />
-      <media:content   url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}" medium="{{$image.MediaType.MainType}}" type="{{$image.MediaType}}" >    
-        <media:thumbnail url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}"  />       
-      </media:content>
-      {{ end }}
+      {{ $cover := ((.Resources.ByType "image").GetMatch "cover.*" ) }}
+      {{ if $cover }}
+        {{ $.Scratch.Set "image" ($cover.Fit "480x480 #ffffff q75 jpeg") }}
+        {{ $image := $.Scratch.Get "image" }}
+        <media:content   url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}" medium="{{$image.MediaType.MainType}}" type="{{$image.MediaType}}" >    
+          <media:thumbnail url="{{ $image.Permalink }}" width="{{$image.Width}}" height="{{$image.Height}}"  />       
+        </media:content>
 
-      <content:encoded>
-      {{ `<![CDATA[` | safeHTML }}
-        {{ .Content }}
-      {{ `]]>` | safeHTML }}
-      </content:encoded>
+        <content:encoded>
+        {{ `<![CDATA[` | safeHTML }}
+        {{ printf "<img src=\"%s\" title=\"%s\" alt=\"%s\"/>" $image.Permalink .Params.thumbnaildesc .Params.thumbnaildesc | safeHTML }}
+          {{ .Content }}
+        {{ `]]>` | safeHTML }}
+        </content:encoded>
+      {{ else }}
+        <content:encoded>
+        {{ `<![CDATA[` | safeHTML }}
+          {{ .Content }}
+        {{ `]]>` | safeHTML }}
+        </content:encoded>
+      {{ end }}
     </item>
     {{ end }}
   </channel>
