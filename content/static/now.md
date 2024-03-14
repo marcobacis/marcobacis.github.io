@@ -32,9 +32,11 @@ So, what am I doing right now?
 
 * Working at [Zupit](https://zupit.it) as Full-Stack Software Engineer
 
-* Solving [Advent of Code](adventofcode.com) puzzles ([here](https://github.com/marcobacis/adventofcode/tree/main) my solutions) in Rust
+* Trying some coding challenges ([github repo](https://github.com/marcobacis/coding-challenges)) in Rust 🦀 (for now)
 
 * Learning Angular 
+
+* Exercising and getting ready for my marriage 💍
 
 <br/>
 
