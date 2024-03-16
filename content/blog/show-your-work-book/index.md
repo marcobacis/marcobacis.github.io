@@ -48,7 +48,7 @@ As humans, we are curious and want to know what other human beings are doing, an
 
 Think about all the short videos, social posts, pictures that content creators share everyday!
 
- The practical advice of the chapter is then to start collecting small pieces of evidence, the residue of our process, and shape it in some piece of media to share with others.
+The practical advice of the chapter is then to start collecting small pieces of evidence, the residue of our process, and shape it in some piece of media to share with others.
 
 Some ideas to start:
 
