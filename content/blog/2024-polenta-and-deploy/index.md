@@ -16,7 +16,7 @@ Today, I want to share a small glimpse of my experience at the 2024 Polenta & De
 
 Polenta&Deploy is an event taking place nestled beneath the mountains at Pinzolo. Over the course of three days, developers (and others) come together to enjoy the fresh air and discuss about tech (and not only that...) in an open space setup.
 
-*(Disclaimer: _I didn't attend the previous editions, so please correct me if I'm mistaken)*
+*(Disclaimer: I didn't attend the previous editions, so please correct me if I'm mistaken)*
 
 It all started after COVID restriction were lifted in 2021, and the ~~old~~ young trio of [Alberto Acerbis](https://www.linkedin.com/in/aacerbis/), [Alessandro Colla](https://www.linkedin.com/in/alessandrocolla/) and [Ferdinando Santacroce](https://www.linkedin.com/in/ferdinandosantacroce/) gathered and pondered "We want to meet people again, we're tired of online events!".
 
