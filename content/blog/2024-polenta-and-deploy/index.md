@@ -28,7 +28,7 @@ Below you can find my "journal" of the event. Enjoy! (I know I'm the only one re
 
 ### First Day: Trip and Nightly Snowshoe hike
 
-The first day started way before arriving at the hotel. I left bergamo for the mountains with a guest: [Jaga](https://jagasantagostino.com/)! During the trip we talked about his newfound love for home automation (I discovered a great millimiter-wave sensor that can track inside the house, and much more), home servers and his life in Sardinia.
+The first day started way before arriving at the hotel. I left Bergamo for the mountains with a guest: [Jaga](https://jagasantagostino.com/)! During the trip we talked about his newfound love for home automation (I discovered a great millimiter-wave sensor that can track inside the house, and much more), home servers and his life in Sardinia.
 
 After arriving at the nice small village of Pinzolo, it was time for the first activity of the Polenta&Deploy: lunch! To inaugurate the event, I ate a nice Polenta with pork shank. 
 
@@ -42,15 +42,15 @@ With a full stomach, it was now time for the first **real** activity: along with
 
 After a long night of sleep (about 5 hours), it was time for the main dish of the Polenta&Deploy: the **Unconference**!
 
-We all gathered in the hotel hall and kicked off the *marketplace*. Like in every open space I attend, I stayed back and didn't proposed anything, observing the others discuss where to put their session. I know I'm not getting the most out of the event by not proposing a discussion, session or even just sharing a questionI have. I'm still looking for compelling or "unique" enough not already covered by the other sessions!
+We all gathered in the hotel hall and kicked off the *marketplace*. Like in every open space I attend, I stayed back and didn't proposed anything, observing the others discuss where to put their session. I know I'm not getting the most out of the event by not proposing a discussion, session or even just sharing a question I have. I'm still looking for compelling or "unique" enough not already covered by the other sessions!
 
-I already explained what is an open space [here](https://marcobacis.com/blog/socrates-2023/): the core idea is to let the participants choose what, when and where to talk, by creating a neverending "coffee break".
+I already explained what is an open space [here](https://marcobacis.com/blog/socrates-2023/): the core idea is to let the participants choose what, when and where to talk, by creating a neverending "coffee-break".
 
 Here's a (brief) list of the sessions I attended (some for full, others briefly):
 
 **CI: From Stars to Stables** -  [Marco Fracassi](https://www.linkedin.com/in/marco-fracassi/)
 
-In his session, Marco shared his journey with Continuous Integration. It all began during his time at 7pixels, where they had a single (physical) "build machine" shared among colleagues. Despite this ("obsolete" by today standards) setup, they were able to develop effectively with trunk-based development and CI.
+In his session, Marco shared his journey with Continuous Integration. It all began during his time at 7Pixel, where they had a single (physical) "build machine" shared among colleagues. Despite this ("obsolete" by today standards) setup, they were able to develop effectively with trunk-based development and CI.
 
 However, in In his current company, the CI process is flawed. Developers work in isolation on their branches, which are then reviewed (and approved by at least 2 colleagues), merged into the dev branch and checked by QA. The issue arises after the QA phase: if the feature passes the QA review, it's merged into main - not starting from dev, but from the original feature branch! This destroys the concept of continuous integration, as the dev and main branches are never integrated!
 
@@ -76,13 +76,13 @@ Another nice perk of being at an unconference...the discussion was done under th
 
 **Recursive Thought** - [Emanuele Delbono](https://www.linkedin.com/in/emanueledb/)
 
-Emanuele held a live coding session on Elixir, showing the exercises he used while reading the little schemer book (his solutions can be found [here](https://github.com/emadb/the_little_alchemist)).
+Emanuele held a live coding session on Elixir, showing the exercises he used while reading The Little Schemer book (his solutions can be found [here](https://github.com/emadb/the_little_alchemist)).
 
 All the exercises he showed were about recursion. I understood some of them, but the latest were more difficult than expected! His explanation on tail recursion was clear, and I finally understood what it meant.
 
 **Kubernetes Showdown** - [Ludovico Russo](https://www.linkedin.com/in/ludusrusso/), [Andrea Francia](https://www.linkedin.com/in/andreafrancia/)**
 
-In this session, Andrea ranted about Kubernetes, explaining why he think it's too complex to be used in most projects. On the other hand, Ludovico showed his [kubernello](https://www.ludusrusso.dev/blog/2022/09/kubernello), a small VM instance with kubernetes that he uses for small production projects. His setup was quite interesting, with automatic certificates and dns management, gitops and all at low cost! He was so inspiring I might actually create a small k8s cluster on raspberry pis (yes, it might be trivial and not interesting, but I don't care).
+In this session, Andrea ranted about Kubernetes, explaining why he think it's too complex to be used in most projects. On the other hand, Ludovico showed his [kubernello](https://www.ludusrusso.dev/blog/2022/09/kubernello), a small VM instance with kubernetes that he uses for small production projects. His setup was quite interesting, with automatic certificates and dns management, gitops and all at low cost! He was so inspiring I might actually create a small k8s cluster on Raspberry Pis (yes, it might be trivial and not interesting, but I don't care).
 
 **Polymorphism in different languages** - [Angelo Ceccato](https://www.linkedin.com/in/angeloceccato/)**
 
@@ -102,9 +102,9 @@ The last day started with a good breakfast (the perks of good conferences). Whil
 
 Here are the sessions I attended (just three, we finished by midday):
 
-**Intro to Qwick** - [Ludovico Russo](https://www.linkedin.com/in/ludusrusso/)
+**Intro to Qwik** - [Ludovico Russo](https://www.linkedin.com/in/ludusrusso/)
 
-A nice quirk of unconferences is the chance to ~~force~~ *ask* other people to give sessions. This was the case, when Gerson asked Ludovico to show him how [Quik](https://qwik.dev/) works!
+A nice quirk of unconferences is the chance to ~~force~~ *ask* other people to give sessions. This was the case, when Gerson asked Ludovico to show him how [Qwik](https://qwik.dev/) works!
 
 Ludovico obliged to the request and showed us a small example of a quik application, explaining its Server-Side-Rendering approach (resumability). I didn't know much about SSR, but I will try to learn it more after getting a glimpse of what it can do!
 
