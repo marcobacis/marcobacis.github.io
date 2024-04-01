@@ -31,5 +31,5 @@ jobs:
         run: |
           git config --global user.email "actions@users.noreply.github.com"
           git config --global user.name "goodreads bot"
-          git diff --quiet || (git add data/books.json && git commit -m "Updated books list from notion")
+          git diff --quiet || (git add data/books.json && git commit -m "Updated books list from goodreads")
           git push
