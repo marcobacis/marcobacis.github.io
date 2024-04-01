@@ -10,18 +10,26 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Update books list json file
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          BOOKS_DATABASE_ID: ${{ vars.BOOKS_DATABASE_ID }}
-        run: ./updatebooks.sh
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r books_scraper/requirements.txt
 
-      - name: Commit README back to the repo
+      - name: Update current books list json file
+        run: python books_scraper/scrape_books.py > data/books.json
+
+      - name: Commit books list file back to the repo
         shell: bash
         run: |
           git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "notion bot"
+          git config --global user.name "goodreads bot"
           git diff --quiet || (git add data/books.json && git commit -m "Updated books list from notion")
           git push
