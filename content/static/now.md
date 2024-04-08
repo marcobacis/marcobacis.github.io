@@ -30,11 +30,9 @@ In addition to showing off what I'm up to, it also helps in focusing on less stu
 
 So, what am I doing right now?
 
-* Working at [Zupit](https://zupit.it) as Full-Stack Software Engineer
+* Working at [Zupit](https://zupit.it) as Full-Stack (.NET + Angular) Software Engineer
 
 * Trying some coding challenges ([github repo](https://github.com/marcobacis/coding-challenges)) in Rust 🦀 (for now)
-
-* Learning Angular 
 
 * Exercising and getting ready for my marriage 💍
 
@@ -45,6 +43,5 @@ So, what am I doing right now?
 
 <br/>
 
-* Reading *(note: the title may be in italian if I'm reading the italian version)*:
-    {{< currentBooks >}}
+{{< currentBooks >}}
 
