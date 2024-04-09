@@ -104,17 +104,13 @@ def get_books(user, shelf):
 
 user = "22830084"
 shelf = "currently-reading"
-fpath = None
 
-try:
-    books = get_books(user, shelf)
-    output = json.dumps(books, ensure_ascii=False, indent=2, default=str)
+if len(sys.argv) <= 1:
+    print("Usage: {} <output-path>".format(sys.argv[0]))
+    sys.exit("Wrong number of arguments")
 
-    if len(sys.argv) > 1:
-        with open(sys.argv[1], "w+") as f:
-            f.write(output)
-    else:
-        print(output)
+books = get_books(user, shelf)
+output = json.dumps(books, ensure_ascii=False, indent=2, default=str)
 
-except:
-    exit(-1)
+with open(sys.argv[1], "w+") as f:
+    f.write(output)
