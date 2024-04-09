@@ -2,6 +2,7 @@ import json
 import sys
 import time
 from datetime import datetime
+from typing import Sized
 
 import dateutil.parser
 import requests
@@ -72,16 +73,21 @@ def get_books_page(user, shelf=None, page=0, max_retries=10):
         "User-Agent": "Mozilla/5.0",
     }
 
+    print("Retrieving books (shelf {}, page {})...".format(shelf, page))
+
     response = requests.get(url, params, headers=headers)
 
     # Implement retries (goodreads tends to not be stable)
     retries = 0
     while response.status_code != 200 and retries < max_retries:
+        print("Error retrieving books (shelf {}, page {}): status code {}".format(
+            shelf, page, response.status_code))
         time.sleep(1)
+        print("Retry n. {}".format(retries+1))
         response = requests.get(url, params, headers=headers)
         retries += 1
     if retries >= max_retries:
-        raise Exception("Error retrieving books")
+        raise Exception("Error retrieving books, status code {}")
 
     content = response.content.decode('utf-8')
     soup = BeautifulSoup(content, "html.parser")
@@ -92,14 +98,22 @@ def get_books_page(user, shelf=None, page=0, max_retries=10):
 
 def get_books(user, shelf):
     output = []
-    page = 0
+    page = 1
     res = get_books_page(user, shelf, page)
     while len(res) > 0:
+        output.extend(res)
+        print("Found {} book{} (shelf {}, page {})"
+              .format(len(res), plural(res), shelf, page))
         page += 1
         res = get_books_page(user, shelf, page)
-        output += res
+
+    print("Found a total of {} book{}".format(len(output), plural(output)))
 
     return output
+
+
+def plural(list: Sized) -> str:
+    return "s" if len(list) > 1 else ""
 
 
 user = "22830084"
