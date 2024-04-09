@@ -24,7 +24,7 @@ jobs:
           pip install -r books_scraper/requirements.txt
 
       - name: Update current books list json file
-        run: python books_scraper/scrape_books.py > data/books.json
+        run: python books_scraper/scrape_books.py data/books.json
 
       - name: Commit books list file back to the repo
         shell: bash

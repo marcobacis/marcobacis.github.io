@@ -1,8 +1,11 @@
-from bs4 import BeautifulSoup
 import json
-import requests
+import sys
+import time
 from datetime import datetime
+
 import dateutil.parser
+import requests
+from bs4 import BeautifulSoup
 
 
 def get_author(row):
@@ -52,13 +55,33 @@ def parse_row(row):
     }
 
 
-def get_books_page(user, shelf=None, page=0):
-    url = "https://www.goodreads.com/review/list/{}?shelf={}&page={}".format(
-        user, shelf, page)
+def get_books_page(user, shelf=None, page=0, max_retries=10):
+    params = {
+        "v": 2,
+        "id": user,
+    }
+    if shelf is not None:
+        params["shelf"] = shelf
+    if page is not None and page != 0:
+        params["page"] = page
 
-    response = requests.get(url)
-    if response.status_code != 200:
-        return []
+    url = "https://www.goodreads.com/review/list"
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,application/xml",
+        "Host": "www.goodreads.com",
+        "User-Agent": "Mozilla/5.0",
+    }
+
+    response = requests.get(url, params, headers=headers)
+
+    # Implement retries (goodreads tends to not be stable)
+    retries = 0
+    while response.status_code != 200 and retries < max_retries:
+        time.sleep(1)
+        response = requests.get(url, params, headers=headers)
+        retries += 1
+    if retries >= max_retries:
+        raise Exception("Error retrieving books")
 
     content = response.content.decode('utf-8')
     soup = BeautifulSoup(content, "html.parser")
@@ -81,6 +104,17 @@ def get_books(user, shelf):
 
 user = "22830084"
 shelf = "currently-reading"
-books = get_books_page(user, shelf)
+fpath = None
 
-print(json.dumps(books, ensure_ascii=False, indent=2, default=str))
+try:
+    books = get_books(user, shelf)
+    output = json.dumps(books, ensure_ascii=False, indent=2, default=str)
+
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], "w+") as f:
+            f.write(output)
+    else:
+        print(output)
+
+except:
+    exit(-1)
