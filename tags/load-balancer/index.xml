@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Load Balancer on Marco Bacis</title><link>https://marcobacis.com/tags/load-balancer/</link><description>Recent content in Load Balancer on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/load-balancer/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's build a Load Balancer in Rust - Part 1</title><link>https://marcobacis.com/blog/load-balancer-rust-1/</link><pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-1/</guid><description><p>Hi 👋 welcome to a new post!</p><p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p></description><media:content url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+          <p>Hi 👋 welcome to a new post!</p>
+<p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p>
+<p>Why a load balancer, and why rust?</p>
+<p>I came across this challenge on the <a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges</a> newsletter. I had already completed the first challenges (implementing <code>wc</code> and <code>cut</code>), and I thought it was time for a more complex project.</p>
+<p>A load balancer provides tons of challenge and can be approached at different levels. From a simple round-robin strategy, to weights, connection pools, asynchronous I/O and much more!</p>
+<p>Why Rust? Well, I&rsquo;ve been tinkering with rust for the past year, mostly by solving advent of code problems. It&rsquo;s a high performance, low level language with a mixture of features (e.g. statically typed, not garbage collected, borrow checker, pattern matching and other functional stuff, and zero-cost abstractions) that make it a &ldquo;different&rdquo; language from the ones I usually use at work (C# and a bit of Typescript).</p>
+<p>It also sits on a &ldquo;lower&rdquo; level from my usual projects (it&rsquo;s mostly used as a system programming language and in infrastructure), and I think it&rsquo;s cool to learn about the technology which keep my stuff running under the hood!</p>
+<p>Also, it&rsquo;s a hyped language 😎, and why shouldn&rsquo;t I try it? Following trends shouldn&rsquo;t always be bad .</p>
+<p>A side note: I developed part of the load balancer during the <a href="https://www.meetup.com/it-IT/open-source-saturday-milano/"  target="_blank" >Open Source Saturday Milan</a> meetup, with the help of <a href="https://github.com/MarcoIeni"  target="_blank" >Marco Ieni</a>. Marco is a rust expert and author of many rust crates and projects (e.g. his <a href="https://github.com/MarcoIeni/release-plz"  target="_blank" >release-plz</a> crate, which is fantastic) and he was of great help during the day. Without him, I would have taken a lot more time to setup the project and learn about Arc, Mutex and other async and multithread stuff! Thanks Marco for the help.</p>
+<h2 id="load-balancer-basics">Load Balancer basics</h2>
+<p>A load balancer is an application which sits in front of a group of servers, and routes the connection/requests across the servers in the group. By routing the requests to multiple backends, it allows to maximise availability (when a server goes down, requests can be redirected to the other servers in the pool) and utilisation (trying to use all servers at their maximum while keeping the latency low).</p>
+<p>A load balancer can operate on different levels of the <a href="https://en.wikipedia.org/wiki/OSI_model"  target="_blank" >OSI model</a> (e.g. level 7, the application level, or level 4, the transport layer) with their advantages, disadvantages and numerous nuances.</p>
+<p>In my case, the challenge was to create a simple load balancer working at the application level, forwarding HTTP requests. In this first post, we&rsquo;ll see a basic application forwarding HTTP requests to a single server.</p>
+<h2 id="project-setup-and-a-first-test">Project setup and a first test</h2>
+<p>Let&rsquo;s start the challenge by creating the basic project in rust and writing a simple test. At first I started by coding the simplest application possible without any tests, but Marco showed me how to setup a simple (unit? integration? I  don&rsquo;t know) test for it, so let&rsquo;s do it the proper way 😅.</p>
+<p><em>Disclaimer: the snippets I post here won&rsquo;t compile most of the time, if you want the complete and updated code (with spoilers) see the <a href="https://github.com/marcobacis/coding-challenges/tree/main/load_balancer"  target="_blank" >repository</a></em></p>
+<p>First, let&rsquo;s create the project with cargo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cargo new lb
+</span></span></code></pre></div><p>A common practice is to create a lib inside the crate, in order to extract common behaviour and keep the binary clean. This is a first version of the <code>cargo.toml</code>file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">package</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;lb&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">version</span> = <span style="color:#e6db74">&#34;0.1.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">edition</span> = <span style="color:#e6db74">&#34;2021&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">lib</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;lb&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;src/lib.rs&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">bin</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;lb&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;src/bin.rs&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">dependencies</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">actix-web</span> = <span style="color:#e6db74">&#34;4.5.1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clap</span> = <span style="color:#e6db74">&#34;4.5.2&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">reqwest</span> = <span style="color:#e6db74">&#34;0.11.25&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">tokio</span> = { <span style="color:#a6e22e">version</span>=<span style="color:#e6db74">&#34;1.36.0&#34;</span>, <span style="color:#a6e22e">features</span> = [<span style="color:#e6db74">&#34;macros&#34;</span>, <span style="color:#e6db74">&#34;rt-multi-thread&#34;</span>] }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">dev-dependencies</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">wiremock</span> = <span style="color:#e6db74">&#34;0.6.0&#34;</span>
+</span></span></code></pre></div><p>as you can see, right now I&rsquo;m using <code>actix-web</code> as http framework to receive requests, and <code>reqwest</code> to forward them. I decided to not go too deep (managing sockets and http parsing) at the beginning, given that I&rsquo;m not familiar with rust frameworks and libraries yet.</p>
+<p>Time for the first test!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test_get_root</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Setup a mock upstream server, to test 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// that the request gets forwarded to it
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> mock_server <span style="color:#f92672">=</span> MockServer::start().<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
+</span></span><span style="display:flex;"><span>		.respond_with(
+</span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>			.set_body_string(<span style="color:#e6db74">&#34;backend&#34;</span>)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		.expect(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>		.mount(<span style="color:#f92672">&amp;</span>mock_server)
+</span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The class under test, the load balancer itself
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, vec![mock_server.uri()]);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
+</span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Wait for the server to be up (will fix this later)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Check that we receive response from the mock backend
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// (and not from the load balancer)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;backend&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this first step, all we care is that the load balancer is able to forward the request to a single upstream server. We create a mock server (using the <code>wiremock</code>crate, thanks to Marco&rsquo;s advice) to check that the request gets forwarded to it, then instantiate the load balancer and send a simple GET to it.</p>
+<p>In pure (A)TDD style, this test doesn&rsquo;t even compile at first. Let&rsquo;s create at least the struct and the method required.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LoadBalancer</span> {
+</span></span><span style="display:flex;"><span>	port: <span style="color:#66d9ef">u16</span>,
+</span></span><span style="display:flex;"><span>	servers: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>(port: <span style="color:#66d9ef">u16</span>, servers: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">Self</span> {
+</span></span><span style="display:flex;"><span>		LoadBalancer { port, servers }
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">uri</span>(<span style="color:#f92672">&amp;</span>self) -&gt; String {
+</span></span><span style="display:flex;"><span>		format!(<span style="color:#e6db74">&#34;http://127.0.0.1:</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, self.port)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Obviously, the test is still failing, giving a &ldquo;Connection refused&rdquo; error. We&rsquo;ll get a failing test until the end of this post :P</p>
+<h2 id="creating-a-http-forwarder">Creating a HTTP forwarder</h2>
+<p>Now, let&rsquo;s open a connection and listen to requests on the port we passed to the load balancer. For now, we&rsquo;ll return a 200 on every request. How can we do it? <a href="https://actix.rs/"  target="_blank" >Actix</a> is a powerful framework for creating web services with rust. It relies on some concepts like extractors and handlers (better explained in their <a href="https://actix.rs/docs/getting-started"  target="_blank" >documentation</a> than here) that allow to easily create http endpoints.</p>
+<p>Let&rsquo;s setup a simple server to respond to every request:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">/// ... previous methods
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
+</span></span><span style="display:flex;"><span>		HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> App::new()
+</span></span><span style="display:flex;"><span>			.default_service(web::to(handler))
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		.bind((<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>, self.port))
+</span></span><span style="display:flex;"><span>		.unwrap()
+</span></span><span style="display:flex;"><span>		.run()
+</span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>	
+</span></span><span style="display:flex;"><span>		.unwrap();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>) -&gt; <span style="color:#a6e22e">HttpResponse</span> {
+</span></span><span style="display:flex;"><span>	HttpResponse::Ok().body(<span style="color:#e6db74">&#34;hello!&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the <code>run</code> method of our load balancer, we instantiate an Http server which receives any request and returns &ldquo;hello!&rdquo;. The <code>default_service</code> in actix is a catch-all method which receives any request not handled by other services. We use the <code>web::to</code> helper function to create a generic any-method handler (accepting any HTTP method such as GET, POST, PUT etc&hellip;).</p>
+<p>Now, let&rsquo;s add some behaviour to the handler. We want it to forward the request to the (only) server we configured in our test. To do so, a first way is to just get the request, copy it and send it to the server, using <code>reqwest</code>. As I already said at the beginning of the post, my goal now is to create a simple proxy, without caring much about performance or functionality.</p>
+<p>But how can we use the upstream server url in our request handler? Actix allows to share data between handlers using a concept called <a href="https://actix.rs/docs/application/#shared-mutable-state"  target="_blank" >web::Data</a>. It&rsquo;s a struct encapsulating an <code>Arc</code> (a thread-safe reference counting pointer) in which we can put data that must be shared (immutably or mutably) among handlers and requests.</p>
+<p>First, let&rsquo;s define the data we want to share (the servers urls) and add it to the application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
+</span></span><span style="display:flex;"><span>	servers: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> data <span style="color:#f92672">=</span> web::Data::new(AppState {
+</span></span><span style="display:flex;"><span>		servers: <span style="color:#a6e22e">self</span>.servers.clone(),
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span><span style="display:flex;"><span>		App::new()
+</span></span><span style="display:flex;"><span>			.default_service(web::to(Self::handler))
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// We add the initial instance of our shared app state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			.app_data(data.clone())
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// as above, bind and run ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></div><p>Then, we can use the shared data inside the handler using an <a href="https://actix.rs/docs/extractors"  target="_blank" >extractor</a>, a parameter used in the function to access parts of the request, or the application state in this case:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>, data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">HttpResponse</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// do stuff with server url now
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
+</span></span><span style="display:flex;"><span>	HttpResponse::Ok().body(<span style="color:#e6db74">&#34;hello&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Finally, it&rsquo;s time to forward the request! The code below is not so performant (it instantiates a reqwest client on every request, clones the headers betweeen the input and forwarded request, and so on..), but it works:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(
+</span></span><span style="display:flex;"><span>	req: <span style="color:#a6e22e">HttpRequest</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the shared application state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the request payload as raw bytes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	bytes: <span style="color:#a6e22e">web</span>::Bytes,
+</span></span><span style="display:flex;"><span>) -&gt; Result<span style="color:#f92672">&lt;</span>HttpResponse, Error<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the address to which to forward the request
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Create the request
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> request_builder <span style="color:#f92672">=</span> client
+</span></span><span style="display:flex;"><span>		.request(req.method().clone(), uri)
+</span></span><span style="display:flex;"><span>		.headers(req.headers().into())
+</span></span><span style="display:flex;"><span>		.body(bytes);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Forward the request
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> request_builder.send().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the response and send it back to the client
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> response_builder <span style="color:#f92672">=</span> HttpResponse::build(response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> h <span style="color:#66d9ef">in</span> response.headers().iter() {
+</span></span><span style="display:flex;"><span>		response_builder.append_header(h);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> body <span style="color:#f92672">=</span> response.bytes().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	Ok(response_builder.body(body))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>After this, the test passes, and we&rsquo;re all set! I left out the implementation of the <code>Error</code>  struct (it takes the <code>reqwest::Error</code> and stores it inside the struct, along with the implementation of the <code>From&lt;reqwest::Error&gt;</code> and <code>ResponseError</code> traits).</p>
+<p>You can find the code of this simple HTTP forwarder <a href="https://gist.github.com/marcobacis/4ba9d0885862239d9ed7482983047472"  target="_blank" >here</a>. Also, I keep a repository to all the solutions I came up for coding challenges, <a href="https://github.com/marcobacis/coding-challenges"  target="_blank" >here</a>.</p>
+<p>See you next time for part 2, in which we add a simple round-robin policy and transform our simple Proxy in a real (almost) LoadBalancer!</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://actix.rs/docs"  target="_blank" >Actix Docs</a></li>
+<li><a href="https://docs.rs/reqwest/latest/reqwest/"  target="_blank" >Reqwest Docs</a></li>
+<li><a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges Website</a></li>
+<li><a href="https://www.nginx.com/resources/glossary/load-balancing/"  target="_blank" >What is Load Balancing?</a></li>
+</ul>
+        ]]></content:encoded></item></channel></rss>
