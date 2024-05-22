@@ -16,7 +16,7 @@ lastmod: ["lastmod", ":git", "date", "publishDate"]
 
 ---
 
-Last updated: {{% lastdate %}}
+{{% lastdate %}}
 
 ---
 

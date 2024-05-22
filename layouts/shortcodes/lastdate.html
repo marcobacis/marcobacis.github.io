@@ -1,3 +1,11 @@
-<time datetime="{{ .Page.Lastmod.Format " Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
-    {{ $.Page.Lastmod.Format "Jan 02, 2006" }}
+{{ $latestDate := .Page.Lastmod }}
+{{ range first 1 (where (where $.Site.Pages ".Section" "blog") "Kind" "page").ByDate.Reverse }}
+  {{ if gt .Date $latestDate }}
+    {{ $latestDate = .Date }}
+  {{ end }}
+{{ end }}
+
+Last updated: 
+<time datetime="{{ $latestDate.Format " Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
+    {{ $latestDate.Format "Jan 02, 2006" }}
 </time>
