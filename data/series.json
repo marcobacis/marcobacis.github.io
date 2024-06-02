@@ -1,0 +1,19 @@
+{
+    "load-balancer-rust": {
+        "title": "Build your own load balancer in Rust",
+        "posts": [  
+            {
+                "title": "Part 1: Setup and http forwarding",
+                "permalink": "load-balancer-rust-1"
+            },
+            {
+                "title": "Part 2: Round-Robin Policy",
+                "permalink": "load-balancer-rust-2"
+            },
+            {
+                "title": "Part 3: Healthcheck",
+                "permalink": "load-balancer-rust-3"
+            }
+        ]
+    }
+}

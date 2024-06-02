@@ -4,13 +4,14 @@ date: 2024-05-11
 publishdate: 2024-05-11
 tags: ["meetup", "open source", "rust", "load balancer", "system programming"]
 comments: true
+summary: "Hi 👋 welcome to a new post! This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust. In this first part, we create a simple HTTP forwarder to a single upstream server."
 --- 
+
+{{< series key="load-balancer-rust" index="0" >}}
 
 Hi 👋 welcome to a new post!
 
 This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.
-
-<!--more-->
 
 Why a load balancer, and why rust?
 

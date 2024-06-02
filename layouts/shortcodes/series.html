@@ -1,0 +1,22 @@
+{{ $seriesKey := .Get "key" }}
+{{ $currentIndex := .Get "index" | int }}
+{{ $seriesData := index (site.Data.series) $seriesKey }}
+
+{{ if $seriesData }}
+    <hr/>
+    <div class="series-list">
+        <h3>"{{ $seriesData.title }}" series</h3>
+        <ul>
+            {{ range $i, $post := $seriesData.posts }}
+                <li>
+                    {{ if ne $i $currentIndex }}
+                        <a href="/blog/{{ $post.permalink }}">{{ $post.title }}</a>
+                    {{ else }}
+                        {{ $post.title }}
+                    {{ end }}
+                </li>
+            {{ end }}
+        </ul>
+        <hr/>
+    </div>
+{{ end }}

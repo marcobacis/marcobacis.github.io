@@ -4,7 +4,10 @@ date: 2024-05-22
 publishdate: 2024-05-22
 tags: ["meetup", "open source", "rust", "load balancer", "system programming"]
 comments: true
+summary: "This is the second part of the \"Build your own load balancer in rust\" series! In this post, we'll see how to implement a round-robin policy, to forward our requests to multiple backends."
 --- 
+
+{{< series key="load-balancer-rust" index="1" >}}
 
 Hi  👋 welcome to a new post! This is the second part of the series "Let's build a Load Balancer in rust".
 
