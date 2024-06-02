@@ -1,9 +1,339 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>System Programming on Marco Bacis</title><link>https://marcobacis.com/tags/system-programming/</link><description>Recent content in System Programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Wed, 22 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/system-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's build a Load Balancer in Rust - Part 2</title><link>https://marcobacis.com/blog/load-balancer-rust-2/</link><pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-2/</guid><description>Hi 👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.
-In the first post we saw how to forward a single request to an upstream server, using Actix and Reqwest.
-Today we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends!
-Small fix in the handler In the first part, we left a (small) code smell in the handler code, because we instantiate the reqwest client struct on each new request received:</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>System Programming on Marco Bacis</title><link>https://marcobacis.com/tags/system-programming/</link><description>Recent content in System Programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Sun, 02 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/system-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's build a Load Balancer in Rust - Part 3</title><link>https://marcobacis.com/blog/load-balancer-rust-3/</link><pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-3/</guid><description>Third and last part of the &ldquo;Build your own load balancer in rust&rdquo; series! In this last part, we implement a healthcheck procedure to avoid forwarding requests to unavailable nodes.</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-3/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-3/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.com/blog/load-balancer-rust-3/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+          
+
+
+
+
+    <hr/>
+    <div class="series-list">
+        <h3>"Build your own load balancer in Rust" series</h3>
+        <ul>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-1">Part 1: Setup and http forwarding</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-2">Part 2: Round-Robin Policy</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        Part 3: Healthcheck
+                    
+                </li>
+            
+        </ul>
+        <hr/>
+    </div>
+
+<p>Hi  👋 welcome to a new post!</p>
+<p>This is the third (and last?) part of the series &ldquo;let&rsquo;s build a load balancer in rust&rdquo;.</p>
+<p>In the <a href="https://marcobacis.com/blog/load-balancer-rust-1/"  target="_blank" >first post</a> we saw how to forward a single request to an upstream server, using <a href="https://actix.rs/"  target="_blank" >Actix</a> and <a href="https://docs.rs/reqwest/latest/reqwest/"  target="_blank" >Reqwest</a>. Then, we implemented a simple round-robin strategy in the <a href="https://marcobacis.com/blog/load-balancer-rust-2/"  target="_blank" >second post</a> .</p>
+<p>In this last part, we are going to integrate a simple health check into our load balancer, to avoid sending requests to unavailable upstream servers!</p>
+<h2 id="simplifying-the-round-robin-policy">Simplifying the Round-Robin policy</h2>
+<p>As already done in part 2, let&rsquo;s start with some small chores in our code from the previous post. I hope this shows that even when writing and being careful during development, there&rsquo;s always room for improvement.</p>
+<p>The small refactoring we are going to do is related to the round-robin policy code, in particular how we increment the counter. In the previous post, I implemented the policy update in this way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Read servers list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> max_server_idx <span style="color:#f92672">=</span> servers.len() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Update index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
+</span></span><span style="display:flex;"><span>	.idx
+</span></span><span style="display:flex;"><span>	.fetch_update(Ordering::Relaxed, Ordering::Relaxed, <span style="color:#f92672">|</span>idx<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> idx {
+</span></span><span style="display:flex;"><span>		x <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> max_server_idx <span style="color:#f92672">=&gt;</span> Some(<span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>		c <span style="color:#f92672">=&gt;</span> Some(c <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>),
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>	.unwrap_or_default();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Return next server to forward the request to
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	servers.get(idx).unwrap().clone()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The code is complex, requires to know about atomics, the <code>fetch_update</code> method and has two different <code>Ordering</code> parameters. We can make it simpler, by using a simple <code>fetch_add</code> and using the modulo operator to stay between 0 and the number of available backends:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self.idx.fetch_add(<span style="color:#ae81ff">1</span>, Ordering::Relaxed);
+</span></span><span style="display:flex;"><span>	self.servers.get(idx <span style="color:#f92672">%</span> self.servers.len()).unwrap().clone()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The <code>fetch_add</code> method allows to increment an <code>AtomicUsize</code> value in an atomic way, but it&rsquo;s simpler than the <code>fetch_update</code> used earlier (e.g. has only 1 ordering parameter and directly returns the new value without a possible <code>None</code>).</p>
+<h2 id="introducing-our-load-balancer-configuration">Introducing our Load Balancer configuration</h2>
+<p>Up till now, we have used a <code>Vec&lt;String&gt;</code> to represent the load balancer configuration. It&rsquo;s now time to introduce some new parameters, and to wrap our simple string in a more suitable <code>struct</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[derive(Clone)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Backend</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> url: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> healthcheck_path: String,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[derive(Clone)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Config</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> backends: Vec<span style="color:#f92672">&lt;</span>Backend<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> health_check_interval_secs: <span style="color:#66d9ef">usize</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Each backend now has the url (host) and a path through which the load balancer can check the health of the upstream server. If the given endpoint doesn&rsquo;t respond or returns an error, the corresponding upstream server will be considered unavailable.</p>
+<p>The other parameter we introduce is a simple interval (in seconds) after which we should check the availability of the upstream servers. We will use it later.</p>
+<h2 id="acceptance-test">Acceptance Test</h2>
+<p>It&rsquo;s now time to finally start implementing our healthcheck! As always, let&rsquo;s start with a (failing) acceptance test:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test_health_check_simple</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mocks <span style="color:#f92672">=</span> create_mocks(<span style="color:#ae81ff">2</span>).<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Mock 1 answers on all paths
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
+</span></span><span style="display:flex;"><span>		.respond_with(
+</span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>).set_body_string(<span style="color:#e6db74">&#34;1&#34;</span>)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		.mount(<span style="color:#f92672">&amp;</span>mocks[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Mock 2 answers only on /, not on /health
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
+</span></span><span style="display:flex;"><span>		.and(path(<span style="color:#e6db74">&#39;/&#39;</span>))
+</span></span><span style="display:flex;"><span>		.respond_with(
+</span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>).set_body_string(<span style="color:#e6db74">&#34;2&#34;</span>)
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>		.mount(<span style="color:#f92672">&amp;</span>mocks[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start server
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> config <span style="color:#f92672">=</span> build_config(<span style="color:#f92672">&amp;</span>mocks);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(<span style="color:#f92672">&amp;</span>config));
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8082</span>, <span style="color:#f92672">&amp;</span>config, policy);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
+</span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> ClientBuilder::new()
+</span></span><span style="display:flex;"><span>		.timeout(Duration::from_secs(<span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>		.build()
+</span></span><span style="display:flex;"><span>		.unwrap();
+</span></span><span style="display:flex;"><span>	wait_server_up(<span style="color:#f92672">&amp;</span>client, <span style="color:#f92672">&amp;</span>server_uri, <span style="color:#ae81ff">3</span>).<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Expect only mock[1] to respond to 2 consecutive requests
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the test, we are setting up two mock servers. The first one responds on every path, while the second doesn&rsquo;t respond on the <code>/health</code> endpoint that we expect for health monitoring.
+We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo; upstream server, which responds with &ldquo;1&rdquo;.</p>
+<h2 id="implementing-the-health-check-procedure">Implementing the Health Check procedure</h2>
+<p>The healthcheck implementation will be split in 3 parts:</p>
+<ul>
+<li>Checking the health of all the upstream servers periodically</li>
+<li>Adding the health check results to the round-robin policy</li>
+<li>Integrating the two parts together</li>
+</ul>
+<p>Let&rsquo;s start by checking which servers are available:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">HealthResult</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> backend: <span style="color:#a6e22e">Backend</span>,
+</span></span><span style="display:flex;"><span>    healthy: <span style="color:#66d9ef">bool</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_healthy_backends</span>(client: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Client</span>, backends: <span style="color:#66d9ef">&amp;</span>Vec<span style="color:#f92672">&lt;</span>Backend<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Check all backends for the health endpoint
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> join_all(backends.iter().map(<span style="color:#f92672">|</span>b<span style="color:#f92672">|</span> {
+</span></span><span style="display:flex;"><span>        client
+</span></span><span style="display:flex;"><span>            .get(format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>b.url, <span style="color:#f92672">&amp;</span>b.healthcheck_path))
+</span></span><span style="display:flex;"><span>            .send()
+</span></span><span style="display:flex;"><span>    }))
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Map responses to simple boolean to match to backends
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> results.iter().map(<span style="color:#f92672">|</span>res<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> res {
+</span></span><span style="display:flex;"><span>        Ok(response) <span style="color:#f92672">=&gt;</span> response.status().is_success(),
+</span></span><span style="display:flex;"><span>        Err(_) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Match result and backend together
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    zip(backends, results)
+</span></span><span style="display:flex;"><span>        .map(<span style="color:#f92672">|</span>(backend, healthy)<span style="color:#f92672">|</span> HealthResult {
+</span></span><span style="display:flex;"><span>            backend: <span style="color:#a6e22e">backend</span>.clone(),
+</span></span><span style="display:flex;"><span>            healthy,
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>        .collect()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The <code>get_healthy_backends</code> gets the list of servers we want to interrogate, and checks that their corresponding healthcheck endpoints are reachable and return a success code (HTTP 200).</p>
+<p>I read an interesting post from Nicole Tietz-Sokolskaya (<a href="https://ntietz.com/blog/rusts-iterators-optimize-footgun/"  target="_blank" >here</a>) about the footguns presented by using rust iterators with async code. I didn&rsquo;t use her solution for waiting multiple futures, because I wanted to also collect all the results of the operations. Instead, I found the useful <a href="https://docs.rs/futures-preview/latest/i686-pc-windows-msvc/futures/future/fn.join_all.html"  target="_blank" >join_all</a> method in the futures crate, which is exactly what I needed for the task!</p>
+<p>The <code>join_all</code> method receives a collection of futures and polls them, returning either the results of all the futures (in order) or an error if any future fails.</p>
+<h2 id="extending-the-policy-with-healthchecks">Extending the policy with healthchecks</h2>
+<p>With all the healthcheck results collected, we can now extend our Round-Robin policy to update the available backends:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[async_trait]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> RoutingPolicy {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The new method we introduce
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">health_results</span>(<span style="color:#f92672">&amp;</span>self, results: Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We need to test that the policy will be affected by the results of our healthcheck loop. Given that our acceptance test will fail until we perform real HTTP requests and integrate multiple components, let&rsquo;s write a smaller test just for the policy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">round_robin_policy_with_healthcheck</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> backends <span style="color:#f92672">=</span> vec![
+</span></span><span style="display:flex;"><span>		Backend {
+</span></span><span style="display:flex;"><span>			healthcheck_path: <span style="color:#e6db74">&#34;/health&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>			url: <span style="color:#e6db74">&#34;test_url_1&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		Backend {
+</span></span><span style="display:flex;"><span>			healthcheck_path: <span style="color:#e6db74">&#34;/health&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>			url: <span style="color:#e6db74">&#34;test_url_2&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		Backend {
+</span></span><span style="display:flex;"><span>			healthcheck_path: <span style="color:#e6db74">&#34;/health&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>			url: <span style="color:#e6db74">&#34;test_url_3&#34;</span>.into(),
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>	];
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> config <span style="color:#f92672">=</span> Config {
+</span></span><span style="display:flex;"><span>		health_check_interval_secs: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>		backends: <span style="color:#a6e22e">backends</span>.clone(),
+</span></span><span style="display:flex;"><span>	};
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> RoundRobinPolicy::new(<span style="color:#f92672">&amp;</span>config);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> request <span style="color:#f92672">=</span> test::TestRequest::default().to_http_request();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	policy
+</span></span><span style="display:flex;"><span>		.health_results(vec![
+</span></span><span style="display:flex;"><span>			HealthResult {
+</span></span><span style="display:flex;"><span>				backend: <span style="color:#a6e22e">backends</span>[<span style="color:#ae81ff">0</span>].clone(),
+</span></span><span style="display:flex;"><span>				healthy: <span style="color:#a6e22e">false</span>,
+</span></span><span style="display:flex;"><span>			},
+</span></span><span style="display:flex;"><span>			HealthResult {
+</span></span><span style="display:flex;"><span>				backend: <span style="color:#a6e22e">backends</span>[<span style="color:#ae81ff">1</span>].clone(),
+</span></span><span style="display:flex;"><span>				healthy: <span style="color:#a6e22e">true</span>,
+</span></span><span style="display:flex;"><span>			},
+</span></span><span style="display:flex;"><span>			HealthResult {
+</span></span><span style="display:flex;"><span>				backend: <span style="color:#a6e22e">backends</span>[<span style="color:#ae81ff">2</span>].clone(),
+</span></span><span style="display:flex;"><span>				healthy: <span style="color:#a6e22e">true</span>,
+</span></span><span style="display:flex;"><span>			},
+</span></span><span style="display:flex;"><span>		])
+</span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here we are checking that the policy works as inteded in a round-robin fashion (the first assertions) as it was in part 2. Then, we send a healthcheck result saying that the first server is not available, and expect to only get the second/third servers in return.</p>
+<p>Let&rsquo;s make this test pass!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">RoundRobinPolicy</span> {
+</span></span><span style="display:flex;"><span>    backends: <span style="color:#a6e22e">RwLock</span><span style="color:#f92672">&lt;</span>Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;&gt;</span>,
+</span></span><span style="display:flex;"><span>    idx: <span style="color:#a6e22e">AtomicUsize</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[async_trait]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> RoutingPolicy <span style="color:#66d9ef">for</span> RoundRobinPolicy {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self.idx.fetch_add(<span style="color:#ae81ff">1</span>, Ordering::Relaxed);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get read lock and return the correct server
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> self.backends.read().<span style="color:#66d9ef">await</span>.clone();
+</span></span><span style="display:flex;"><span>        servers.get(idx <span style="color:#f92672">%</span> servers.len()).unwrap().clone()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">health_results</span>(<span style="color:#f92672">&amp;</span>self, results: Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get write lock and overwrite the servers list
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> servers <span style="color:#f92672">=</span> self.backends.write().<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">*</span>servers <span style="color:#f92672">=</span> results
+</span></span><span style="display:flex;"><span>            .iter()
+</span></span><span style="display:flex;"><span>            .filter(<span style="color:#f92672">|</span>r<span style="color:#f92672">|</span> r.is_healthy())
+</span></span><span style="display:flex;"><span>            .map(<span style="color:#f92672">|</span>r<span style="color:#f92672">|</span> r.backend.url.clone())
+</span></span><span style="display:flex;"><span>            .collect();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>What is the difference from the implementation we did last time?</p>
+<p>While in part 2 the <code>backends</code> variable was readonly (initialised at the beginning of the program), now the list of available servers can change at runtime, based on the healthcheck results. But our policy might be used concurrently, and rust doesn&rsquo;t allow concurrent access to <code>Vec</code> (also, our vector was immutable).</p>
+<p>A <a href="https://doc.rust-lang.org/std/sync/struct.RwLock.html"  target="_blank" >RwLock</a> allows us to read and mutate the backends vector in a thread-safe way. It does so by keeping a lock on the resource (the <code>Vec&lt;Backend&gt;</code>) but in an <em>asymmetric</em> way. In fact, it&rsquo;s possible to have multiple readers at the same time, but whenever a writer wants to mutate the resource (e.g. us, when we receive the healthcheck results), it gets exclusive access.</p>
+<h3 id="integrating-everything-together">Integrating everything together</h3>
+<p>Now that we have both the polling mechanism and the upgraded policy, it&rsquo;s time to integrate the two and finally make the acceptance test pass!</p>
+<p>What we need to do is to periodically call the <code>get_healthy_backends</code> method and forward its results to the policy.</p>
+<p>I wanted to have a nice discussion on how to use <a href="https://doc.rust-lang.org/rust-by-example/std_misc/channels.html"  target="_blank" >channels</a> to communicate among multiple tasks/thread, but I ended up simplifying the code and using a single task 🥲 here it is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start health check task
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> config_clone <span style="color:#f92672">=</span> self.config.clone();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> data_clone <span style="color:#f92672">=</span> self.data.clone();
+</span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> interval <span style="color:#f92672">=</span> interval(Duration::from_secs(
+</span></span><span style="display:flex;"><span>			config_clone.health_check_interval_secs <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u64</span>,
+</span></span><span style="display:flex;"><span>		));
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">let</span> healthy_backends <span style="color:#f92672">=</span> get_healthy_backends(<span style="color:#f92672">&amp;</span>client, <span style="color:#f92672">&amp;</span>config_clone.backends).<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>			data_clone.policy.health_results(healthy_backends).<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>			interval.tick().<span style="color:#66d9ef">await</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start http server
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> data_clone <span style="color:#f92672">=</span> self.data.clone();
+</span></span><span style="display:flex;"><span>	HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span><span style="display:flex;"><span>		App::new()
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">..</span>.
+</span></span></code></pre></div><p>When the http server starts, we also start a concurrent task for the healthcheck procedure. The task runs on the interval we configure through the config struct, checks the availability of the backends and send the results to the policy.</p>
+<p>That&rsquo;s all! Now the test pass, and we have just added a healthcheck procedure to our load balancer.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>We have implemented a simple HTTP load balancer, with a round-robin policy and healthcheck procedure.</p>
+<p>What&rsquo;s missing?</p>
+<p>For the sake of brevity, I didn&rsquo;t include config management, command line arguments and error management. All of this is left as exercise for the reader (you can find the entire project on the <a href="https://github.com/marcobacis/coding-challenges/tree/main/load_balancer"  target="_blank" >repo</a>).</p>
+<p>I didn&rsquo;t implement other features needed by HTTP load balancers, such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For"  target="_blank" >X-Forwarded-For</a> and all additional headers. Finally, I don&rsquo;t know which version of HTTP this balancer supports (probably 1.1? I don&rsquo;t know). Basically, this was a nice exercise with async rust, but cannot be considered in any way to be production (or even test) ready!</p>
+<p>I hope you still had fun and found the articles interesting. I certainly learned a lot in implementing this simple challenge, and hope to do more in the future!</p>
+<p>Thanks a lot, and see you next time 👋</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://actix.rs/docs"  target="_blank" >Actix Docs</a></li>
+<li><a href="https://docs.rs/reqwest/latest/reqwest/"  target="_blank" >Reqwest Docs</a></li>
+<li><a href="https://tokio.rs/tokio/tutorial"  target="_blank" >Tokio Tutorial</a></li>
+<li><a href="https://doc.rust-lang.org/nomicon/send-and-sync.html"  target="_blank" >Send and Sync</a></li>
+<li><a href="https://tontinton.com/posts/scheduling-internals/"  target="_blank" >Scheduling Internals</a> - Tony Solomonik</li>
+<li><a href="https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-hard/"  target="_blank" >Why async fn in traits are hard</a> - Niko Matsakis</li>
+<li><a href="https://manishearth.github.io/blog/2015/05/27/wrapper-types-in-rust-choosing-your-guarantees/"  target="_blank" >Wrapper Types in Rust: Choosing Your Guarantees</a> - Manish Goregaokar</li>
+<li><a href="https://ntietz.com/blog/rusts-iterators-optimize-footgun/"  target="_blank" >Rust&rsquo;s iterators optimize nicely—and contain a footgun</a></li>
+</ul>
+
+        ]]></content:encoded></item><item><title>Let's build a Load Balancer in Rust - Part 2</title><link>https://marcobacis.com/blog/load-balancer-rust-2/</link><pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-2/</guid><description>This is the second part of the &ldquo;Build your own load balancer in rust&rdquo; series! In this post, we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends.</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
-          <p>Hi  👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.</p>
+          
+
+
+
+
+    <hr/>
+    <div class="series-list">
+        <h3>"Build your own load balancer in Rust" series</h3>
+        <ul>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-1">Part 1: Setup and http forwarding</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        Part 2: Round-Robin Policy
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-3">Part 3: Healthcheck</a>
+                    
+                </li>
+            
+        </ul>
+        <hr/>
+    </div>
+
+<p>Hi  👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.</p>
 <p>In the <a href="https://marcobacis.com/blog/load-balancer-rust-1/"  target="_blank" >first post</a> we saw how to forward a single request to an upstream server, using <a href="https://actix.rs/"  target="_blank" >Actix</a> and <a href="https://docs.rs/reqwest/latest/reqwest/"  target="_blank" >Reqwest</a>.</p>
 <p>Today we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends!</p>
 <h2 id="small-fix-in-the-handler">Small fix in the handler</h2>
@@ -246,9 +576,41 @@ Small fix in the handler In the first part, we left a (small) code smell in the 
 <li><a href="https://manishearth.github.io/blog/2015/05/27/wrapper-types-in-rust-choosing-your-guarantees/"  target="_blank" >Wrapper Types in Rust: Choosing Your Guarantees</a> - Manish Goregaokar</li>
 </ul>
 
-        ]]></content:encoded></item><item><title>Let's build a Load Balancer in Rust - Part 1</title><link>https://marcobacis.com/blog/load-balancer-rust-1/</link><pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-1/</guid><description><p>Hi 👋 welcome to a new post!</p><p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p></description><media:content url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Let's build a Load Balancer in Rust - Part 1</title><link>https://marcobacis.com/blog/load-balancer-rust-1/</link><pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-1/</guid><description>Hi 👋 welcome to a new post! This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust. In this first part, we create a simple HTTP forwarder to a single upstream server.</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
-          <p>Hi 👋 welcome to a new post!</p>
+          
+
+
+
+
+    <hr/>
+    <div class="series-list">
+        <h3>"Build your own load balancer in Rust" series</h3>
+        <ul>
+            
+                <li>
+                    
+                        Part 1: Setup and http forwarding
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-2">Part 2: Round-Robin Policy</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-3">Part 3: Healthcheck</a>
+                    
+                </li>
+            
+        </ul>
+        <hr/>
+    </div>
+
+<p>Hi 👋 welcome to a new post!</p>
 <p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p>
 <p>Why a load balancer, and why rust?</p>
 <p>I came across this challenge on the <a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges</a> newsletter. I had already completed the first challenges (implementing <code>wc</code> and <code>cut</code>), and I thought it was time for a more complex project.</p>
@@ -434,4 +796,5 @@ Small fix in the handler In the first part, we left a (small) code smell in the 
 <li><a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges Website</a></li>
 <li><a href="https://www.nginx.com/resources/glossary/load-balancing/"  target="_blank" >What is Load Balancing?</a></li>
 </ul>
+
         ]]></content:encoded></item></channel></rss>

@@ -1,9 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in Meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Wed, 22 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's build a Load Balancer in Rust - Part 2</title><link>https://marcobacis.com/blog/load-balancer-rust-2/</link><pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-2/</guid><description>Hi 👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.
-In the first post we saw how to forward a single request to an upstream server, using Actix and Reqwest.
-Today we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends!
-Small fix in the handler In the first part, we left a (small) code smell in the handler code, because we instantiate the reqwest client struct on each new request received:</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Meetup on Marco Bacis</title><link>https://marcobacis.com/tags/meetup/</link><description>Recent content in Meetup on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Wed, 22 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's build a Load Balancer in Rust - Part 2</title><link>https://marcobacis.com/blog/load-balancer-rust-2/</link><pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-2/</guid><description>This is the second part of the &ldquo;Build your own load balancer in rust&rdquo; series! In this post, we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends.</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/load-balancer-rust-2/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
-          <p>Hi  👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.</p>
+          
+
+
+
+
+    <hr/>
+    <div class="series-list">
+        <h3>"Build your own load balancer in Rust" series</h3>
+        <ul>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-1">Part 1: Setup and http forwarding</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        Part 2: Round-Robin Policy
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-3">Part 3: Healthcheck</a>
+                    
+                </li>
+            
+        </ul>
+        <hr/>
+    </div>
+
+<p>Hi  👋 welcome to a new post! This is the second part of the series &ldquo;Let&rsquo;s build a Load Balancer in rust&rdquo;.</p>
 <p>In the <a href="https://marcobacis.com/blog/load-balancer-rust-1/"  target="_blank" >first post</a> we saw how to forward a single request to an upstream server, using <a href="https://actix.rs/"  target="_blank" >Actix</a> and <a href="https://docs.rs/reqwest/latest/reqwest/"  target="_blank" >Reqwest</a>.</p>
 <p>Today we&rsquo;ll see how to implement a round-robin policy, to forward our requests to multiple backends!</p>
 <h2 id="small-fix-in-the-handler">Small fix in the handler</h2>
@@ -246,9 +275,41 @@ Small fix in the handler In the first part, we left a (small) code smell in the 
 <li><a href="https://manishearth.github.io/blog/2015/05/27/wrapper-types-in-rust-choosing-your-guarantees/"  target="_blank" >Wrapper Types in Rust: Choosing Your Guarantees</a> - Manish Goregaokar</li>
 </ul>
 
-        ]]></content:encoded></item><item><title>Let's build a Load Balancer in Rust - Part 1</title><link>https://marcobacis.com/blog/load-balancer-rust-1/</link><pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-1/</guid><description><p>Hi 👋 welcome to a new post!</p><p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p></description><media:content url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Let's build a Load Balancer in Rust - Part 1</title><link>https://marcobacis.com/blog/load-balancer-rust-1/</link><pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/load-balancer-rust-1/</guid><description>Hi 👋 welcome to a new post! This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust. In this first part, we create a simple HTTP forwarder to a single upstream server.</description><media:content url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/load-balancer-rust-1/cover_hu0a658fabcd51b67511a2b4132d0b39d3_85848_480x480_fit_q75_bgffffff_box_3.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
-          <p>Hi 👋 welcome to a new post!</p>
+          
+
+
+
+
+    <hr/>
+    <div class="series-list">
+        <h3>"Build your own load balancer in Rust" series</h3>
+        <ul>
+            
+                <li>
+                    
+                        Part 1: Setup and http forwarding
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-2">Part 2: Round-Robin Policy</a>
+                    
+                </li>
+            
+                <li>
+                    
+                        <a href="/blog/load-balancer-rust-3">Part 3: Healthcheck</a>
+                    
+                </li>
+            
+        </ul>
+        <hr/>
+    </div>
+
+<p>Hi 👋 welcome to a new post!</p>
 <p>This will be the first of a short series of posts, in which I explain my poor attempt at creating a simple HTTP load balancer in Rust.</p>
 <p>Why a load balancer, and why rust?</p>
 <p>I came across this challenge on the <a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges</a> newsletter. I had already completed the first challenges (implementing <code>wc</code> and <code>cut</code>), and I thought it was time for a more complex project.</p>
@@ -434,6 +495,7 @@ Small fix in the handler In the first part, we left a (small) code smell in the 
 <li><a href="https://codingchallenges.fyi/"  target="_blank" >Coding Challenges Website</a></li>
 <li><a href="https://www.nginx.com/resources/glossary/load-balancing/"  target="_blank" >What is Load Balancing?</a></li>
 </ul>
+
         ]]></content:encoded></item><item><title>My First Open Source contribution ever @ Open Source Saturday Milan</title><link>https://marcobacis.com/blog/2024-feb-open-source-saturday/</link><pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2024-feb-open-source-saturday/</guid><description><p>Hi 👋 welcome to a new post!</p><p>Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first<a href="https://www.meetup.com/open-source-saturday-milano/" target="_blank">Open Source Saturday Milan</a>!</p></description><media:content url="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2024-feb-open-source-saturday/cover_hu08913c0919c3e0a37aeeb9701f4e7be7_40045_480x480_fit_q75_bgffffff_box_3.jpg" title="Open Source Initiative logo" alt="Open Source Initiative logo"/>
           <p>Hi 👋 welcome to a new post!</p>
