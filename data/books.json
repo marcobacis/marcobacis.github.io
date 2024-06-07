@@ -1,5 +1,14 @@
 [
   {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "link": "https://www.goodreads.com/book/show/3407974-frankenstein",
+    "pages": 276,
+    "date_started": "2024-06-06",
+    "date_read": null,
+    "date_added": "2024-06-06"
+  },
+  {
     "title": "Terraform: Up & Running: Writing Infrastructure as Code",
     "author": "Yevgeniy Brikman",
     "link": "https://www.goodreads.com/book/show/42589303-terraform",
