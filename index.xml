@@ -797,10 +797,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <li><a href="https://www.nginx.com/resources/glossary/load-balancing/"  target="_blank" >What is Load Balancing?</a></li>
 </ul>
 
-        ]]></content:encoded></item><item><title>Polenta &amp; Deploy 2024</title><link>https://marcobacis.com/blog/2024-polenta-and-deploy/</link><pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2024-polenta-and-deploy/</guid><description>Hi 👋 welcome to a new post.
-Today, I want to share a small glimpse of my experience at the 2024 Polenta &amp; Deploy event!
-Polenta&amp;Deploy is an event taking place nestled beneath the mountains at Pinzolo. Over the course of three days, developers (and others) come together to enjoy the fresh air and discuss about tech (and not only that&hellip;) in an open space setup.
-(Disclaimer: I didn&rsquo;t attend the previous editions, so please correct me if I&rsquo;m mistaken)</description><media:content url="https://marcobacis.com/blog/2024-polenta-and-deploy/cover_hu6181639306233721345.jpg" width="262" height="262" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2024-polenta-and-deploy/cover_hu6181639306233721345.jpg" width="262" height="262"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Polenta &amp; Deploy 2024</title><link>https://marcobacis.com/blog/2024-polenta-and-deploy/</link><pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2024-polenta-and-deploy/</guid><description><p>Hi 👋 welcome to a new post.</p><p>Today, I want to share a small glimpse of my experience at the 2024 Polenta &amp; Deploy event!</p><p>Polenta&amp;Deploy is an event taking place nestled beneath the mountains at Pinzolo. Over the course of three days, developers (and others) come together to enjoy the fresh air and discuss about tech (and not only that&hellip;) in an open space setup.</p><p><em>(Disclaimer: I didn&rsquo;t attend the previous editions, so please correct me if I&rsquo;m mistaken)</em></p></description><media:content url="https://marcobacis.com/blog/2024-polenta-and-deploy/cover_hu6181639306233721345.jpg" width="262" height="262" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2024-polenta-and-deploy/cover_hu6181639306233721345.jpg" width="262" height="262"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2024-polenta-and-deploy/cover_hu6181639306233721345.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post.</p>
 <p>Today, I want to share a small glimpse of my experience at the 2024 Polenta &amp; Deploy event!</p>
@@ -885,9 +882,7 @@ I won&rsquo;t share the final url (just in case someone decides to DDoS kubernel
 <p>An unconference offers a safe, intimate space where everyone can share their opinions, provide feedback, and support others. Being surrounded by the Trentino mountains was the cherry on top for me. While I&rsquo;m not particularly happy to hike on them (too hard!), I do love being in the mountains and spending time with like-minded people, so this was an incredible opportunity.</p>
 <p>Thanks again, and see you next time!</p>
 
-        ]]></content:encoded></item><item><title>Show your Work!</title><link>https://marcobacis.com/blog/show-your-work-book/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/show-your-work-book/</guid><description>Hi 👋 and welcome to a new post!
-This blog is becoming more and more a journal and a collection of book summaries 😅 I promise I’ll write more about technical stuff soon.
-Today I’m going to give a small summary and comment of a book I recently read: “Show Your Work!” by Austin Kleon . Austin is a “writes who draws”, and his books on creativity are all formatted in crazy ways (and with a really nice finish)!</description><media:content url="https://marcobacis.com/blog/show-your-work-book/cover_hu5761840370406784554.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/show-your-work-book/cover_hu5761840370406784554.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Show your Work!</title><link>https://marcobacis.com/blog/show-your-work-book/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/show-your-work-book/</guid><description><p>Hi 👋 and welcome to a new post!</p><p>This blog is becoming more and more a journal and a collection of book summaries 😅 I promise I’ll write more about technical stuff soon.</p><p>Today I’m going to give a small summary and comment of a book I recently read: “Show Your Work!” by<a href="https://austinkleon.com/" target="_blank">Austin Kleon</a> . Austin is a “writes who draws”, and his books on creativity are all formatted in crazy ways (and with a really nice finish)!</p></description><media:content url="https://marcobacis.com/blog/show-your-work-book/cover_hu5761840370406784554.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/show-your-work-book/cover_hu5761840370406784554.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/show-your-work-book/cover_hu5761840370406784554.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>This blog is becoming more and more a journal and a collection of book summaries 😅 I promise I’ll write more about technical stuff soon.</p>
@@ -1173,10 +1168,7 @@ The first thing to do it to not fear denormalization and to stop doing data-driv
 <p>Be it an existing system or a greenfield project, it&rsquo;s important to decouple and separate the system properly before splitting it, and focusing on distributed systems&rsquo; issues and solutions (such as denormalization, async communication, event-based systems and so on) can make the difference.</p>
 <p>That&rsquo;s it for this time! I hope you liked my short summary of a long talk. You can find the meetup video <a href="https://www.youtube.com/watch?v=1quMproQ5Hk"  target="_blank" >here</a>.</p>
 <p>See you next time!</p>
-        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2023</title><link>https://marcobacis.com/blog/2023-italian-agile-days/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2023-italian-agile-days/</guid><description>Hi 👋 and welcome to a new post!
-Today I’m writing a summary of my experience at the Italian Agile Days 2023.
-I already wrote about the 2022 edition here and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.
-This year, the event was organised at the Politecnico di Milano campus. I graduated there about 4 years ago, so it was a great occasion to return there!</description><media:content url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2023</title><link>https://marcobacis.com/blog/2023-italian-agile-days/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2023-italian-agile-days/</guid><description><p>Hi 👋 and welcome to a new post!</p><p>Today I’m writing a summary of my experience at the Italian Agile Days 2023.</p><p>I already wrote about the 2022 edition<a href="https://marcobacis.com/blog/2022-italian-agile-days/" target="_blank">here</a> and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.</p><p>This year, the event was organised at the Politecnico di Milano campus. I graduated there about 4 years ago, so it was a great occasion to return there! I got to see how the campus changed, and I met some old friends (at<a href="https://necst.it/" target="_blank">NECSTLab</a>) who stayed for their PhD.</p></description><media:content url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Today I’m writing a summary of my experience at the Italian Agile Days 2023.</p>
@@ -1306,13 +1298,7 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 <p>I can’t wait to see what next year brings in terms of events, and to keep learning!</p>
 <p>See you next time!</p>
 
-        ]]></content:encoded></item><item><title>2023: A Review</title><link>https://marcobacis.com/blog/2023-review/</link><pubDate>Sat, 30 Dec 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-review/</guid><description>Hi 👋 and welcome to the last post of 2023!
-As already done last year, it’s time for a end-of-year recap!
-I usually spend the last days of the year eating and laying on the couch (christmas is strong in italy) so don’t expect a long post.
-Let’s begin!
-2023 Goals Review First, a short check on the goals I wrote in my 2022 review:
-❓Learn in public
-I definitely tried to expose myself a little more and share what I learned in public.</description><media:content url="https://marcobacis.com/blog/2023-review/cover_hu3908862650723221613.jpeg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/cover_hu3908862650723221613.jpeg" width="480" height="320"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>2023: A Review</title><link>https://marcobacis.com/blog/2023-review/</link><pubDate>Sat, 30 Dec 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-review/</guid><description><p>Hi 👋 and welcome to the last post of 2023!</p><p>As already done<a href="https://marcobacis.com/blog/2022-a-review/" target="_blank">last year</a>, it’s time for a end-of-year recap!</p><p>I usually spend the last days of the year eating and laying on the couch (christmas is strong in italy) so don’t expect a long post.</p><p>Let’s begin!</p><h2 id="2023-goals-review">2023 Goals Review</h2><p>First, a short check on the goals I wrote in my 2022 review:</p></description><media:content url="https://marcobacis.com/blog/2023-review/cover_hu3908862650723221613.jpeg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-review/cover_hu3908862650723221613.jpeg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-review/cover_hu3908862650723221613.jpeg" title="Cover by [@timmossholder](http://unsplash.com/timmossholder) on Unsplash." alt="Cover by [@timmossholder](http://unsplash.com/timmossholder) on Unsplash."/>
           <p>Hi 👋 and welcome to the last post of 2023!</p>
 <p>As already done <a href="https://marcobacis.com/blog/2022-a-review/"  target="_blank" >last year</a>, it’s time for a end-of-year recap!</p>
@@ -1520,15 +1506,15 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <p>Friday was the first day of the Unconference!</p>
 <p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel1_hu15015101184856268063.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu14277336183309677295.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu7763289998382729388.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu2701294199274510088.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu10801136789866808652.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu13593409528381289552.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -1542,7 +1528,7 @@ I definitely tried to expose myself a little more and share what I learned in pu
 
 
 </figure></td>
-<td><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
+          <td style="text-align: left"><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel2_hu7150365424825438683.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu8753090358500507938.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu6021265994491525017.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu9013898587870033214.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5239789462658488151.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5172191364101216599.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -1556,8 +1542,8 @@ I definitely tried to expose myself a little more and share what I learned in pu
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):</p>
 <p><strong>Game AI and Montecarlo Tree Search - <a href="https://www.linkedin.com/in/matteovaccari/"  target="_blank" >Matteo Vaccari</a></strong></p>
@@ -1619,15 +1605,15 @@ I definitely tried to expose myself a little more and share what I learned in pu
 <h3 id="saturday">Saturday</h3>
 <p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel1_hu11472852756544574192.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu9871326455475483232.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu11501172136814715496.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu10444245162205605894.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu8076631798664937995.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu4339733369228611844.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -1641,7 +1627,7 @@ I definitely tried to expose myself a little more and share what I learned in pu
 
 
 </figure></td>
-<td><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
+          <td style="text-align: left"><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel2_hu9589462917910853555.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu13545408588584074511.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu12371210005430399342.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11506440064826611107.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu14049678059132940784.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11958925571860951896.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -1655,8 +1641,8 @@ I definitely tried to expose myself a little more and share what I learned in pu
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p><strong><del>Coping</del>/Coding with Product - <a href="https://www.linkedin.com/in/brando/"  target="_blank" >Alberto Brandolini</a></strong></p>
 <p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.</p>
@@ -2070,10 +2056,7 @@ method must be long</li>
 <li><strong>Non-obvious Code:</strong> the behaviour or meaning of a piece of code cannot be
 understood easily</li>
 </ul>
-        ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
-The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.
-What is a kata? Typical developer performing a kata
-&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (Wikipedia).</description><media:content url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description><p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the<a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank">XPUG Bergamo</a> group.</p><p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p><h2 id="what-is-a-kata">What is a kata?</h2><p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP"><figure><picture><source type="image/webp" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu2707920874465139878.webp 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu1361421280633703778.webp 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu8587431807629563514.webp 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu17851173789183065795.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw"/><source type="image/jpeg" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4199534080598968505.jpg 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu17042561187187790155.jpg 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu5353590165291898552.jpg 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu10558821674979400844.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw"/><img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu17042561187187790155.jpg" width="1280" height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy"/></pi</description><media:content url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
@@ -2141,10 +2124,7 @@ Another challenge was to always give state  to objects (so avoiding value object
 <h2 id="thats-all">That&rsquo;s all!</h2>
 <p>Keep checking this post for updates on the next sessions I&rsquo;ll attend 🤩</p>
 
-        ]]></content:encoded></item><item><title>XPUGBg March Meetup: “The Actor Model (and why an XP programmer should know it)“</title><link>https://marcobacis.com/blog/2023-actor-model-meetup/</link><pubDate>Sat, 01 Apr 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-actor-model-meetup/</guid><description>Hi 👋 welcome!
-This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.
-Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did here and here).
-This month&rsquo;s talk was titled “The Actor Model and why an XP programmer should know it” by Emanuele DelBono.</description><media:content url="https://marcobacis.com/blog/2023-actor-model-meetup/cover_hu7137037870293606647.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-actor-model-meetup/cover_hu7137037870293606647.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>XPUGBg March Meetup: “The Actor Model (and why an XP programmer should know it)“</title><link>https://marcobacis.com/blog/2023-actor-model-meetup/</link><pubDate>Sat, 01 Apr 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-actor-model-meetup/</guid><description><p>Hi 👋 welcome!</p><p>This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.</p><p>Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did<a href="http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/" target="_blank">here</a> and<a href="http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/" target="_blank">here</a>).</p><p>This month&rsquo;s talk was titled “<em>The Actor Model and why an XP programmer should know it</em>” by Emanuele DelBono.</p></description><media:content url="https://marcobacis.com/blog/2023-actor-model-meetup/cover_hu7137037870293606647.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-actor-model-meetup/cover_hu7137037870293606647.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-actor-model-meetup/cover_hu7137037870293606647.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome!</p>
 <p>This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.</p>
@@ -2192,9 +2172,7 @@ This month&rsquo;s talk was titled “The Actor Model and why an XP programmer s
 <li>The <a href="https://www.amazon.it/Cronache-Domain-Driven-esperienze-progetti-raccontati/dp/8894255697/"  target="_blank" >Cronache di Domain-Driven Design</a> book has a chapter by Emanuele on using DDD and Actors in a real-life scenario (which inspired the Talk and Demo 😛)</li>
 </ul>
 
-        ]]></content:encoded></item><item><title>Book Summary: Atomic Habits</title><link>https://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/atomic-habits-book/</guid><description>Hi 👋 and welcome to a new post!
-Today I’m publishing the (raw) notes I took while reading “Atomic Habits: An Easy and proven way to build good habits and break bad ones”, by James Clear.
-Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book.</description><media:content url="https://marcobacis.com/blog/atomic-habits-book/cover_hu4131359326044864111.jpg" width="480" height="333" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/atomic-habits-book/cover_hu4131359326044864111.jpg" width="480" height="333"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Book Summary: Atomic Habits</title><link>https://marcobacis.com/blog/atomic-habits-book/</link><pubDate>Tue, 14 Mar 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/atomic-habits-book/</guid><description><p>Hi 👋  and welcome to a new post!</p><p>Today I’m publishing the (raw) notes I took while reading “Atomic Habits:<em>An Easy and proven way to build good habits and break bad ones”,</em> by James Clear.</p><p>Even though I read this book two years ago, I stumbled across this notes and they were helpful in remembering its main ideas and concepts. I know there are many summaries and reviews of this book. Still, I&rsquo;ll keep this notes on the blog as a personal learning reference.</p></description><media:content url="https://marcobacis.com/blog/atomic-habits-book/cover_hu4131359326044864111.jpg" width="480" height="333" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/atomic-habits-book/cover_hu4131359326044864111.jpg" width="480" height="333"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/atomic-habits-book/cover_hu4131359326044864111.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋  and welcome to a new post!</p>
 <p>Today I’m publishing the (raw) notes I took while reading “Atomic Habits: <em>An Easy and proven way to build good habits and break bad ones”,</em> by James Clear.</p>
@@ -2332,9 +2310,7 @@ Even though I read this book two years ago, I stumbled across this notes and the
 <p>The book was a great inspiration in how to improve through the power of habits. I really liked the part about changing the environment and automating decisions to reduce my reliance on discipline alone. I also try to make use of the book’s advice to create good habits, while I’m definitely less successful when it comes to removing bad habits 😅.</p>
 <p>Hope you enjoyed this summary/notes post 🎉, see you next time!</p>
 
-        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
-Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
-As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description><p>Hi 👋 welcome to a new post.</p><p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p><p>As I already said in my<a href="https://marcobacis.com/blog/2022-a-review/" target="_blank">2022 review</a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.</p></description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post.</p>
 <p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p>
@@ -2381,9 +2357,7 @@ As I already said in my 2022 review, one of my goals for 2023 is to attend more 
 <li><a href="https://fosdem.org/2023/schedule/event/gb_arm/"  target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…</a></li>
 </ul>
 
-        ]]></content:encoded></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description>Hi 👋 welcome to a new post!
-Today I’m going to post a little summary of my experience at the XPUGBg meetup I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.
-What is a collaborative codebase? Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</description><media:content url="https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/cover_hu17707674767383144956.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/cover_hu17707674767383144956.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/</guid><description><p>Hi 👋 welcome to a new post!</p><p>Today I’m going to post a little summary of my experience at the<a href="https://www.meetup.com/xpugbg/events/290690004/" target="_blank">XPUGBg meetup</a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.</p><h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2><p>Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?</p></description><media:content url="https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/cover_hu17707674767383144956.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/cover_hu17707674767383144956.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-jan-xp-codebase-meetup/cover_hu17707674767383144956.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post!</p>
 <p>Today I’m going to post a little summary of my experience at the <a href="https://www.meetup.com/xpugbg/events/290690004/"  target="_blank" >XPUGBg meetup</a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.</p>
@@ -2442,9 +2416,7 @@ What is a collaborative codebase? Alessio started his talk with a question: what
 <li><a href="https://martinfowler.com/articles/feature-toggles.html"  target="_blank" >Feature Toggles</a></li>
 </ul>
 
-        ]]></content:encoded></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description>Hi 👋 and welcome to a new post!
-In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (here) on January 24th.
-For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</description><media:content url="https://marcobacis.com/blog/outside-in-design-edreams-meetup/cover_hu10643603172801021569.jpg" width="480" height="343" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/outside-in-design-edreams-meetup/cover_hu10643603172801021569.jpg" width="480" height="343"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/outside-in-design-edreams-meetup/</guid><description><p>Hi 👋 and welcome to a new post!</p><p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (<a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877" target="_blank">here</a>) on January 24th.</p><p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</p></description><media:content url="https://marcobacis.com/blog/outside-in-design-edreams-meetup/cover_hu10643603172801021569.jpg" width="480" height="343" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/outside-in-design-edreams-meetup/cover_hu10643603172801021569.jpg" width="480" height="343"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/outside-in-design-edreams-meetup/cover_hu10643603172801021569.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (<a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877"  target="_blank" >here</a>) on January 24th.</p>
@@ -2482,9 +2454,7 @@ For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his t
 <li>2018 <a href="https://www.youtube.com/watch?v=rbSDGr-_UwY"  target="_blank" >Talk</a> and <a href="https://www.slideshare.net/sandromancuso/a-case-for-outsidein-design"  target="_blank" >Slides</a> (don’t know if they are the same exact version)</li>
 </ul>
 
-        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description>Hi 👋
-Today’s post is about my experience at the Italian Agile Days 2022, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.
-The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</description><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description><p>Hi 👋</p><p>Today’s post is about my experience at the<a href="https://www.agileday.it/" target="_blank">Italian Agile Days 2022</a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.</p><p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</p></description><content:encoded><![CDATA[
           <p>Hi 👋</p>
 <p>Today’s post is about my experience at the <a href="https://www.agileday.it/"  target="_blank" >Italian Agile Days 2022</a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.</p>
 <p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</p>
@@ -2531,10 +2501,7 @@ The Italian Agile Days is a 2-day free conference held in a different city every
 <p>Each talk explored an argument which I didn’t know and wanted to know more about. I also got to meet new people in a community near me (Brescia is right next to Bergamo and Milan) and I also got gadgets 🤩. In addition, I bought two books from Avanscoperta: “Cronache di Domain-Driven Design” (DDD Chronicles) and “Decision-Making for Software Development Teams”. I hope to read them soon!</p>
 <p>That’s all for today. I hope you enjoyed this short summary of my experience at IAD2022, and I hope to attend and write about next year’s conference (and some workshops? 😇).</p>
 
-        ]]></content:encoded></item><item><title>2022: A Review</title><link>https://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-a-review/</guid><description>Hi 👋 and welcome to a new post!
-Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.
-So, let’s start!
-Disclaimer: This recap is mostly written by me and for me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</description><media:content url="https://marcobacis.com/blog/2022-a-review/cover_hu9241202663809851773.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2022-a-review/cover_hu9241202663809851773.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>2022: A Review</title><link>https://marcobacis.com/blog/2022-a-review/</link><pubDate>Sat, 31 Dec 2022 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-a-review/</guid><description><p>Hi 👋 and welcome to a new post!</p><p>Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.</p><p>So, let’s start!</p><p><em>Disclaimer: This recap is mostly written by me and<strong>for</strong> me. I don’t expect it to be a beautifully written and engaging piece for other people. It might get boring, you’ve been warned.</em></p></description><media:content url="https://marcobacis.com/blog/2022-a-review/cover_hu9241202663809851773.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2022-a-review/cover_hu9241202663809851773.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2022-a-review/cover_hu9241202663809851773.jpg" title="Cover by [@kronemberger](http://unsplash.com/kronemberger) on Unsplash." alt="Cover by [@kronemberger](http://unsplash.com/kronemberger) on Unsplash."/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Like every blogger out there, it’s time to write a “2022 Wrap-Up”! In this (short) post, I’ll give a recap of what happened last year, and write down my goals for 2023.</p>
@@ -2660,9 +2627,7 @@ Disclaimer: This recap is mostly written by me and for me. I don’t expect it t
 <h2 id="see-you-next-year">See you next year!</h2>
 <p>This was a brief recap of what I think about 2022. See you in 2023!! 🎉</p>
 
-        ]]></content:encoded></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description>Hi! 👋
-Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The XPUGBg is an association promoting and organizing events related to extreme programming in the Bergamo region.
-In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from Alcor Academy) performed a live mob programming session with the audience, to solve the mars rover kata. We learned how to do mob programming, and how the Outside-In TDD approach works.</description><media:content url="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/cover_hu14888787945892194001.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/cover_hu14888787945892194001.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/</guid><description><p>Hi! 👋</p><p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The<a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank">XPUGBg</a> is an association promoting and organizing events related to extreme programming in the Bergamo region.</p><p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from<a href="https://alcor.academy/" target="_blank">Alcor Academy</a>) performed a live mob programming session with the audience, to solve the<a href="https://github.com/makomweb/mars-rover" target="_blank">mars rover kata</a>. We learned how to do mob programming, and how the Outside-In TDD approach works.</p></description><media:content url="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/cover_hu14888787945892194001.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/cover_hu14888787945892194001.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/cover_hu14888787945892194001.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi! 👋</p>
 <p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUGBg</a> is an association promoting and organizing events related to extreme programming in the Bergamo region.</p>
@@ -2707,9 +2672,7 @@ Developers have taken this term and applied it to their set of movements, which 
 <p>Finally, I never tried practising a kata. I think it is a really useful technique to learn new concepts with a known problem, and I’ll use it more in the future.</p>
 <p>That&rsquo;s all for now 🎉. Thank you for reading and see you next time!.</p>
 
-        ]]></content:encoded></item><item><title>Remote working?</title><link>https://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>https://marcobacis.com/blog/remote-work-opinions/</guid><description>Hi! Welcome to my first post on this blog, I hope there will be others soon!
-Today I felt inspired after reading an article from Bennet Garner (here). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.
-By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society.</description><media:content url="https://marcobacis.com/blog/remote-work-opinions/cover_hu7643033231028265677.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/remote-work-opinions/cover_hu7643033231028265677.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>Remote working?</title><link>https://marcobacis.com/blog/remote-work-opinions/</link><pubDate>Sun, 04 Dec 2022 18:36:50 +0100</pubDate><guid>https://marcobacis.com/blog/remote-work-opinions/</guid><description><p>Hi! Welcome to my first post on this blog, I hope there will be others soon!</p><p>Today I felt inspired after reading an article from Bennet Garner (<a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5" target="_blank">here</a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.</p><p>By the way, Bennet’s article is about remote working: its pros, cons and why it’s going to last in our society. Take a look at it!</p></description><media:content url="https://marcobacis.com/blog/remote-work-opinions/cover_hu7643033231028265677.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/remote-work-opinions/cover_hu7643033231028265677.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/remote-work-opinions/cover_hu7643033231028265677.jpg" title="Cover by [@andrewtneel](http://unsplash.com/andrewtneel) on Unsplash." alt="Cover by [@andrewtneel](http://unsplash.com/andrewtneel) on Unsplash."/>
           <p>Hi! Welcome to my first post on this blog, I hope there will be others soon!</p>
 <p>Today I felt inspired after reading an article from Bennet Garner (<a href="https://medium.com/developer-purpose/remote-work-is-here-to-stay-youll-never-make-me-go-back-205c966408b5"  target="_blank" >here</a>). He writes every day in his newsletter about software development and finding purpose in your job/life. I’ll try to follow his advice and write regularly, but for sure I cannot promise anything like a daily post.</p>

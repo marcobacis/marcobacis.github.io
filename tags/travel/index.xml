@@ -40,15 +40,15 @@
 <p>Friday was the first day of the Unconference!</p>
 <p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel1_hu15015101184856268063.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu14277336183309677295.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu7763289998382729388.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu2701294199274510088.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu10801136789866808652.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu13593409528381289552.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -62,7 +62,7 @@
 
 
 </figure></td>
-<td><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
+          <td style="text-align: left"><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel2_hu7150365424825438683.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu8753090358500507938.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu6021265994491525017.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu9013898587870033214.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5239789462658488151.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5172191364101216599.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -76,8 +76,8 @@
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):</p>
 <p><strong>Game AI and Montecarlo Tree Search - <a href="https://www.linkedin.com/in/matteovaccari/"  target="_blank" >Matteo Vaccari</a></strong></p>
@@ -139,15 +139,15 @@
 <h3 id="saturday">Saturday</h3>
 <p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel1_hu11472852756544574192.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu9871326455475483232.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu11501172136814715496.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu10444245162205605894.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu8076631798664937995.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu4339733369228611844.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -161,7 +161,7 @@
 
 
 </figure></td>
-<td><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
+          <td style="text-align: left"><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel2_hu9589462917910853555.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu13545408588584074511.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu12371210005430399342.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11506440064826611107.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu14049678059132940784.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11958925571860951896.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -175,8 +175,8 @@
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p><strong><del>Coping</del>/Coding with Product - <a href="https://www.linkedin.com/in/brando/"  target="_blank" >Alberto Brandolini</a></strong></p>
 <p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.</p>
@@ -209,9 +209,7 @@
 <p>As always, thanks for all the participants, to the sponsors, organizer and everyone involved. The most meaningful connections happen in a free and creative environment, and that’s exactly what SoCraTes is.</p>
 <p>Thanks for reading this long and boring summary, I hope to have shown (even a bit) all I saw and felt during the event. If you find anything to correct (e.g. about your session, about my grammar, or if I forgot something) just contact me via mail or linkedin, or open an issue on this website repository on github.</p>
 <p>As always, see you next time!</p>
-        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
-Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
-As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description><p>Hi 👋 welcome to a new post.</p><p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p><p>As I already said in my<a href="https://marcobacis.com/blog/2022-a-review/" target="_blank">2022 review</a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.</p></description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post.</p>
 <p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p>

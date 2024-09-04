@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Programming on Marco Bacis</title><link>https://marcobacis.com/tags/programming/</link><description>Recent content in Programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at the Italian Agile Days 2023</title><link>https://marcobacis.com/blog/2023-italian-agile-days/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2023-italian-agile-days/</guid><description>Hi 👋 and welcome to a new post!
-Today I’m writing a summary of my experience at the Italian Agile Days 2023.
-I already wrote about the 2022 edition here and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.
-This year, the event was organised at the Politecnico di Milano campus. I graduated there about 4 years ago, so it was a great occasion to return there!</description><media:content url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Programming on Marco Bacis</title><link>https://marcobacis.com/tags/programming/</link><description>Recent content in Programming on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis 2018-2024</copyright><lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>My Experience at the Italian Agile Days 2023</title><link>https://marcobacis.com/blog/2023-italian-agile-days/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/2023-italian-agile-days/</guid><description><p>Hi 👋 and welcome to a new post!</p><p>Today I’m writing a summary of my experience at the Italian Agile Days 2023.</p><p>I already wrote about the 2022 edition<a href="https://marcobacis.com/blog/2022-italian-agile-days/" target="_blank">here</a> and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.</p><p>This year, the event was organised at the Politecnico di Milano campus. I graduated there about 4 years ago, so it was a great occasion to return there! I got to see how the campus changed, and I met some old friends (at<a href="https://necst.it/" target="_blank">NECSTLab</a>) who stayed for their PhD.</p></description><media:content url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-italian-agile-days/cover_hu6401328075211795705.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Today I’m writing a summary of my experience at the Italian Agile Days 2023.</p>
@@ -173,15 +170,15 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 <p>Friday was the first day of the Unconference!</p>
 <p>We met in the hotel hall to have the first “marketplace”. Everyone interested/inspired attached a post-it with his/her session proposal. Then, we decided the rooms and time for each session.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-c4b974730e7067fa4ef67019190b588a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel1_hu15015101184856268063.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu14277336183309677295.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu7763289998382729388.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu2701294199274510088.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu10801136789866808652.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel1_hu13593409528381289552.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -195,7 +192,7 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 
 
 </figure></td>
-<td><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
+          <td style="text-align: left"><div class="image imgB-5714f447421f2df65addc91b0793af3a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day1panel2_hu7150365424825438683.webp 320w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu8753090358500507938.webp 640w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu6021265994491525017.webp 960w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu9013898587870033214.webp 1280w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5239789462658488151.webp 1600w, https://marcobacis.com/blog/socrates-2023/day1panel2_hu5172191364101216599.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -209,8 +206,8 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p>Here’s a brief description on the sessions I was able to participate (even for a few minutes):</p>
 <p><strong>Game AI and Montecarlo Tree Search - <a href="https://www.linkedin.com/in/matteovaccari/"  target="_blank" >Matteo Vaccari</a></strong></p>
@@ -272,15 +269,15 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 <h3 id="saturday">Saturday</h3>
 <p>Second day of Unconference. We started immediately with the session proposals and marketplace, as there was less time than Friday (the event finished at 17).</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><div class="image imgB-4df91c72477e1f1b854b0c2f6bc8700a-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel1_hu11472852756544574192.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu9871326455475483232.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu11501172136814715496.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu10444245162205605894.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu8076631798664937995.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel1_hu4339733369228611844.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -294,7 +291,7 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 
 
 </figure></td>
-<td><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
+          <td style="text-align: left"><div class="image imgB-14f5d07737670adb4e0991894078be87-GIP">
   <figure>
     <picture>
       <source type="image/webp" srcset="https://marcobacis.com/blog/socrates-2023/day2panel2_hu9589462917910853555.webp 320w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu13545408588584074511.webp 640w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu12371210005430399342.webp 960w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11506440064826611107.webp 1280w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu14049678059132940784.webp 1600w, https://marcobacis.com/blog/socrates-2023/day2panel2_hu11958925571860951896.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw" />
@@ -308,8 +305,8 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 
 
 </figure></td>
-</tr>
-</tbody>
+      </tr>
+  </tbody>
 </table>
 <p><strong><del>Coping</del>/Coding with Product - <a href="https://www.linkedin.com/in/brando/"  target="_blank" >Alberto Brandolini</a></strong></p>
 <p>In this session, Alberto continued the discussion started on friday (which unfortunately I didn’t attend…) on how developers can work together with the product/business side without headaches or creating “dirty” code.</p>
@@ -445,10 +442,7 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 <li><a href="https://fosdem.org/2023/schedule/event/how_to_automate_documentation_workflow_for_developers/"  target="_blank" >How To Automate Documentation Workflow For Developers</a> - Talk by Portia Burton @ FOSDEM 2023</li>
 <li><a href="https://members.vadimkravcenko.com/proper-documentation/?ref=cto-newsletter"  target="_blank" >Proper Documentation</a> - Vadim Kravcenko</li>
 </ul>
-        ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the XPUG Bergamo group.
-The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.
-What is a kata? Typical developer performing a kata
-&ldquo;Kata&rdquo; is a term borrowed from martial arts. It refers to &ldquo;a detailed choreographed pattern of movements made to be practiced alone, but can also be reviewed within groups and in unison when training&rdquo; (Wikipedia).</description><media:content url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>The Power of Code Katas: Katurday @ XPUGBg</title><link>https://marcobacis.com/blog/katurday/</link><pubDate>Sun, 14 May 2023 08:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/katurday/</guid><description><p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the<a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank">XPUG Bergamo</a> group.</p><p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p><h2 id="what-is-a-kata">What is a kata?</h2><p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP"><figure><picture><source type="image/webp" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu2707920874465139878.webp 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu1361421280633703778.webp 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu8587431807629563514.webp 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu17851173789183065795.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw"/><source type="image/jpeg" srcset="https://marcobacis.com/blog/katurday/kata_dwight_hu4199534080598968505.jpg 320w, https://marcobacis.com/blog/katurday/kata_dwight_hu17042561187187790155.jpg 640w, https://marcobacis.com/blog/katurday/kata_dwight_hu5353590165291898552.jpg 960w, https://marcobacis.com/blog/katurday/kata_dwight_hu10558821674979400844.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw"/><img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu17042561187187790155.jpg" width="1280" height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy"/></pi</description><media:content url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/katurday/cover_hu15379184454052059517.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
@@ -516,9 +510,7 @@ Another challenge was to always give state  to objects (so avoiding value object
 <h2 id="thats-all">That&rsquo;s all!</h2>
 <p>Keep checking this post for updates on the next sessions I&rsquo;ll attend 🤩</p>
 
-        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description>Hi 👋 welcome to a new post.
-Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
-As I already said in my 2022 review, one of my goals for 2023 is to attend more conferences and participate more in communities.</description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at FOSDEM 2023</title><link>https://marcobacis.com/blog/2023-my-fosdem-experience/</link><pubDate>Tue, 14 Feb 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2023-my-fosdem-experience/</guid><description><p>Hi 👋 welcome to a new post.</p><p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p><p>As I already said in my<a href="https://marcobacis.com/blog/2022-a-review/" target="_blank">2022 review</a>, one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.</p></description><media:content url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/2023-my-fosdem-experience/cover_hu11349680029647870843.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post.</p>
 <p>Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.</p>
@@ -565,9 +557,7 @@ As I already said in my 2022 review, one of my goals for 2023 is to attend more 
 <li><a href="https://fosdem.org/2023/schedule/event/gb_arm/"  target="_blank" >I made a GameBoy emulator to learn about computers. And now I work with them…</a></li>
 </ul>
 
-        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description>Hi 👋
-Today’s post is about my experience at the Italian Agile Days 2022, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.
-The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</description><content:encoded><![CDATA[
+        ]]></content:encoded></item><item><title>My Experience at the Italian Agile Days 2022: Talks and Reflections</title><link>https://marcobacis.com/blog/2022-italian-agile-days/</link><pubDate>Tue, 17 Jan 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/2022-italian-agile-days/</guid><description><p>Hi 👋</p><p>Today’s post is about my experience at the<a href="https://www.agileday.it/" target="_blank">Italian Agile Days 2022</a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.</p><p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</p></description><content:encoded><![CDATA[
           <p>Hi 👋</p>
 <p>Today’s post is about my experience at the <a href="https://www.agileday.it/"  target="_blank" >Italian Agile Days 2022</a>, which I attended in October 2022. I know, it’s way too late to write this, but I still think that remembering the talks I watched will be useful for others 😃.</p>
 <p>The Italian Agile Days is a 2-day free conference held in a different city every year, in which people interested in agile practices (programmers and business people alike) gather to talk about agile and development practices.</p>
