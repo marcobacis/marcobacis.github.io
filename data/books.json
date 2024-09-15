@@ -1,5 +1,14 @@
 [
   {
+    "title": "Il passeggero",
+    "author": "Cormac McCarthy",
+    "link": "https://www.goodreads.com/book/show/204792437-il-passeggero",
+    "pages": 385,
+    "date_started": "2024-09-14",
+    "date_read": null,
+    "date_added": "2024-09-14"
+  },
+  {
     "title": "Terraform: Up & Running: Writing Infrastructure as Code",
     "author": "Yevgeniy Brikman",
     "link": "https://www.goodreads.com/book/show/42589303-terraform",
