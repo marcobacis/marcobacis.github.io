@@ -30,11 +30,11 @@ In addition to showing off what I'm up to, it also helps in focusing on less stu
 
 So, what am I doing right now?
 
+* Just got married 💍
+
 * Working at [Zupit](https://zupit.it) as Full-Stack (.NET + Angular) Software Engineer
 
 * Trying some coding challenges ([github repo](https://github.com/marcobacis/coding-challenges)) in Rust 🦀 (for now)
-
-* Exercising and getting ready for my marriage 💍
 
 <br/>
 
