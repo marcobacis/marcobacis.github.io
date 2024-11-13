@@ -26,10 +26,9 @@
 	<link href="{{ " /css/additional.css" | urlize | relURL }}" rel="stylesheet">
 
 	<!-- RSS feed -->
-	{{ range .AlternativeOutputFormats -}}
-	{{ printf `
-	<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
+
+	<link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}blog/index.xml" title="{{ .Site.Title }} Blog"/>
+
 
 	<!-- Custom css -->
 	{{ range .Site.Params.customCSS -}}
