@@ -111,17 +111,21 @@ def get_books_page(user, shelf=None, page=0, max_retries=10):
 
 
 def get_books(user, shelf):
-    output = []
+    books = []
     page = 1
     res = get_books_page(user, shelf, page)
     while len(res) > 0:
-        output.extend(res)
+        books.extend(res)
         print("Found {} book{} (shelf {}, page {})"
               .format(len(res), plural(res), shelf, page))
         page += 1
         res = get_books_page(user, shelf, page)
 
-    print("Found a total of {} book{}".format(len(output), plural(output)))
+    print("Found a total of {} book{}".format(len(books), plural(books)))
+
+    output = {}
+    output["lastmod"] = datetime.now().isoformat()
+    output["books"] = books
 
     return output
 

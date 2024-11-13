@@ -1,8 +1,8 @@
-{{ if gt (len $.Site.Data.books) 0 }}
+{{ if gt (len $.Site.Data.books.books) 0 }}
 <ul>
     <li>Reading <i>(note: the title may be in italian if I'm reading the italian version)</i></li>
         <ul>
-            {{ range $.Site.Data.books }}
+            {{ range $.Site.Data.books.books }}
             <li><i>"{{ .title }}"</i> by {{ .author }}</li>
             {{ end }}
         </ul>

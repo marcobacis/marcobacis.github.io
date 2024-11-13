@@ -11,9 +11,6 @@ tags:
 aliases:
 - "/now"
 
-date: ["date", "publishDate", "lastmod"]
-lastmod: ["lastmod", ":git", "date", "publishDate"]
-
 ---
 
 {{% lastdate %}}

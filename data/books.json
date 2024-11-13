@@ -1,47 +1,50 @@
-[
-  {
-    "title": "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change",
-    "author": "Tanya Reilly",
-    "link": "https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path",
-    "pages": 335,
-    "date_started": "2024-11-12",
-    "date_read": null,
-    "date_added": "2024-11-12"
-  },
-  {
-    "title": "Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy",
-    "author": "Vladik Khononov",
-    "link": "https://www.goodreads.com/book/show/57573212-learning-domain-driven-design",
-    "pages": 340,
-    "date_started": "2024-09-23",
-    "date_read": null,
-    "date_added": "2024-10-12"
-  },
-  {
-    "title": "Il passeggero",
-    "author": "Cormac McCarthy",
-    "link": "https://www.goodreads.com/book/show/204792437-il-passeggero",
-    "pages": 385,
-    "date_started": "2024-09-14",
-    "date_read": null,
-    "date_added": "2024-09-14"
-  },
-  {
-    "title": "Terraform: Up & Running: Writing Infrastructure as Code",
-    "author": "Yevgeniy Brikman",
-    "link": "https://www.goodreads.com/book/show/42589303-terraform",
-    "pages": 360,
-    "date_started": "2024-05-29",
-    "date_read": null,
-    "date_added": "2024-05-29"
-  },
-  {
-    "title": "From Objects to Functions",
-    "author": "Uberto Barbini",
-    "link": "https://www.goodreads.com/book/show/59245274-from-objects-to-functions",
-    "pages": 325,
-    "date_started": "2024-04-23",
-    "date_read": null,
-    "date_added": "2024-04-23"
-  }
-]
+{
+  "lastmod": "2024-11-13T14:11:58.566078",
+  "books": [
+    {
+      "title": "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change",
+      "author": "Tanya Reilly",
+      "link": "https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path",
+      "pages": 335,
+      "date_started": "2024-11-12",
+      "date_read": null,
+      "date_added": "2024-11-12"
+    },
+    {
+      "title": "Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy",
+      "author": "Vladik Khononov",
+      "link": "https://www.goodreads.com/book/show/57573212-learning-domain-driven-design",
+      "pages": 340,
+      "date_started": "2024-09-23",
+      "date_read": null,
+      "date_added": "2024-10-12"
+    },
+    {
+      "title": "Il passeggero",
+      "author": "Cormac McCarthy",
+      "link": "https://www.goodreads.com/book/show/204792437-il-passeggero",
+      "pages": 385,
+      "date_started": "2024-09-14",
+      "date_read": null,
+      "date_added": "2024-09-14"
+    },
+    {
+      "title": "Terraform: Up & Running: Writing Infrastructure as Code",
+      "author": "Yevgeniy Brikman",
+      "link": "https://www.goodreads.com/book/show/42589303-terraform",
+      "pages": 360,
+      "date_started": "2024-05-29",
+      "date_read": null,
+      "date_added": "2024-05-29"
+    },
+    {
+      "title": "From Objects to Functions",
+      "author": "Uberto Barbini",
+      "link": "https://www.goodreads.com/book/show/59245274-from-objects-to-functions",
+      "pages": 325,
+      "date_started": "2024-04-23",
+      "date_read": null,
+      "date_added": "2024-04-23"
+    }
+  ]
+}
