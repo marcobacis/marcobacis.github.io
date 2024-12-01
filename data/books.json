@@ -1,5 +1,5 @@
 {
-  "lastmod": "2024-11-30T01:23:35.381226",
+  "lastmod": "2024-12-01T01:46:12.774727",
   "books": [
     {
       "title": "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change",
@@ -27,15 +27,6 @@
       "date_started": "2024-09-14",
       "date_read": null,
       "date_added": "2024-09-14"
-    },
-    {
-      "title": "Terraform: Up & Running: Writing Infrastructure as Code",
-      "author": "Yevgeniy Brikman",
-      "link": "https://www.goodreads.com/book/show/42589303-terraform",
-      "pages": 360,
-      "date_started": "2024-05-29",
-      "date_read": null,
-      "date_added": "2024-05-29"
     },
     {
       "title": "From Objects to Functions",
