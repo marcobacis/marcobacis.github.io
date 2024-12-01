@@ -24,8 +24,8 @@ enableGitInfo = true
 [params.social]
   github = "marcobacis"
   linkedin = "marcobacis"
-  medium = "marcobacis"
-  twitter = "marcbacis"
+  youtube = "marcobacis-dev"
+  bluesky = "marcobacis.com"
 
 [params]
   description= "The personal website of Marco Bacis, a passionate Software Engineer from Italy" 
