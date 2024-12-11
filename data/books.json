@@ -1,6 +1,15 @@
 {
-  "lastmod": "2024-12-10T01:36:31.025073",
+  "lastmod": "2024-12-11T01:27:07.712141",
   "books": [
+    {
+      "title": "L’ora di greco",
+      "author": "Kang Han",
+      "link": "https://www.goodreads.com/book/show/201467943-l-ora-di-greco",
+      "pages": 156,
+      "date_started": "2024-12-09",
+      "date_read": null,
+      "date_added": "2024-12-09"
+    },
     {
       "title": "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change",
       "author": "Tanya Reilly",
