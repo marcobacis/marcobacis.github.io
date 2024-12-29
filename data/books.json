@@ -1,6 +1,15 @@
 {
-  "lastmod": "2024-12-28T01:18:30.029002",
+  "lastmod": "2024-12-29T01:27:04.961512",
   "books": [
+    {
+      "title": "Writing for Developers: Blogs that get read",
+      "author": "Piotr Sarna",
+      "link": "https://www.goodreads.com/book/show/219199634-writing-for-developers",
+      "pages": 376,
+      "date_started": "2024-12-28",
+      "date_read": null,
+      "date_added": "2024-12-28"
+    },
     {
       "title": "La città e le sue mura incerte",
       "author": "Haruki Murakami",
@@ -18,15 +27,6 @@
       "date_started": "2024-11-12",
       "date_read": null,
       "date_added": "2024-11-12"
-    },
-    {
-      "title": "From Objects to Functions",
-      "author": "Uberto Barbini",
-      "link": "https://www.goodreads.com/book/show/59245274-from-objects-to-functions",
-      "pages": 325,
-      "date_started": "2024-04-23",
-      "date_read": null,
-      "date_added": "2024-04-23"
     }
   ]
 }
