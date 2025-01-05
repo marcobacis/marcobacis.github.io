@@ -1,6 +1,15 @@
 {
-  "lastmod": "2025-01-04T01:18:45.002295",
+  "lastmod": "2025-01-05T01:28:32.409392",
   "books": [
+    {
+      "title": "Shape: The Hidden Geometry of Information, Biology, Strategy, Democracy, and Everything Else",
+      "author": "Jordan Ellenberg",
+      "link": "https://www.goodreads.com/book/show/56430139-shape",
+      "pages": 480,
+      "date_started": "2025-01-04",
+      "date_read": null,
+      "date_added": "2025-01-04"
+    },
     {
       "title": "Writing for Developers: Blogs that get read",
       "author": "Piotr Sarna",
@@ -9,15 +18,6 @@
       "date_started": "2024-12-28",
       "date_read": null,
       "date_added": "2024-12-28"
-    },
-    {
-      "title": "La città e le sue mura incerte",
-      "author": "Haruki Murakami",
-      "link": "https://www.goodreads.com/book/show/218635443-la-citt-e-le-sue-mura-incerte",
-      "pages": 547,
-      "date_started": "2024-12-24",
-      "date_read": null,
-      "date_added": "2024-12-24"
     },
     {
       "title": "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change",
