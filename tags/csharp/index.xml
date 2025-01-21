@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Csharp on Marco Bacis</title><link>https://marcobacis.com/tags/csharp/</link><description>Recent content in Csharp on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis</copyright><lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.com/tags/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>Translating Enums with the power of C# expressions</title><link>https://marcobacis.com/blog/dotnet-enum-translation-expression/</link><pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate><guid>https://marcobacis.com/blog/dotnet-enum-translation-expression/</guid><description>&lt;p>Hi 👋 welcome to a new post!&lt;/p>
+&lt;p>As a wise man said (forgot the name), &amp;ldquo;Frustration is the mother of innovation&amp;rdquo;.&lt;/p>
+&lt;p>For one of my projects at work, I needed to query and sort some tables. The requirement was to let the user filter and sort the data on any field.&lt;/p>
+&lt;p>What I didn&amp;rsquo;t expect was that some fields were &lt;code>enum&lt;/code> values under the hood&amp;hellip;. how should I filter/sort these values, when the user searches using their text representation (and, even more difficult, translated in their language)?&lt;/p></description><content:encoded><![CDATA[
+          <p>Hi 👋 welcome to a new post!</p>
+<p>As a wise man said (forgot the name), &ldquo;Frustration is the mother of innovation&rdquo;.</p>
+<p>For one of my projects at work, I needed to query and sort some tables. The requirement was to let the user filter and sort the data on any field.</p>
+<p>What I didn&rsquo;t expect was that some fields were <code>enum</code> values under the hood&hellip;. how should I filter/sort these values, when the user searches using their text representation (and, even more difficult, translated in their language)?</p>
+<p>In this post, I will show how I solved this issue with a nice, little utility function. Since our projects are in .NET, the solution leverages EF Core, Automapper and the power of C# Expression trees.</p>
+<p>Let&rsquo;s start!</p>
+<h2 id="what-we-are-trying-to-do">What we are trying to do</h2>
+<p>Let&rsquo;s start with an example. This is the entity we&rsquo;re going to query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> Status {
+</span></span><span style="display:flex;"><span>	Created,
+</span></span><span style="display:flex;"><span>	PaymentSuccessful,
+</span></span><span style="display:flex;"><span>	PaymentFailed,
+</span></span><span style="display:flex;"><span>	Shipped,
+</span></span><span style="display:flex;"><span>	Delivered
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Order</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Id { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... other fields</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> Status CurrentStatus { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Our goal is to present the user with a list of the orders in the system. The user wants to search the list using a generic query (e.g. an input text) and sort the values based on their <strong>text representation</strong>. Yes, also for our <code>Status</code> field!</p>
+<p>This is a nightmare if the application is translated into multiple languages. Our application will have to filter the records not based on the enum&rsquo;s description, but on its translation.</p>
+<p>For example, the user might type &ldquo;Shi&rdquo; and we should return only the orders with status <code>Shipped</code> if he speaks english. In other languages, the status will have a different translation (e.g. in italian it will be &ldquo;Spedito¨) which doesn´t match with the query.</p>
+<p>When dealing with localization, the first option we have is to deal with it on the frontend. We create some json files with the correct translations and apply them to the UI. While this could be an option to visualize the data, it becomes more difficult when querying it.</p>
+<p>Another option would be to select the correct value on the frontend using the translated text, then sen its original (numeric) representation to the backend.</p>
+<p>In our case, we&rsquo;d like to search on multiple fields, which makes this approach more complex. Also, I wanted to expose a standard interface to the frontend (see below), so we&rsquo;ll see the backend-only solution!</p>
+<p>Here&rsquo;s the endpoint I came up with. It&rsquo;s implemented using <em>.NET 8 Minimal APIs</em> and <em>Entity Framework Core</em>. I also used <a href="https://alirezanet.github.io/Gridify/"  target="_blank" >Gridify</a> to <em>automagically</em> apply filtering, sorting and paging to the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>app.MapGet(  
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/orders&#34;</span>,  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">async</span> (  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">            [AsParameters]</span> GridifyQuery gridifyQuery,  
+</span></span><span style="display:flex;"><span>            AppDbContext dbContext,  
+</span></span><span style="display:flex;"><span>            IMapper mapper,  
+</span></span><span style="display:flex;"><span>            CancellationToken cancellationToken  
+</span></span><span style="display:flex;"><span>        ) =&gt;  
+</span></span><span style="display:flex;"><span>        {  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> ordersQuery = dbContext.Orders
+</span></span><span style="display:flex;"><span>		        .ProjectTo&lt;OrderDto&gt;(mapper.ConfigurationProvider);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> count = <span style="color:#66d9ef">await</span> ordersQuery
+</span></span><span style="display:flex;"><span>		        .ApplyFiltering(gridifyQuery).CountAsync();  
+</span></span><span style="display:flex;"><span>		            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> data = <span style="color:#66d9ef">await</span> ordersQuery  
+</span></span><span style="display:flex;"><span>                .ApplyFilteringOrderingPaging(gridifyQuery)  
+</span></span><span style="display:flex;"><span>                .ToListAsync(cancellationToken);  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Paging&lt;OrderDto&gt;(count, data);  
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ).WithName(<span style="color:#e6db74">&#34;GetOrders&#34;</span>);
+</span></span></code></pre></div><p>First, we get the data inside the Orders table and project it to the final response type. I do this before performing the search/sort to filter based on what the user can see (e.g. our localized enum description, we&rsquo;ll see later).</p>
+<p>Then, we use gridify to apply the paging/filtering/sorting to our query and return the data and the total count (so that the frontend can use it to display a list or table).</p>
+<p>Seems simple, right? It is! However, if I try to search for some enum values (this can be done by sending a gridify query such as <code>'status = Created'</code>) I get a nasty error from the ORM, saying it cannot translate our code to a SQL query.</p>
+<p>Why does this happen, and how can we fix that?</p>
+<h2 id="how-automapper-queryable-extensions-work">How automapper queryable extensions work</h2>
+<p>Automapper is an object-to-object mapper. It allows to define custom profiles to map any type of object to any other type. In our case, we use automapper to project the entity to the response we want the API to return.</p>
+<p>We do this by using automapper&rsquo;s <a href="https://docs.automapper.org/en/stable/Queryable-Extensions.html"  target="_blank" >Queryable extensions</a>. Queryable extensions allow to call the <code>ProjectTo</code> method on a LINQ query. Automapper adds a custom <code>SELECT</code> statement to our query, with the minimum set of fields needed for the mapping to occur. This optimization improves performance by passing less data from the DBMS to the application and also makes our code more readable.</p>
+<h4 id="mapping-profile">Mapping profile</h4>
+<p>To make automapper work, we need to define a mapping profile for our objects. Usually, automapper maps fields with the same name and type in both objects, making it easier to map simple objects with less code. For more complex mappings, we can provide a custom profile using some configuration methods.</p>
+<p>For each complex field we want to map, we provide an <code>Expression</code> that maps that field from the source object. This expression can be simple (e.g. accessing a source field) or more complex (e.g. making operations on top, with conditionals and other procedures).</p>
+<p>This is an example of a complex mapping, in which we map the total price of our order to the sum of the prices of each item:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>CreateMap&lt;Order, OrderDto&gt;()
+</span></span><span style="display:flex;"><span>	.ForMember(
+</span></span><span style="display:flex;"><span>		dst =&gt; dst.TotalPrice,
+</span></span><span style="display:flex;"><span>		opt.MapFrom(
+</span></span><span style="display:flex;"><span>			src =&gt; src.Items.Select(o =&gt; o.Price * o.Quantity).Sum()
+</span></span><span style="display:flex;"><span>		)
+</span></span><span style="display:flex;"><span>	);
+</span></span></code></pre></div><p>The parameter we pass to the <code>MapFrom</code> method is a lambda, which is interpreted by the C# SDK as an <a href="https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/expression-trees/"  target="_blank" >Expression Tree</a>.</p>
+<p>Let´s see what are C# expressions, and how they are used.</p>
+<h3 id="what-are-c-expression-trees">What are C# <code>Expression</code> trees?</h3>
+<p>We just saw that automapper uses expressions to map fields between objects. But what are expressions in C#? Here is a short section to describe what is a C# <code>Expression</code> and how they are used in some libraries. To know more about expressions, see the <a href="https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/expression-trees/"  target="_blank" >documentation</a></p>
+<p>In layman&rsquo;s terms, an expression tree is a data structure (a tree) which stores a piece of code. In C#, we can define an expression starting from a lambda (such as <code>Func&lt;&gt;</code>). The compiler will parse the code inside our lambda and return the corresponding syntax tree.</p>
+<p>Here is an example of how a lambda is expressed using an expression tree:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Expression&lt;Func&lt;<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>&gt;&gt; lambda = n =&gt; n + <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Same as writing</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> parameter = Expression.Parameter(<span style="color:#66d9ef">typeof</span>(<span style="color:#66d9ef">int</span>), <span style="color:#e6db74">&#34;n&#34;</span>);  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> constant = Expression.Constant(<span style="color:#ae81ff">1</span>);  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> addition = Expression.Add(parameter, constant);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> lambda = Expression.Lambda&lt;Func&lt;<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>&gt;&gt;(addition, parameter);
+</span></span></code></pre></div><p>What are expressions used for? The most common use case is in ORM frameworks. For example, Entity Framework can transform a chain of LINQ calls into SQL queries because each operation can be represented with an Expression.</p>
+<p>For example, in this code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>dbContext.Set&lt;Order&gt;().Where(o =&gt; o.Id == <span style="color:#ae81ff">3</span>).ToList()
+</span></span></code></pre></div><p>The <code>o =&gt; o.Id == 3</code> is an expression. After creating the underlying <code>IQueryable</code>, EF will traverse the expression tree to optimize it and translate it to SQL. Cool!</p>
+<p>Another example is automapper itself. A mapping profile can be created using expressions, to indicate how a given field should be mapped from the source object. When the profile is created, the expression is then used to map the given types. And that&rsquo;s what we are going to use for our use case!</p>
+<h3 id="how-resource-files-work-in-net">How resource files work in .NET</h3>
+<p>Let&rsquo;s take a small detour from automapper and its magic, to see how localization works in .NET.</p>
+<p><a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/resources"  target="_blank" >Resource files</a> have been in the .NET framework since its inception. Basically, a resource file is an XML file (with <code>.resx</code> extension) in which we can put any static data we might need.</p>
+<p>Before compilation, a program (<a href="https://learn.microsoft.com/en-us/dotnet/framework/tools/resgen-exe-resource-file-generator"  target="_blank" >resgen</a>) converts these files to source code, which is embedded in the application&rsquo;s assembly and accessed from our code.</p>
+<p>In the case of localization, we create a <code>.resx</code> file for every culture we support in our application (for example, <code>EnumTranslations.resx</code> for the default language, <code>EnumTranslations.it.resx</code> for Italian and so on). Each entry is in this format:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>&lt;data name=<span style="color:#e6db74">&#34;Status_Created&#34;</span> xml:space=<span style="color:#e6db74">&#34;preserve&#34;</span>&gt;  
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#66d9ef">value</span>&gt;Created&lt;/<span style="color:#66d9ef">value</span>&gt;  
+</span></span><span style="display:flex;"><span>&lt;/data&gt;
+</span></span></code></pre></div><p>To enable localization in the app, we add this code in our <code>Program.cs</code>, configuring the path the compiler uses to find the resource files:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>builder.Services.AddLocalization(options =&gt; options.ResourcesPath = <span style="color:#e6db74">&#34;Resources&#34;</span>);
+</span></span></code></pre></div><p><a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/localization"  target="_blank" >Under the hood</a>, this line of code registers the services required to get the localized strings from the resource files. In addition to automatic culture detection by .NET (which works both on desktop/console and web applications!), this allows to transparently translate strings.</p>
+<h2 id="creating-a-custom-expression-to-translate-enums">Creating a custom expression to translate enums</h2>
+<p>Let&rsquo;s go back to our use case and write the mapper for our API. Let´s focus on the enum mapping.</p>
+<p>As explained in the previous section, we put the translations in a resx file (<code>EnumTranslations.resx</code>) . To set a convention, let&rsquo;s say each item is in the form <code>&lt;Enum_Name&gt;_&lt;Enum_Value&gt;</code>, so our status enum will have the following fields generated for us:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>EnumTranslations.Status_Created,
+</span></span><span style="display:flex;"><span>EnumTranslations.Status_PaymentSuccessful,
+</span></span><span style="display:flex;"><span>EnumTranslations.Status_PaymentFailed,
+</span></span><span style="display:flex;"><span>EnumTranslations.Status_Shipped,
+</span></span><span style="display:flex;"><span>EnumTranslations.Status_Delivered
+</span></span></code></pre></div><p>How can we use these fields in our mapping? Unfortunately, C# <code>Expression</code>s have a lot of <a href="https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/expression-trees/#limitations"  target="_blank" >limitations</a> and, together with LINQ-specific limits (explained <a href="https://docs.automapper.org/en/stable/Queryable-Extensions.html#supported-mapping-options"  target="_blank" >here</a>) this means that these operations are not allowed (they won´t be translated to SQL):</p>
+<ul>
+<li><code>if</code> statements</li>
+<li>External classes/methods calls</li>
+<li>Dictionary access (not even if immutable) to get the right translation</li>
+<li><code>switch/case</code> statements to select the right translation</li>
+</ul>
+<p>I tried many approaches, but the only one I found was to create a cascade of ternary operators to select the correct translation&hellip; here&rsquo;s the mapping for our status field:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>CreateMap&lt;Order, OrderResponse&gt;()
+</span></span><span style="display:flex;"><span>	.ForMember(dst =&gt; dst.Status,
+</span></span><span style="display:flex;"><span>		opt =&gt; opt.MapFrom(src =&gt;
+</span></span><span style="display:flex;"><span>			src.Status = Status.Created ? EnumTranslations.Status_Created :
+</span></span><span style="display:flex;"><span>			src.Status = Status.PaymentSuccessful ? EnumTranslations.Status_PaymentSuccessful :
+</span></span><span style="display:flex;"><span>			src.Status = Status.PaymentFailed ? EnumTranslations.Status_PaymentFailed :
+</span></span><span style="display:flex;"><span>			src.Status = Status.Shipped ? EnumTranslations.Status_Shipped :
+</span></span><span style="display:flex;"><span>			src.Status = Status.Delivere ? EnumTranslations.Status_Delivered :
+</span></span><span style="display:flex;"><span>			src.Status.ToString())
+</span></span><span style="display:flex;"><span>	);
+</span></span></code></pre></div><p>This code has some issues we want to fix:</p>
+<ul>
+<li>It might become duplicated among multiple mapping profiles</li>
+<li>It needs to be updated to incorporate new enum values</li>
+<li>If the enum has a lot of values there il will be a lot of conditions&hellip;what happens if there is a typo or some parentheses are missed in the expression?</li>
+</ul>
+<p>In the next section, we&rsquo;ll see how to generate this expression automatically, to prevent errors and make it reusable in multiple mappings and for any kind of enum.</p>
+<h2 id="automating-the-process">Automating the process</h2>
+<p>The code we implemented above is quite ugly, and here comes the goal of this post: provide a generic method to map enum to (translated) strings without writing all those ternary expressions by hand.</p>
+<p>Here&rsquo;s the resulting extension class, with a method that can be applied to any expression accessing an enum:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EnumTranslatorExpressionExtensions</span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Expression&lt;Func&lt;TSource, <span style="color:#66d9ef">string</span>&gt;&gt; TranslateExpression&lt;TSource, TEnum&gt;(  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span> Expression&lt;Func&lt;TSource, TEnum&gt;&gt; enumExpression,
+</span></span><span style="display:flex;"><span>        Type enumTranslationsType
+</span></span><span style="display:flex;"><span>	  ) <span style="color:#66d9ef">where</span> TEnum : Enum  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> enumValues = Enum.GetValues(<span style="color:#66d9ef">typeof</span>(TEnum))
+</span></span><span style="display:flex;"><span>					        .Cast&lt;TEnum&gt;()
+</span></span><span style="display:flex;"><span>					        .ToArray()
+</span></span><span style="display:flex;"><span>					        .Reverse();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        Expression ternaryExpression = Expression.Constant(<span style="color:#e6db74">&#34;Unknown&#34;</span>);  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> enumValue <span style="color:#66d9ef">in</span> enumValues)  
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">var</span> resourceKey = <span style="color:#e6db74">$&#34;{typeof(TEnum).Name}_{enumValue.ToString()}&#34;</span>;  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> propertyInfo = enumTranslationsType.GetProperty(  
+</span></span><span style="display:flex;"><span>                resourceKey, BindingFlags.NonPublic | BindingFlags.Static  
+</span></span><span style="display:flex;"><span>            );  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> staticPropertyAccess = Expression.Property(<span style="color:#66d9ef">null</span>, propertyInfo);  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> enumValueExpression = Expression.Equal(  
+</span></span><span style="display:flex;"><span>                enumExpression.Body,  
+</span></span><span style="display:flex;"><span>                Expression.Constant(enumValue)  
+</span></span><span style="display:flex;"><span>            );  
+</span></span><span style="display:flex;"><span>            ternaryExpression = Expression.Condition(  
+</span></span><span style="display:flex;"><span>                enumValueExpression, staticPropertyAccess,ternaryExpression);
+</span></span><span style="display:flex;"><span>	    }  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Expression.Lambda&lt;Func&lt;TSource, <span style="color:#66d9ef">string</span>&gt;&gt;(  
+</span></span><span style="display:flex;"><span>            ternaryExpression, enumExpression.Parameters  
+</span></span><span style="display:flex;"><span>        );  
+</span></span><span style="display:flex;"><span>    }}
+</span></span></code></pre></div><p>The method takes as input the source expression (the lambda we would have passed to automapper) and the type of the generated translations (to access the resource file).</p>
+<p>It then gathers all the enum values and constructs the cascade of ternary operators to access all the resource file properties. For each value, we generate the three arguments to the ternary operator:</p>
+<ul>
+<li>
+<p>The condition (<code>enumValueExpression</code>)</p>
+<pre><code>input value == enum value
+</code></pre>
+</li>
+<li>
+<p>If the condition is true, we return the translated string</p>
+<pre><code>EnumTranslations.&lt;Enum-Name&gt;_&lt;Enum_Value&gt;
+</code></pre>
+</li>
+<li>
+<p>Otherwise, we go ahead with the other conditions in the chain</p>
+</li>
+</ul>
+<p>The method  has some rough edges, for example;</p>
+<ul>
+<li>it gives a generic &ldquo;Unknown&rdquo; default value if the enum value is invalid</li>
+<li>It needs to be given the type of the class generated from the resx file</li>
+</ul>
+<p>Even with its drawbacks, we are now able to generate the mapping profile easily!</p>
+<p>In my project I added another extension method, to make the generator more specific. The method automatically adds the <code>EnumTranslations</code> type to the call:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EnumMappingExtensions</span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> MapFromTranslatedEnum&lt;TSource, TDestination, TSourceMember&gt;(  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span> IProjectionMemberConfiguration&lt;TSource, TDestination, <span style="color:#66d9ef">string</span>&gt; mapOptions,  
+</span></span><span style="display:flex;"><span>        Expression&lt;Func&lt;TSource, TSourceMember&gt;&gt; mapExpression  
+</span></span><span style="display:flex;"><span>    )        <span style="color:#66d9ef">where</span> TSourceMember : Enum  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>	    mapOptions
+</span></span><span style="display:flex;"><span>		    .MapFrom(
+</span></span><span style="display:flex;"><span>			    mapExpression.TranslateExpression(<span style="color:#66d9ef">typeof</span>(EnumTranslations)
+</span></span><span style="display:flex;"><span>			)
+</span></span><span style="display:flex;"><span>		);  
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And voilà! Now the mapping profile can be easily written like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>CreateMap&lt;Order, OrderResponse&gt;()  
+</span></span><span style="display:flex;"><span>    .ForMember(
+</span></span><span style="display:flex;"><span>	    src =&gt; src.Status,
+</span></span><span style="display:flex;"><span>	    opt =&gt; opt.MapFromTranslatedEnum(src =&gt; src.Status)
+</span></span><span style="display:flex;"><span>	);
+</span></span></code></pre></div><h2 id="conclusions">Conclusions</h2>
+<p>That&rsquo;s it for today!</p>
+<p>In this post, I showed how automapper allows to easily project entities with its queryable extension. In particular, we saw how to translate enum values in their correct language using a nice extension method. I hope this will prove useful to other C# developers out there!</p>
+<p>See you!</p>
+<p>PS. I left the example code (with a different entity and enum names, called <code>MyEntity</code> and <code>MyEnum</code>) on <a href="https://github.com/marcobacis/dotnet-enum-translation-expression-example/"  target="_blank" >github</a>.</p>
+
+        ]]></content:encoded></item></channel></rss>
