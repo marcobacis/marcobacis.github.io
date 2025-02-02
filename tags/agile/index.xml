@@ -134,14 +134,12 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
         ]]></content:encoded></item><item><title>Working Software Conference 2023</title><link>https://marcobacis.com/blog/working-software-2023/</link><pubDate>Sun, 02 Jul 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/working-software-2023/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
 &lt;p>Last Friday I attended the 2023 &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" >Working Software Conference&lt;/a> in Milan. The Working Software Conference is an event organised by the &lt;a href="https://agilemovement.it" target="_blank" >Italian Agile Movement&lt;/a>, focused on the second principle of the &lt;a href="https://agilemanifesto.org" target="_blank" >agile manifesto&lt;/a>:&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;em>Working software over comprehensive documentation&lt;/em>&lt;/p>
-&lt;/blockquote></description><media:content url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+&lt;p>&lt;em>Working software over comprehensive documentation&lt;/em>&lt;/p>&lt;/blockquote></description><media:content url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Last Friday I attended the 2023 <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in Milan. The Working Software Conference is an event organised by the <a href="https://agilemovement.it"  target="_blank" >Italian Agile Movement</a>, focused on the second principle of the <a href="https://agilemanifesto.org"  target="_blank" >agile manifesto</a>:</p>
 <blockquote>
-<p><em>Working software over comprehensive documentation</em></p>
-</blockquote>
+<p><em>Working software over comprehensive documentation</em></p></blockquote>
 <p>The meaning of this principle is that we should focus on delivering value (the working software) to the user instead of writing extensive specification documents (a.k.a. “wasting time”, as all the requirements and documentation will need to be adapted to change in a very short time).</p>
 <p>The conference contained a mixture of front sessions and workshops.
 In particular, I attended two workshops, one in the morning and one in the afternoon. In this post I present a small summary and comment of the two workshops, with some considerations at the end.</p>

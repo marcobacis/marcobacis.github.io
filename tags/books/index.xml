@@ -191,8 +191,7 @@
 <p>Writing Software is one of the purest creative activities done by humans. It allows to create entire systems and world only constrained by the developers’ imagination.</p>
 <p>However, the greatest limitation of creating software is our ability to <em>understand</em> it. Over time, complexity will inevitably increase, so we must find ways to minimise its impact. But <strong>what</strong> is complexity, and how can we <strong>reduce</strong> it? These are the goals of the book.</p>
 <blockquote>
-<p>Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system.</p>
-</blockquote>
+<p>Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system.</p></blockquote>
 <p>Complexity manifests itself with symptoms:</p>
 <ul>
 <li><strong>Change Amplification</strong>: simple changes require to modify code in many different places</li>

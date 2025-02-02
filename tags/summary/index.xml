@@ -213,8 +213,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <p><strong>Organizational Alignment</strong></p>
 <p>Conway&rsquo;s law states that</p>
 <blockquote>
-<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p>
-</blockquote>
+<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p></blockquote>
 <p>Following this law, using microservices helps in aligning the technical side of the system to the topology of the organization (e.g. assigning a microservice to each team separately).</p>
 <p>However, microservices can also lead the opposite to happen, called <em>Inverse conway&rsquo;s law</em>: given an existing system, the organization is forced to organise in the same way as the system&rsquo;s components! This is usually difficult to perform, and leads to issues down the line.</p>
 <p><strong>Composability</strong></p>
@@ -263,8 +262,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 </figure></p>
 <p>The first (and worst) risk with microservices architecture is to partition the system wrong!</p>
 <blockquote>
-<p>If you design the system the wrong way, using microservices will only worsen the issue.</p>
-</blockquote>
+<p>If you design the system the wrong way, using microservices will only worsen the issue.</p></blockquote>
 <p>Gabriele sees microservices only as a deploy model, in the sense that they aren&rsquo;t a solution to bad software design, but just a tool.</p>
 <p>When the system is badly designed (with <strong>high coupling</strong> and <strong>low cohesion</strong>) making changes becomes exponentially more difficult. When a component needs some data which is not in the right spot, it needs to communicate with another service to get it. If this happens too many times, it means the component suffers of a pattern called <em>feature envy</em>. The envious component keeps asking for data (or actions) to the other component.</p>
 <p>The issue is made worse by the network: when a component is envious in a monolith, all is solved with a method call. In a microservice architecture this involves the network instead, with all its related issues (latency, availability, byzantine faults and so on)!</p>
@@ -274,8 +272,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <h3 id="2-shared-database">2. Shared Database</h3>
 <p>This is an issue I&rsquo;ve been guilty multiple times: using a shared database between microservices!</p>
 <blockquote>
-<p>First rule of microservices: each microservice must have a separate database.</p>
-</blockquote>
+<p>First rule of microservices: each microservice must have a separate database.</p></blockquote>
 <p>If multiple services share the same db (access and schema altogether), then the database becomes the same as a central, global variable that everyone has access to. With a central database there is no independent deploy (how can I run migration and change the schema if others depend on it?) and making changes becomes difficult.</p>
 <p>But what causes the presence of a shared database? Gabriele gave a few culprits:</p>
 <ul>
@@ -696,14 +693,12 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
         ]]></content:encoded></item><item><title>Working Software Conference 2023</title><link>https://marcobacis.com/blog/working-software-2023/</link><pubDate>Sun, 02 Jul 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.com/blog/working-software-2023/</guid><description>&lt;p>Hi 👋 and welcome to a new post!&lt;/p>
 &lt;p>Last Friday I attended the 2023 &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" >Working Software Conference&lt;/a> in Milan. The Working Software Conference is an event organised by the &lt;a href="https://agilemovement.it" target="_blank" >Italian Agile Movement&lt;/a>, focused on the second principle of the &lt;a href="https://agilemanifesto.org" target="_blank" >agile manifesto&lt;/a>:&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;em>Working software over comprehensive documentation&lt;/em>&lt;/p>
-&lt;/blockquote></description><media:content url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+&lt;p>&lt;em>Working software over comprehensive documentation&lt;/em>&lt;/p>&lt;/blockquote></description><media:content url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.com/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Last Friday I attended the 2023 <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in Milan. The Working Software Conference is an event organised by the <a href="https://agilemovement.it"  target="_blank" >Italian Agile Movement</a>, focused on the second principle of the <a href="https://agilemanifesto.org"  target="_blank" >agile manifesto</a>:</p>
 <blockquote>
-<p><em>Working software over comprehensive documentation</em></p>
-</blockquote>
+<p><em>Working software over comprehensive documentation</em></p></blockquote>
 <p>The meaning of this principle is that we should focus on delivering value (the working software) to the user instead of writing extensive specification documents (a.k.a. “wasting time”, as all the requirements and documentation will need to be adapted to change in a very short time).</p>
 <p>The conference contained a mixture of front sessions and workshops.
 In particular, I attended two workshops, one in the morning and one in the afternoon. In this post I present a small summary and comment of the two workshops, with some considerations at the end.</p>
@@ -831,8 +826,7 @@ In particular, I attended two workshops, one in the morning and one in the after
 <p>I do the last thing (placing a book near my bed) to give my brain the right clue, and to make it easy to do (just grab the book and read it!).</p>
 <p>Another technique is the <strong>two-minutes rule</strong>. There are a handful of <em>decisive moments</em> which decide what impact we&rsquo;ll deliver in a given day. In these moments we take decisions on what to do next, and we can leverage these to improve in our habit process. The two-minute rule says</p>
 <blockquote>
-<p>&ldquo;When you start a new habit, it should take less than two minutes&rdquo;.</p>
-</blockquote>
+<p>&ldquo;When you start a new habit, it should take less than two minutes&rdquo;.</p></blockquote>
 <p>If the habits takes more, reduce the effort to the minimum viable action (e.g. exercise → put on workout clothes, writing → write one paragraph/sentence). This allows to master the act of <strong>showing up</strong>. After doing the first action, we can decide to continue or not, and it&rsquo;s difficult that we&rsquo;ll stop there&hellip;</p>
 <p>Finally, we have <strong>automation</strong>. I&rsquo;m a big fan of automation, because that&rsquo;s what I do for a living as a software engineer. Automation is an example of <em>commitment device</em>, which is a choice made in the present which controls our actions in the future. There are a lot of one time actions which will lock in new habits (detailed in the book, e.g. buying a good mattress, reducing mails and notifications, changing environment, reduce some automatic expenses and so on). Finally, technology can come to our aid in automating stuff (e.g. automatic telematic prescriptions, automatic wage reduction for retirement, meal-delivery services, website blockers).</p>
 <p>In a nutshell, the 3rd law can be summarised as:</p>
@@ -846,8 +840,7 @@ In particular, I attended two workshops, one in the morning and one in the after
 <p>Humans have developed a lot of stuff in the last millennia. Think about breeding, farming, machines and the latest technology. Most of this developments brought a us new concept, unknown to our primate brain: that of <em>delayed reward</em>. We experience delayed reward while waiting for crops to harvest to animals growing, and in the latest 500 years we added a lot of delayed rewards of any kind.</p>
 <p>However, our brain still rely on <em>instant gratification</em> to work, and we need to leverage that hardwired path in our brain, or we won&rsquo;t stick to a habit. We evaluate rewards differently through time (<em><strong>now</strong></em> is better than later).</p>
 <blockquote>
-<p>What is immediately rewarded gets repeated, and what is immediately punished is avoided.</p>
-</blockquote>
+<p>What is immediately rewarded gets repeated, and what is immediately punished is avoided.</p></blockquote>
 <p>The final step to stick to a habit is then to <em>feel successful</em> after doing it. In fact, the first three laws (obvious, attractive and easy) allow us to start the new habit, while this last law allows us to repeat and stick to it!</p>
 <p>In a nutshell, these are the tactics to use to obey the 4th law:</p>
 <ul>
@@ -872,8 +865,7 @@ In particular, I attended two workshops, one in the morning and one in the after
 <h3 id="flow">Flow</h3>
 <p>Regarding flow, the author explains what is called the &ldquo;Goldilocks Rule&rdquo;:</p>
 <blockquote>
-<p>Humans experience peak motivation when they work on tasks that are right on the edge of their current abilities.</p>
-</blockquote>
+<p>Humans experience peak motivation when they work on tasks that are right on the edge of their current abilities.</p></blockquote>
 <p>Neither too difficult (otherwise you&rsquo;ll quit) nor too easy (or you end up in boredom and quit too).</p>
 <p>The road to mastery is full of boring moments, but you can try to create manageable challenges to grow without complacency, without making life too difficult to quit the habit. Keeping the repetition even when bored is the difference between amateur and professional!</p>
 <p>I actually experience this rule in my life: when I play guitar (amateur level) I usually get bored and stop playing for long periods of time. Instead, I keep pushing while programming for work because it is my profession, and this gives me an edge over others who just try to do it without enduring it.</p>
@@ -886,8 +878,7 @@ In particular, I attended two workshops, one in the morning and one in the after
 <li>I&rsquo;m the CEO → I&rsquo;m the type of person who builds and creates things</li>
 </ul>
 <blockquote>
-<p>&ldquo;The hard and stiff will be broken, the soft and supple will prevail&rdquo; cit. Lao Tzu</p>
-</blockquote>
+<p>&ldquo;The hard and stiff will be broken, the soft and supple will prevail&rdquo; cit. Lao Tzu</p></blockquote>
 <h2 id="conclusions">Conclusions</h2>
 <p><strong><strong>Atomic Habits</strong></strong> does a great job in explaining how to create and keep small habits, and why it is so important to do this. The secret to obtain results is to never stop making improvements.</p>
 <p>The book was a great inspiration in how to improve through the power of habits. I really liked the part about changing the environment and automating decisions to reduce my reliance on discipline alone. I also try to make use of the book’s advice to create good habits, while I’m definitely less successful when it comes to removing bad habits 😅.</p>

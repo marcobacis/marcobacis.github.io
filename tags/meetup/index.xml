@@ -512,8 +512,7 @@
 <p><em>Disclaimer</em>: I have never contributed to an open source project before. Yes, I have some repos online, but they are just exercises or university projects. Also, this was my first time participating in this kind of event, so I was both excited and worried at the same time.</p>
 <p>I arrived at the location with the idea of learning Rust. In fact, in the last two weeks I was reading the online rust <a href="https://rust-book.cs.brown.edu/"  target="_blank" >book</a> (again) to get a better idea about ownership and lifetimes. So, my pitch was</p>
 <blockquote>
-<p>Hi! I&rsquo;m Marco and I know nothing of rust, so I&rsquo;m looking for a rust project to contribute to!</p>
-</blockquote>
+<p>Hi! I&rsquo;m Marco and I know nothing of rust, so I&rsquo;m looking for a rust project to contribute to!</p></blockquote>
 <p>As always, things turn out differently form what we expect. In fact, I didn&rsquo;t even see a single line of rust!</p>
 <p>As I listened to the others presenting their projects, one project in particular caught my attention: <a href="https://github.com/giacomocavalieri"  target="_blank" >Giacomo</a> is a main contributor to a functional programming language called <a href="https://gleam.run/"  target="_blank" >gleam</a>, which had a compiler written in Rust.</p>
 <p>This was my chance! I approached giacomo after the &ldquo;standup&rdquo; and started learning about Gleam and its environment. First I followed the gleam <a href="https://tour.gleam.run/"  target="_blank" >tour</a> to get a glimpse of what the language was all about.</p>
@@ -605,8 +604,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <p><strong>Organizational Alignment</strong></p>
 <p>Conway&rsquo;s law states that</p>
 <blockquote>
-<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p>
-</blockquote>
+<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p></blockquote>
 <p>Following this law, using microservices helps in aligning the technical side of the system to the topology of the organization (e.g. assigning a microservice to each team separately).</p>
 <p>However, microservices can also lead the opposite to happen, called <em>Inverse conway&rsquo;s law</em>: given an existing system, the organization is forced to organise in the same way as the system&rsquo;s components! This is usually difficult to perform, and leads to issues down the line.</p>
 <p><strong>Composability</strong></p>
@@ -655,8 +653,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 </figure></p>
 <p>The first (and worst) risk with microservices architecture is to partition the system wrong!</p>
 <blockquote>
-<p>If you design the system the wrong way, using microservices will only worsen the issue.</p>
-</blockquote>
+<p>If you design the system the wrong way, using microservices will only worsen the issue.</p></blockquote>
 <p>Gabriele sees microservices only as a deploy model, in the sense that they aren&rsquo;t a solution to bad software design, but just a tool.</p>
 <p>When the system is badly designed (with <strong>high coupling</strong> and <strong>low cohesion</strong>) making changes becomes exponentially more difficult. When a component needs some data which is not in the right spot, it needs to communicate with another service to get it. If this happens too many times, it means the component suffers of a pattern called <em>feature envy</em>. The envious component keeps asking for data (or actions) to the other component.</p>
 <p>The issue is made worse by the network: when a component is envious in a monolith, all is solved with a method call. In a microservice architecture this involves the network instead, with all its related issues (latency, availability, byzantine faults and so on)!</p>
@@ -666,8 +663,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <h3 id="2-shared-database">2. Shared Database</h3>
 <p>This is an issue I&rsquo;ve been guilty multiple times: using a shared database between microservices!</p>
 <blockquote>
-<p>First rule of microservices: each microservice must have a separate database.</p>
-</blockquote>
+<p>First rule of microservices: each microservice must have a separate database.</p></blockquote>
 <p>If multiple services share the same db (access and schema altogether), then the database becomes the same as a central, global variable that everyone has access to. With a central database there is no independent deploy (how can I run migration and change the schema if others depend on it?) and making changes becomes difficult.</p>
 <p>But what causes the presence of a shared database? Gabriele gave a few culprits:</p>
 <ul>

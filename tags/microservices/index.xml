@@ -50,8 +50,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <p><strong>Organizational Alignment</strong></p>
 <p>Conway&rsquo;s law states that</p>
 <blockquote>
-<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p>
-</blockquote>
+<p>Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p></blockquote>
 <p>Following this law, using microservices helps in aligning the technical side of the system to the topology of the organization (e.g. assigning a microservice to each team separately).</p>
 <p>However, microservices can also lead the opposite to happen, called <em>Inverse conway&rsquo;s law</em>: given an existing system, the organization is forced to organise in the same way as the system&rsquo;s components! This is usually difficult to perform, and leads to issues down the line.</p>
 <p><strong>Composability</strong></p>
@@ -100,8 +99,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 </figure></p>
 <p>The first (and worst) risk with microservices architecture is to partition the system wrong!</p>
 <blockquote>
-<p>If you design the system the wrong way, using microservices will only worsen the issue.</p>
-</blockquote>
+<p>If you design the system the wrong way, using microservices will only worsen the issue.</p></blockquote>
 <p>Gabriele sees microservices only as a deploy model, in the sense that they aren&rsquo;t a solution to bad software design, but just a tool.</p>
 <p>When the system is badly designed (with <strong>high coupling</strong> and <strong>low cohesion</strong>) making changes becomes exponentially more difficult. When a component needs some data which is not in the right spot, it needs to communicate with another service to get it. If this happens too many times, it means the component suffers of a pattern called <em>feature envy</em>. The envious component keeps asking for data (or actions) to the other component.</p>
 <p>The issue is made worse by the network: when a component is envious in a monolith, all is solved with a method call. In a microservice architecture this involves the network instead, with all its related issues (latency, availability, byzantine faults and so on)!</p>
@@ -111,8 +109,7 @@ This scalability pro is even more useful when using serverless architectures, wh
 <h3 id="2-shared-database">2. Shared Database</h3>
 <p>This is an issue I&rsquo;ve been guilty multiple times: using a shared database between microservices!</p>
 <blockquote>
-<p>First rule of microservices: each microservice must have a separate database.</p>
-</blockquote>
+<p>First rule of microservices: each microservice must have a separate database.</p></blockquote>
 <p>If multiple services share the same db (access and schema altogether), then the database becomes the same as a central, global variable that everyone has access to. With a central database there is no independent deploy (how can I run migration and change the schema if others depend on it?) and making changes becomes difficult.</p>
 <p>But what causes the presence of a shared database? Gabriele gave a few culprits:</p>
 <ul>

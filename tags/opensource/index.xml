@@ -14,8 +14,7 @@
 <p><em>Disclaimer</em>: I have never contributed to an open source project before. Yes, I have some repos online, but they are just exercises or university projects. Also, this was my first time participating in this kind of event, so I was both excited and worried at the same time.</p>
 <p>I arrived at the location with the idea of learning Rust. In fact, in the last two weeks I was reading the online rust <a href="https://rust-book.cs.brown.edu/"  target="_blank" >book</a> (again) to get a better idea about ownership and lifetimes. So, my pitch was</p>
 <blockquote>
-<p>Hi! I&rsquo;m Marco and I know nothing of rust, so I&rsquo;m looking for a rust project to contribute to!</p>
-</blockquote>
+<p>Hi! I&rsquo;m Marco and I know nothing of rust, so I&rsquo;m looking for a rust project to contribute to!</p></blockquote>
 <p>As always, things turn out differently form what we expect. In fact, I didn&rsquo;t even see a single line of rust!</p>
 <p>As I listened to the others presenting their projects, one project in particular caught my attention: <a href="https://github.com/giacomocavalieri"  target="_blank" >Giacomo</a> is a main contributor to a functional programming language called <a href="https://gleam.run/"  target="_blank" >gleam</a>, which had a compiler written in Rust.</p>
 <p>This was my chance! I approached giacomo after the &ldquo;standup&rdquo; and started learning about Gleam and its environment. First I followed the gleam <a href="https://tour.gleam.run/"  target="_blank" >tour</a> to get a glimpse of what the language was all about.</p>
