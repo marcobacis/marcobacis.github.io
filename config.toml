@@ -3,7 +3,6 @@ languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
 copyright = "© Copyright Marco Bacis"
-googleAnalytics = "G-WJJS43TXKN"
 
 timeout = "120s"
 
