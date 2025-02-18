@@ -1,15 +1,6 @@
 {
-  "lastmod": "2025-02-17T01:22:31.832588",
+  "lastmod": "2025-02-18T01:19:50.147142",
   "books": [
-    {
-      "title": "Se la rosa non avesse il suo nome",
-      "author": "Andrea Pennacchi",
-      "link": "https://www.goodreads.com/book/show/221068348-se-la-rosa-non-avesse-il-suo-nome",
-      "pages": 370,
-      "date_started": "2025-02-09",
-      "date_read": null,
-      "date_added": "2025-02-09"
-    },
     {
       "title": "Zero To Production In Rust: An introduction to backend development",
       "author": "Luca Palmieri",
