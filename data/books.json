@@ -1,5 +1,5 @@
 {
-  "lastmod": "2025-03-18T01:24:31.531916",
+  "lastmod": "2025-03-19T01:25:14.356848",
   "books": [
     {
       "title": "Modern Software Engineering: Doing What Works to Build Better Software Faster",
@@ -9,15 +9,6 @@
       "date_started": "2025-03-02",
       "date_read": null,
       "date_added": "2025-03-02"
-    },
-    {
-      "title": "Build: An Unorthodox Guide to Making Things Worth Making",
-      "author": "Tony Fadell",
-      "link": "https://www.goodreads.com/book/show/59696349-build",
-      "pages": 416,
-      "date_started": "2025-02-20",
-      "date_read": null,
-      "date_added": "2025-02-20"
     },
     {
       "title": "Zero To Production In Rust: An introduction to backend development",
