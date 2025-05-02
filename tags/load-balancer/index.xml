@@ -115,12 +115,12 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Expect only mock[1] to respond to 2 consecutive requests
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In the test, we are setting up two mock servers. The first one responds on every path, while the second doesn&rsquo;t respond on the <code>/health</code> endpoint that we expect for health monitoring.
 We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo; upstream server, which responds with &ldquo;1&rdquo;.</p>
@@ -141,7 +141,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Check all backends for the health endpoint
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> join_all(backends.iter().map(<span style="color:#f92672">|</span>b<span style="color:#f92672">|</span> {
 </span></span><span style="display:flex;"><span>        client
-</span></span><span style="display:flex;"><span>            .get(format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>b.url, <span style="color:#f92672">&amp;</span>b.healthcheck_path))
+</span></span><span style="display:flex;"><span>            .get(<span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>b.url, <span style="color:#f92672">&amp;</span>b.healthcheck_path))
 </span></span><span style="display:flex;"><span>            .send()
 </span></span><span style="display:flex;"><span>    }))
 </span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">await</span>;
@@ -175,7 +175,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span></code></pre></div><p>We need to test that the policy will be affected by the results of our healthcheck loop. Given that our acceptance test will fail until we perform real HTTP requests and integrate multiple components, let&rsquo;s write a smaller test just for the policy:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">round_robin_policy_with_healthcheck</span>() {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> backends <span style="color:#f92672">=</span> vec![
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> backends <span style="color:#f92672">=</span> <span style="color:#a6e22e">vec!</span>[
 </span></span><span style="display:flex;"><span>		Backend {
 </span></span><span style="display:flex;"><span>			healthcheck_path: <span style="color:#e6db74">&#34;/health&#34;</span>.into(),
 </span></span><span style="display:flex;"><span>			url: <span style="color:#e6db74">&#34;test_url_1&#34;</span>.into(),
@@ -196,13 +196,13 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> RoundRobinPolicy::new(<span style="color:#f92672">&amp;</span>config);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> request <span style="color:#f92672">=</span> test::TestRequest::default().to_http_request();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_1&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	policy
-</span></span><span style="display:flex;"><span>		.health_results(vec![
+</span></span><span style="display:flex;"><span>		.health_results(<span style="color:#a6e22e">vec!</span>[
 </span></span><span style="display:flex;"><span>			HealthResult {
 </span></span><span style="display:flex;"><span>				backend: <span style="color:#a6e22e">backends</span>[<span style="color:#ae81ff">0</span>].clone(),
 </span></span><span style="display:flex;"><span>				healthy: <span style="color:#a6e22e">false</span>,
@@ -218,10 +218,10 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>		])
 </span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_2&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;test_url_3&#34;</span>, policy.next(<span style="color:#f92672">&amp;</span>request).<span style="color:#66d9ef">await</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Here we are checking that the policy works as inteded in a round-robin fashion (the first assertions) as it was in part 2. Then, we send a healthcheck result saying that the first server is not available, and expect to only get the second/third servers in return.</p>
 <p>Let&rsquo;s make this test pass!</p>
@@ -345,7 +345,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <p>Before starting with the round-robin implementation, lets tidy up a bit the code from the first part. The first thing to do is to improve the test we wrote!</p>
 <p>In the test, we create the load balancer server and wait for it to start up with a simple `sleep´</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, vec![mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
@@ -365,7 +365,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...
 </span></span></span></code></pre></div><p>To fix our test, we can wait for the healthcheck url to be available by trying multiple times and waiting for a 200 HTTP code. Here is an example function to do so:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">wait_server_up</span>(client: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Client</span>, uri: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>, max_retries: <span style="color:#66d9ef">usize</span>) {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> health_uri <span style="color:#f92672">=</span> format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">/health&#34;</span>, uri);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> health_uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">/health&#34;</span>, uri);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> _ <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>max_retries {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>health_uri).send().<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> response.is_ok() {
@@ -373,7 +373,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>		tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">1</span>)).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	panic!(<span style="color:#e6db74">&#34;Server didn&#39;t start...&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">panic!</span>(<span style="color:#e6db74">&#34;Server didn&#39;t start...&#34;</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>With this method we can now replace the old <code>tokio::time::sleep</code>. Now we&rsquo;re ready to go on and start spamming multiple servers with our requests!</p>
 <h2 id="creating-a-round-robin-policy">Creating a Round Robin Policy</h2>
@@ -408,7 +408,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Here we grab the next server host from the policy
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.policy.next(<span style="color:#f92672">&amp;</span>req).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... forward the request etc
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span></code></pre></div><p>Notice the type alias <code>SafeRoutingPolicy</code>, which has also the <code>Send</code> and <code>Sync</code> trait. Why do we need them? The policy is stored in the shared app state, which may be accessed by multiple threads (actix can run the handler method on different threads).</p>
@@ -504,20 +504,20 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Send requests, expect to respond in round robin (1,2,3,1)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;2&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;2&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;3&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;3&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Right now the test doesn&rsquo;t even compile (we don&rsquo;t have a <code>RoundRobinPolicy</code>struct with a <code>new</code> method).</p>
 <p>Let&rsquo;s fix that.</p>
@@ -669,7 +669,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, vec![mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
@@ -679,8 +679,8 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Check that we receive response from the mock backend
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// (and not from the load balancer)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
-</span></span><span style="display:flex;"><span>	assert_eq!(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
-</span></span><span style="display:flex;"><span>	assert_eq!(<span style="color:#e6db74">&#34;backend&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;backend&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this first step, all we care is that the load balancer is able to forward the request to a single upstream server. We create a mock server (using the <code>wiremock</code>crate, thanks to Marco&rsquo;s advice) to check that the request gets forwarded to it, then instantiate the load balancer and send a simple GET to it.</p>
 <p>In pure (A)TDD style, this test doesn&rsquo;t even compile at first. Let&rsquo;s create at least the struct and the method required.</p>
@@ -696,7 +696,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">uri</span>(<span style="color:#f92672">&amp;</span>self) -&gt; String {
-</span></span><span style="display:flex;"><span>		format!(<span style="color:#e6db74">&#34;http://127.0.0.1:</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, self.port)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;http://127.0.0.1:</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, self.port)
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {}
@@ -765,7 +765,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the address to which to forward the request
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> format!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Create the request
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
