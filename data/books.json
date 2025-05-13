@@ -1,5 +1,5 @@
 {
-  "lastmod": "2025-05-12T01:43:21.912035",
+  "lastmod": "2025-05-13T01:40:52.391356",
   "books": [
     {
       "title": "Slow Productivity: The Lost Art of Accomplishment Without Burnout",
@@ -9,15 +9,6 @@
       "date_started": "2025-05-04",
       "date_read": null,
       "date_added": "2025-05-04"
-    },
-    {
-      "title": "Test-Driven Development: By Example",
-      "author": "Kent Beck",
-      "link": "https://www.goodreads.com/book/show/387190.Test_Driven_Development",
-      "pages": 216,
-      "date_started": "2025-04-28",
-      "date_read": null,
-      "date_added": "2025-04-28"
     }
   ]
 }
