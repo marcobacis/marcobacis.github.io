@@ -1,4 +1,23 @@
 {
-  "lastmod": "2025-06-26T01:43:41.473119",
-  "books": []
+  "lastmod": "2025-06-27T01:44:57.273203",
+  "books": [
+    {
+      "title": "The Art of Agile Development: Pragmatic Guide to Agile Software Development",
+      "author": "James Shore",
+      "link": "https://www.goodreads.com/book/show/1654215.The_Art_of_Agile_Development",
+      "pages": 438,
+      "date_started": "2025-06-19",
+      "date_read": null,
+      "date_added": "2025-06-26"
+    },
+    {
+      "title": "La montagna sei tu: Trasformare l'autosabotaggio in autocontrollo",
+      "author": "Brianna Wiest",
+      "link": "https://www.goodreads.com/book/show/89466198-la-montagna-sei-tu",
+      "pages": 225,
+      "date_started": null,
+      "date_read": null,
+      "date_added": "2025-06-01"
+    }
+  ]
 }
