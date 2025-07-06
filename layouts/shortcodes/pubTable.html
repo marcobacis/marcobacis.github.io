@@ -23,8 +23,8 @@
             <a taget="_blank" href="{{ .pdf }}">pdf</a>
         {{ end }}
         &nbsp;
-        {{ if isset . "ieee" }}
-            <a taget="_blank" href="https://ieeexplore.ieee.org/document/{{ .ieee }}">ieee</a>
+        {{ if isset . "doi" }}
+            <a taget="_blank" href="https://doi.org/{{ .doi }}">link</a>
         {{ end }}
     </span>
 

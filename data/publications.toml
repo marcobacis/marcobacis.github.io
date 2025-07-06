@@ -1,17 +1,24 @@
 [publication]
     [[entry]]
+        title = "Blastfunction: A full-stack framework bringing fpga hardware acceleration to cloud-native applications"
+        authors = ["Andrea Damiani", "Giorgia Fiscaletti", "Marco Bacis", "Rolando Brondolin", "Marco Domenico Santambrogio"]
+        conference = "ACM Transactions on Reconfigurable Technology and Systems (TRETS)"
+        year = 2022
+        doi = "10.1145/3472958"
+
+    [[entry]]
         title = "BlastFunction: an FPGA-as-a-Service system for accelerated serverless computing"
         authors = ["Marco Bacis", "Rolando Brondolin", "Marco Domenico Santambrogio"]
         conference = "2020 IEEE Design, Automation and Test in Europe (DATE) Conference"
         year = 2020
-        ieee = "9116333"
+        doi = "10.23919/DATE48585.2020.9116333"
         pdf = "/papers/blastfunction_paper.pdf"
 
     [[entry]]
         title = "A Framework with Cloud Integration for CNN Acceleration on FPGA Devices"
         authors = ["Niccolò Raspa", "Giuseppe Natale", "Marco Bacis", "Marco Domenico Santambrogio"]
         conference = "2018 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)"
-        ieee = "8425400"
+        doi = "10.1109/IPDPSW.2018.00033"
         year = 2018
         pdf = "/papers/raw_condor.pdf"
 
@@ -20,7 +27,7 @@
         authors = ["Nils Voss","Marco Bacis","Oskar Mencer", "Georgi Gaydadjiev", "Wayne Luk"]
         conference = "2017 IEEE International Conference on Computer Design (ICCD)"
         year = 2017
-        ieee = "8119250"
+        doi = "10.1109/ICCD.2017.77"
         pdf = "https://www.doc.ic.ac.uk/~wl/papers/17/iccd17nv.pdf"
     
     [[entry]]
@@ -28,7 +35,7 @@
         authors = ["Giuseppe Natale","Marco Bacis","Marco Domenico Santambrogio"]
         conference = "2017 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)"
         year = 2017
-        ieee = "7987594"
+        doi = "10.1109/ISVLSI.2017.126"
         pdf = "/papers/isvlsi_condor.pdf"
 
     [[entry]]
@@ -36,7 +43,7 @@
         authors = ["Marco Bacis","Giuseppe Natale","Emanuele Del Sozzo", "Marco Domenico Santambrogio"]
         conference = "2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)"
         year = 2017
-        ieee = "7965030"
+        doi = "10.1109/IPDPSW.2017.44"
         pdf = "/papers/raw_paper.pdf"
 
     [[entry]]
@@ -44,6 +51,6 @@
         authors = ["Lara Cavinato", "Irene Fidone", "Marco Bacis", "Emanuele Del Sozzo", "Gianluca Carlo Durelli", "Marco Domenico Santambrogio"]
         conference = "2017 Engineering in Medicine and Biology Society, International Conference of the IEEE (EMBC)"
         year = 2017
-        ieee = "8037052"
+        doi = "10.1109/EMBC.2017.8037052"
         pdf = "/papers/beye_paper.pdf"
         poster = "/papers/beye_poster.pdf"
