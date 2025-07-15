@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "author": "Bruce A. Tate",
+      "date_added": "2025-07-14",
+      "date_read": null,
+      "date_started": "2025-07-13",
+      "link": "https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks",
+      "pages": 330,
+      "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
+    },
+    {
       "author": "James Shore",
       "date_added": "2025-06-26",
       "date_read": null,
@@ -19,5 +28,5 @@
       "title": "Designing Your Life: Build a Life that Works for You"
     }
   ],
-  "lastmod": "2025-07-07T01:49:49.777242"
+  "lastmod": "2025-07-15T01:53:07.995734"
 }
