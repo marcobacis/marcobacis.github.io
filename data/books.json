@@ -1,15 +1,6 @@
 {
   "books": [
     {
-      "author": "Ellen Hendriksen",
-      "date_added": "2025-07-20",
-      "date_read": null,
-      "date_started": "2025-07-20",
-      "link": "https://www.goodreads.com/book/show/211004934-how-to-be-enough",
-      "pages": 320,
-      "title": "How to Be Enough: Self-Acceptance for Self-Critics and Perfectionists"
-    },
-    {
       "author": "Bruce A. Tate",
       "date_added": "2025-07-14",
       "date_read": null,
@@ -28,5 +19,5 @@
       "title": "The Art of Agile Development: Pragmatic Guide to Agile Software Development"
     }
   ],
-  "lastmod": "2025-07-21T01:56:05.502063"
+  "lastmod": "2025-08-10T01:57:28.937304"
 }
