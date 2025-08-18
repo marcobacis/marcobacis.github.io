@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "author": "Morgan Housel",
+      "date_added": "2025-08-17",
+      "date_read": null,
+      "date_started": "2025-08-17",
+      "link": "https://www.goodreads.com/book/show/41881472-the-psychology-of-money",
+      "pages": 242,
+      "title": "The Psychology of Money"
+    },
+    {
       "author": "Bruce A. Tate",
       "date_added": "2025-07-14",
       "date_read": null,
@@ -8,16 +17,7 @@
       "link": "https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks",
       "pages": 330,
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
-    },
-    {
-      "author": "James Shore",
-      "date_added": "2025-06-26",
-      "date_read": null,
-      "date_started": "2025-06-19",
-      "link": "https://www.goodreads.com/book/show/1654215.The_Art_of_Agile_Development",
-      "pages": 438,
-      "title": "The Art of Agile Development: Pragmatic Guide to Agile Software Development"
     }
   ],
-  "lastmod": "2025-08-10T01:57:28.937304"
+  "lastmod": "2025-08-18T01:51:47.593521"
 }
