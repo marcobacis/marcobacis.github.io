@@ -1,44 +1,14 @@
 <!-- begin post -->
-<div class="mb-30px card-group no-gutters">
-    <div class="card h-100">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <a href="{{ .Permalink }}">
-                    {{$postTitle := .Title}}
-                    {{ with .Resources }}
-                        {{ with .GetMatch "{cover.*,*.jpg,*.png,*.jpeg,*.webp}" }}
-                            {{ $cover := .Resize "400x webp 70q" }}
-                            {{ with $cover }}
-                                <img class="img-fluid" src="{{ .RelPermalink }}" alt="Cover Image of the post '{{ $postTitle }}'"/>     
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                </a>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h2 class="card-title"><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    <span class="card-text">{{ .Summary }}</span>
-                </div>
-                <div class="card-footer bg-white">
-                    <div class="wrapfooter">
-                        {{if isset .Site.Params "author"}}
-                        {{if isset .Site.Params "author_thumb"}}
-                        <span class="meta-footer-thumb">
-                            <img class="author-thumb" src="{{ .Site.Params.author_thumb | urlize | relURL  }}"
-                                alt="{{ .Site.Params.author }}">
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name">{{ .Site.Params.author }}</a></span><br />
-                            {{end}}
-                            {{end}}
-                            <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }} - {{ .ReadingTime }} min
-                                read </span>
-                        </span>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
+<div class="row no-gutters">
+    <div class="col-md-3 text-md-right d-none d-md-block">
+        <div class="card-body">
+        {{ dateFormat "Jan 2, 2006" .PublishDate }}    
+        </div>
+    </div>
+    <div class="col-12 col-md-9">
+        <div class="card-body">
+            <span class="d-block d-md-none">{{ dateFormat "Jan 2, 2006" .PublishDate }}</span>
+            <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         </div>
     </div>
 </div>

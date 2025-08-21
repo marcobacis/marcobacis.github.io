@@ -11,7 +11,7 @@
     </div>
     {{ end}}
     <div class="listrecent">
-      {{ $post_paginator := .Paginate (.Pages) 6 }} {{ range
+      {{ $post_paginator := .Paginate (.Pages) 20 }} {{ range
       $post_paginator.Pages }} {{- partial "list-partials/postbox.html" . -}}
       {{end}}
     </div>

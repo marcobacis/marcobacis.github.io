@@ -8,8 +8,10 @@
 			</div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-			{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-			<a class="mt-1 mb-1" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+			{{ range first 20 (sort .Site.Taxonomies.tags "Count" "desc") }}
+				<a class="mt-1 mb-1 flex align-items-center" href="{{ "/tags/" | relLangURL }}{{ .Page.Title | urlize }}">
+					{{ .Page.Title }} <span class="round-badge">{{ .Count }}</span>
+				</a>
 			{{ end }}
 		</div>
 	</div>
