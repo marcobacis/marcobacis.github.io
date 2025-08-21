@@ -3,6 +3,8 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+
+
 .mainheading {
   padding: 1rem 0rem;
 }
@@ -136,11 +138,11 @@ section.recent-posts {
   padding-left: 0;
 }
 
-.listfeaturedtag h2.card-title,
-.listrecent h2.card-title {
-  font-size: 1.3rem;
+.listfeaturedtag .card-title,
+.listrecent .card-title {
+  margin: 0;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.25;
 }
 
 .listfeaturedtag span.card-text,
@@ -492,6 +494,25 @@ blockquote {
   background-color: #fafafa;
   padding: 40px 0 46px;
   position: relative;
+}
+
+.card-body {
+  padding: 10px 20px;
+}
+
+.round-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  color: #00ab6b;
+  background: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .listrelated .card {
