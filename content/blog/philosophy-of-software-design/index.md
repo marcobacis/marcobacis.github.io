@@ -2,7 +2,7 @@
 title: "Book Summary: A Philosophy of Software Design"
 date: 2023-06-10T07:00:00+01:00
 publishdate: 2023-06-10T07:00:00+01:00
-tags: ["architecture", "books", "notes", summary"]
+tags: ["architecture", "books", "notes", "summary"]
 comments: true
 ---
 
