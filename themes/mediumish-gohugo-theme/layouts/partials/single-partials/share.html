@@ -6,6 +6,7 @@
         href="https://bsky.app/intent/compose?text={{ .Title }}%20{{ .Permalink }}"
         onclick="window.open(this.href, 'bluesky-share', 'width=550,height=435');return false;"
         title="Share on Bluesky"
+        class="hover-primary"
       >
         <i class="fab fa-bluesky"></i>
       </a>
@@ -17,6 +18,7 @@
         href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=435');return false;"
         title="Share on LinkedIn"
+        class="hover-primary"
       >
         <i class="fab fa-linkedin-in"></i>
       </a>
@@ -24,7 +26,11 @@
 
     {{ if .Params.comments }}
       <li>
-        <a class="small smoothscroll" href="#comments" title="Write a comment">
+        <a
+          class="smoothscroll hover-primary" 
+          href="#comments"
+          title="Write a comment"
+          >
           <i class="fas fa-comment"></i>
         </a>
       </li>

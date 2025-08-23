@@ -1,44 +1,27 @@
 <section class="text-center">
     {{ with .Site.Params.social.github }}
-    <a href="https://github.com/{{.}}"><i class="fab fa-github social-icon" aria-hidden="true"></i></a>
+    <a href="https://github.com/{{.}}"><i class="fab fa-github social-icon hover-primary" aria-hidden="true"></i></a>
     {{ end }}
 
 
     {{ with .Site.Params.social.linkedin }}
     &nbsp;
-    <a href="https://linkedin.com/in/{{.}}"><i class="fab fa-linkedin social-icon" aria-hidden="true"></i></a>
+    <a href="https://linkedin.com/in/{{.}}"><i class="fab fa-linkedin social-icon hover-primary" aria-hidden="true"></i></a>
     {{ end }}
 
     {{ with .Site.Params.social.youtube }}
     &nbsp;
-    <a href="https://www.youtube.com/@{{.}}"><i class="fab fa-youtube social-icon" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/@{{.}}"><i class="fab fa-youtube social-icon hover-primary" aria-hidden="true"></i></a>
     {{ end }}
 
     {{ with .Site.Params.social.bluesky }}
     &nbsp;
-    <a href="https://bsky.app/profile/{{.}}"><i class="fab fa-bluesky social-icon" aria-hidden="true"></i></a>
+    <a href="https://bsky.app/profile/{{.}}"><i class="fab fa-bluesky social-icon hover-primary" aria-hidden="true"></i></a>
     {{ end }}
-
-    {{ with .Site.Params.social.xing }}
-    &nbsp;
-    <a href="https://www.xing.com/profile/{{.}}"><i class="fab fa-xing social-icon" aria-hidden="true"></i></a>
-    {{ end }}
-
 
     {{ with .Site.Params.social.medium }}
     &nbsp;
-    <a href="https://www.medium.com/@{{.}}"><i class="fab fa-medium social-icon" aria-hidden="true"></i></a>
+    <a href="https://www.medium.com/@{{.}}"><i class="fab fa-medium social-icon hover-primary" aria-hidden="true"></i></a>
     {{ end }}
 
-
-    {{ with .Site.Params.social.twitter }}
-    &nbsp;
-    <a href="https://twitter.com/{{.}}"><i class="fab fa-twitter social-icon" aria-hidden="true"></i></a>
-    {{ end }}
-
-
-    {{ with .Site.Params.social.instagram }}
-    &nbsp;
-    <a href="https://www.instagram.com/{{.}}"><i class="fab fa-instagram social-icon" aria-hidden="true"></i></a>
-    {{ end }}
 </section>

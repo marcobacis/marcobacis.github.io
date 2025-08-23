@@ -405,9 +405,11 @@ blockquote {
 
 .share ul {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-left: 0;
   margin-left: 0;
+  gap: 1rem;
 }
 
 .share ul li i.fa {
@@ -427,9 +429,10 @@ blockquote {
   top: 100px;
 }
 
-@media (min-width: 1024px) {
-  .share ul li {
-    display: block;
+@media (min-width: 768px) {
+  .share ul {
+    gap: 0;
+    flex-direction: column;
   }
 }
 
@@ -949,4 +952,8 @@ iframe {
 
 .gap-5 {
   gap: 2rem;
+}
+
+.hover-primary:hover {
+  color: var(--primary-color);
 }
