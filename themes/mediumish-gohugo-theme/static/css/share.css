@@ -1,0 +1,54 @@
+.share {
+  text-align: center;
+}
+
+.share,
+.share a {
+  color: rgba(0, 0, 0, 0.44);
+  fill: rgba(0, 0, 0, 0.44);
+}
+
+.share p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.share ul li {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.share ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-left: 0;
+  gap: 1rem;
+}
+
+.share ul li i.fa {
+  border: 1px solid #ddd;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .share ul {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .share {
+    margin-top: 30px;
+  }
+}
+
+.sticky-top-offset {
+  top: 100px;
+}

@@ -1,0 +1,62 @@
+@import 'medium.css';
+@import 'additional.css';
+@import 'navbar.css';
+@import 'footer.css';
+@import 'pagination.css';
+@import 'share.css';
+@import 'utils.css';
+@import 'tags.css';
+@import 'post-single.css';
+
+:root {
+  --primary-color: #00ab6b;
+  --a-hover-color: #038252;
+  --btn-primary-bg: #1C9963;
+}
+
+
+a {
+  color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--a-hover-color);
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.main-content {
+  min-height: 300px;
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 71px;
+  transition: all 0.4s;
+}
+
+.container {
+  flex: 1 1 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}

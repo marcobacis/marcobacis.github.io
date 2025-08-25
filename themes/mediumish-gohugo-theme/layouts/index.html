@@ -21,11 +21,6 @@
         </section>
     </div>
     {{- partial "_shared/social.html" . -}}
-    {{ if isset .Site.Params.index "alertbar" }}
-    	{{ if .Site.Params.index.alertbar }}
-            {{- partial "_shared/alertbar.html" . -}}
-        {{ end }}
-    {{ end }}
 {{end}}
 
 {{ define "footer" }}

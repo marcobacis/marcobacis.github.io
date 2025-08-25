@@ -9,6 +9,7 @@ tags:
   - automapper
   - localization
 permalink: 2025-dotnet-enum-translation-expression
+comments: true
 ---
 
 

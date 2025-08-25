@@ -1,0 +1,76 @@
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+}
+
+.navbar {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-down {
+  opacity: 1;
+}
+
+.nav-up {
+  opacity: 0;
+  pointer-events: none; /* prevent interaction while hidden */
+}
+
+.mediumnavigation {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+  transition: top 0.2s ease-in-out;
+}
+
+.mediumnavigation .form-control {
+  font-size: 0.8rem;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  min-width: 180px;
+}
+
+.mediumnavigation .form-inline {
+  margin-left: 15px;
+}
+
+.mediumnavigation .form-inline .btn {
+  margin-left: -50px;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.mediumnavigation .form-inline .btn:hover,
+.mediumnavigation .form-inline .btn:active {
+  background: transparent;
+  color: green;
+}
+
+.mediumnavigation .navbar-brand {
+  font-weight: 500;
+}
+
+.mediumnavigation .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 0.5rem 0 0;
+}
+
+.mediumnavigation .nav-item,
+.dropdown-menu {
+  font-size: 0.9rem;
+}
+
+.mediumnavigation .search-icon {
+  margin-left: -40px;
+  display: inline-block;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.mediumnavigation .navbar-brand img {
+  max-height: 30px;
+  margin-right: 5px;
+}

@@ -13,7 +13,6 @@ enableGitInfo = true
   title = "Hello!"
   subtitle = "I'm Marco, an Italian software engineer"
   mdtext = ''''''
-  alertbar = true
 
 [params.author]
   name = "Marco Bacis"

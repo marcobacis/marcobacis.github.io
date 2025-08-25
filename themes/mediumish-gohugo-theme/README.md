@@ -96,9 +96,8 @@ googleAnalytics = "UA-1XXXXXXX1-X"
   mailprotect = "you can provide a protector-name here, see below"
   customCSS = ["css/tweaks.css", "css/customHeader.css"]
 ```
-`logo`: is displayed in titlebar and alertbar\
+`logo`: is displayed in titlebar\
 `description`: is displayed under title\
-`mailchimp` and `mailprotect`: provide links to a mailchimp-list and a mailchimp-protector id, the following screenshot should clarify. if not specified the alertbar for mail-subscription doesn't show up.
 `customCSS`: you can add paths to your own css files here to tweak and customize the css
 
 ![mailchimp-example](https://raw.githubusercontent.com/lgaida/mediumish-gohugo-theme/master/images/mailchimp.png)
@@ -121,7 +120,6 @@ googleAnalytics = "UA-1XXXXXXX1-X"
   mdtext = '''Currently trying to get this blog running, still don't know what the blog will be about!\
 **This textblock is a demonstration of the mdtext-param.**\
 ### This is a markdown heading'''
-  alertbar = true
 ```
 You can currently provide your username from `github`, `linkedin`, `xing`, `twitter`, `medium`. They will be displayed as icons on the landingpage.
 ```toml
