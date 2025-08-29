@@ -1,15 +1,6 @@
 {
   "books": [
     {
-      "author": "Byung-Chul Han",
-      "date_added": "2025-08-23",
-      "date_read": null,
-      "date_started": "2025-08-23",
-      "link": "https://www.goodreads.com/book/show/25467173-la-societ-della-stanchezza",
-      "pages": 68,
-      "title": "La società della stanchezza"
-    },
-    {
       "author": "Bruce A. Tate",
       "date_added": "2025-07-14",
       "date_read": null,
@@ -19,5 +10,5 @@
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     }
   ],
-  "lastmod": "2025-08-24T01:47:15.680371"
+  "lastmod": "2025-08-29T01:27:35.219526"
 }
