@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Gleam on Marco Bacis</title><link>https://marcobacis.devq/tags/gleam/</link><description>Recent content in Gleam on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis</copyright><lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.devq/tags/gleam/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Open Source contribution ever @ Open Source Saturday Milan</title><link>https://marcobacis.devq/blog/2024-feb-open-source-saturday/</link><pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.devq/blog/2024-feb-open-source-saturday/</guid><description>&lt;p&gt;Hi 👋 welcome to a new post!&lt;/p&gt;
-&lt;p&gt;Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first &lt;a href="https://www.meetup.com/open-source-saturday-milano/" target="_blank" &gt;Open Source Saturday Milan&lt;/a&gt;!&lt;/p&gt;</description><media:content url="https://marcobacis.devq/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.devq/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.devq/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" title="Open Source Initiative logo" alt="Open Source Initiative logo"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Gleam on Marco Bacis</title><link>https://marcobacis.dev/tags/gleam/</link><description>Recent content in Gleam on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis</copyright><lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.dev/tags/gleam/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Open Source contribution ever @ Open Source Saturday Milan</title><link>https://marcobacis.dev/blog/2024-feb-open-source-saturday/</link><pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.dev/blog/2024-feb-open-source-saturday/</guid><description>&lt;p&gt;Hi 👋 welcome to a new post!&lt;/p&gt;
+&lt;p&gt;Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first &lt;a href="https://www.meetup.com/open-source-saturday-milano/" target="_blank" &gt;Open Source Saturday Milan&lt;/a&gt;!&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" width="480" height="480" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" width="480" height="480"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/2024-feb-open-source-saturday/cover_hu_608c4a079962c93e.jpg" title="Open Source Initiative logo" alt="Open Source Initiative logo"/>
           <p>Hi 👋 welcome to a new post!</p>
 <p>Today I want to write a short post about my recent adventure with open source software, and in particular the experience at my very first <a href="https://www.meetup.com/open-source-saturday-milano/"  target="_blank" >Open Source Saturday Milan</a>!</p>
 <p>Open Source Saturday is an event held once a month, organised by <a href="https://github.com/gabrielelana"  target="_blank" >Gabriele</a>, <a href="https://github.com/fusillicode"  target="_blank" >Gianluca</a> and <a href="https://github.com/danielemegna"  target="_blank" >Daniele</a>. The format is simple: some nerds gather for the entire day in a specific place, and the goal is to contribute to open source!</p>
@@ -21,7 +21,7 @@
 <p>
 
 
-<img class="img-fluid image" src="https://marcobacis.devq/blog/2024-feb-open-source-saturday/./gleam_mascot.png" title="Gleam and its mascot, Lucy the star" alt="Gleam and its mascot, Lucy the star" />
+<img class="img-fluid image" src="https://marcobacis.dev/blog/2024-feb-open-source-saturday/./gleam_mascot.png" title="Gleam and its mascot, Lucy the star" alt="Gleam and its mascot, Lucy the star" />
 
 
 
@@ -38,7 +38,7 @@
 <p>
 
 
-<img class="img-fluid image" src="https://marcobacis.devq/blog/2024-feb-open-source-saturday/./first_pr_github.png" title="The right kind of dopamine hit" alt="The right kind of dopamine hit" />
+<img class="img-fluid image" src="https://marcobacis.dev/blog/2024-feb-open-source-saturday/./first_pr_github.png" title="The right kind of dopamine hit" alt="The right kind of dopamine hit" />
 
 
 
