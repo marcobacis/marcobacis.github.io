@@ -10,7 +10,7 @@ Hi 👋 welcome to a new post.
 
 Today I just want to share some comments about my trip to FOSDEM 2023. This blog is starting to look like a travel blog for meetups and conferences 😅… I promise I’ll post some programming (practical and not) content soon.
 
-As I already said in my [2022 review](https://marcobacis.com/blog/2022-a-review/), one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.
+As I already said in my [2022 review](https://marcobacis.dev/blog/2022-a-review/), one of my goals for 2023 is to attend more conferences and participate more in communities. I must say, I started the year in the right way 🤩.
 
 I decided to go to FOSDEM in December while talking to some people at the XPUG meetup. After hearing what the event was about, I immediately grabbed a friend and bought the plane tickets to go there!
 

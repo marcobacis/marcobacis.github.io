@@ -9,7 +9,7 @@ comments: true
 
 Hi 👋 and welcome to the last post of 2023!
 
-As already done [last year](https://marcobacis.com/blog/2022-a-review/), it’s time for a end-of-year recap!
+As already done [last year](https://marcobacis.dev/blog/2022-a-review/), it’s time for a end-of-year recap!
 
 I usually spend the last days of the year eating and laying on the couch (christmas is strong in italy) so don’t expect a long post.
 
@@ -21,7 +21,7 @@ First, a short check on the goals I wrote in my 2022 review:
 
 **❓Learn in public**
 
-I definitely tried to expose myself a little more and share what I learned in public. Some examples are my blog posts on books I read ([here](https://marcobacis.com/blog/atomic-habits-book/), [here](https://marcobacis.com/blog/philosophy-of-software-design/) and [here](https://marcobacis.com/blog/indistractable-book-summary/)), and the github repos for [Advent Of Code](https://github.com/marcobacis/adventofcode) and [Coding Challenges](https://github.com/marcobacis/coding-challenges).
+I definitely tried to expose myself a little more and share what I learned in public. Some examples are my blog posts on books I read ([here](https://marcobacis.dev/blog/atomic-habits-book/), [here](https://marcobacis.dev/blog/philosophy-of-software-design/) and [here](https://marcobacis.dev/blog/indistractable-book-summary/)), and the github repos for [Advent Of Code](https://github.com/marcobacis/adventofcode) and [Coding Challenges](https://github.com/marcobacis/coding-challenges).
 
 I left a question mark because I think I could have done more this year, and there’s room for improvement.
 
@@ -47,7 +47,7 @@ The year started with a long-running project finally coming to an end. We finish
 
 ![Sakura Trees Blooming](sakura.webp "Too many pictures to share...")
 
-From April to October I worked for [WeArt](https://weart.it/), a small startup inside e-Novia focusing on haptics for Virtual/Augmented reality. In particular, I worked on their low-level SDK (e.g. [improving the documentation](https://marcobacis.com/blog/docs-as-code-doxygen-awesome/)) and their Middleware software (a WinUI/UWP app to communicate with their device). 
+From April to October I worked for [WeArt](https://weart.it/), a small startup inside e-Novia focusing on haptics for Virtual/Augmented reality. In particular, I worked on their low-level SDK (e.g. [improving the documentation](https://marcobacis.dev/blog/docs-as-code-doxygen-awesome/)) and their Middleware software (a WinUI/UWP app to communicate with their device). 
 
 In WeArt I learned to be more proactive in my work. Being in a small, product-oriented startup shifted my actions from just doing what I was told (common in consulting firms) to actively thinking on how to improve the product itself (in my case, the SDK and Middleware).
 
@@ -81,11 +81,11 @@ This year I finally got the courage to get out and attend some conferences and m
 Here’s the list of conferences I attended in 2023:
 
 - [CodeGen](https://cloudgen.it/codegen/) - Verona
-- [FOSDEM](https://archive.fosdem.org/2023/) - Bruxelles → [My Experience](https://marcobacis.com/blog/2023-my-fosdem-experience/)
+- [FOSDEM](https://archive.fosdem.org/2023/) - Bruxelles → [My Experience](https://marcobacis.dev/blog/2023-my-fosdem-experience/)
 - [Web Day 2023](https://www.ugidotnet.org/e/3087/Web-Day-2023) - Online
 - [Agile Venture](https://agilemovement.it/venture/2023/pordenone/) - Pordenone
-- [Working Software Conference](https://www.agilemovement.it/workingsoftware/index.html) - Milan → [My Experience](https://marcobacis.com/blog/working-software-2023/)
-- [SoCraTeS](https://www.socrates-conference.it/) - Rimini → [My Experience](https://marcobacis.com/blog/socrates-2023/)
+- [Working Software Conference](https://www.agilemovement.it/workingsoftware/index.html) - Milan → [My Experience](https://marcobacis.dev/blog/working-software-2023/)
+- [SoCraTeS](https://www.socrates-conference.it/) - Rimini → [My Experience](https://marcobacis.dev/blog/socrates-2023/)
 - [Codemotion](https://conferences.codemotion.com/milan2023-live/) - Milan
 - [Italian Agile Days](https://www.agileday.it/) - Milan
 
@@ -117,7 +117,7 @@ This year I read a bit less than last year (28 books instead of 32). Here’s th
 - *Matematica Rock* by Paolo Alessandrini
 - *Decision-making for Software Development Teams* by Francesco Strazzullo
 - *Less is more: sull’arte di non avere niente* by Salvatore La Porta
-- *Indistractable* by Nir Eyal (my review [here](https://marcobacis.com/blog/indistractable-book-summary/))
+- *Indistractable* by Nir Eyal (my review [here](https://marcobacis.dev/blog/indistractable-book-summary/))
 - *Le coordinate della felicità* by Gianluca Gotto
 - *The Elegant Universe* by Brian Greene
 - *Developer Hegemony* by Erik Dietrich

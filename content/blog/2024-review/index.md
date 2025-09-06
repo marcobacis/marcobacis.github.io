@@ -11,7 +11,7 @@ date: 2024-12-28
 thumbnaildesc: 'Cover by [@helloimnik](http://unsplash.com/helloimnik) on Unsplash.'
 ---
 
-Hi 👋 and welcome to the usual end-of-year recap! Right before Christmas, I take some time to reflect on the year that has passed, and write some observations here on the blog ([2022](https://marcobacis.com/blog/2022-a-review/), [2023](https://marcobacis.com/blog/2023-review/)).
+Hi 👋 and welcome to the usual end-of-year recap! Right before Christmas, I take some time to reflect on the year that has passed, and write some observations here on the blog ([2022](https://marcobacis.dev/blog/2022-a-review/), [2023](https://marcobacis.dev/blog/2023-review/)).
 
 This time it's not different, so let's start!
 
@@ -69,15 +69,15 @@ I must say, I miss the office a bit. Trento is not so far from my hometown, but 
 My goal for 2024 was to write at least 20 posts, or even better to begin posting every two weeks. I definitely didn't reach that goal 😅.
 
 This year I published 9 posts (+ this one you are reading):
-- [My Experience at the Italian Agile Days 2023](https://marcobacis.com/blog/2023-italian-agile-days/)
-- [Milan XPUG January Meetup: My Advice on Microservices Architecture, by Gabriele Lana](https://marcobacis.com/blog/xpug-milan-meetup-microservices/)
-- [My First Open Source contribution ever @ Open Source Saturday Milan](https://marcobacis.com/blog/2024-feb-open-source-saturday/)
-- [Show your Work!](https://marcobacis.com/blog/show-your-work-book/)
-- [Polenta & Deploy 2024](https://marcobacis.com/blog/2024-polenta-and-deploy/)
-- [Let's build a Load Balancer in Rust - Part 1](https://marcobacis.com/blog/load-balancer-rust-1/)
-- [Let's build a Load Balancer in Rust - Part 2](https://marcobacis.com/blog/load-balancer-rust-2/)
-- [Let's build a Load Balancer in Rust - Part 3](https://marcobacis.com/blog/load-balancer-rust-3/)
-- [Update Conference 2024 Journal](https://marcobacis.com/blog/2024-update-conference/)
+- [My Experience at the Italian Agile Days 2023](https://marcobacis.dev/blog/2023-italian-agile-days/)
+- [Milan XPUG January Meetup: My Advice on Microservices Architecture, by Gabriele Lana](https://marcobacis.dev/blog/xpug-milan-meetup-microservices/)
+- [My First Open Source contribution ever @ Open Source Saturday Milan](https://marcobacis.dev/blog/2024-feb-open-source-saturday/)
+- [Show your Work!](https://marcobacis.dev/blog/show-your-work-book/)
+- [Polenta & Deploy 2024](https://marcobacis.dev/blog/2024-polenta-and-deploy/)
+- [Let's build a Load Balancer in Rust - Part 1](https://marcobacis.dev/blog/load-balancer-rust-1/)
+- [Let's build a Load Balancer in Rust - Part 2](https://marcobacis.dev/blog/load-balancer-rust-2/)
+- [Let's build a Load Balancer in Rust - Part 3](https://marcobacis.dev/blog/load-balancer-rust-3/)
+- [Update Conference 2024 Journal](https://marcobacis.dev/blog/2024-update-conference/)
 
 Two of them (IAD 2023 and "Show your work") were actually written in part in 2023, so this brings the gran total to 7 new posts written in 2024...less than once a month!!
 
@@ -133,15 +133,15 @@ I'm sorry for not finishing them, and most of all the book from Uberto (*From Ob
 
 This year I continued the trend started in 2023 of going to conferences and meetups near me. I love participating in these events, as they allow to both keep updated on new technologies and to meet new people and old friends.
 
-Thanks to Zupit, this year I was also able to attend an international conference on .NET (spoiler: I already bought the ticket for next year 😝). It was a great way to breathe some international air, meet the Prague .NET community and update my knowledge of .NET and related stuff. I also [wrote](https://marcobacis.com/blog/2024-update-conference/) about the conference.
+Thanks to Zupit, this year I was also able to attend an international conference on .NET (spoiler: I already bought the ticket for next year 😝). It was a great way to breathe some international air, meet the Prague .NET community and update my knowledge of .NET and related stuff. I also [wrote](https://marcobacis.dev/blog/2024-update-conference/) about the conference.
 
 As usual, here's the list of conferences and meetups I attended in 2024
 Conferences (and unconferences):
 - [Codegen 2024](https://cloudgen.it/codegen-2024/)
-- Polenta & Deploy unconference - [Journal](https://marcobacis.com/blog/2024-polenta-and-deploy/)
+- Polenta & Deploy unconference - [Journal](https://marcobacis.dev/blog/2024-polenta-and-deploy/)
 - [Web Day 2024](https://www.webdayconf.it/2024)
 - [Working Software Conference](https://www.agilemovement.it/workingsoftware/)
-- [Update Conference Prague](https://www.updateconference.net/) - [Journal](https://marcobacis.com/blog/2024-update-conference/) 
+- [Update Conference Prague](https://www.updateconference.net/) - [Journal](https://marcobacis.dev/blog/2024-update-conference/) 
 
 Meetups:
 - [XPUG Bergamo](https://www.linkedin.com/company/xpug-bergamo/)
@@ -154,7 +154,7 @@ Meetups:
 
 A nice addition to the list of meetups is the XPUG groups in Milan and Trento: while Milan is a destination near me, the Trento group was created this year, and I was able to participate to their meetups and also go the office the day before/after. Two birds with a stone!
 
-For next year, I plan to attend at least the same events as 2024, with the addition of FOSDEM (as I did in [2023](https://marcobacis.com/blog/2023-my-fosdem-experience/)) and other Unconferences (like [SoCraTes](https://www.socrates-conference.it/)), which I didn't attend this time because I was in another continent (🇯🇵, see below).
+For next year, I plan to attend at least the same events as 2024, with the addition of FOSDEM (as I did in [2023](https://marcobacis.dev/blog/2023-my-fosdem-experience/)) and other Unconferences (like [SoCraTes](https://www.socrates-conference.it/)), which I didn't attend this time because I was in another continent (🇯🇵, see below).
 
 ## Personal Life
 

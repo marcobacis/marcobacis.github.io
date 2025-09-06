@@ -2,7 +2,7 @@
 
 Hi! 👋
 
-This is the repository for my personal website, [marcobacis.com](https://marcobacis.com/).
+This is the repository for my personal website, [marcobacis.dev](https://marcobacis.dev/).
 
 The website is built with [Hugo](gohugo.io) and the [mediumish-gohugo theme](https://github.com/lgaida/mediumish-gohugo-theme). I added some customizations (e.g. improved the rss feed, figures, added captions and some blog page parameters etc...).
 

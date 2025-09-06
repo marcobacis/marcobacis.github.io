@@ -10,7 +10,7 @@ Hi 👋 and welcome to a new post!
 
 Today I’m writing a summary of my experience at the Italian Agile Days 2023.
 
-I already wrote about the 2022 edition [here](https://marcobacis.com/blog/2022-italian-agile-days/) and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.
+I already wrote about the 2022 edition [here](https://marcobacis.dev/blog/2022-italian-agile-days/) and, just like last time, I’m writing this summary 2 months after the event…but let’s not worry about this short delay.
 
 This year, the event was organised at the Politecnico di Milano campus. I graduated there about 4 years ago, so it was a great occasion to return there! I got to see how the campus changed, and I met some old friends (at [NECSTLab](https://necst.it/)) who stayed for their PhD.
 
@@ -20,7 +20,7 @@ Let’s start 💪
 
 The first day was dedicated to the unconference. An unconference (also called open space) is an event in which the agenda and the sessions are decided by the participants at the beginning of the day.
 
-This was the second unconference I ever attended (after SoCraTes, which I described [here](https://marcobacis.com/blog/socrates-2023/)), and I must admit that I’m starting to get addicted! They are a great way to get inspired and they cover a lot of themes and topics (less $$$ spent attending distinct conferences 😜).
+This was the second unconference I ever attended (after SoCraTes, which I described [here](https://marcobacis.dev/blog/socrates-2023/)), and I must admit that I’m starting to get addicted! They are a great way to get inspired and they cover a lot of themes and topics (less $$$ spent attending distinct conferences 😜).
 
 ![](iad_unconference_marketplace.webp "Friday’s unconference agenda")
 

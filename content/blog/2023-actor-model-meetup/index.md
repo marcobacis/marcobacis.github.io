@@ -10,7 +10,7 @@ Hi 👋 welcome!
 
 This post is a short summary (with personal notes and opinions here and there) of the XPUGBg (Bergamo’s eXtreme Programming User Group) meetup I attended in March.
 
-Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did [here](http://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/) and [here](http://marcobacis.com/blog/2023-jan-xp-codebase-meetup/)).
+Actually, it’s just a bunch of notes and ideas connected together by my imagination and opinions 😂 (as I already did [here](http://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/) and [here](http://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/)).
 
 This month's talk was titled “*The Actor Model and why an XP programmer should know it*” by Emanuele DelBono.
 

@@ -44,7 +44,7 @@ Tactical programming focuses only on working software. “If it works it’s ok,
 
 Strategic programming is the solution to increasing complexity. The primary goal of strategic programming is to *produce a great design, which also happens to work*. It can be seen as an investment in the quality of software, which over time will avoid complexity and allow to ship features fast and lower development costs.
 
-Some modern software trends (such as Agile and TDD) expose to the risk of tactical programming, by proposing an iterative approach and focusing on features instead of abstractions. When working in an iterative approach it is then important to focus on **abstractions** instead of single features/modules/methods, and outside-in design might be a possible solution (my take on the argument at least, read more [here](https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/)).
+Some modern software trends (such as Agile and TDD) expose to the risk of tactical programming, by proposing an iterative approach and focusing on features instead of abstractions. When working in an iterative approach it is then important to focus on **abstractions** instead of single features/modules/methods, and outside-in design might be a possible solution (my take on the argument at least, read more [here](https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/)).
 
 ## Modular Design
 

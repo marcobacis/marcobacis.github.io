@@ -34,7 +34,7 @@ In the first meetup, the main goal was to get to know each other and practice to
 
 In mob programming, one person (the driver) writes the code on a PC while the others (the mob) discuss what to implement and how. The discussion is moderated by a navigator, who is the person actually telling the driver what to do.
 
-We practiced the [Roman numerals](https://codingdojo.org/kata/RomanNumerals/) kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called *fishbowl*, in which a small group is in the mob while the rest of the audience watches (already described in [this post](https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/) about another XPUG meetup).
+We practiced the [Roman numerals](https://codingdojo.org/kata/RomanNumerals/) kata using mob programming and test-driven development. Given that there were too many people for a structured discussion, we used a method called *fishbowl*, in which a small group is in the mob while the rest of the audience watches (already described in [this post](https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/) about another XPUG meetup).
 
 The mob members and the navigator rotate from the audience, with a set time. Basically, if anyone had something to say or discuss about the task, they “patiently” waited for their turn 😅
 

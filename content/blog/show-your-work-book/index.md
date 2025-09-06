@@ -62,7 +62,7 @@ Documenting the process is not only a way to share the work, but also to think a
 
 The third advice Austin gives us is to “share something small every day”. Small means updates on an ongoing project, inspirations, notes, sketches and whatever comes out of your work process.
 
-Focusing on every single day helps in creating a habit (see [Atomic Habits](https://marcobacis.com/blog/atomic-habits-book/)) and allows to create a bond with other people. Over the years, all of this shared collection will become a piece of work itself.
+Focusing on every single day helps in creating a habit (see [Atomic Habits](https://marcobacis.dev/blog/atomic-habits-book/)) and allows to create a bond with other people. Over the years, all of this shared collection will become a piece of work itself.
 
 To share something every day, we can use **both** social media and a personal website. Social media is helpful in creating daily updates and sharing to a larger audience, while a website is our own personal space in which to put all our ideas, progresses and results.
 

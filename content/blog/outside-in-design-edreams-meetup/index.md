@@ -12,7 +12,7 @@ In my 2022 review, I said that one of my goals for 2023 was to participate more 
 
 For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.
 
-You may already have heard of “Outside-In Design” on this blog [before](https://marcobacis.com/blog/2022-dec-mars-rover-kata-meetup/). Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.
+You may already have heard of “Outside-In Design” on this blog [before](https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/). Sandro’s talk follows the same philosophy and extends it not only to code but to the entire business and product decisions made before coding even begin.
 
 *Disclaimer: I will share some notes/brief recap of the talk given by Sandro. It’s by no means a complete transcription and may contain my own interpretation of what was said. Go watch his past talks (e.g. [here](https://www.youtube.com/watch?v=VSkDu5YgAh4)) for the real deal!*
 

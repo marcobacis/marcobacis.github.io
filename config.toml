@@ -1,4 +1,4 @@
-baseURL = "https://marcobacis.com/"
+baseURL = "https://marcobacis.devq/"
 languageCode = "en-uk"
 title = "Marco Bacis"
 theme = "mediumish-gohugo-theme"
@@ -23,7 +23,7 @@ enableGitInfo = true
   github = "marcobacis"
   linkedin = "marcobacis"
   youtube = "marcobacis-dev"
-  bluesky = "marcobacis.com"
+  bluesky = "marcobacis.dev"
 
 [params]
   description= "The personal website of Marco Bacis, a passionate Software Engineer from Italy" 

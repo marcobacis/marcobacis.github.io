@@ -42,7 +42,7 @@ Mastering our internal triggers means understanding and knowing the root causes 
 
 - Find the root cause of your distraction (hint: it's usually something uncomfortable you are doing or experiencing!)
 - Practice mindfulness: observe and let the negative emotionand the discomfort dissolve, without judging. Write it down and pay attention to it
-- Reimagine both the *task* (make it fun, as explained in *[Atomic Habits](https://marcobacis.com/blog/atomic-habits-book/)*) and *yourself* (willpower does not go away, and you can practice self-compassion when pulled away by distractions)
+- Reimagine both the *task* (make it fun, as explained in *[Atomic Habits](https://marcobacis.dev/blog/atomic-habits-book/)*) and *yourself* (willpower does not go away, and you can practice self-compassion when pulled away by distractions)
 
 ### 2. Make time for traction
 

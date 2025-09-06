@@ -14,7 +14,7 @@ Hi  👋 welcome to a new post!
 
 This is the third (and last?) part of the series "let's build a load balancer in rust".
 
-In the [first post](https://marcobacis.com/blog/load-balancer-rust-1/) we saw how to forward a single request to an upstream server, using [Actix](https://actix.rs/) and [Reqwest](https://docs.rs/reqwest/latest/reqwest/). Then, we implemented a simple round-robin strategy in the [second post](https://marcobacis.com/blog/load-balancer-rust-2/) . 
+In the [first post](https://marcobacis.dev/blog/load-balancer-rust-1/) we saw how to forward a single request to an upstream server, using [Actix](https://actix.rs/) and [Reqwest](https://docs.rs/reqwest/latest/reqwest/). Then, we implemented a simple round-robin strategy in the [second post](https://marcobacis.dev/blog/load-balancer-rust-2/) . 
 
 In this last part, we are going to integrate a simple health check into our load balancer, to avoid sending requests to unavailable upstream servers!
 

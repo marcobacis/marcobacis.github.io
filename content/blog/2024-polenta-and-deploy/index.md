@@ -44,7 +44,7 @@ After a long night of sleep (about 5 hours), it was time for the main dish of th
 
 We all gathered in the hotel hall and kicked off the *marketplace*. Like in every open space I attend, I stayed back and didn't proposed anything, observing the others discuss where to put their session. I know I'm not getting the most out of the event by not proposing a discussion, session or even just sharing a question I have. I'm still looking for compelling or "unique" enough not already covered by the other sessions!
 
-I already explained what is an open space [here](https://marcobacis.com/blog/socrates-2023/): the core idea is to let the participants choose what, when and where to talk, by creating a neverending "coffee-break".
+I already explained what is an open space [here](https://marcobacis.dev/blog/socrates-2023/): the core idea is to let the participants choose what, when and where to talk, by creating a neverending "coffee-break".
 
 Here's a (brief) list of the sessions I attended (some for full, others briefly):
 
@@ -130,7 +130,7 @@ I made a good choice staying at the hotel for the unconference... the *small* hi
 
 We ate the last polenta, and as the rain started to fall and replace the snow around us, it reminded us it was time to go home.
 
-This Polenta & Deploy was great. I already had my unconference initiation at [SoCraTes](https://marcobacis.com/blog/socrates-2023/), and I firmly believe this format is way better than any standard conference.
+This Polenta & Deploy was great. I already had my unconference initiation at [SoCraTes](https://marcobacis.dev/blog/socrates-2023/), and I firmly believe this format is way better than any standard conference.
 
 An unconference offers a safe, intimate space where everyone can share their opinions, provide feedback, and support others. Being surrounded by the Trentino mountains was the cherry on top for me. While I'm not particularly happy to hike on them (too hard!), I do love being in the mountains and spending time with like-minded people, so this was an incredible opportunity.
 

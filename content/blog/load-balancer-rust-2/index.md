@@ -11,7 +11,7 @@ summary: "This is the second part of the \"Build your own load balancer in rust\
 
 Hi  👋 welcome to a new post! This is the second part of the series "Let's build a Load Balancer in rust".
 
-In the [first post](https://marcobacis.com/blog/load-balancer-rust-1/) we saw how to forward a single request to an upstream server, using [Actix](https://actix.rs/) and [Reqwest](https://docs.rs/reqwest/latest/reqwest/).
+In the [first post](https://marcobacis.dev/blog/load-balancer-rust-1/) we saw how to forward a single request to an upstream server, using [Actix](https://actix.rs/) and [Reqwest](https://docs.rs/reqwest/latest/reqwest/).
 
 Today we'll see how to implement a round-robin policy, to forward our requests to multiple backends!
 
@@ -308,7 +308,7 @@ Now we have a round robin policy and the test passes. We can also replace the `S
 
 ## Conclusions
 
-This is the end of Part 2. We cleaned up the load balancer code from [Part 1](https://marcobacis.com/blog/load-balancer-rust-1/), and added a simple Round-Robin policy to balance the load among multiple upstream servers. The code for this part can be found [here](https://gist.github.com/marcobacis/477191a3b908c27fd334137cf4b5ee1d).
+This is the end of Part 2. We cleaned up the load balancer code from [Part 1](https://marcobacis.dev/blog/load-balancer-rust-1/), and added a simple Round-Robin policy to balance the load among multiple upstream servers. The code for this part can be found [here](https://gist.github.com/marcobacis/477191a3b908c27fd334137cf4b5ee1d).
 
 Still, the [coding challenge](https://codingchallenges.fyi/challenges/challenge-load-balancer) is not finished....the final step will be to periodically health check the upstream servers, in order to not forward the requests to the unavailable ones.
 
