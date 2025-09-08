@@ -1,15 +1,6 @@
 {
   "books": [
     {
-      "author": "Simone Guida",
-      "date_added": "2025-08-31",
-      "date_read": null,
-      "date_started": "2025-08-31",
-      "link": "https://www.goodreads.com/book/show/232357700-l-inganno-dei-confini",
-      "pages": null,
-      "title": "L’inganno dei confini: Come la geografia governa il mondo"
-    },
-    {
       "author": "Tim McNamara",
       "date_added": "2025-08-31",
       "date_read": null,
@@ -28,5 +19,5 @@
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     }
   ],
-  "lastmod": "2025-09-01T01:49:14.683373"
+  "lastmod": "2025-09-08T01:38:02.406008"
 }
