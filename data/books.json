@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "author": "Kerry Patterson",
+      "date_added": "2025-09-13",
+      "date_read": null,
+      "date_started": "2025-09-13",
+      "link": "https://www.goodreads.com/book/show/15014.Crucial_Conversations",
+      "pages": 240,
+      "title": "Crucial Conversations: Tools for Talking When Stakes are High"
+    },
+    {
       "author": "Tim McNamara",
       "date_added": "2025-08-31",
       "date_read": null,
@@ -19,5 +28,5 @@
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     }
   ],
-  "lastmod": "2025-09-08T01:38:02.406008"
+  "lastmod": "2025-09-14T01:37:24.240768"
 }
