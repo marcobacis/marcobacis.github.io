@@ -33,6 +33,7 @@
 </ul>
 <p>I still missed a lot of features that I&rsquo;m going to explore next (e.g., <code>slices</code>, <code>comptime</code>, <code>async/await</code>, and the entire standard library), but I think that for my first day of Zig, there was enough!</p>
 <p>At the end of the day, we shared our impressions. Some people gave demos, others shared their opinions or talked about their current projects. At the end, Loris showed us a project he&rsquo;s currently working on: <a href="https://github.com/kristoff-it/superhtml"  target="_blank" >SuperHTML</a>, an LSP for HTML! I discovered how much I DON&rsquo;T know about HTML, and that the web stack is a dark, incoherent platform&hellip;</p>
+<p><em>Update: you can find the final round of presentations on the Zig Day Milano channel (<a href="https://youtu.be/K6ULgtdj1Yg"  target="_blank" >youtube</a> in italian). I didn&rsquo;t present because I just did exercises, nothing much to show 😅</em></p>
 <p>So&hellip; that was my Saturday. I hope to have more Saturdays like this 😀</p>
 <p>See you next time!</p>
 
