@@ -63,6 +63,8 @@ I still missed a lot of features that I'm going to explore next (e.g., `slices`,
 
 At the end of the day, we shared our impressions. Some people gave demos, others shared their opinions or talked about their current projects. At the end, Loris showed us a project he's currently working on: [SuperHTML](https://github.com/kristoff-it/superhtml), an LSP for HTML! I discovered how much I DON'T know about HTML, and that the web stack is a dark, incoherent platform...
 
+*Update: you can find the final round of presentations on the Zig Day Milano channel ([youtube](https://youtu.be/K6ULgtdj1Yg) in italian). I didn't present because I just did exercises, nothing much to show 😅*
+
 So... that was my Saturday. I hope to have more Saturdays like this 😀
 
 See you next time!
