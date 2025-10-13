@@ -128,3 +128,19 @@ blockquote {
   font-style: italic;
   color: #505050;
 }
+
+table {
+  margin-bottom: 1.5rem;
+}
+
+td .image {
+  margin-bottom: 0;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.image::before(figcaption) {
+  margin-bottom: 0;
+}
