@@ -7,7 +7,8 @@
 <h3 id="zig">Zig?</h3>
 <p>What is Zig?</p>
 <blockquote>
-<p>Zig is a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.</p></blockquote>
+<p>Zig is a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.</p>
+</blockquote>
 <p>Zig is basically C&hellip; but simpler, more powerful, and I would say prettier too. It sits alongside other low-level languages such as Rust and Go, with a simpler philosophy for control flow, memory management, and project structure.</p>
 <p>See the <a href="https://ziglang.org/"  target="_blank" >official website</a> to know more (I wanted to include a sample zig program showcasing all the main features, but I don&rsquo;t know it enough 😅 not even to force a LLM to create it for me).</p>
 <h3 id="event-journal">Event Journal</h3>

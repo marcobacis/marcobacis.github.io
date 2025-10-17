@@ -305,7 +305,8 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
 <p>On every day of the Open Space, the participants gather to propose and decide the daily agenda: everyone can propose a talk, workshop, discussion, or any other type of activity (even a walking discussion on the beach 😎 or a party game). After the proposals, it&rsquo;s time for the <strong>marketplace</strong>: everyone can ask the session organizer to move the session (to a different time and location) or to change/expand the topic. The important thing is that only the one who proposed the session can change it!</p>
 <p>After the marketplace has ended and the agenda is ready, the unconference can start. During the event, there is only one rule to follow, called the &ldquo;rule of two feet&rdquo;:</p>
 <blockquote>
-<p>If you are not contributing or adding value to the session, you can move elsewhere freely.</p></blockquote>
+<p>If you are not contributing or adding value to the session, you can move elsewhere freely.</p>
+</blockquote>
 <p>This rule is not confined to the pre-defined sessions. Participants can move between sessions, stay in common areas, or look for other people to start impromptu activities! That&rsquo;s the beauty of the open space format.</p>
 <p>Given that they can freely move during the event, participants usually divide into two categories:</p>
 <ul>
@@ -504,12 +505,14 @@ I didn’t take any notes because I couldn’t stop laughing during the session 
         ]]></content:encoded></item><item><title>Working Software Conference 2023</title><link>https://marcobacis.dev/blog/working-software-2023/</link><pubDate>Sun, 02 Jul 2023 18:00:00 +0100</pubDate><guid>https://marcobacis.dev/blog/working-software-2023/</guid><description>&lt;p&gt;Hi 👋 and welcome to a new post!&lt;/p&gt;
 &lt;p&gt;Last Friday I attended the 2023 &lt;a href="https://www.agilemovement.it/workingsoftware/" target="_blank" &gt;Working Software Conference&lt;/a&gt; in Milan. The Working Software Conference is an event organised by the &lt;a href="https://agilemovement.it" target="_blank" &gt;Italian Agile Movement&lt;/a&gt;, focused on the second principle of the &lt;a href="https://agilemanifesto.org" target="_blank" &gt;agile manifesto&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Working software over comprehensive documentation&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;</description><media:content url="https://marcobacis.dev/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
+&lt;p&gt;&lt;em&gt;Working software over comprehensive documentation&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description><media:content url="https://marcobacis.dev/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" width="480" height="360"/></media:content><content:encoded><![CDATA[
         <img src="https://marcobacis.dev/blog/working-software-2023/cover_hu_f30add62b490502f.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>Last Friday I attended the 2023 <a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a> in Milan. The Working Software Conference is an event organised by the <a href="https://agilemovement.it"  target="_blank" >Italian Agile Movement</a>, focused on the second principle of the <a href="https://agilemanifesto.org"  target="_blank" >agile manifesto</a>:</p>
 <blockquote>
-<p><em>Working software over comprehensive documentation</em></p></blockquote>
+<p><em>Working software over comprehensive documentation</em></p>
+</blockquote>
 <p>The meaning of this principle is that we should focus on delivering value (the working software) to the user instead of writing extensive specification documents (a.k.a. “wasting time”, as all the requirements and documentation will need to be adapted to change in a very short time).</p>
 <p>The conference contained a mixture of front sessions and workshops.
 In particular, I attended two workshops, one in the morning and one in the afternoon. In this post I present a small summary and comment of the two workshops, with some considerations at the end.</p>
