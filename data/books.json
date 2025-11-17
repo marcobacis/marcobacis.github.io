@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "author": "Shelley Benhoff",
+      "date_added": "2025-11-16",
+      "date_read": null,
+      "date_started": "2025-11-16",
+      "link": "https://www.goodreads.com/book/show/203830996-lead-developer-career-guide",
+      "pages": 325,
+      "title": "Lead Developer Career Guide"
+    },
+    {
       "author": "José Saramago",
       "date_added": "2025-10-30",
       "date_read": null,
@@ -28,5 +37,5 @@
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     }
   ],
-  "lastmod": "2025-10-31T01:38:28.949092"
+  "lastmod": "2025-11-17T01:41:59.719893"
 }
