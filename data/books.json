@@ -1,6 +1,15 @@
 {
   "books": [
     {
+      "author": "Terry Pratchett",
+      "date_added": "2025-12-06",
+      "date_read": null,
+      "date_started": "2025-12-06",
+      "link": "https://www.goodreads.com/book/show/222258145-il-ciclo-di-scuotivento",
+      "pages": 684,
+      "title": "Il Ciclo di Scuotivento"
+    },
+    {
       "author": "Shelley Benhoff",
       "date_added": "2025-11-16",
       "date_read": null,
@@ -28,5 +37,5 @@
       "title": "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     }
   ],
-  "lastmod": "2025-11-28T01:39:33.644675"
+  "lastmod": "2025-12-07T01:51:41.844139"
 }
