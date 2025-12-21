@@ -84,21 +84,21 @@
 <p>Before starting with the round-robin implementation, lets tidy up a bit the code from the first part. The first thing to do is to improve the test we wrote!</p>
 <p>In the test, we create the load balancer server and wait for it to start up with a simple `sleep´</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Wait for the server to be up (will fix this later)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
 </span></span></code></pre></div><p>Well, let&rsquo;s fix this and create a function to wait for the server to start!</p>
 <p>For now, we&rsquo;ll assume that the load balancer is up when the web server itself starts. To do so, we can add a healthcheck endpoint simply with actix:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span></span><span style="display:flex;"><span>HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
 </span></span><span style="display:flex;"><span>	App::new()
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Healthcheck endpoint always returning 200 OK
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		.route(<span style="color:#e6db74">&#34;/health&#34;</span>, web::get().to(HttpResponse::Ok))
+</span></span></span><span style="display:flex;"><span>		.route(<span style="color:#e6db74">&#34;/health&#34;</span>, web::get().to(HttpResponse::Ok))
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Handler to forward request (from first part)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		.default_service(web::to(Self::handler))
+</span></span></span><span style="display:flex;"><span>		.default_service(web::to(Self::handler))
 </span></span><span style="display:flex;"><span>		.app_data(data.clone())
 </span></span><span style="display:flex;"><span>	})
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...
@@ -131,38 +131,38 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SafeRoutingPolicy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> Sync <span style="color:#f92672">+</span> Send;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// add policy to the load balancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LoadBalancer</span> {
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LoadBalancer</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	data: <span style="color:#a6e22e">Data</span><span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>
+</span></span></span><span style="display:flex;"><span>	data: <span style="color:#a6e22e">Data</span><span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// add policy to the app state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	policy: Box<span style="color:#f92672">&lt;</span>SafeRoutingPolicy<span style="color:#f92672">&gt;</span>,
+</span></span></span><span style="display:flex;"><span>	policy: Box<span style="color:#f92672">&lt;</span>SafeRoutingPolicy<span style="color:#f92672">&gt;</span>,
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>,data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,bytes: <span style="color:#a6e22e">web</span>::Bytes) -&gt; Result<span style="color:#f92672">&lt;</span>HttpResponse, Error<span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Here we grab the next server host from the policy
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.policy.next(<span style="color:#f92672">&amp;</span>req).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.policy.next(<span style="color:#f92672">&amp;</span>req).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... forward the request etc
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice the type alias <code>SafeRoutingPolicy</code>, which has also the <code>Send</code> and <code>Sync</code> trait. Why do we need them? The policy is stored in the shared app state, which may be accessed by multiple threads (actix can run the handler method on different threads).</p>
 <p>The <code>actix_web::web::Data</code> struct is a wrapper around an <code>Arc</code>, which allows to access the structure from multiple threads. However, that doesn&rsquo;t mean that the fields (e.g. the policy) are thread safe! This is also recalled by the compiler, which gives us a nice error if we don&rsquo;t require the policy to be <code>Sync + Send</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>error[E0277]: <span style="color:#960050;background-color:#1e0010">`</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#960050;background-color:#1e0010">`</span> cannot be shared between threads safely
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span>-&gt; <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span>lib.rs:<span style="color:#ae81ff">45</span>:<span style="color:#ae81ff">25</span>
 </span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>	  <span style="color:#75715e">// ... code
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   
+</span></span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span><span style="color:#f92672">=</span> help: <span style="color:#a6e22e">the</span> <span style="color:#66d9ef">trait</span> <span style="color:#960050;background-color:#1e0010">`</span>Sync<span style="color:#960050;background-color:#1e0010">`</span> is not implemented <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">=</span> note: <span style="color:#a6e22e">required</span> <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>Unique<span style="color:#f92672">&lt;</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">`</span> to implement <span style="color:#960050;background-color:#1e0010">`</span>Sync<span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>note: <span style="color:#a6e22e">required</span> because it appears within the <span style="color:#66d9ef">type</span> <span style="color:#960050;background-color:#1e0010">`</span>Box<span style="color:#f92672">&lt;</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// ..Box
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   
+</span></span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span>-&gt; <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span>lib.rs:<span style="color:#ae81ff">22</span>:<span style="color:#ae81ff">8</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">22</span>  <span style="color:#f92672">|</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
@@ -229,12 +229,12 @@
 </span></span><span style="display:flex;"><span>	.<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... same for mock server 2 and 3, returning a different number
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mock_uris: Vec<span style="color:#f92672">&lt;</span>_<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> mocks.iter().map(<span style="color:#f92672">|</span>mock<span style="color:#f92672">|</span> mock.uri()).collect();
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Spawn load balancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(mock_uris.clone()));
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(mock_uris.clone()));
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8082</span>, policy);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
@@ -242,7 +242,7 @@
 </span></span><span style="display:flex;"><span>	wait_server_up(<span style="color:#f92672">&amp;</span>client, <span style="color:#f92672">&amp;</span>server_uri, <span style="color:#ae81ff">3</span>).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Send requests, expect to respond in round robin (1,2,3,1)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>	
@@ -280,11 +280,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> RoutingPolicy <span style="color:#66d9ef">for</span> RoundRobinPolicy {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Read servers list
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
+</span></span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> max_server_idx <span style="color:#f92672">=</span> servers.len() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>	  
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Update index
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
+</span></span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
 </span></span><span style="display:flex;"><span>		.idx
 </span></span><span style="display:flex;"><span>		.fetch_update(Ordering::Relaxed, Ordering::Relaxed, <span style="color:#f92672">|</span>idx<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> idx {
 </span></span><span style="display:flex;"><span>			x <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> max_server_idx <span style="color:#f92672">=&gt;</span> Some(<span style="color:#ae81ff">0</span>),
@@ -293,7 +293,7 @@
 </span></span><span style="display:flex;"><span>		.unwrap_or_default();
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Return next server to forward the request to
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		servers.get(idx).unwrap().clone()
+</span></span></span><span style="display:flex;"><span>		servers.get(idx).unwrap().clone()
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>On each new request, the policy updates the current upstream server index and returns the corresponding url.</p>
@@ -394,8 +394,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test_get_root</span>() {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Setup a mock upstream server, to test 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// that the request gets forwarded to it
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> mock_server <span style="color:#f92672">=</span> MockServer::start().<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#75715e">// that the request gets forwarded to it
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mock_server <span style="color:#f92672">=</span> MockServer::start().<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
 </span></span><span style="display:flex;"><span>		.respond_with(
 </span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>)
@@ -408,16 +408,16 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Wait for the server to be up (will fix this later)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Check that we receive response from the mock backend
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// (and not from the load balancer)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#75715e">// (and not from the load balancer)
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;backend&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>}
@@ -446,7 +446,7 @@
 <p>Let&rsquo;s setup a simple server to respond to every request:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
 </span></span><span style="display:flex;"><span>	<span style="color:#e6db74">/// ... previous methods
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
 </span></span><span style="display:flex;"><span>		HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> App::new()
 </span></span><span style="display:flex;"><span>			.default_service(web::to(handler))
@@ -479,17 +479,17 @@
 </span></span><span style="display:flex;"><span>		App::new()
 </span></span><span style="display:flex;"><span>			.default_service(web::to(Self::handler))
 </span></span><span style="display:flex;"><span>			<span style="color:#75715e">// We add the initial instance of our shared app state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			.app_data(data.clone())
+</span></span></span><span style="display:flex;"><span>			.app_data(data.clone())
 </span></span><span style="display:flex;"><span>	})
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// as above, bind and run ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div><p>Then, we can use the shared data inside the handler using an <a href="https://actix.rs/docs/extractors"  target="_blank" >extractor</a>, a parameter used in the function to access parts of the request, or the application state in this case:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>, data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">HttpResponse</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// do stuff with server url now
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	HttpResponse::Ok().body(<span style="color:#e6db74">&#34;hello&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Finally, it&rsquo;s time to forward the request! The code below is not so performant (it instantiates a reqwest client on every request, clones the headers betweeen the input and forwarded request, and so on..), but it works:</p>
@@ -497,27 +497,27 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(
 </span></span><span style="display:flex;"><span>	req: <span style="color:#a6e22e">HttpRequest</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the shared application state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,
+</span></span></span><span style="display:flex;"><span>	data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the request payload as raw bytes
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	bytes: <span style="color:#a6e22e">web</span>::Bytes,
+</span></span></span><span style="display:flex;"><span>	bytes: <span style="color:#a6e22e">web</span>::Bytes,
 </span></span><span style="display:flex;"><span>) -&gt; Result<span style="color:#f92672">&lt;</span>HttpResponse, Error<span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the address to which to forward the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Create the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> request_builder <span style="color:#f92672">=</span> client
 </span></span><span style="display:flex;"><span>		.request(req.method().clone(), uri)
 </span></span><span style="display:flex;"><span>		.headers(req.headers().into())
 </span></span><span style="display:flex;"><span>		.body(bytes);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Forward the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> request_builder.send().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> request_builder.send().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the response and send it back to the client
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> response_builder <span style="color:#f92672">=</span> HttpResponse::build(response.status());
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> response_builder <span style="color:#f92672">=</span> HttpResponse::build(response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> h <span style="color:#66d9ef">in</span> response.headers().iter() {
 </span></span><span style="display:flex;"><span>		response_builder.append_header(h);
 </span></span><span style="display:flex;"><span>	}
@@ -595,8 +595,8 @@
 <p>See you next time! 😜</p>
         ]]></content:encoded></item><item><title>Milan XPUG January Meetup: My Advice on Microservices Architecture, by Gabriele Lana</title><link>https://marcobacis.dev/blog/xpug-milan-meetup-microservices/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://marcobacis.dev/blog/xpug-milan-meetup-microservices/</guid><description>&lt;p&gt;Hi  👋 and welcome to a new post!&lt;/p&gt;
 &lt;p&gt;Today I want to share with you a summary on the last meetup I attended, organized by the &lt;a href="https://www.meetup.com/it-IT/xpugmi/" target="_blank" &gt;Milan eXtreme Programming Group&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This time , &lt;a href="https://github.com/gabrielelana" target="_blank" &gt;Gabriele Lana&lt;/a&gt; gave his advice on the pros and cons of microservices, and the problems (and solutions) that he found in his experience.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_c2946e00d03f8b7f.jpg" width="480" height="461" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_c2946e00d03f8b7f.jpg" width="480" height="461"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_c2946e00d03f8b7f.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;p&gt;This time , &lt;a href="https://github.com/gabrielelana" target="_blank" &gt;Gabriele Lana&lt;/a&gt; gave his advice on the pros and cons of microservices, and the problems (and solutions) that he found in his experience.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_8596934feac48711.jpg" width="480" height="461" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_8596934feac48711.jpg" width="480" height="461"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/xpug-milan-meetup-microservices/cover_hu_8596934feac48711.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi  👋 and welcome to a new post!</p>
 <p>Today I want to share with you a summary on the last meetup I attended, organized by the <a href="https://www.meetup.com/it-IT/xpugmi/"  target="_blank" >Milan eXtreme Programming Group</a>.</p>
 <p>This time , <a href="https://github.com/gabrielelana"  target="_blank" >Gabriele Lana</a> gave his advice on the pros and cons of microservices, and the problems (and solutions) that he found in his experience.</p>
@@ -739,23 +739,23 @@ The first thing to do it to not fear denormalization and to stop doing data-driv
 &lt;p&gt;&lt;div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP"&gt;
 &lt;figure&gt;
 &lt;picture&gt;
-&lt;source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ae1de0ecfab694c9.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e88a93c378273ba9.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e1d4f4b91ff6c3a3.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9fe8ddb3b858a603.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
-&lt;source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_c241da6349c3f61a.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9f623f8abe4a7f7.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_11a7bd29694c866a.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
-&lt;img class="w-full h-auto animate-fade" src="https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg" width="1280"
+&lt;source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_62cc1b5ddb8af802.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8370484c31f2ff6a.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e3c7115c6bce0d7c.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_768fd4c47b196e97.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
+&lt;source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_dd24be37a4793017.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_eff66c939cda7788.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8c3cc2dbab6d82c7.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
+&lt;img class="w-full h-auto animate-fade" src="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg" width="1280"
 height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" /&gt;
 &lt;/picture&gt;
 &lt;/div&gt;
-&lt;/figure&gt;&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;/figure&gt;&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
 <h2 id="what-is-a-kata">What is a kata?</h2>
 <p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP">
   <figure>
     <picture>
-      <source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ae1de0ecfab694c9.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e88a93c378273ba9.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e1d4f4b91ff6c3a3.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9fe8ddb3b858a603.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
-      <source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_c241da6349c3f61a.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9f623f8abe4a7f7.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_11a7bd29694c866a.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
-      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg" width="1280"
+      <source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_62cc1b5ddb8af802.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8370484c31f2ff6a.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e3c7115c6bce0d7c.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_768fd4c47b196e97.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_dd24be37a4793017.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_eff66c939cda7788.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8c3cc2dbab6d82c7.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg" width="1280"
         height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" />
     </picture>
 </div>
@@ -816,8 +816,8 @@ Another challenge was to always give state  to objects (so avoiding value object
         ]]></content:encoded></item><item><title>XPUGBg January meetup: “eXtreme Collaborative Codebase”</title><link>https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/</link><pubDate>Fri, 03 Feb 2023 07:00:00 +0100</pubDate><guid>https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/</guid><description>&lt;p&gt;Hi 👋 welcome to a new post!&lt;/p&gt;
 &lt;p&gt;Today I’m going to post a little summary of my experience at the &lt;a href="https://www.meetup.com/xpugbg/events/290690004/" target="_blank" &gt;XPUGBg meetup&lt;/a&gt; I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.&lt;/p&gt;
 &lt;h2 id="what-is-a-collaborative-codebase"&gt;What is a collaborative codebase?&lt;/h2&gt;
-&lt;p&gt;Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_5d1225c3d1fec5fa.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_5d1225c3d1fec5fa.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_5d1225c3d1fec5fa.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;p&gt;Alessio started his talk with a question: what does it mean to collaborate in a codebase for you? What does it take to do it? What are the practices we can use to “work well”?&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_69bf7d9b84680c16.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_69bf7d9b84680c16.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/2023-jan-xp-codebase-meetup/cover_hu_69bf7d9b84680c16.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post!</p>
 <p>Today I’m going to post a little summary of my experience at the <a href="https://www.meetup.com/xpugbg/events/290690004/"  target="_blank" >XPUGBg meetup</a> I attended at the end of January. This time, the talk was “eXtreme Collaborative Codebase” by Alessio Coser.</p>
 <h2 id="what-is-a-collaborative-codebase">What is a collaborative codebase?</h2>
@@ -876,8 +876,8 @@ Another challenge was to always give state  to objects (so avoiding value object
 
         ]]></content:encoded></item><item><title>A Case for Outside-In Design: Sandro Mancuso @ Tech Talks by eDreams ODIGEO</title><link>https://marcobacis.dev/blog/outside-in-design-edreams-meetup/</link><pubDate>Wed, 25 Jan 2023 22:00:00 +0100</pubDate><guid>https://marcobacis.dev/blog/outside-in-design-edreams-meetup/</guid><description>&lt;p&gt;Hi 👋 and welcome to a new post!&lt;/p&gt;
 &lt;p&gt;In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (&lt;a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877" target="_blank" &gt;here&lt;/a&gt;) on January 24th.&lt;/p&gt;
-&lt;p&gt;For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_9129a85f08729239.jpg" width="480" height="343" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_9129a85f08729239.jpg" width="480" height="343"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_9129a85f08729239.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;p&gt;For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_d94c2b9256e6c7ee.jpg" width="480" height="343" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_d94c2b9256e6c7ee.jpg" width="480" height="343"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/outside-in-design-edreams-meetup/cover_hu_d94c2b9256e6c7ee.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 and welcome to a new post!</p>
 <p>In my 2022 review, I said that one of my goals for 2023 was to participate more in communities (meetups, conferences and so on). Well, as a first step to achieving that goal, I attended a meetup hosted by eDreams ODIGEO (<a href="https://www.eventbrite.com/e/tech-talks-by-edreams-odigeo-milan-hub-inauguration-special-edition-tickets-493515075877"  target="_blank" >here</a>) on January 24th.</p>
 <p>For the inauguration of their Milan Hub, eDreams hosted Sandro Mancuso for his talk “A Case for Outside-In Design”, in which he proposes a set of practices and techniques to make business and technology meet when designing and extending a system.</p>
@@ -916,8 +916,8 @@ Another challenge was to always give state  to objects (so avoiding value object
 
         ]]></content:encoded></item><item><title>XPUGBg December meetup: “Mars Rover Kata, an outside-in approach”</title><link>https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/</link><pubDate>Wed, 28 Dec 2022 08:00:00 +0100</pubDate><guid>https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/</guid><description>&lt;p&gt;Hi! 👋&lt;/p&gt;
 &lt;p&gt;Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The &lt;a href="https://www.meetup.com/it-IT/xpugbg/" target="_blank" &gt;XPUGBg&lt;/a&gt; is an association promoting and organizing events related to extreme programming in the Bergamo region.&lt;/p&gt;
-&lt;p&gt;In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from &lt;a href="https://alcor.academy/" target="_blank" &gt;Alcor Academy&lt;/a&gt;) performed a live mob programming session with the audience, to solve the &lt;a href="https://github.com/makomweb/mars-rover" target="_blank" &gt;mars rover kata&lt;/a&gt;. We learned how to do mob programming, and how the Outside-In TDD approach works.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_d17bd992ac29dbb5.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_d17bd992ac29dbb5.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_d17bd992ac29dbb5.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;p&gt;In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from &lt;a href="https://alcor.academy/" target="_blank" &gt;Alcor Academy&lt;/a&gt;) performed a live mob programming session with the audience, to solve the &lt;a href="https://github.com/makomweb/mars-rover" target="_blank" &gt;mars rover kata&lt;/a&gt;. We learned how to do mob programming, and how the Outside-In TDD approach works.&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_804921ae63979382.jpg" width="480" height="320" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_804921ae63979382.jpg" width="480" height="320"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/2022-dec-mars-rover-kata-meetup/cover_hu_804921ae63979382.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi! 👋</p>
 <p>Today I will write about a meetup I attended this December, hosted by XPUGBg (Extreme Programming User Group Bergamo). The <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUGBg</a> is an association promoting and organizing events related to extreme programming in the Bergamo region.</p>
 <p>In this meetup, the guests (Marco Consolaro and Alessandro Di Gioia from <a href="https://alcor.academy/"  target="_blank" >Alcor Academy</a>) performed a live mob programming session with the audience, to solve the <a href="https://github.com/makomweb/mars-rover"  target="_blank" >mars rover kata</a>. We learned how to do mob programming, and how the Outside-In TDD approach works.</p>

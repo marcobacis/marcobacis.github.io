@@ -81,11 +81,11 @@
 <p>The small refactoring we are going to do is related to the round-robin policy code, in particular how we increment the counter. In the previous post, I implemented the policy update in this way:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Read servers list
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> max_server_idx <span style="color:#f92672">=</span> servers.len() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Update index
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
 </span></span><span style="display:flex;"><span>	.idx
 </span></span><span style="display:flex;"><span>	.fetch_update(Ordering::Relaxed, Ordering::Relaxed, <span style="color:#f92672">|</span>idx<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> idx {
 </span></span><span style="display:flex;"><span>		x <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> max_server_idx <span style="color:#f92672">=&gt;</span> Some(<span style="color:#ae81ff">0</span>),
@@ -94,7 +94,7 @@
 </span></span><span style="display:flex;"><span>	.unwrap_or_default();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Return next server to forward the request to
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	servers.get(idx).unwrap().clone()
+</span></span></span><span style="display:flex;"><span>	servers.get(idx).unwrap().clone()
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The code is complex, requires to know about atomics, the <code>fetch_update</code> method and has two different <code>Ordering</code> parameters. We can make it simpler, by using a simple <code>fetch_add</code> and using the modulo operator to stay between 0 and the number of available backends:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
@@ -124,7 +124,7 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mocks <span style="color:#f92672">=</span> create_mocks(<span style="color:#ae81ff">2</span>).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Mock 1 answers on all paths
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
+</span></span></span><span style="display:flex;"><span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
 </span></span><span style="display:flex;"><span>		.respond_with(
 </span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>).set_body_string(<span style="color:#e6db74">&#34;1&#34;</span>)
 </span></span><span style="display:flex;"><span>		)
@@ -132,7 +132,7 @@
 </span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Mock 2 answers only on /, not on /health
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
+</span></span></span><span style="display:flex;"><span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
 </span></span><span style="display:flex;"><span>		.and(path(<span style="color:#e6db74">&#39;/&#39;</span>))
 </span></span><span style="display:flex;"><span>		.respond_with(
 </span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>).set_body_string(<span style="color:#e6db74">&#34;2&#34;</span>)
@@ -141,7 +141,7 @@
 </span></span><span style="display:flex;"><span>		.<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start server
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> config <span style="color:#f92672">=</span> build_config(<span style="color:#f92672">&amp;</span>mocks);
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> config <span style="color:#f92672">=</span> build_config(<span style="color:#f92672">&amp;</span>mocks);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(<span style="color:#f92672">&amp;</span>config));
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8082</span>, <span style="color:#f92672">&amp;</span>config, policy);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
@@ -154,7 +154,7 @@
 </span></span><span style="display:flex;"><span>	wait_server_up(<span style="color:#f92672">&amp;</span>client, <span style="color:#f92672">&amp;</span>server_uri, <span style="color:#ae81ff">3</span>).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Expect only mock[1] to respond to 2 consecutive requests
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>
@@ -179,7 +179,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_healthy_backends</span>(client: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Client</span>, backends: <span style="color:#66d9ef">&amp;</span>Vec<span style="color:#f92672">&lt;</span>Backend<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Check all backends for the health endpoint
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> join_all(backends.iter().map(<span style="color:#f92672">|</span>b<span style="color:#f92672">|</span> {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> join_all(backends.iter().map(<span style="color:#f92672">|</span>b<span style="color:#f92672">|</span> {
 </span></span><span style="display:flex;"><span>        client
 </span></span><span style="display:flex;"><span>            .get(<span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>b.url, <span style="color:#f92672">&amp;</span>b.healthcheck_path))
 </span></span><span style="display:flex;"><span>            .send()
@@ -187,13 +187,13 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Map responses to simple boolean to match to backends
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> results.iter().map(<span style="color:#f92672">|</span>res<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> res {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> results <span style="color:#f92672">=</span> results.iter().map(<span style="color:#f92672">|</span>res<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> res {
 </span></span><span style="display:flex;"><span>        Ok(response) <span style="color:#f92672">=&gt;</span> response.status().is_success(),
 </span></span><span style="display:flex;"><span>        Err(_) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>,
 </span></span><span style="display:flex;"><span>    });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Match result and backend together
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    zip(backends, results)
+</span></span></span><span style="display:flex;"><span>    zip(backends, results)
 </span></span><span style="display:flex;"><span>        .map(<span style="color:#f92672">|</span>(backend, healthy)<span style="color:#f92672">|</span> HealthResult {
 </span></span><span style="display:flex;"><span>            backend: <span style="color:#a6e22e">backend</span>.clone(),
 </span></span><span style="display:flex;"><span>            healthy,
@@ -210,7 +210,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The new method we introduce
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">health_results</span>(<span style="color:#f92672">&amp;</span>self, results: Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span>);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">health_results</span>(<span style="color:#f92672">&amp;</span>self, results: Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We need to test that the policy will be affected by the results of our healthcheck loop. Given that our acceptance test will fail until we perform real HTTP requests and integrate multiple components, let&rsquo;s write a smaller test just for the policy:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
@@ -276,13 +276,13 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self.idx.fetch_add(<span style="color:#ae81ff">1</span>, Ordering::Relaxed);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get read lock and return the correct server
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> self.backends.read().<span style="color:#66d9ef">await</span>.clone();
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> self.backends.read().<span style="color:#66d9ef">await</span>.clone();
 </span></span><span style="display:flex;"><span>        servers.get(idx <span style="color:#f92672">%</span> servers.len()).unwrap().clone()
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">health_results</span>(<span style="color:#f92672">&amp;</span>self, results: Vec<span style="color:#f92672">&lt;</span>HealthResult<span style="color:#f92672">&gt;</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Get write lock and overwrite the servers list
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> servers <span style="color:#f92672">=</span> self.backends.write().<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> servers <span style="color:#f92672">=</span> self.backends.write().<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">*</span>servers <span style="color:#f92672">=</span> results
 </span></span><span style="display:flex;"><span>            .iter()
 </span></span><span style="display:flex;"><span>            .filter(<span style="color:#f92672">|</span>r<span style="color:#f92672">|</span> r.is_healthy())
@@ -299,7 +299,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <p>I wanted to have a nice discussion on how to use <a href="https://doc.rust-lang.org/rust-by-example/std_misc/channels.html"  target="_blank" >channels</a> to communicate among multiple tasks/thread, but I ended up simplifying the code and using a single task 🥲 here it is:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start health check task
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> config_clone <span style="color:#f92672">=</span> self.config.clone();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> config_clone <span style="color:#f92672">=</span> self.config.clone();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> data_clone <span style="color:#f92672">=</span> self.data.clone();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> interval <span style="color:#f92672">=</span> interval(Duration::from_secs(
@@ -314,7 +314,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	});
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Start http server
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> data_clone <span style="color:#f92672">=</span> self.data.clone();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> data_clone <span style="color:#f92672">=</span> self.data.clone();
 </span></span><span style="display:flex;"><span>	HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
 </span></span><span style="display:flex;"><span>		App::new()
 </span></span><span style="display:flex;"><span>		<span style="color:#f92672">..</span>.
@@ -385,21 +385,21 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <p>Before starting with the round-robin implementation, lets tidy up a bit the code from the first part. The first thing to do is to improve the test we wrote!</p>
 <p>In the test, we create the load balancer server and wait for it to start up with a simple `sleep´</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Wait for the server to be up (will fix this later)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
 </span></span></code></pre></div><p>Well, let&rsquo;s fix this and create a function to wait for the server to start!</p>
 <p>For now, we&rsquo;ll assume that the load balancer is up when the web server itself starts. To do so, we can add a healthcheck endpoint simply with actix:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span></span><span style="display:flex;"><span>HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
 </span></span><span style="display:flex;"><span>	App::new()
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Healthcheck endpoint always returning 200 OK
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		.route(<span style="color:#e6db74">&#34;/health&#34;</span>, web::get().to(HttpResponse::Ok))
+</span></span></span><span style="display:flex;"><span>		.route(<span style="color:#e6db74">&#34;/health&#34;</span>, web::get().to(HttpResponse::Ok))
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Handler to forward request (from first part)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		.default_service(web::to(Self::handler))
+</span></span></span><span style="display:flex;"><span>		.default_service(web::to(Self::handler))
 </span></span><span style="display:flex;"><span>		.app_data(data.clone())
 </span></span><span style="display:flex;"><span>	})
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...
@@ -432,38 +432,38 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SafeRoutingPolicy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> Sync <span style="color:#f92672">+</span> Send;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// add policy to the load balancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LoadBalancer</span> {
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">LoadBalancer</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	data: <span style="color:#a6e22e">Data</span><span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>
+</span></span></span><span style="display:flex;"><span>	data: <span style="color:#a6e22e">Data</span><span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// add policy to the app state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">//...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	policy: Box<span style="color:#f92672">&lt;</span>SafeRoutingPolicy<span style="color:#f92672">&gt;</span>,
+</span></span></span><span style="display:flex;"><span>	policy: Box<span style="color:#f92672">&lt;</span>SafeRoutingPolicy<span style="color:#f92672">&gt;</span>,
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>,data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,bytes: <span style="color:#a6e22e">web</span>::Bytes) -&gt; Result<span style="color:#f92672">&lt;</span>HttpResponse, Error<span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Here we grab the next server host from the policy
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.policy.next(<span style="color:#f92672">&amp;</span>req).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.policy.next(<span style="color:#f92672">&amp;</span>req).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... forward the request etc
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Notice the type alias <code>SafeRoutingPolicy</code>, which has also the <code>Send</code> and <code>Sync</code> trait. Why do we need them? The policy is stored in the shared app state, which may be accessed by multiple threads (actix can run the handler method on different threads).</p>
 <p>The <code>actix_web::web::Data</code> struct is a wrapper around an <code>Arc</code>, which allows to access the structure from multiple threads. However, that doesn&rsquo;t mean that the fields (e.g. the policy) are thread safe! This is also recalled by the compiler, which gives us a nice error if we don&rsquo;t require the policy to be <code>Sync + Send</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>error[E0277]: <span style="color:#960050;background-color:#1e0010">`</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#960050;background-color:#1e0010">`</span> cannot be shared between threads safely
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span>-&gt; <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span>lib.rs:<span style="color:#ae81ff">45</span>:<span style="color:#ae81ff">25</span>
 </span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>	  <span style="color:#75715e">// ... code
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   
+</span></span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span><span style="color:#f92672">=</span> help: <span style="color:#a6e22e">the</span> <span style="color:#66d9ef">trait</span> <span style="color:#960050;background-color:#1e0010">`</span>Sync<span style="color:#960050;background-color:#1e0010">`</span> is not implemented <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">=</span> note: <span style="color:#a6e22e">required</span> <span style="color:#66d9ef">for</span> <span style="color:#960050;background-color:#1e0010">`</span>Unique<span style="color:#f92672">&lt;</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">`</span> to implement <span style="color:#960050;background-color:#1e0010">`</span>Sync<span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>note: <span style="color:#a6e22e">required</span> because it appears within the <span style="color:#66d9ef">type</span> <span style="color:#960050;background-color:#1e0010">`</span>Box<span style="color:#f92672">&lt;</span>(<span style="color:#66d9ef">dyn</span> RoutingPolicy <span style="color:#f92672">+</span> &#39;static)<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">`</span>
 </span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// ..Box
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>   
+</span></span></span><span style="display:flex;"><span>   
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">-</span>-&gt; <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span>lib.rs:<span style="color:#ae81ff">22</span>:<span style="color:#ae81ff">8</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">22</span>  <span style="color:#f92672">|</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">AppState</span> {
@@ -530,12 +530,12 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	.<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... same for mock server 2 and 3, returning a different number
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mock_uris: Vec<span style="color:#f92672">&lt;</span>_<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> mocks.iter().map(<span style="color:#f92672">|</span>mock<span style="color:#f92672">|</span> mock.uri()).collect();
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Spawn load balancer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(mock_uris.clone()));
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> policy <span style="color:#f92672">=</span> Box::new(RoundRobinPolicy::new(mock_uris.clone()));
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8082</span>, policy);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
@@ -543,7 +543,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	wait_server_up(<span style="color:#f92672">&amp;</span>client, <span style="color:#f92672">&amp;</span>server_uri, <span style="color:#ae81ff">3</span>).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Send requests, expect to respond in round robin (1,2,3,1)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(<span style="color:#f92672">&amp;</span>server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;1&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>	
@@ -581,11 +581,11 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> RoutingPolicy <span style="color:#66d9ef">for</span> RoundRobinPolicy {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span>self, _request: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">HttpRequest</span>) -&gt; String {
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Read servers list
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
+</span></span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> servers <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>self.servers;
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> max_server_idx <span style="color:#f92672">=</span> servers.len() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>	  
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Update index
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
+</span></span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">let</span> idx <span style="color:#f92672">=</span> self
 </span></span><span style="display:flex;"><span>		.idx
 </span></span><span style="display:flex;"><span>		.fetch_update(Ordering::Relaxed, Ordering::Relaxed, <span style="color:#f92672">|</span>idx<span style="color:#f92672">|</span> <span style="color:#66d9ef">match</span> idx {
 </span></span><span style="display:flex;"><span>			x <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> max_server_idx <span style="color:#f92672">=&gt;</span> Some(<span style="color:#ae81ff">0</span>),
@@ -594,7 +594,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>		.unwrap_or_default();
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Return next server to forward the request to
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		servers.get(idx).unwrap().clone()
+</span></span></span><span style="display:flex;"><span>		servers.get(idx).unwrap().clone()
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>On each new request, the policy updates the current upstream server index and returns the corresponding url.</p>
@@ -695,8 +695,8 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[tokio::test]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test_get_root</span>() {
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Setup a mock upstream server, to test 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// that the request gets forwarded to it
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> mock_server <span style="color:#f92672">=</span> MockServer::start().<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#75715e">// that the request gets forwarded to it
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> mock_server <span style="color:#f92672">=</span> MockServer::start().<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>	Mock::given(method(<span style="color:#e6db74">&#34;GET&#34;</span>))
 </span></span><span style="display:flex;"><span>		.respond_with(
 </span></span><span style="display:flex;"><span>			ResponseTemplate::new(<span style="color:#ae81ff">200</span>)
@@ -709,16 +709,16 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// The class under test, the load balancer itself
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> LoadBalancer::new(<span style="color:#ae81ff">8080</span>, <span style="color:#a6e22e">vec!</span>[mock_server.uri()]);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server_uri <span style="color:#f92672">=</span> server.uri();
 </span></span><span style="display:flex;"><span>	tokio::spawn(<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">move</span> { server.run().<span style="color:#66d9ef">await</span> });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Wait for the server to be up (will fix this later)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
+</span></span></span><span style="display:flex;"><span>	tokio::time::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">3</span>)).<span style="color:#66d9ef">await</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Check that we receive response from the mock backend
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// (and not from the load balancer)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#75715e">// (and not from the load balancer)
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> client.get(server_uri).send().<span style="color:#66d9ef">await</span>.unwrap();
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(StatusCode::<span style="color:#66d9ef">OK</span>, response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">assert_eq!</span>(<span style="color:#e6db74">&#34;backend&#34;</span>, response.text().<span style="color:#66d9ef">await</span>.unwrap());
 </span></span><span style="display:flex;"><span>}
@@ -747,7 +747,7 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 <p>Let&rsquo;s setup a simple server to respond to every request:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> LoadBalancer {
 </span></span><span style="display:flex;"><span>	<span style="color:#e6db74">/// ... previous methods
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span>self) {
 </span></span><span style="display:flex;"><span>		HttpServer::new(<span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> App::new()
 </span></span><span style="display:flex;"><span>			.default_service(web::to(handler))
@@ -780,17 +780,17 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span>		App::new()
 </span></span><span style="display:flex;"><span>			.default_service(web::to(Self::handler))
 </span></span><span style="display:flex;"><span>			<span style="color:#75715e">// We add the initial instance of our shared app state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			.app_data(data.clone())
+</span></span></span><span style="display:flex;"><span>			.app_data(data.clone())
 </span></span><span style="display:flex;"><span>	})
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// as above, bind and run ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div><p>Then, we can use the shared data inside the handler using an <a href="https://actix.rs/docs/extractors"  target="_blank" >extractor</a>, a parameter used in the function to access parts of the request, or the application state in this case:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(req: <span style="color:#a6e22e">HttpRequest</span>, data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">HttpResponse</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// do stuff with server url now
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	
+</span></span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	HttpResponse::Ok().body(<span style="color:#e6db74">&#34;hello&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Finally, it&rsquo;s time to forward the request! The code below is not so performant (it instantiates a reqwest client on every request, clones the headers betweeen the input and forwarded request, and so on..), but it works:</p>
@@ -798,27 +798,27 @@ We expect the load balancer to forward requests only to the &ldquo;healthy&rdquo
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handler</span>(
 </span></span><span style="display:flex;"><span>	req: <span style="color:#a6e22e">HttpRequest</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the shared application state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,
+</span></span></span><span style="display:flex;"><span>	data: <span style="color:#a6e22e">web</span>::Data<span style="color:#f92672">&lt;</span>AppState<span style="color:#f92672">&gt;</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Extractor used to get the request payload as raw bytes
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	bytes: <span style="color:#a6e22e">web</span>::Bytes,
+</span></span></span><span style="display:flex;"><span>	bytes: <span style="color:#a6e22e">web</span>::Bytes,
 </span></span><span style="display:flex;"><span>) -&gt; Result<span style="color:#f92672">&lt;</span>HttpResponse, Error<span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the address to which to forward the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> server <span style="color:#f92672">=</span> data.servers[<span style="color:#ae81ff">0</span>].clone();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> uri <span style="color:#f92672">=</span> <span style="color:#a6e22e">format!</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}{}</span><span style="color:#e6db74">&#34;</span>, server, req.uri());
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Create the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> client <span style="color:#f92672">=</span> Client::new();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> request_builder <span style="color:#f92672">=</span> client
 </span></span><span style="display:flex;"><span>		.request(req.method().clone(), uri)
 </span></span><span style="display:flex;"><span>		.headers(req.headers().into())
 </span></span><span style="display:flex;"><span>		.body(bytes);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Forward the request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> request_builder.send().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> response <span style="color:#f92672">=</span> request_builder.send().<span style="color:#66d9ef">await</span><span style="color:#f92672">?</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the response and send it back to the client
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> response_builder <span style="color:#f92672">=</span> HttpResponse::build(response.status());
+</span></span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> response_builder <span style="color:#f92672">=</span> HttpResponse::build(response.status());
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> h <span style="color:#66d9ef">in</span> response.headers().iter() {
 </span></span><span style="display:flex;"><span>		response_builder.append_header(h);
 </span></span><span style="display:flex;"><span>	}

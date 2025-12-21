@@ -4,23 +4,23 @@
 &lt;p&gt;&lt;div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP"&gt;
 &lt;figure&gt;
 &lt;picture&gt;
-&lt;source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ae1de0ecfab694c9.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e88a93c378273ba9.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e1d4f4b91ff6c3a3.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9fe8ddb3b858a603.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
-&lt;source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_c241da6349c3f61a.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9f623f8abe4a7f7.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_11a7bd29694c866a.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
-&lt;img class="w-full h-auto animate-fade" src="https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg" width="1280"
+&lt;source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_62cc1b5ddb8af802.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8370484c31f2ff6a.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e3c7115c6bce0d7c.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_768fd4c47b196e97.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
+&lt;source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_dd24be37a4793017.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_eff66c939cda7788.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8c3cc2dbab6d82c7.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" /&gt;
+&lt;img class="w-full h-auto animate-fade" src="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg" width="1280"
 height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" /&gt;
 &lt;/picture&gt;
 &lt;/div&gt;
-&lt;/figure&gt;&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
-        <img src="https://marcobacis.dev/blog/katurday/cover_hu_faf16dd3f763a81c.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
+&lt;/figure&gt;&lt;/p&gt;</description><media:content url="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" width="480" height="270" medium="image" type="image/jpeg"><media:thumbnail url="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" width="480" height="270"/></media:content><content:encoded><![CDATA[
+        <img src="https://marcobacis.dev/blog/katurday/cover_hu_63cf0870dab683bd.jpg" title="%!s(<nil>)" alt="%!s(<nil>)"/>
           <p>Hi 👋 welcome to a new post. Today, I&rsquo;m going to describe my experiences at the “Katurday” sessions held by the <a href="https://www.meetup.com/it-IT/xpugbg/"  target="_blank" >XPUG Bergamo</a> group.</p>
 <p>The events are called Katurday because we perform a kata on one Saturday morning every month. It&rsquo;s a great way to code and learn with other people 😃.</p>
 <h2 id="what-is-a-kata">What is a kata?</h2>
 <p><div class="image imgB-81adbd0c4dfa02c3a1aab7c204fe9ec5-GIP">
   <figure>
     <picture>
-      <source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_ae1de0ecfab694c9.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e88a93c378273ba9.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e1d4f4b91ff6c3a3.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9fe8ddb3b858a603.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
-      <source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_c241da6349c3f61a.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_9f623f8abe4a7f7.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_11a7bd29694c866a.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
-      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu_f8b1a9b22840c1e2.jpg" width="1280"
+      <source type="image/webp" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_62cc1b5ddb8af802.webp 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8370484c31f2ff6a.webp 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_e3c7115c6bce0d7c.webp 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_768fd4c47b196e97.webp 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <source type="image/jpeg" srcset="https://marcobacis.dev/blog/katurday/kata_dwight_hu_dd24be37a4793017.jpg 320w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg 640w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_eff66c939cda7788.jpg 960w, https://marcobacis.dev/blog/katurday/kata_dwight_hu_8c3cc2dbab6d82c7.jpg 1280w" sizes="(min-width: 1024px) 100vw, 50vw" />
+      <img class="w-full h-auto animate-fade" src="/blog/katurday/kata_dwight_hu_ed7d1dab380702b4.jpg" width="1280"
         height="720" alt="Typical developer performing a kata" title="Typical developer performing a kata" loading="lazy" />
     </picture>
 </div>
