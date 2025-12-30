@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Blogs on Marco Bacis</title><link>https://marcobacis.dev/blog/</link><description>Recent content in Blogs on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis</copyright><lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>SoCraTes 2025</title><link>https://marcobacis.dev/blog/2025-socrates/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://marcobacis.dev/blog/2025-socrates/</guid><description>&lt;p&gt;Hi 👋 Welcome back!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Blogs on Marco Bacis</title><link>https://marcobacis.dev/blog/</link><description>Recent content in Blogs on Marco Bacis</description><language>en-uk</language><copyright>© Copyright Marco Bacis</copyright><lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marcobacis.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2025: A review</title><link>https://marcobacis.dev/blog/2025-review/</link><pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate><guid>https://marcobacis.dev/blog/2025-review/</guid><description>&lt;p&gt;Hi 👋 welcome to the usual end-of-year recap on the blog! This is the 4th year in a row I manage to write (here are &lt;a href="https://marcobacis.dev/blog/2022-a-review/" target="_blank" &gt;the&lt;/a&gt; &lt;a href="https://marcobacis.dev/blog/2023-review/" target="_blank" &gt;older&lt;/a&gt; &lt;a href="https://marcobacis.dev/blog/2024-review/" target="_blank" &gt;posts&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Even though I don&amp;rsquo;t write much on the blog, I take the time to reflect on the past year and write a free-form post. Feel free to skip it: it&amp;rsquo;s mostly a self-retrospective.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s go!&lt;/p&gt;
+&lt;h2 id="2025-goals-review"&gt;2025 Goals Review&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a brief review of the goals I set for myself for 2025. This time, I managed to miss most of them 😎. Not so great&lt;/p&gt;</description><content:encoded><![CDATA[
+          <p>Hi 👋  welcome to the usual end-of-year recap on the blog! This is the 4th year in a row I manage to write (here are <a href="https://marcobacis.dev/blog/2022-a-review/"  target="_blank" >the</a> <a href="https://marcobacis.dev/blog/2023-review/"  target="_blank" >older</a> <a href="https://marcobacis.dev/blog/2024-review/"  target="_blank" >posts</a>).</p>
+<p>Even though I don&rsquo;t write much on the blog, I take the time to reflect on the past year and write a free-form post. Feel free to skip it: it&rsquo;s mostly a self-retrospective.</p>
+<p>Let&rsquo;s go!</p>
+<h2 id="2025-goals-review">2025 Goals Review</h2>
+<p>Let&rsquo;s start with a brief review of the goals I set for myself for 2025. This time, I managed to miss most of them 😎. Not so great</p>
+<h4 id="-write-more">❌ Write more</h4>
+<p>Every year I promise to myself to write more on the blog, and every time I fall short on the goal.</p>
+<p>Last year I set a goal to write &ldquo;more freely&rdquo; on the blog, without caring about judgement or having something interesting to say. But by saying that, I actually did worse than before!</p>
+<p>In 2025 I wrote 5 posts (including this one), roughly one every 3 months&hellip; definitely not what I had in mind.</p>
+<p>If I must save something, then I did make it easier to publish on the blog by removing the <em>hero</em> image from the posts 😂 and making it minimal. I thought choosing the picture was the issue, when in reality finding the courage to hit &ldquo;publish&rdquo; was the real killer.</p>
+<h4 id="-more-exercise">✅ More exercise</h4>
+<p>Following the trend from 2024, I kept exercising throughout the year. What helped me keep consistent was going once a week to a personal trainer, and 1-2 times to a public gym.</p>
+<p>I didn&rsquo;t lose weight (actually, I put on 4 kg), but I didn&rsquo;t gain more. Considering how I eat, it&rsquo;s a success!</p>
+<h4 id="-contribute-to-open-source">❌ Contribute to Open Source</h4>
+<p>Another goal missed. This time, the official excuse is that I didn&rsquo;t find any project I liked enough to put my effort in . I started a small project as exercise (a redis clone in rust) but  it&rsquo;s there with the big pile of unfinished projects on my github.</p>
+<p>Entering the Open Source world is seen as &ldquo;the thing to do&rdquo; to become a proper software engineer. But the thing is&hellip;. I actually like what I do for work 😅 I&rsquo;d like to find some bugs or feature I need in what I use daily (e.g. .NET or Angular) but usually I just don&rsquo;t find that need.</p>
+<h4 id="-publish-a-videotalk">❌ Publish a Video/Talk</h4>
+<p>The end of 2024 started strong, with 7 videos done while solving Advent of Code puzzles. Well&hellip;. that was it 😅 I didn&rsquo;t publish anything else on youtube, or propose any talk at conferences or meetups.</p>
+<p>Same as the blog, the fear of judgement and my low confidence (in addition to a healthy dose of lazyness) stopped me from publishing anything.</p>
+<h2 id="work">Work</h2>
+<p>2025 marked my second year at <a href="https://www.zupit.it/"  target="_blank" >Zupit</a>, and also my second full year working remotely! In 2024 I transitioned from commuting to staying in my pajamas, and never went back. Working remotely has got me a ton of free time, health and peacefullness.</p>
+<p>Obviously, there are challenges. When working remotely, you have to find your rythm: no commute, no office means no proper &ldquo;end-of-workday&rdquo; ritual and no tranisition between work and not-work. I had to learn how to divide the two properly, using lunch and the gym as transitions (thanks to working only until 2PM!!). I can count on my hand the times I went to the office this year, but each time it was a refreshing event: I either came to attend some meetups in Trento, or to see my teammates and other colleagues. After two years, I can say: I miss the office.</p>
+<p>I don&rsquo;t think I&rsquo;ll go back soon: working remotely is a better choice both in terms of work-life balance and of general health (less traffic, less train delays, less pollution). But sometimes I wonder how it would be like to work in an office with the same team I have now. For sure, the dynamics would be wildly different (for example, I&rsquo;m way more annoying in person than on slack!).</p>
+<p>Apart from remote working, 2025 brought some new projects and roles. Being a small consultancy agency, in Zupit we both start new projects, and inherit legacy code. This year I managed to do both. We started 3 new projects (and one of them could become the first <em>product</em> sold by the company, in addition to consultancy work) and received and were able to improve and ship a legacy project (we went from no pipelines, to go from commit to prod in minutes!).</p>
+<p>With these projects, I learned new stuff both for back-end (e.g. stripe integration, Business Central APIs and how to properly write batch synchronization jobs) and frontend projects (e.g. signals in angular 19/20).</p>
+<p>Lastly, this year our tech lead changed job mid-year, and one of our teammates rose to the challenge and got promoted. I watched from the side (I still want to code for some time, and not increase the amount of meetings and calls too much), but after his promotion I got to help him as <em>&ldquo;Deputy&rdquo;</em>. This meant more analysis, firefighting and playing with github actions and production environments, with casual &ldquo;<em>interim-tech-lead</em>&rdquo; moments throughout the year.</p>
+<p>What will 2026 bring? I hope I&rsquo;ll get better at proposing technical solutions (mainly to the team, as I talk to customers only after pre-analysis by PO and TL) and mentoring the team, all while improving my craft. I&rsquo;ll probably need to learn mobile development too&hellip;. but that&rsquo;s for next year&rsquo;s me to handle.</p>
+<h2 id="writing">Writing</h2>
+<p>I don&rsquo;t have much to say on the topic. Last year I wrote 9 posts, while this year I wrote an all-time-low of 4 posts (+ this one).</p>
+<p>The year started strong: I read <em>Writing for Developers</em>, a book centered around the importance of keeping a technical blog, along with resources and tips to write more and better. I read it, used the advice for my first 2025 post, and then forgot everything.</p>
+<p>The thing is&hellip;every tool and resource I add to my inventory, ends up making the act of writing&hellip; <em>heavy</em>. The book was fantastic, but it gave me even more things to check when reviewing a post. Each article I read adds to the <em>shoulds</em> of writing: should write more, should collect ideas, should journal&hellip;too many obligations!</p>
+<p>I think writing should be the expression of something I need&hellip;and most of the times, I don&rsquo;t need anything.</p>
+<p>The goal for 2026 is thus <em>spontaneity</em>: writing about whatever I want, in whatever length it comes out, and whatever format.</p>
+<p>It will still be difficult (and the current year have shown it&hellip;same goal, and no writing), but I hope the new year will bring some inspiration. Most of the time fear of judgement stops me from writing what I learn and my opinions on it&hellip;no more!</p>
+<h2 id="reading">Reading</h2>
+<p>This year I read a bit more than in 2024 (26 books), but still less than at my peak (in 2020-2022).</p>
+<p>This shows that the declining trend which started in 2023 is continuing, reducing my reading time in favour of the smartphone. Since working from home, my attention span got lower, abused by short-form videos (that you cannot watch on a train without headphones or stable connection, but can definitely do while eating at home or resting on the sofa) and by youtube on my television.</p>
+<p>BTW, here&rsquo;s the list of books I read this year (courtesy of my <a href="https://www.goodreads.com/user/show/22830084-marco-bacis"  target="_blank" >goodreads profile</a>):
+<em>(Disclaimer: didn&rsquo;t want to translate the titles, so if I read the book in italian the title will also be in italian)</em></p>
+<ul>
+<li><em>La città e le sue mura incerte</em> by Haruki Murakami</li>
+<li><em>Shape: The Hidden Geometry of Information, Biology, Strategy, Democracy, and Everything Else</em> by Jordan Ellenberg</li>
+<li><em>The Culture Map: Breaking Through the Invisible Boundaries of Global Business</em> by Erin Meyer</li>
+<li><em>Writing for Developers: Blogs that get read</em> by Piotr Sarna</li>
+<li><em>Se la rosa non avesse il suo nome</em> by Andrea Pennacchi</li>
+<li><em>Build: An Unorthodox Guide to Making Things Worth Making</em> by Tony Fadell</li>
+<li><em>Modern Software Engineering: Doing What Works to Build Better Software Faster</em> by David Farley</li>
+<li><em>Zero To Production In Rust: An Introduction to Backend Development</em> by Luca Palmieri</li>
+<li><em>A World Without Email: Reimagining Work in an Age of Communication Overload</em> by Cal Newport</li>
+<li><em>Wool</em> by Hugh Howey</li>
+<li><em>Shift</em> by Hugh Howey</li>
+<li><em>Test-Driven Development: By Example</em> by Kent Beck</li>
+<li><em>Slow Productivity: The Lost Art of Accomplishment Without Burnout</em> by Cal Newport</li>
+<li><em>The Unicorn Project</em> by Gene Kim (wrote a <a href="https://marcobacis.dev/blog/unicorn-project-notes/"  target="_blank" >post</a> on that)</li>
+<li><em>La montagna sei tu: Trasformare l&rsquo;autosabotaggio in autocontrollo</em> by Brianna Wiest</li>
+<li><em>Designing Your Life: Build a Life that Works for You</em> by Bill Burnett</li>
+<li><em>How to Be Enough: Self-Acceptance for Self-Critics and Perfectionists</em> by Ellen Hendriksen</li>
+<li><em>The Art of Agile Development: Pragmatic Guide to Agile Software Development</em> by James Shore</li>
+<li><em>The Psychology of Money</em> by Morgan Housel</li>
+<li><em>La società della stanchezza</em> by Byung-Chul Han</li>
+<li><em>Dust (Silo, #3)</em> by Hugh Howey</li>
+<li><em>L’inganno dei confini: Come la geografia governa il mondo</em> by Simone Guida</li>
+<li><em>Crucial Conversations: Tools for Talking When Stakes Are High</em> by Kerry Patterson</li>
+<li><em>Il ministero del tempo</em> by Kaliane Bradley</li>
+<li><em>Cecità</em> by José Saramago</li>
+<li><em>Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages</em> by Bruce A. Tate</li>
+</ul>
+<p>I managed to read more technical books this year, in part thanks to the XPUG (eXtreme Programming User Group) Bergamo with their <em>book club</em>. We met every week to discuss a chapter from a book, either talking or doing the exercises.</p>
+<p>For example, in 2025 we read</p>
+<ul>
+<li><em>Learning Domain-Driven Design</em> by Vlad Khononov</li>
+<li><em>Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages</em> by Bruce A. Tate</li>
+</ul>
+<p>it might not seem much, but we explored these books in ways I would have never done alone: nitpicking every definition and explanation, providing examples, real-life experiences and exercising on every chapter! Definitely a great way to study a technical book.</p>
+<p>For next year, the first book we&rsquo;re going to read will be <em>Clean Architecture</em>. A &ldquo;solid&rdquo; re-read of SOLID principles and architecture is needed, given that I read this book 5 years ago (at a time when I didn&rsquo;t think much about architecture, just making the code work!).</p>
+<p>You can find XPUGBg on <a href="https://www.linkedin.com/company/xpug-bergamo/"  target="_blank" >LinkedIn</a> or luma (for the <a href="https://luma.com/xpug-bg-book-club"  target="_blank" >book club</a> and the <a href="https://luma.com/calendar/cal-018qZ28z0TiA2VA"  target="_blank" >meetup</a> calendars)</p>
+<h2 id="communities">Communities</h2>
+<p>Participating in communities and events is a great way to learn, meet new people and also have fun in the process.
+I won&rsquo;t list all the meetups and groups I attended this year, just a small list of the conferences I attended:</p>
+<ul>
+<li><a href="https://archive.fosdem.org/2025/"  target="_blank" >FOSDEM 2025</a></li>
+<li>Polenta &amp; Deploy unconference - (see the <a href="https://marcobacis.com/blog/2024-polenta-and-deploy/"  target="_blank" >post</a> from last year edition)</li>
+<li><a href="https://www.webdayconf.it/2025"  target="_blank" >Web Day 2025</a></li>
+<li>Polenta, Sardine &amp; Deploy unconference (same vibes as Polenta&amp;Deploy, different protein on the polenta!)</li>
+<li><a href="https://www.agilemovement.it/workingsoftware/"  target="_blank" >Working Software Conference</a></li>
+<li><a href="https://www.socrates-conference.it/"  target="_blank" >SoCraTes 2025</a> - also wrote a <a href="https://marcobacis.dev/blog/2025-socrates/"  target="_blank" >post</a></li>
+<li><a href="https://conferences.codemotion.com/milan2025/"  target="_blank" >Codemotion Milan</a></li>
+<li><a href="https://rustlab.it/"  target="_blank" >RustLab</a></li>
+<li><a href="https://www.updateconference.net/"  target="_blank" >Update Conference Prague</a></li>
+</ul>
+<p>The most active periods of 2025 have been the beginning (February-April) with FOSDEM and two unconferences, and a tour-de-force in October/November, starting with SoCraTes and ending in Prague for Update Conference.</p>
+<p>My goal for conferences and meetups is to learn at least a new concept, or meet a new person in each event. Even if I don&rsquo;t watch all talks, I can still say that an event is worth it if I can enjoy a discussion with new people, or learn from someone I already know!</p>
+<p>As I already said in the blog, I think the best event a programmer can attend is the unconference: a small and safe space in which everyone can learn and show what he learned. An unconference allows to see stuff you don&rsquo;t usually see in standard conferences, and also provides a place to share your knowledge and opinions without convincing a committee, or being a sponsor 😏.</p>
+<p>So next year, I plan to attend mostly unconferences, and less conferences.</p>
+<h2 id="personal-life">Personal Life</h2>
+<p>Not much has happened in 2025. I got married in november 2024, so this marks our first anniversary 🥰. We were already living together, so there was no abrupt change in how I live.</p>
+<p>What will definitely change how I live is in the making, and will arrive in April&hellip;I&rsquo;m going to be a father! it will be a challenge for sure.</p>
+<p>In 2025 we also got a new cat. She&rsquo;s younger than lucky (she&rsquo;s 4/5 years old) and likes to attack whenever I pet her. So cute.</p>
+<h2 id="2026-goals">2026 Goals</h2>
+<p>It&rsquo;s time for the &ldquo;Marco dreams up impossible goals to set for next year&rdquo; section!
+Instead of declaring goals and then not reaching them, this time I&rsquo;d like to propose a single theme I want to follow:</p>
+<p><strong>Improve &amp; Share</strong></p>
+<p>That&rsquo;s it? Yes.</p>
+<p>Improving means learning (by reading, taking courses/conferences/whatever) and taking actions upon what I learn. Sharing means losing the fear of judgement and accepting that what I learn can be shared to others without doubting myself every time.</p>
+<p>What does this mean in practice? Reading more, writing more and (maybe) sharing what I learn (on the blog, on youtube, on github? who knows).</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>That&rsquo;s all! 2025 was a nice year: I met new people, learned a lot and improved on many fronts.</p>
+<p>I still wish I had done a bit more on the blog and outside of it, but I cannot change what happened! We can only work towards our future, and learn to watch back without judgement.</p>
+<p>With this philosophycal ending, I say goodbye to you, my reader.</p>
+<p>Happy 2026, and see you next time!</p>
+
+        ]]></content:encoded></item><item><title>SoCraTes 2025</title><link>https://marcobacis.dev/blog/2025-socrates/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><guid>https://marcobacis.dev/blog/2025-socrates/</guid><description>&lt;p&gt;Hi 👋 Welcome back!&lt;/p&gt;
 &lt;p&gt;Two years ago, I attended my first unconference, &lt;a href="https://www.socrates-conference.it/" target="_blank" &gt;SoCraTes IT&lt;/a&gt;! It was eye-opening: an event where the agenda is created on the spot, and where everyone can share, discuss, and showcase their ideas and projects in an &lt;a href="https://en.wikipedia.org/wiki/Unconference" target="_blank" &gt;open space format&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;While last year I couldn&amp;rsquo;t come (I was on my honeymoon), this year I came back to immerse myself again in that atmosphere. In this post, I&amp;rsquo;ll share my usual &amp;ldquo;journal-style&amp;rdquo; reportage of the event 😁.&lt;/p&gt;</description><content:encoded><![CDATA[
           <p>Hi 👋 Welcome back!</p>
