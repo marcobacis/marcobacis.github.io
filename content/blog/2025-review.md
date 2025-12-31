@@ -9,7 +9,7 @@ tags:
 permalink: 2025-review
 ---
 
-Hi 👋  welcome to the usual end-of-year recap on the blog! This is the 4th year in a row I manage to write (here are [the](https://marcobacis.dev/blog/2022-a-review/) [older](https://marcobacis.dev/blog/2023-review/) [posts](https://marcobacis.dev/blog/2024-review/)). 
+Hi 👋  welcome to the usual end-of-year recap on the blog! This is the 4th year in a row I manage to do it (here are [the](https://marcobacis.dev/blog/2022-a-review/) [older](https://marcobacis.dev/blog/2023-review/) [posts](https://marcobacis.dev/blog/2024-review/)). 
 
 Even though I don't write much on the blog, I take the time to reflect on the past year and write a free-form post. Feel free to skip it: it's mostly a self-retrospective.
 
@@ -17,7 +17,7 @@ Let's go!
 
 ## 2025 Goals Review
 
-Let's start with a brief review of the goals I set for myself for 2025. This time, I managed to miss most of them 😎. Not so great 
+Let's start with a brief review of the goals I set for myself for 2025. This time, I managed to miss most of them 😎. Not a great start. 
 
 #### ❌ Write more
 
@@ -59,7 +59,7 @@ Apart from remote working, 2025 brought some new projects and roles. Being a sma
 
 With these projects, I learned new stuff both for back-end (e.g. stripe integration, Business Central APIs and how to properly write batch synchronization jobs) and frontend projects (e.g. signals in angular 19/20).
 
-Lastly, this year our tech lead changed job mid-year, and one of our teammates rose to the challenge and got promoted. I watched from the side (I still want to code for some time, and not increase the amount of meetings and calls too much), but after his promotion I got to help him as *"Deputy"*. This meant more analysis, firefighting and playing with github actions and production environments, with casual "*interim-tech-lead*" moments throughout the year.
+Lastly, this year our tech lead changed job mid-year, and one of our teammates rose to the challenge and got promoted. I watched from the side (I still want to code for some time, and not increase the amount of meetings and calls too much), but after his promotion I got to help him as *"Deputy"*. This meant more analysis, firefighting and playing with github actions and production environments, with occasional "*interim-tech-lead*" moments throughout the year.
 
 What will 2026 bring? I hope I'll get better at proposing technical solutions (mainly to the team, as I talk to customers only after pre-analysis by PO and TL) and mentoring the team, all while improving my craft. I'll probably need to learn mobile development too.... but that's for next year's me to handle.
 
@@ -123,6 +123,7 @@ it might not seem much, but we explored these books in ways I would have never d
 For next year, the first book we're going to read will be *Clean Architecture*. A "solid" re-read of SOLID principles and architecture is needed, given that I read this book 5 years ago (at a time when I didn't think much about architecture, just making the code work!). 
 
 You can find XPUGBg on [LinkedIn](https://www.linkedin.com/company/xpug-bergamo/) or luma (for the [book club](https://luma.com/xpug-bg-book-club) and the [meetup](https://luma.com/calendar/cal-018qZ28z0TiA2VA) calendars)
+
 
 ## Communities
 
