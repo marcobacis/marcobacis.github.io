@@ -57,7 +57,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#66d9ef">auto</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">aspect-ratio</span>: <span style="color:#ae81ff">16</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">9</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">aspect-ratio</span>: <span style="color:#ae81ff">16</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">9</span><span style="color:#960050;background-color:#1e0010">;</span>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> <span style="color:#f92672">iframe</span><span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">rwd-video</span> <span style="color:#f92672">object</span><span style="color:#f92672">,</span>
