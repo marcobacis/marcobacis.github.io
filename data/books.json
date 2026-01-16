@@ -1,41 +1,4 @@
 {
-  "books": [
-    {
-      "author": "Pierre Antilogus",
-      "date_added": "2026-01-06",
-      "date_read": null,
-      "date_started": "2026-01-06",
-      "link": "https://www.goodreads.com/book/show/28792577-la-guida-del-giovane-pap",
-      "pages": 261,
-      "title": "La guida del giovane papà"
-    },
-    {
-      "author": "Terry Pratchett",
-      "date_added": "2025-12-06",
-      "date_read": null,
-      "date_started": "2025-12-06",
-      "link": "https://www.goodreads.com/book/show/222258145-il-ciclo-di-scuotivento",
-      "pages": 684,
-      "title": "Il Ciclo di Scuotivento"
-    },
-    {
-      "author": "Shelley Benhoff",
-      "date_added": "2025-11-16",
-      "date_read": null,
-      "date_started": "2025-11-16",
-      "link": "https://www.goodreads.com/book/show/203830996-lead-developer-career-guide",
-      "pages": 325,
-      "title": "Lead Developer Career Guide"
-    },
-    {
-      "author": "Tim McNamara",
-      "date_added": "2025-08-31",
-      "date_read": null,
-      "date_started": "2025-08-31",
-      "link": "https://www.goodreads.com/book/show/220469918-rust-in-action",
-      "pages": 400,
-      "title": "Rust in Action"
-    }
-  ],
-  "lastmod": "2026-01-07T01:49:32.496219"
+  "books": [],
+  "lastmod": "2026-01-16T01:51:05.176269"
 }
