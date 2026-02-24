@@ -1,5 +1,4 @@
 # Hugo files
-public
 resources
 
 # Backup Files
@@ -18,7 +17,8 @@ pids
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-package-lock.json
+
+dist
 
 # Mac File System File
 .DS_Store

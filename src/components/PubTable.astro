@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+
+const publications = await getCollection('publications');
+---
+
+{
+	publications.map((pub) => (
+		<>
+			<i>
+				<b>{pub.data.title}</b>
+			</i>
+
+			<br />
+			{pub.data.authors.map((author, idx) => (
+				<>
+					{author}
+					{idx < pub.data.authors.length - 1 && ','}
+				</>
+			))}
+
+			<br />
+
+			{/* Links */}
+			<span style="float: right">
+				{pub.data.poster && (
+					<a target="_blank" href={pub.data.poster}>
+						poster
+					</a>
+				)}
+				&nbsp;
+				{pub.data.pdf && (
+					<a target="_blank" href={pub.data.pdf}>
+						pdf
+					</a>
+				)}
+				&nbsp;
+				{pub.data.doi && (
+					<a target="_blank" href={`https://doi.org/${pub.data.doi}`}>
+						link
+					</a>
+				)}
+			</span>
+
+			<br />
+			<br />
+		</>
+	))
+}

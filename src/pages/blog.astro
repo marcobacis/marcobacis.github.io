@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostList from "../components/PostList.astro";
+import { getCollection } from "astro:content";
+import Container from "../components/Container.astro";
+
+const posts = await getCollection("blog");
+---
+
+<BaseLayout
+	title="Blog"
+	description="All writing organized by journey and topic"
+>
+	<Container>
+		<section>
+			<header>
+				<h1>Blog</h1>
+			</header>
+			<PostList
+				posts={posts.sort(
+					(a, b) =>
+						new Date(b.data.pubDate).getTime() -
+						new Date(a.data.pubDate).getTime(),
+				)}
+			/>
+		</section>
+	</Container>
+</BaseLayout>

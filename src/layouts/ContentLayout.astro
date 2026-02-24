@@ -1,0 +1,118 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	canonical?: string;
+	showTableOfContents?: boolean;
+}
+
+const { title, description, canonical, showTableOfContents = false } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+	<article data-content-layout>
+		<div class="prose">
+			<slot />
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	[data-content-layout] {
+		width: 100%;
+		max-width: var(--max-width-wide);
+		margin: 0 auto;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-xl);
+	}
+
+	/* Table of Contents */
+	.toc {
+		font-size: var(--font-size-sm);
+		position: sticky;
+		top: var(--space-lg);
+		height: fit-content;
+		max-height: calc(100vh - 2rem);
+		overflow-y: auto;
+		padding: var(--space-md);
+		background-color: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		display: none;
+	}
+
+	.toc h3 {
+		font-size: var(--font-size-sm);
+		margin-bottom: var(--space-md);
+	}
+
+	.toc ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.toc li {
+		margin-bottom: var(--space-sm);
+	}
+
+	.toc a {
+		display: block;
+		padding: var(--space-xs) var(--space-sm);
+		border-radius: var(--radius-sm);
+		transition: background-color var(--transition-fast);
+	}
+
+	.toc a:hover {
+		background-color: var(--color-muted-light);
+		text-decoration: none;
+	}
+
+	/* Prose styling for readability */
+	.prose {
+		width: 100%;
+		max-width: var(--max-width-content);
+		margin: 0 auto;
+	}
+
+	.prose > * {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
+	.prose h2 {
+		margin-top: var(--space-xl);
+	}
+
+	.prose h3 {
+		margin-top: var(--space-lg);
+	}
+
+	/* Wider layout on desktop */
+	@media (min-width: 1024px) {
+		.content-grid {
+			grid-template-columns: 200px 1fr;
+		}
+
+		.toc {
+			display: block;
+		}
+	}
+
+	/* Very wide layout for ultra-wide displays */
+	@media (min-width: 1440px) {
+		[data-content-layout] {
+			max-width: 1200px;
+		}
+
+		.content-grid {
+			grid-template-columns: 250px 1fr 250px;
+		}
+	}
+</style>

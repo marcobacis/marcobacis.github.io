@@ -1,0 +1,47 @@
+---
+/**
+ * Card.astro
+ * Simple card component with minimal styling
+ */
+interface Props {
+	href?: string;
+	title?: string;
+	class?: string;
+}
+
+const { href, title, class: className } = Astro.props;
+const TagName = href ? 'a' : 'div';
+---
+
+<TagName 
+	{...(href && { href })} 
+	class={`card ${className || ''}`}
+	data-card
+>
+	{title && <h3>{title}</h3>}
+	<slot />
+</TagName>
+
+<style>
+	[data-card] {
+		display: block;
+		padding: var(--space-lg);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		background-color: var(--color-surface);
+		transition: all var(--transition-medium);
+		text-decoration: none;
+		color: inherit;
+	}
+
+	[data-card]:hover {
+		border-color: var(--color-accent);
+		box-shadow: var(--shadow-md);
+		transform: translateY(-2px);
+	}
+
+	[data-card] h3 {
+		margin-top: 0;
+		margin-bottom: var(--space-md);
+	}
+</style>

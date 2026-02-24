@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import ContentLayout from "../layouts/ContentLayout.astro";
+
+const posts = await getCollection("blog");
+const lastPost = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
+---
+
+<ContentLayout title="Now" description="What I'm learning and building right now">
+	<section>
+		<h1>What I'm doing now</h1>
+
+		<p>
+			This page was inspired by <a href="https://sive.rs/nowff"
+				>Derek Sivers</a
+			> (<a href="https://sive.rs/now">his now page</a>, and a <a
+				href="https://nownownow.com/about">collection of now pages</a
+			>).
+		</p>
+
+		<p>
+			A <b>now page</b> is a sort of continuous "status update" one points to
+			when asked "so, what are you doing right now?".
+		</p>
+
+		<p>
+			In addition to showing off what I'm up to, it also helps in focusing
+			on less stuff: if something new comes along, I'll do it or say no
+			based on how "crowded" my now page is!
+		</p>
+
+		<hr />
+		<br />
+
+		<p>So, what am I doing right now?</p>
+		<ul>
+			<li>
+				Working at <a href="https://zupit.it">Zupit</a> as Full-Stack (.NET + Angular) Software Engineer
+			</li>
+			<li>(Very slowly) writing a small <a href="https://github.com/marcobacis/yarrs">redis clone</a> in rust as exercise
+			</li>
+		</ul>
+
+		<ul>
+			<li>
+				Writing on my <a href="/blog">blog</a>
+				<ul>	<li>
+					Latest post: <a href={`/blog/${lastPost.id}/`}>{lastPost.data.title}</a>
+				</li></ul>
+			</li>
+			<br />
+		</ul>
+	</section>
+</BaseLayout>

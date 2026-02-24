@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import { JOURNEYS } from '../consts';
+---
+
+<BaseLayout title="Start Here" description="Curated pathways for readers and learners.">
+	<Section title="Start Here" subtitle="Choose a path based on what you want to achieve">
+		<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md);">
+			<Card href="/writing?journey=Full-Stack" title="Build Full-Stack">
+				<p>Hands-on guides and practical notes for building products end-to-end.</p>
+			</Card>
+			<Card href="/writing?journey=Architecture" title="Explore Architecture">
+				<p>System design, trade-offs, and architecture patterns with pragmatic examples.</p>
+			</Card>
+			<Card href="/writing?journey=Distributed%20Systems" title="Distributed Systems">
+				<p>Distributed algorithms, observability, scalability, and reliability notes.</p>
+			</Card>
+			<Card href="/writing?journey=Learning%20in%20Public" title="Learning in Public">
+				<p>How I document learning, public experiments, and talks.</p>
+			</Card>
+		</div>
+	</Section>
+
+	<Section title="How to use this site">
+		<p>Each journey groups posts and series focused on a topic. Use the writing page to filter by journey or tag.</p>
+	</Section>
+</BaseLayout>

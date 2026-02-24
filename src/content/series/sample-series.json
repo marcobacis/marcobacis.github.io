@@ -1,0 +1,7 @@
+{
+  "title": "Designing Reliable Systems",
+  "description": "A short series exploring practical patterns for reliability, observability, and failure handling.",
+  "status": "ongoing",
+  "cover": "/assets/series/reliability.png",
+  "posts": ["designing-reliable-systems/part-1", "designing-reliable-systems/part-2"]
+}
