@@ -1,0 +1,48 @@
+---
+/**
+ * Container.astro
+ * Responsive content container with max-width
+ */
+interface Props {
+	maxWidth?: 'content' | 'wide' | 'full';
+	class?: string;
+}
+
+const { maxWidth = 'content', class: className } = Astro.props;
+
+const widthMap = {
+	content: 'max-width_content',
+	wide: 'max-width_wide',
+	full: 'max-width_full',
+};
+---
+
+<div class={`container ${widthMap[maxWidth]} ${className || ''}`}>
+	<slot />
+</div>
+
+<style>
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 var(--space-md);
+	}
+
+	.max-width_content {
+		max-width: var(--max-width-content);
+	}
+
+	.max-width_wide {
+		max-width: var(--max-width-wide);
+	}
+
+	.max-width_full {
+		max-width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		.container {
+			padding: 0 var(--space-lg);
+		}
+	}
+</style>

@@ -1,0 +1,23 @@
+{
+  "title": "February 2026 Update",
+  "date": "2026-02-21",
+  "learning": [
+    "Distributed consensus algorithms and RAFT protocol implementation",
+    "Streaming architectures with Kafka and event sourcing patterns",
+    "Rust for systems programming and performance optimization"
+  ],
+  "building": [
+    "Personal site redesign with Astro 5 and new visual identity",
+    "Internal observability platform for real-time system metrics",
+    "Open-source contributions to reliability testing frameworks"
+  ],
+  "reading": [
+    "Designing Data-Intensive Applications — Kleppmann",
+    "Building Microservices — Newman",
+    "The Phoenix Project — Gene Kim"
+  ],
+  "events": [
+    "Local systems meetup talk on observability — March 2026",
+    "Mentoring session with junior engineer on architecture basics"
+  ]
+}

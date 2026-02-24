@@ -1,0 +1,66 @@
+---
+/**
+ * PostList.astro - list of posts used on homepage and writing page
+ */
+import type { CollectionEntry } from 'astro:content';
+import Tag from './Tag.astro';
+import FormattedDate from './FormattedDate.astro';
+import Container from './Container.astro';
+
+interface Props {
+	posts?: CollectionEntry<'blog'>[];
+	showDrafts?: boolean;
+}
+
+const { posts = [], showDrafts = false } = Astro.props;
+---
+
+<section class="post-list">
+	{posts.filter(post => showDrafts || !post.data.draft).map(post => (
+		<article class="post-item" key={post.id}>
+			<a class="post-title" href={`/blog/${post.id}/`}>{post.data.title}</a>
+			<div class="meta">
+				<FormattedDate date={post.data.pubDate} />
+			</div>
+		</article>
+	))}
+</section>
+
+<style>
+	.post-item {
+		padding: var(--space-md) 0;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.post-title {
+		margin-bottom: var(--space-xs);
+		font-size: var(--font-size-3xl);
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	.post-item .excerpt {
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-sm);
+	}
+
+	.post-item .meta {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-size: var(--font-size-sm);
+		color: var(--color-text-secondary);
+	}
+
+	.post-item .tags {
+		display: inline-flex;
+		gap: var(--space-xs);
+		margin-left: auto;
+	}
+
+	@media (max-width: 640px) {
+		.post-title {
+			font-size: var(--font-size-2xl);
+		}
+	}
+</style>

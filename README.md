@@ -4,10 +4,17 @@ Hi! 👋
 
 This is the repository for my personal website, [marcobacis.dev](https://marcobacis.dev/).
 
-The website is built with [Hugo](gohugo.io) and the [mediumish-gohugo theme](https://github.com/lgaida/mediumish-gohugo-theme). I added some customizations (e.g. improved the rss feed, figures, added captions and some blog page parameters etc...).
+The website is built with [Astro](https://astro.build/) and heavily set-up using copilot (with one of the cheapest models).
 
 ## Building
-To build the website, install hugo, then run ```hugo --minify``` from the command line. The command will output the static-generate site in the ```public``` directory.
+To build the website:
+
+```
+npm install
+npm run build
+```
+
+The command will output the static-generate site in the ```dist``` directory.
 
 ## Contributing
 

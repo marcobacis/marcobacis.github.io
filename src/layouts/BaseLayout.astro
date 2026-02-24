@@ -1,0 +1,71 @@
+---
+import '../styles/tokens.css';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props;
+const canonicalURL = canonical ? new URL(canonical, Astro.site) : new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonicalURL} />
+		
+		<title>{title}</title>
+		
+		<!-- Primary Meta Tags -->
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		
+		<meta name="generator" content={Astro.generator} />
+		
+		<style>
+			html, body {
+				height: 100%;
+			}
+
+			body {
+				display: grid;
+				grid-template-rows: auto 1fr auto;
+				min-height: 100vh;
+			}
+
+			main {
+				width: 100%;
+				padding: var(--space-lg) var(--space-md);
+			}
+
+			@media (min-width: 768px) {
+				main {
+					padding: var(--space-xl) var(--space-lg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

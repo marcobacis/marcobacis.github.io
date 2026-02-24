@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const talks = await getCollection('talks');
+---
+
+<BaseLayout title="Talks" description="Talks, proposals, and mentoring">
+	<section>
+		<h1>Talks & Mentoring</h1>
+		<p class="muted">Topics I'm exploring, past talks, and proposals.</p>
+		{talks.length === 0 ? (
+			<p>No talks yet — planning content. Want to see a talk? <a href="/about">Contact me</a>.</p>
+		) : (
+			<ul>
+				{talks.map(t => (
+					<li>
+						<strong>{t.data.title}</strong> — {t.data.event} {t.data.date && `(${new Date(t.data.date).toLocaleDateString()})`}
+						{t.data.link && <a href={t.data.link}>Details</a>}
+					</li>
+				))}
+			</ul>
+		)}
+	</section>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import SeriesCard from '../components/SeriesCard.astro';
+import PostList from '../components/PostList.astro';
+import FooterCTA from '../components/FooterCTA.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const latestPosts = posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 5);
+---
+
+<BaseLayout title="Home" description="Home of Marco Bacis — software architect in progress.">
+    <Hero/>
+
+    <Section title="Latest Writing">
+        <PostList posts={latestPosts} />
+    </Section>
+</BaseLayout>

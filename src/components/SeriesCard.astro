@@ -1,0 +1,57 @@
+---
+/**
+ * SeriesCard.astro - preview card for a series with progress
+ */
+interface Props {
+	title?: string;
+	description?: string;
+	progress?: number; // 0..1
+	href?: string;
+}
+
+const { title, description, progress = 0, href } = Astro.props;
+---
+
+<article class="series-card" data-series-card>
+	{href ? <a href={href} class="series-link">
+		<div class="series-content">
+			<h3>{title}</h3>
+			<p class="desc">{description}</p>
+			<div class="progress-wrap">
+				<div class="progress" aria-hidden>
+					<div class="progress-fill" style={`width: ${Math.round(progress * 100)}%`}></div>
+				</div>
+				<span class="progress-label">{Math.round(progress * 100)}%</span>
+			</div>
+		</div>
+	</a> : <div class="series-content">
+		<h3>{title}</h3>
+		<p class="desc">{description}</p>
+		<div class="progress-wrap">
+			<div class="progress" aria-hidden>
+				<div class="progress-fill" style={`width: ${Math.round(progress * 100)}%`}></div>
+			</div>
+			<span class="progress-label">{Math.round(progress * 100)}%</span>
+		</div>
+	</div>}
+</article>
+
+<style>
+	[data-series-card] {
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+		padding: var(--space-md);
+		border-radius: var(--radius-md);
+		transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+	}
+
+	.series-link { text-decoration: none; color: inherit; }
+
+	.series-content h3 { margin: 0 0 var(--space-xs) 0; }
+	.series-content .desc { color: var(--color-text-secondary); margin-bottom: var(--space-sm); }
+
+	.progress-wrap { display: flex; align-items: center; gap: var(--space-md); }
+	.progress { flex: 1; height: 10px; background: var(--color-muted-light); border-radius: 999px; overflow: hidden; border: 1px solid var(--color-border); }
+	.progress-fill { height: 100%; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover)); }
+	.progress-label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+</style>

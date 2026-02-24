@@ -1,0 +1,39 @@
+---
+/**
+ * Tag.astro
+ * Minimal tag/badge component for filtering and categorization
+ */
+interface Props {
+	href?: string;
+	class?: string;
+}
+
+const { href, class: className } = Astro.props;
+const TagName = href ? 'a' : 'span';
+---
+
+<TagName 
+	{...(href && { href })} 
+	class={`tag ${className || ''}`}
+	data-tag
+>
+	<slot />
+</TagName>
+
+<style>
+	[data-tag] {
+		display: inline-block;
+		padding: var(--space-xs) var(--space-sm);
+		border-radius: var(--radius-sm);
+		background-color: var(--color-muted-light);
+		color: var(--color-text);
+		font-size: var(--font-size-sm);
+		text-decoration: none;
+		transition: all var(--transition-fast);
+	}
+
+	a[data-tag]:hover {
+		background-color: var(--color-accent);
+		color: white;
+	}
+</style>
