@@ -9,13 +9,14 @@ import Container from './Container.astro';
 
 interface Props {
 	posts?: CollectionEntry<'blog'>[];
+	showDrafts?: boolean;
 }
 
-const { posts = [] } = Astro.props;
+const { posts = [], showDrafts = false } = Astro.props;
 ---
 
 <section class="post-list">
-	{posts.map(post => (
+	{posts.filter(post => showDrafts || !post.data.draft).map(post => (
 		<article class="post-item" key={post.id}>
 			<a class="post-title" href={`/blog/${post.id}/`}>{post.data.title}</a>
 			<div class="meta">

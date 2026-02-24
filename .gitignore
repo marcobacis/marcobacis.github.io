@@ -1,5 +1,11 @@
-# Hugo files
-resources
+# Astro files
+.astro
+dist
+node_modules
+
+# environment variables
+.env
+.env.*
 
 # Backup Files
 *.markdown~
@@ -8,19 +14,15 @@ resources
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Runtime data
 pids
 *.pid
 *.seed
 
-# Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-
-dist
-
 # Mac File System File
 .DS_Store
-
-venv
