@@ -42,6 +42,28 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
+main {
+	width: 100%;
+	padding: var(--space-lg) var(--space-md);
+}
+
+@media (min-width: 768px) {
+	main {
+		padding: var(--space-xl) var(--space-lg);
+	}
+}
+
 body {
 	font-family: var(--font-sans);
 	background-color: var(--color-bg);
@@ -147,8 +169,8 @@ pre code {
 }
 
 .indent {
-  display: inline-block;
-  width: 2rem;
+	display: inline-block;
+	width: 2rem;
 }
 
 .space {

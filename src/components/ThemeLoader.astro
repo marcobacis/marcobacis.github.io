@@ -1,0 +1,11 @@
+<script is:inline>
+    (function() {
+        function getThemePreference() {
+            const storedTheme = localStorage.getItem('theme');
+            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            return storedTheme || systemPreference;
+        }
+        const theme = getThemePreference();
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+</script>
