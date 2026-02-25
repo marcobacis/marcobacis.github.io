@@ -138,11 +138,21 @@ pre {
 	line-height: var(--line-height-normal);
 }
 
+
 pre code {
 	background-color: transparent;
 	color: inherit;
 	padding: 0;
 	border-radius: 0;
+}
+
+.indent {
+  display: inline-block;
+  width: 2rem;
+}
+
+.space {
+	width: 0.5rem;
 }
 
 /* Lists */
