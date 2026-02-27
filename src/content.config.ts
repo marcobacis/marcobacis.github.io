@@ -63,6 +63,7 @@ const series = defineCollection({
 		title: z.string(),
 		status: z.enum(['ongoing', 'completed', 'upcoming']).default('ongoing'),
 		posts: z.array(z.string()),
+		totalPosts: z.number(),
 	}),
 });
 

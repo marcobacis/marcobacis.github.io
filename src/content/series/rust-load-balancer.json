@@ -3,6 +3,7 @@
   "id": "rust-load-balancer",
   "title": "Building a Load Balancer in Rust",
   "status": "completed",
+  "totalPosts": 3,
   "posts": [
     "load-balancer-rust-1",
     "load-balancer-rust-2", 

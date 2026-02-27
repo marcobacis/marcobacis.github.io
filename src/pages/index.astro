@@ -2,10 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import Section from '../components/Section.astro';
-import Card from '../components/Card.astro';
-import SeriesCard from '../components/SeriesCard.astro';
 import PostList from '../components/PostList.astro';
-import FooterCTA from '../components/FooterCTA.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog');
