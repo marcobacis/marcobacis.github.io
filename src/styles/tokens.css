@@ -10,6 +10,7 @@
   --color-muted-light: #d1d5db;
   --color-text: #111827;
   --color-text-secondary: #4b5563;
+  --color-text-opposite: #f9fafb;
   --color-border: #e5e7eb;
 
   /* Semantic colors */
@@ -87,6 +88,7 @@
   --color-muted-light: #334155;
   --color-text: #f1f5f9;
   --color-text-secondary: #cbd5e1;
+  --color-text-opposite: #111827;
   --color-border: #334155;
   
   /* Semantic colors in dark mode */

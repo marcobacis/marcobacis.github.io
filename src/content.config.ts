@@ -56,4 +56,14 @@ const publications = defineCollection({
 	}),
 });
 
-export const collections = { blog, talks, menu, publications };
+const series = defineCollection({
+	loader: glob({ base: './src/content/series', pattern: '**/*.json' }),
+	schema: z.object({
+		id: z.string(),
+		title: z.string(),
+		status: z.enum(['ongoing', 'completed', 'upcoming']).default('ongoing'),
+		posts: z.array(z.string()),
+	}),
+});
+
+export const collections = { blog, talks, menu, publications, series };

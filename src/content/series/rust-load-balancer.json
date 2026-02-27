@@ -1,0 +1,11 @@
+
+{
+  "id": "rust-load-balancer",
+  "title": "Building a Load Balancer in Rust",
+  "status": "completed",
+  "posts": [
+    "load-balancer-rust-1",
+    "load-balancer-rust-2", 
+    "load-balancer-rust-3"
+  ]
+}

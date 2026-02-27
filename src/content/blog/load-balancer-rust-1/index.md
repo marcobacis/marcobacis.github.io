@@ -1,6 +1,5 @@
 ---
 title: Let's build a Load Balancer in Rust - Part 1
-description: '{{< series key="load-balancer-rust" index="0" >}}'
 pubDate: '2024-05-11'
 tags:
   - meetup
@@ -10,9 +9,6 @@ tags:
   - system programming
 heroImage: './cover.png'
 ---
- 
-
-{{< series key="load-balancer-rust" index="0" >}}
 
 Hi 👋 welcome to a new post!
 
@@ -157,7 +153,7 @@ impl LoadBalancer {
 		.bind(("127.0.0.1", self.port))
 		.unwrap()
 		.run()
-		.await	
+		.await    
 		.unwrap();
 	}
 }

@@ -1,6 +1,5 @@
 ---
 title: Let's build a Load Balancer in Rust - Part 2
-description: '{{< series key="load-balancer-rust" index="1" >}}'
 pubDate: '2024-05-22'
 tags:
   - meetup
@@ -10,9 +9,6 @@ tags:
   - system programming
 heroImage: './cover.png'
 ---
- 
-
-{{< series key="load-balancer-rust" index="1" >}}
 
 Hi  👋 welcome to a new post! This is the second part of the series "Let's build a Load Balancer in rust".
 
@@ -30,12 +26,13 @@ let client = Client::new();
 
 The fix is simple: we can add the client to the shared app data, and then use it inside the handler! In this way, we won't have to istantiate the client on every request. This is also explained in reqwest [docs](https://docs.rs/reqwest/latest/reqwest/struct.Client.html): "The `Client` holds a connection pool internally, so it is advised that you create one and **reuse** it."
 
- I tried adding the client directly to the `LoadBalancer` struct without passing through Actix, but the compiler complained when defining the handler and I just left it as-is. If you know a better method, write a comment at the end of the post (or even better, create a PR on the [project repository](https://github.com/marcobacis/coding-challenges/tree/main/load_balancer) 😁).
+I tried adding the client directly to the `LoadBalancer` struct without passing through Actix, but the compiler complained when defining the handler and I just left it as-is. If you know a better method, write a comment at the end of the post (or even better, create a PR on the [project repository](https://github.com/marcobacis/coding-challenges/tree/main/load_balancer) 😁).
+
 ## Waiting for the Load Balancer to start
 
 Before starting with the round-robin implementation, lets tidy up a bit the code from the first part. The first thing to do is to improve the test we wrote!
 
-In the test, we create the load balancer server and wait for it to start up with a simple `sleep´
+In the test, we create the load balancer server and wait for it to start up with a simple `sleep`
 ```rust
 // The class under test, the load balancer itself
 let server = LoadBalancer::new(8080, vec![mock_server.uri()]);
@@ -136,38 +133,22 @@ Notice the type alias `SafeRoutingPolicy`, which has also the `Send` and `Sync` 
 
 The `actix_web::web::Data` struct is a wrapper around an `Arc`, which allows to access the structure from multiple threads. However, that doesn't mean that the fields (e.g. the policy) are thread safe! This is also recalled by the compiler, which gives us a nice error if we don't require the policy to be `Sync + Send`:
 
-```rust
+```text
 error[E0277]: `(dyn RoutingPolicy + 'static)` cannot be shared between threads safely
    --> src/lib.rs:45:25
-   
-	  // ... code
-   
+
 = help: the trait `Sync` is not implemented for `(dyn RoutingPolicy + 'static)`
-    = note: required for `Unique<(dyn RoutingPolicy + 'static)>` to implement `Sync`
+	= note: required for `Unique<(dyn RoutingPolicy + 'static)>` to implement `Sync`
 note: required because it appears within the type `Box<(dyn RoutingPolicy + 'static)>`
-   
-   // ..Box
-   
-   --> src/lib.rs:22:8
-    |
-22  | struct AppState {
-    |        ^^^^^^^^
-    = note: required for `Arc<AppState>` to implement `Send`
+
+= note: required for `Arc<AppState>` to implement `Send`
 note: required because it appears within the type `Data<AppState>`
-   
-    |
-90  | pub struct Data<T: ?Sized>(Arc<T>);
-    |            ^^^^
+
 note: required because it's used within this closure
    --> src/lib.rs:45:25
-    |
-45  |         HttpServer::new(move || {
-    |                         ^^^^^^^
+
 note: required by a bound in `HttpServer::<F, I, S, B>::new`
-   --> /Users/marco/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-web-4.5.1/src/server.rs:94:20
-    |
-94  |     F: Fn() -> I + Send + Clone + 'static,
-    |                    ^^^^ required by this bound in `HttpServer::<F, I, S, B>::new`
+   --> /Users/marco/.cargo/registry/src/...
 
 // same for Sync
 ```

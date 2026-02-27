@@ -5,8 +5,17 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import Series from '../components/Series.astro';
+import { getCollection } from 'astro:content';
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { id, title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const series = await getCollection('series');
+
+const currentSeries = series.find(s => s.data.posts.includes(id));
+const index = currentSeries ? currentSeries.data.posts.indexOf(id) : -1;
+const total = currentSeries ? currentSeries.data.posts.length : 1;
+
 ---
 
 <html lang="en">
@@ -86,6 +95,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<h1>{title}</h1>
 						<hr />
 					</div>
+					{currentSeries && (
+						<Series 
+							series={currentSeries.data}
+							index={index} 
+							total={total} 
+						/>
+					)}
 					<slot />
 				</div>
 			</article>

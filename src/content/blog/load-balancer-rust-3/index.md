@@ -1,6 +1,5 @@
 ---
 title: Let's build a Load Balancer in Rust - Part 3
-description: '{{< series key="load-balancer-rust" index="2" >}}'
 pubDate: '2024-06-02'
 tags:
   - open source
@@ -9,10 +8,6 @@ tags:
   - system programming
 heroImage: './cover.png'
 ---
- 
-
-{{< series key="load-balancer-rust" index="2" >}}
-
 
 Hi  👋 welcome to a new post!
 
@@ -66,14 +61,14 @@ Up till now, we have used a `Vec<String>` to represent the load balancer configu
 ```rust
 #[derive(Clone)]
 pub struct Backend {
-    pub url: String,
-    pub healthcheck_path: String,
+	pub url: String,
+	pub healthcheck_path: String,
 }
 
 #[derive(Clone)]
 pub struct Config {
-    pub backends: Vec<Backend>,
-    pub health_check_interval_secs: usize,
+	pub backends: Vec<Backend>,
+	pub health_check_interval_secs: usize,
 }
 ```
 
@@ -145,32 +140,32 @@ Let's start by checking which servers are available:
 
 ```rust
 pub struct HealthResult {
-    pub backend: Backend,
-    healthy: bool,
+	pub backend: Backend,
+	healthy: bool,
 }
 
 async fn get_healthy_backends(client: &Client, backends: &Vec<Backend>) -> Vec<HealthResult> {
-    // Check all backends for the health endpoint
-    let results = join_all(backends.iter().map(|b| {
-        client
-            .get(format!("{}{}", &b.url, &b.healthcheck_path))
-            .send()
-    }))
-    .await;
+	// Check all backends for the health endpoint
+	let results = join_all(backends.iter().map(|b| {
+		client
+			.get(format!("{}{}", &b.url, &b.healthcheck_path))
+			.send()
+	}))
+	.await;
 
-    // Map responses to simple boolean to match to backends
-    let results = results.iter().map(|res| match res {
-        Ok(response) => response.status().is_success(),
-        Err(_) => false,
-    });
+	// Map responses to simple boolean to match to backends
+	let results = results.iter().map(|res| match res {
+		Ok(response) => response.status().is_success(),
+		Err(_) => false,
+	});
 
-    // Match result and backend together
-    zip(backends, results)
-        .map(|(backend, healthy)| HealthResult {
-            backend: backend.clone(),
-            healthy,
-        })
-        .collect()
+	// Match result and backend together
+	zip(backends, results)
+		.map(|(backend, healthy)| HealthResult {
+			backend: backend.clone(),
+			healthy,
+		})
+		.collect()
 }
 ```
 
@@ -187,10 +182,10 @@ With all the healthcheck results collected, we can now extend our Round-Robin po
 ```rust
 #[async_trait]
 pub trait RoutingPolicy {
-    async fn next(&self, request: &HttpRequest) -> String;
+	async fn next(&self, request: &HttpRequest) -> String;
 	
 	// The new method we introduce
-    async fn health_results(&self, results: Vec<HealthResult>);
+	async fn health_results(&self, results: Vec<HealthResult>);
 }
 ```
 
@@ -255,29 +250,29 @@ Let's make this test pass!
 
 ```rust
 pub struct RoundRobinPolicy {
-    backends: RwLock<Vec<String>>,
-    idx: AtomicUsize,
+	backends: RwLock<Vec<String>>,
+	idx: AtomicUsize,
 }
 
 #[async_trait]
 impl RoutingPolicy for RoundRobinPolicy {
-    async fn next(&self, _request: &HttpRequest) -> String {
-        let idx = self.idx.fetch_add(1, Ordering::Relaxed);
+	async fn next(&self, _request: &HttpRequest) -> String {
+		let idx = self.idx.fetch_add(1, Ordering::Relaxed);
 
-        // Get read lock and return the correct server
-        let servers = self.backends.read().await.clone();
-        servers.get(idx % servers.len()).unwrap().clone()
-    }
+		// Get read lock and return the correct server
+		let servers = self.backends.read().await.clone();
+		servers.get(idx % servers.len()).unwrap().clone()
+	}
 
-    async fn health_results(&self, results: Vec<HealthResult>) {
-        // Get write lock and overwrite the servers list
-        let mut servers = self.backends.write().await;
-        *servers = results
-            .iter()
-            .filter(|r| r.is_healthy())
-            .map(|r| r.backend.url.clone())
-            .collect();
-    }
+	async fn health_results(&self, results: Vec<HealthResult>) {
+		// Get write lock and overwrite the servers list
+		let mut servers = self.backends.write().await;
+		*servers = results
+			.iter()
+			.filter(|r| r.is_healthy())
+			.map(|r| r.backend.url.clone())
+			.collect();
+	}
 }
 ```
 

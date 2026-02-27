@@ -1,0 +1,70 @@
+---
+import type { InferEntrySchema } from 'astro:content';
+import { getCollection } from 'astro:content';
+import ProgressBar from './ProgressBar.astro';
+
+interface Props { 
+    series: InferEntrySchema<'series'>;
+    index: number;
+    total: number;
+}
+const { series, index = 0, total = 1 } = Astro.props;
+const percent = Math.round(Math.max(0, Math.min(1, (index + 1) / total)) * 100);
+
+const posts = await getCollection('blog');
+const seriesPosts = posts
+    .filter((entry) => series.posts.includes(entry.id))
+    .sort((a, b) => series.posts.indexOf(a.id) - series.posts.indexOf(b.id));
+---
+
+<div #seriesContainer class="container">
+
+    <h4>{series.title}</h4>
+
+    <ProgressBar percent={percent} label={`${index + 1} of ${total}`} />
+
+    <div class="series-posts">
+        {seriesPosts.map((post, idx) => (
+            <div class={"series-post" + (idx === index ? " current" : "")}>
+                <a href={`/blog/${post.id}`}><strong>{post.data.title}</strong></a>
+                <p>{post.data.description}</p>
+            </div>
+        ))}
+    </div>
+</div>
+
+<style>
+
+    h4 {
+        margin: 0 0 var(--space-sm) 0;
+    }
+
+    .container {  
+        border-radius: var(--radius-xl);
+        background-color: var(--color-surface);
+        padding: var(--space-md);
+        margin-bottom: var(--space-lg);
+    }
+
+    .series-posts { 
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        margin-top: var(--space-sm); 
+    }
+
+    .series-post { 
+        padding: var(--space-sm); 
+        border-radius: var(--radius-sm);
+    }
+    .series-post.current { background-color: var(--color-muted-light); border-radius: var(--radius-sm); }
+    .series-post.current a { pointer-events: none; }
+    .series-post a { color: var(--color-text-primary); text-decoration: none; }
+    .series-post p { margin: var(--space-xs) 0 0 0; color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+
+    .series-post:not(.current):hover { 
+        background-color: var(--color-accent-hover) ; 
+        color: var(--color-text-opposite);
+        transition: background-color var(--transition-short) ease;
+    }
+</style>
