@@ -49,6 +49,7 @@ const total = currentSeries ? currentSeries.data.posts.length : 1;
 			.prose {
 				width: 860px;
 				max-width: calc(100% - 2em);
+				min-width: 0;
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
@@ -69,6 +70,13 @@ const total = currentSeries ? currentSeries.data.posts.length : 1;
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+
+			@media (max-width: 900px) {
+				.prose {
+					width: calc(100vw - 2em);
+					padding: 1em;
+				}
 			}
 		</style>
 	</head>
