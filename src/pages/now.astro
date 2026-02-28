@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import ContentLayout from "../layouts/ContentLayout.astro";
+import ContentLayout from "@layouts/ContentLayout.astro";
 
 const posts = await getCollection("blog");
 const lastPost = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];

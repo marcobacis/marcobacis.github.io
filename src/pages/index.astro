@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import Section from '../components/Section.astro';
-import PostList from '../components/PostList.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/home/Hero.astro';
+import Section from '@components/Section.astro';
+import PostList from '@components/blog/PostList.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog');

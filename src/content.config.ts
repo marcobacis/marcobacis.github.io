@@ -61,9 +61,12 @@ const series = defineCollection({
 	schema: z.object({
 		id: z.string(),
 		title: z.string(),
+		description: z.string().optional(),
+		descriptionLong: z.string().optional(),
 		status: z.enum(['ongoing', 'completed', 'upcoming']).default('ongoing'),
 		posts: z.array(z.string()),
-		totalPosts: z.number(),
+		expectedPosts: z.number(),
+		order: z.number(),
 	}),
 });
 

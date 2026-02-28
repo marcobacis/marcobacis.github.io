@@ -1,0 +1,54 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import SeriesCard from '@components/SeriesCard.astro';
+import ContentLayout from '@layouts/ContentLayout.astro';
+
+const series = await getCollection('series')
+    .then(s => s.sort((a, b) => (a.data.order || 0) - (b.data.order || 0)));
+
+const title = "Journeys";
+const description = `
+    Welcome to the Journeys section, where I share my ongoing projects and learning paths.
+    Here, you'll find a collection of series that document my exploration into various technologies, frameworks, and concepts. 
+    Each series is a deep dive into a specific topic, providing insights, challenges, and solutions I've encountered along the way. 
+    Whether you're a fellow developer or just curious about my work, I invite you to follow along as I navigate through these journeys of discovery and growth.
+    ` ;
+---
+
+<ContentLayout 
+    title={title} 
+    description={description}
+>
+	<section>
+		<h1>{title}</h1>
+		<p class="description">{description}</p>
+		<div class="grid">
+			{series.map(s => (
+				<SeriesCard 
+                    series={s.data}
+                />
+			))}
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+    h1 {
+        margin-bottom: var(--space-lg);
+    }
+    .description {
+        margin-bottom: var(--space-lg);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-md);
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

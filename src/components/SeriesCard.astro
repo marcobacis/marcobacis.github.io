@@ -1,0 +1,52 @@
+---
+import type { InferEntrySchema } from 'astro:content';
+import ProgressBar from '@components/utils/ProgressBar.astro';
+import Card from './Card.astro';
+
+interface Props { 
+    series: InferEntrySchema<'series'>;
+}
+const { series } = Astro.props;
+
+const progressPercent = series.status === 'completed' ? 1 : (series.posts.length / series.expectedPosts);
+
+const percent = Math.round(Math.max(0, Math.min(1, progressPercent)) * 100);
+
+const upcoming = series.status === 'upcoming';
+const completed = series.status === 'completed';
+const ongoing = series.status === 'ongoing';
+---
+
+<Card 
+    title={series.title}
+    href={`/journeys/${series.id}`}
+    style={upcoming ? 'opacity: 0.5; position:relative;' : undefined}
+>
+    <div class="content">
+        <div class="description">
+            {series.description}
+        </div>
+
+        {!upcoming && <div class="progress-bar"><ProgressBar 
+            percent={percent} 
+            showLabel={completed || ongoing} 
+            color={completed ? "var(--color-success)" : undefined} /></div>}
+    </div>
+</Card>
+
+<style>
+    h4 {
+        margin: 0 0 var(--space-sm) 0;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .progress-bar {
+        margin-top: var(--space-md);
+    }
+</style>

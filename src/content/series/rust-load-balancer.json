@@ -2,11 +2,14 @@
 {
   "id": "rust-load-balancer",
   "title": "Building a Load Balancer in Rust",
+  "description": "A series of posts about building a load balancer in Rust, covering topics such as async programming, networking, and performance optimization.",
+  "descriptionLong": "In this series, I document my journey of building a load balancer in Rust. It covers various topics such as async programming, networking, and performance optimization. The goal of this series is to share my learning process and the challenges I encounter along the way, while also providing insights and solutions for others who might be interested in similar projects.",
   "status": "completed",
-  "totalPosts": 3,
+  "expectedPosts": 3,
   "posts": [
     "load-balancer-rust-1",
     "load-balancer-rust-2", 
     "load-balancer-rust-3"
-  ]
+  ],
+  "order": 1
 }

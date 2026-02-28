@@ -5,15 +5,17 @@ import { getCollection } from 'astro:content';
 interface Props { 
     percent: number;
     label?: string;
+    showLabel?: boolean;
+    color?: string;
 }
-const { percent, label } = Astro.props;
+const { percent, label, showLabel = true, color } = Astro.props;
 ---
 
 <div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent}>
     <div class="progress-track">
-        <div class="progress-thumb" style={`width: ${percent}%`} data-progress-thumb></div>
+        <div class="progress-thumb" style={`width: ${percent}%${color ? `; background-color: ${color}` : ''}`} data-progress-thumb></div>
     </div>
-    <span class="progress-label">{label || `${percent}%`}</span>
+    {showLabel && <span class="progress-label">{label || `${percent}%`}</span>}
 </div>
 
 <style>

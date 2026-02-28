@@ -1,0 +1,33 @@
+---
+interface Props {
+  href: string;
+  title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<a href={href} class="back-link">
+  <span class="arrow">←</span>
+  Back to {title}
+</a>
+
+<style scoped>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-md);
+    transition: opacity 0.2s ease;
+  }
+
+  .back-link:hover {
+    opacity: 0.7;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+</style>

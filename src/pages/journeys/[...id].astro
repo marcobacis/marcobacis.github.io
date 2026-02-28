@@ -1,0 +1,42 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Container from '@components/layout/Container.astro';
+import PostList from '@components/blog/PostList.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ContentLayout from '@layouts/ContentLayout.astro';
+import BackLink from '@components/BackLink.astro';
+
+export async function getStaticPaths() {
+	const series = await getCollection('series');
+	return series.map((s) => ({
+		params: { id: s.id },
+		props: s,
+	}));
+}
+
+type Props = CollectionEntry<'series'>;
+
+const {data} = Astro.props;
+
+const posts = (await getCollection('blog'))
+    .filter((post) => data.posts.includes(post.id))
+    .sort(
+	    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+    );
+---
+<BaseLayout
+	title={data.title}
+>
+	<Container>
+		<section>
+			<header>
+                <BackLink href="/journeys" title="Journeys"/>
+				<h1>{data.title}</h1>
+                <p>{data.descriptionLong}</p>
+			</header>
+			<PostList
+				posts={posts}
+			/>
+		</section>
+	</Container>
+</BaseLayout>

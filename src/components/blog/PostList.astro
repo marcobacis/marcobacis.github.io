@@ -3,9 +3,7 @@
  * PostList.astro - list of posts used on homepage and writing page
  */
 import type { CollectionEntry } from 'astro:content';
-import Tag from './Tag.astro';
-import FormattedDate from './FormattedDate.astro';
-import Container from './Container.astro';
+import FormattedDate from '../utils/FormattedDate.astro';
 
 interface Props {
 	posts?: CollectionEntry<'blog'>[];

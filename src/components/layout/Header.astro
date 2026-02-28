@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SOCIAL_LINKS } from '../consts';
-import HeaderLink from './HeaderLink.astro';
-import ThemeToggle from './ThemeToggle.astro';
+import { SITE_TITLE, SOCIAL_LINKS } from '@consts';
+import HeaderLink from '@components/layout/HeaderLink.astro';
+import ThemeToggle from '@components/utils/ThemeToggle.astro';
 
 const links = await getCollection('menu');
 
