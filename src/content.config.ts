@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
+import { goodreadsLoader } from 'astro-loader-goodreads';
 
 const menu = defineCollection({
 	loader: file('src/content/menu.json')
@@ -70,4 +71,10 @@ const series = defineCollection({
 	}),
 });
 
-export const collections = { blog, talks, menu, publications, series };
+const currentlyReading = defineCollection({
+  loader: goodreadsLoader({
+    url: "https://www.goodreads.com/review/list/22830084?shelf=currently-reading"
+  }),
+});
+
+export const collections = { blog, talks, menu, publications, series, currentlyReading };

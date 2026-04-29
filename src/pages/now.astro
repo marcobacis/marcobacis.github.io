@@ -5,6 +5,9 @@ import ContentLayout from "@layouts/ContentLayout.astro";
 
 const posts = await getCollection("blog");
 const lastPost = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
+
+const books = await getCollection("currentlyReading");
+
 ---
 
 <ContentLayout title="Now" description="What I'm learning and building right now">
@@ -49,7 +52,20 @@ const lastPost = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
 					Latest post: <a href={`/blog/${lastPost.id}/`}>{lastPost.data.title}</a>
 				</li></ul>
 			</li>
-			<br />
+		</ul>
+
+		{ books ? (
+				<ul>
+					<li>Reading</li>
+					<ul>
+					{books.map((book) => (
+						<li>
+							<a href={book.data.link}>{book.data.title}</a> by {book.data.author_name}
+						</li>
+					))}
+					</ul>
+				</ul>
+		) : null }
 		</ul>
 	</section>
 </BaseLayout>
