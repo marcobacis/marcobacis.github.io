@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
-import { goodreadsLoader } from 'astro-loader-goodreads';
+import { goodreadsLoader } from './loaders/goodreads';
 
 const menu = defineCollection({
 	loader: file('src/content/menu.json')

@@ -1,0 +1,46 @@
+---
+/**
+ * Callout.astro - Callout box component supporting GitHub-style callouts
+ * Usage:
+ *   - JSX: <Callout tone="note" title="Optional">Content</Callout>
+ *   - MD/MDX: > [!NOTE]
+ *            > Content here
+ */
+interface Props { tone?: 'note' | 'warning' | 'tip'; title?: string }
+const { tone = 'note', title } = Astro.props;
+---
+
+<aside class={`callout callout-${tone}`} role="note">
+	{title && <div class="callout-header"><strong class="callout-title">{title}</strong></div>}
+	<div class="callout-content"><slot /></div>
+</aside>
+
+<style>
+	.callout { 
+		padding: var(--space-md); 
+		border-radius: var(--radius-sm); 
+		border: 1px solid var(--color-border); 
+		background: var(--color-surface); 
+		margin: var(--space-md) 0;
+	}
+	.callout-header {
+		margin-bottom: var(--space-sm);
+	}
+	.callout-title { 
+		margin: 0;
+		line-height: 1.2;
+	}
+	.callout-note { 
+		border-left: 4px solid var(--color-accent);
+		background: var(--color-muted-light);
+	}
+	.callout-warning { 
+		border-left: 4px solid var(--color-warning);
+		background: rgba(255, 193, 7, 0.1);
+	}
+	.callout-tip { 
+		border-left: 4px solid var(--color-success);
+		background: rgba(76, 175, 80, 0.1);
+	}
+	.callout-content { color: var(--color-text-secondary); }
+</style>

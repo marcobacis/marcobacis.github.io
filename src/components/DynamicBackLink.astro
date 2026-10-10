@@ -1,0 +1,72 @@
+---
+import BackLink from './BackLink.astro';
+---
+
+<div id="dynamic-back-link" style="display: none;">
+  <BackLink href="/blog" title="Blog" />
+</div>
+
+<div id="dynamic-back-link-journey" style="display: none;">
+  <BackLink href="/journeys" title="Journey" />
+</div>
+
+<div id="dynamic-back-link-tag" style="display: none;">
+  <BackLink href="/journeys" title="Tag" />
+</div>
+
+<script client:load>
+  document.addEventListener('DOMContentLoaded', () => {
+    const referrer = document.referrer;
+    const blogContainer = document.getElementById('dynamic-back-link');
+    const journeyContainer = document.getElementById('dynamic-back-link-journey');
+    const tagContainer = document.getElementById('dynamic-back-link-tag');
+
+    // Hide all containers by default
+    blogContainer.style.display = 'none';
+    journeyContainer.style.display = 'none';
+    tagContainer.style.display = 'none';
+
+    // Check the referrer URL to determine where the user came from
+    if (referrer.includes('/blog') && blogContainer) {
+      blogContainer.style.display = 'block';
+    } else if (referrer.includes('/journeys')) {
+      journeyContainer.style.display = 'block';
+    } else if (referrer.includes('/tags/')) {
+      // Extract tag name from the referrer URL
+      const tagMatch = referrer.match(/\/tags\/([^/]+)/);
+      if (tagMatch && tagMatch[1]) {
+        const tagName = decodeURIComponent(tagMatch[1]);
+        const href = `/tags/${tagMatch[1]}`;
+        
+        // Create a dynamic backlink for tags since we need the tag name
+        const link = document.createElement('a');
+        link.href = href;
+        link.className = 'back-link';
+        link.innerHTML = `<span class="arrow">←</span> Back to Tag: ${tagName}`;
+        
+        // Copy styles from BackLink component
+        Object.assign(link.style, {
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          textDecoration: 'none',
+          color: 'var(--color-primary)',
+          fontSize: 'var(--font-size-md)',
+          transition: 'opacity 0.2s ease',
+          marginBottom: '1rem',
+          cursor: 'pointer'
+        });
+
+        link.addEventListener('mouseenter', () => {
+          link.style.opacity = '0.7';
+        });
+        link.addEventListener('mouseleave', () => {
+          link.style.opacity = '1';
+        });
+
+        tagContainer.appendChild(link);
+        tagContainer.style.display = 'block';
+      }
+    }
+  });
+</script>

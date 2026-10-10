@@ -1,0 +1,22 @@
+---
+/**
+ * ProgressBar.astro - simple accessible progress bar
+ */
+interface Props { value?: number; label?: string }
+const { value = 0, label = '' } = Astro.props;
+const percent = Math.round(Math.max(0, Math.min(1, value)) * 100);
+---
+
+<div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent} aria-label={label}>
+	<div class="progress-track">
+		<div class="progress-thumb" style={`width: ${percent}%`} data-progress-thumb></div>
+	</div>
+	<span class="progress-percent">{percent}%</span>
+</div>
+
+<style>
+	.progress-root { display: flex; align-items: center; gap: var(--space-md); }
+	.progress-track { flex: 1; height: 10px; background: var(--color-muted-light); border-radius: 999px; overflow: hidden; border: 1px solid var(--color-border); }
+	[data-progress-thumb] { height: 100%; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover)); transition: width var(--transition-medium) ease; }
+	.progress-percent { font-size: var(--font-size-sm); color: var(--color-text-secondary); min-width: 48px; text-align: right; }
+</style>
