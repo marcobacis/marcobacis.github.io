@@ -2,12 +2,10 @@ name: github pages
 
 on:
   push:
+    schedule:
+      - cron: "0 0 * * *"
     branches:
       - main
-  workflow_run:
-    workflows: [Books list workflow]
-    types:
-      - completed
 
 permissions:
   contents: read
