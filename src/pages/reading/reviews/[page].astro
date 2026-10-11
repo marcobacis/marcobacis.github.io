@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '@layouts/ContentLayout.astro';
+import ReadingPage from '@components/ReadingPage.astro';
+import { addReviews, READING_PAGE_SIZE, sortReadBooks, toSearchIndex } from '../../../lib/reading';
+
+export async function getStaticPaths() {
+	const books = addReviews(sortReadBooks(await getCollection('readBooks')), await getCollection('blog')).filter(({ review }) => review);
+	const totalPages = Math.ceil(books.length / READING_PAGE_SIZE);
+
+	return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => {
+		const page = index + 2;
+		return {
+			params: { page: String(page) },
+			props: { books: books.slice(index * READING_PAGE_SIZE + READING_PAGE_SIZE, (index + 1) * READING_PAGE_SIZE + READING_PAGE_SIZE), searchBooks: toSearchIndex(books), page, totalPages },
+		};
+	});
+}
+
+const { books, searchBooks, page, totalPages } = Astro.props;
+---
+
+<ContentLayout title={`Reading — my reviews, page ${page}`} description="Books read by Marco Bacis with a review on his blog." wide>
+	<ReadingPage books={books} searchBooks={searchBooks} page={page} totalPages={totalPages} reviewsOnly />
+</ContentLayout>

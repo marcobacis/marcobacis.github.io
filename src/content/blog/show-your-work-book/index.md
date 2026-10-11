@@ -8,6 +8,7 @@ tags:
   - learning
   - self
   - summary
+bookReview: true
 heroImage: './cover.jpg'
 ---
 

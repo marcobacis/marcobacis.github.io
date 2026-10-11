@@ -2,6 +2,7 @@
     { "id": "home", "path": "/", "label": "Home" },
     { "id": "now", "path": "/now", "label": "Now" },
     { "id": "blog", "path": "/blog", "label": "Blog" },
+    { "id": "reading", "path": "/reading", "label": "Reading" },
     { "id": "notes", "path": "https://notes.marcobacis.dev", "label": "Notes"},
     { "id": "about", "path": "/about", "label": "About" },
     { "id": "contact", "path": "/contact", "label": "Contact" }

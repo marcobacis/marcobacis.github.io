@@ -20,6 +20,7 @@ const links = await getCollection('menu');
 		
 		<div class="logo">
 			<a href="/">
+				<img class="logo-icon" src="/favicon.svg" alt="" aria-hidden="true" />
 				<span class="logo-text">{SITE_TITLE}</span>
 			</a>
 		</div>
@@ -106,6 +107,13 @@ const links = await getCollection('menu');
 		font-size: var(--font-size-base);
 		font-weight: var(--font-weight-semibold);
 		letter-spacing: 0.01em;
+	}
+
+	.logo-icon {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 0.5rem;
+		flex-shrink: 0;
 	}
 
 	.logo a:hover .logo-text {

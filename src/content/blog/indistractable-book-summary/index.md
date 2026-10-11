@@ -7,6 +7,7 @@ tags:
   - productivity
   - psychology
   - summary
+bookReview: true
 heroImage: './cover.webp'
 ---
 

@@ -68,7 +68,8 @@ const urlSchemaMap = [
       user_shelves: item.user_shelves,
       user_review: item.user_review,
       average_rating: item.average_rating,
-      book_published: item.book_published
+      book_published: item.book_published,
+      language: item.language_code || item.book_language || item.language || undefined,
     })
   },
   {

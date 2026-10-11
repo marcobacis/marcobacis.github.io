@@ -7,6 +7,7 @@ tags:
   - books
   - notes
   - summary
+bookReview: true
 heroImage: './cover.webp'
 ---
 

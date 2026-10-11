@@ -2,6 +2,8 @@
 title: Notes on "The Unicorn Project"
 description: "Hi! \U0001F44B  long time no see!"
 pubDate: '2025-08-27'
+bookReview: true
+goodreadsBookId: 44333183
 tags:
   - book
   - summary

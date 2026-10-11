@@ -8,6 +8,7 @@ tags:
   - productivity
   - notes
   - summary
+bookReview: true
 heroImage: './cover.webp'
 ---
 

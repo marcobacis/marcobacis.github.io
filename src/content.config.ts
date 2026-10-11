@@ -22,6 +22,8 @@ const blog = defineCollection({
 			tags: z.array(z.string()).optional(),
 			order: z.number().optional(),
 			readingTime: z.string().optional(),
+		bookReview: z.boolean().default(false),
+		goodreadsBookId: z.coerce.string().optional(),
 			draft: z.boolean().default(false),
 		}),
 });
@@ -78,4 +80,10 @@ const currentlyReading = defineCollection({
   }),
 });
 
-export const collections = { blog, talks, menu, publications, series, currentlyReading };
+const readBooks = defineCollection({
+  loader: goodreadsLoader({
+    url: "https://www.goodreads.com/review/list/22830084?shelf=read"
+  }),
+});
+
+export const collections = { blog, talks, menu, publications, series, currentlyReading, readBooks };

@@ -1,0 +1,166 @@
+---
+interface Props { books: { book: any; review?: any }[]; searchBooks: any[]; page: number; totalPages: number; reviewsOnly?: boolean; }
+const { books, searchBooks, page, totalPages, reviewsOnly = false } = Astro.props;
+const formatReadDate = (value: string) => {
+	const date = new Date(value);
+	return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+};
+const getAuthors = (value: string) => value.split(/,\s*/).map((author) => author.trim()).filter(Boolean);
+const paginationBase = reviewsOnly ? '/reading/reviews/' : '/reading/';
+---
+
+<section class="reading-page" aria-labelledby="reading-title">
+	<header class="page-heading">
+		<h1 id="reading-title">Reading</h1>
+		<p>{reviewsOnly ? 'Books I’ve read and reviewed here.' : 'Books I’ve read.'}</p>
+		<div class="reading-toolbar">
+			<div class="search-field">
+				<label for="reading-search">Search these books</label>
+				<input id="reading-search" type="search" placeholder="Title, author, or language" autocomplete="off" />
+				<p id="reading-search-status" class="search-status" role="status" aria-live="polite"></p>
+			</div>
+			<nav class="reading-filters" aria-label="Reading filters">
+				<a href="/reading/" aria-current={!reviewsOnly ? 'page' : undefined}>All books</a>
+				<a href="/reading/reviews/" aria-current={reviewsOnly ? 'page' : undefined}>Only books with my review</a>
+			</nav>
+		</div>
+	</header>
+
+	{books.length > 0 ? (
+		<>
+			<ul class="book-list">
+				{books.map(({ book, review }) => (
+					<li class="book-item" data-search={`${book.data.title} ${book.data.author_name} ${book.data.language || ''} ${review ? 'review' : ''}`}>
+						<div class="book-cover">
+							{book.data.book_medium_image_url && <img src={book.data.book_medium_image_url} alt={`Cover of ${book.data.title}`} loading="lazy" />}
+						</div>
+						<div class="book-details">
+							<h2><a href={`https://www.goodreads.com/book/show/${book.data.book_id}`} target="_blank" rel="noreferrer">{book.data.title}</a></h2>
+							<p class="author">
+								{getAuthors(book.data.author_name).map((author, index) => (
+									<span>{index > 0 && ', '}{author}</span>
+								))}
+							</p>
+							<div class="book-meta">
+								{book.data.user_read_at && <span>Read {formatReadDate(book.data.user_read_at)}</span>}
+								{book.data.language && <span>{book.data.language}</span>}
+								{review && <a class="review-link" href={`/blog/${review.id}/`}>review</a>}
+							</div>
+						</div>
+					</li>
+				))}
+			</ul>
+			<p class="empty-state search-empty" hidden>No books match your search.</p>
+
+			{totalPages > 1 && (
+				<nav class="pagination" aria-label="Reading pages">
+					{page > 1 && <a href={page === 2 ? paginationBase : `${paginationBase}${page - 1}/`} rel="prev">← Previous</a>}
+					<span aria-current="page">Page {page} of {totalPages}</span>
+					{page < totalPages && <a href={`${paginationBase}${page + 1}/`} rel="next">Next →</a>}
+				</nav>
+			)}
+		</>
+	) : <p class="empty-state">No read books are available right now. Goodreads data will appear here after the next successful build fetch.</p>}
+</section>
+
+<style>
+	.reading-page { padding-bottom: var(--space-2xl); }
+	.page-heading { margin-bottom: var(--space-xl); }
+	.eyebrow { color: var(--color-accent); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; }
+	.page-heading h1 { margin-bottom: var(--space-sm); }
+	.reading-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg); margin-top: var(--space-lg); }
+	.reading-filters { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--space-sm); }
+	.reading-filters a { padding: 0.35rem 0.7rem; border: 1px solid var(--color-border); border-radius: 999px; font-size: var(--font-size-sm); text-decoration: none; }
+	.reading-filters a[aria-current='page'] { border-color: var(--color-accent); color: var(--color-accent); }
+	.book-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); list-style: none; margin: 0; padding: 0; }
+	.book-item { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: var(--space-sm); min-height: 180px; height: 100%; padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+	.book-cover { display: flex; align-items: flex-start; justify-content: center; }
+	.book-cover img { width: 64px; height: 96px; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-muted-light); }
+	.book-details { display: flex; min-width: 0; flex-direction: column; }
+	.book-details h2 { margin: 0 0 var(--space-xs); font-family: var(--font-sans); font-size: var(--font-size-lg); line-height: 1.25; }
+	.book-details h2 a { color: inherit; text-decoration: none; }
+	.book-details h2 a:hover { color: var(--color-accent); text-decoration: underline; }
+	.author { color: var(--color-text-secondary); margin-bottom: var(--space-md); }
+	.book-meta { display: flex; flex-wrap: wrap; gap: var(--space-sm); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	.book-details .book-meta { margin-top: auto; }
+	.book-meta .rating { color: var(--color-accent); letter-spacing: 0.08em; }
+	.review-link { color: var(--color-accent); font-weight: var(--font-weight-semibold); }
+	.search-field { position: relative; flex: 1 1 320px; max-width: 600px; }
+	.search-field label { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+	.search-field input { width: 100%; padding: 0.7rem 1rem; border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-background); color: var(--color-text); font: inherit; }
+	.search-field input:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+	.search-status { position: absolute; top: calc(100% + var(--space-xs)); left: 0; min-height: 1.4em; margin: 0; color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	.search-empty { margin-top: var(--space-md); }
+	.book-item[hidden] { display: none; }
+	.pagination[hidden] { display: none; }
+	.empty-state { padding: var(--space-lg); border: 1px dashed var(--color-border); border-radius: var(--radius-md); color: var(--color-text-secondary); }
+	.pagination { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-border); }
+	.pagination a { font-weight: var(--font-weight-semibold); }
+	.pagination span { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	@media (max-width: 1000px) { .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+	@media (max-width: 720px) {
+		.reading-toolbar { align-items: stretch; flex-direction: column; gap: var(--space-md); }
+		.reading-filters { justify-content: flex-start; }
+		.book-list { grid-template-columns: 1fr; }
+	}
+	@media (max-width: 480px) { .pagination { flex-wrap: wrap; justify-content: center; } }
+</style>
+
+<style is:global>
+	/* Search results are created client-side, so they need unscoped card styles. */
+	.reading-page .book-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); list-style: none; margin: 0; padding: 0; }
+	.reading-page .book-item { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: var(--space-sm); min-height: 180px; height: 100%; padding: var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+	.reading-page .book-cover { display: flex; align-items: flex-start; justify-content: center; }
+	.reading-page .book-cover img { width: 64px; height: 96px; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-muted-light); }
+	.reading-page .book-details { display: flex; min-width: 0; flex-direction: column; }
+	.reading-page .book-details h2 { margin: 0 0 var(--space-xs); font-family: var(--font-sans); font-size: var(--font-size-lg); line-height: 1.25; }
+	.reading-page .book-details h2 a { color: inherit; text-decoration: none; }
+	.reading-page .book-details h2 a:hover { color: var(--color-accent); text-decoration: underline; }
+	.reading-page .author { color: var(--color-text-secondary); margin-bottom: var(--space-md); }
+	.reading-page .book-meta { display: flex; flex-wrap: wrap; gap: var(--space-sm); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	.reading-page .book-details .book-meta { margin-top: auto; }
+	.reading-page .review-link { color: var(--color-accent); font-weight: var(--font-weight-semibold); }
+	.reading-page .book-item[hidden] { display: none; }
+	@media (max-width: 1000px) { .reading-page .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+	@media (max-width: 720px) { .reading-page .book-list { grid-template-columns: 1fr; } }
+</style>
+
+<script define:vars={{ searchBooks }}>
+	const searchInput = document.querySelector('#reading-search');
+	const searchStatus = document.querySelector('#reading-search-status');
+	const searchEmpty = document.querySelector('.search-empty');
+	const bookList = document.querySelector('.book-list');
+	const pagination = document.querySelector('.pagination');
+	const initialBookList = bookList?.innerHTML || '';
+
+	const escapeHtml = (value) => value.replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character] || character);
+	const formatDate = (value) => {
+		const date = new Date(value);
+		return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+	};
+	const renderBook = (book) => `
+		<li class="book-item">
+			<div class="book-cover">${book.cover ? `<img src="${escapeHtml(book.cover)}" alt="Cover of ${escapeHtml(book.title)}" loading="lazy">` : ''}</div>
+			<div class="book-details">
+				<h2><a href="${escapeHtml(book.link)}" target="_blank" rel="noreferrer">${escapeHtml(book.title)}</a></h2>
+				<p class="author">${escapeHtml(book.author)}</p>
+				<div class="book-meta">
+					${book.readDate ? `<span>Read ${formatDate(book.readDate)}</span>` : ''}
+					${book.language ? `<span>${escapeHtml(book.language)}</span>` : ''}
+					${book.reviewUrl ? `<a class="review-link" href="${escapeHtml(book.reviewUrl)}">Read my review</a>` : ''}
+				</div>
+			</div>
+		</li>`;
+
+	searchInput?.addEventListener('input', () => {
+		const query = searchInput.value.trim().toLocaleLowerCase();
+		const matches = searchBooks.filter((book) => `${book.title} ${book.author} ${book.language}`.toLocaleLowerCase().includes(query));
+		const visibleCount = matches.length;
+
+		if (bookList) bookList.innerHTML = query ? matches.map(renderBook).join('') : initialBookList;
+
+		if (searchStatus) searchStatus.textContent = query ? `${visibleCount} ${visibleCount === 1 ? 'book' : 'books'} found.` : '';
+		if (searchEmpty) searchEmpty.hidden = visibleCount > 0;
+		if (pagination) pagination.hidden = Boolean(query);
+	});
+</script>

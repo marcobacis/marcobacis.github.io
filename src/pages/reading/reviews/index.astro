@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '@layouts/ContentLayout.astro';
+import ReadingPage from '@components/ReadingPage.astro';
+import { addReviews, READING_PAGE_SIZE, sortReadBooks, toSearchIndex } from '../../../lib/reading';
+
+const books = addReviews(sortReadBooks(await getCollection('readBooks')), await getCollection('blog')).filter(({ review }) => review);
+---
+
+<ContentLayout title="Reading — my reviews" description="Books read by Marco Bacis with a review on his blog." wide>
+	<ReadingPage books={books.slice(0, READING_PAGE_SIZE)} searchBooks={toSearchIndex(books)} page={1} totalPages={Math.max(1, Math.ceil(books.length / READING_PAGE_SIZE))} reviewsOnly />
+</ContentLayout>
