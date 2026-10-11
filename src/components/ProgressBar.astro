@@ -7,7 +7,7 @@ const { value = 0, label = '' } = Astro.props;
 const percent = Math.round(Math.max(0, Math.min(1, value)) * 100);
 ---
 
-<div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent} aria-label={label}>
+<div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent} aria-label={label || `${percent}% complete`}>
 	<div class="progress-track">
 		<div class="progress-thumb" style={`width: ${percent}%`} data-progress-thumb></div>
 	</div>

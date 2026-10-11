@@ -7,7 +7,7 @@
 <button
   id="theme-toggle"
   class="theme-toggle"
-  aria-label="Toggle theme"
+  aria-label="Switch to dark theme"
   title="Toggle light/dark mode"
   data-theme-toggle
 >
@@ -97,7 +97,14 @@
 
 <script>
   import { toggleTheme } from "../../scripts/theme";
-  document.querySelector("[data-theme-toggle]")?.addEventListener("click", () => {
+  const button = document.querySelector("[data-theme-toggle]");
+  const updateLabel = () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    button?.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+  };
+  updateLabel();
+  button?.addEventListener("click", () => {
     toggleTheme();
+    updateLabel();
   });
 </script>

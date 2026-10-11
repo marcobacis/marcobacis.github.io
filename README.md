@@ -16,6 +16,10 @@ npm run build
 
 The command will output the static-generate site in the ```dist``` directory.
 
+The build refreshes the currently-reading shelf from Goodreads. If Goodreads is
+temporarily unavailable, the loader keeps cached data when available and the
+rest of the site can still be generated.
+
 ## Contributing
 
 If you find any error on the pages (e.g. grammar error, pages not working, wrong layout, mobile issues etc..) don't hesitate to open an issue on the [issue tracker](//github.com/marcobacis/marcobacis.github.io/issues) if you want to contribute in any possible way.

@@ -17,11 +17,11 @@ const seriesPosts = posts
     .sort((a, b) => series.posts.indexOf(a.id) - series.posts.indexOf(b.id));
 ---
 
-<div #seriesContainer class="container">
+<div id="seriesContainer" class="container">
 
     <h4>{series.title}</h4>
 
-    <ProgressBar percent={percent} label={`${index + 1} of ${total}`} />
+    <ProgressBar value={percent / 100} label={`Series progress: ${index + 1} of ${total}`} />
 
     <div class="series-posts">
         {seriesPosts.map((post, idx) => (
@@ -59,12 +59,11 @@ const seriesPosts = posts
     }
     .series-post.current { background-color: var(--color-muted-light); border-radius: var(--radius-sm); }
     .series-post.current a { pointer-events: none; }
-    .series-post a { color: var(--color-text-primary); text-decoration: none; }
+    .series-post a { color: var(--color-text); text-decoration: none; }
     .series-post p { margin: var(--space-xs) 0 0 0; color: var(--color-text-secondary); font-size: var(--font-size-sm); }
 
     .series-post:not(.current):hover { 
-        background-color: var(--color-accent-hover) ; 
-        color: var(--color-text-opposite);
-        transition: background-color var(--transition-short) ease;
+        background-color: var(--color-muted-light);
+        transition: background-color var(--transition-fast) ease;
     }
 </style>

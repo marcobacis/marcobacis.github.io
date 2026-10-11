@@ -69,6 +69,7 @@ const series = defineCollection({
 		expectedPosts: z.number(),
 		order: z.number(),
 	}),
+
 });
 
 const currentlyReading = defineCollection({

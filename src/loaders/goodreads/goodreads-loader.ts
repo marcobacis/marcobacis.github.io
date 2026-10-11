@@ -5,7 +5,7 @@ import { XMLParser } from 'fast-xml-parser';
 
 export interface GoodreadsLoaderOptions {
   url: string;
-  refreshIntervalDays?: number; 
+  refreshIntervalDays?: number;
 }
 
 // Function to decode HTML entities
@@ -172,7 +172,7 @@ const urlSchemaMap = [
       } else if (item.guid.match(/Rating/)) {
         if (item.title.includes('liked a review')) {
           itemType = 'LikeReview';
-        
+
           const reviewIdMatch = description.match(/href="\/review\/show\/(\d+)"/);
           const reviewUserMatch = decodeHtmlEntities(description).match(/<a href="\/review\/show\/\d+">([^<]+)'s review<\/a>/);
           const bookIdMatch = description.match(/href="\/book\/show\/(\d+)-[^"]+"/);
@@ -180,7 +180,7 @@ const urlSchemaMap = [
           const bookImgUrlMatch = description.match(/src="([^"]+)"/);
           const bookUrl = bookIdMatch ? `https://www.goodreads.com/book/show/${bookIdMatch[1]}` : '';
           const reviewUrl = reviewIdMatch ? `https://www.goodreads.com/review/show/${reviewIdMatch[1]}` : '';
-        
+
           itemData = {
             type: "LikeReview",
             userUrl: userUrl,
@@ -192,14 +192,14 @@ const urlSchemaMap = [
           };
         } else if (item.title.includes('liked a readstatus')) {
           itemType = 'LikeReadStatus';
-      
+
           const readStatusUserMatch = decodeHtmlEntities(description).match(/<a class="updateImage" href="\/user\/show\/\d+-[^"]+"><img alt="[^"]+" src="([^"]+)" \/><\/a>\s*<a href="\/user\/show\/\d+-[^"]+">([^<]+)<\/a>/);
           const readStatusMatch = description.match(/<\/a>\s*(.*?)\s*<span class="js-tooltipTrigger/);
           const bookIdMatch = description.match(/href="\/book\/show\/(\d+)(?:\.[^"]+)?(?:-[^"]+)?"/);
           const bookTitleMatch = description.match(/href="\/book\/show\/\d+(?:\.|-)[\w\-\.]+">([^<]+)<\/a>/);
           const readStatusUserImgUrlMatch = description.match(/src="([^"]+)"/);
           const bookUrl = bookIdMatch ? `https://www.goodreads.com/book/show/${bookIdMatch[1]}` : '';
-      
+
           itemData = {
             type: "LikeReadStatus",
             userUrl: userUrl,
@@ -213,12 +213,12 @@ const urlSchemaMap = [
       } else if (item.guid.match(/Comment/)) {
         if (item.title.includes('made a comment on') && item.title.includes(' status')) {
           itemType = 'CommentStatus';
-          
+
           const statusUrlMatch = description.match(/href="(https:\/\/www\.goodreads\.com\/(?:read_statuses\/\d+|user_status\/show\/\d+))"/);
           const commentParts = description.split('<br/><br/>');
           const commentText = commentParts.length > 1 ? commentParts[1].trim() : '';
           const statusUserMatch = description.match(/>([^<]+?)’s status<\/a>/);
-  
+
           itemData = {
             type: "CommentStatus",
             userUrl: userUrl,
@@ -237,7 +237,7 @@ const urlSchemaMap = [
           const bookAuthorMatch = description.match(/<a class="authorName"[^>]*>([^<]+)<\/a>/);
           const commentParts = description.split('<br/><br/>');
           const commentText = commentParts.length > 1 ? commentParts[commentParts.length - 1].trim() : '';
-      
+
           itemData = {
             type: "CommentReview",
             userUrl: userUrl,
@@ -284,7 +284,7 @@ export function goodreadsLoader({
   if (!matchedSchema) {
     throw new Error('No matching schema found for the provided URL.');
   }
-  
+
   return {
     name: 'astro-goodreads-loader',
     schema: matchedSchema.schema,
@@ -293,8 +293,8 @@ export function goodreadsLoader({
       const lastFetchTimeStr = meta.get("lastFetchTime");
       const lastFetchTime = lastFetchTimeStr ? new Date(lastFetchTimeStr) : null;
       const currentTime = new Date();
-      
-      const shouldFetch = !lastFetchTime || 
+
+      const shouldFetch = !lastFetchTime ||
         (currentTime.getTime() - lastFetchTime.getTime()) > refreshIntervalDays * 24 * 60 * 60 * 1000;
 
       if (!shouldFetch) {
@@ -341,15 +341,13 @@ export function goodreadsLoader({
         const raw = result.rss.channel.item;
         items = raw == null ? [] : Array.isArray(raw) ? raw : [raw];
       } catch (error) {
-        logger.error(`Failed to load data from Goodreads (${matchedSchema.name} URL: ${url}): ${error}`);
-        throw error;
+        logger.warn(`Unable to refresh Goodreads (${matchedSchema.name}); keeping cached data when available: ${error}`);
+        return;
       }
 
       await Promise.all(items.map(async (item) => {
         try {
-            logger.info(JSON.stringify(item));
-            const id = String(item.book_id || item.guid || item.id);
-            logger.debug(`Parsing item with id: ${id}`);
+          const id = String(item.book_id || item.guid || item.id);
           const parsedData = await parseData({
             id: id,
             data: item
@@ -360,20 +358,19 @@ export function goodreadsLoader({
             data: parsedData
           });
         } catch (error) {
-            logger.error(`Failed to parse item: ${error instanceof Error ? error.stack : String(error)}`);
-          logger.error(`Failed to parse item: ${error}`);
+          logger.error(`Failed to parse item: ${error instanceof Error ? error.stack : String(error)}`);
           logger.error(`-----`);
           logger.error(`Item data: ${JSON.stringify(item)}`);
           logger.error(`-----`);
         }
       }));
 
-        // update meta with the current fetch time using set() method
-        meta.set("lastFetchTime", currentTime.toISOString());
-        
-        await generateDigest(JSON.stringify(items));
+      // update meta with the current fetch time using set() method
+      meta.set("lastFetchTime", currentTime.toISOString());
 
-        logger.debug(`Successfully loaded data from Goodreads for ${matchedSchema.name} URL: ${url}. Next refresh after: ${new Date(currentTime.getTime() + refreshIntervalDays * 24 * 60 * 60 * 1000).toLocaleDateString()}`);
+      await generateDigest(JSON.stringify(items));
+
+      logger.debug(`Successfully loaded data from Goodreads for ${matchedSchema.name} URL: ${url}. Next refresh after: ${new Date(currentTime.getTime() + refreshIntervalDays * 24 * 60 * 60 * 1000).toLocaleDateString()}`);
     }
   };
 }

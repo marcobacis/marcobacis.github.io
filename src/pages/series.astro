@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import SeriesCard from '@components/SeriesCard.astro';
+import Container from "../components/layout/Container.astro";
+
+const series = (await getCollection('series')).sort((a, b) => a.data.order.valueOf() - b.data.order.valueOf());
+---
+
+<BaseLayout title="Series" description="Series and learning pathways">
+	<Container>
+	<section>
+		<h1>Series</h1>
+		<p class="muted">Longer learning pathways and ordered collections of posts.</p>
+	</section>
+	</Container>
+	<section>
+		<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md); margin: var(--space-lg) 0;	">
+			{series.map(s => (
+				<SeriesCard series={s.data} />
+			))}
+		</div>
+	</section>
+</BaseLayout>

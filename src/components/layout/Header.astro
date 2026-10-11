@@ -8,9 +8,9 @@ const links = await getCollection('menu');
 
 ---
 
-<header data-header>
+	<header data-header>
 	<nav class="nav-container">
-		<button class="hamburger-menu" aria-label="Toggle menu" data-hamburger>
+		<button class="hamburger-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation" data-hamburger>
 			<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
 				<line x1="3" y1="6" x2="21" y2="6"></line>
 				<line x1="3" y1="12" x2="21" y2="12"></line>
@@ -24,11 +24,11 @@ const links = await getCollection('menu');
 			</a>
 		</div>
 		
-			<div class="internal-links" data-links>
+			<nav class="internal-links" data-links aria-label="Primary navigation">
 				{links.map(link => (
 					<HeaderLink href={link.data.path}>{link.data.label}</HeaderLink>
 				))}
-			</div>
+			</nav>
 			
 			<div class="social-links">
 				<a href={SOCIAL_LINKS.github} title="GitHub" aria-label="GitHub Profile">
@@ -45,17 +45,18 @@ const links = await getCollection('menu');
 			</div>
 	</nav>
 
-	<div class="menu-links" data-menu>
+	<nav class="menu-links" id="mobile-navigation" aria-label="Mobile navigation" data-menu>
 		{links.map(link => (
 			<HeaderLink href={link.data.path}>{link.data.label}</HeaderLink>
 		))}
-	</div>
+	</nav>
 </header>
 
 <style>
 	[data-header] {
-		background-color: var(--color-surface);
-		border-bottom: 1px solid var(--color-border);
+		background-color: color-mix(in srgb, var(--color-surface) 92%, transparent);
+		border-bottom: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+		backdrop-filter: blur(14px);
 		position: sticky;
 		top: 0;
 		z-index: 100;
@@ -67,7 +68,7 @@ const links = await getCollection('menu');
 		align-items: center;
 		max-width: var(--max-width-wide);
 		margin: 0 auto;
-		padding: var(--space-md) var(--space-lg);
+		padding: 0.8rem var(--space-lg);
 		gap: var(--space-md);
 	}
 
@@ -98,12 +99,13 @@ const links = await getCollection('menu');
 		text-decoration: none;
 		color: var(--color-text);
 		transition: color var(--transition-fast);
+		gap: var(--space-sm);
 	}
 
 	.logo-text {
-		font-size: var(--font-size-lg);
+		font-size: var(--font-size-base);
 		font-weight: var(--font-weight-semibold);
-		letter-spacing: -0.02em;
+		letter-spacing: 0.01em;
 	}
 
 	.logo a:hover .logo-text {
@@ -112,7 +114,28 @@ const links = await getCollection('menu');
 
 	.internal-links {
 		display: flex;
-		gap: var(--space-lg);
+		gap: var(--space-md);
+		font-size: var(--font-size-sm);
+		font-weight: var(--font-weight-medium);
+		align-items: center;
+	}
+
+	.internal-links :global(a) {
+		padding: 0.45rem 0.65rem;
+		border-radius: 999px;
+		color: var(--color-text-secondary);
+		transition: color var(--transition-fast), background-color var(--transition-fast);
+	}
+
+	.internal-links :global(a:hover),
+	.internal-links :global(a.active) {
+		background: var(--color-muted-light);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.internal-links :global(a.active) {
+		font-weight: var(--font-weight-semibold);
 	}
 
 	.menu-links {
@@ -123,7 +146,7 @@ const links = await getCollection('menu');
 		display: flex;
 		gap: var(--space-sm);
 		align-items: center;
-		padding-left: var(--space-sm);
+		padding-left: var(--space-md);
 		border-left: 1px solid var(--color-border);
 		flex-shrink: 0;
 	}
@@ -134,8 +157,8 @@ const links = await getCollection('menu');
 		justify-content: center;
 		width: 32px;
 		height: 32px;
-		border-radius: var(--radius-md);
-		color: var(--color-text);
+		border-radius: 50%;
+		color: var(--color-text-secondary);
 		transition: all var(--transition-fast);
 	}
 
@@ -143,6 +166,10 @@ const links = await getCollection('menu');
 		background-color: var(--color-muted-light);
 		color: var(--color-accent);
 		text-decoration: none;
+	}
+
+	.social-links :global([data-theme-toggle]) {
+		margin-left: var(--space-xs);
 	}
 
 	/* Mobile styles */
@@ -176,14 +203,28 @@ const links = await getCollection('menu');
 		.menu-links {
 			display: none;
 			flex-direction: column;
-			gap: var(--space-md);
+			gap: var(--space-xs);
 			position: absolute;
 			top: 100%;
 			left: 0;
 			right: 0;
 			background-color: var(--color-surface);
 			border-bottom: 1px solid var(--color-border);
-			padding: var(--space-md) var(--space-lg);
+			padding: var(--space-sm) var(--space-md) var(--space-md);
+			box-shadow: var(--shadow-md);
+		}
+
+		.menu-links :global(a) {
+			padding: 0.7rem var(--space-sm);
+			border-radius: var(--radius-sm);
+			color: var(--color-text-secondary);
+		}
+
+		.menu-links :global(a:hover),
+		.menu-links :global(a.active) {
+			background: var(--color-muted-light);
+			color: var(--color-text);
+			text-decoration: none;
 		}
 
 		.menu-links.open {
@@ -198,14 +239,26 @@ const links = await getCollection('menu');
 	const menu = document.querySelector('[data-menu]');
 
 	hamburger?.addEventListener('click', () => {
-		menu?.classList.toggle('open');
+		const isOpen = menu?.classList.toggle('open') ?? false;
+		hamburger.setAttribute('aria-expanded', String(isOpen));
+		hamburger.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
 	});
 
 	// Close menu when a link is clicked
 	document.querySelectorAll('[data-menu] a').forEach(link => {
 		link.addEventListener('click', () => {
 			menu?.classList.remove('open');
+			hamburger?.setAttribute('aria-expanded', 'false');
+			hamburger?.setAttribute('aria-label', 'Open navigation');
 		});
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape') {
+			menu?.classList.remove('open');
+			hamburger?.setAttribute('aria-expanded', 'false');
+			hamburger?.setAttribute('aria-label', 'Open navigation');
+		}
 	});
 </script>
 

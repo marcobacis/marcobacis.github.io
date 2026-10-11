@@ -22,21 +22,21 @@ const publications = await getCollection('publications');
 			<br />
 
 			{/* Links */}
-			<span style="float: right">
+			<span class="publication-links">
 				{pub.data.poster && (
-					<a target="_blank" href={pub.data.poster}>
+					<a target="_blank" rel="noreferrer" href={pub.data.poster} aria-label={`View poster for ${pub.data.title}`}>
 						poster
 					</a>
 				)}
 				&nbsp;
 				{pub.data.pdf && (
-					<a target="_blank" href={pub.data.pdf}>
+					<a target="_blank" rel="noreferrer" href={pub.data.pdf} aria-label={`Read paper ${pub.data.title}`}>
 						pdf
 					</a>
 				)}
 				&nbsp;
 				{pub.data.doi && (
-					<a target="_blank" href={`https://doi.org/${pub.data.doi}`}>
+					<a target="_blank" rel="noreferrer" href={`https://doi.org/${pub.data.doi}`} aria-label={`Open DOI for ${pub.data.title}`}>
 						link
 					</a>
 				)}
@@ -47,3 +47,12 @@ const publications = await getCollection('publications');
 		</>
 	))
 }
+
+<style>
+	.publication-links {
+		display: flex;
+		justify-content: flex-end;
+		gap: var(--space-sm);
+		margin-top: var(--space-sm);
+	}
+</style>

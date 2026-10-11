@@ -16,23 +16,39 @@ const { posts = [], showDrafts = false } = Astro.props;
 <section class="post-list">
 	{posts.filter(post => showDrafts || !post.data.draft).map(post => (
 		<article class="post-item" key={post.id}>
-			<a class="post-title" href={`/blog/${post.id}/`}>{post.data.title}</a>
-			<div class="meta">
-				<FormattedDate date={post.data.pubDate} />
+			<div class="post-copy">
+				<div class="meta">
+					<FormattedDate date={post.data.pubDate} />
+					{post.data.tags?.[0] && <><span class="dot" aria-hidden="true">·</span><a class="topic" href={`/tags/${encodeURIComponent(post.data.tags[0])}/`}>{post.data.tags[0]}</a></>}
+				</div>
+				<a class="post-title" href={`/blog/${post.id}/`}>{post.data.title}</a>
+				{post.data.description && <p class="excerpt">{post.data.description}</p>}
 			</div>
+			<a class="post-arrow" href={`/blog/${post.id}/`} aria-label={`Read ${post.data.title}`}>
+				<span aria-hidden="true">↗</span>
+			</a>
 		</article>
 	))}
 </section>
 
 <style>
 	.post-item {
-		padding: var(--space-md) 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: var(--space-md);
+		padding: var(--space-lg) 0;
 		border-bottom: 1px solid var(--color-border);
 	}
 
+	.post-copy {
+		min-width: 0;
+	}
+
 	.post-title {
+		display: block;
 		margin-bottom: var(--space-xs);
-		font-size: var(--font-size-3xl);
+		font-size: var(--font-size-xl);
 		font-weight: 600;
 		line-height: 1.2;
 	}
@@ -46,8 +62,39 @@ const { posts = [], showDrafts = false } = Astro.props;
 		display: flex;
 		align-items: center;
 		flex-direction: row;
+		gap: var(--space-xs);
 		font-size: var(--font-size-sm);
 		color: var(--color-text-secondary);
+		margin-bottom: var(--space-sm);
+	}
+
+	.dot {
+		color: var(--color-accent);
+	}
+
+	.topic {
+		color: inherit;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+
+	.post-arrow {
+		flex: 0 0 auto;
+		display: grid;
+		place-items: center;
+		width: 2rem;
+		height: 2rem;
+		border: 1px solid var(--color-border);
+		border-radius: 50%;
+		color: var(--color-text-secondary);
+		transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+	}
+
+	.post-arrow:hover {
+		border-color: var(--color-accent);
+		color: var(--color-accent);
+		text-decoration: none;
+		transform: translate(2px, -2px);
 	}
 
 	.post-item .tags {

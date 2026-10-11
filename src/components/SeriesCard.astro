@@ -28,7 +28,8 @@ const ongoing = series.status === 'ongoing';
         </div>
 
         {!upcoming && <div class="progress-bar"><ProgressBar 
-            percent={percent} 
+            value={progressPercent}
+            label={`${percent}% complete`}
             showLabel={completed || ongoing} 
             color={completed ? "var(--color-success)" : undefined} /></div>}
     </div>

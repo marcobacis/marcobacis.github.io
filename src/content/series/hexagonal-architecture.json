@@ -1,0 +1,10 @@
+
+{
+  "id": "hexagonal-architecture",
+  "title": "Hexagonal Architecture in Rust",
+  "description": "A series of posts about implementing Hexagonal Architecture in Rust, covering topics such as ports and adapters, dependency inversion, and clean architecture principles.",
+  "status": "upcoming",
+  "expectedPosts": 10,
+  "posts": [],
+  "order": 3
+}

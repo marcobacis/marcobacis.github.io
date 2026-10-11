@@ -3,16 +3,25 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/home/Hero.astro';
 import Section from '@components/Section.astro';
 import PostList from '@components/blog/PostList.astro';
+import WorkHighlights from '@components/home/WorkHighlights.astro';
+import Experience from '@components/home/Experience.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog');
-const latestPosts = posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 5);
+const latestPosts = posts
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+	.slice(0, 5);
 ---
 
 <BaseLayout title="Home" description="Home of Marco Bacis — software architect in progress.">
     <Hero/>
 
-    <Section title="Latest Writing">
+	<!--<WorkHighlights />-->
+
+	<Experience />
+
+	<Section title="Latest blog posts   " subtitle="Writing about the systems, tools, and ideas I’m learning in public.">
         <PostList posts={latestPosts} />
     </Section>
 </BaseLayout>

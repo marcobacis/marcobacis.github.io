@@ -1,0 +1,34 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { SOCIAL_LINKS } from '@consts';
+---
+
+<BaseLayout title="Contact" description="Get in touch with Marco Bacis.">
+	<section class="contact-page" aria-labelledby="contact-title">
+		<p class="eyebrow">Let’s talk</p>
+		<h1 id="contact-title">Have a project, idea, or technical question?</h1>
+		<p class="lead">The best way to reach me is through LinkedIn. You can also explore what I’m building and learning on GitHub.</p>
+		<div class="contact-links">
+			<a class="contact-link" href={SOCIAL_LINKS.linkedin}>
+				<strong>Connect on LinkedIn <span aria-hidden="true">↗</span></strong>
+				<span>Professional conversations and collaboration.</span>
+			</a>
+			<a class="contact-link" href={SOCIAL_LINKS.github}>
+				<strong>Find me on GitHub <span aria-hidden="true">↗</span></strong>
+				<span>Projects, experiments, and source code.</span>
+			</a>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.contact-page { max-width: var(--max-width-content); margin: 0 auto; padding: var(--space-xl) 0 var(--space-2xl); }
+	.eyebrow { color: var(--color-accent); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; }
+	.contact-page h1 { max-width: 680px; font-size: clamp(2.5rem, 6vw, var(--font-size-5xl)); }
+	.lead { max-width: 620px; color: var(--color-text-secondary); font-size: var(--font-size-lg); }
+	.contact-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); margin-top: var(--space-xl); }
+	.contact-link { display: flex; flex-direction: column; gap: var(--space-sm); padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); color: inherit; text-decoration: none; }
+	.contact-link:hover { border-color: var(--color-accent); text-decoration: none; }
+	.contact-link span { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	@media (max-width: 640px) { .contact-links { grid-template-columns: 1fr; } }
+</style>

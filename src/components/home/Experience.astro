@@ -1,0 +1,45 @@
+<section class="experience" aria-labelledby="experience-title">
+	<div class="experience-heading">
+		<p class="eyebrow">Experience</p>
+		<h2 id="experience-title">From systems research to product software.</h2>
+		<p>My work has covered performance-oriented software, connected products, web applications, and the architecture that helps them evolve.</p>
+	</div>
+
+	<div class="timeline">
+		<article class="timeline-item">
+			<p class="timeline-date">Now</p>
+			<div>
+				<h3>Full-stack software engineer · <a href="https://zupit.it">Zupit</a></h3>
+				<p>Working with .NET and Angular on custom software, while contributing to technical decisions, mentoring, and developer productivity.</p>
+			</div>
+		</article>
+		<article class="timeline-item">
+			<p class="timeline-date">2019–2023</p>
+			<div>
+				<h3>Software engineer · <a href="https://e-novia.it">e-Novia</a></h3>
+				<p>Worked across C++, desktop applications, web systems, IoT, automotive, robotics, and VR/AR products.</p>
+			</div>
+		</article>
+		<article class="timeline-item">
+			<p class="timeline-date">Research</p>
+			<div>
+				<h3>HPC and FPGA research · <a href="https://www.necst.it">NECSTLab</a></h3>
+				<p>Research into FPGA-based high-performance computing and cloud orchestration as part of my computer engineering studies.</p>
+			</div>
+		</article>
+	</div>
+</section>
+
+<style>
+	.experience { display: grid; grid-template-columns: minmax(220px, 0.7fr) 1.3fr; gap: var(--space-2xl); max-width: var(--max-width-wide); margin: 0 auto; padding: var(--space-xl) 0; }
+	.eyebrow { color: var(--color-accent); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--space-sm); }
+	.experience h2 { margin: 0 0 var(--space-md); font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl)); }
+	.experience-heading > p:last-child { color: var(--color-text-secondary); }
+	.timeline { border-top: 1px solid var(--color-border); }
+	.timeline-item { display: grid; grid-template-columns: 100px 1fr; gap: var(--space-lg); padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-border); }
+	.timeline-date { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--font-size-sm); margin: 0; }
+	.timeline-item h3 { font-size: var(--font-size-lg); margin: 0 0 var(--space-sm); }
+	.timeline-item p { color: var(--color-text-secondary); margin: 0; }
+	@media (max-width: 800px) { .experience { grid-template-columns: 1fr; gap: var(--space-lg); } }
+	@media (max-width: 520px) { .timeline-item { grid-template-columns: 1fr; gap: var(--space-sm); } }
+</style>

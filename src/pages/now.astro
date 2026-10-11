@@ -56,9 +56,9 @@ const books = await getCollection("currentlyReading");
 			</li>
 		</ul>
 
-		{ books ? (
+		{ books.length > 0 ? (
 				<ul>
-					<li>Reading</li>
+					<li>Reading
 					<ul>
 					{books.map((book) => (
 						<li>
@@ -66,8 +66,8 @@ const books = await getCollection("currentlyReading");
 						</li>
 					))}
 					</ul>
+					</li>
 				</ul>
 		) : null }
-		</ul>
 	</section>
 </BaseLayout>

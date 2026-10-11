@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "test:site": "npm run build && node scripts/check-build.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "migrate": "node migrate.mjs"

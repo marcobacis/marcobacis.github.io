@@ -5,7 +5,6 @@ const html = document.documentElement;
 
 export function initializeTheme(): void {
     const initialTheme = getThemePreference();
-    console.log(`Initializing theme: ${initialTheme}`);
     setTheme(initialTheme);
 }
 

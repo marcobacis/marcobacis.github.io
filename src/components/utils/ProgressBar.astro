@@ -11,7 +11,7 @@ interface Props {
 const { percent, label, showLabel = true, color } = Astro.props;
 ---
 
-<div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent}>
+<div class="progress-root" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent} aria-label={label || `${percent}% complete`}>
     <div class="progress-track">
         <div class="progress-thumb" style={`width: ${percent}%${color ? `; background-color: ${color}` : ''}`} data-progress-thumb></div>
     </div>

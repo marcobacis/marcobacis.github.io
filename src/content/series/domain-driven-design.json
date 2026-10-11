@@ -1,0 +1,15 @@
+
+{
+  "id": "domain-driven-design",
+  "title": "Domain-Driven Design in Rust",
+  "description": "A series of posts about applying Domain-Driven Design principles in Rust, covering topics such as bounded contexts, aggregates, and value objects.",
+  "status": "upcoming",
+  "expectedPosts": 10,
+  "posts": [
+    "domain-driven-design-1",
+    "domain-driven-design-2",
+    "domain-driven-design-3",
+    "domain-driven-design-4"
+  ],
+  "order": 2
+}
