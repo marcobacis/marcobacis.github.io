@@ -9,6 +9,7 @@ tags:
   - self
   - summary
 bookReview: true
+goodreadsBookId: 18290401
 heroImage: './cover.jpg'
 ---
 

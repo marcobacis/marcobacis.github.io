@@ -8,6 +8,7 @@ tags:
   - psychology
   - summary
 bookReview: true
+goodreadsBookId: 44595007
 heroImage: './cover.webp'
 ---
 

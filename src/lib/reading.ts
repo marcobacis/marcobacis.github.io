@@ -1,4 +1,4 @@
-export const READING_PAGE_SIZE = 12;
+export const READING_PAGE_SIZE = 24;
 
 export function sortReadBooks<T extends { data: { user_read_at?: string; pubDate?: string } }>(books: T[]) {
 	return [...books].sort((a, b) => {
@@ -21,8 +21,8 @@ export function addReviews<T>(books: T[], posts: any[]) {
 	return books.map((book: any) => ({ book, review: findReview(book, posts) }));
 }
 
-export function toSearchIndex(books: { book: any; review?: any }[]) {
-	return books.map(({ book, review }) => ({
+export function toSearchIndex(books: { book: any; review?: any }[], currentlyReading: any[] = []) {
+	const completedBooks = books.map(({ book, review }) => ({
 		title: book.data.title,
 		author: book.data.author_name,
 		language: book.data.language || '',
@@ -31,5 +31,20 @@ export function toSearchIndex(books: { book: any; review?: any }[]) {
 		readDate: book.data.user_read_at || '',
 		rating: book.data.user_rating || 0,
 		reviewUrl: review ? `/blog/${review.id}/` : '',
+		currentlyReading: false,
 	}));
+
+	const currentBooks = currentlyReading.map((book) => ({
+		title: book.data.title,
+		author: book.data.author_name,
+		language: book.data.language || '',
+		link: book.data.link || `https://www.goodreads.com/book/show/${book.data.book_id}`,
+		cover: book.data.book_medium_image_url,
+		readDate: '',
+		rating: 0,
+		reviewUrl: '',
+		currentlyReading: true,
+	}));
+
+	return [...currentBooks, ...completedBooks];
 }

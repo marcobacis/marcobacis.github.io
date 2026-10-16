@@ -7,9 +7,10 @@ import { addReviews, READING_PAGE_SIZE, sortReadBooks, toSearchIndex } from '../
 const allBooks = sortReadBooks(await getCollection('readBooks'));
 const reviewPosts = await getCollection('blog');
 const books = addReviews(allBooks, reviewPosts);
+const currentlyReading = await getCollection('currentlyReading');
 const pageSize = READING_PAGE_SIZE;
 ---
 
 <ContentLayout title="Reading" description="Books read by Marco Bacis." wide>
-	<ReadingPage books={books.slice(0, pageSize)} searchBooks={toSearchIndex(books)} page={1} totalPages={Math.max(1, Math.ceil(allBooks.length / pageSize))} />
+	<ReadingPage books={books.slice(0, pageSize)} currentBooks={currentlyReading} searchBooks={toSearchIndex(books, currentlyReading)} page={1} totalPages={Math.max(1, Math.ceil(allBooks.length / pageSize))} />
 </ContentLayout>

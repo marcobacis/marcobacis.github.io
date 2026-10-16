@@ -9,6 +9,7 @@ tags:
   - notes
   - summary
 bookReview: true
+goodreadsBookId: 40121378
 heroImage: './cover.webp'
 ---
 
