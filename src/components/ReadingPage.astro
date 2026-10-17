@@ -31,8 +31,8 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 				<p id="reading-search-status" class="search-status" role="status" aria-live="polite"></p>
 			</div>
 			<nav class="reading-filters" aria-label="Reading filters">
-				<a href="/reading/" aria-current={!reviewsOnly ? 'page' : undefined}>All books</a>
-				<a href="/reading/reviews/" aria-current={reviewsOnly ? 'page' : undefined}>Only books with my review</a>
+				<a href="/reading/" aria-current={!reviewsOnly ? 'page' : undefined} data-umami-event="filter-reading" data-umami-event-filter="all">All books</a>
+				<a href="/reading/reviews/" aria-current={reviewsOnly ? 'page' : undefined} data-umami-event="filter-reading" data-umami-event-filter="reviews">Only books with my review</a>
 			</nav>
 		</div>
 	</header>
@@ -48,7 +48,7 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 								<li class="book-item">
 									<div class="book-cover">{book.data.book_medium_image_url && <img src={book.data.book_medium_image_url} alt={`Cover of ${book.data.title}`} loading="lazy" />}</div>
 									<div class="book-details">
-										<h3><a href={book.data.link || `https://www.goodreads.com/book/show/${book.data.book_id}`} target="_blank" rel="noreferrer">{book.data.title}</a></h3>
+										<h3><a href={book.data.link || `https://www.goodreads.com/book/show/${book.data.book_id}`} target="_blank" rel="noreferrer" data-umami-event="open-book" data-umami-event-source="current" data-umami-event-has-review="false">{book.data.title}</a></h3>
 										<p class="author">{getAuthors(book.data.author_name).map((author, index) => <span>{index > 0 && ', '}{author}</span>)}</p>
 										<div class="book-meta"><span>Currently reading</span>{book.data.language && <span>{book.data.language}</span>}</div>
 									</div>
@@ -65,9 +65,9 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 								<li class="book-item" data-search={`${book.data.title} ${book.data.author_name} ${book.data.language || ''} ${review ? 'review' : ''}`}>
 									<div class="book-cover">{book.data.book_medium_image_url && <img src={book.data.book_medium_image_url} alt={`Cover of ${book.data.title}`} loading="lazy" />}</div>
 									<div class="book-details">
-										<h3><a href={`https://www.goodreads.com/book/show/${book.data.book_id}`} target="_blank" rel="noreferrer">{book.data.title}</a></h3>
+										<h3><a href={`https://www.goodreads.com/book/show/${book.data.book_id}`} target="_blank" rel="noreferrer" data-umami-event="open-book" data-umami-event-source="completed" data-umami-event-has-review={String(Boolean(review))}>{book.data.title}</a></h3>
 										<p class="author">{getAuthors(book.data.author_name).map((author, index) => <span>{index > 0 && ', '}{author}</span>)}</p>
-										<div class="book-meta">{book.data.user_read_at && <span>Read {formatReadDate(book.data.user_read_at)}</span>}{book.data.language && <span>{book.data.language}</span>}{review && <a class="review-link" href={`/blog/${review.id}/`}>review</a>}</div>
+										<div class="book-meta">{book.data.user_read_at && <span>Read {formatReadDate(book.data.user_read_at)}</span>}{book.data.language && <span>{book.data.language}</span>}{review && <a class="review-link" href={`/blog/${review.id}/`} data-umami-event="open-book-review">review</a>}</div>
 									</div>
 								</li>
 							))}
@@ -80,9 +80,9 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 
 			{totalPages > 1 && (
 				<nav class="pagination" aria-label="Reading pages">
-					{page > 1 && <a href={page === 2 ? paginationBase : `${paginationBase}${page - 1}/`} rel="prev">← Previous</a>}
+					{page > 1 && <a href={page === 2 ? paginationBase : `${paginationBase}${page - 1}/`} rel="prev" data-umami-event="paginate-reading" data-umami-event-direction="previous" data-umami-event-page={String(page - 1)} data-umami-event-view={reviewsOnly ? 'reviews' : 'all'}>← Previous</a>}
 					<span aria-current="page">Page {page} of {totalPages}</span>
-					{page < totalPages && <a href={`${paginationBase}${page + 1}/`} rel="next">Next →</a>}
+					{page < totalPages && <a href={`${paginationBase}${page + 1}/`} rel="next" data-umami-event="paginate-reading" data-umami-event-direction="next" data-umami-event-page={String(page + 1)} data-umami-event-view={reviewsOnly ? 'reviews' : 'all'}>Next →</a>}
 				</nav>
 			)}
 		</>
@@ -180,12 +180,12 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 		<li class="book-item">
 			<div class="book-cover">${book.cover ? `<img src="${escapeHtml(book.cover)}" alt="Cover of ${escapeHtml(book.title)}" loading="lazy">` : ''}</div>
 			<div class="book-details">
-				<h3><a href="${escapeHtml(book.link)}" target="_blank" rel="noreferrer">${escapeHtml(book.title)}</a></h3>
+				<h3><a href="${escapeHtml(book.link)}" target="_blank" rel="noreferrer" data-umami-event="open-book" data-umami-event-source="search" data-umami-event-has-review="${Boolean(book.reviewUrl)}">${escapeHtml(book.title)}</a></h3>
 				<p class="author">${escapeHtml(book.author)}</p>
 				<div class="book-meta">
 					${book.currentlyReading ? '<span>Currently reading</span>' : book.readDate ? `<span>Read ${formatDate(book.readDate)}</span>` : ''}
 					${book.language ? `<span>${escapeHtml(book.language)}</span>` : ''}
-					${book.reviewUrl ? `<a class="review-link" href="${escapeHtml(book.reviewUrl)}">Read my review</a>` : ''}
+					${book.reviewUrl ? `<a class="review-link" href="${escapeHtml(book.reviewUrl)}" data-umami-event="open-book-review">Read my review</a>` : ''}
 				</div>
 			</div>
 		</li>`;
@@ -208,6 +208,7 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 		].join('');
 	};
 
+	let searchTimer;
 	searchInput?.addEventListener('input', () => {
 		const query = searchInput.value.trim().toLocaleLowerCase();
 		const matches = searchBooks.filter((book) => `${book.title} ${book.author} ${book.language}`.toLocaleLowerCase().includes(query));
@@ -222,5 +223,12 @@ const booksByYear = books.reduce<{ year: string; books: { book: any; review?: an
 		if (searchStatus) searchStatus.textContent = query ? `${visibleCount} ${visibleCount === 1 ? 'book' : 'books'} found.` : '';
 		if (searchEmpty) searchEmpty.hidden = visibleCount > 0;
 		if (pagination) pagination.hidden = Boolean(query);
+
+		window.clearTimeout(searchTimer);
+		if (query) {
+			searchTimer = window.setTimeout(() => {
+				window.umami?.track('search-reading', { has_results: visibleCount > 0, query_length: query.length });
+			}, 700);
+		}
 	});
 </script>

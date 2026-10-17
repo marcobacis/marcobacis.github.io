@@ -157,8 +157,8 @@ const articleStructuredData = {
 					<slot />
 					{(previousPost || nextPost) && (
 						<nav class="article-nav" aria-label="Article navigation">
-							{previousPost ? <a href={`/blog/${previousPost.id}/`}><span class="label">← Previous article</span><strong>{previousPost.data.title}</strong></a> : <span />}
-							{nextPost ? <a class="next" href={`/blog/${nextPost.id}/`}><span class="label">Next article →</span><strong>{nextPost.data.title}</strong></a> : <span />}
+							{previousPost ? <a href={`/blog/${previousPost.id}/`} data-umami-event="click-article-navigation" data-umami-event-direction="previous"><span class="label">← Previous article</span><strong>{previousPost.data.title}</strong></a> : <span />}
+							{nextPost ? <a class="next" href={`/blog/${nextPost.id}/`} data-umami-event="click-article-navigation" data-umami-event-direction="next"><span class="label">Next article →</span><strong>{nextPost.data.title}</strong></a> : <span />}
 						</nav>
 					)}
 					{relatedPosts.length > 0 && (
@@ -166,7 +166,7 @@ const articleStructuredData = {
 							<h2 id="related-title">Keep reading</h2>
 							<div class="related-grid">
 								{relatedPosts.map(post => (
-									<a class="related-card" href={`/blog/${post.id}/`}>
+									<a class="related-card" href={`/blog/${post.id}/`} data-umami-event="click-related-post">
 										<strong>{post.data.title}</strong>
 										<span>{post.data.description || 'Read the article'} <span aria-hidden="true">↗</span></span>
 									</a>

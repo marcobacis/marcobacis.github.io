@@ -45,7 +45,7 @@ const resumeHref = '/Marco_Bacis_CV_Product.pdf';
 						<dd>Architecture · Rust · systems</dd>
 					</div>
 				</dl>
-				<a class="aside-link" href={resumeHref}>Read my résumé <span aria-hidden="true">↗</span></a>
+				<a class="aside-link" data-umami-event="click-resume" data-umami-event-placement="about-aside" href={resumeHref}>Read my résumé <span aria-hidden="true">↗</span></a>
 			</aside>
 
 			<div class="about-content">
@@ -115,9 +115,9 @@ const resumeHref = '/Marco_Bacis_CV_Product.pdf';
 
 				<footer class="about-closing">
 					<p>
-						If you want the concise version, start with my <a href={resumeHref}>résumé</a>. 
+						If you want the concise version, start with my <a href={resumeHref} data-umami-event="click-resume">résumé</a>. 
 						If you want to see how I think through technical problems, browse the <a href="/blog">writing</a>.
-						And if you’d like to get in touch, you can <a href="/contact">find me here</a>.
+						And if you’d like to get in touch, you can <a href="/contact" data-umami-event="click-contact-cta" data-umami-event-source-page="about">find me here</a>.
 					</p>
 				</footer>
 			</div>

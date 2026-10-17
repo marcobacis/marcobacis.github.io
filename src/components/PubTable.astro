@@ -24,19 +24,19 @@ const publications = await getCollection('publications');
 			{/* Links */}
 			<span class="publication-links">
 				{pub.data.poster && (
-					<a target="_blank" rel="noreferrer" href={pub.data.poster} aria-label={`View poster for ${pub.data.title}`}>
+					<a target="_blank" rel="noreferrer" href={pub.data.poster} aria-label={`View poster for ${pub.data.title}`} data-umami-event="click-publication" data-umami-event-publication={pub.data.title} data-umami-event-format="poster">
 						poster
 					</a>
 				)}
 				&nbsp;
 				{pub.data.pdf && (
-					<a target="_blank" rel="noreferrer" href={pub.data.pdf} aria-label={`Read paper ${pub.data.title}`}>
+					<a target="_blank" rel="noreferrer" href={pub.data.pdf} aria-label={`Read paper ${pub.data.title}`} data-umami-event="click-publication" data-umami-event-publication={pub.data.title} data-umami-event-format="pdf">
 						pdf
 					</a>
 				)}
 				&nbsp;
 				{pub.data.doi && (
-					<a target="_blank" rel="noreferrer" href={`https://doi.org/${pub.data.doi}`} aria-label={`Open DOI for ${pub.data.title}`}>
+					<a target="_blank" rel="noreferrer" href={`https://doi.org/${pub.data.doi}`} aria-label={`Open DOI for ${pub.data.title}`} data-umami-event="click-publication" data-umami-event-publication={pub.data.title} data-umami-event-format="doi">
 						link
 					</a>
 				)}

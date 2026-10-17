@@ -21,6 +21,8 @@ const ongoing = series.status === 'ongoing';
     title={series.title}
     href={`/journeys/${series.id}`}
     style={upcoming ? 'opacity: 0.5; position:relative;' : undefined}
+    data-umami-event="open-journey"
+    data-umami-event-journey={series.id}
 >
     <div class="content">
         <div class="description">

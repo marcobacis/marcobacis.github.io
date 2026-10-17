@@ -8,9 +8,10 @@ import FormattedDate from '../utils/FormattedDate.astro';
 interface Props {
 	posts?: CollectionEntry<'blog'>[];
 	showDrafts?: boolean;
+	source?: string;
 }
 
-const { posts = [], showDrafts = false } = Astro.props;
+const { posts = [], showDrafts = false, source = 'post-list' } = Astro.props;
 ---
 
 <section class="post-list">
@@ -19,12 +20,12 @@ const { posts = [], showDrafts = false } = Astro.props;
 			<div class="post-copy">
 				<div class="meta">
 					<FormattedDate date={post.data.pubDate} />
-					{post.data.tags?.[0] && <><span class="dot" aria-hidden="true">·</span><a class="topic" href={`/tags/${encodeURIComponent(post.data.tags[0])}/`}>{post.data.tags[0]}</a></>}
+					{post.data.tags?.[0] && <><span class="dot" aria-hidden="true">·</span><a class="topic" href={`/tags/${encodeURIComponent(post.data.tags[0])}/`} data-umami-event="select-tag" data-umami-event-tag={post.data.tags[0]}>{post.data.tags[0]}</a></>}
 				</div>
-				<a class="post-title" href={`/blog/${post.id}/`}>{post.data.title}</a>
+				<a class="post-title" href={`/blog/${post.id}/`} data-umami-event="open-blog-post" data-umami-event-source={source}>{post.data.title}</a>
 				{post.data.description && <p class="excerpt">{post.data.description}</p>}
 			</div>
-			<a class="post-arrow" href={`/blog/${post.id}/`} aria-label={`Read ${post.data.title}`}>
+			<a class="post-arrow" href={`/blog/${post.id}/`} aria-label={`Read ${post.data.title}`} data-umami-event="open-blog-post" data-umami-event-source={source}>
 				<span aria-hidden="true">↗</span>
 			</a>
 		</article>

@@ -7,16 +7,16 @@ import Card from '@components/Card.astro';
 <BaseLayout title="Start Here" description="Curated pathways for readers and learners.">
 	<Section title="Start Here" subtitle="Choose a path based on what you want to achieve">
 		<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md);">
-			<Card href="/blog" title="Build Full-Stack">
+			<Card href="/blog" title="Build Full-Stack" data-umami-event="select-start-here-path" data-umami-event-path="build-full-stack">
 				<p>Hands-on guides and practical notes for building products end-to-end.</p>
 			</Card>
-			<Card href="/journeys" title="Explore Architecture">
+			<Card href="/journeys" title="Explore Architecture" data-umami-event="select-start-here-path" data-umami-event-path="explore-architecture">
 				<p>System design, trade-offs, and architecture patterns with pragmatic examples.</p>
 			</Card>
-			<Card href="/tags/distributed%20systems/" title="Distributed Systems">
+			<Card href="/tags/distributed%20systems/" title="Distributed Systems" data-umami-event="select-start-here-path" data-umami-event-path="distributed-systems">
 				<p>Distributed algorithms, observability, scalability, and reliability notes.</p>
 			</Card>
-			<Card href="/blog" title="Learning in Public">
+			<Card href="/blog" title="Learning in Public" data-umami-event="select-start-here-path" data-umami-event-path="learning-in-public">
 				<p>How I document learning, public experiments, and talks.</p>
 			</Card>
 		</div>
