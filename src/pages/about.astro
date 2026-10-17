@@ -1,0 +1,210 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const resumeHref = '/Marco_Bacis_CV_Product.pdf';
+---
+
+<BaseLayout
+	title="About Marco Bacis"
+	description="Marco Bacis is a senior full-stack engineer working across modern .NET, Angular, and the systems behind application software."
+>
+	<article class="about-page">
+		<header class="about-intro">
+			<div>
+				<p class="eyebrow">About me</p>
+				<h1>I make <br/> software easier <br/> to evolve</h1>
+			</div>
+			<div class="intro-copy">
+				<p class="lead">
+					I’m Marco, a senior full-stack engineer with more than seven years of professional experience, 
+					currently working at <a href="https://zupit.it">Zupit</a> as a software engineer.
+				</p>
+				<p>
+					My work is strongest in the .NET ecosystem: backend development with C# and modern .NET, 
+					frontend applications with Angular and TypeScript, SQL databases, and cloud-hosted business software.
+					I also contribute to the work around the code—reviews, technical discussions, release coordination,
+					mentoring, and decisions that keep a system maintainable as it changes.
+				</p>
+			</div>
+		</header>
+
+		<div class="about-grid">
+			<aside class="about-aside" aria-label="A few facts">
+				<p class="aside-label">At a glance</p>
+				<dl>
+					<div>
+						<dt>Based in</dt>
+						<dd>Italy</dd>
+					</div>
+					<div>
+						<dt>Current focus</dt>
+						<dd>.NET · Angular · Azure · SQL</dd>
+					</div>
+					<div>
+						<dt>Learning next</dt>
+						<dd>Architecture · Rust · systems</dd>
+					</div>
+				</dl>
+				<a class="aside-link" href={resumeHref}>Read my résumé <span aria-hidden="true">↗</span></a>
+			</aside>
+
+			<div class="about-content">
+				<section aria-labelledby="approach-title">
+					<p class="section-label">01 · How I work</p>
+					<h2 id="approach-title">&quot;Make the change easy, then make the easy change&quot;</h2>
+					<p>
+						I care about readable code, tests I can trust, and keeping the system maintainable over time.
+						In my day-to-day work, this means thinking about boundaries, persistence, deployment and failure modes
+						in addition to the feature itself.
+					</p>
+					<p>
+						I prefer a pragmatic approach over following the current hype.
+						Sometimes the right move is to simplify an application: introducing seams,
+						improving pipelines, make old code safer to change. 
+						Code reviews and technical conversations are part of that work, as are the less visible parts:
+						coordinating releases, working with product owners and customers,
+						and helping other developers find their way through a system.
+					</p>
+				</section>
+
+				<section aria-labelledby="path-title">
+					<p class="section-label">02 · A T-shaped career</p>
+					<h2 id="path-title">Making my way through different domains on all layers</h2>
+					<p>
+						My route into application development was not a straight web-development path.
+						At <a href="https://www.necst.it">NECSTLab</a> during my Computer Science Engineering studies 
+						at <a href="https://www.polimi.it">Politecnico di Milano</a>, I worked on FPGA-based high-performance
+						computing and cloud orchestration. That research led to papers on FPGA acceleration and serverless
+						computing, which you can find in my <a href="/publications">publications</a>.
+					</p>
+					<p>
+						At <a href="https://e-novia.it">e-Novia</a>, I worked across
+						industrial software and product contexts: C++ and C#, desktop applications, web systems, 
+						and projects in areas including IoT, automotive, robotics, and VR/AR. The variety was challenging,
+						but it made me comfortable with different technologies and domains. I also learned how
+						software is used in the real, physical world, not only in a browser.
+					</p>
+					<p>
+						Today at Zupit I work closer to the application layer, building and modernising business 
+						software with modern .NET, Angular, Azure services, SQL Server, and PostgreSQL. 
+						I still benefit from my earlier experiences, but now I'm focused on building software 
+						that is maintainable, reliable, and easy to change, all while keeping the user in mind.
+					</p>
+				</section>
+
+				<section aria-labelledby="exploring-title">
+					<p class="section-label">03 · What I’m exploring</p>
+					<h2 id="exploring-title">Learning is part of the job.</h2>
+					<p>
+						I’m continuing to grow as a senior engineer, with a longer-term interest in software architecture
+						and systems engineering. I’m reading and experimenting around architectural trade-offs, observability, 
+						reliability, distributed-systems concepts, and the engineering practices that make complex software
+						less difficult to change.
+					</p>
+					<p>
+						I'm currently exploring Rust as a bridge between product and systems engineering,
+						connecting domain thinking and high-level abstractions with performance and low-level engineering.
+
+						I like using a small experiment to understand a system from a different angle: for example, I built a simple
+						<a href="/blog/load-balancer-rust-1">load-balancer</a> to understand Rust async and HTTP handling.
+						I also regularly exercise with coding challenges.
+						My <a href="/projects">projects</a> and <a href="/blog">blog</a> are where I keep those investigations
+						visible.
+					</p>
+				</section>
+
+				<footer class="about-closing">
+					<p>
+						If you want the concise version, start with my <a href={resumeHref}>résumé</a>. 
+						If you want to see how I think through technical problems, browse the <a href="/blog">writing</a>.
+						And if you’d like to get in touch, you can <a href="/contact">find me here</a>.
+					</p>
+				</footer>
+			</div>
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	.about-page {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+
+	.about-intro {
+		display: grid;
+		grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+		gap: clamp(var(--space-xl), 8vw, var(--space-2xl));
+		padding: var(--space-xl) 0 clamp(var(--space-xl), 8vw, var(--space-2xl));
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.eyebrow,
+	.section-label,
+	.aside-label {
+		color: var(--color-accent);
+		font-family: var(--font-mono);
+		font-size: var(--font-size-sm);
+		letter-spacing: 0.04em;
+	}
+
+	.eyebrow { margin-bottom: var(--space-md); }
+
+	.about-intro h1 {
+		max-width: 720px;
+		margin: 0;
+		font-family: var(--font-serif);
+		font-size: clamp(2.5rem, 6vw, 4.75rem);
+		font-weight: 700;
+		letter-spacing: -0.04em;
+		line-height: 1.08;
+	}
+
+	.intro-copy {
+		align-self: end;
+		max-width: 520px;
+		font-size: var(--font-size-lg);
+	}
+
+	.intro-copy p:last-child { margin-bottom: 0; }
+	.lead { font-size: clamp(var(--font-size-lg), 2.5vw, var(--font-size-2xl)); line-height: 1.5; }
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr);
+		gap: clamp(var(--space-xl), 8vw, var(--space-2xl));
+		padding-top: var(--space-xl);
+	}
+
+	.about-aside { align-self: start; position: sticky; top: 6rem; }
+	.aside-label { margin-bottom: var(--space-md); }
+	.about-aside dl { margin-bottom: var(--space-lg); }
+	.about-aside dl > div { padding: var(--space-sm) 0; border-top: 1px solid var(--color-border); }
+	.about-aside dl > div:last-child { border-bottom: 1px solid var(--color-border); }
+	dt { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+	dd { margin: var(--space-xs) 0 0; font-family: var(--font-mono); font-size: var(--font-size-sm); line-height: 1.5; }
+	.aside-link { font-family: var(--font-mono); font-size: var(--font-size-sm); text-decoration: underline; text-underline-offset: 4px; }
+
+	.about-content { max-width: var(--max-width-content); }
+	.about-content section { padding-bottom: var(--space-xl); }
+	.section-label { margin-bottom: var(--space-md); }
+	.about-content h2 { margin: 0 0 var(--space-lg); font-family: var(--font-serif); font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl)); letter-spacing: -0.025em; }
+	.about-content p { font-size: 1.05rem; }
+	.personal-section { border-top: 1px solid var(--color-border); padding-top: var(--space-xl); }
+	.about-closing { border-top: 2px solid var(--color-text); padding: var(--space-lg) 0 var(--space-xl); }
+	.about-closing p { margin: 0; font-family: var(--font-serif); font-size: var(--font-size-lg); }
+
+	@media (max-width: 760px) {
+		.about-intro { grid-template-columns: 1fr; gap: var(--space-lg); padding-top: var(--space-md); }
+		.intro-copy { align-self: start; }
+		.about-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+		.about-aside { position: static; }
+		.about-aside dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-sm); }
+		.about-aside dl > div, .about-aside dl > div:last-child { border-bottom: 0; }
+	}
+
+	@media (max-width: 520px) {
+		.about-aside dl { grid-template-columns: 1fr; }
+		.about-aside dl > div { border-bottom: 1px solid var(--color-border); }
+	}
+</style>
